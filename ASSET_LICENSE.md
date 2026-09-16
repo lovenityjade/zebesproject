@@ -37,7 +37,9 @@ to underlying Nintendo artwork. See [third-party notices](THIRD_PARTY_NOTICES.md
 
 Optional remastered recordings and voice files are not covered by our MIT license
 or by our project-created asset policy. They remain subject to their authors'
-terms and are not bundled in release staging. Attribution is not a substitute
-for redistribution permission. The separately supplied game-over MP3 and its converted PCM are also excluded
+terms. The refreshed Windows ALPHA-0.24 package includes the selected Remastered
+recordings with credits and track provenance; this does not relicense them under
+MIT or grant ownership of the underlying music. The Linux AppImage does not
+bundle them. The separately supplied game-over MP3 and its converted PCM remain excluded
 from public source and release packages. A player may install optional audio
 locally; otherwise the original ROM audio is used.

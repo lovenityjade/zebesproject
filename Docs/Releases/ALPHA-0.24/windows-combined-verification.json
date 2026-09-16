@@ -1,0 +1,35 @@
+{
+  "version": "ALPHA-0.24",
+  "platform": "Windows x64",
+  "sha256": "68869c6f5c3188cf4e7ba281ec439cdb2582e87cb36b079eac91abf2777778b7",
+  "size": 815382542,
+  "files": 1692,
+  "allMembersVerified": true,
+  "tracks": 32,
+  "allTrackHashesVerified": true,
+  "executableSha256": "a5a1834c0a10c94dce8347937e1f9e9de4b3bf426b60715a55de2e589f688197",
+  "nativeDllSha256": "5fac920ad2e9bec89422e3c2b63b93090adc03f56576c9e29bfff130d34dbae9",
+  "sourceArchiveSha256": "0161bf4277566de9850e1e5d97146f374a9d426c5285f3e6437e7bda3b100da9",
+  "endingChangesIncluded": false,
+  "romsOrSavesIncluded": false,
+  "audioSmokeTest": {
+    "passed": true,
+    "host": "gaming-pc / Windows Python under Proton Experimental",
+    "track": 4,
+    "nativeFrames": 409,
+    "playingFrames": 240,
+    "peak": 2107,
+    "sha256": "b6d491afed567cc8d939641924a23e1cdf04c1ca6907b47247775ae05f612a01",
+    "scope": "Fresh combined archive: packaged Windows native DLL and bundled Windows Python play bundled track 4 during title; nonzero PCM verified, no speaker capture"
+  },
+  "menuSmokeTest": {
+    "passed": true,
+    "host": "gaming-pc",
+    "runtime": "UMU / Proton Experimental",
+    "freshArchiveExtraction": true,
+    "renderedState": "Randomizer / Seed & sharing: Settings compatible",
+    "exitCode": 0,
+    "screenshotVisuallyReviewed": true
+  },
+  "limitations": "Focused packaging and regression smoke tests; not a full gameplay run or hardware certification. Audio PCM verified, no speaker capture."
+}

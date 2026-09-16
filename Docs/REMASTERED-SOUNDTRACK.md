@@ -10,13 +10,23 @@ The exact selection is recorded in `Config/Soundtracks/remastered.json` with SHA
 - **JUD6MENT, Orchestral v5 (January 2024)**: the remaining cues.
 - **28 uses JUD6MENT's alternative version**, not the main version.
 
-Install from the downloaded audition directory with:
+## Installation
 
-```sh
-python3 Scripts/install-remastered-soundtrack.py
-```
+The refreshed **Windows ALPHA-0.24** ZIP includes the randomizer crash fix and all
+32 selected Remastered recordings. Extract the complete archive and launch the
+root `SMUnreal.exe`; no separate hotfix or soundtrack download is required.
+Select **Settings → Audio → Soundtrack → Remastered**. Original remains the
+default for a new installation.
 
-The installed files are `Soundtracks/Remastered/zebes-N.pcm`. This directory is ignored by Git and is not copied by release staging. Downloads and originals stay in `.tmp/msu-audition`. The installation script verifies every selected hash and preserves conflicting existing files instead of overwriting them.
+Files are stored at `Soundtracks/Remastered/zebes-N.pcm` beside the root launcher,
+with `manifest.json` and `CREDITS.md`. Existing saves/settings are not part of the
+archive. If adding recordings while the game is already running, switch to
+Original and then back to Remastered to reload the current cue.
+
+The **Linux AppImage** does not include these recordings. A separately installed
+pack belongs in `Soundtracks/Remastered` beneath its persistent `SM_USER_DATA`
+directory. Development folder installs use the project root. The recordings
+remain excluded from Git; their authors' terms are separate from the code license.
 
 ## Credits
 

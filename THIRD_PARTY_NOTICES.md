@@ -39,8 +39,9 @@ Optional remastered music: Jammin’ Sam Miller; JUD6MENT; NoNameSD; Blake Robin
 The Synthetic Orchestra; The Noble Demon; GMB Sound Team; Pontus Hultgren Music;
 VG Music Revisited; Dj @tomnium; Wingus Dingus. Intro voice: Luke Correia.
 MSU integration references: DarkShock and Cubear. See
-[recording provenance](Docs/REMASTERED-SOUNDTRACK.md). These recordings are not
-bundled by staging, and attribution does not establish redistribution rights.
+[recording provenance](Docs/REMASTERED-SOUNDTRACK.md). The refreshed Windows ALPHA-0.24 archive includes
+the selected recordings and their credits; they retain their authors' terms,
+independently of the project's code license. The Linux AppImage excludes them.
 The separately supplied game-over recording is also excluded. The game falls
 back to original ROM audio when no optional local recording is installed.
 

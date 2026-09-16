@@ -67,8 +67,9 @@ Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjad
   QoL categories are separate; only the two jump assists qualify for QoL runs.
 - Local achievements with in-game notifications, run statistics, and a randomizer
   route recap that retraces the recorded journey.
-- **Original or optional Remastered soundtrack** selection. External remastered
-  music is not bundled; missing tracks fall back to the original soundtrack.
+- **Original or optional Remastered soundtrack** selection. The refreshed Windows
+  archive includes the selected music pack; Linux supports a separately installed
+  pack. Missing tracks fall back to the original soundtrack.
 - An external room-decoration editor for visual extensions and touch-ups, without
   changing collisions or putting the authoring tool inside the game.
 
@@ -94,7 +95,8 @@ invalid ROMs block game initialization. The project does not download ROMs.
 See [ROM setup](Docs/ROM-SETUP.md).
 
 Original game graphics, fonts and room payloads are decoded from your validated
-ROM at runtime. No ROM, extracted reference sprites or soundtrack packs are bundled.
+ROM at runtime. No ROM or extracted reference sprites are bundled. The refreshed Windows archive
+includes the selected third-party Remastered recordings, with their credits.
 
 ## Playing and testing
 
