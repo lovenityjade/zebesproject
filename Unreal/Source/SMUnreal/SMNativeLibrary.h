@@ -3,11 +3,11 @@
 #include "HAL/PlatformProcess.h"
 
 namespace SMNativeLibrary {
-inline void* Open(const FString& Root) {
 #if PLATFORM_WINDOWS
-    return FPlatformProcess::GetDllHandle(*(Root / TEXT("Native/build/sm_native.dll")));
+void* Open(const FString& Root);
 #else
+inline void* Open(const FString& Root) {
     return FPlatformProcess::GetDllHandle(*(Root / TEXT("Native/build/libsm_native.so")));
-#endif
 }
+#endif
 }

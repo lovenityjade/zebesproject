@@ -6,11 +6,17 @@
 #include "SMRom.h"
 bool SMRunSeedSharingSelfTest(const FString& Root,FString& Error);
 bool SMRunTrackerSelfTest(const FString& Root,FString& Error);
+bool SMRunNativeLifetimeSelfTest(const FString& Root,FString& Error);
 class FSMGameModule : public FDefaultGameModuleImpl {
 public:
     virtual void StartupModule() override {
 #if !UE_BUILD_SHIPPING
         FString Root;
+        if(FParse::Value(FCommandLine::Get(),TEXT("SMNativeLifetimeSelfTest="),Root)){
+            FString Error;const bool Ok=SMRunNativeLifetimeSelfTest(Root,Error);
+            UE_LOG(LogTemp,Display,TEXT("SM_NATIVE_LIFETIME_SELF_TEST %s %s"),Ok?TEXT("PASS"):TEXT("FAIL"),*Error);
+            FPlatformMisc::RequestExitWithStatus(true,Ok?0:1);
+        }
         if(FParse::Value(FCommandLine::Get(),TEXT("SMSeedSharingSelfTest="),Root)){
             FString Error;const bool Ok=SMRunSeedSharingSelfTest(Root,Error);
             UE_LOG(LogTemp,Display,TEXT("SM_SEED_SHARING_SELF_TEST %s %s"),Ok?TEXT("PASS"):TEXT("FAIL"),*Error);
