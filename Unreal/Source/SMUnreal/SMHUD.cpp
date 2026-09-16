@@ -85,7 +85,7 @@ void ASMHUD::StartVerifiedGame() {
     const FString RomPath = SMRom::LocalPath(Root);
     if (!SMRom::Validate(RomPath, Failure)) return;
     CoreHandle = SMNativeLibrary::Open(Root);
-    if (!CoreHandle) { Failure = TEXT("Bibliotheque native introuvable. Lance Scripts/build.sh."); return; }
+    if (!CoreHandle) { Failure = TEXT("Native library missing. See the build instructions in README.md."); return; }
 #define SM_LOAD(Member, Name) Member = reinterpret_cast<decltype(Member)>(FPlatformProcess::GetDllExport(CoreHandle, TEXT(Name))); if (!Member) { Failure = TEXT("API native incomplete: " Name); return; }
     SM_LOAD(Init, "sm_init"); SM_LOAD(Step, "sm_step"); SM_LOAD(Pixels, "sm_pixels");
     SM_LOAD(Scene,"sm_scene"); SM_LOAD(FarMask,"sm_background_mask"); SM_LOAD(Layers,"sm_layers"); SM_LOAD(Emission,"sm_emission"); SM_LOAD(Lightmap,"sm_lightmap");
@@ -218,7 +218,7 @@ void ASMHUD::StartVerifiedGame() {
     FString SaveFile=SaveDir/(AutoTest?FString::Printf(TEXT("validation-%llu.sram"),FPlatformTime::Cycles64()):TEXT("sram.dat"));
     if(HudPreview && !IFileManager::Get().FileExists(*SaveFile)) {
         const FString Fixture=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMTests/HUD-all-items.sram"));
-        if(IFileManager::Get().Copy(*SaveFile,*Fixture)!=COPY_OK){Failure=TEXT("Sauvegarde HUD absente : lancer Scripts/test-display-regressions.py.");return;}
+        if(IFileManager::Get().Copy(*SaveFile,*Fixture)!=COPY_OK){Failure=TEXT("HUD preview save missing. This preview requires a private development fixture.");return;}
     }
     if(AutoTest && SavedRoomTest) {
         FString Saved=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMPreview/sram.dat"));

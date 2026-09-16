@@ -24,14 +24,14 @@ string(REPLACE "!has_area_map)" "!(has_area_map || sm_map_fully_known()))" SM_MO
 string(REPLACE "if (!sign16(samus_health - 30) && !samus_collision_flag)"
   "if (!sign16(sm_connections_spark_health() - 30) && !samus_collision_flag)" SM_MOVEMENT_SOURCE "${SM_MOVEMENT_SOURCE}")
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/sm_90_movement.c" "#include \"sm_connections.h\"\n#include \"sm_effects.h\"\n#include \"sm_seed.h\"\n${SM_MOVEMENT_SOURCE}")
-execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/../Scripts/prepare-map-exploration.py" "${CMAKE_CURRENT_BINARY_DIR}/sm_90_movement.c" COMMAND_ERROR_IS_FATAL ANY)
-execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/../Scripts/prepare-stats-movement.py" "${CMAKE_CURRENT_BINARY_DIR}/sm_90_movement.c" COMMAND_ERROR_IS_FATAL ANY)
-execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/../Scripts/prepare-seed-gameplay.py" "${CMAKE_CURRENT_BINARY_DIR}/sm_90_movement.c" COMMAND_ERROR_IS_FATAL ANY)
+execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/prepare-map-exploration.py" "${CMAKE_CURRENT_BINARY_DIR}/sm_90_movement.c" COMMAND_ERROR_IS_FATAL ANY)
+execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/prepare-stats-movement.py" "${CMAKE_CURRENT_BINARY_DIR}/sm_90_movement.c" COMMAND_ERROR_IS_FATAL ANY)
+execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/prepare-seed-gameplay.py" "${CMAKE_CURRENT_BINARY_DIR}/sm_90_movement.c" COMMAND_ERROR_IS_FATAL ANY)
 list(FILTER GAME_SOURCES EXCLUDE REGEX "/sm_90\\.c$")
 execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/prepare_overlays.py"
   "${CMAKE_CURRENT_SOURCE_DIR}/../native-core/src" "${CMAKE_CURRENT_BINARY_DIR}"
   COMMAND_ERROR_IS_FATAL ANY)
-execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/../Scripts/prepare-mirror-gameplay.py" "${CMAKE_CURRENT_BINARY_DIR}" COMMAND_ERROR_IS_FATAL ANY)
+execute_process(COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/prepare-mirror-gameplay.py" "${CMAKE_CURRENT_BINARY_DIR}" COMMAND_ERROR_IS_FATAL ANY)
 foreach(BANK b3 a5 a7 a6 a3 a9 80 81 a8 8f 82 84 85 b4 a0 86 8b a2 aa 87 91 8d)
   list(FILTER GAME_SOURCES EXCLUDE REGEX "/sm_${BANK}\\.c$")
   list(APPEND GAME_SOURCES "${CMAKE_CURRENT_BINARY_DIR}/sm_${BANK}_native.c")

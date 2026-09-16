@@ -189,8 +189,13 @@ cd zebesproject
 git config core.hooksPath .githooks
 export SM_ENGINE="/path/to/UnrealEngine-5.8.2"
 # The game asks for your compatible ROM on first launch.
-./Scripts/build.sh
-./Scripts/play.sh
+python3 .github/check-distribution.py
+cmake -S Native -B Native/build -DCMAKE_BUILD_TYPE=Release
+cmake --build Native/build --parallel 2
+mkdir -p .tmp
+export TMPDIR="$PWD/.tmp"
+"$SM_ENGINE/Engine/Build/BatchFiles/Linux/Build.sh" SMUnrealEditor Linux Development "$PWD/Unreal/SMUnreal.uproject" -MaxParallelActions=2 -NoUBA -NoUBALocal
+./Lancer-Super-Metroid.sh
 ```
 
 Supply your own licensed Unreal Engine installation, CMake, a C compiler,
@@ -202,6 +207,11 @@ at runtime. Rebuilding optional data catalogs requires a separate full checkout
 of the pinned VARIA revision and your own ROM; normal compilation uses the
 reviewed committed recipes. Staging and push checks reject embedded original
 artwork and changed reconstruction recipes.
+
+The public tree excludes the development `Scripts` and `Tests` directories.
+The four source preparation tools required by CMake live in `Native/`; the
+provenance guard lives in `.github/`. Historical reports reference private test
+and packaging tools; use the commands above for the current public source build.
 
 [Developer notes](Docs/DEVELOPMENT-GUIDE.md) ·
 [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) ·

@@ -1,3 +1,7 @@
+> **Public source layout:** development scripts and test harnesses referenced below
+> are retained in the private development repository. For current public build
+> commands, see the [README](https://github.com/lovenityjade/zebesproject#build-from-source-linux-development).
+
 # Linux AppImage
 
 ALPHA-0.24 provides `The_Zebes_Project-ALPHA-0.24-x86_64.AppImage`.

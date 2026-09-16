@@ -13,7 +13,7 @@ jobs:
         with:
           submodules: recursive
       - name: Verify ROM asset boundary
-        run: python3 Scripts/check-distribution.py
+        run: python3 .github/check-distribution.py
       - name: Compile native core without a ROM
         run: |
           cmake -S Native -B Native/build -DCMAKE_BUILD_TYPE=Release

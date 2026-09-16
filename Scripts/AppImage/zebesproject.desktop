@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=The Zebes Project
-Comment=Explore Zebes in Vanilla or Randomizer mode
-Exec=AppRun
-Icon=zebesproject
-Terminal=false
-Categories=Game;AdventureGame;
-StartupNotify=false

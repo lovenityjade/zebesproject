@@ -1,3 +1,7 @@
+> **Public source layout:** development scripts and test harnesses referenced below
+> are retained in the private development repository. For current public build
+> commands, see the [README](https://github.com/lovenityjade/zebesproject#build-from-source-linux-development).
+
 # Development guide
 
 See the [project README](../README.md) for current features, credits, license
