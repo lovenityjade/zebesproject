@@ -1,0 +1,483 @@
+{
+  "schema": 1,
+  "upstream": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5",
+  "ipsSha256": "adc26baeb068d7a0f438d9b448d72510b39a9f2cf8ffeca5a1ba30cb6c5871c1",
+  "dataBytes": 784,
+  "nativeHandlers": {
+    "35865": "PlmInstr_QueueSfx3_Max6",
+    "35442": "PlmInstr_GotoIfDoorBitSet",
+    "35364": "PlmInstr_SetLinkReg",
+    "34497": "PlmInstr_PreInstr",
+    "48399": "PlmPreInstr_GoToLinkInstrIfShot",
+    "34596": "PlmInstr_Goto",
+    "51121": "PlmSetup_Door_Colored"
+  },
+  "records": [
+    {
+      "color": "red",
+      "direction": 0,
+      "close": 63744,
+      "main": 63763,
+      "plm": 64432
+    },
+    {
+      "color": "red",
+      "direction": 1,
+      "close": 63787,
+      "main": 63806,
+      "plm": 64438
+    },
+    {
+      "color": "red",
+      "direction": 2,
+      "close": 63830,
+      "main": 63849,
+      "plm": 64444
+    },
+    {
+      "color": "red",
+      "direction": 3,
+      "close": 63873,
+      "main": 63892,
+      "plm": 64450
+    },
+    {
+      "color": "green",
+      "direction": 0,
+      "close": 63916,
+      "main": 63935,
+      "plm": 64456
+    },
+    {
+      "color": "green",
+      "direction": 1,
+      "close": 63959,
+      "main": 63978,
+      "plm": 64462
+    },
+    {
+      "color": "green",
+      "direction": 2,
+      "close": 64002,
+      "main": 64021,
+      "plm": 64468
+    },
+    {
+      "color": "green",
+      "direction": 3,
+      "close": 64045,
+      "main": 64064,
+      "plm": 64474
+    },
+    {
+      "color": "yellow",
+      "direction": 0,
+      "close": 64088,
+      "main": 64107,
+      "plm": 64480
+    },
+    {
+      "color": "yellow",
+      "direction": 1,
+      "close": 64131,
+      "main": 64150,
+      "plm": 64486
+    },
+    {
+      "color": "yellow",
+      "direction": 2,
+      "close": 64174,
+      "main": 64193,
+      "plm": 64492
+    },
+    {
+      "color": "yellow",
+      "direction": 3,
+      "close": 64217,
+      "main": 64236,
+      "plm": 64498
+    },
+    {
+      "color": "grey",
+      "direction": 0,
+      "close": 64260,
+      "main": 64279,
+      "plm": 64504
+    },
+    {
+      "color": "grey",
+      "direction": 1,
+      "close": 64303,
+      "main": 64322,
+      "plm": 64510
+    },
+    {
+      "color": "grey",
+      "direction": 2,
+      "close": 64346,
+      "main": 64365,
+      "plm": 64516
+    },
+    {
+      "color": "grey",
+      "direction": 3,
+      "close": 64389,
+      "main": 64408,
+      "plm": 64522
+    }
+  ],
+  "locations": [
+    {
+      "name": "LandingSiteRight",
+      "vanillaPlm": 64462,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 38028,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "KihunterBottom",
+      "vanillaPlm": 64498,
+      "flags": 5,
+      "romReplacements": {
+        "492118": [
+          255,
+          255,
+          6,
+          2,
+          14,
+          0
+        ]
+      },
+      "additionalPlms": null
+    },
+    {
+      "name": "KihunterRight",
+      "vanillaPlm": 64486,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 38399,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            13,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "GreenHillZoneTopRight",
+      "vanillaPlm": 64486,
+      "flags": 4,
+      "romReplacements": {
+        "493382": [
+          255,
+          255,
+          1,
+          38,
+          48,
+          0
+        ]
+      },
+      "additionalPlms": null
+    },
+    {
+      "name": "NoobBridgeRight",
+      "vanillaPlm": 64462,
+      "flags": 5,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 41555,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            70,
+            51,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "MainShaftBottomRight",
+      "vanillaPlm": 64438,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 40115,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            34,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "BigPinkBottomRight",
+      "vanillaPlm": 64462,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 40530,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            41,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "RedTowerElevatorLeft",
+      "vanillaPlm": 64480,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 41719,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            46,
+            6,
+            60,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "WestOceanRight",
+      "vanillaPlm": 64462,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 51720,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            12,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "LeCoudeBottom",
+      "vanillaPlm": 64498,
+      "flags": 5,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 38092,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            6,
+            2,
+            15,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "WreckedShipMainShaftBottom",
+      "vanillaPlm": 64474,
+      "flags": 2,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 52335,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            38,
+            2,
+            132,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "CathedralEntranceRight",
+      "vanillaPlm": 64438,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 42888,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            74,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "CathedralRight",
+      "vanillaPlm": 64462,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 44963,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            73,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "RedKihunterShaftBottom",
+      "vanillaPlm": 64498,
+      "flags": 2,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 46549,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            86,
+            2,
+            94,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "WastelandLeft",
+      "vanillaPlm": 64456,
+      "flags": 2,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 46635,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            46,
+            6,
+            95,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "MainStreetBottomRight",
+      "vanillaPlm": 64438,
+      "flags": 7,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 53386,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            141,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "CrabShaftRight",
+      "vanillaPlm": 64462,
+      "flags": 5,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 54695,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            22,
+            143,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "ColosseumBottomRight",
+      "vanillaPlm": 64462,
+      "flags": 2,
+      "romReplacements": null,
+      "additionalPlms": {
+        "room": 55183,
+        "plm_bytes_list": [
+          [
+            255,
+            255,
+            1,
+            6,
+            154,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "standard": [
+    "LandingSiteRight",
+    "KihunterBottom",
+    "KihunterRight",
+    "NoobBridgeRight",
+    "MainShaftBottomRight",
+    "BigPinkBottomRight",
+    "RedTowerElevatorLeft",
+    "WestOceanRight",
+    "LeCoudeBottom",
+    "CathedralEntranceRight",
+    "CathedralRight",
+    "MainStreetBottomRight",
+    "CrabShaftRight"
+  ],
+  "scope": "Exact IPS reconstruction and native handler existence; room insertion, state behavior and rendering remain unimplemented"
+}

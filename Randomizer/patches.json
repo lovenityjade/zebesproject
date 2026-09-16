@@ -1,0 +1,199 @@
+[
+  {
+    "id": "assisted_wall_jump",
+    "label": "Wall jump tolérant",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "native",
+    "implementation": "Native/sm_walljump.c",
+    "default": true,
+    "originalAvailable": true
+  },
+  {
+    "id": "spin_jump_restart",
+    "label": "Reprendre une vrille en l'air",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "spinjumprestart.ips",
+    "default": false
+  },
+  {
+    "id": "max_ammo_display",
+    "label": "Afficher les munitions maximales",
+    "scope": [
+      "randomizer"
+    ],
+    "status": "native",
+    "upstream": "max_ammo_display.ips",
+    "default": true,
+    "implementation": "Native/sm_varia_ui.c",
+    "activation": "Randomized slots only; optional local VARIA UI preferences",
+    "upstreamScope": [
+      "vanilla",
+      "randomizer"
+    ]
+  },
+  {
+    "id": "refill_before_save",
+    "label": "Recharge avant sauvegarde",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "refill_before_save.ips",
+    "default": false
+  },
+  {
+    "id": "better_reserves",
+    "label": "Réserves améliorées",
+    "scope": [
+      "randomizer"
+    ],
+    "status": "native",
+    "upstream": "better_reserves.ips",
+    "default": true,
+    "implementation": "Native/sm_varia_ui.c",
+    "activation": "Randomized slots only; optional local VARIA UI preferences",
+    "upstreamScope": [
+      "vanilla",
+      "randomizer"
+    ]
+  },
+  {
+    "id": "fast_doors",
+    "label": "Portes accélérées",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "fast_doors.ips",
+    "default": false
+  },
+  {
+    "id": "fast_elevators",
+    "label": "Ascenseurs accélérés",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "elevators_speed.ips",
+    "default": false
+  },
+  {
+    "id": "aim_any_button",
+    "label": "Visée souple",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "AimAnyButton.ips",
+    "default": false
+  },
+  {
+    "id": "disable_screen_shake",
+    "label": "Désactiver les secousses",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "disable_screen_shake.ips",
+    "default": false
+  },
+  {
+    "id": "reduce_flashing",
+    "label": "Réduire les flashes",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "noflashing.ips",
+    "default": false
+  },
+  {
+    "id": "color_blind",
+    "label": "Couleurs accessibles",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "color_blind.ips",
+    "default": false
+  },
+  {
+    "id": "item_sounds",
+    "label": "Sons d'objets raccourcis",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "itemsounds.ips",
+    "default": false
+  },
+  {
+    "id": "map_item_markers",
+    "label": "Marqueurs d'objets sur la carte",
+    "scope": [
+      "randomizer"
+    ],
+    "status": "native",
+    "upstream": "map.ips",
+    "default": true,
+    "implementation": "Native/sm_tracker.c",
+    "activation": "Randomized slots only; optional local VARIA UI preferences",
+    "note": "Native collection markers; PopTracker accessibility squares take precedence. Not the full map.ips overhaul.",
+    "upstreamScope": [
+      "vanilla",
+      "randomizer"
+    ]
+  },
+  {
+    "id": "randomizer_hud",
+    "label": "Progression et objectifs de la seed",
+    "scope": [
+      "randomizer"
+    ],
+    "status": "native",
+    "upstream": "varia_hud.asm",
+    "default": true,
+    "implementation": "Native/sm_varia_ui.c",
+    "activation": "Randomized slots only; optional local VARIA UI preferences"
+  },
+  {
+    "id": "widescreen",
+    "label": "Affichage panoramique natif",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "native",
+    "upstream": "widescreen.ips",
+    "default": true,
+    "note": "Rendu natif 400x224 dans Unreal ; option indépendante des seeds. Aucun patch de vitesse SNES appliqué.",
+    "implementation": "Native/sm_wide.inc"
+  },
+  {
+    "id": "msu1",
+    "label": "Bande-son MSU-1",
+    "scope": [
+      "vanilla",
+      "randomizer"
+    ],
+    "status": "pending-native",
+    "upstream": "supermetroid_msu1.ips",
+    "default": false,
+    "note": "Nécessite une adaptation audio native et les pistes de l'utilisateur."
+  }
+]

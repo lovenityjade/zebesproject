@@ -1,0 +1,34 @@
+{
+  "platform": "Win64",
+  "exports": 198,
+  "seeds": [
+    {
+      "seed": 14092026,
+      "fingerprint": "a6497e12a53954cfd4066b7319e270ea3776dfb0ea8fdd9cbe29c32e877389b6",
+      "checks": 100,
+      "progressionSteps": 110,
+      "completionVerified": true
+    },
+    {
+      "seed": 14092027,
+      "fingerprint": "8c2d71f4c20e614b9b275950fd7c76f45cfe9376a1551993d4ce90e2909b0b51",
+      "checks": 100,
+      "progressionSteps": 110,
+      "completionVerified": true
+    },
+    {
+      "seed": 14092028,
+      "fingerprint": "4ca112d8ffa453af713c9ee71482068f958be32796341be163ac8d376e1a8de5",
+      "checks": 100,
+      "progressionSteps": 110,
+      "completionVerified": true
+    }
+  ],
+  "isolatedBundledPython": true,
+  "noDeveloperPath": true,
+  "unicodeRomAndSave": true,
+  "replaceExistingSave": true,
+  "missingAndInvalidRomBlocked": true,
+  "nativeOpcodes": 0,
+  "renderedGameTested": false
+}

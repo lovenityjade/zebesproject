@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "previewRamSramClockAndStatsExact": true,
+  "previewReturnsByStartAndCompletion": true,
+  "sections": {
+    "0": 400,
+    "1": 800,
+    "2": 1280,
+    "3": 5200,
+    "4": 7200
+  },
+  "sourceRomUnchanged": true,
+  "nativeCpuOpcodes": 0,
+  "nativeSha256": "97d0f0769af0d3a1e789c836a2b4f544845e72c310df5a2a455f1240454763ad"
+}

@@ -1,0 +1,28 @@
+{
+  "presentation_version": 3,
+  "viewport": [
+    1280,
+    720
+  ],
+  "integer_scale": 3,
+  "pixel_blocks_uniform": true,
+  "maximum_channel_error": 0,
+  "gaussian_sigma_source_pixels": 1.25,
+  "overlay_opacity": 0.35,
+  "modes": {
+    "Lighten": {
+      "reference_max_channel_error": 1,
+      "reference_mean_channel_error": 0.02455680080191799,
+      "gui_unchanged": true,
+      "changed_display_pixels": 223525,
+      "smooth_overlay_blocks": 25492
+    },
+    "Multiply": {
+      "reference_max_channel_error": 1,
+      "reference_mean_channel_error": 0.027587890625,
+      "gui_unchanged": true,
+      "changed_display_pixels": 418983,
+      "smooth_overlay_blocks": 36403
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "width": 400,
+  "scale": 3,
+  "protectedTextPixels": 216783,
+  "textMaxError": 0,
+  "gaussianMaxError": 2,
+  "gaussianMeanError": 0.010184358465608466,
+  "atmosphereChangedPixels": 59203
+}

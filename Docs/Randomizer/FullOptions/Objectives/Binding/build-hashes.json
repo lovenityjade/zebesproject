@@ -1,0 +1,30 @@
+{
+  "native": "1a83b5f5c1e04b0367a6a8d5c1cd1b3148be259b4c549298420393474f191369",
+  "game": "64b25e482e530427ed759c6d11e0c8c9d4dacb24cf2b085ed35ecce38fc92abf",
+  "editor": "31e743880a6f14ef4f755392c960b8bf96513badee7d4079b36512b184f9e9d3",
+  "source": {
+    "Native/sm_bridge.c": "6f59702d82c80e44f2b92ecb78b7a01c6ff63e12242821209db8ee9eaa43f9b3",
+    "Native/sm_seed.c": "c97095bdd0d4f7312e64c9b5d9f63672c44bff4b7978a4f512d26ddcf3c1b87d",
+    "Randomizer/sm_objectives.py": "f45281ef9bc09e5033460bd52701478a2a72b9a524d6575e1d558328c6b32aea",
+    "Randomizer/sm_integration.py": "87ebff7076553d0defde4c1cb6fa949d1bd8cc6bfac162a8cbc77cc21337d1ab",
+    "Randomizer/sm_tracker_data.py": "488fe81c6f11767b4f8cec24708aa2f6c0aa5d3f2727658973e0ecf766be9037",
+    "Unreal/Source/SMUnreal/SMRandomizer.cpp": "acfcc17c84246ac43ba845b24367d93ae1ede19829c3eff8574e74c7aaa4c5e3",
+    "Unreal/Source/SMUnreal/SMProfiles.cpp": "31f9f7dbc4b58c50eb62d9552d180e9e03423558f9b025efaaa58860a4e95846",
+    "Unreal/Source/SMUnreal/SMSystemMenu.cpp": "96c66791862b97bd1834dcf7116999c72bf3fa5b1f094db0fb4797e48a00fcb5",
+    "Unreal/Source/SMUnreal/SMHUD.cpp": "2f6ca911097ec63f7574d0323d87719afa009edf5ede5757b9da2f1e8a5cf3c0"
+  },
+  "proofs": {
+    "catalog.json": "12e99483351e33ba10965dc86009970b633f4218a3c6c174ae538d0e9582e18f",
+    "conditions-results.json": "428362e94c488b3ad60bcb3ae9c57609a59dd1cfb2c2dd7e4d4d0d1a40996380",
+    "events-audit.json": "61c66b5516c9fcaf288f1cb0e31a2f2ee6c33395c58f8027bc3fbd40863dc2ec",
+    "map-audit.json": "1dd8d33e6eda42f71f20c3db06f134e664c9331e2bfc6bf39ec487f1469484d6",
+    "pause-verification.json": "d0ec0908e95ff3406316d3e4cff4a35f3e73a6f5d7ea2d44e86bbfdf2455cbd5",
+    "render-results.json": "cbcd923404efd4d53aa31443033dcb44746479bb34b579c06b11b2efa09a6e16",
+    "seeds-verification.json": "802c434db6ef889ba2396244cf061bf2859924e61fb3574dd5d1912ddac53e3a",
+    "area-bank-verification.json": "6dbcbb28128d4d2b00039b02bfe44c970fa8d776162d99cde5137687aa797f64",
+    "chozo-bank-verification.json": "8be9e047996cb562dd69d37afb4b9711ca2aafc462b6410cd219f726c9e2ad28",
+    "historical-bank-verification.json": "9e8418892b345bb2d339c95185321346d1d2db91e81b98ddcf261cc6c467526b",
+    "preservation.json": "ca5c5fde844fe51fdb8b9888de4694765caeb645f00ed08132ea62d4741c0347",
+    "tracker/verification.json": "e9489070f89b3da33bbe9e9303af69c210f3573767a4486d630612abce828dc6"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 14092026,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "Missile",
+      "awakened": false,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 14092027,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "Morph",
+      "awakened": true,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 14092028,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "Morph",
+      "awakened": false,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 14092029,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "Missile",
+      "awakened": true,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 14092030,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "Missile",
+      "awakened": false,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 14092031,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "Missile",
+      "awakened": true,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 14092032,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "HiJump",
+      "awakened": false,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        0,
+        0,
+        0,
+        256,
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 14092040,
+      "itemsReadBack": 100,
+      "startRoom": "91f8",
+      "frame": 1760,
+      "cpuOpcodes": 0,
+      "realPickup": "PowerBomb",
+      "awakened": false,
+      "locationBitConfirmed": true,
+      "inventoryBefore": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventoryAfter": [
+        99,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidAddressesRejected": true,
+  "vanillaSaveRejected": true,
+  "liveMutationRejected": true,
+  "vanillaTableRestored": true,
+  "sourceRomUnchanged": true,
+  "scope": "Real C-only boots, 100 item words read back, normal PLM collision pickups from a positioned test fixture in sleeping/awakened Morph room, matching inventory and message; complete progression is verified separately by the solver."
+}

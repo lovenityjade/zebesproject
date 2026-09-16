@@ -1,0 +1,441 @@
+{
+  "sources": {
+    "patches/common/ips/rando_escape_common.ips": "e231e519ad8b5d0127e01866bc48839a59af552d0ebe4a06e5b880c5072482ae",
+    "patches/vanilla/ips/rando_escape.ips": "0b91625d0cfd788141ea890283f7959b8c208b42421a5b62f27a16ddefa03c93",
+    "patches/vanilla/ips/rando_escape_ws_fix.ips": "aaf774bd59222d42c6da15fa2c55600ec764c4d176af06f520bab9299d4357ad",
+    "patches/vanilla/ips/map_data_escape_rando.ips": "8d95306d67cf318faedb3c8339fc31eb2531e878c57c32d6402d5d135a1da438"
+  },
+  "enemyTable": [
+    {
+      "room": 42974,
+      "population": 61534,
+      "graphics": 35565
+    },
+    {
+      "room": 42657,
+      "population": 39140,
+      "graphics": 34089
+    },
+    {
+      "room": 43405,
+      "population": 47886,
+      "graphics": 35601
+    },
+    {
+      "room": 38442,
+      "population": 35295,
+      "graphics": 33267
+    },
+    {
+      "room": 41762,
+      "population": 61553,
+      "graphics": 34367
+    },
+    {
+      "room": 38092,
+      "population": 35700,
+      "graphics": 33365
+    },
+    {
+      "room": 54027,
+      "population": 61591,
+      "graphics": 36229
+    },
+    {
+      "room": 40607,
+      "population": 61610,
+      "graphics": 33717
+    },
+    {
+      "room": 38837,
+      "population": 35681,
+      "graphics": 33355
+    },
+    {
+      "room": 39641,
+      "population": 61572,
+      "graphics": 34113
+    },
+    {
+      "room": 39224,
+      "population": 34163,
+      "graphics": 32979
+    },
+    {
+      "room": 44863,
+      "population": 42308,
+      "graphics": 34621
+    },
+    {
+      "room": 45622,
+      "population": 61629,
+      "graphics": 35133
+    },
+    {
+      "room": 55646,
+      "population": 56922,
+      "graphics": 36904
+    },
+    {
+      "room": 42602,
+      "population": 36993,
+      "graphics": 33587
+    }
+  ],
+  "populations": [
+    {
+      "address": 1110110,
+      "data": [
+        63,
+        215,
+        128,
+        0,
+        194,
+        2,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        1,
+        0,
+        24,
+        0,
+        255,
+        255,
+        0
+      ]
+    },
+    {
+      "address": 1110129,
+      "data": [
+        63,
+        215,
+        128,
+        0,
+        194,
+        2,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        1,
+        0,
+        24,
+        0,
+        255,
+        255,
+        0
+      ]
+    },
+    {
+      "address": 1110167,
+      "data": [
+        63,
+        215,
+        128,
+        0,
+        192,
+        2,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        1,
+        0,
+        24,
+        0,
+        255,
+        255,
+        0
+      ]
+    },
+    {
+      "address": 1110186,
+      "data": [
+        63,
+        215,
+        128,
+        5,
+        194,
+        2,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        1,
+        0,
+        24,
+        0,
+        255,
+        255,
+        0
+      ]
+    },
+    {
+      "address": 1110148,
+      "data": [
+        63,
+        215,
+        128,
+        0,
+        194,
+        2,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        1,
+        0,
+        24,
+        0,
+        255,
+        255,
+        0
+      ]
+    },
+    {
+      "address": 1110205,
+      "data": [
+        63,
+        215,
+        128,
+        4,
+        162,
+        2,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        1,
+        0,
+        24,
+        0,
+        255,
+        255,
+        0
+      ]
+    }
+  ],
+  "roomSpans": [
+    {
+      "address": 509992,
+      "size": 1,
+      "sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977"
+    },
+    {
+      "address": 510006,
+      "size": 1,
+      "sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977"
+    },
+    {
+      "address": 491953,
+      "size": 1,
+      "sha256": "c555eab45d08845ae9f10d452a99bfcb06f74a50b988fe7e48dd323789b88ee3"
+    },
+    {
+      "address": 491599,
+      "size": 1,
+      "sha256": "c555eab45d08845ae9f10d452a99bfcb06f74a50b988fe7e48dd323789b88ee3"
+    },
+    {
+      "address": 508666,
+      "size": 1,
+      "sha256": "c555eab45d08845ae9f10d452a99bfcb06f74a50b988fe7e48dd323789b88ee3"
+    },
+    {
+      "address": 494342,
+      "size": 6,
+      "sha256": "70c62bfc437d975d3f2fe84a9219ad91b75084f7a8bb19945bbcd826d4102895"
+    },
+    {
+      "address": 509255,
+      "size": 6,
+      "sha256": "67ebeeae01c1813e5b7c422e7117841c324b994b981ea70a7bf9f17e9a6ff698"
+    },
+    {
+      "address": 492728,
+      "size": 6,
+      "sha256": "da0cb7777d6dcd71e51ed9d49349b660e99dee6b65194b9cab93c65164c34756"
+    },
+    {
+      "address": 520192,
+      "size": 16,
+      "sha256": "308c89430b9092013c18bdf7178521fc0aca96aadc11f6cd191bd5dd6a9fa60c"
+    },
+    {
+      "address": 520262,
+      "size": 2,
+      "sha256": "189d4883529028b6aee913d0e17ecb98942e4d1224da8ef14af99a691bf4b003"
+    },
+    {
+      "address": 109984,
+      "size": 12,
+      "sha256": "80dbd6208e0d9dcfc154fafab63f20e56a52fb8162558e4f81428d360494f0f7"
+    },
+    {
+      "address": 110008,
+      "size": 12,
+      "sha256": "80dbd6208e0d9dcfc154fafab63f20e56a52fb8162558e4f81428d360494f0f7"
+    },
+    {
+      "address": 110032,
+      "size": 12,
+      "sha256": "80dbd6208e0d9dcfc154fafab63f20e56a52fb8162558e4f81428d360494f0f7"
+    },
+    {
+      "address": 110056,
+      "size": 12,
+      "sha256": "80dbd6208e0d9dcfc154fafab63f20e56a52fb8162558e4f81428d360494f0f7"
+    },
+    {
+      "address": 2244051,
+      "size": 2741,
+      "sha256": "2af4567802cffa5c8742fd778972d6e778a70cf062c6f42ebe08a41c5d0e5fe9"
+    },
+    {
+      "address": 2246792,
+      "size": 2302,
+      "sha256": "f88310bb83bd3023d1fed496260b75c7118a57c1fe1a315170e8bae3316b4d2b"
+    },
+    {
+      "address": 1737040,
+      "size": 2,
+      "sha256": "6c54b558756aa9f6402748c0b8f1f3d7b83aa502e00c50c3d8ff587ab86f89d0"
+    },
+    {
+      "address": 1737038,
+      "size": 2,
+      "sha256": "6c54b558756aa9f6402748c0b8f1f3d7b83aa502e00c50c3d8ff587ab86f89d0"
+    },
+    {
+      "address": 1737036,
+      "size": 2,
+      "sha256": "6c54b558756aa9f6402748c0b8f1f3d7b83aa502e00c50c3d8ff587ab86f89d0"
+    },
+    {
+      "address": 1737034,
+      "size": 2,
+      "sha256": "6c54b558756aa9f6402748c0b8f1f3d7b83aa502e00c50c3d8ff587ab86f89d0"
+    },
+    {
+      "address": 1745234,
+      "size": 2,
+      "sha256": "6c54b558756aa9f6402748c0b8f1f3d7b83aa502e00c50c3d8ff587ab86f89d0"
+    },
+    {
+      "address": 1750298,
+      "size": 2,
+      "sha256": "6c54b558756aa9f6402748c0b8f1f3d7b83aa502e00c50c3d8ff587ab86f89d0"
+    },
+    {
+      "address": 1754274,
+      "size": 2,
+      "sha256": "6c54b558756aa9f6402748c0b8f1f3d7b83aa502e00c50c3d8ff587ab86f89d0"
+    }
+  ],
+  "mapTiles": [
+    {
+      "area": 1,
+      "region": 2,
+      "byte": 21,
+      "mask": 128
+    },
+    {
+      "area": 1,
+      "region": 2,
+      "byte": 20,
+      "mask": 1
+    },
+    {
+      "area": 1,
+      "region": 2,
+      "byte": 20,
+      "mask": 2
+    },
+    {
+      "area": 1,
+      "region": 2,
+      "byte": 20,
+      "mask": 4
+    },
+    {
+      "area": 2,
+      "region": 6,
+      "byte": 21,
+      "mask": 64
+    },
+    {
+      "area": 3,
+      "region": 4,
+      "byte": 81,
+      "mask": 4
+    },
+    {
+      "area": 4,
+      "region": 9,
+      "byte": 74,
+      "mask": 64
+    }
+  ],
+  "wsLevel": {
+    "state": 52002,
+    "address": 2244032,
+    "oldCompressedSize": 5063,
+    "newCompressedSize": 2761,
+    "decompressedSize": 36866,
+    "changes": [
+      {
+        "offset": 20697,
+        "before": 129,
+        "after": 193
+      },
+      {
+        "offset": 20699,
+        "before": 129,
+        "after": 193
+      },
+      {
+        "offset": 20889,
+        "before": 129,
+        "after": 193
+      },
+      {
+        "offset": 20891,
+        "before": 129,
+        "after": 193
+      },
+      {
+        "offset": 34925,
+        "before": 0,
+        "after": 11
+      },
+      {
+        "offset": 34926,
+        "before": 0,
+        "after": 11
+      },
+      {
+        "offset": 35021,
+        "before": 0,
+        "after": 11
+      },
+      {
+        "offset": 35022,
+        "before": 0,
+        "after": 11
+      }
+    ]
+  }
+}

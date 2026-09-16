@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "queries": 3394,
+  "doorCases": 400,
+  "directedAreaPairs": 1024,
+  "directedBossPairs": 32,
+  "vanillaUntouched": true,
+  "committedWorldOnly": true,
+  "renderDoesNotMutateRam": true,
+  "nativeSha256": "76f0479b2068a93891b8f18f5844ac35ea61dde5ff22a8c642a1d48270a4a7b3",
+  "cpu": 0,
+  "sourceRomUnchanged": true,
+  "scope": "Real C-core frames + embedded oracle + native pause/minimap pixel checks."
+}

@@ -1,0 +1,51 @@
+// Authored source anchors from the native scene, evaluated at output resolution.
+// Rows of CinemaTexture: (x,y,radius,type), (rgb,power), (direction,length,phase).
+if(CinemaState.x>.5) {
+    float2 Screen=UV*Size-float2((ViewWidth-256)*.5,0);
+    [loop] for(int I=0;I<min(32,(int)CinemaState.x);I++) {
+        float4 L=Texture2DSampleLevel(CinemaTexture,CinemaTextureSampler,float2((I+.5)/32,1.0/6),0);
+        float4 C=Texture2DSampleLevel(CinemaTexture,CinemaTextureSampler,float2((I+.5)/32,.5),0);
+        float4 D=Texture2DSampleLevel(CinemaTexture,CinemaTextureSampler,float2((I+.5)/32,5.0/6),0);
+        float2 Q=Screen-L.xy;
+        float Time=CinemaState.y;
+        if(L.w<1.5) {
+            float Pulse=.2+.8*pow(.5+.5*sin(Time*1.7+D.w),5);
+            float Glow=exp(-dot(Q,Q)/10)*.18;
+            float Cross=exp(-abs(Q.x)*3-abs(Q.y)*.65)+exp(-abs(Q.y)*3-abs(Q.x)*.65);
+            Result+=C.rgb*C.w*(Glow+Cross*.28)*Pulse;
+        } else if(L.w<2.5) {
+            float Pulse=.8+.2*sin(Time*2+D.w);
+            Result+=C.rgb*C.w*exp(-dot(Q,Q)/(L.z*L.z))*.65*Pulse;
+        } else if(L.w<3.5) {
+            float Along=dot(Q,D.xy),Side=dot(Q,float2(-D.y,D.x));
+            float T=saturate(Along/max(1,D.z));
+            float Flicker=.88+.08*sin(Time*37+D.w)+.04*sin(Time*61+D.w*2);
+            float Width=max(.4,L.z*(1-T)*(.85+.15*sin(Along*.6-Time*18+D.w)));
+            float Jet=exp(-pow(Side/Width,2))*exp(-T*3)*smoothstep(-1.5,1,Along)*(1-smoothstep(.7,1,T));
+            float Core=exp(-pow(Side/max(.4,Width*.4),2))*exp(-T*7)*smoothstep(-1,1,Along);
+            float Halo=exp(-dot(Q,Q)/(L.z*L.z*5));
+            Result+=C.w*Flicker*(C.rgb*(Jet*.6+Halo*.12)+float3(.55,.78,1)*Core*.72);
+            // Small motes stream away from the nozzle with the same transformed axis.
+            [unroll] for(int K=0;K<4;K++) {
+                float Age=frac(Time*(.9+K*.11)+K*.27+D.w);
+                float2 P=D.xy*(Age*D.z)+float2(-D.y,D.x)*sin(K*12.3+D.w)*L.z*(.4+Age);
+                Result+=float3(.55,.72,1)*exp(-dot(Q-P,Q-P)/.7)*pow(1-Age,2)*C.w*.22;
+            }
+        } else if(L.w<4.5) {
+            float2 V=Q/float2(L.z,L.z*D.z);
+            float R=length(V);
+            float Rim=exp(-pow((R-1.015)/.045,2));
+            float Halo=exp(-pow(max(0,R-1)/.18,2))*smoothstep(.95,1.035,R);
+            Result+=C.rgb*C.w*(Rim*.24+Halo*.13)*saturate(.75-V.y*.25);
+        } else {
+            // Smooth, restrained vapor over the original laboratory floor.
+            // No tile mask and no block noise; the native zoom moves this volume.
+            float2 V=Q/float2(max(1,L.z),max(1,D.z));
+            float Cloud=Weather.cloud(Screen*float2(.025,.065)+float2(Time*.06,-Time*.012));
+            float Edge=smoothstep(0,8,Screen.x)*(1-smoothstep(248,256,Screen.x));
+            float Vapor=exp(-dot(V,V))*(.35+.65*Cloud)*C.w*Edge;
+            Result=lerp(Result,C.rgb,saturate(Vapor));
+        }
+    }
+    Result=saturate(Result);
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "seed": 14092032,
+  "fingerprint": "f9cc2f3e2a205ad2f62253df56e97419df2a3d7be229b936bfd09bf60240133d",
+  "slot": 0,
+  "acquired": "0104",
+  "equipped": "0104",
+  "checks": [
+    "Morphing Ball",
+    "Energy Tank, Brinstar Ceiling"
+  ],
+  "reachable": [
+    "Missile (blue Brinstar middle)",
+    "Missile (blue Brinstar bottom)"
+  ],
+  "unblocked": [
+    "Missile (blue Brinstar middle)",
+    "Missile (blue Brinstar bottom)"
+  ],
+  "cpuOpcodes": 0
+}

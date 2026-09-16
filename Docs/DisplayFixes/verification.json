@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "hudCases": 36,
+  "allWeaponsAndReservesPixelExact": true,
+  "messagePixelsExact": true,
+  "pauseMapAndEquipmentHudExact": true,
+  "countdownPixelsExact": true,
+  "dialogAndDoorTimingUnchanged": true,
+  "timings": {
+    "0": {
+      "transitionFrames": 105,
+      "messageFrames": 398,
+      "maxStepMs": 5.765542999142781,
+      "meanStepMs": 3.2966999948010938
+    },
+    "1": {
+      "transitionFrames": 105,
+      "messageFrames": 398,
+      "maxStepMs": 6.466710998211056,
+      "meanStepMs": 4.748909707552106
+    }
+  },
+  "userSaveUnchanged": true,
+  "testSave": "Unreal/Saved/SMTests/HUD-all-items.sram",
+  "scope": "Real native door and queued message lifecycles; full HUD pixel correspondence. GPU captures checked separately."
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "seed": 15092050,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 18
+      },
+      {
+        "step": 20,
+        "green": 28
+      },
+      {
+        "step": 50,
+        "green": 67
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092051,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 12
+      },
+      {
+        "step": 20,
+        "green": 66
+      },
+      {
+        "step": 50,
+        "green": 78
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092052,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 32
+      },
+      {
+        "step": 20,
+        "green": 35
+      },
+      {
+        "step": 50,
+        "green": 68
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092053,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 22
+      },
+      {
+        "step": 20,
+        "green": 57
+      },
+      {
+        "step": 50,
+        "green": 70
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092055,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 11
+      },
+      {
+        "step": 20,
+        "green": 29
+      },
+      {
+        "step": 50,
+        "green": 56
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092054,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 32
+      },
+      {
+        "step": 20,
+        "green": 43
+      },
+      {
+        "step": 50,
+        "green": 57
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  }
+]

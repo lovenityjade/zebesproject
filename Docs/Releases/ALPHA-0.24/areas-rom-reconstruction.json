@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "originalRomSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "payloadSha256": "485fcda151fcf36afcb221540176729c8147fcbe81c9073ecd5c53b03783ba0d",
+  "recipeSha256": "ab973632c67e256edaf2b0cd495542dd69f4ade5c9ca4721123e62a8590a8985",
+  "sourceLevels": 2,
+  "changedLevelBytes": 46,
+  "authoredRecordBytes": 166,
+  "reconstructedBytes": 6509,
+  "byteExactReconstruction": true,
+  "levels": [
+    {
+      "patch": "crab_shaft.ips",
+      "sourceRoomAddress": 13296728,
+      "rooms": [
+        "Crab Shaft"
+      ],
+      "changedBytes": 4,
+      "compressionTemplateBytes": 1092,
+      "reconstructedSha256": "9051d59d6f27623e18ebd7760facb7aafe3ff2d452d124cc131d4dbb313544e5"
+    },
+    {
+      "patch": "area_rando_warp_door.ips",
+      "sourceRoomAddress": 13419055,
+      "rooms": [
+        "Below Botwoon Energy Tank"
+      ],
+      "changedBytes": 42,
+      "compressionTemplateBytes": 807,
+      "reconstructedSha256": "31907eb6bc919b489b5e852da2b2e4d9647a0b1dcefa37b0aa560ff1ed975c38"
+    }
+  ]
+}

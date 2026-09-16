@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "nativeLifecycle": true,
+  "comparedFrames": 720,
+  "captures": [
+    {
+      "tick": 90,
+      "mode": 0,
+      "originalPixelsExact": true
+    },
+    {
+      "tick": 190,
+      "mode": 0,
+      "originalPixelsExact": true
+    },
+    {
+      "tick": 350,
+      "mode": 1,
+      "originalPixelsExact": true
+    },
+    {
+      "tick": 540,
+      "mode": 0,
+      "originalPixelsExact": true
+    }
+  ]
+}

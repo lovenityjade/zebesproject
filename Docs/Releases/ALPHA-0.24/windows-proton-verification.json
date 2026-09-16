@@ -1,0 +1,28 @@
+{
+  "platform": "Windows x64 cooked Development package under Proton Experimental",
+  "host": "gaming-pc",
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "api": "D3D11 / DXVK",
+  "proton": "1788804323 experimental-11.0-20260903c-x86_64",
+  "umu": "1.4.1",
+  "isolatedPrefix": true,
+  "playerSavesUntouched": true,
+  "headlessChecks": {
+    "ROM": "PASS",
+    "SEED_SHARING": "PASS",
+    "PROFILE": "PASS",
+    "TRACKER": "PASS"
+  },
+  "renderedTitleAndSaveSelectionVisuallyInspected": true,
+  "screenshotSha256": {
+    "title-wide-ready.png": "5220248db5ca9fe6ddec74e37da9d2f7b47bd91863ae72d0d0a35c4ce2b71dd2",
+    "title-wide-save-select.png": "3a116b55a9c6d81759ff1e57daff5f6e005d38bd12f70ed480703553c2f2345d"
+  },
+  "privatePackageSha256": "82dba0ff03a04617f25a00007d1b1e679442dcc4e49e9accf07dade7df7247b6",
+  "distributionCleared": false,
+  "limitations": [
+    "This package predates the ROM asset reconstruction changes and must not be published.",
+    "Full gameplay, audio and performance are not certified by these checks.",
+    "The prior Windows Editor save-selection capture remains a separate unresolved capture issue."
+  ]
+}

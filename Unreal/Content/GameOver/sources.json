@@ -1,0 +1,25 @@
+{
+  "source": "User-supplied Game Over artwork and music",
+  "files": [
+    {
+      "source": "gameover-16:9.png",
+      "runtime": "GameOver-16x9.png",
+      "sha256": "ca56ab8e789e69b49783e57a287ce47b841219072b25e44f286a4e8b2b89f22d"
+    },
+    {
+      "source": "gameover-4:3.png",
+      "runtime": "GameOver-4x3.png",
+      "sha256": "a1ba2228849e53ee1e01585061d5812e0b0549f9bc18e93bbb9f294d2e1455a6"
+    },
+    {
+      "source": "gameover.mp3",
+      "runtime": "GameOver.pcm",
+      "sourceSha256": "3026dd1b30312b689574d39b09889fa2fdfc1d8850f38c361f774dd82d2054ba",
+      "sha256": "cb24be7b850bb0a0d189727cf0e8d1415ae402622a73667cf34dca8ec80b0f6a",
+      "frames": 5277888,
+      "sampleRate": 44100,
+      "channels": 2,
+      "loopFrame": 0
+    }
+  ]
+}

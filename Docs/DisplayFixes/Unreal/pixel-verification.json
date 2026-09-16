@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "viewport": [
+    1280,
+    720
+  ],
+  "source": [
+    400,
+    224
+  ],
+  "origin": [
+    40,
+    24
+  ],
+  "scale": 3,
+  "captures": [
+    {
+      "capture": "display-00",
+      "uiPixels": 25623,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-01",
+      "uiPixels": 58455,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-02",
+      "uiPixels": 58455,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-03",
+      "uiPixels": 25623,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-04",
+      "uiPixels": 25623,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-05",
+      "uiPixels": 25623,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-06",
+      "uiPixels": 25623,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-07",
+      "uiPixels": 26136,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-08",
+      "uiPixels": 26136,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-09",
+      "uiPixels": 717336,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-10",
+      "uiPixels": 717336,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-11",
+      "uiPixels": 717336,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-12",
+      "uiPixels": 26136,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-13",
+      "uiPixels": 34200,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "display-14",
+      "uiPixels": 34182,
+      "maxChannelError": 0
+    }
+  ]
+}

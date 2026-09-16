@@ -1,0 +1,4 @@
+// Generated pinned escape identities.
+static const TCHAR* NativeEscapeCatalog=TEXT("52ab6049991b71e1b32991ee2c99a3516e8de1d915c6d22b908cfd6bc1de9f18");
+static const TCHAR* NativeEscapeEndpoints[]={TEXT("Tourian Escape Room 4 Top Right"),TEXT("Climb Bottom Left"),TEXT("Brinstar Pre-Map Room Right"),TEXT("Green Brinstar Main Shaft Top Left"),TEXT("Wrecked Ship Map Room"),TEXT("Basement Left"),TEXT("Norfair Map Room"),TEXT("Business Center Mid Left"),TEXT("Maridia Map Room"),TEXT("Crab Hole Bottom Right"),TEXT("Flyway Right 0"),TEXT("Bomb Torizo Room Left"),TEXT("Flyway Right 1"),TEXT("Flyway Right 2"),TEXT("Flyway Right 3"),TEXT("Bomb Torizo Room Left Animals"),TEXT("Flyway Right")};
+static const uint16 NativeEscapeDoors[]={43828,35694,36162,36018,41656,41632,38850,37638,42472,42268,44460,35754,44484,44508,44532,44544,35778};

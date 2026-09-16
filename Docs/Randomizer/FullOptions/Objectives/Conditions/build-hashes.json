@@ -1,0 +1,12 @@
+{
+  "native": "76f0479b2068a93891b8f18f5844ac35ea61dde5ff22a8c642a1d48270a4a7b3",
+  "objectiveCatalog": "a752e646fb5e28d7e39c41f41f971e6c897bf76a5538fa1cc4d5b394bc025324",
+  "captureModule": "4b95ac3a5bce12d463a26a776881ec4660ce6b5557d7de5b3f5b8236b21fa354",
+  "proofs": {
+    "tourian-results.json": "591fcf29161285b5d1daf1a8f63dd7d5851766ef6a700a0ea755403a76ac2329",
+    "conditions-results.json": "372d195733f75395036183101974a57c1ad3e24a0d70d62d5400b71ea82cf49a",
+    "events-results.json": "438b82bae6f4975296f3de2d19394a7200e0146082fafd2c5fccfd2d05b6a78e",
+    "map-results.json": "c52d4d68f8767cfbbdb8adf1061307b2acd093f4b703d2ae9f94127afe6ac027",
+    "capture-results.json": "86e2f77475b1c84be357e08e7a420efdb27a773f5eef0da682f745717754d87b"
+  }
+}

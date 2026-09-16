@@ -1,0 +1,28 @@
+[Unit]
+Description=The Zebes Project private run receiver
+After=network.target
+
+[Service]
+Type=simple
+User=zebes-receiver
+Group=zebes-receiver
+WorkingDirectory=/opt/zebes-receiver
+EnvironmentFile=/etc/zebes-receiver.env
+ExecStart=/opt/zebes-receiver/venv/bin/gunicorn --bind 127.0.0.1:28740 --workers 1 --threads 2 --timeout 15 --access-logfile - app:create_app()
+Restart=on-failure
+RestartSec=5
+StateDirectory=zebes-receiver
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_UNIX
+
+[Install]
+WantedBy=multi-user.target

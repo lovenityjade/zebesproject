@@ -1,0 +1,137 @@
+[
+  {
+    "seed": 15092060,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 22
+      },
+      {
+        "step": 20,
+        "green": 76
+      },
+      {
+        "step": 50,
+        "green": 85
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092061,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 26
+      },
+      {
+        "step": 20,
+        "green": 26
+      },
+      {
+        "step": 50,
+        "green": 70
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092062,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 22
+      },
+      {
+        "step": 20,
+        "green": 47
+      },
+      {
+        "step": 50,
+        "green": 80
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092063,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 22
+      },
+      {
+        "step": 20,
+        "green": 29
+      },
+      {
+        "step": 50,
+        "green": 50
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092064,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 22
+      },
+      {
+        "step": 20,
+        "green": 32
+      },
+      {
+        "step": 50,
+        "green": 79
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "native": {
+    "frame": 1146,
+    "room": "d48e",
+    "state": 8,
+    "fx": 6,
+    "water_y": 16,
+    "heated": 0,
+    "cpu_opcodes": 0
+  },
+  "gaussian_reference_max_error": 3,
+  "gaussian_reference_mean_error": 0.14833286830357142,
+  "cases": {
+    "rain": {
+      "changed_pixels": 254515,
+      "mean_channel_difference": 2.747609617848876,
+      "hud_unchanged": true
+    },
+    "rain-moving": {
+      "changed_pixels": 253630,
+      "mean_channel_difference": 2.753875248015873,
+      "hud_unchanged": true
+    },
+    "fog": {
+      "changed_pixels": 309393,
+      "mean_channel_difference": 4.169184932002315,
+      "hud_unchanged": true
+    },
+    "water": {
+      "changed_pixels": 279357,
+      "mean_channel_difference": 5.236606496982474,
+      "hud_unchanged": true
+    },
+    "heat": {
+      "changed_pixels": 231812,
+      "mean_channel_difference": 2.088465453455688,
+      "hud_unchanged": true
+    },
+    "native": {
+      "changed_pixels": 438485,
+      "mean_channel_difference": 8.93832736545139,
+      "hud_unchanged": true
+    },
+    "gui-bypass": {
+      "changed_pixels": 350405,
+      "mean_channel_difference": 9.699787765583665,
+      "hud_unchanged": true
+    }
+  },
+  "note": "rain/fog/water/heat are isolated GPU previews on the same frame; native uses real environment flags.",
+  "rain_animated": true,
+  "water_clipped_at_surface": true,
+  "non_gameplay_bypassed": true
+}

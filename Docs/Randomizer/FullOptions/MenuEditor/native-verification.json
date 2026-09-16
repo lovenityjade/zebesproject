@@ -1,0 +1,263 @@
+{
+  "cases": [
+    {
+      "randomized": false,
+      "flags": 0,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 0,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 1,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 1,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 2,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 2,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 3,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 3,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 4,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 4,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 8,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 8,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 16,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 16,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 31,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": false,
+      "flags": 31,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 0,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 0,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 1,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 32
+    },
+    {
+      "randomized": true,
+      "flags": 1,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 32
+    },
+    {
+      "randomized": true,
+      "flags": 2,
+      "varia": 0,
+      "rainbowFrames": 20,
+      "damage": 40,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 2,
+      "varia": 1,
+      "rainbowFrames": 20,
+      "damage": 20,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 3,
+      "varia": 0,
+      "rainbowFrames": 20,
+      "damage": 40,
+      "doorIrqs": 32
+    },
+    {
+      "randomized": true,
+      "flags": 3,
+      "varia": 1,
+      "rainbowFrames": 20,
+      "damage": 20,
+      "doorIrqs": 32
+    },
+    {
+      "randomized": true,
+      "flags": 4,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 4,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 8,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 8,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 16,
+      "varia": 0,
+      "rainbowFrames": 300,
+      "damage": 600,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 16,
+      "varia": 1,
+      "rainbowFrames": 300,
+      "damage": 300,
+      "doorIrqs": 64
+    },
+    {
+      "randomized": true,
+      "flags": 31,
+      "varia": 0,
+      "rainbowFrames": 20,
+      "damage": 40,
+      "doorIrqs": 32
+    },
+    {
+      "randomized": true,
+      "flags": 31,
+      "varia": 1,
+      "rainbowFrames": 20,
+      "damage": 20,
+      "doorIrqs": 32
+    }
+  ],
+  "alignmentCases": 192,
+  "emulatedCpu": 0,
+  "romUnchanged": true
+}

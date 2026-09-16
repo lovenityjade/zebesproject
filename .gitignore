@@ -1,0 +1,42 @@
+# Local builds, releases and engine state (preserved on disk).
+/.tmp/
+/Build/
+/Releases/
+/Runtime/
+/Native/build/
+/Unreal/Binaries/
+/Unreal/Intermediate/
+/Unreal/Saved/
+/Unreal/DerivedDataCache/
+/Unreal/.vs/
+/Unreal/*.sln
+/Unreal/*.code-workspace
+/roms/
+__pycache__/
+*.py[cod]
+*.log
+*.sram
+*.srm
+*.sav
+*.snapshot
+*.bgra
+*.stats
+.env
+.env.*
+# Local capture/proof artifacts; authored docs and generator inputs remain tracked.
+/Docs/**/*.bin
+/Docs/**/*.dat
+/Docs/**/*.wav
+/Docs/**/*.mp4
+/Docs/**/*.ffconcat
+/Docs/**/*.png
+/Docs/**/*.gif
+!/Docs/References/PopTracker/pack/images/**/*.png
+/Docs/**/Proofs/
+/Docs/VisualPause/GamingPC/
+/Docs/GamingPC/
+/Assets/ChozoRelic/Drafts/
+/sm_ap_tracker-*.zip
+
+# Optional locally installed music; never part of source/release staging.
+/Soundtracks/

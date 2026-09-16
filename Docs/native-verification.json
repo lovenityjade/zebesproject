@@ -1,0 +1,64 @@
+{
+  "frames": 8357,
+  "cpu_opcodes": 0,
+  "audio_peak": 16994,
+  "transitions": [
+    {
+      "frame": 0,
+      "state": 0,
+      "room": 0,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "frame": 150,
+      "state": 1,
+      "room": 0,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "frame": 390,
+      "state": 4,
+      "room": 0,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "frame": 567,
+      "state": 2,
+      "room": 0,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "frame": 616,
+      "state": 30,
+      "room": 0,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "frame": 8258,
+      "state": 31,
+      "room": 0,
+      "x": 40,
+      "y": 147
+    },
+    {
+      "frame": 8326,
+      "state": 7,
+      "room": 57157,
+      "x": 128,
+      "y": 0
+    },
+    {
+      "frame": 8356,
+      "state": 8,
+      "room": 57157,
+      "x": 128,
+      "y": 0
+    }
+  ],
+  "core_only": true
+}

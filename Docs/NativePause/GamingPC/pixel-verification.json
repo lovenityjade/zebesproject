@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "viewport": [
+    1280,
+    720
+  ],
+  "source": [
+    400,
+    224
+  ],
+  "origin": [
+    40,
+    24
+  ],
+  "scale": 3,
+  "captures": [
+    {
+      "capture": "native-pause-100",
+      "uiPixels": 716823,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "native-pause-200",
+      "uiPixels": 716823,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "native-pause-350",
+      "uiPixels": 716823,
+      "maxChannelError": 0
+    },
+    {
+      "capture": "native-pause-520",
+      "uiPixels": 716823,
+      "maxChannelError": 0
+    }
+  ]
+}

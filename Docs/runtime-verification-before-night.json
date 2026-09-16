@@ -1,0 +1,471 @@
+{
+  "engine": "Unreal Engine 5.8.2",
+  "renderer": "Vulkan",
+  "test": "Same frozen Ceres frame: original, whole-scene Gaussian Lighten and Multiply",
+  "frame": 8550,
+  "state": 8,
+  "room": "df45",
+  "cpu_opcodes": 0,
+  "normal_exit": true,
+  "captures": [
+    "Docs/Captures/Original.png",
+    "Docs/Captures/Lighten.png",
+    "Docs/Captures/Multiply.png"
+  ],
+  "pixel_verification": {
+    "presentation_version": 3,
+    "viewport": [
+      1280,
+      720
+    ],
+    "integer_scale": 3,
+    "pixel_blocks_uniform": true,
+    "maximum_channel_error": 0,
+    "gaussian_sigma_source_pixels": 1.25,
+    "overlay_opacity": 0.35,
+    "modes": {
+      "Lighten": {
+        "reference_max_channel_error": 1,
+        "reference_mean_channel_error": 0.02455680080191799,
+        "gui_unchanged": true,
+        "changed_display_pixels": 223525,
+        "smooth_overlay_blocks": 25492
+      },
+      "Multiply": {
+        "reference_max_channel_error": 1,
+        "reference_mean_channel_error": 0.027587890625,
+        "gui_unchanged": true,
+        "changed_display_pixels": 418983,
+        "smooth_overlay_blocks": 36403
+      }
+    }
+  },
+  "limitations": [
+    "Gaussian composition validated in Vulkan at Ceres; popup protection inspected in code, not exercised by this capture.",
+    "Full-game traversal, true widescreen and standalone packaging remain pending.",
+    "Depth and parallax checked at Ceres and Crateria landing site; other rooms, bosses and transitions need individual validation."
+  ],
+  "presentation_version": 3,
+  "parallax_verification": {
+    "room": "0xdf45",
+    "frame": 9104,
+    "changed_background_pixels": 5994,
+    "hud_unchanged": true,
+    "sprites_unchanged": true,
+    "metal_frame_pixels_unchanged": true,
+    "cpu_opcodes": 0
+  },
+  "depth_verification": {
+    "direction": "Flat original sprites, profile camera, discreet background depth",
+    "preset": {
+      "blend": "Lighten",
+      "opacity": 0.75,
+      "brightness": 1.1,
+      "depth": true,
+      "parallax": true
+    },
+    "rooms": {
+      "Ceres": {
+        "native": {
+          "frame": 8550,
+          "room": "df45",
+          "state": 8,
+          "cpu_opcodes": 0
+        },
+        "test": "Same frozen native frame in Unreal, flat vs layered, Gaussian Lighten preserved",
+        "opacity": 0.75,
+        "exposure": 1.1,
+        "modified_source_texels": 4550,
+        "source_foreground_and_gui_unchanged": true,
+        "captures": {
+          "flat": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.0510731853505291
+          },
+          "layered": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.050723767154431214
+          }
+        }
+      },
+      "Crateria": {
+        "native": {
+          "frame": 1048,
+          "room": "91f8",
+          "state": 8,
+          "cpu_opcodes": 0
+        },
+        "test": "Same frozen native frame in Unreal, flat vs layered, Gaussian Lighten preserved",
+        "opacity": 0.75,
+        "exposure": 1.1,
+        "modified_source_texels": 32294,
+        "source_foreground_and_gui_unchanged": true,
+        "captures": {
+          "flat": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.09722997271825397
+          },
+          "layered": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.10628255208333333
+          }
+        }
+      }
+    },
+    "saved_room_parallax": {
+      "changed_background_pixels": 7163,
+      "foreground_and_hud_unchanged": true,
+      "room": "0x91f8",
+      "state": 8,
+      "mode": 1,
+      "parallax_supported": 1,
+      "far_pixels": 32342,
+      "layer_counts": {
+        "0": 13497,
+        "1": 32342,
+        "4": 11505
+      }
+    },
+    "motion": {
+      "artifact": "Docs/Depth/Crateria-motion.mp4",
+      "engine": "Unreal Engine 5.8.2",
+      "renderer": "Vulkan",
+      "room": "91f8",
+      "frames": 60,
+      "width": 1280,
+      "height": 720,
+      "encoded_fps": 15,
+      "duration_seconds": 4,
+      "camera_x": [
+        1024,
+        829
+      ],
+      "player_x": [
+        1152,
+        989
+      ],
+      "cpu_opcodes": 0,
+      "normal_exit": true,
+      "note": "Sampled validation capture; not a real-time performance measurement."
+    }
+  },
+  "relief_verification": {
+    "method": "Pronounced directional bevel on BG1 boundaries adjoining identified far planes",
+    "rooms": {
+      "df45": {
+        "native": {
+          "frame": 8550,
+          "room": "df45",
+          "state": 8,
+          "cpu_opcodes": 0
+        },
+        "test": "Same frozen Unreal frame: depth with/without structure bevel",
+        "opacity": 0.75,
+        "exposure": 1.1,
+        "bevel_width": 6,
+        "edge_light_gain": 0.4,
+        "edge_shadow_loss": 0.5,
+        "modified_structure_texels": 1384,
+        "source_sprites_gui_far_planes_unchanged": true,
+        "captures": {
+          "flat": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.050723767154431214
+          },
+          "layered": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.050229673032407406
+          }
+        }
+      },
+      "91f8": {
+        "native": {
+          "frame": 1048,
+          "room": "91f8",
+          "state": 8,
+          "cpu_opcodes": 0
+        },
+        "test": "Same frozen Unreal frame: depth with/without structure bevel",
+        "opacity": 0.75,
+        "exposure": 1.1,
+        "bevel_width": 6,
+        "edge_light_gain": 0.4,
+        "edge_shadow_loss": 0.5,
+        "modified_structure_texels": 1570,
+        "source_sprites_gui_far_planes_unchanged": true,
+        "captures": {
+          "flat": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.10628255208333333
+          },
+          "layered": {
+            "reference_max_channel_error": 2,
+            "reference_mean_error": 0.10278643249834656
+          }
+        }
+      }
+    },
+    "source_sprites_gui_far_planes_preserved": true,
+    "lighten_formula_unchanged": true,
+    "full_game_coverage_verified": false
+  },
+  "teleport_verification": {
+    "destinations": [
+      {
+        "destination": 0,
+        "name": "Crateria - Vaisseau / pluie",
+        "room": "0x91f8",
+        "load_frames": 98,
+        "fx": 10,
+        "water_y": 32767,
+        "heated": 0
+      },
+      {
+        "destination": 1,
+        "name": "Crateria - Refuge interieur",
+        "room": "0x93d5",
+        "load_frames": 98,
+        "fx": 0,
+        "water_y": 32767,
+        "heated": 0
+      },
+      {
+        "destination": 2,
+        "name": "Brinstar - Puits vert",
+        "room": "0x9ad9",
+        "load_frames": 98,
+        "fx": 0,
+        "water_y": 32767,
+        "heated": 0
+      },
+      {
+        "destination": 3,
+        "name": "Norfair - Cavernes chaudes",
+        "room": "0xa923",
+        "load_frames": 98,
+        "fx": 2,
+        "water_y": 32767,
+        "heated": 1
+      },
+      {
+        "destination": 4,
+        "name": "Norfair - Entree des profondeurs",
+        "room": "0xb236",
+        "load_frames": 98,
+        "fx": 4,
+        "water_y": 32767,
+        "heated": 1
+      },
+      {
+        "destination": 5,
+        "name": "Maridia - Ouest",
+        "room": "0xd1dd",
+        "load_frames": 98,
+        "fx": 6,
+        "water_y": 433,
+        "heated": 0
+      },
+      {
+        "destination": 6,
+        "name": "Maridia - Est",
+        "room": "0xd48e",
+        "load_frames": 98,
+        "fx": 6,
+        "water_y": 12,
+        "heated": 0
+      },
+      {
+        "destination": 7,
+        "name": "Vaisseau fantome - Hall",
+        "room": "0xca08",
+        "load_frames": 98,
+        "fx": 0,
+        "water_y": 32767,
+        "heated": 0
+      },
+      {
+        "destination": 0,
+        "name": "Crateria - Vaisseau / pluie",
+        "room": "0x91f8",
+        "load_frames": 98,
+        "fx": 10,
+        "water_y": 32767,
+        "heated": 0
+      }
+    ],
+    "native_cpu_opcodes": 0,
+    "player_save_unchanged": true,
+    "sram_not_written_by_teleport": true,
+    "player_save_sha256": "ce71e6ae9e938411656657e75c12b602f7248df7a69610c8194327851e6d4c12",
+    "ui": {
+      "engine": "Unreal Engine 5.8.2",
+      "real_input_injection": true,
+      "open_navigate_pause_cancel_confirm_arrival": true,
+      "arrival_room": "9ad9",
+      "cpu_opcodes": 0
+    }
+  },
+  "weather_verification": {
+    "91f8": {
+      "native": {
+        "frame": 1048,
+        "room": "91f8",
+        "state": 8,
+        "fx": 10,
+        "water_y": 32767,
+        "heated": 0,
+        "cpu_opcodes": 0
+      },
+      "gaussian_reference_max_error": 2,
+      "cases": {
+        "rain": {
+          "changed_pixels": 180741,
+          "mean_channel_difference": 1.4455934554811507,
+          "hud_unchanged": true
+        },
+        "rain-moving": {
+          "changed_pixels": 179902,
+          "mean_channel_difference": 1.4704170025214947,
+          "hud_unchanged": true
+        },
+        "fog": {
+          "changed_pixels": 253385,
+          "mean_channel_difference": 2.387947849495701,
+          "hud_unchanged": true
+        },
+        "water": {
+          "changed_pixels": 267729,
+          "mean_channel_difference": 4.172999467799272,
+          "hud_unchanged": true
+        },
+        "heat": {
+          "changed_pixels": 160590,
+          "mean_channel_difference": 1.428727730241402,
+          "hud_unchanged": true
+        },
+        "native": {
+          "changed_pixels": 181938,
+          "mean_channel_difference": 1.4552279679232805,
+          "hud_unchanged": true
+        },
+        "gui-bypass": {
+          "changed_pixels": 442353,
+          "mean_channel_difference": 8.275035393931878,
+          "hud_unchanged": true
+        }
+      },
+      "note": "rain/fog/water/heat are isolated GPU previews on the same frame; native uses real environment flags.",
+      "rain_animated": true,
+      "water_clipped_at_surface": true,
+      "non_gameplay_bypassed": true
+    },
+    "d48e": {
+      "native": {
+        "frame": 1146,
+        "room": "d48e",
+        "state": 8,
+        "fx": 6,
+        "water_y": 16,
+        "heated": 0,
+        "cpu_opcodes": 0
+      },
+      "gaussian_reference_max_error": 3,
+      "gaussian_reference_mean_error": 0.14833286830357142,
+      "cases": {
+        "rain": {
+          "changed_pixels": 254515,
+          "mean_channel_difference": 2.747609617848876,
+          "hud_unchanged": true
+        },
+        "rain-moving": {
+          "changed_pixels": 253630,
+          "mean_channel_difference": 2.753875248015873,
+          "hud_unchanged": true
+        },
+        "fog": {
+          "changed_pixels": 309393,
+          "mean_channel_difference": 4.169184932002315,
+          "hud_unchanged": true
+        },
+        "water": {
+          "changed_pixels": 279357,
+          "mean_channel_difference": 5.236606496982474,
+          "hud_unchanged": true
+        },
+        "heat": {
+          "changed_pixels": 231812,
+          "mean_channel_difference": 2.088465453455688,
+          "hud_unchanged": true
+        },
+        "native": {
+          "changed_pixels": 438485,
+          "mean_channel_difference": 8.93832736545139,
+          "hud_unchanged": true
+        },
+        "gui-bypass": {
+          "changed_pixels": 350405,
+          "mean_channel_difference": 9.699787765583665,
+          "hud_unchanged": true
+        }
+      },
+      "note": "rain/fog/water/heat are isolated GPU previews on the same frame; native uses real environment flags.",
+      "rain_animated": true,
+      "water_clipped_at_surface": true,
+      "non_gameplay_bypassed": true
+    },
+    "a923": {
+      "native": {
+        "frame": 1146,
+        "room": "a923",
+        "state": 8,
+        "fx": 2,
+        "water_y": 32767,
+        "heated": 1,
+        "cpu_opcodes": 0
+      },
+      "gaussian_reference_max_error": 4,
+      "gaussian_reference_mean_error": 0.08991350446428571,
+      "cases": {
+        "rain": {
+          "changed_pixels": 26005,
+          "mean_channel_difference": 0.7340888775214947,
+          "hud_unchanged": true
+        },
+        "rain-moving": {
+          "changed_pixels": 26472,
+          "mean_channel_difference": 0.7371690538194444,
+          "hud_unchanged": true
+        },
+        "fog": {
+          "changed_pixels": 178691,
+          "mean_channel_difference": 1.516688109705688,
+          "hud_unchanged": true
+        },
+        "water": {
+          "changed_pixels": 280075,
+          "mean_channel_difference": 3.494614051132606,
+          "hud_unchanged": true
+        },
+        "heat": {
+          "changed_pixels": 7909,
+          "mean_channel_difference": 0.26320426173941797,
+          "hud_unchanged": true
+        },
+        "native": {
+          "changed_pixels": 7971,
+          "mean_channel_difference": 0.2629562458664021,
+          "hud_unchanged": true
+        },
+        "gui-bypass": {
+          "changed_pixels": 438880,
+          "mean_channel_difference": 7.577757497313161,
+          "hud_unchanged": true
+        }
+      },
+      "note": "rain/fog/water/heat are isolated GPU previews on the same frame; native uses real environment flags.",
+      "rain_animated": true,
+      "water_clipped_at_surface": true,
+      "non_gameplay_bypassed": true
+    }
+  }
+}

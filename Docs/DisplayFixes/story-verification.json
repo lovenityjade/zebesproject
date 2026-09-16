@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "frame": 1200,
+      "state": 30,
+      "width": 400,
+      "protectedTextPixels": 3776,
+      "compositionByteExact": true
+    },
+    {
+      "frame": 1800,
+      "state": 30,
+      "width": 400,
+      "protectedTextPixels": 21132,
+      "compositionByteExact": true
+    },
+    {
+      "frame": 2400,
+      "state": 30,
+      "width": 400,
+      "protectedTextPixels": 24087,
+      "compositionByteExact": true
+    },
+    {
+      "frame": 4000,
+      "state": 30,
+      "width": 400,
+      "protectedTextPixels": 23460,
+      "compositionByteExact": true
+    },
+    {
+      "frame": 6000,
+      "state": 30,
+      "width": 400,
+      "protectedTextPixels": 22046,
+      "compositionByteExact": true
+    },
+    {
+      "frame": 8000,
+      "state": 30,
+      "width": 400,
+      "protectedTextPixels": 22565,
+      "compositionByteExact": true
+    }
+  ],
+  "reachedCeres": true,
+  "cpuOpcodes": 0,
+  "note": "Original cinematic content stays centered at 1:1 in the 400px canvas; no invented side scenery."
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scriptSha256": "203180d18a973b1f050b3221d260d58c7d12dfcd9a655b5d6e35d4905a69c8e0",
+  "cases": {
+    "baseline": {
+      "loadedLibrary": "objectives-logic/libsm_native.so",
+      "sha256": "a9346799c1a6230e447af1571012eb87f04efa53025cf5358e7b6ecc6408b9f7",
+      "log": "legacy-baseline.log"
+    },
+    "candidate": {
+      "loadedLibrary": "objectives-pause/libsm_native.so",
+      "sha256": "ab8d73a8db61b5661e61a1798f57ddf8dc5911f12f191490f2687d6039d27591",
+      "log": "legacy-candidate.log"
+    }
+  },
+  "reportIdentityNote": "The older test report hashes Native/build regardless of the fixture override. These paths identify the actual libraries selected by the diagnostic harness."
+}

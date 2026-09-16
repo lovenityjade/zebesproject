@@ -1,0 +1,132 @@
+[
+  {
+    "name": "ridley",
+    "source": "Docs/References/PopTracker/pack/images/items/ridley.png",
+    "sha256": "6ab1dccaa035fd9ecdc03c3f1c24238b8e18e6f002ae520c7b6e423e885e8fa4"
+  },
+  {
+    "name": "charge",
+    "source": "Docs/References/PopTracker/pack/images/items/charge.png",
+    "sha256": "49787bf9335f7ad05708e2a518ac059bcbac78c32cf37f2d51696cb824da9289"
+  },
+  {
+    "name": "varia",
+    "source": "Docs/References/PopTracker/pack/images/items/varia.png",
+    "sha256": "a1df34cc729163485e942eedb044dccbfe2f7ddfcf8236ce9d6290510bdf4bc9"
+  },
+  {
+    "name": "morph",
+    "source": "Docs/References/PopTracker/pack/images/items/morph.png",
+    "sha256": "4457ebe118ac0962fff1c378e72daac99071e8d63779f14a807294b829e0345b"
+  },
+  {
+    "name": "hijump",
+    "source": "Docs/References/PopTracker/pack/images/items/hijump.png",
+    "sha256": "e66918f4492e4a44a406d955c6e5c253936709942b431cbe063577d8769d3a63"
+  },
+  {
+    "name": "phantoon",
+    "source": "Docs/References/PopTracker/pack/images/items/phantoon.png",
+    "sha256": "0a07379945d8cacb3906f4a59db2a3a237297139190639506a2d15741e9dbe2f"
+  },
+  {
+    "name": "ice",
+    "source": "Docs/References/PopTracker/pack/images/items/ice.png",
+    "sha256": "aa2f7b12772afec4145613b6f29c5eee0fc6b23d0bc88d8b3d79ea7ae819ce08"
+  },
+  {
+    "name": "gravity",
+    "source": "Docs/References/PopTracker/pack/images/items/gravity.png",
+    "sha256": "4a41b82bf37364fa0c543ed07717d0ae0af218572e3e36f59e5c5982935f702c"
+  },
+  {
+    "name": "bomb",
+    "source": "Docs/References/PopTracker/pack/images/items/bomb.png",
+    "sha256": "2e2a2fc626a68d5b62ae04dcfac7d31da37749846f74b03cba069f37d43ecec9"
+  },
+  {
+    "name": "space",
+    "source": "Docs/References/PopTracker/pack/images/items/space.png",
+    "sha256": "484096ff4e67e10c6674cee4cbfa603a89c4da2a10655a2ba87e95920dd69dd6"
+  },
+  {
+    "name": "kraid",
+    "source": "Docs/References/PopTracker/pack/images/items/kraid.png",
+    "sha256": "e36b2ec0dd6efc31fec9dad3c51cb0e5a8bee5b3878814845c4348d5c6c66789"
+  },
+  {
+    "name": "wave",
+    "source": "Docs/References/PopTracker/pack/images/items/wave.png",
+    "sha256": "499a86a3217fbd4bc35fd63bafdfbc5810a53d5426199dc5c51fd2c71c180711"
+  },
+  {
+    "name": "springball",
+    "source": "Docs/References/PopTracker/pack/images/items/springball.png",
+    "sha256": "2a692fe05df3c9c116b63098d1471d3b77c08b469e1da6e7a0f273185d3dee46"
+  },
+  {
+    "name": "speed",
+    "source": "Docs/References/PopTracker/pack/images/items/speed.png",
+    "sha256": "5c65bb0f26b42b95ed554d9e147da422f02f123ec08b480f5d5442a024db5251"
+  },
+  {
+    "name": "draygon",
+    "source": "Docs/References/PopTracker/pack/images/items/draygon.png",
+    "sha256": "6fc61865e093e4aec0fb495ae6857a79b7a6fce904aaa08aa4e5141902585107"
+  },
+  {
+    "name": "spazer",
+    "source": "Docs/References/PopTracker/pack/images/items/spazer.png",
+    "sha256": "af363689b3bd271021c7c7774e58f948fd000279a5f1cde33a6b3a67f1559637"
+  },
+  {
+    "name": "grapple",
+    "source": "Docs/References/PopTracker/pack/images/items/grapple.png",
+    "sha256": "f058588722f3dfba6193e0a54bd9e5448fd69e590e44a124eb9b48d13b57752c"
+  },
+  {
+    "name": "screw",
+    "source": "Docs/References/PopTracker/pack/images/items/screw.png",
+    "sha256": "a0f602d51a8167d7b960e62a1b2859a78de61461530b259af42e7febbf7d4de7"
+  },
+  {
+    "name": "mother_brain",
+    "source": "Docs/References/PopTracker/pack/images/items/mother_brain.png",
+    "sha256": "6745fcee28dff9f4f82ee1e2bdf12f8f4503ba291c0959563e91679e63fadc61"
+  },
+  {
+    "name": "plasma",
+    "source": "Docs/References/PopTracker/pack/images/items/plasma.png",
+    "sha256": "577db7d7d54ea0d8688f3a351d439131285296d9956d976aac7f754a90ce37c2"
+  },
+  {
+    "name": "xray",
+    "source": "Docs/References/PopTracker/pack/images/items/xray.png",
+    "sha256": "a4dd65de75ce6606c50b9feb85c340df117b0e6bb52531f2bb272d350f3b93e9"
+  },
+  {
+    "name": "missile",
+    "source": "Docs/References/PopTracker/pack/images/items/missile.png",
+    "sha256": "5ce54a20b96a23debffd7612513e8631cef3d20ad33492a5dac8d4632c41e64d"
+  },
+  {
+    "name": "super",
+    "source": "Docs/References/PopTracker/pack/images/items/super.png",
+    "sha256": "3756977f8f142f4cb99fb2899cbce2bf363f041fc41af1148a8e9bd44f53249f"
+  },
+  {
+    "name": "powerbomb",
+    "source": "Docs/References/PopTracker/pack/images/items/powerbomb.png",
+    "sha256": "e261eeff2ba6190d7fc0d580e4c2b2a465e72b29244f919e557e7ae5103e1e06"
+  },
+  {
+    "name": "etank",
+    "source": "Docs/References/PopTracker/pack/images/items/etank.png",
+    "sha256": "100c81f07640e445eed9d510341a1a695ac6f0c99f576cdfdc8ded7d066d349e"
+  },
+  {
+    "name": "reservetank",
+    "source": "Docs/References/PopTracker/pack/images/items/reservetank.png",
+    "sha256": "9ccb50f94502cdb88c53b8e78a7d3a05cc90287e477aa12464d48b95c413d1a8"
+  }
+]

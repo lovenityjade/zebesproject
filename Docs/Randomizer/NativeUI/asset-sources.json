@@ -1,0 +1,9 @@
+{
+  "Randomizer/upstream/patches/common/src/map/hud.gfx": "9fd6916dfc9f56810838dc38f34c42766e6a7a8e0784dc324098c4f48ade91b8",
+  "Randomizer/upstream/patches/common/src/max_ammo_display.asm": "cf3478d570b83033227435bbd5a5b01fe5a95eb1d44f4d1f2eb3a610c20c354f",
+  "Randomizer/upstream/patches/common/src/tables/hud_chars.txt": "278641904e92572cde1f2e12e6d0d23a5973c1d97a98623253e81ae15e7aa972",
+  "Randomizer/upstream/patches/common/src/varia_hud.asm": "2016965fa52ffa79769dd4892a7795bf0ff93ed74f26ef275505475b460e7f97",
+  "Randomizer/upstream/patches/common/src/better_reserves/main.asm": "de395180982b78771dfa49f5a5a9d05e48e719886262cdd55e5656f452eb9cec",
+  "Randomizer/upstream/patches/common/src/better_reserves/hud.asm": "20ca2fc022d3741c70557335fc5ba588625d94fe14e5762c9ed494c495e98a80",
+  "Randomizer/upstream/tools/rooms.py": "f00c55e7865285f810229f4f1d9c4f4ed4dd97c08df543b2a7eece0f7d5704de"
+}

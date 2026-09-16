@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 15093000,
+      "fingerprint": "f09a7e1759eff14f1f874da14995cae223c337ee9632d2ee57390f23d1dd48c6"
+    },
+    {
+      "seed": 15093001,
+      "fingerprint": "46253780caf9a19b7ea33b6cd2b3f9fb97f1137462ecb900f4a2320c2fa249a0"
+    },
+    {
+      "seed": 15093002,
+      "fingerprint": "a51c4b255ceb070f1ddab2abd2ce5d296aaf78a85a6ef5625736c9d24b258779"
+    },
+    {
+      "seed": 15093003,
+      "fingerprint": "4e7d454b2044849a3fa3466ce6d7e8e8f8eb2307afcfe04c107359bff9a5931a"
+    },
+    {
+      "seed": 15093004,
+      "fingerprint": "f6da06f33eee7fdb8f878d3e1e4a6e2599a590239c8ffc2ebb96fda1b69ae505"
+    },
+    {
+      "seed": 15093005,
+      "fingerprint": "539ab9e0ed01f89e00e89b6344579e6e95c1284df618ec15066ac2862a1a1261"
+    },
+    {
+      "seed": 15093006,
+      "fingerprint": "3bb6c4350449a205694fa4101780ec6bab340f4c63c84a19cef93f126f879fac"
+    },
+    {
+      "seed": 15093007,
+      "fingerprint": "a96c41fa339389317bfb286af10de989fbc15a3309782022951f5698a3774b7e"
+    },
+    {
+      "seed": 15093008,
+      "fingerprint": "ae5482a3c0a01051cd9a0c15e39ac690b90a86b3ed05ade9acc7babddc3dace2"
+    }
+  ],
+  "nativeSha256": "28ff5312a8c86e99dc950b47ce106e095c95c23c05f1d6dc4c57b85f3f1ee6be",
+  "scope": "Production requests through the exact native generation API used by Unreal."
+}

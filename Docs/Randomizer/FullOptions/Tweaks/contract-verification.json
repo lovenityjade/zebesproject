@@ -1,0 +1,39 @@
+{
+  "nativeCases": 7,
+  "catalog": "03f697bd736d649d40d3ee33eccf62940cb3de3346404d94c9476df4e6ce18dc",
+  "historicalCatalogs": [
+    "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+    "03f697bd736d649d40d3ee33eccf62940cb3de3346404d94c9476df4e6ce18dc"
+  ],
+  "rejections": [
+    {
+      "options": {
+        "layoutCustom": [
+          "fake_patch"
+        ]
+      },
+      "error": "ValueError: Invalid layoutCustom"
+    },
+    {
+      "options": {
+        "layoutCustom": [
+          "high_jump",
+          "high_jump"
+        ]
+      },
+      "error": "ValueError: Invalid layoutCustom"
+    },
+    {
+      "options": {
+        "layoutPatches": "on"
+      },
+      "error": "ValueError: VARIA generation failed: SEED: 15092190\n-.-.-.......|-...-.......<<<<.........-...........-...........-..........|-..|-..|-..|-..|-..|-..|-..|-..|-..|-...................................\n53 step(s) in 1065ms\nTraceback (most recent call last):\n  File \"/tmp/sm-native-generation-20260914/Randomizer/upstream/randomizer.py\", line 841, in <module>\n    romPatcher.patchRom()\n    ~~~~~~~~~~~~~~~~~~~^^\n  File \"/tmp/sm-native-generation-20260914/Randomizer/sm_integration.py\", line 86, in native_placements\n    native_context['world']=capture(patcher,rules)\n                            ~~~~~~~^^^^^^^^^^^^^^^\n  File \"/tmp/sm-native-generation-20260914/Randomizer/sm_native_world.py\", line 35, in capture\n    if missing:raise ValueError('Native patch behavior not implemented yet: '+', '.join(missing))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Native patch behavior not implemented yet: door_indicators_plms.ips\nDIAG: Error patching /tmp/sm-seed-49lwp__n/generation.json: (ValueError: Native patch behavior not implemented yet: door_indicators_plms.ips)\n"
+    },
+    {
+      "options": {
+        "startLocation": "Golden Four"
+      },
+      "error": "ValueError: VARIA generation failed: DIAG: Invalid start location: Golden Four.  Start location available only with area randomization enabled. \nPossible start locations with these settings: ['Ceres', 'Landing Site', 'Gauntlet Top', 'Green Brinstar Elevator', 'Big Pink', 'Etecoons Supers', 'Wrecked Ship Main', 'Business Center', 'Bubble Mountain', 'Mama Turtle', 'Watering Hole', 'Aqueduct']\n"
+    }
+  ]
+}

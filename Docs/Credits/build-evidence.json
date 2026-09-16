@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "date": "2026-09-15T08:40:30.694152+00:00",
+  "testHost": "gaming-pc",
+  "isolatedRoot": "/tmp/sm-native-generation-20260914",
+  "interactiveLaunch": false,
+  "installedGameOrUserSavesModified": false,
+  "hashes": {
+    "Native/build/libsm_native.so": "dba5ec1513c6ba12e82190f443e37baa84f4cfd5e3c8cd105cc202d76c2ae0d7",
+    "Unreal/Binaries/Linux/SMUnreal": "690a3ec191e0c759838537f63ee801871d1015b4849a8c50c3484dddc9733647",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "e6dd32a519c79160562a44bbbcce30a20f8f7471524abe4fb298adfdcadb9115",
+    "Native/sm_credits_assets.inc": "8dd7d5b9dbf578de7e9dffcee9c99f1ce4a119e9a5d536822ab25abfb48ec550",
+    "Shaders/Present.usf": "ad9454d63876e8afa1d9fdba0de35759984d0e90939d902cc07de322f65250d7"
+  },
+  "checks": [
+    "Native library build",
+    "Unreal Editor and Game builds",
+    "Material compilation and cooked Vulkan package",
+    "Exact RAM/SRAM/clock/statistics preview recovery",
+    "Actual firing, pause, death and statistics persistence",
+    "Native A/B/C menu: fresh generated statistics, copy and clear",
+    "Controlled native escape fade, full credit roll and following ending",
+    "Offscreen Vulkan: 42696 exact GUI pixels; visible halo and animated stars",
+    "Existing native tracker regression"
+  ],
+  "limits": [
+    "Controlled ending entry is not a complete boss-fight playthrough",
+    "Debug button compiled; preview API and actual material tested offscreen; no interactive click test",
+    "Old saves have incomplete historical statistics",
+    "Tracker regression ran before the final credits-only glyph, fixture and fresh-statistics refinements"
+  ],
+  "upstreamPristine": {
+    "native-core": true,
+    "supermetroid": true,
+    "Randomizer/upstream": true
+  },
+  "endingScreenshots": {
+    "fixture": "Scripts/test-credits-ending.py",
+    "mode": "Vanilla controlled native escape",
+    "framesAfterCredits": [
+      800,
+      2200
+    ],
+    "visuallyReviewed": true
+  }
+}

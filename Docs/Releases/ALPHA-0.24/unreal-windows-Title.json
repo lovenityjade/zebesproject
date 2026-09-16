@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "exitCode": 0,
+      "case": "Title",
+      "rendered": true,
+      "passed": true
+    }
+  ],
+  "host": "UnrealEditor game mode",
+  "platform": "Win64",
+  "packagedGameTested": false,
+  "adapter": "Radeon RX 580 Series",
+  "dedicatedVideoMemory": 8567902208,
+  "rhi": "D3D11",
+  "shaderModel": "SM5",
+  "resolution": [
+    1280,
+    720
+  ],
+  "case": "skip input",
+  "fullGameplayPerformanceTested": false,
+  "inspectedCaptures": {
+    "title-wide-ready.png": "09c9a40156a6c71d2e3d707ac73cd4594dc4efc2280878eb28c363db90e8185e",
+    "title-wide-warning-photosensitivity.png": "644e299d35aba09ff03d284a9a8e5a6db5363f8f27e4708984fada8f31f7d482",
+    "title-wide-save-select.png": "b4dfd2a3e1ce52c9b5f64473b0c3eda05569943dfeccf75a5b5bf780e234695c"
+  },
+  "saveSelectionVisuallyPassed": false,
+  "saveSelectionIssue": "Black except version label on both initial and delayed-capture runs; native state-machine PASS is insufficient.",
+  "delayedCaptureRetest": {
+    "nativeStateMachinePassed": true,
+    "saveSelectionVisuallyPassed": false,
+    "captureDelayTicks": 4,
+    "exitDelayTicks": 8
+  }
+}

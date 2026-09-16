@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "protectedGuiPixels": 42696,
+  "guiByteExact": true,
+  "atmosphereChangedChannels": 156774,
+  "animatedStarChannels": 8402,
+  "viewport": [
+    1280,
+    720
+  ],
+  "sourceSize": [
+    400,
+    224
+  ],
+  "scale": 3
+}

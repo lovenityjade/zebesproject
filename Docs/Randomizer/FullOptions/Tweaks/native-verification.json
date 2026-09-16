@@ -1,0 +1,746 @@
+{
+  "cases": [
+    {
+      "kind": "torizo",
+      "slot": 0,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 0,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 0,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 0,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 2,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 2,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 2,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 2,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": true,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": false,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": false,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": false,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "kind": "torizo",
+      "slot": 1,
+      "randomized": false,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 0,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 1,
+      "randomized": true,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": false,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 29,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 121,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 3,
+      "activated": true
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 122,
+      "direction": 0,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 3,
+      "activated": false
+    },
+    {
+      "kind": "chozo",
+      "slot": 2,
+      "randomized": false,
+      "spaceJump": true,
+      "pose": 1,
+      "direction": 0,
+      "activated": false
+    }
+  ],
+  "pickupPlmLifecycle": true,
+  "uncommittedSelectionIsolated": true,
+  "cpu": 0,
+  "sourceRomUnchanged": true,
+  "nativeSha256": "b5d7e51cc0dee6925700478724fbd6dddaef9cb6325b9039514b591ccf1e6107",
+  "scope": "Real C PLM routines after native boot, controlled RAM conditions; not a manual room traversal"
+}

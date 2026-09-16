@@ -1,0 +1,191 @@
+{
+  "catalog": {
+    "schema": 1,
+    "abiSize": 44,
+    "indexAddress": 55540,
+    "startedEvent": 147,
+    "completeEvent": 129,
+    "huntOver": 65297,
+    "terminator": 65535,
+    "locations": [
+      {
+        "name": "Morphing Ball",
+        "id": 26,
+        "hud": 0,
+        "address": 493278,
+        "boss": false,
+        "label": " Morph "
+      },
+      {
+        "name": "Bomb",
+        "id": 7,
+        "hud": 1,
+        "address": 492548,
+        "boss": false,
+        "label": " Bomb  "
+      },
+      {
+        "name": "Charge Beam",
+        "id": 23,
+        "hud": 2,
+        "address": 493076,
+        "boss": false,
+        "label": " Charge"
+      },
+      {
+        "name": "Spazer",
+        "id": 42,
+        "hud": 3,
+        "address": 493934,
+        "boss": false,
+        "label": " Spazer"
+      },
+      {
+        "name": "Varia Suit",
+        "id": 48,
+        "hud": 4,
+        "address": 494282,
+        "boss": false,
+        "label": " Varia "
+      },
+      {
+        "name": "Hi-Jump Boots",
+        "id": 53,
+        "hud": 5,
+        "address": 494508,
+        "boss": false,
+        "label": "Hi-Jump"
+      },
+      {
+        "name": "Ice Beam",
+        "id": 50,
+        "hud": 6,
+        "address": 494372,
+        "boss": false,
+        "label": "  Ice  "
+      },
+      {
+        "name": "Speed Booster",
+        "id": 66,
+        "hud": 7,
+        "address": 494722,
+        "boss": false,
+        "label": " Speed "
+      },
+      {
+        "name": "Wave Beam",
+        "id": 68,
+        "hud": 8,
+        "address": 494794,
+        "boss": false,
+        "label": "  Wave "
+      },
+      {
+        "name": "Grapple Beam",
+        "id": 60,
+        "hud": 9,
+        "address": 494646,
+        "boss": false,
+        "label": "Grapple"
+      },
+      {
+        "name": "X-Ray Scope",
+        "id": 38,
+        "hud": 10,
+        "address": 493686,
+        "boss": false,
+        "label": " X-Ray "
+      },
+      {
+        "name": "Gravity Suit",
+        "id": 135,
+        "hud": 11,
+        "address": 508781,
+        "boss": false,
+        "label": "Gravity"
+      },
+      {
+        "name": "Space Jump",
+        "id": 154,
+        "hud": 12,
+        "address": 509863,
+        "boss": false,
+        "label": " Space "
+      },
+      {
+        "name": "Spring Ball",
+        "id": 150,
+        "hud": 13,
+        "address": 509669,
+        "boss": false,
+        "label": " Spring"
+      },
+      {
+        "name": "Plasma Beam",
+        "id": 143,
+        "hud": 14,
+        "address": 509273,
+        "boss": false,
+        "label": " Plasma"
+      },
+      {
+        "name": "Screw Attack",
+        "id": 79,
+        "hud": 15,
+        "address": 495888,
+        "boss": false,
+        "label": " Screw "
+      },
+      {
+        "name": "Ridley",
+        "id": 170,
+        "hud": 16,
+        "address": 2958405718,
+        "boss": true,
+        "label": " Ridley"
+      }
+    ],
+    "labels": [
+      " Morph ",
+      " Bomb  ",
+      " Charge",
+      " Spazer",
+      " Varia ",
+      "Hi-Jump",
+      "  Ice  ",
+      " Speed ",
+      "  Wave ",
+      "Grapple",
+      " X-Ray ",
+      "Gravity",
+      " Space ",
+      " Spring",
+      " Plasma",
+      " Screw ",
+      " Ridley",
+      "Hunt over "
+    ],
+    "prompt": "Press X-Y ",
+    "sha256": "976966c88a9ed9997f193bf6dc9033e2ffd6bc01f0d9bee40d4735c001ebe659"
+  },
+  "ridleyDoorData": {
+    "495256": [
+      66,
+      200,
+      14,
+      6,
+      90,
+      140
+    ],
+    "1091128": [
+      0
+    ]
+  },
+  "sources": {
+    "Randomizer/upstream/patches/common/src/varia_hud.asm": "2016965fa52ffa79769dd4892a7795bf0ff93ed74f26ef275505475b460e7f97",
+    "Randomizer/upstream/rom/rompatcher.py": "f95c754ac52310b509626c828cc9b5f81f6a4bad1a55b4d9f81a33e2fff5886d",
+    "Randomizer/upstream/graph/location.py": "a7f8f2ee808d9fd998567a72c632dafd408ac99fe2b3f607ca3cd6fa1027774a",
+    "Randomizer/upstream/solver/commonSolver.py": "627bd495250f9ae4b6577b5395d641584e6ace5ad1fa6e6058c32f65f968c8a7",
+    "Randomizer/upstream/patches/vanilla/patches.py": "40abb17ec2c18fd057d25df5875d0f5dca014a420652211e63883c6ec061f78e"
+  }
+}

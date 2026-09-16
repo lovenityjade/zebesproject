@@ -1,0 +1,85 @@
+Native
+[  1%] Building C object CMakeFiles/sm_native.dir/sm_bridge.c.o
+[  3%] Linking C shared library libsm_native.so
+[ 96%] Built target sm_native
+[ 98%] Linking C executable sm_randomizer_host
+[100%] Built target sm_randomizer_host
+
+
+Unreal game
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll SMUnreal Linux Development /home/thelovenityjade/Projects/projectSM/Unreal/SMUnreal.uproject -MaxParallelActions=2 -NoUBA -NoUBALocal
+Log file: /home/thelovenityjade/.config/Epic/UnrealBuildTool/Log.txt
+Executing up to 2 actions based on MaxProcessorCount override
+UbaStorageServer - FileMapping backing: memfd
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+Building SMUnreal...
+===== Toolchain Information =====
+Using ISPC compiler (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Source/ThirdParty/Intel/ISPC/bin/Linux/ispc)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20240919, LLVM 18.1.6)
+Using Clang compiler 20.1.8 (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++)
+  clang version 20.1.8 (github.com/llvm/llvm-project 87f0227cb60147a26a1eeb4fb06e3b505e9c7261) Target: x86_64-unknown-linux-gnu Thread model: posix InstalledDir: /home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin
+Using Clang archiver (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin/llvm-ar)
+  LLVM (http://llvm.org/):   LLVM version 20.1.8   Optimized build.
+Using toolchain located at '/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu'
+Using bundled libc++ standard C++ library.
+Compressing debug files
+=================================
+Using Unreal Build Accelerator local executor to run 3 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 15.47 GB physical, 33.35 GB/31.74 GB committed
+  UBA Storage capacity 40 GB
+[1/3] Compile SMProfiles.cpp [NoUba]
+[2/3] Link SMUnreal [NoUba]
+[3/3] WriteMetadata SMUnreal.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 19.03 seconds
+Output binary: /home/thelovenityjade/Projects/projectSM/Unreal/Binaries/Linux/SMUnreal
+
+Result: Succeeded
+Total execution time: 21.29 seconds
+Trace written to file /home/thelovenityjade/.config/Epic/UnrealBuildTool/Trace.uba with size 4.1kb
+
+
+Unreal Editor
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll SMUnrealEditor Linux Development /home/thelovenityjade/Projects/projectSM/Unreal/SMUnreal.uproject -MaxParallelActions=2 -NoUBA -NoUBALocal
+Log file: /home/thelovenityjade/.config/Epic/UnrealBuildTool/Log.txt
+Executing up to 2 actions based on MaxProcessorCount override
+UbaStorageServer - FileMapping backing: memfd
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+Building SMUnrealEditor...
+===== Toolchain Information =====
+Using ISPC compiler (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Source/ThirdParty/Intel/ISPC/bin/Linux/ispc)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20240919, LLVM 18.1.6)
+Using Clang compiler 20.1.8 (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++)
+  clang version 20.1.8 (github.com/llvm/llvm-project 87f0227cb60147a26a1eeb4fb06e3b505e9c7261) Target: x86_64-unknown-linux-gnu Thread model: posix InstalledDir: /home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin
+Using Clang archiver (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin/llvm-ar)
+  LLVM (http://llvm.org/):   LLVM version 20.1.8   Optimized build.
+Using toolchain located at '/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu'
+Using bundled libc++ standard C++ library.
+Compressing debug files
+=================================
+Using Unreal Build Accelerator local executor to run 6 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 15.47 GB physical, 33.38 GB/31.74 GB committed
+  UBA Storage capacity 40 GB
+[1/6] Compile SMPause.cpp [NoUba]
+[2/6] Compile SMHUD.cpp [NoUba]
+[3/6] Compile SMProfiles.cpp [NoUba]
+[4/6] Compile SMUnreal.cpp [NoUba]
+[5/6] Compile SMSystemMenu.cpp [NoUba]
+[6/6] Link libUnrealEditor-SMUnreal.so [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 11.97 seconds
+Output binary: /home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Binaries/Linux/UnrealEditor
+
+Result: Succeeded
+Total execution time: 14.89 seconds
+Trace written to file /home/thelovenityjade/.config/Epic/UnrealBuildTool/Trace.uba with size 4.0kb
+
+
+Profile self-test
+[2026.09.15-06.34.10:236][  0]LogTemp: Display: SM_PROFILE_SELF_TEST PASS
+
+Game SHA256 176012041e3dad95e62788e896b8ae8d6bedce7a437df6b75b8dfbbdba7fe741

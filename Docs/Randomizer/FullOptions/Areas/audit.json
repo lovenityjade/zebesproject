@@ -1,0 +1,8038 @@
+{
+  "catalogSha256": "c9c98aa59a6a941042de18c5751f85e98b4749a5bc86add776f4b41c38736ceb",
+  "excluded": [
+    {
+      "patch": "door_transition.ips",
+      "address": 521728,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521729,
+      "value": 44
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521730,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521731,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521732,
+      "value": 46
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521733,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521734,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521735,
+      "value": 66
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521736,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521737,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521738,
+      "value": 68
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521739,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521740,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521741,
+      "value": 70
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521742,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521743,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521744,
+      "value": 72
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521745,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521746,
+      "value": 162
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521747,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521748,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521749,
+      "value": 158
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521750,
+      "value": 28
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521751,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521752,
+      "value": 232
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521753,
+      "value": 232
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521754,
+      "value": 224
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521755,
+      "value": 12
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521756,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521757,
+      "value": 208
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521758,
+      "value": 246
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521759,
+      "value": 169
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521760,
+      "value": 255
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521761,
+      "value": 255
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521762,
+      "value": 162
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521763,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521764,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521765,
+      "value": 157
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521766,
+      "value": 42
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521767,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521768,
+      "value": 232
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521769,
+      "value": 232
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521770,
+      "value": 224
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521771,
+      "value": 6
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521772,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521773,
+      "value": 208
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521774,
+      "value": 246
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521775,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521776,
+      "value": 150
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521777,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521778,
+      "value": 173
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521779,
+      "value": 110
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521780,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521781,
+      "value": 201
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521782,
+      "value": 2
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521783,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521784,
+      "value": 208
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521785,
+      "value": 6
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521786,
+      "value": 169
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521787,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521788,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521789,
+      "value": 141
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521790,
+      "value": 65
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521791,
+      "value": 7
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521792,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521793,
+      "value": 110
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521794,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521795,
+      "value": 173
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521796,
+      "value": 246
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521797,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521798,
+      "value": 141
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521799,
+      "value": 16
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521800,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521801,
+      "value": 173
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521802,
+      "value": 248
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521803,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521804,
+      "value": 141
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521805,
+      "value": 18
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521806,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521807,
+      "value": 173
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521808,
+      "value": 250
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521809,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521810,
+      "value": 141
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521811,
+      "value": 20
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521812,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521813,
+      "value": 173
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521814,
+      "value": 252
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521815,
+      "value": 10
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521816,
+      "value": 141
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521817,
+      "value": 22
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521818,
+      "value": 11
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521819,
+      "value": 169
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521820,
+      "value": 128
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521821,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521822,
+      "value": 141
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521823,
+      "value": 168
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521824,
+      "value": 24
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 521825,
+      "value": 96
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522144,
+      "value": 34
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522145,
+      "value": 125
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522146,
+      "value": 199
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522147,
+      "value": 167
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522148,
+      "value": 34
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522149,
+      "value": 163
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522150,
+      "value": 199
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522151,
+      "value": 167
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522152,
+      "value": 34
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522153,
+      "value": 201
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522154,
+      "value": 199
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522155,
+      "value": 167
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522156,
+      "value": 34
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522157,
+      "value": 239
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522158,
+      "value": 199
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522159,
+      "value": 167
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522160,
+      "value": 96
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522161,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522162,
+      "value": 30
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522163,
+      "value": 14
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522164,
+      "value": 96
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522165,
+      "value": 139
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522166,
+      "value": 244
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522167,
+      "value": 126
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522168,
+      "value": 126
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522169,
+      "value": 171
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522170,
+      "value": 171
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522171,
+      "value": 60
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522172,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522173,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522174,
+      "value": 208
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522175,
+      "value": 12
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522176,
+      "value": 29
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522177,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522178,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522179,
+      "value": 157
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522180,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522181,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522182,
+      "value": 165
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522183,
+      "value": 18
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522184,
+      "value": 34
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522185,
+      "value": 251
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522186,
+      "value": 170
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522187,
+      "value": 144
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522188,
+      "value": 171
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522189,
+      "value": 96
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522240,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522241,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522242,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522243,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522244,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522245,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522246,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522247,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522248,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522249,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522250,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522251,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522252,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522253,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522254,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522255,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522256,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522257,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522258,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522259,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522260,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522261,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522262,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522263,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522264,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522265,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522266,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522267,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522268,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522269,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522270,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522271,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522272,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522273,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522274,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522275,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522276,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522277,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522278,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522279,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522280,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522281,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522282,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522283,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522284,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522285,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522286,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522287,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522288,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522289,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522290,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522291,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522292,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522293,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522294,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522295,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522296,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522297,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522298,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522299,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522300,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522301,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522302,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522303,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522304,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522305,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522306,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522307,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522308,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522309,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522310,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522311,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522312,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522313,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522314,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522315,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522316,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522317,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522318,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522319,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522320,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522321,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522322,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522323,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522324,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522325,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522326,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522327,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522328,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522329,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522330,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522331,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522332,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522333,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522334,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522335,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522336,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522337,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522338,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522339,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522340,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522341,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522342,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522343,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522344,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522345,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522346,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522347,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522348,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522349,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522350,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522351,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522352,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522353,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522354,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522355,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522356,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522357,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522358,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522359,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522360,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522361,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522362,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522363,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522364,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522365,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522366,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522367,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522368,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522369,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522370,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522371,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522372,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522373,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522374,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522375,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522376,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522377,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522378,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522379,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522380,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522381,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522382,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522383,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522384,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522385,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522386,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522387,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522388,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522389,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522390,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522391,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522392,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522393,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522394,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522395,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522396,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522397,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522398,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522399,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522400,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522401,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522402,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522403,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522404,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522405,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522406,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522407,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522408,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522409,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522410,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522411,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522412,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522413,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522414,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522415,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522416,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522417,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522418,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522419,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522420,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522421,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522422,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522423,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522424,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522425,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522426,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522427,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522428,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522429,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522430,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522431,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522432,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522433,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522434,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522435,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522436,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522437,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522438,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522439,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522440,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522441,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522442,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522443,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522444,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522445,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522446,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522447,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522448,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522449,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522450,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522451,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522452,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522453,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522454,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522455,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522456,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522457,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522458,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522459,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522460,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522461,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522462,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522463,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522464,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522465,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522466,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522467,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522468,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522469,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522470,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522471,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522472,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522473,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522474,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522475,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522476,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522477,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522478,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522479,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522480,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522481,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522482,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522483,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522484,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522485,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522486,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522487,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522488,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522489,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522490,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522491,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522492,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522493,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522494,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522495,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522496,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522497,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522498,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522499,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522500,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522501,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522502,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522503,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522504,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522505,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522506,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522507,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522508,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522509,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522510,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522511,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522512,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522513,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522514,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522515,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522516,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522517,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522518,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522519,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522520,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522521,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522522,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522523,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522524,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522525,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522526,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522527,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522528,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522529,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522530,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522531,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522532,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522533,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522534,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522535,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522536,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522537,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522538,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522539,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522540,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522541,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522542,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522543,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522544,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522545,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522546,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522547,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522548,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522549,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522550,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522551,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522552,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522553,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522554,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522555,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522556,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522557,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522558,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522559,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522560,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522561,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522562,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522563,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522564,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522565,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522566,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522567,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522568,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522569,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522570,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522571,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522572,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522573,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522574,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522575,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522576,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522577,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522578,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522579,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522580,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522581,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522582,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522583,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522584,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522585,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522586,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522587,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522588,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522589,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522590,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522591,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522592,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522593,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522594,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522595,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522596,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522597,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522598,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522599,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522600,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522601,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522602,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522603,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522604,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522605,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522606,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522607,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522608,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522609,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522610,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522611,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522612,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522613,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522614,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522615,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522616,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522617,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522618,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522619,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522620,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522621,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522622,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522623,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522624,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522625,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522626,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522627,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522628,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522629,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522630,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522631,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522632,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522633,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522634,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522635,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522636,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522637,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522638,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522639,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522640,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522641,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522642,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522643,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522644,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522645,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522646,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522647,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522648,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522649,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522650,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522651,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522652,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522653,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522654,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522655,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522656,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522657,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522658,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522659,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522660,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522661,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522662,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522663,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522664,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522665,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522666,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522667,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522668,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522669,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522670,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522671,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522672,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522673,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522674,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522675,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522676,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522677,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522678,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522679,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522680,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522681,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522682,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522683,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522684,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522685,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522686,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522687,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522688,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522689,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522690,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522691,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522692,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522693,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522694,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522695,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522696,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522697,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522698,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522699,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522700,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522701,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522702,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522703,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522704,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522705,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522706,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522707,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522708,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522709,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522710,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522711,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522712,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522713,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522714,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522715,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522716,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522717,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522718,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522719,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522720,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522721,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522722,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522723,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522724,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522725,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522726,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522727,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522728,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522729,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522730,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522731,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522732,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522733,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522734,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522735,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522736,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522737,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522738,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522739,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522740,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522741,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522742,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522743,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522744,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522745,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522746,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522747,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522748,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522749,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522750,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522751,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522752,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522753,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522754,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522755,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522756,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522757,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522758,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522759,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522760,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522761,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522762,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522763,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522764,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522765,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522766,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522767,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522768,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522769,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522770,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522771,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522772,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522773,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522774,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522775,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522776,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522777,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522778,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522779,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522780,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522781,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522782,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522783,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522784,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522785,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522786,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522787,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522788,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522789,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522790,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522791,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522792,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522793,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522794,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522795,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522796,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522797,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522798,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522799,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522800,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522801,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522802,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522803,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522804,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522805,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522806,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522807,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522808,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522809,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522810,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522811,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522812,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522813,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522814,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522815,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522816,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522817,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522818,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522819,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522820,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522821,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522822,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522823,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522824,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522825,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522826,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522827,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522828,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522829,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522830,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522831,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522832,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522833,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522834,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522835,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522836,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522837,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522838,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522839,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522840,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522841,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522842,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522843,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522844,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522845,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522846,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522847,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522848,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522849,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522850,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522851,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522852,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522853,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522854,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522855,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522856,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522857,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522858,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522859,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522860,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522861,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522862,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522863,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522864,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522865,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522866,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522867,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522868,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522869,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522870,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522871,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522872,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522873,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522874,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522875,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522876,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522877,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522878,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522879,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522880,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522881,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522882,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522883,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522884,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522885,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522886,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522887,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522888,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522889,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522890,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522891,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522892,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522893,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522894,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522895,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522896,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522897,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522898,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522899,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522900,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522901,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522902,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522903,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522904,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522905,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522906,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522907,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522908,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522909,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522910,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522911,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522912,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522913,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522914,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522915,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522916,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522917,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522918,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522919,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522920,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522921,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522922,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522923,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522924,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522925,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522926,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522927,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522928,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522929,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522930,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522931,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522932,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522933,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522934,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522935,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522936,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522937,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522938,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522939,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522940,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522941,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522942,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522943,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522944,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522945,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522946,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522947,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522948,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522949,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522950,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522951,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522952,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522953,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522954,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522955,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522956,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522957,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522958,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522959,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522960,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522961,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522962,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522963,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522964,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522965,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522966,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522967,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522968,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522969,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522970,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522971,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522972,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522973,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522974,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522975,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522976,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522977,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522978,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522979,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522980,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522981,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522982,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522983,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522984,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522985,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522986,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522987,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522988,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522989,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522990,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522991,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522992,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522993,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522994,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522995,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522996,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522997,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522998,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 522999,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523000,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523001,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523002,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523003,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523004,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523005,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523006,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523007,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523008,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523009,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523010,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523011,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523012,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523013,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523014,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523015,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523016,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523017,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523018,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523019,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523020,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523021,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523022,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523023,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523024,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523025,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523026,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523027,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523028,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523029,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523030,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523031,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523032,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523033,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523034,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523035,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523036,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523037,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523038,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523039,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523040,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523041,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523042,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523043,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523044,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523045,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523046,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523047,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523048,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523049,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523050,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523051,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523052,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523053,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523054,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523055,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523056,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523057,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523058,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523059,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523060,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523061,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523062,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523063,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523064,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523065,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523066,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523067,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523068,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523069,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523070,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523071,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523072,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523073,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523074,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523075,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523076,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523077,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523078,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523079,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523080,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523081,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523082,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523083,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523084,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523085,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523086,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523087,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523088,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523089,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523090,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523091,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523092,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523093,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523094,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523095,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523096,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523097,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523098,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523099,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523100,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523101,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523102,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523103,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523104,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523105,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523106,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523107,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523108,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523109,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523110,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523111,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523112,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523113,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523114,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523115,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523116,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523117,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523118,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523119,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523120,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523121,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523122,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523123,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523124,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523125,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523126,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523127,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523128,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523129,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523130,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523131,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523132,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523133,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523134,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523135,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523136,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523137,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523138,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523139,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523140,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523141,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523142,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523143,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523144,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523145,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523146,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523147,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523148,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523149,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523150,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523151,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523152,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523153,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523154,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523155,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523156,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523157,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523158,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523159,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523160,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523161,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523162,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523163,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523164,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523165,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523166,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523167,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523168,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523169,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523170,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523171,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523172,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523173,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523174,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523175,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523176,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523177,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523178,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523179,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523180,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523181,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523182,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523183,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523184,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523185,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523186,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523187,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523188,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523189,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523190,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523191,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523192,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523193,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523194,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523195,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523196,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523197,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523198,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523199,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523200,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523201,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523202,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523203,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523204,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523205,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523206,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523207,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523208,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523209,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523210,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523211,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523212,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523213,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523214,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523215,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523216,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523217,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523218,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523219,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523220,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523221,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523222,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523223,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523224,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523225,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523226,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523227,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523228,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523229,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523230,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523231,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523232,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523233,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523234,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523235,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523236,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523237,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523238,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523239,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523240,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523241,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523242,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523243,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523244,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523245,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523246,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523247,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523248,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523249,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523250,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523251,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523252,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523253,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523254,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523255,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523256,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523257,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523258,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523259,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523260,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523261,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523262,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523263,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523264,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523265,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523266,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523267,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523268,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523269,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523270,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523271,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523272,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523273,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523274,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523275,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523276,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523277,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523278,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523279,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523280,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523281,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523282,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523283,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523284,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523285,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523286,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523287,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523288,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523289,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523290,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523291,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523292,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523293,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523294,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523295,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523296,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523297,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523298,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523299,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523300,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523301,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523302,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523303,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523304,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523305,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523306,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523307,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523308,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523309,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523310,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523311,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523312,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523313,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523314,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523315,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523316,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523317,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523318,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523319,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523320,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523321,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523322,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523323,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523324,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523325,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523326,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523327,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523328,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523329,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523330,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523331,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523332,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523333,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523334,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523335,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523336,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523337,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523338,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523339,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523340,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523341,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523342,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523343,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523344,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523345,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523346,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523347,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523348,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523349,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523350,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523351,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523352,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523353,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523354,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523355,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523356,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523357,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523358,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523359,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523360,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523361,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523362,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523363,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523364,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523365,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523366,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523367,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523368,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523369,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523370,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523371,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523372,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523373,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523374,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523375,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523376,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523377,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523378,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523379,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523380,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523381,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523382,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523383,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523384,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523385,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523386,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523387,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523388,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523389,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523390,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523391,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523392,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523393,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523394,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523395,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523396,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523397,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523398,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523399,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523400,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523401,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523402,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523403,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523404,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523405,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523406,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523407,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523408,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523409,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523410,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523411,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523412,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523413,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523414,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523415,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523416,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523417,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523418,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523419,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523420,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523421,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523422,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523423,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523424,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523425,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523426,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523427,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523428,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523429,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523430,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523431,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523432,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523433,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523434,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523435,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523436,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523437,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523438,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523439,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523440,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523441,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523442,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523443,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523444,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523445,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523446,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523447,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523448,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523449,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523450,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523451,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523452,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523453,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523454,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523455,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523456,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523457,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523458,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523459,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523460,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523461,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523462,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523463,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523464,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523465,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523466,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523467,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523468,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523469,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523470,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523471,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523472,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523473,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523474,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523475,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523476,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523477,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523478,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523479,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523480,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523481,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523482,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523483,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523484,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523485,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523486,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523487,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523488,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523489,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523490,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523491,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523492,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523493,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523494,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523495,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523496,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523497,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523498,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523499,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523500,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523501,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523502,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523503,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523504,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523505,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523506,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523507,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523508,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523509,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523510,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523511,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523512,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523513,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523514,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523515,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523516,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523517,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 523518,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 545466,
+      "value": 32
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 545467,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 545468,
+      "value": 247
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554752,
+      "value": 173
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554753,
+      "value": 65
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554754,
+      "value": 7
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554755,
+      "value": 201
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554756,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554757,
+      "value": 202
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554758,
+      "value": 240
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554759,
+      "value": 4
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554760,
+      "value": 173
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554761,
+      "value": 194
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554762,
+      "value": 9
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554763,
+      "value": 96
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554764,
+      "value": 169
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554765,
+      "value": 16
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554766,
+      "value": 0
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554767,
+      "value": 156
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554768,
+      "value": 65
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554769,
+      "value": 7
+    },
+    {
+      "patch": "door_transition.ips",
+      "address": 554770,
+      "value": 96
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521985,
+      "value": 173
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521986,
+      "value": 196
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521987,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521988,
+      "value": 141
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521989,
+      "value": 194
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521990,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521991,
+      "value": 173
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521992,
+      "value": 212
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521993,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521994,
+      "value": 141
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521995,
+      "value": 214
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521996,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521997,
+      "value": 173
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521998,
+      "value": 200
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 521999,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522000,
+      "value": 141
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522001,
+      "value": 198
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522002,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522003,
+      "value": 173
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522004,
+      "value": 204
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522005,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522006,
+      "value": 141
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522007,
+      "value": 202
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522008,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522009,
+      "value": 173
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522010,
+      "value": 208
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522011,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522012,
+      "value": 141
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522013,
+      "value": 206
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522014,
+      "value": 9
+    },
+    {
+      "patch": "area_rando_doors.ips",
+      "address": 522015,
+      "value": 96
+    }
+  ],
+  "originalAsm": {
+    "Aqueduct Top Left": 0,
+    "Caterpillar Room Top Right": 58215,
+    "Crab Hole Bottom Left": 58198,
+    "Crab Maze Left": 0,
+    "Crab Shaft Right": 58264,
+    "Crocomire Room Top": 0,
+    "Crocomire Speedway Bottom": 0,
+    "East Tunnel Right": 48593,
+    "East Tunnel Top Right": 0,
+    "Glass Tunnel Top": 0,
+    "Golden Four": 0,
+    "Green Brinstar Elevator": 0,
+    "Green Hill Zone Top Right": 0,
+    "Green Pirates Shaft Bottom Right": 0,
+    "Keyhunter Room Bottom": 47601,
+    "Kronic Boost Room Bottom Left": 0,
+    "Lava Dive Right": 0,
+    "Le Coude Right": 0,
+    "Lower Mushrooms Left": 0,
+    "Main Street Bottom": 0,
+    "Moat Right": 0,
+    "Morph Ball Room Left": 0,
+    "Noob Bridge Right": 0,
+    "Red Brinstar Elevator": 0,
+    "Red Fish Room Left": 48559,
+    "Red Tower Top Left": 0,
+    "Single Chamber Top Right": 0,
+    "Three Muskateers Room Left": 0,
+    "Warehouse Entrance Left": 0,
+    "Warehouse Entrance Right": 48447,
+    "Warehouse Zeela Room Left": 0,
+    "West Ocean Left": 0
+  },
+  "patches": [
+    {
+      "name": "WS_Main_Open_Grey",
+      "phase": 0,
+      "sha256": "8bc7eb796b2dd199ec9f10d200dcc6848b64c706f1dcefa2cf5f97c37a0775d6",
+      "spans": [
+        {
+          "address": 1097362,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "WS_Save_Active",
+      "phase": 0,
+      "sha256": "ac72e46e167f31d285f3f47da0c7f26322f490f26f0803a3fe99f95d13356d10",
+      "spans": [
+        {
+          "address": 511664,
+          "size": 1,
+          "sha256": "4fb733bedb74fec8d65bedf056b935189a289e928b3302bec38a281814de523a"
+        }
+      ]
+    },
+    {
+      "name": "door_transition.ips",
+      "phase": 0,
+      "sha256": "2819ed7f6331900bb21e9bdad96378bb86f6a1052b8e1c86cf7b812aa56c6b26",
+      "spans": []
+    },
+    {
+      "name": "area_rando_doors.ips",
+      "phase": 0,
+      "sha256": "82d839330cc236fc0eea6a4f50cae914bba5b1ca92ecf4c2fb4e17956fecd020",
+      "spans": [
+        {
+          "address": 102956,
+          "size": 2,
+          "sha256": "82a0972109259a008df4e8212f35c1884755071d5700f4202ffd4a4fcd7a42cd"
+        },
+        {
+          "address": 513798,
+          "size": 2,
+          "sha256": "b6750b5d2965848f55d82e315fb2733db528b222be75ccf9e4d9ea9fca9c9e4a"
+        },
+        {
+          "address": 521984,
+          "size": 1,
+          "sha256": "13598656f10fa962b75f6c4587a61a067c14c1ef7dc9ca3703da76bae4c1beb1"
+        },
+        {
+          "address": 522016,
+          "size": 4,
+          "sha256": "a73348ae7aa563ec6ad25621d4044a804e3cb868ce9527e327d4d1b6090c504a"
+        }
+      ]
+    },
+    {
+      "name": "crab_shaft.ips",
+      "phase": 0,
+      "sha256": "8e47c6debd00a7f0f06330ce98200bf12071289769384b18a46ca75ccfcd2e2c",
+      "spans": [
+        {
+          "address": 2450534,
+          "size": 1259,
+          "sha256": "088ce6ba46e8943e8ee47e3954c16ceb34689fb5576a74b530ffed54e4f1818e"
+        },
+        {
+          "address": 2451793,
+          "size": 3146,
+          "sha256": "f81de41889f36630cfe14dfe703fcd77e75629a829b363dfa2ac9f2309d6dede"
+        }
+      ]
+    },
+    {
+      "name": "Save_Crab_Shaft",
+      "phase": 0,
+      "sha256": "f0a1f55fdcecccc0a2abe9721af7252423e87e948314e711014ad5140163abab",
+      "spans": [
+        {
+          "address": 18837,
+          "size": 14,
+          "sha256": "03f82d076216f6d181346e3fccee4de96a28055759c2afa058d1b15269065000"
+        },
+        {
+          "address": 84503,
+          "size": 4,
+          "sha256": "647ba37cb1afdfcce382664cfc57fef3c5c77b8400fb2e00dca26aa19c84c663"
+        }
+      ]
+    },
+    {
+      "name": "Save_Main_Street",
+      "phase": 0,
+      "sha256": "bd301390239e5a6e32cf98dd518befd671b3d2fc2ed7f383dafac79ef8e10707",
+      "spans": [
+        {
+          "address": 18851,
+          "size": 14,
+          "sha256": "4dc43b6e4f606a83c56caec8175c7a260a5f6b2eefbb8dedfd9921a740c2327a"
+        },
+        {
+          "address": 84507,
+          "size": 4,
+          "sha256": "6338103abb9df93ed91b1563482e4ca96a733780ab580adb1a3636ff2c1cd39a"
+        }
+      ]
+    },
+    {
+      "name": "area_door_west_sand_hall.ips",
+      "phase": 0,
+      "sha256": "5cf0bd6b0fb9736169c2358787f8ee87f4a3b6da035954e50b4ddd53613e51d8",
+      "spans": [
+        {
+          "address": 108092,
+          "size": 12,
+          "sha256": "54fb371e90ac81af16e5a9c8da4c00a6fe9e7ac274e2e87fb2fd9f30c89025ee"
+        }
+      ]
+    },
+    {
+      "name": "area_rando_warp_door.ips",
+      "phase": 0,
+      "sha256": "09db4d9d87c07af65088e2adafb9bf2df35d7cccba5fd2123b658d2ac69a740f",
+      "spans": [
+        {
+          "address": 2507358,
+          "size": 1156,
+          "sha256": "bd4d2073b936710a8cdb28d9ef79538358eb54ba4a433237db95831467c73ca1"
+        },
+        {
+          "address": 2508514,
+          "size": 782,
+          "sha256": "2045e5b417eea2536526a4390c9d09c60cd4c6e25e2c4186362cae48503f981d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Lower Mushrooms Left]",
+      "phase": 1,
+      "sha256": "804b5fc4c4e21f6c20d8cb1ecc7c16ebaa5b30a809af10dc37cafd543b743c5b",
+      "spans": [
+        {
+          "address": 1084428,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Green Pirates Shaft Bottom Right]",
+      "phase": 1,
+      "sha256": "c805a17e57ec95cdc5a22032e4f8ad66f4474186658d1aae789bc17202d545ac",
+      "spans": [
+        {
+          "address": 492656,
+          "size": 6,
+          "sha256": "60b584c051df243549b7221a19b88a24212a9ad22f27abfde7d6570e5d13b861"
+        },
+        {
+          "address": 1082738,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Moat Right]",
+      "phase": 1,
+      "sha256": "1104def24860ef1c9a6c9ccdaf103860738718fe338c343a86244221a0f47890",
+      "spans": [
+        {
+          "address": 1082848,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Keyhunter Room Bottom]",
+      "phase": 1,
+      "sha256": "bf2156ffcac09f0a7780b1472ba554d96b4c0e35fd8a6686e573696f31f865d2",
+      "spans": [
+        {
+          "address": 492072,
+          "size": 6,
+          "sha256": "895659374aa460088c804d86a52f26616dbaa66ec07172974880d4ed44ed9556"
+        },
+        {
+          "address": 1085307,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Morph Ball Room Left]",
+      "phase": 1,
+      "sha256": "523927e1f3a60955617b352e2e791f5e11445bdcd86ce62ebffb7d2f5cb9f01d",
+      "spans": [
+        {
+          "address": 493382,
+          "size": 6,
+          "sha256": "e53e86e8d72c3bbe8ae89df2754f578827ae1121539a4c0d7b9a3e9a6ece33ee"
+        },
+        {
+          "address": 1086376,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Climb Bottom Left]",
+      "phase": 1,
+      "sha256": "d369601ff466ad0183cd208f32b948be76d10464a3b42873d87e2cf7ead910b7",
+      "spans": [
+        {
+          "address": 492286,
+          "size": 6,
+          "sha256": "51a2313487481f4ce74cc513346c1f2fc7dac22e0e72a02855e5e98e682df818"
+        },
+        {
+          "address": 1083011,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Green Brinstar Elevator]",
+      "phase": 1,
+      "sha256": "7383c8cf5b146561fab7212b7504fd60a16a196034052c6800c4e97ae573a38a",
+      "spans": [
+        {
+          "address": 1082757,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Green Hill Zone Top Right]",
+      "phase": 1,
+      "sha256": "31ef096c90bd9b1e99edbc731bb4ef81242235f951598453bb02bcfbddb6cb9f",
+      "spans": [
+        {
+          "address": 493168,
+          "size": 6,
+          "sha256": "7fd4659c9d8a8af3d3e003d93007f6d453572c6a864fb3451c3992bfa7865b32"
+        },
+        {
+          "address": 1088859,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Noob Bridge Right]",
+      "phase": 1,
+      "sha256": "aa8d58d3cdcac74c1997d3ceab6b8263d1af1f9f3e38e24dc4be8b00f9798e80",
+      "spans": [
+        {
+          "address": 493478,
+          "size": 6,
+          "sha256": "c90aebd731bc9237bea3ffbaa492229311ee659ef6594cae8ece4bb01316654a"
+        },
+        {
+          "address": 1086245,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[West Ocean Left]",
+      "phase": 1,
+      "sha256": "9b9c8c0b559f294df83884ce521081098789a8ca8797e893b551bd75e4f3039c",
+      "spans": [
+        {
+          "address": 1083126,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Crab Maze Left]",
+      "phase": 1,
+      "sha256": "9703e81ed89cba77404b1c8831546f6b3d93c6a6c3800b0309261d8b8e8b8248",
+      "spans": [
+        {
+          "address": 1084218,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Lava Dive Right]",
+      "phase": 1,
+      "sha256": "301261b0653deda1d4b051a7226804ad2567d5b3bdb4272f2bdb285e9a6f6c62",
+      "spans": [
+        {
+          "address": 1092971,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Three Muskateers Room Left]",
+      "phase": 1,
+      "sha256": "4b2f7bb7b25eb9e4ae81eb065fbc4603fcb1b67848e309469047dc5baaaf505f",
+      "spans": [
+        {
+          "address": 1096461,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Warehouse Zeela Room Left]",
+      "phase": 1,
+      "sha256": "8fd7f4a9230836e705701cf65f1ff3f662bbd14e36537f062edc3ed57ec3b97d",
+      "spans": [
+        {
+          "address": 1086545,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Warehouse Entrance Left]",
+      "phase": 1,
+      "sha256": "3d30649189c678cae2241a6d1e12dc70255fcb3c76bbbaa4fb86f23f8223bd60",
+      "spans": [
+        {
+          "address": 1087734,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Warehouse Entrance Right]",
+      "phase": 1,
+      "sha256": "3d30649189c678cae2241a6d1e12dc70255fcb3c76bbbaa4fb86f23f8223bd60",
+      "spans": [
+        {
+          "address": 1087734,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Single Chamber Top Right]",
+      "phase": 1,
+      "sha256": "873b7fcc990a2e7cd57982c02d1fab918adc2dbb1e41cb16f2038bc39fba5258",
+      "spans": [
+        {
+          "address": 1095822,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Kronic Boost Room Bottom Left]",
+      "phase": 1,
+      "sha256": "77640bfe4284e621ca797695733103aa88c753fc49e2b2013fb1a90cacdfdb93",
+      "spans": [
+        {
+          "address": 494926,
+          "size": 6,
+          "sha256": "9f25cf7ce0ab0f5d20fea72883a5e09534f99cb479423ca5730a3e1cf596abcb"
+        },
+        {
+          "address": 1096151,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Crocomire Speedway Bottom]",
+      "phase": 1,
+      "sha256": "6d7a45fec4f768ca00082bf88eaa6a916dd81b60d1d1cb890c843b4590325c1a",
+      "spans": [
+        {
+          "address": 494486,
+          "size": 6,
+          "sha256": "2e5f0795a8486dec5f45145077323b2c75ffee07af36692221d84b7752fb8d3d"
+        },
+        {
+          "address": 1092236,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Crocomire Room Top]",
+      "phase": 1,
+      "sha256": "f68134a8b3c2e4e481718cbfbc6cf7afc2ff150fe1e141d552cc6f9e708635f2",
+      "spans": [
+        {
+          "address": 494494,
+          "size": 6,
+          "sha256": "e47bf10f7e2f92bb61655108164987fb3bf091236d4f0cf7fb23478a7bd1d953"
+        },
+        {
+          "address": 1096496,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Main Street Bottom]",
+      "phase": 1,
+      "sha256": "3badf7b4b736a397dbc95e789365cffab31326413e7a3001105f5c3350ea2292",
+      "spans": [
+        {
+          "address": 1105711,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Crab Hole Bottom Left]",
+      "phase": 1,
+      "sha256": "904a9d8e1181402efba971bac5fe2a7b473768f69075ad1e78c7f320349317dd",
+      "spans": [
+        {
+          "address": 1105497,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Red Fish Room Left]",
+      "phase": 1,
+      "sha256": "a204efc7962c14bc1bb7d5ebbe05dbc3027fdf018034cbd945f523f0f0b413c0",
+      "spans": [
+        {
+          "address": 1102828,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Crab Shaft Right]",
+      "phase": 1,
+      "sha256": "98671cfabc94c5ebcf4fc6dd3928e465fd7bb2e33af2328fac325561a720e975",
+      "spans": [
+        {
+          "address": 509179,
+          "size": 6,
+          "sha256": "bdcacdcf484928deae01da90d288083fa00d5e47582cf3efb1dc67b0dfa662c2"
+        },
+        {
+          "address": 1101829,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Aqueduct Top Left]",
+      "phase": 1,
+      "sha256": "f102a2b2bae1143ac15facd90c117f5a7252048dc6d0404b0a8d5297a15d9aab",
+      "spans": [
+        {
+          "address": 1102761,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Le Coude Right]",
+      "phase": 1,
+      "sha256": "3eb6ed9bfb3a6ff9abe6fb7b92fa6e4b42d5cfb4a066edd935b77738f9106c2e",
+      "spans": [
+        {
+          "address": 492094,
+          "size": 6,
+          "sha256": "1eb507f39c83a4a811994a9f8c250bf3df536bb6b289fff023f1ebcd617698a2"
+        },
+        {
+          "address": 1082845,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Red Tower Top Left]",
+      "phase": 1,
+      "sha256": "2d21a3aca73fe342fdc5acff368f8759bbbcb9063e631eaef69949367aeff0d7",
+      "spans": [
+        {
+          "address": 1086724,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Caterpillar Room Top Right]",
+      "phase": 1,
+      "sha256": "87269ecf88fbe195dbe58081ffb3615f7454629f25a84009a4392be3ce368788",
+      "spans": [
+        {
+          "address": 1089721,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Red Brinstar Elevator]",
+      "phase": 1,
+      "sha256": "24b12ed7f7253cd58758df322ea18bdef6f8f9b63c851290d0b3434a14f6e297",
+      "spans": [
+        {
+          "address": 492118,
+          "size": 6,
+          "sha256": "3434959f309fce800be5718fc79f1004a02457d8ba84d801e5ab1e08a27703f8"
+        },
+        {
+          "address": 1083889,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[East Tunnel Right]",
+      "phase": 1,
+      "sha256": "e7bf8a8deeee9f7c43bd5adcee2d6260ed11dd534ee5d923b5a1ab4f7f9807cb",
+      "spans": [
+        {
+          "address": 1103329,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[East Tunnel Top Right]",
+      "phase": 1,
+      "sha256": "e7bf8a8deeee9f7c43bd5adcee2d6260ed11dd534ee5d923b5a1ab4f7f9807cb",
+      "spans": [
+        {
+          "address": 1103329,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Glass Tunnel Top]",
+      "phase": 1,
+      "sha256": "fec6dd056cc94e5c6d43f3b822d09fbec4df52a9c5ffedbfc6ba87f02f1be7ed",
+      "spans": [
+        {
+          "address": 1103163,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Golden Four]",
+      "phase": 1,
+      "sha256": "46802c79b6b1e346410f47e001600877fc975fc2f10f8cc7440c0bc55e6ead13",
+      "spans": [
+        {
+          "address": 1089376,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[West Sand Hall Left]",
+      "phase": 1,
+      "sha256": "bc3de3133a25d653c574ee0ce5b33b04fbdaa7147ef925fd91c96fecc7b6ccda",
+      "spans": [
+        {
+          "address": 1104591,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    },
+    {
+      "name": "Blinking[Below Botwoon Energy Tank Right]",
+      "phase": 1,
+      "sha256": "1e7e879931995c9aac0f249ed7c964f12be649fd4207607ab979a76115340ffe",
+      "spans": [
+        {
+          "address": 1105306,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ]
+    }
+  ]
+}

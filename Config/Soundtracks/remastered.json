@@ -1,0 +1,280 @@
+{
+  "name": "The Zebes Project — Remastered",
+  "format": "MSU1 / 44100 Hz / stereo / signed 16-bit LE",
+  "tracks": [
+    {
+      "track": 1,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-1.pcm",
+      "sha256": "77d69f3d843f72f58bf0b299d4c25dcf69b9e511835fec5c87d123487b8fc989",
+      "file": "zebes-1.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 2,
+      "pack": "sam",
+      "source_path": "packs/sam/supermetroid_msu1-2.pcm",
+      "sha256": "2023085ffd28553a6e407bec5209cb345822f9e132e3a6d4f8e37eefa38ddb1d",
+      "file": "zebes-2.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 3,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-3.pcm",
+      "sha256": "55be32083bda4949e0df1508c62b47dec3eeb565ae1f7810c9a2f58e587f8947",
+      "file": "zebes-3.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 4,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-4.pcm",
+      "sha256": "b6d491afed567cc8d939641924a23e1cdf04c1ca6907b47247775ae05f612a01",
+      "file": "zebes-4.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 5,
+      "pack": "sam",
+      "source_path": "packs/sam/supermetroid_msu1-5.pcm",
+      "sha256": "c50496c49c8a8f18f179bc1f4d56d1111ba0c180b061344bb312899f08ec3cca",
+      "file": "zebes-5.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 6,
+      "pack": "sam",
+      "source_path": "packs/sam/supermetroid_msu1-6.pcm",
+      "sha256": "fde2f156b31686d40b9191819d826e78d308d42538d2420442fa9f6da6852ddd",
+      "file": "zebes-6.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 7,
+      "pack": "sam",
+      "source_path": "packs/sam/supermetroid_msu1-7.pcm",
+      "sha256": "a7d841496279783e573afb7e9db51e0361dbb9e8ab9dbc047a092fd6a2ce0b73",
+      "file": "zebes-7.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 8,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-8.pcm",
+      "sha256": "9229fad84777a8e774d71e6bceec014302ec9a90a822098453ee6f28f467a75b",
+      "file": "zebes-8.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 9,
+      "pack": "sam",
+      "source_path": "packs/sam/supermetroid_msu1-9.pcm",
+      "sha256": "b69a447610ed6b13ccb470121870e650979e74184ba9b16f66c766aa38228edd",
+      "file": "zebes-9.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 10,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-10.pcm",
+      "sha256": "3b8b19e7002974f8b6671cfe2d846c1a913fb7d7a262d6a1255e7cbbe5ccf066",
+      "file": "zebes-10.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 11,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-11.pcm",
+      "sha256": "ddd9219517d0cda27fc5fc8d8b6af3ef026e640ac2f05b99be22dfab42c83cbe",
+      "file": "zebes-11.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 12,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-12.pcm",
+      "sha256": "80d8ac9eefe9c649eb0eeed13886e249644b9f2d98df6a46694d3d6120eb4cc0",
+      "file": "zebes-12.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 13,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-13.pcm",
+      "sha256": "60daf81de16f6ceaa010a7eebfc0b7f2c42678f913c222a5636be06ef3725bf0",
+      "file": "zebes-13.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 14,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-14.pcm",
+      "sha256": "bbe8a129dab2963ff61e038bcc9a3d41f9da6bcadd0be0eb295c4db1d59f9d0a",
+      "file": "zebes-14.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 15,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-15.pcm",
+      "sha256": "a4c6ff147a40d09a7574fd6d900d54c1dda7209f23a19806c433d9ac9c7c9507",
+      "file": "zebes-15.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 16,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-16.pcm",
+      "sha256": "3abaf7fd78ed24e1d8eeaadb762e2a9cd59ff20e0b2024ff65d5be72899fd90b",
+      "file": "zebes-16.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 17,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-17.pcm",
+      "sha256": "a4dfe7c94203b86aaef2ebd72c1c4df2cc205b8858628d14e5de27908f16f4bc",
+      "file": "zebes-17.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 18,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-18.pcm",
+      "sha256": "5250e07bbe634baaf1849ea240890060d289c01863bd381c7a05d07e54e31b29",
+      "file": "zebes-18.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 19,
+      "pack": "sam",
+      "source_path": "packs/sam/supermetroid_msu1-19.pcm",
+      "sha256": "63bd0d6712da3d6546b17794a4a5d8bf9540fd7cf7e48bb5d1eb7483ee50fa2a",
+      "file": "zebes-19.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 20,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-20.pcm",
+      "sha256": "39b334650c408f9b7ab8a94b26e1455ed066809225caccb3edf46126cd9af5dd",
+      "file": "zebes-20.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 21,
+      "pack": "sam",
+      "source_path": "packs/sam/supermetroid_msu1-21.pcm",
+      "sha256": "6d5e6087074a223a739ec160a86edad0fe32a3474eeb895138a29fb42cc983f0",
+      "file": "zebes-21.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 22,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-22.pcm",
+      "sha256": "ce5a4b359e6a4fc4b633c6d7bb83e15410937ac266d514a5e4ae75f0546c6d43",
+      "file": "zebes-22.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 23,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-23.pcm",
+      "sha256": "fa4e2251cde3e66b86b76abb9b6d6aab698a6726e891162f61a8ca6205bcc98b",
+      "file": "zebes-23.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 24,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-24.pcm",
+      "sha256": "7851afbe25ab5289c55d97247bce7b8f3d34e139baf14f354fab3a5ae46cc699",
+      "file": "zebes-24.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 25,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-25.pcm",
+      "sha256": "80e6862f804f5581089afeb51ae8125ded54305a66d05001a8054ec193274053",
+      "file": "zebes-25.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 26,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-26.pcm",
+      "sha256": "0a7e0e6643a671f0e0ac5bcf118fd56a8e894cf016293f82e06d0a528dd9c847",
+      "file": "zebes-26.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 27,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-27.pcm",
+      "sha256": "8d2d5b5df218d530c492d9281831d2dd4887d5a38e2fe908d9d6f13aa0798899",
+      "file": "zebes-27.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 28,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/SM Alternate Tracks/ALT PCM-28 Theme of Super Metroid/supermetroid_msu1-28.pcm",
+      "sha256": "b9509c123df0d505793ff25edc126debedcd50a188e67f76f0b03edaf8bf132d",
+      "file": "zebes-28.pcm",
+      "variant": "alternative"
+    },
+    {
+      "track": 29,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-29.pcm",
+      "sha256": "95d87a3c8d66db4fbeb56ccd3d0e558a8e8c59055bcf4604f62f9aa27fe6dd66",
+      "file": "zebes-29.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 30,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-30.pcm",
+      "sha256": "329ee1ba399228b2f04cb0e7d57455e6557cb2ffc4bacb24e0aa10b25b83c1f2",
+      "file": "zebes-30.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 100,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-100.pcm",
+      "sha256": "9c1a60737cbcad86af15b9f9c125f0083d339ef5a8ba51e72092a0273f24b8d9",
+      "file": "zebes-100.pcm",
+      "variant": "main"
+    },
+    {
+      "track": 101,
+      "pack": "jud6ment",
+      "source_path": "packs/jud6ment/supermetroid_msu1-101.pcm",
+      "sha256": "4b398dbc05e2b860197b9b76a5a20df39c3f010ea4938e57848e34f6342e1052",
+      "file": "zebes-101.pcm",
+      "variant": "main"
+    }
+  ],
+  "sources": [
+    {
+      "id": "jud6ment",
+      "name": "JUD6MENT — Orchestral v5 (2024)",
+      "source": "https://www.mediafire.com/file/c4ytff2en1fq2rq/Super_Metroid_Orchestral_by_JUD6MENT_%25282024_update%2529.zip/file",
+      "credits": "Compilation / MSU conversion: JUD6MENT. Arrangements include Blake Robinson, GMB Sound Team, The Noble Demon and others; see included per-track credits."
+    },
+    {
+      "id": "sam",
+      "name": "Jammin’ Sam Miller — Restored",
+      "source": "https://drive.google.com/drive/folders/1-6ZgNzXj331gWxIKm8r0h_qzkFUht5DU",
+      "credits": "Audio restoration: Jammin’ Sam Miller. MSU conversion: NoNameSD. Track mapping included in Tracklist.txt."
+    }
+  ],
+  "credit_sources": [
+    "https://www.youtube.com/watch?v=wsOocVDTnpI",
+    "https://www.zeldix.net/t1444-super-metroid"
+  ]
+}

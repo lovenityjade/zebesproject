@@ -1,0 +1,26 @@
+{
+  "applied": true,
+  "slot": "A",
+  "seed": 14092032,
+  "path": "Unreal/Saved/SM/Profiles/01A0A4746B647C6FAA0A30CAAC21B373/bank.sram.dat",
+  "backup": "Unreal/Saved/SM/Recovery/20260915-hidden-morph/profile-before/bank.sram.dat",
+  "beforeSha256": "3e72bea35d6e69b3615f961af52767291f4afc93cef61e75e2e14f253aa46274",
+  "afterSha256": "6070fc43f24b48c4bf364a9603f82669f6c863671d81b9d9f0fb1202549e66e7",
+  "changedByteOffsets": [
+    0,
+    8,
+    16,
+    18,
+    8176,
+    8184
+  ],
+  "acquiredBefore": "0102",
+  "acquiredAfter": "0104",
+  "equippedBefore": "0102",
+  "equippedAfter": "0104",
+  "otherSlotsUnchanged": true,
+  "locationFlagsUnchanged": true,
+  "seedUnchanged": true,
+  "statsUnchanged": true,
+  "nativeLoadVerified": true
+}

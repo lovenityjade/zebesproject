@@ -1,0 +1,9 @@
+{
+  "byteExactNativePayload": true,
+  "transactionCases": 49,
+  "all46PatchIds": true,
+  "vanillaRollback": true,
+  "excludedMirrorRejected": true,
+  "sourceRomUnchanged": true,
+  "librarySha256": "2cc4e7e71ecb70772fe97d690ba59492258b889626ab2ecc470583d9c2a8b6c8"
+}

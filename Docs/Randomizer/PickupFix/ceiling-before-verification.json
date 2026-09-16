@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "seed": 14092032,
+  "fingerprint": "f9cc2f3e2a205ad2f62253df56e97419df2a3d7be229b936bfd09bf60240133d",
+  "room": "0x9f64",
+  "collected": [
+    "Morphing Ball",
+    "Energy Tank, Brinstar Ceiling"
+  ],
+  "message": 9,
+  "acquired": "0x102",
+  "equipped": "0x102",
+  "cpuOpcodes": 0,
+  "sourceRomUnchanged": true,
+  "fixture": "Native Hi-Jump pickup; positioned in actual Blue Brinstar Energy Tank room; native shooting reveals the hidden block and native jumping collects Morph; invincibility prevents enemy interference."
+}

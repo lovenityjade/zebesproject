@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 15092130,
+    "start": "Gauntlet Top",
+    "fingerprint": "ea218c9e9296fb05dce934c9508cd7f6bccbd1903b13e659c6ec1a15b18d0bda"
+  },
+  {
+    "seed": 15092131,
+    "start": "Landing Site",
+    "fingerprint": "7cb9ba013dd659aa93c2608ef023be8db6777901cfde0338ffb5cb4c00e2f0f6"
+  },
+  {
+    "seed": 15092132,
+    "start": "Landing Site",
+    "fingerprint": "169c5e444291b767006ff94fc8aff26a8b964b4358a3ea0a1d57c1455790e67e"
+  },
+  {
+    "rejected": {
+      "startLocation": "random",
+      "startLocationMultiSelect": [
+        "Golden Four"
+      ]
+    },
+    "error": "ValueError: VARIA generation failed: DIAG: Golden Four : Start location available only with area randomization enabled. \nInvalid start locations list with your settings.\n"
+  },
+  {
+    "rejected": {
+      "startLocation": "Firefleas Top"
+    },
+    "error": "ValueError: VARIA generation failed: DIAG: Invalid start location: Firefleas Top.  Firefleas Wall Jump is not known. \nPossible start locations with these settings: ['Ceres', 'Landing Site', 'Gauntlet Top', 'Green Brinstar Elevator', 'Big Pink', 'Etecoons Supers', 'Wrecked Ship Main', 'Business Center', 'Mama Turtle', 'Watering Hole', 'Aqueduct']\n"
+  }
+]

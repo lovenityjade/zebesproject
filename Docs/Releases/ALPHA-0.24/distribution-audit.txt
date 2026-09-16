@@ -1,0 +1,8 @@
+DISTRIBUTION BLOCKED: known artwork/provenance issues remain.
+ - Native/sm_tracker_assets.inc: embedded tracker_icons; runtime ROM extraction/review required
+ - Native/sm_varia_assets.inc: embedded varia_gfx; runtime ROM extraction/review required
+ - Native/sm_objective_pause_assets.inc: embedded objective_pause_gfx; runtime ROM extraction/review required
+ - Native/sm_mirror_data.inc: embedded mirror_bytes; runtime ROM extraction/review required
+ - Unreal/Content/Splash/Icon.bmp: pre-extracted Samus helmet; do not bundle
+ - Unreal/Content/Splash/EdIcon.bmp: pre-extracted Samus helmet; do not bundle
+ - Native/sm_world_data.inc: mixed VARIA/ROM-derived data audit outstanding

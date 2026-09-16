@@ -1,0 +1,7 @@
+{
+  "engine": "Unreal Engine 5.8.2",
+  "real_input_injection": true,
+  "open_navigate_pause_cancel_confirm_arrival": true,
+  "arrival_room": "9ad9",
+  "cpu_opcodes": 0
+}

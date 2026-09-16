@@ -1,0 +1,15 @@
+{
+  "quota": 20,
+  "earlyDeparturePrevented": true,
+  "reload": 19,
+  "finalCount": 20,
+  "realCredits": true,
+  "motherBrainDefeated": false,
+  "escapeEvent": false,
+  "states": [
+    8,
+    38,
+    39
+  ],
+  "emulatedCpu": 0
+}

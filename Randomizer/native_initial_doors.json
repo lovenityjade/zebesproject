@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "base": [
+    16,
+    31,
+    35,
+    56,
+    68,
+    140,
+    146,
+    150,
+    152
+  ],
+  "starts": [
+    {
+      "name": "Ceres",
+      "spawn": 65534,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        50,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Landing Site",
+      "spawn": 0,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        50,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Gauntlet Top",
+      "spawn": 6,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Green Brinstar Elevator",
+      "spawn": 264,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        33,
+        35,
+        38,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Big Pink",
+      "spawn": 256,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Etecoons Supers",
+      "spawn": 263,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        52,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Wrecked Ship Main",
+      "spawn": 768,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        131,
+        139,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Firefleas Top",
+      "spawn": 519,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Business Center",
+      "spawn": 520,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        77,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Bubble Mountain",
+      "spawn": 513,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        84,
+        85,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Mama Turtle",
+      "spawn": 1030,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        142,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Watering Hole",
+      "spawn": 1031,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Aqueduct",
+      "spawn": 1029,
+      "areaOnly": false,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Red Brinstar Elevator",
+      "spawn": 266,
+      "areaOnly": true,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        60,
+        61,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    },
+    {
+      "name": "Golden Four",
+      "spawn": 7,
+      "areaOnly": true,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ]
+    }
+  ]
+}

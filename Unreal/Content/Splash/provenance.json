@@ -1,0 +1,10 @@
+{
+  "source": "zebesproject-logo.png",
+  "sourceSha256": "1e85b7a61903a198f90bdbea89af0bab0354166b8ef5266c63d5abe5689d4798",
+  "files": {
+    "Unreal/Content/Splash/Icon.bmp": "a8b7af6efcdcf79b5b0fb05caf7280c02e1f8261f520a8ffcd6962e4d2cb0845",
+    "Unreal/Content/Splash/EdIcon.bmp": "a8b7af6efcdcf79b5b0fb05caf7280c02e1f8261f520a8ffcd6962e4d2cb0845",
+    "Unreal/Build/Windows/Application.ico": "d15a31c55691da4eeb2cb116aeb0a3ef988683b77fdd107a4bf39931d848e783"
+  },
+  "policy": "Project-owned startup logo; original helmet decoded from verified ROM at runtime"
+}

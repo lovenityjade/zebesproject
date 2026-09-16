@@ -1,0 +1,1145 @@
+{
+  "roomPlms": {
+    "WS_Save_Blinking_Door": {
+      "room": 51958,
+      "state": 51976,
+      "plm_bytes_list": [
+        [
+          66,
+          200,
+          78,
+          54,
+          98,
+          12
+        ]
+      ]
+    }
+  },
+  "patches": [
+    "door_transition.ips",
+    "Phantoon_Eye_Door",
+    "WS_Main_Open_Grey",
+    "WS_Save_Active"
+  ],
+  "schema": 1,
+  "upstream": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5",
+  "accessPoints": [
+    {
+      "id": 0,
+      "name": "DraygonRoomIn",
+      "inside": true,
+      "room": {
+        "RoomPtr": 55904,
+        "area": 4
+      },
+      "entry": {
+        "SamusX": 456,
+        "SamusY": 136,
+        "DoorPtr": 43072,
+        "direction": 5,
+        "cap": [
+          30,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          1,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      },
+      "exit": {
+        "DoorPtr": 43372,
+        "direction": 4,
+        "cap": [
+          1,
+          38
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          2
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 58329,
+        "exitAsm": "door_transition_boss_exit_fix"
+      }
+    },
+    {
+      "id": 1,
+      "name": "DraygonRoomOut",
+      "inside": false,
+      "room": {
+        "RoomPtr": 55183,
+        "area": 4,
+        "songs": [
+          55205
+        ]
+      },
+      "entry": {
+        "SamusX": 52,
+        "SamusY": 648,
+        "song": 27,
+        "DoorPtr": 43372,
+        "direction": 4,
+        "cap": [
+          1,
+          38
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          2
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 58329,
+        "exitAsm": "door_transition_boss_exit_fix"
+      },
+      "exit": {
+        "DoorPtr": 43072,
+        "direction": 5,
+        "cap": [
+          30,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          1,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      }
+    },
+    {
+      "id": 2,
+      "name": "KraidRoomIn",
+      "inside": true,
+      "room": {
+        "RoomPtr": 42399,
+        "area": 1
+      },
+      "entry": {
+        "SamusX": 52,
+        "SamusY": 392,
+        "DoorPtr": 37302,
+        "direction": 4,
+        "cap": [
+          1,
+          22
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          1
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      },
+      "exit": {
+        "DoorPtr": 37326,
+        "direction": 5,
+        "cap": [
+          30,
+          22
+        ],
+        "bitFlag": 0,
+        "screen": [
+          1,
+          1
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0,
+        "exitAsm": "door_transition_kraid_exit_fix"
+      }
+    },
+    {
+      "id": 3,
+      "name": "KraidRoomOut",
+      "inside": false,
+      "room": {
+        "RoomPtr": 42347,
+        "area": 1,
+        "songs": [
+          42364,
+          42295,
+          42321
+        ]
+      },
+      "entry": {
+        "SamusX": 461,
+        "SamusY": 392,
+        "song": 18,
+        "DoorPtr": 37326,
+        "direction": 5,
+        "cap": [
+          30,
+          22
+        ],
+        "bitFlag": 0,
+        "screen": [
+          1,
+          1
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0,
+        "exitAsm": "door_transition_kraid_exit_fix"
+      },
+      "exit": {
+        "DoorPtr": 37302,
+        "direction": 4,
+        "cap": [
+          1,
+          22
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          1
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      }
+    },
+    {
+      "id": 4,
+      "name": "PhantoonRoomIn",
+      "inside": true,
+      "room": {
+        "RoomPtr": 52499,
+        "area": 3
+      },
+      "entry": {
+        "SamusX": 46,
+        "SamusY": 184,
+        "DoorPtr": 41644,
+        "direction": 4,
+        "cap": [
+          1,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      },
+      "exit": {
+        "DoorPtr": 41668,
+        "direction": 5,
+        "cap": [
+          78,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          4,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 57854,
+        "exitAsm": "door_transition_boss_exit_fix"
+      }
+    },
+    {
+      "id": 5,
+      "name": "PhantoonRoomOut",
+      "inside": false,
+      "room": {
+        "RoomPtr": 52335,
+        "area": 3
+      },
+      "entry": {
+        "SamusX": 1183,
+        "SamusY": 184,
+        "DoorPtr": 41668,
+        "direction": 5,
+        "cap": [
+          78,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          4,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 57854,
+        "exitAsm": "door_transition_boss_exit_fix"
+      },
+      "exit": {
+        "DoorPtr": 41644,
+        "direction": 4,
+        "cap": [
+          1,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      }
+    },
+    {
+      "id": 6,
+      "name": "RidleyRoomIn",
+      "inside": true,
+      "room": {
+        "RoomPtr": 45870,
+        "area": 2
+      },
+      "entry": {
+        "SamusX": 191,
+        "SamusY": 408,
+        "DoorPtr": 39114,
+        "direction": 5,
+        "cap": [
+          14,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      },
+      "exit": {
+        "DoorPtr": 39102,
+        "direction": 4,
+        "cap": [
+          1,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      }
+    },
+    {
+      "id": 7,
+      "name": "RidleyRoomOut",
+      "inside": false,
+      "room": {
+        "RoomPtr": 45946,
+        "area": 2
+      },
+      "entry": {
+        "SamusX": 46,
+        "SamusY": 152,
+        "DoorPtr": 39102,
+        "direction": 4,
+        "cap": [
+          1,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      },
+      "exit": {
+        "DoorPtr": 39114,
+        "direction": 5,
+        "cap": [
+          14,
+          6
+        ],
+        "bitFlag": 0,
+        "screen": [
+          0,
+          0
+        ],
+        "distanceToSpawn": 32768,
+        "doorAsmPtr": 0
+      }
+    }
+  ],
+  "connections": [
+    [
+      null,
+      {
+        "source": 0,
+        "destination": 1,
+        "room": 55183,
+        "door": 43372,
+        "direction": 4,
+        "bitFlag": 0,
+        "cap": [
+          1,
+          38
+        ],
+        "screen": [
+          0,
+          2
+        ],
+        "asm": 58329,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 32768,
+        "incompatible": false,
+        "x": 52,
+        "y": 648
+      },
+      null,
+      {
+        "source": 0,
+        "destination": 3,
+        "room": 42347,
+        "door": 43372,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          30,
+          22
+        ],
+        "screen": [
+          1,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 0,
+        "incompatible": true,
+        "x": 461,
+        "y": 392
+      },
+      null,
+      {
+        "source": 0,
+        "destination": 5,
+        "room": 52335,
+        "door": 43372,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          78,
+          6
+        ],
+        "screen": [
+          4,
+          0
+        ],
+        "asm": 57854,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 0,
+        "incompatible": true,
+        "x": 1183,
+        "y": 184
+      },
+      null,
+      {
+        "source": 0,
+        "destination": 7,
+        "room": 45946,
+        "door": 43372,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 32768,
+        "incompatible": false,
+        "x": 46,
+        "y": 152
+      }
+    ],
+    [
+      {
+        "source": 1,
+        "destination": 0,
+        "room": 55904,
+        "door": 43072,
+        "direction": 5,
+        "bitFlag": 0,
+        "cap": [
+          30,
+          6
+        ],
+        "screen": [
+          1,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 456,
+        "y": 136
+      },
+      null,
+      {
+        "source": 1,
+        "destination": 2,
+        "room": 42399,
+        "door": 43072,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          22
+        ],
+        "screen": [
+          0,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 52,
+        "y": 392
+      },
+      null,
+      {
+        "source": 1,
+        "destination": 4,
+        "room": 52499,
+        "door": 43072,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 46,
+        "y": 184
+      },
+      null,
+      {
+        "source": 1,
+        "destination": 6,
+        "room": 45870,
+        "door": 43072,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          14,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 191,
+        "y": 408
+      },
+      null
+    ],
+    [
+      null,
+      {
+        "source": 2,
+        "destination": 1,
+        "room": 55183,
+        "door": 37326,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          38
+        ],
+        "screen": [
+          0,
+          2
+        ],
+        "asm": 58329,
+        "exitAsm": "door_transition_kraid_exit_fix",
+        "distance": 0,
+        "incompatible": true,
+        "x": 52,
+        "y": 648
+      },
+      null,
+      {
+        "source": 2,
+        "destination": 3,
+        "room": 42347,
+        "door": 37326,
+        "direction": 5,
+        "bitFlag": 0,
+        "cap": [
+          30,
+          22
+        ],
+        "screen": [
+          1,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": "door_transition_kraid_exit_fix",
+        "distance": 32768,
+        "incompatible": false,
+        "x": 461,
+        "y": 392
+      },
+      null,
+      {
+        "source": 2,
+        "destination": 5,
+        "room": 52335,
+        "door": 37326,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          78,
+          6
+        ],
+        "screen": [
+          4,
+          0
+        ],
+        "asm": 57854,
+        "exitAsm": "door_transition_kraid_exit_fix",
+        "distance": 32768,
+        "incompatible": false,
+        "x": 1183,
+        "y": 184
+      },
+      null,
+      {
+        "source": 2,
+        "destination": 7,
+        "room": 45946,
+        "door": 37326,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": "door_transition_kraid_exit_fix",
+        "distance": 0,
+        "incompatible": true,
+        "x": 46,
+        "y": 152
+      }
+    ],
+    [
+      {
+        "source": 3,
+        "destination": 0,
+        "room": 55904,
+        "door": 37302,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          30,
+          6
+        ],
+        "screen": [
+          1,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 456,
+        "y": 136
+      },
+      null,
+      {
+        "source": 3,
+        "destination": 2,
+        "room": 42399,
+        "door": 37302,
+        "direction": 4,
+        "bitFlag": 0,
+        "cap": [
+          1,
+          22
+        ],
+        "screen": [
+          0,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 52,
+        "y": 392
+      },
+      null,
+      {
+        "source": 3,
+        "destination": 4,
+        "room": 52499,
+        "door": 37302,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 46,
+        "y": 184
+      },
+      null,
+      {
+        "source": 3,
+        "destination": 6,
+        "room": 45870,
+        "door": 37302,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          14,
+          6
+        ],
+        "screen": [
+          0,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 191,
+        "y": 408
+      },
+      null
+    ],
+    [
+      null,
+      {
+        "source": 4,
+        "destination": 1,
+        "room": 55183,
+        "door": 41668,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          38
+        ],
+        "screen": [
+          0,
+          2
+        ],
+        "asm": 58329,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 0,
+        "incompatible": true,
+        "x": 52,
+        "y": 648
+      },
+      null,
+      {
+        "source": 4,
+        "destination": 3,
+        "room": 42347,
+        "door": 41668,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          30,
+          22
+        ],
+        "screen": [
+          1,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 32768,
+        "incompatible": false,
+        "x": 461,
+        "y": 392
+      },
+      null,
+      {
+        "source": 4,
+        "destination": 5,
+        "room": 52335,
+        "door": 41668,
+        "direction": 5,
+        "bitFlag": 0,
+        "cap": [
+          78,
+          6
+        ],
+        "screen": [
+          4,
+          0
+        ],
+        "asm": 57854,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 32768,
+        "incompatible": false,
+        "x": 1183,
+        "y": 184
+      },
+      null,
+      {
+        "source": 4,
+        "destination": 7,
+        "room": 45946,
+        "door": 41668,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": "door_transition_boss_exit_fix",
+        "distance": 0,
+        "incompatible": true,
+        "x": 46,
+        "y": 152
+      }
+    ],
+    [
+      {
+        "source": 5,
+        "destination": 0,
+        "room": 55904,
+        "door": 41644,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          30,
+          6
+        ],
+        "screen": [
+          1,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 456,
+        "y": 136
+      },
+      null,
+      {
+        "source": 5,
+        "destination": 2,
+        "room": 42399,
+        "door": 41644,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          22
+        ],
+        "screen": [
+          0,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 52,
+        "y": 392
+      },
+      null,
+      {
+        "source": 5,
+        "destination": 4,
+        "room": 52499,
+        "door": 41644,
+        "direction": 4,
+        "bitFlag": 0,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 46,
+        "y": 184
+      },
+      null,
+      {
+        "source": 5,
+        "destination": 6,
+        "room": 45870,
+        "door": 41644,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          14,
+          6
+        ],
+        "screen": [
+          0,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 191,
+        "y": 408
+      },
+      null
+    ],
+    [
+      null,
+      {
+        "source": 6,
+        "destination": 1,
+        "room": 55183,
+        "door": 39102,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          38
+        ],
+        "screen": [
+          0,
+          2
+        ],
+        "asm": 58329,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 52,
+        "y": 648
+      },
+      null,
+      {
+        "source": 6,
+        "destination": 3,
+        "room": 42347,
+        "door": 39102,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          30,
+          22
+        ],
+        "screen": [
+          1,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 461,
+        "y": 392
+      },
+      null,
+      {
+        "source": 6,
+        "destination": 5,
+        "room": 52335,
+        "door": 39102,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          78,
+          6
+        ],
+        "screen": [
+          4,
+          0
+        ],
+        "asm": 57854,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 1183,
+        "y": 184
+      },
+      null,
+      {
+        "source": 6,
+        "destination": 7,
+        "room": 45946,
+        "door": 39102,
+        "direction": 4,
+        "bitFlag": 0,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 46,
+        "y": 152
+      }
+    ],
+    [
+      {
+        "source": 7,
+        "destination": 0,
+        "room": 55904,
+        "door": 39114,
+        "direction": 5,
+        "bitFlag": 64,
+        "cap": [
+          30,
+          6
+        ],
+        "screen": [
+          1,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 456,
+        "y": 136
+      },
+      null,
+      {
+        "source": 7,
+        "destination": 2,
+        "room": 42399,
+        "door": 39114,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          22
+        ],
+        "screen": [
+          0,
+          1
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 52,
+        "y": 392
+      },
+      null,
+      {
+        "source": 7,
+        "destination": 4,
+        "room": 52499,
+        "door": 39114,
+        "direction": 4,
+        "bitFlag": 64,
+        "cap": [
+          1,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 0,
+        "incompatible": true,
+        "x": 46,
+        "y": 184
+      },
+      null,
+      {
+        "source": 7,
+        "destination": 6,
+        "room": 45870,
+        "door": 39114,
+        "direction": 5,
+        "bitFlag": 0,
+        "cap": [
+          14,
+          6
+        ],
+        "screen": [
+          0,
+          0
+        ],
+        "asm": 0,
+        "exitAsm": null,
+        "distance": 32768,
+        "incompatible": false,
+        "x": 191,
+        "y": 408
+      },
+      null
+    ]
+  ],
+  "vanillaPairs": [
+    [
+      "KraidRoomOut",
+      "KraidRoomIn"
+    ],
+    [
+      "PhantoonRoomOut",
+      "PhantoonRoomIn"
+    ],
+    [
+      "DraygonRoomOut",
+      "DraygonRoomIn"
+    ],
+    [
+      "RidleyRoomOut",
+      "RidleyRoomIn"
+    ]
+  ],
+  "sha256": "1073f1655ece1304f1d4d8873208a3e9c3d590b195ce1be15a031901b53d4edc"
+}

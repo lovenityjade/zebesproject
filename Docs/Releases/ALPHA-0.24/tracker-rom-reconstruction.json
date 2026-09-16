@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "sourceRomSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "icons": 26,
+  "tileCompositions": 329,
+  "sourceReferences": 191,
+  "recipeSha256": "f45d6e1e239a8a615649a703959a4e2fe981ac54e487695ecd57ceb7e34bf0f3",
+  "sourcePolicy": "Original pickup frames and original Tourian statue/Mother Brain portraits, decoded only from a verified player ROM",
+  "packImagesRequired": false,
+  "visualReviewPending": false,
+  "visualReview": "All 26 actual native ROM-decoded icons reviewed at integer nearest-neighbor scale; original pickup frames and statue portraits, not pack-retouched pixels."
+}

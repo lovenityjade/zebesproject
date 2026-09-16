@@ -1,0 +1,18 @@
+{
+  "files": {
+    ".tmp/menu-options-native/libsm_native.so": "b5d7e51cc0dee6925700478724fbd6dddaef9cb6325b9039514b591ccf1e6107",
+    "Unreal/Binaries/Linux/SMUnreal": "a75f04a588ac2d7dd6b22c5fb60b05d87bdb67b1850f051139e64b1b0f810ac6",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "2ace609ed016a5f4ad60d32d0d18c53b12e3b8b1dc965e56318b119d35de0fb5",
+    "Randomizer/native_world_data.json": "01756bd45b5b2e06f8152f230fe702d945e17ddc5187e30d3d1525ab4eca1b6e",
+    "Randomizer/sm_native_world.py": "8728a29e9b74a76a7ed1f7eb116c752d2c262e8358a53f2b417ef0ae6608782e",
+    "Native/build/libsm_native.so": "b5d7e51cc0dee6925700478724fbd6dddaef9cb6325b9039514b591ccf1e6107",
+    "Build/Package/Linux/Native/build/libsm_native.so": "b5d7e51cc0dee6925700478724fbd6dddaef9cb6325b9039514b591ccf1e6107",
+    "Build/Package/Linux/SMUnreal/Binaries/Linux/SMUnreal": "a75f04a588ac2d7dd6b22c5fb60b05d87bdb67b1850f051139e64b1b0f810ac6"
+  },
+  "frozenRelease": {
+    "Runtime/Native/build/libsm_native.so": "f7b41713be853d49cdaa66e346ecbcfe9370faab150d28fc76ac4f1387a59a56",
+    "Runtime/SMUnreal/Binaries/Linux/SMUnreal": "e241eca60095ccda29caa41e0e2c40af58a0d5feed264eee66449170807d8bf6",
+    "Runtime/roms/Super Metroid (Japan, USA) (En,Ja).sfc": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72"
+  },
+  "localGameLaunched": false
+}

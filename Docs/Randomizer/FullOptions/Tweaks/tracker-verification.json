@@ -1,0 +1,110 @@
+[
+  {
+    "seed": 15092200,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 22
+      },
+      {
+        "step": 20,
+        "green": 35
+      },
+      {
+        "step": 50,
+        "green": 69
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092201,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 29
+      },
+      {
+        "step": 20,
+        "green": 34
+      },
+      {
+        "step": 50,
+        "green": 56
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092202,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 13
+      },
+      {
+        "step": 20,
+        "green": 30
+      },
+      {
+        "step": 50,
+        "green": 53
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092203,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 22
+      },
+      {
+        "step": 20,
+        "green": 29
+      },
+      {
+        "step": 50,
+        "green": 80
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  }
+]

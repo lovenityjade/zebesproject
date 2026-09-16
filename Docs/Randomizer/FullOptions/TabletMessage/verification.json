@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "nativeDialog": true,
+  "collisionFirstPickup": true,
+  "captions": [
+    "1 COLLECTED OUT OF 15",
+    "15 COLLECTED OUT OF 15",
+    "16 COLLECTED OUT OF 20"
+  ],
+  "reserveMessageUnchanged": true,
+  "reserveGrant": 100,
+  "postDialogSpark": true,
+  "cpuOpcodes": 0,
+  "sourceRomUnchanged": true
+}

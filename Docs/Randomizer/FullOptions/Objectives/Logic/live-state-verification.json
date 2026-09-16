@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "seed": 15092906,
+  "fingerprint": "6892985844d6c3ad2a3c749553bdaa6d20db5cf3dd030bfc70b8a36e5753409f",
+  "before": {
+    "required": 1,
+    "count": 3,
+    "goals": [
+      {
+        "index": 0,
+        "id": 47,
+        "name": "tickle the red fish",
+        "completable": true,
+        "completableAboveDifficulty": false,
+        "completed": true,
+        "amount": 1,
+        "target": 1,
+        "percent": null,
+        "conditionMet": true
+      },
+      {
+        "index": 1,
+        "id": 50,
+        "name": "activate chozo robots",
+        "completable": false,
+        "completableAboveDifficulty": false,
+        "completed": false,
+        "amount": 0,
+        "target": 4,
+        "percent": null,
+        "conditionMet": false
+      },
+      {
+        "index": 2,
+        "id": 51,
+        "name": "visit the animals",
+        "completable": true,
+        "completableAboveDifficulty": false,
+        "completed": false,
+        "amount": 0,
+        "target": 2,
+        "percent": null,
+        "conditionMet": false
+      }
+    ],
+    "completedCount": 1,
+    "requiredMet": true,
+    "allMet": false,
+    "hidden": false,
+    "revealed": true,
+    "progressSource": "native-evaluator",
+    "feasibilitySource": "VARIA goal predicates; exploration uses source AP/location estimates"
+  },
+  "saved": {
+    "required": 1,
+    "count": 3,
+    "goals": [
+      {
+        "index": 0,
+        "id": 47,
+        "name": "tickle the red fish",
+        "completable": true,
+        "completableAboveDifficulty": false,
+        "completed": true,
+        "amount": 1,
+        "target": 1,
+        "percent": null,
+        "conditionMet": true
+      },
+      {
+        "index": 1,
+        "id": 50,
+        "name": "activate chozo robots",
+        "completable": false,
+        "completableAboveDifficulty": false,
+        "completed": false,
+        "amount": 0,
+        "target": 4,
+        "percent": null,
+        "conditionMet": false
+      },
+      {
+        "index": 2,
+        "id": 51,
+        "name": "visit the animals",
+        "completable": true,
+        "completableAboveDifficulty": false,
+        "completed": false,
+        "amount": 0,
+        "target": 2,
+        "percent": null,
+        "conditionMet": false
+      }
+    ],
+    "completedCount": 1,
+    "requiredMet": true,
+    "allMet": false,
+    "hidden": false,
+    "revealed": true,
+    "progressSource": "native-evaluator",
+    "feasibilitySource": "VARIA goal predicates; exploration uses source AP/location estimates"
+  },
+  "source": "Real C-core frames + embedded oracle + native pause/minimap pixel checks.",
+  "nativeSha256": "a9346799c1a6230e447af1571012eb87f04efa53025cf5358e7b6ecc6408b9f7"
+}

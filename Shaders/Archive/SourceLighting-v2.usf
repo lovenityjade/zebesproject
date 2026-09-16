@@ -1,0 +1,28 @@
+// The original framebuffer is preserved, including its display-space palette.
+float2 Size = float2(256,240);
+float2 Cell = clamp(floor(UV*Size),float2(0,0),Size-1);
+float2 Center = (Cell+.5)/Size;
+float3 Original = Texture2DSampleLevel(GameTexture,GameTextureSampler,Center,0).rgb;
+if(Enabled<.5 || Gameplay<.5 || Cell.y<32) return Original;
+float3 Base = Texture2DSampleLevel(SceneTexture,SceneTextureSampler,Center,0).rgb;
+float4 Source = Texture2DSampleLevel(EmissionTexture,EmissionTextureSampler,Center,0);
+float3 Light = Texture2DSampleLevel(LightTexture,LightTextureSampler,Center,0).rgb;
+// Deep ambient shade; visible sprites keep a higher readability floor.
+float Ambient = lerp(.30,.72,Source.a);
+float3 Lit = Base * (Ambient + Light*.72);
+// A real emitter retains its original color, even in otherwise dark areas.
+float IsSource = step(.02,max(Source.r,max(Source.g,Source.b)));
+Lit = lerp(Lit,max(Lit,Base),IsSource);
+// Colored light scatters through a faint world-anchored haze. It never warps art.
+float2 World = Cell+Camera.xy;
+float Haze = .80+.20*sin(World.x*.023+Clock*.13)*sin(World.y*.031-Clock*.09);
+Lit += Light*.07*Haze*Fog;
+float3 Bloom = 0;
+const float2 D[8]={float2(-2,0),float2(2,0),float2(0,-2),float2(0,2),
+                  float2(-5,-3),float2(5,-3),float2(-5,3),float2(5,3)};
+[unroll] for(int i=0;i<8;++i) {
+  Bloom += Texture2DSampleLevel(EmissionTexture,EmissionTextureSampler,clamp(Center+D[i]/Size,.5/Size,(Size-.5)/Size),0).rgb;
+}
+Lit += Bloom*.065*Glow;
+// Preserve fades; no colored fog remains on a fully black transition.
+return lerp(Original,saturate(Lit*Brightness),Intensity*SceneFade);

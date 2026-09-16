@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-15",
+  "runtimeHost": "gaming-pc",
+  "interactiveGameLaunched": false,
+  "sha256": {
+    "Native/build/libsm_native.so": "43df27d2ae05bc5a54acbbd9029a4086d6265307c10dbdd241c243291de1b0e6",
+    "Unreal/Binaries/Linux/SMUnreal": "f84a52dadd785c4b267d2d22a32f9fd65a60003017a290f6ebaddc1c569594c2",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "c3d0314f220d62608cca2795c88ad3619d3ad0f64d3c3ca1f28e1ff1d7b57f70",
+    "Native/sm_varia_ui.c": "d8ea4bf9e767cb761bd9750e9d7fc73ffd682dea08efb42dadc02f02434cc4dd",
+    "Native/sm_varia_assets.inc": "a3bd8d417837f4dbd03272217be7070402445d7896779969e1be3ff281112789",
+    "Native/sm_tracker.c": "727b31ff6e5b0e20f87df1cdf13009160731205c10c6b00d33e3b6ce9e278435",
+    "Native/prepare_overlays.py": "85e501c34d572df5aac49a9e782f633677a1e6182d1fc090fdf6b9357b81a8d2",
+    "Randomizer/patches.json": "ea801560852ebe4f9b858ed3f960052411b0a72f5b24ed2f6720024a59e98046",
+    "Unreal/Source/SMUnreal/SMSystemMenu.cpp": "281297cb974ec6bcc20604897f0b07078353eac30ba9d80da66e16a484a01bde"
+  },
+  "builds": {
+    "varia-native-build.log": [
+      "[  1%] Building C object CMakeFiles/sm_native.dir/sm_varia_ui.c.o",
+      "[  3%] Linking C shared library libsm_native.so",
+      "[ 96%] Built target sm_native",
+      "[ 98%] Linking C executable sm_randomizer_host",
+      "[100%] Built target sm_randomizer_host"
+    ],
+    "varia-editor-build.log": [
+      "[4/4] Link libUnrealEditor-SMUnreal.so [NoUba]",
+      "",
+      "Total time in Unreal Build Accelerator local executor: 7.27 seconds",
+      "Output binary: /home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Binaries/Linux/UnrealEditor",
+      "",
+      "Result: Succeeded",
+      "Total execution time: 9.29 seconds",
+      "Trace written to file /home/thelovenityjade/.config/Epic/UnrealBuildTool/Trace.uba with size 3.6kb"
+    ],
+    "varia-game-build.log": [
+      "[5/5] WriteMetadata SMUnreal.target [NoUba]",
+      "",
+      "Total time in Unreal Build Accelerator local executor: 16.49 seconds",
+      "Output binary: /home/thelovenityjade/Projects/projectSM/Unreal/Binaries/Linux/SMUnreal",
+      "",
+      "Result: Succeeded",
+      "Total execution time: 18.25 seconds",
+      "Trace written to file /home/thelovenityjade/.config/Epic/UnrealBuildTool/Trace.uba with size 4.1kb"
+    ]
+  }
+}

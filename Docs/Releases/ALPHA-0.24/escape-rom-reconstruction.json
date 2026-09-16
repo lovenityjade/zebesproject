@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "originalRomSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "payloadSha256": "ca5e4131d9fef3bc4087e64d199e20c4d7ad27de287bb533b8c426c6cf9aa949",
+  "recipeSha256": "9a4a95b20c8b06764ee0b803928d06ec2323577b508d571a03b241091cf930ee",
+  "sourceLevels": 1,
+  "changedLevelBytes": 8,
+  "authoredRecordBytes": 103,
+  "reconstructedBytes": 5146,
+  "byteExactReconstruction": true,
+  "levels": [
+    {
+      "patch": "Escape room changes",
+      "sourceRoomAddress": 12893632,
+      "rooms": [
+        "Wrecked Ship Main Shaft"
+      ],
+      "changedBytes": 8,
+      "compressionTemplateBytes": 1954,
+      "reconstructedSha256": "53402ee6ad9cb9c2904b534a538dea0451cbc6b741e4a3db01788016015ab622"
+    }
+  ]
+}

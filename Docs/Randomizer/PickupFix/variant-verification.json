@@ -1,0 +1,1016 @@
+{
+  "passed": true,
+  "grants": [
+    {
+      "variant": "Visible",
+      "item": "ETank",
+      "plm": "0xeed7",
+      "script": "0xe0b1",
+      "message": 1,
+      "inventory": [
+        199,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Missile",
+      "plm": "0xeedb",
+      "script": "0xe0d6",
+      "message": 2,
+      "inventory": [
+        99,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Super",
+      "plm": "0xeedf",
+      "script": "0xe0fb",
+      "message": 3,
+      "inventory": [
+        99,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "PowerBomb",
+      "plm": "0xeee3",
+      "script": "0xe120",
+      "message": 4,
+      "inventory": [
+        99,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Bomb",
+      "plm": "0xeee7",
+      "script": "0xe14d",
+      "message": 19,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        4096,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Charge",
+      "plm": "0xeeeb",
+      "script": "0xe17b",
+      "message": 14,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        4096,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Ice",
+      "plm": "0xeeef",
+      "script": "0xe1a9",
+      "message": 15,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "HiJump",
+      "plm": "0xeef3",
+      "script": "0xe1d7",
+      "message": 11,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        256,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "SpeedBooster",
+      "plm": "0xeef7",
+      "script": "0xe205",
+      "message": 13,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        8192,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Wave",
+      "plm": "0xeefb",
+      "script": "0xe233",
+      "message": 16,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Spazer",
+      "plm": "0xeeff",
+      "script": "0xe261",
+      "message": 17,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "SpringBall",
+      "plm": "0xef03",
+      "script": "0xe28f",
+      "message": 8,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Varia",
+      "plm": "0xef07",
+      "script": "0xe2c1",
+      "message": 7,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Gravity",
+      "plm": "0xef0b",
+      "script": "0xe2f6",
+      "message": 26,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        32,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "XRayScope",
+      "plm": "0xef0f",
+      "script": "0xe32b",
+      "message": 6,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Plasma",
+      "plm": "0xef13",
+      "script": "0xe358",
+      "message": 18,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Grapple",
+      "plm": "0xef17",
+      "script": "0xe386",
+      "message": 5,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "SpaceJump",
+      "plm": "0xef1b",
+      "script": "0xe3b3",
+      "message": 12,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        512,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "ScrewAttack",
+      "plm": "0xef1f",
+      "script": "0xe3e1",
+      "message": 10,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Morph",
+      "plm": "0xef23",
+      "script": "0xe40f",
+      "message": 9,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Visible",
+      "item": "Reserve",
+      "plm": "0xef27",
+      "script": "0xe43d",
+      "message": 25,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        100
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "ETank",
+      "plm": "0xef2b",
+      "script": "0xe46d",
+      "message": 1,
+      "inventory": [
+        199,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Missile",
+      "plm": "0xef2f",
+      "script": "0xe49f",
+      "message": 2,
+      "inventory": [
+        99,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Super",
+      "plm": "0xef33",
+      "script": "0xe4d1",
+      "message": 3,
+      "inventory": [
+        99,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "PowerBomb",
+      "plm": "0xef37",
+      "script": "0xe503",
+      "message": 4,
+      "inventory": [
+        99,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Bomb",
+      "plm": "0xef3b",
+      "script": "0xe53d",
+      "message": 19,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        4096,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Charge",
+      "plm": "0xef3f",
+      "script": "0xe578",
+      "message": 14,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        4096,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Ice",
+      "plm": "0xef43",
+      "script": "0xe5b3",
+      "message": 15,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "HiJump",
+      "plm": "0xef47",
+      "script": "0xe5ee",
+      "message": 11,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        256,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "SpeedBooster",
+      "plm": "0xef4b",
+      "script": "0xe629",
+      "message": 13,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        8192,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Wave",
+      "plm": "0xef4f",
+      "script": "0xe66d",
+      "message": 16,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Spazer",
+      "plm": "0xef53",
+      "script": "0xe6a8",
+      "message": 17,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "SpringBall",
+      "plm": "0xef57",
+      "script": "0xe6e3",
+      "message": 8,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Varia",
+      "plm": "0xef5b",
+      "script": "0xe71e",
+      "message": 7,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Gravity",
+      "plm": "0xef5f",
+      "script": "0xe760",
+      "message": 26,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        32,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "XRayScope",
+      "plm": "0xef63",
+      "script": "0xe7a2",
+      "message": 6,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Plasma",
+      "plm": "0xef67",
+      "script": "0xe7dc",
+      "message": 18,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Grapple",
+      "plm": "0xef6b",
+      "script": "0xe817",
+      "message": 5,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "SpaceJump",
+      "plm": "0xef6f",
+      "script": "0xe851",
+      "message": 12,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        512,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "ScrewAttack",
+      "plm": "0xef73",
+      "script": "0xe88c",
+      "message": 10,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Morph",
+      "plm": "0xef77",
+      "script": "0xe8c7",
+      "message": 9,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Chozo",
+      "item": "Reserve",
+      "plm": "0xef7b",
+      "script": "0xe902",
+      "message": 25,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        100
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "ETank",
+      "plm": "0xef7f",
+      "script": "0xe938",
+      "message": 1,
+      "inventory": [
+        199,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Missile",
+      "plm": "0xef83",
+      "script": "0xe970",
+      "message": 2,
+      "inventory": [
+        99,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Super",
+      "plm": "0xef87",
+      "script": "0xe9a8",
+      "message": 3,
+      "inventory": [
+        99,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "PowerBomb",
+      "plm": "0xef8b",
+      "script": "0xe9e0",
+      "message": 4,
+      "inventory": [
+        99,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Bomb",
+      "plm": "0xef8f",
+      "script": "0xea20",
+      "message": 19,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        4096,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Charge",
+      "plm": "0xef93",
+      "script": "0xea61",
+      "message": 14,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        4096,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Ice",
+      "plm": "0xef97",
+      "script": "0xeaa2",
+      "message": 15,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "HiJump",
+      "plm": "0xef9b",
+      "script": "0xeae3",
+      "message": 11,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        256,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "SpeedBooster",
+      "plm": "0xef9f",
+      "script": "0xeb24",
+      "message": 13,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        8192,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Wave",
+      "plm": "0xefa3",
+      "script": "0xeb65",
+      "message": 16,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Spazer",
+      "plm": "0xefa7",
+      "script": "0xeba6",
+      "message": 17,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "SpringBall",
+      "plm": "0xefab",
+      "script": "0xebe7",
+      "message": 8,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Varia",
+      "plm": "0xefaf",
+      "script": "0xec28",
+      "message": 7,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Gravity",
+      "plm": "0xefb3",
+      "script": "0xec70",
+      "message": 26,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        32,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "XRayScope",
+      "plm": "0xefb7",
+      "script": "0xecb8",
+      "message": 6,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Plasma",
+      "plm": "0xefbb",
+      "script": "0xecf8",
+      "message": 18,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Grapple",
+      "plm": "0xefbf",
+      "script": "0xed39",
+      "message": 5,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "SpaceJump",
+      "plm": "0xefc3",
+      "script": "0xed79",
+      "message": 12,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        512,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "ScrewAttack",
+      "plm": "0xefc7",
+      "script": "0xedba",
+      "message": 10,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Morph",
+      "plm": "0xefcb",
+      "script": "0xedfb",
+      "message": 9,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "Hidden",
+      "item": "Reserve",
+      "plm": "0xefcf",
+      "script": "0xee3c",
+      "message": 25,
+      "inventory": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        100
+      ]
+    }
+  ],
+  "cpuOpcodes": 0,
+  "sourceRomUnchanged": true,
+  "scope": "Real C-core frames + embedded oracle + native pause/minimap pixel checks."
+}

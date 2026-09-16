@@ -1,0 +1,17 @@
+{
+  "catalogSha256": "231cda388a1da08499fe2d9500b480908ca7179c6bcd793a094e2f50531ced80",
+  "endpoints": 40,
+  "descriptors": 1600,
+  "blinkPatches": [
+    "Blinking[DraygonRoomIn]",
+    "Blinking[DraygonRoomOut]",
+    "Blinking[KraidRoomIn]",
+    "Blinking[KraidRoomOut]",
+    "Blinking[PhantoonRoomIn]",
+    "Blinking[PhantoonRoomOut]",
+    "Blinking[RidleyRoomIn]",
+    "Blinking[RidleyRoomOut]"
+  ],
+  "roomPlms": {},
+  "dataBytes": 75
+}

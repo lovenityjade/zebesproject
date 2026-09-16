@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "seed": 14092026,
+  "fingerprint": "7bfd1c5f1e00ad46f5c9b99cc958e1afabc9bb7e831c9ac8b58bf8abc13449d9",
+  "seconds": 1.246247327013407,
+  "sameSeedAfterSharedRuntime": true,
+  "vanillaRulesIsolated": true
+}

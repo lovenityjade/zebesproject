@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "awakeZebes": true,
+  "rooms": [
+    {
+      "room": "96ba",
+      "comparedFrames": 121,
+      "nativeExact": true
+    },
+    {
+      "room": "975c",
+      "comparedFrames": 121,
+      "nativeExact": true
+    },
+    {
+      "room": "97b5",
+      "comparedFrames": 121,
+      "nativeExact": true
+    },
+    {
+      "room": "9e9f",
+      "comparedFrames": 121,
+      "nativeExact": true
+    },
+    {
+      "room": "9f11",
+      "comparedFrames": 121,
+      "nativeExact": true
+    },
+    {
+      "room": "9f64",
+      "comparedFrames": 121,
+      "nativeExact": true
+    }
+  ]
+}

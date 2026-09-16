@@ -1,0 +1,269 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "recordedAt": "2026-09-14T22:58:05.197621+00:00",
+  "path": "/home/nobara-user/Games/SuperMetroid-VisualValidation",
+  "artifacts": {
+    "Native/build/libsm_native.so": "fd0e56898fc8e6457a124ba8f21e0142bd45705211b4ac3648f97ba1aadd9186",
+    "SMUnreal/Binaries/Linux/SMUnreal": "256c7177caec62900f8685ad3d3446ee9d378492b34676aae69b3fb44685ada1",
+    "SMUnreal/Content/Paks/SMUnreal-Linux.pak": "a88ceb814e98c7c47192bac27e8a63ca21b9eec0f030bedd991e0f34686148fb",
+    "SMUnreal/Content/Paks/SMUnreal-Linux.ucas": "1e444d376869977025dec9e00432c3c11fdbdedd8405d386e536292fdee02253",
+    "SMUnreal/Content/Paks/SMUnreal-Linux.utoc": "aa1fa36d661da80d5ec17e0146c4274006525d920733027d3d940447dedfcf58"
+  },
+  "reports": {
+    "SMUnreal/Saved/SMTests/native-pause-verification.json": {
+      "passed": true,
+      "nativePause": true,
+      "nativeNavigation": true,
+      "nativeResume": true,
+      "cpuOpcodes": 0
+    },
+    "SMUnreal/Saved/SMTests/display-verification.json": {
+      "passed": true,
+      "width": 400,
+      "messageFrames": 398,
+      "doorFrames": 105,
+      "pauseScreen": true,
+      "timerOverlay": true,
+      "finalRoom": "92fd",
+      "cpuOpcodes": 0
+    },
+    "Docs/NativePause/verification.json": {
+      "passed": true,
+      "nativeLifecycle": true,
+      "comparedFrames": 720,
+      "captures": [
+        {
+          "tick": 90,
+          "mode": 0,
+          "originalPixelsExact": true
+        },
+        {
+          "tick": 190,
+          "mode": 0,
+          "originalPixelsExact": true
+        },
+        {
+          "tick": 350,
+          "mode": 1,
+          "originalPixelsExact": true
+        },
+        {
+          "tick": 540,
+          "mode": 0,
+          "originalPixelsExact": true
+        }
+      ]
+    },
+    "Docs/NativePause/GamingPC/pixel-verification.json": {
+      "passed": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "source": [
+        400,
+        224
+      ],
+      "origin": [
+        40,
+        24
+      ],
+      "scale": 3,
+      "captures": [
+        {
+          "capture": "native-pause-100",
+          "uiPixels": 716823,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "native-pause-200",
+          "uiPixels": 716823,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "native-pause-350",
+          "uiPixels": 716823,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "native-pause-520",
+          "uiPixels": 716823,
+          "maxChannelError": 0
+        }
+      ]
+    },
+    "Docs/RoomEditor/verification.json": {
+      "passed": true,
+      "rooms": 261,
+      "roomStates": 310,
+      "tileDefinitionChecks": 48,
+      "comparedFrames": 180,
+      "nativePixelsAndRamExact": true,
+      "changedBlockGuard": true,
+      "collisionEditsRejected": true,
+      "visualChecks": [
+        {
+          "layer": 0,
+          "frame": 0,
+          "widescreen": true,
+          "changedRgbChannels": 185
+        },
+        {
+          "layer": 0,
+          "frame": 90,
+          "widescreen": false,
+          "changedRgbChannels": 552
+        },
+        {
+          "layer": 0,
+          "frame": 179,
+          "widescreen": false,
+          "changedRgbChannels": 552
+        },
+        {
+          "layer": 1,
+          "frame": 0,
+          "widescreen": true,
+          "changedRgbChannels": 64
+        },
+        {
+          "layer": 1,
+          "frame": 90,
+          "widescreen": false,
+          "changedRgbChannels": 542
+        },
+        {
+          "layer": 1,
+          "frame": 179,
+          "widescreen": false,
+          "changedRgbChannels": 542
+        }
+      ],
+      "foregroundAndBackground": true,
+      "nativeAspectRetouches": true
+    },
+    "Docs/RoomEditor/browser-verification.json": {
+      "passed": true,
+      "room": 40721,
+      "state": 40739,
+      "paintedCells": 2,
+      "undoRedo": true,
+      "eraser": true,
+      "backgroundFlip": true,
+      "persistedAfterReload": true,
+      "collisionWriteRejected": true,
+      "browserErrors": []
+    },
+    "Docs/RoomEditor/runtime-verification.json": {
+      "passed": true,
+      "host": "gaming-pc",
+      "loadedCells": 4,
+      "loadedFiles": 1,
+      "gameplay": {
+        "passed": true,
+        "grapple": 6,
+        "screw": 2,
+        "enemyDeaths": 2,
+        "achievements": 24,
+        "cpuOpcodes": 0
+      },
+      "fixtureSha256": "2f188f5d8cb7629151ee0929baac6a336685aba5b6d3bf86ef6a32e411132bb7",
+      "scope": "Unreal file-loader and gameplay smoke test; artwork quality is not asserted."
+    },
+    "Docs/DisplayFixes/Unreal/pixel-verification.json": {
+      "passed": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "source": [
+        400,
+        224
+      ],
+      "origin": [
+        40,
+        24
+      ],
+      "scale": 3,
+      "captures": [
+        {
+          "capture": "display-00",
+          "uiPixels": 25623,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-01",
+          "uiPixels": 58455,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-02",
+          "uiPixels": 58455,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-03",
+          "uiPixels": 25623,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-04",
+          "uiPixels": 25623,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-05",
+          "uiPixels": 25623,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-06",
+          "uiPixels": 25623,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-07",
+          "uiPixels": 26136,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-08",
+          "uiPixels": 26136,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-09",
+          "uiPixels": 717336,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-10",
+          "uiPixels": 717336,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-11",
+          "uiPixels": 717336,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-12",
+          "uiPixels": 26136,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-13",
+          "uiPixels": 34200,
+          "maxChannelError": 0
+        },
+        {
+          "capture": "display-14",
+          "uiPixels": 34182,
+          "maxChannelError": 0
+        }
+      ]
+    }
+  },
+  "scope": "Functional and pixel checks in an isolated package; not an all-room or performance guarantee."
+}

@@ -1,0 +1,18 @@
+{
+  "room": "df45",
+  "pattern_tile_hash": "a25639c5",
+  "tiles": {
+    "3e24082d": "ffffff0000000000",
+    "e814d447": "e0e0e00000000000",
+    "7406f8ed": "ffffff0000000000",
+    "e176296b": "0707070000000000",
+    "914e34f5": "e0e0e0e0e0e0e0e0",
+    "a25639c5": "ffffffffffffffff",
+    "65778cd5": "0707070707070707",
+    "1fb305cb": "0000000000e0e0e0",
+    "f351842d": "0000000000ffffff",
+    "1d3509df": "0000000000070707"
+  },
+  "scope": "Decorative checker panels only; metal frames remain fixed. Identity Mode7 transform only.",
+  "pattern_tile": 165
+}

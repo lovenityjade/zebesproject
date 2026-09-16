@@ -1,0 +1,406 @@
+{
+  "schema": 1,
+  "upstream": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5",
+  "variants": [
+    {
+      "id": 1,
+      "name": "animal_enemies.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/animal_enemies.ips",
+      "sha256": "9ea4c9b6d8c723d0164ff7f0c7e80966e58657a4d9ff47cb7013834c07e7c325",
+      "data": [
+        {
+          "address": 492568,
+          "size": 6,
+          "sha256": "264e62f99d80a0a994e89b4977e2ed41dd3730cd3698a023c58238bf94d5c55c"
+        },
+        {
+          "address": 497761,
+          "size": 7,
+          "sha256": "0b6c1c29fd5c07bcab1fd24c5e5442179a5855358af71949ed484db7de40bf52"
+        },
+        {
+          "address": 1077975,
+          "size": 4,
+          "sha256": "d269d941a8f5a7d85d10a4a8be6320ce09699e08d6f48124dba32b746c8fa0ad"
+        },
+        {
+          "address": 1078011,
+          "size": 2,
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+        },
+        {
+          "address": 1078019,
+          "size": 3,
+          "sha256": "1a4c29346ba8b0115c17d4858a843aa6df0ec5895cc2222458f3aee49be2f795"
+        },
+        {
+          "address": 1078031,
+          "size": 12,
+          "sha256": "30483805b79351a66a4ccc1a5ea4e53f877a2560aaba5c0393873b715a8da08e"
+        },
+        {
+          "address": 1078075,
+          "size": 2,
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+        },
+        {
+          "address": 1078083,
+          "size": 3,
+          "sha256": "1a4c29346ba8b0115c17d4858a843aa6df0ec5895cc2222458f3aee49be2f795"
+        },
+        {
+          "address": 1078095,
+          "size": 2,
+          "sha256": "3769cfd01a59eb007e50dceaef4d0a24e75bd7e4deb22a4df04eda5d25bdeb3b"
+        },
+        {
+          "address": 1085141,
+          "size": 8,
+          "sha256": "151dae61983891b9b9b26e29c83100354924689ac17f8d37fca3803e40b7159d"
+        },
+        {
+          "address": 2220251,
+          "size": 99,
+          "sha256": "666f50847c267c2e9bbe7ad8de48604385ad079ae344101da7e8d3502ede7547"
+        },
+        {
+          "address": 2220351,
+          "size": 46,
+          "sha256": "cbff675e9513e3e961ce496b9d764a4526b3a44219628943fd49f00fcba9e67f"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 1697510,
+          "size": 1,
+          "hex": "a0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "animals.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/animals.ips",
+      "sha256": "b84e4dc0ab8e9a50374f08559d1eeb3ff8ac1901542add8ebe66f314d19c6dd9",
+      "data": [
+        {
+          "address": 492573,
+          "size": 1,
+          "sha256": "9defb0a9e163278be0e05aa01b312ec78cfa3726869503385e76e3a4b7950648"
+        },
+        {
+          "address": 497761,
+          "size": 7,
+          "sha256": "0b6c1c29fd5c07bcab1fd24c5e5442179a5855358af71949ed484db7de40bf52"
+        },
+        {
+          "address": 1077975,
+          "size": 2,
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254"
+        },
+        {
+          "address": 1078011,
+          "size": 2,
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+        },
+        {
+          "address": 1078021,
+          "size": 1,
+          "sha256": "3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112"
+        },
+        {
+          "address": 1078039,
+          "size": 2,
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254"
+        },
+        {
+          "address": 1078075,
+          "size": 2,
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+        },
+        {
+          "address": 1078085,
+          "size": 1,
+          "sha256": "3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112"
+        },
+        {
+          "address": 1085148,
+          "size": 1,
+          "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+        },
+        {
+          "address": 2220251,
+          "size": 99,
+          "sha256": "666f50847c267c2e9bbe7ad8de48604385ad079ae344101da7e8d3502ede7547"
+        },
+        {
+          "address": 2220351,
+          "size": 46,
+          "sha256": "cbff675e9513e3e961ce496b9d764a4526b3a44219628943fd49f00fcba9e67f"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 1697510,
+          "size": 1,
+          "hex": "a0"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "draygonimals.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/draygonimals.ips",
+      "sha256": "35e6c97f11f8e819b61fea285dcc1c2787226725ffb3d3929df5533223b3cf3d",
+      "data": [
+        {
+          "address": 109984,
+          "size": 36,
+          "sha256": "73a59a3151b06d1fd0c74f1a32cad3ea56fc0dfba31fc4c8224418248b5f405a"
+        },
+        {
+          "address": 497884,
+          "size": 2,
+          "sha256": "7335d954e89a19d66f6c2c14dca19b257615c2501d94bb29d82b205261c11d00"
+        },
+        {
+          "address": 514698,
+          "size": 2,
+          "sha256": "e02f6192a7ac65598c90ad35e2d22804d4d0b27bf399d83c84f424aa24a94de5"
+        },
+        {
+          "address": 520192,
+          "size": 4,
+          "sha256": "44e9e8e4da2c4c44508071155614bdecf2360ebb188c80c5bfaeddb0539409fe"
+        },
+        {
+          "address": 520303,
+          "size": 2,
+          "sha256": "a5996fac72957c9d3bd35bea12c78216e27f053412f7b962866b1da69057e012"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 520198,
+          "size": 107,
+          "hex": "a900008f29d87e8f2bd87ea900f08fb5077e5cbb918faf20d87e890040f046a96ff08fb5077ea9ffff8fd51c7ea9ae808fbe017fa9ce808ffe017fa9ce888f3e027fa9ae888f7e027f08e220a9008fc2667f8fe2667f8f02677f8f22677fc220285cddc88f5cddc88fb8ad"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "escapimals.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/escapimals.ips",
+      "sha256": "776e2c5b90c5ecdbb0c36ab3c4ad1eeb321371d59541cc0c106c9fc6b91b81cc",
+      "data": [
+        {
+          "address": 109984,
+          "size": 24,
+          "sha256": "c1f8d08e3020fa6cea70aefdf26f803db23f9fd6cb4027f564c06983ffb67757"
+        },
+        {
+          "address": 497884,
+          "size": 2,
+          "sha256": "7335d954e89a19d66f6c2c14dca19b257615c2501d94bb29d82b205261c11d00"
+        },
+        {
+          "address": 520192,
+          "size": 4,
+          "sha256": "44e9e8e4da2c4c44508071155614bdecf2360ebb188c80c5bfaeddb0539409fe"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 520198,
+          "size": 11,
+          "hex": "a900f08fb5077e5cbb918f"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "gameend.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/gameend.ips",
+      "sha256": "ea63fb8b548f455b99d11e873f0d71616aa57150830f760162a9dc03d8c41965",
+      "data": [
+        {
+          "address": 101324,
+          "size": 2,
+          "sha256": "a5572fc8073d52c87f1021c99c55e1bb3596c1b6129859da9bb301fb95ea48e5"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 524064,
+          "size": 42,
+          "hex": "af20d87e890040f020a926008f98097e2200eca1adb8058f00fc7fadba058f02fc7fa901002210f48160"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "grey_door_animals.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/grey_door_animals.ips",
+      "sha256": "a8a61db32c7a6a91bc014191e7017ed94dfd99fee5e868f108045ee10242c4ab",
+      "data": [
+        {
+          "address": 497880,
+          "size": 2,
+          "sha256": "de491b86b68fa1c865616d081ca4209851640c8cf8f9ca95932f39ec2d8128f3"
+        },
+        {
+          "address": 523520,
+          "size": 14,
+          "sha256": "133c785d1a5d85b38728b886a7353c99227df5355bdd39254d3a549d8d180b20"
+        },
+        {
+          "address": 523568,
+          "size": 8,
+          "sha256": "45928ad12b95499f871c7e0f2aef4453e7eedc013187093f6967905e8edbb609"
+        }
+      ],
+      "nativeCode": []
+    },
+    {
+      "id": 7,
+      "name": "low_timer.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/low_timer.ips",
+      "sha256": "c46819873ea0b54ef0ec88546e0b9acc7e3c0785336e8c47c10ddc6a363186d0",
+      "data": [
+        {
+          "address": 101324,
+          "size": 2,
+          "sha256": "a5572fc8073d52c87f1021c99c55e1bb3596c1b6129859da9bb301fb95ea48e5"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 524064,
+          "size": 17,
+          "hex": "af20d87e890040f007a920008f46097e60"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "metalimals.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/metalimals.ips",
+      "sha256": "5bdfa4d82ddd3f2aec7ff4d7e9225bb60f1d08dc1cec618c94b1e148292263f8",
+      "data": [
+        {
+          "address": 109984,
+          "size": 36,
+          "sha256": "0f7226ab2774ba09b0cfc65eb5e7f8b4dd27d3109e1aebb2f442dedf44409af8"
+        },
+        {
+          "address": 497884,
+          "size": 2,
+          "sha256": "7335d954e89a19d66f6c2c14dca19b257615c2501d94bb29d82b205261c11d00"
+        },
+        {
+          "address": 505424,
+          "size": 2,
+          "sha256": "e02f6192a7ac65598c90ad35e2d22804d4d0b27bf399d83c84f424aa24a94de5"
+        },
+        {
+          "address": 520192,
+          "size": 4,
+          "sha256": "44e9e8e4da2c4c44508071155614bdecf2360ebb188c80c5bfaeddb0539409fe"
+        },
+        {
+          "address": 520248,
+          "size": 4,
+          "sha256": "644ec93f5f053a2f3c2f13012858fc69bab26f282245d4d1ebc583c435da130f"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 520198,
+          "size": 54,
+          "hex": "a900008f29d87e8f2bd87ea900f08fb5077e5cbb918faf20d87e890040f012a900008fbcd87ea938f08fb5077e5cf7918f60b8adacad"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "phantoonimals.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/phantoonimals.ips",
+      "sha256": "d54eaf34964e1ac213619475a78cc356bd7255f68b0dff2b2b1b8831b773f871",
+      "data": [
+        {
+          "address": 109984,
+          "size": 36,
+          "sha256": "7d38815c32367e3d386506349102a9f7c3a4ae01643c9962ae2604f38bfa684c"
+        },
+        {
+          "address": 497884,
+          "size": 2,
+          "sha256": "7335d954e89a19d66f6c2c14dca19b257615c2501d94bb29d82b205261c11d00"
+        },
+        {
+          "address": 511293,
+          "size": 2,
+          "sha256": "e02f6192a7ac65598c90ad35e2d22804d4d0b27bf399d83c84f424aa24a94de5"
+        },
+        {
+          "address": 520192,
+          "size": 4,
+          "sha256": "44e9e8e4da2c4c44508071155614bdecf2360ebb188c80c5bfaeddb0539409fe"
+        },
+        {
+          "address": 520251,
+          "size": 2,
+          "sha256": "a5996fac72957c9d3bd35bea12c78216e27f053412f7b962866b1da69057e012"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 520198,
+          "size": 55,
+          "hex": "a900008f29d87e8f2bd87ea900f08fb5077e5cbb918faf20d87e890040f012a900008fc0d87ea93bf08fb5077e5cd0c88f5cd0c88fb8ad"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "ridleyimals.ips",
+      "source": "Randomizer/upstream/patches/vanilla/ips/ridleyimals.ips",
+      "sha256": "ed3ee642b43142200fb576b01daa261538ea675197bebbbde9acf9abbbb91865",
+      "data": [
+        {
+          "address": 109984,
+          "size": 36,
+          "sha256": "19b4bfac2df4a9d9b4cde3f2b7cc2d49de14c808e96068dc64879eb1963c35d8"
+        },
+        {
+          "address": 497884,
+          "size": 2,
+          "sha256": "7335d954e89a19d66f6c2c14dca19b257615c2501d94bb29d82b205261c11d00"
+        },
+        {
+          "address": 504664,
+          "size": 2,
+          "sha256": "e02f6192a7ac65598c90ad35e2d22804d4d0b27bf399d83c84f424aa24a94de5"
+        },
+        {
+          "address": 520192,
+          "size": 4,
+          "sha256": "44e9e8e4da2c4c44508071155614bdecf2360ebb188c80c5bfaeddb0539409fe"
+        },
+        {
+          "address": 520286,
+          "size": 2,
+          "sha256": "a5996fac72957c9d3bd35bea12c78216e27f053412f7b962866b1da69057e012"
+        }
+      ],
+      "nativeCode": [
+        {
+          "address": 520198,
+          "size": 90,
+          "hex": "a900008f29d87e8f2bd87ea900f08fb5077e5cbb918faf20d87e890040f035a900008fbbd87ea95ef08fb5077ea9aaaa8fd51c7ea9ae808fde007fa9ce808ffe007fa9ce888f1e017fa9ae888f3e017f5cf7918f5cf7918fb8ad"
+        }
+      ]
+    }
+  ],
+  "sha256": "a2e2abd262d01066b4c0bc56aa69a2ace10e8e34cbc194ff09f52f0f925deca3"
+}

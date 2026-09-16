@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "loadedCells": 4,
+  "loadedFiles": 1,
+  "gameplay": {
+    "passed": true,
+    "grapple": 6,
+    "screw": 2,
+    "enemyDeaths": 2,
+    "achievements": 24,
+    "cpuOpcodes": 0
+  },
+  "fixtureSha256": "2f188f5d8cb7629151ee0929baac6a336685aba5b6d3bf86ef6a32e411132bb7",
+  "scope": "Unreal file-loader and gameplay smoke test; artwork quality is not asserted."
+}

@@ -1,0 +1,2923 @@
+{
+  "catalog": {
+    "schema": 1,
+    "upstream": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5",
+    "colors": [
+      "blue",
+      "red",
+      "green",
+      "yellow",
+      "grey",
+      "wave",
+      "spazer",
+      "plasma",
+      "ice"
+    ],
+    "locations": [
+      {
+        "id": 0,
+        "name": "BelowSpazerTopRight",
+        "address": 493926,
+        "facing": 0,
+        "openedBit": 63,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 1,
+        "name": "BigPinkBottomLeft",
+        "address": 493100,
+        "facing": 1,
+        "openedBit": 43,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 2,
+        "name": "BigPinkBottomRight",
+        "address": 493088,
+        "facing": 0,
+        "openedBit": 41,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 3,
+        "name": "BigPinkRight",
+        "address": 493082,
+        "facing": 0,
+        "openedBit": 40,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 4,
+        "name": "BigPinkTopRight",
+        "address": 493094,
+        "facing": 0,
+        "openedBit": 42,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 5,
+        "name": "BubbleMountainTopLeft",
+        "address": 494682,
+        "facing": 1,
+        "openedBit": 83,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 6,
+        "name": "BubbleMountainTopRight",
+        "address": 494688,
+        "facing": 0,
+        "openedBit": 84,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 7,
+        "name": "BusinessCenterBottomLeft",
+        "address": 494348,
+        "facing": 1,
+        "openedBit": 77,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 8,
+        "name": "BusinessCenterTopLeft",
+        "address": 494336,
+        "facing": 1,
+        "openedBit": 75,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 9,
+        "name": "CathedralEntranceRight",
+        "address": 494322,
+        "facing": 0,
+        "openedBit": 74,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 10,
+        "name": "CathedralRight",
+        "address": 494314,
+        "facing": 0,
+        "openedBit": 73,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 11,
+        "name": "ClimbRight",
+        "address": 492292,
+        "facing": 0,
+        "openedBit": 19,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 12,
+        "name": "ColosseumBottomRight",
+        "address": 509691,
+        "facing": 0,
+        "openedBit": 154,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 13,
+        "name": "ConstructionZoneRight",
+        "address": 493444,
+        "facing": 0,
+        "openedBit": 50,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 14,
+        "name": "CrabShaftRight",
+        "address": 509179,
+        "facing": 0,
+        "openedBit": 143,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 15,
+        "name": "CrocomireSpeedwayBottom",
+        "address": 494486,
+        "facing": 2,
+        "openedBit": 78,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 16,
+        "name": "DoubleChamberRight",
+        "address": 494786,
+        "facing": 0,
+        "openedBit": 87,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 17,
+        "name": "DraygonSaveRefillStation",
+        "address": 509679,
+        "facing": 0,
+        "openedBit": 152,
+        "vanillaColor": "red",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 18,
+        "name": "EarlySupersRight",
+        "address": 492818,
+        "facing": 0,
+        "openedBit": 38,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 19,
+        "name": "ElectricDeathRoomTopLeft",
+        "address": 508719,
+        "facing": 1,
+        "openedBit": 139,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 20,
+        "name": "EtecoonEnergyTankLeft",
+        "address": 493512,
+        "facing": 1,
+        "openedBit": 52,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 21,
+        "name": "FishTankRight",
+        "address": 509045,
+        "facing": 0,
+        "openedBit": 142,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 22,
+        "name": "FlywayRight",
+        "address": 492576,
+        "facing": 0,
+        "openedBit": 29,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 23,
+        "name": "ForgottenHighwaySaveStation",
+        "address": 509289,
+        "facing": 0,
+        "openedBit": 146,
+        "vanillaColor": "red",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 24,
+        "name": "GreenBrinstarMissileRefill",
+        "address": 492746,
+        "facing": 1,
+        "openedBit": 35,
+        "vanillaColor": "red",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 25,
+        "name": "GreenBrinstarSaveStation",
+        "address": 492722,
+        "facing": 1,
+        "openedBit": 31,
+        "vanillaColor": "red",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 26,
+        "name": "GreenHillZoneTopRight",
+        "address": 493168,
+        "facing": 0,
+        "openedBit": 48,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 27,
+        "name": "GreenPiratesShaftBottomRight",
+        "address": 492656,
+        "facing": 0,
+        "openedBit": 30,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 28,
+        "name": "KihunterBottom",
+        "address": 492072,
+        "facing": 2,
+        "openedBit": 14,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 29,
+        "name": "KihunterRight",
+        "address": 492066,
+        "facing": 0,
+        "openedBit": 13,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 30,
+        "name": "KraidRefillStation",
+        "address": 494100,
+        "facing": 0,
+        "openedBit": 68,
+        "vanillaColor": "green",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 31,
+        "name": "KronicBoostBottomLeft",
+        "address": 494926,
+        "facing": 1,
+        "openedBit": 88,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 32,
+        "name": "LandingSiteRight",
+        "address": 491544,
+        "facing": 0,
+        "openedBit": 0,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 33,
+        "name": "LandingSiteTopRight",
+        "address": 491550,
+        "facing": 0,
+        "openedBit": 1,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 34,
+        "name": "LeCoudeBottom",
+        "address": 492094,
+        "facing": 2,
+        "openedBit": 15,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 35,
+        "name": "MainShaftBottomRight",
+        "address": 492740,
+        "facing": 0,
+        "openedBit": 34,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 36,
+        "name": "MainShaftRight",
+        "address": 492734,
+        "facing": 0,
+        "openedBit": 33,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 37,
+        "name": "MainStreetBottomRight",
+        "address": 508977,
+        "facing": 0,
+        "openedBit": 141,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 38,
+        "name": "MaridiaAqueductSaveStation",
+        "address": 509437,
+        "facing": 1,
+        "openedBit": 150,
+        "vanillaColor": "red",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 39,
+        "name": "MaridiaBottomSaveStation",
+        "address": 508887,
+        "facing": 0,
+        "openedBit": 140,
+        "vanillaColor": "red",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 40,
+        "name": "NoobBridgeRight",
+        "address": 493478,
+        "facing": 0,
+        "openedBit": 51,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 41,
+        "name": "OasisTop",
+        "address": 509395,
+        "facing": 3,
+        "openedBit": 149,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 42,
+        "name": "PlasmaSparkBottom",
+        "address": 509303,
+        "facing": 2,
+        "openedBit": 148,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 43,
+        "name": "PostCrocomireShaftRight",
+        "address": 494604,
+        "facing": 0,
+        "openedBit": 82,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 44,
+        "name": "PostCrocomireUpperLeft",
+        "address": 494580,
+        "facing": 1,
+        "openedBit": 81,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 45,
+        "name": "RedBrinstarElevatorTop",
+        "address": 492118,
+        "facing": 3,
+        "openedBit": 16,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 46,
+        "name": "RedBrinstarEnergyRefill",
+        "address": 493664,
+        "facing": 1,
+        "openedBit": 56,
+        "vanillaColor": "green",
+        "canRandom": false,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 47,
+        "name": "RedBrinstarFirefleaLeft",
+        "address": 493678,
+        "facing": 1,
+        "openedBit": 58,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 48,
+        "name": "RedKihunterShaftBottom",
+        "address": 495662,
+        "facing": 2,
+        "openedBit": 94,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 49,
+        "name": "RedTowerElevatorBottomLeft",
+        "address": 493750,
+        "facing": 1,
+        "openedBit": 61,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 50,
+        "name": "RedTowerElevatorLeft",
+        "address": 493744,
+        "facing": 1,
+        "openedBit": 60,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 51,
+        "name": "RedTowerElevatorTopLeft",
+        "address": 493738,
+        "facing": 1,
+        "openedBit": 59,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 52,
+        "name": "RedTowerLeft",
+        "address": 493670,
+        "facing": 1,
+        "openedBit": 57,
+        "vanillaColor": "yellow",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 53,
+        "name": "SingleChamberRight",
+        "address": 494760,
+        "facing": 0,
+        "openedBit": 86,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 54,
+        "name": "SpeedBoosterHallRight",
+        "address": 494714,
+        "facing": 0,
+        "openedBit": 85,
+        "vanillaColor": "red",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      },
+      {
+        "id": 55,
+        "name": "WastelandLeft",
+        "address": 495802,
+        "facing": 1,
+        "openedBit": 95,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": [
+          "yellow"
+        ]
+      },
+      {
+        "id": 56,
+        "name": "WestOceanRight",
+        "address": 492002,
+        "facing": 0,
+        "openedBit": 12,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": true,
+        "forbiddenColors": []
+      },
+      {
+        "id": 57,
+        "name": "WreckedShipMainShaftBottom",
+        "address": 508535,
+        "facing": 2,
+        "openedBit": 132,
+        "vanillaColor": "green",
+        "canRandom": true,
+        "canGrey": false,
+        "forbiddenColors": []
+      }
+    ],
+    "records": [
+      {
+        "color": "wave",
+        "direction": 0,
+        "plm": 63331,
+        "main": 61538,
+        "close": 61515,
+        "check": 62171,
+        "draw": 63343,
+        "indicator": false
+      },
+      {
+        "color": "wave",
+        "direction": 1,
+        "plm": 63337,
+        "main": 61579,
+        "close": 61556,
+        "check": 62171,
+        "draw": 63355,
+        "indicator": false
+      },
+      {
+        "color": "wave",
+        "direction": 2,
+        "plm": 63247,
+        "main": 61620,
+        "close": 61597,
+        "check": 62171,
+        "draw": 63367,
+        "indicator": false
+      },
+      {
+        "color": "wave",
+        "direction": 3,
+        "plm": 63253,
+        "main": 61661,
+        "close": 61638,
+        "check": 62171,
+        "draw": 63379,
+        "indicator": false
+      },
+      {
+        "color": "spazer",
+        "direction": 0,
+        "plm": 63283,
+        "main": 61866,
+        "close": 61843,
+        "check": 62201,
+        "draw": 63439,
+        "indicator": false
+      },
+      {
+        "color": "spazer",
+        "direction": 1,
+        "plm": 63289,
+        "main": 61907,
+        "close": 61884,
+        "check": 62201,
+        "draw": 63451,
+        "indicator": false
+      },
+      {
+        "color": "spazer",
+        "direction": 2,
+        "plm": 63295,
+        "main": 61948,
+        "close": 61925,
+        "check": 62201,
+        "draw": 63463,
+        "indicator": false
+      },
+      {
+        "color": "spazer",
+        "direction": 3,
+        "plm": 63301,
+        "main": 61989,
+        "close": 61966,
+        "check": 62201,
+        "draw": 63475,
+        "indicator": false
+      },
+      {
+        "color": "plasma",
+        "direction": 0,
+        "plm": 63307,
+        "main": 62030,
+        "close": 62007,
+        "check": 62235,
+        "draw": 63487,
+        "indicator": false
+      },
+      {
+        "color": "plasma",
+        "direction": 1,
+        "plm": 63313,
+        "main": 62071,
+        "close": 62048,
+        "check": 62235,
+        "draw": 63499,
+        "indicator": false
+      },
+      {
+        "color": "plasma",
+        "direction": 2,
+        "plm": 63319,
+        "main": 62112,
+        "close": 62089,
+        "check": 62235,
+        "draw": 63511,
+        "indicator": false
+      },
+      {
+        "color": "plasma",
+        "direction": 3,
+        "plm": 63325,
+        "main": 62153,
+        "close": 62130,
+        "check": 62235,
+        "draw": 63523,
+        "indicator": false
+      },
+      {
+        "color": "ice",
+        "direction": 0,
+        "plm": 63259,
+        "main": 61702,
+        "close": 61679,
+        "check": 62186,
+        "draw": 63391,
+        "indicator": false
+      },
+      {
+        "color": "ice",
+        "direction": 1,
+        "plm": 63265,
+        "main": 61743,
+        "close": 61720,
+        "check": 62186,
+        "draw": 63403,
+        "indicator": false
+      },
+      {
+        "color": "ice",
+        "direction": 2,
+        "plm": 63271,
+        "main": 61784,
+        "close": 61761,
+        "check": 62186,
+        "draw": 63415,
+        "indicator": false
+      },
+      {
+        "color": "ice",
+        "direction": 3,
+        "plm": 63277,
+        "main": 61825,
+        "close": 61802,
+        "check": 62186,
+        "draw": 63427,
+        "indicator": false
+      },
+      {
+        "color": "wave",
+        "direction": 0,
+        "plm": 62987,
+        "main": 62318,
+        "close": 62299,
+        "indicator": true
+      },
+      {
+        "color": "wave",
+        "direction": 1,
+        "plm": 62993,
+        "main": 62361,
+        "close": 62342,
+        "indicator": true
+      },
+      {
+        "color": "wave",
+        "direction": 2,
+        "plm": 62999,
+        "main": 62404,
+        "close": 62385,
+        "indicator": true
+      },
+      {
+        "color": "wave",
+        "direction": 3,
+        "plm": 63005,
+        "main": 62447,
+        "close": 62428,
+        "indicator": true
+      },
+      {
+        "color": "spazer",
+        "direction": 0,
+        "plm": 63035,
+        "main": 62662,
+        "close": 62643,
+        "indicator": true
+      },
+      {
+        "color": "spazer",
+        "direction": 1,
+        "plm": 63041,
+        "main": 62705,
+        "close": 62686,
+        "indicator": true
+      },
+      {
+        "color": "spazer",
+        "direction": 2,
+        "plm": 63047,
+        "main": 62748,
+        "close": 62729,
+        "indicator": true
+      },
+      {
+        "color": "spazer",
+        "direction": 3,
+        "plm": 63053,
+        "main": 62791,
+        "close": 62772,
+        "indicator": true
+      },
+      {
+        "color": "plasma",
+        "direction": 0,
+        "plm": 63011,
+        "main": 62490,
+        "close": 62471,
+        "indicator": true
+      },
+      {
+        "color": "plasma",
+        "direction": 1,
+        "plm": 63017,
+        "main": 62533,
+        "close": 62514,
+        "indicator": true
+      },
+      {
+        "color": "plasma",
+        "direction": 2,
+        "plm": 63023,
+        "main": 62576,
+        "close": 62557,
+        "indicator": true
+      },
+      {
+        "color": "plasma",
+        "direction": 3,
+        "plm": 63029,
+        "main": 62619,
+        "close": 62600,
+        "indicator": true
+      },
+      {
+        "color": "ice",
+        "direction": 0,
+        "plm": 63059,
+        "main": 62834,
+        "close": 62815,
+        "indicator": true
+      },
+      {
+        "color": "ice",
+        "direction": 1,
+        "plm": 63065,
+        "main": 62877,
+        "close": 62858,
+        "indicator": true
+      },
+      {
+        "color": "ice",
+        "direction": 2,
+        "plm": 63071,
+        "main": 62920,
+        "close": 62901,
+        "indicator": true
+      },
+      {
+        "color": "ice",
+        "direction": 3,
+        "plm": 63077,
+        "main": 62963,
+        "close": 62944,
+        "indicator": true
+      }
+    ],
+    "patches": {
+      "beam_doors_plms": {
+        "sha256": "e6f313e2e0426ab98fe0fe6f8ac65203941655b0dcc1ae15b8d09574e1e67b8a",
+        "excludedCode": [
+          [
+            160475,
+            128
+          ]
+        ]
+      },
+      "beam_doors_gfx": {
+        "sha256": "093af5b6037aa4e2937bad22a65e17921f75c4c56df131552d25523ceaf48eb5",
+        "excludedCode": []
+      },
+      "red_doors": {
+        "sha256": "76042077095c1e1e69b9e3b931598b28a322e9b8189de7a475a4c0be6992e589",
+        "excludedCode": [
+          [
+            132448,
+            43
+          ]
+        ]
+      }
+    },
+    "spans": [
+      {
+        "address": 140981,
+        "offset": 0,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 140983,
+        "offset": 1,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 140985,
+        "offset": 2,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 140987,
+        "offset": 3,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 140993,
+        "offset": 4,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 140995,
+        "offset": 5,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 140997,
+        "offset": 6,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 140999,
+        "offset": 7,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141005,
+        "offset": 8,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141007,
+        "offset": 9,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141009,
+        "offset": 10,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141011,
+        "offset": 11,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141029,
+        "offset": 12,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141031,
+        "offset": 13,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141033,
+        "offset": 14,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141035,
+        "offset": 15,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141041,
+        "offset": 16,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141043,
+        "offset": 17,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141045,
+        "offset": 18,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141047,
+        "offset": 19,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141053,
+        "offset": 20,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141055,
+        "offset": 21,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141057,
+        "offset": 22,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141059,
+        "offset": 23,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141077,
+        "offset": 24,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141079,
+        "offset": 25,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141081,
+        "offset": 26,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141083,
+        "offset": 27,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141089,
+        "offset": 28,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141091,
+        "offset": 29,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141093,
+        "offset": 30,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141095,
+        "offset": 31,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141101,
+        "offset": 32,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141103,
+        "offset": 33,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141105,
+        "offset": 34,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141107,
+        "offset": 35,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141125,
+        "offset": 36,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141127,
+        "offset": 37,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141129,
+        "offset": 38,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141131,
+        "offset": 39,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141137,
+        "offset": 40,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141139,
+        "offset": 41,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141141,
+        "offset": 42,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141143,
+        "offset": 43,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141149,
+        "offset": 44,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141151,
+        "offset": 45,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141153,
+        "offset": 46,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141155,
+        "offset": 47,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141173,
+        "offset": 48,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141175,
+        "offset": 49,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141177,
+        "offset": 50,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141179,
+        "offset": 51,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141185,
+        "offset": 52,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141187,
+        "offset": 53,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141189,
+        "offset": 54,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141191,
+        "offset": 55,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141197,
+        "offset": 56,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141199,
+        "offset": 57,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141201,
+        "offset": 58,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141203,
+        "offset": 59,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141221,
+        "offset": 60,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141223,
+        "offset": 61,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141225,
+        "offset": 62,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141227,
+        "offset": 63,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141233,
+        "offset": 64,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141235,
+        "offset": 65,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141237,
+        "offset": 66,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141239,
+        "offset": 67,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141245,
+        "offset": 68,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141247,
+        "offset": 69,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141249,
+        "offset": 70,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141251,
+        "offset": 71,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141269,
+        "offset": 72,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141271,
+        "offset": 73,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141273,
+        "offset": 74,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141275,
+        "offset": 75,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141281,
+        "offset": 76,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141283,
+        "offset": 77,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141285,
+        "offset": 78,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141287,
+        "offset": 79,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141293,
+        "offset": 80,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141295,
+        "offset": 81,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141297,
+        "offset": 82,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141299,
+        "offset": 83,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141317,
+        "offset": 84,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141319,
+        "offset": 85,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141321,
+        "offset": 86,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141323,
+        "offset": 87,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141329,
+        "offset": 88,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141331,
+        "offset": 89,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141333,
+        "offset": 90,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141335,
+        "offset": 91,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141341,
+        "offset": 92,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141343,
+        "offset": 93,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141345,
+        "offset": 94,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141347,
+        "offset": 95,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141365,
+        "offset": 96,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141367,
+        "offset": 97,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141369,
+        "offset": 98,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141371,
+        "offset": 99,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141377,
+        "offset": 100,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141379,
+        "offset": 101,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141381,
+        "offset": 102,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141383,
+        "offset": 103,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141389,
+        "offset": 104,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141391,
+        "offset": 105,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141393,
+        "offset": 106,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141395,
+        "offset": 107,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141413,
+        "offset": 108,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141415,
+        "offset": 109,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141417,
+        "offset": 110,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141419,
+        "offset": 111,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141425,
+        "offset": 112,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141427,
+        "offset": 113,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141429,
+        "offset": 114,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141431,
+        "offset": 115,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141437,
+        "offset": 116,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141439,
+        "offset": 117,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141441,
+        "offset": 118,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141443,
+        "offset": 119,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141461,
+        "offset": 120,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141463,
+        "offset": 121,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141465,
+        "offset": 122,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141467,
+        "offset": 123,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141473,
+        "offset": 124,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141475,
+        "offset": 125,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141477,
+        "offset": 126,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141479,
+        "offset": 127,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141485,
+        "offset": 128,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141487,
+        "offset": 129,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141489,
+        "offset": 130,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141491,
+        "offset": 131,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141509,
+        "offset": 132,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141511,
+        "offset": 133,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141513,
+        "offset": 134,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141515,
+        "offset": 135,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141521,
+        "offset": 136,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141523,
+        "offset": 137,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141525,
+        "offset": 138,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141527,
+        "offset": 139,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141533,
+        "offset": 140,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141535,
+        "offset": 141,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141537,
+        "offset": 142,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141539,
+        "offset": 143,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141557,
+        "offset": 144,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141559,
+        "offset": 145,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141561,
+        "offset": 146,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141563,
+        "offset": 147,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141569,
+        "offset": 148,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141571,
+        "offset": 149,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141573,
+        "offset": 150,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141575,
+        "offset": 151,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141581,
+        "offset": 152,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141583,
+        "offset": 153,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141585,
+        "offset": 154,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141587,
+        "offset": 155,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141605,
+        "offset": 156,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141607,
+        "offset": 157,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141609,
+        "offset": 158,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141611,
+        "offset": 159,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141617,
+        "offset": 160,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141619,
+        "offset": 161,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141621,
+        "offset": 162,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141623,
+        "offset": 163,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141629,
+        "offset": 164,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141631,
+        "offset": 165,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141633,
+        "offset": 166,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141635,
+        "offset": 167,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141653,
+        "offset": 168,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141655,
+        "offset": 169,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141657,
+        "offset": 170,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141659,
+        "offset": 171,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141665,
+        "offset": 172,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141667,
+        "offset": 173,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141669,
+        "offset": 174,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141671,
+        "offset": 175,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141677,
+        "offset": 176,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141679,
+        "offset": 177,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141681,
+        "offset": 178,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141683,
+        "offset": 179,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141701,
+        "offset": 180,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141703,
+        "offset": 181,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141705,
+        "offset": 182,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141707,
+        "offset": 183,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141713,
+        "offset": 184,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141715,
+        "offset": 185,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141717,
+        "offset": 186,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141719,
+        "offset": 187,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141725,
+        "offset": 188,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141727,
+        "offset": 189,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141729,
+        "offset": 190,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 141731,
+        "offset": 191,
+        "size": 1,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 159799,
+        "offset": 192,
+        "size": 676,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 160603,
+        "offset": 868,
+        "size": 784,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 161551,
+        "offset": 1652,
+        "size": 288,
+        "patch": "beam_doors_plms"
+      },
+      {
+        "address": 1867779,
+        "offset": 1940,
+        "size": 7420,
+        "patch": "beam_doors_gfx"
+      },
+      {
+        "address": 1876134,
+        "offset": 9360,
+        "size": 1265,
+        "patch": "beam_doors_gfx"
+      },
+      {
+        "address": 2144078,
+        "offset": 10625,
+        "size": 1,
+        "patch": "beam_doors_gfx"
+      },
+      {
+        "address": 2144171,
+        "offset": 10626,
+        "size": 1,
+        "patch": "beam_doors_gfx"
+      },
+      {
+        "address": 2144181,
+        "offset": 10627,
+        "size": 5,
+        "patch": "beam_doors_gfx"
+      },
+      {
+        "address": 2144262,
+        "offset": 10632,
+        "size": 5,
+        "patch": "beam_doors_gfx"
+      },
+      {
+        "address": 2144309,
+        "offset": 10637,
+        "size": 1606,
+        "patch": "beam_doors_gfx"
+      },
+      {
+        "address": 148258,
+        "offset": 12243,
+        "size": 2,
+        "patch": "red_doors"
+      },
+      {
+        "address": 148268,
+        "offset": 12245,
+        "size": 1,
+        "patch": "red_doors"
+      },
+      {
+        "address": 148356,
+        "offset": 12246,
+        "size": 2,
+        "patch": "red_doors"
+      },
+      {
+        "address": 148366,
+        "offset": 12248,
+        "size": 1,
+        "patch": "red_doors"
+      },
+      {
+        "address": 148454,
+        "offset": 12249,
+        "size": 2,
+        "patch": "red_doors"
+      },
+      {
+        "address": 148464,
+        "offset": 12251,
+        "size": 1,
+        "patch": "red_doors"
+      },
+      {
+        "address": 148552,
+        "offset": 12252,
+        "size": 2,
+        "patch": "red_doors"
+      },
+      {
+        "address": 148562,
+        "offset": 12254,
+        "size": 1,
+        "patch": "red_doors"
+      }
+    ],
+    "dataSha256": "0623cfc76b0bd4bc2c7a00a0cc1e3f4dbfbbd9741f2f0e82652c2eb754b0fd79",
+    "sha256": "daca54f490eec49a11cf2161b19734af0adc4f574f604031df28c7abfbfb0364"
+  },
+  "excludedCodeBytes": [
+    {
+      "address": 160475,
+      "value": 32
+    },
+    {
+      "address": 160476,
+      "value": 81
+    },
+    {
+      "address": 160477,
+      "value": 243
+    },
+    {
+      "address": 160478,
+      "value": 240
+    },
+    {
+      "address": 160479,
+      "value": 91
+    },
+    {
+      "address": 160480,
+      "value": 189
+    },
+    {
+      "address": 160481,
+      "value": 119
+    },
+    {
+      "address": 160482,
+      "value": 29
+    },
+    {
+      "address": 160483,
+      "value": 137
+    },
+    {
+      "address": 160484,
+      "value": 1
+    },
+    {
+      "address": 160485,
+      "value": 0
+    },
+    {
+      "address": 160486,
+      "value": 208
+    },
+    {
+      "address": 160487,
+      "value": 87
+    },
+    {
+      "address": 160488,
+      "value": 128
+    },
+    {
+      "address": 160489,
+      "value": 81
+    },
+    {
+      "address": 160490,
+      "value": 32
+    },
+    {
+      "address": 160491,
+      "value": 81
+    },
+    {
+      "address": 160492,
+      "value": 243
+    },
+    {
+      "address": 160493,
+      "value": 240
+    },
+    {
+      "address": 160494,
+      "value": 76
+    },
+    {
+      "address": 160495,
+      "value": 189
+    },
+    {
+      "address": 160496,
+      "value": 119
+    },
+    {
+      "address": 160497,
+      "value": 29
+    },
+    {
+      "address": 160498,
+      "value": 137
+    },
+    {
+      "address": 160499,
+      "value": 2
+    },
+    {
+      "address": 160500,
+      "value": 0
+    },
+    {
+      "address": 160501,
+      "value": 208
+    },
+    {
+      "address": 160502,
+      "value": 72
+    },
+    {
+      "address": 160503,
+      "value": 128
+    },
+    {
+      "address": 160504,
+      "value": 66
+    },
+    {
+      "address": 160505,
+      "value": 32
+    },
+    {
+      "address": 160506,
+      "value": 81
+    },
+    {
+      "address": 160507,
+      "value": 243
+    },
+    {
+      "address": 160508,
+      "value": 240
+    },
+    {
+      "address": 160509,
+      "value": 61
+    },
+    {
+      "address": 160510,
+      "value": 189
+    },
+    {
+      "address": 160511,
+      "value": 119
+    },
+    {
+      "address": 160512,
+      "value": 29
+    },
+    {
+      "address": 160513,
+      "value": 137
+    },
+    {
+      "address": 160514,
+      "value": 4
+    },
+    {
+      "address": 160515,
+      "value": 0
+    },
+    {
+      "address": 160516,
+      "value": 208
+    },
+    {
+      "address": 160517,
+      "value": 57
+    },
+    {
+      "address": 160518,
+      "value": 173
+    },
+    {
+      "address": 160519,
+      "value": 168
+    },
+    {
+      "address": 160520,
+      "value": 9
+    },
+    {
+      "address": 160521,
+      "value": 41
+    },
+    {
+      "address": 160522,
+      "value": 12
+    },
+    {
+      "address": 160523,
+      "value": 0
+    },
+    {
+      "address": 160524,
+      "value": 201
+    },
+    {
+      "address": 160525,
+      "value": 12
+    },
+    {
+      "address": 160526,
+      "value": 0
+    },
+    {
+      "address": 160527,
+      "value": 208
+    },
+    {
+      "address": 160528,
+      "value": 42
+    },
+    {
+      "address": 160529,
+      "value": 189
+    },
+    {
+      "address": 160530,
+      "value": 119
+    },
+    {
+      "address": 160531,
+      "value": 29
+    },
+    {
+      "address": 160532,
+      "value": 137
+    },
+    {
+      "address": 160533,
+      "value": 8
+    },
+    {
+      "address": 160534,
+      "value": 0
+    },
+    {
+      "address": 160535,
+      "value": 208
+    },
+    {
+      "address": 160536,
+      "value": 38
+    },
+    {
+      "address": 160537,
+      "value": 128
+    },
+    {
+      "address": 160538,
+      "value": 32
+    },
+    {
+      "address": 160539,
+      "value": 32
+    },
+    {
+      "address": 160540,
+      "value": 81
+    },
+    {
+      "address": 160541,
+      "value": 243
+    },
+    {
+      "address": 160542,
+      "value": 240
+    },
+    {
+      "address": 160543,
+      "value": 27
+    },
+    {
+      "address": 160544,
+      "value": 189
+    },
+    {
+      "address": 160545,
+      "value": 119
+    },
+    {
+      "address": 160546,
+      "value": 29
+    },
+    {
+      "address": 160547,
+      "value": 137
+    },
+    {
+      "address": 160548,
+      "value": 8
+    },
+    {
+      "address": 160549,
+      "value": 0
+    },
+    {
+      "address": 160550,
+      "value": 208
+    },
+    {
+      "address": 160551,
+      "value": 23
+    },
+    {
+      "address": 160552,
+      "value": 173
+    },
+    {
+      "address": 160553,
+      "value": 168
+    },
+    {
+      "address": 160554,
+      "value": 9
+    },
+    {
+      "address": 160555,
+      "value": 41
+    },
+    {
+      "address": 160556,
+      "value": 12
+    },
+    {
+      "address": 160557,
+      "value": 0
+    },
+    {
+      "address": 160558,
+      "value": 201
+    },
+    {
+      "address": 160559,
+      "value": 12
+    },
+    {
+      "address": 160560,
+      "value": 0
+    },
+    {
+      "address": 160561,
+      "value": 208
+    },
+    {
+      "address": 160562,
+      "value": 8
+    },
+    {
+      "address": 160563,
+      "value": 189
+    },
+    {
+      "address": 160564,
+      "value": 119
+    },
+    {
+      "address": 160565,
+      "value": 29
+    },
+    {
+      "address": 160566,
+      "value": 137
+    },
+    {
+      "address": 160567,
+      "value": 4
+    },
+    {
+      "address": 160568,
+      "value": 0
+    },
+    {
+      "address": 160569,
+      "value": 208
+    },
+    {
+      "address": 160570,
+      "value": 4
+    },
+    {
+      "address": 160571,
+      "value": 158
+    },
+    {
+      "address": 160572,
+      "value": 119
+    },
+    {
+      "address": 160573,
+      "value": 29
+    },
+    {
+      "address": 160574,
+      "value": 96
+    },
+    {
+      "address": 160575,
+      "value": 158
+    },
+    {
+      "address": 160576,
+      "value": 119
+    },
+    {
+      "address": 160577,
+      "value": 29
+    },
+    {
+      "address": 160578,
+      "value": 191
+    },
+    {
+      "address": 160579,
+      "value": 188
+    },
+    {
+      "address": 160580,
+      "value": 222
+    },
+    {
+      "address": 160581,
+      "value": 126
+    },
+    {
+      "address": 160582,
+      "value": 157
+    },
+    {
+      "address": 160583,
+      "value": 39
+    },
+    {
+      "address": 160584,
+      "value": 29
+    },
+    {
+      "address": 160585,
+      "value": 169
+    },
+    {
+      "address": 160586,
+      "value": 1
+    },
+    {
+      "address": 160587,
+      "value": 0
+    },
+    {
+      "address": 160588,
+      "value": 159
+    },
+    {
+      "address": 160589,
+      "value": 28
+    },
+    {
+      "address": 160590,
+      "value": 222
+    },
+    {
+      "address": 160591,
+      "value": 126
+    },
+    {
+      "address": 160592,
+      "value": 96
+    },
+    {
+      "address": 160593,
+      "value": 189
+    },
+    {
+      "address": 160594,
+      "value": 119
+    },
+    {
+      "address": 160595,
+      "value": 29
+    },
+    {
+      "address": 160596,
+      "value": 41
+    },
+    {
+      "address": 160597,
+      "value": 0
+    },
+    {
+      "address": 160598,
+      "value": 15
+    },
+    {
+      "address": 160599,
+      "value": 201
+    },
+    {
+      "address": 160600,
+      "value": 0
+    },
+    {
+      "address": 160601,
+      "value": 5
+    },
+    {
+      "address": 160602,
+      "value": 96
+    },
+    {
+      "address": 132448,
+      "value": 189
+    },
+    {
+      "address": 132449,
+      "value": 119
+    },
+    {
+      "address": 132450,
+      "value": 29
+    },
+    {
+      "address": 132451,
+      "value": 240
+    },
+    {
+      "address": 132452,
+      "value": 37
+    },
+    {
+      "address": 132453,
+      "value": 41
+    },
+    {
+      "address": 132454,
+      "value": 0
+    },
+    {
+      "address": 132455,
+      "value": 15
+    },
+    {
+      "address": 132456,
+      "value": 201
+    },
+    {
+      "address": 132457,
+      "value": 0
+    },
+    {
+      "address": 132458,
+      "value": 1
+    },
+    {
+      "address": 132459,
+      "value": 208
+    },
+    {
+      "address": 132460,
+      "value": 19
+    },
+    {
+      "address": 132461,
+      "value": 158
+    },
+    {
+      "address": 132462,
+      "value": 119
+    },
+    {
+      "address": 132463,
+      "value": 29
+    },
+    {
+      "address": 132464,
+      "value": 191
+    },
+    {
+      "address": 132465,
+      "value": 188
+    },
+    {
+      "address": 132466,
+      "value": 222
+    },
+    {
+      "address": 132467,
+      "value": 126
+    },
+    {
+      "address": 132468,
+      "value": 157
+    },
+    {
+      "address": 132469,
+      "value": 39
+    },
+    {
+      "address": 132470,
+      "value": 29
+    },
+    {
+      "address": 132471,
+      "value": 169
+    },
+    {
+      "address": 132472,
+      "value": 1
+    },
+    {
+      "address": 132473,
+      "value": 0
+    },
+    {
+      "address": 132474,
+      "value": 159
+    },
+    {
+      "address": 132475,
+      "value": 28
+    },
+    {
+      "address": 132476,
+      "value": 222
+    },
+    {
+      "address": 132477,
+      "value": 126
+    },
+    {
+      "address": 132478,
+      "value": 128
+    },
+    {
+      "address": 132479,
+      "value": 10
+    },
+    {
+      "address": 132480,
+      "value": 169
+    },
+    {
+      "address": 132481,
+      "value": 87
+    },
+    {
+      "address": 132482,
+      "value": 0
+    },
+    {
+      "address": 132483,
+      "value": 34
+    },
+    {
+      "address": 132484,
+      "value": 203
+    },
+    {
+      "address": 132485,
+      "value": 144
+    },
+    {
+      "address": 132486,
+      "value": 128
+    },
+    {
+      "address": 132487,
+      "value": 158
+    },
+    {
+      "address": 132488,
+      "value": 119
+    },
+    {
+      "address": 132489,
+      "value": 29
+    },
+    {
+      "address": 132490,
+      "value": 96
+    }
+  ]
+}

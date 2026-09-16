@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "hidden": true,
+  "revealed": true,
+  "scroll18": true,
+  "originalEquipmentNavigation": true,
+  "regionBrowser": true,
+  "returnScrollPreserved": true,
+  "unpause": true,
+  "vanilla": true,
+  "originalFooterChecks": 320,
+  "mapGraphicsRestored": true,
+  "regionalFamilyProgress": true,
+  "startPriority": true,
+  "nativeSha256": "ab8d73a8db61b5661e61a1798f57ddf8dc5911f12f191490f2687d6039d27591"
+}

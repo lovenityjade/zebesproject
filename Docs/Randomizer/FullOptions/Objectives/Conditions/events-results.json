@@ -1,0 +1,367 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "kind": "original_death_routine",
+      "uniqueEnemies": 145,
+      "repeatedDeaths": 145,
+      "totals": [
+        62,
+        19,
+        22,
+        20,
+        5,
+        17
+      ]
+    },
+    {
+      "kind": "original_ai_parity",
+      "cases": [
+        {
+          "kind": "fish",
+          "target": 10715136,
+          "room": 53508,
+          "health": 0,
+          "event": "fish_tickled_event"
+        },
+        {
+          "kind": "fish",
+          "target": 10715136,
+          "room": 53508,
+          "health": 100,
+          "event": "fish_tickled_event"
+        },
+        {
+          "kind": "fish",
+          "target": 10715136,
+          "room": 37368,
+          "health": 0,
+          "event": null
+        },
+        {
+          "kind": "fish",
+          "target": 10715136,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "geemer",
+          "target": 10715146,
+          "room": 44211,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715146,
+          "room": 44211,
+          "health": 100,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715146,
+          "room": 37368,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715146,
+          "room": 37368,
+          "health": 100,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715191,
+          "room": 44211,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715191,
+          "room": 44211,
+          "health": 100,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715191,
+          "room": 37368,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715191,
+          "room": 37368,
+          "health": 100,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715171,
+          "room": 44211,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715171,
+          "room": 44211,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "geemer",
+          "target": 10715171,
+          "room": 37368,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715171,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "geemer",
+          "target": 10715181,
+          "room": 44211,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715181,
+          "room": 44211,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "geemer",
+          "target": 10715181,
+          "room": 37368,
+          "health": 0,
+          "event": "orange_geemer_event"
+        },
+        {
+          "kind": "geemer",
+          "target": 10715181,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198255,
+          "room": 44211,
+          "health": 0,
+          "event": "shak_dead_event"
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198255,
+          "room": 44211,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198255,
+          "room": 37368,
+          "health": 0,
+          "event": "shak_dead_event"
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198255,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198260,
+          "room": 44211,
+          "health": 0,
+          "event": "shak_dead_event"
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198260,
+          "room": 44211,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198260,
+          "room": 37368,
+          "health": 0,
+          "event": "shak_dead_event"
+        },
+        {
+          "kind": "shaktool",
+          "target": 11198260,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649610,
+          "room": 44211,
+          "health": 0,
+          "event": "king_cac_event"
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649610,
+          "room": 44211,
+          "health": 100,
+          "event": "king_cac_event"
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649610,
+          "room": 37368,
+          "health": 0,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649610,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649655,
+          "room": 44211,
+          "health": 0,
+          "event": "king_cac_event"
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649655,
+          "room": 44211,
+          "health": 100,
+          "event": "king_cac_event"
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649655,
+          "room": 37368,
+          "health": 0,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649655,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649635,
+          "room": 44211,
+          "health": 0,
+          "event": "king_cac_event"
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649635,
+          "room": 44211,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649635,
+          "room": 37368,
+          "health": 0,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649635,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649645,
+          "room": 44211,
+          "health": 0,
+          "event": "king_cac_event"
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649645,
+          "room": 44211,
+          "health": 100,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649645,
+          "room": 37368,
+          "health": 0,
+          "event": null
+        },
+        {
+          "kind": "cacatac",
+          "target": 10649645,
+          "room": 37368,
+          "health": 100,
+          "event": null
+        }
+      ]
+    },
+    {
+      "kind": "bowling_and_animals",
+      "passed": true
+    },
+    {
+      "kind": "native_sram",
+      "slots": 3,
+      "loads": 6
+    },
+    {
+      "kind": "real_climb_room_population",
+      "enemies": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "real_special_enemies",
+      "fishIndices": [
+        0
+      ],
+      "cacatacIndices": [
+        448
+      ]
+    }
+  ],
+  "nativeSha256": "76f0479b2068a93891b8f18f5844ac35ea61dde5ff22a8c642a1d48270a4a7b3",
+  "cpu": 0
+}

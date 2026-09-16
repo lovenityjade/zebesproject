@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="editor-token" content="__EDITOR_TOKEN__"><title>Atelier de décors — Super Metroid</title>
+<link rel="stylesheet" href="/editor.css"><script defer src="/editor.js"></script></head>
+<body>
+<header><strong>ATELIER DE DÉCORS</strong><span>Super Metroid · éditeur externe</span><button id="save">Enregistrer</button><span id="saveState">Aucune retouche</span></header>
+<nav aria-label="Salle"><label>Zone <select id="zone"></select></label><label>Salle <select id="room"></select></label><label>État <select id="state"></select></label></nav>
+<main><aside>
+<h2>Tiles d’origine</h2><label><input type="checkbox" id="used" checked> Utilisées dans cette salle</label>
+<p id="tilesetInfo"></p><canvas id="palette" width="256" height="1024" aria-label="Palette de tiles"></canvas>
+</aside><section id="workspace">
+<div class="tools" aria-label="Outils">
+<label>Calque <select id="layer"><option value="0">Décor avant</option><option value="1">Décor arrière</option></select></label>
+<button id="brush" class="active" title="B">Pinceau</button><button id="eraser" title="E — retirer une retouche">Gomme</button><button id="picker" title="I">Pipette</button>
+<button id="undo" title="Ctrl+Z">Annuler</button><button id="redo" title="Ctrl+Maj+Z">Rétablir</button>
+<label><input type="checkbox" id="flipX"> Miroir X</label><label><input type="checkbox" id="flipY"> Miroir Y</label>
+</div>
+<div class="tools secondary">
+<label>Zoom <select id="zoom"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="4">4×</option></select></label>
+<button id="fit">Centrer la salle</button><label><input id="grid" type="checkbox" checked> Grille</label>
+<label><input id="collision" type="checkbox"> Collisions</label><label><input id="original" type="checkbox"> Original seul</label>
+<label><input id="showBack" type="checkbox" checked> Arrière</label><label><input id="showFront" type="checkbox" checked> Avant</label>
+</div>
+<div id="viewport"><canvas id="scene" aria-label="Salle et prolongements peignables" tabindex="0"></canvas></div>
+<footer><span id="position">Choisis une tile et peins dans la salle ou autour.</span><span id="selection">Tile 000</span></footer>
+</section></main>
+<div id="status" role="status">Lecture des assets de la ROM…</div>
+<details><summary>Repères et commandes</summary>
+<p>Glisser pour peindre · clic droit pour retirer une retouche · molette pour se déplacer · B pinceau · E gomme · I pipette · Ctrl+S enregistrer.</p>
+<p>Le contour cyan indique les dimensions natives de la salle. Les collisions sont des guides en lecture seule : rose = solide, jaune = pente, orange = autre comportement. La gomme restaure le décor original.</p>
+<p>Les tiles et la palette viennent de l’état choisi. Cet aperçu montre les calques de salle, sans ennemis, portes animées, shaders ni fonds spéciaux chargés par script. Les retouches sont sauvegardées séparément. En jeu : Ctrl+F8 pour les recharger.</p>
+</details>
+</body></html>

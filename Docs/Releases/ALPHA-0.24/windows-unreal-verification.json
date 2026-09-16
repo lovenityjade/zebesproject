@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "exitCode": 0,
+      "case": "Rom",
+      "rendered": false,
+      "passed": true
+    },
+    {
+      "exitCode": 0,
+      "case": "SeedSharing",
+      "rendered": false,
+      "passed": true
+    },
+    {
+      "exitCode": 0,
+      "case": "Profile",
+      "rendered": false,
+      "passed": true
+    },
+    {
+      "exitCode": 0,
+      "case": "Tracker",
+      "rendered": false,
+      "passed": true
+    },
+    {
+      "exitCode": 0,
+      "case": "Flow",
+      "rendered": false,
+      "passed": true
+    }
+  ],
+  "host": "UnrealEditor game mode",
+  "platform": "Win64",
+  "packagedGameTested": false
+}

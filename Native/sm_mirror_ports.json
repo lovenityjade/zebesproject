@@ -1,0 +1,491 @@
+{
+  "schema": 1,
+  "ranges": [
+    {
+      "address": 9419137,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419148,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419159,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419170,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419187,
+      "size": 23,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419210,
+      "size": 39,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419249,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419264,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419275,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419286,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419297,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9419308,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420039,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420054,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420069,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420080,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420095,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420112,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420123,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420140,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420151,
+      "size": 19,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420170,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420181,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420192,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420207,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420224,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420241,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420258,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420273,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420288,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420299,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420314,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420325,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420342,
+      "size": 9,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420702,
+      "size": 29,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420731,
+      "size": 31,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420762,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420777,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420794,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420822,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420837,
+      "size": 21,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420858,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420875,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420886,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420903,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420920,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420937,
+      "size": 25,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420962,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420973,
+      "size": 21,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9420994,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9421011,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9421022,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9421039,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9421050,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9421067,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429480,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429491,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429502,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429519,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429530,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429545,
+      "size": 31,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429784,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429829,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429846,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429863,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429880,
+      "size": 21,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429901,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429912,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429923,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429945,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429960,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9429977,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9430208,
+      "size": 15,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9430223,
+      "size": 17,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9436785,
+      "size": 11,
+      "implementation": "sm_mirror_scrolls.inc"
+    },
+    {
+      "address": 9408916,
+      "size": 39,
+      "implementation": "prepare_overlays.py: room setup/treadmills"
+    },
+    {
+      "address": 9419121,
+      "size": 16,
+      "implementation": "prepare_overlays.py: room setup/treadmills"
+    },
+    {
+      "address": 9429464,
+      "size": 16,
+      "implementation": "prepare_overlays.py: room setup/treadmills"
+    },
+    {
+      "address": 10913637,
+      "size": 3,
+      "implementation": "prepare-mirror-gameplay.py: Boulder"
+    },
+    {
+      "address": 10913705,
+      "size": 3,
+      "implementation": "prepare-mirror-gameplay.py: Boulder"
+    },
+    {
+      "address": 10944188,
+      "size": 19,
+      "implementation": "prepare-mirror-gameplay.py: Boulder"
+    },
+    {
+      "address": 11004716,
+      "size": 3,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11004892,
+      "size": 3,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11004912,
+      "size": 3,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11005085,
+      "size": 5,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11005121,
+      "size": 5,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11005157,
+      "size": 5,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11005202,
+      "size": 5,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11005232,
+      "size": 5,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 11005600,
+      "size": 5,
+      "implementation": "prepare-mirror-gameplay.py: Etecoon"
+    },
+    {
+      "address": 8697872,
+      "size": 1,
+      "implementation": "prepare-mirror-gameplay.py: room PLMs"
+    },
+    {
+      "address": 8697899,
+      "size": 2,
+      "implementation": "prepare-mirror-gameplay.py: room PLMs"
+    },
+    {
+      "address": 8704363,
+      "size": 1,
+      "implementation": "prepare-mirror-gameplay.py: room PLMs"
+    },
+    {
+      "address": 8704474,
+      "size": 1,
+      "implementation": "prepare-mirror-gameplay.py: room PLMs"
+    },
+    {
+      "address": 8705616,
+      "size": 1,
+      "implementation": "prepare-mirror-gameplay.py: room PLMs"
+    },
+    {
+      "address": 8705623,
+      "size": 1,
+      "implementation": "prepare-mirror-gameplay.py: room PLMs"
+    },
+    {
+      "address": 8705651,
+      "size": 1,
+      "implementation": "prepare-mirror-gameplay.py: room PLMs"
+    }
+  ],
+  "scope": "Reviewed native code equivalents only; does not certify whole Mirror mode."
+}

@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "completed": false,
+      "bosses": true,
+      "floor": [
+        33224,
+        33224,
+        33224,
+        33224
+      ],
+      "scroll": 1,
+      "frameState": 8
+    },
+    {
+      "completed": true,
+      "bosses": false,
+      "floor": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "scroll": 514,
+      "frameState": 8
+    }
+  ],
+  "nativeSha256": "76f0479b2068a93891b8f18f5844ac35ea61dde5ff22a8c642a1d48270a4a7b3"
+}

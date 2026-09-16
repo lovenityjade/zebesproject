@@ -1,0 +1,49 @@
+Unreal 5.8.2 / Linux Development
+Setting up bundled DotNet SDK
+Running command : dotnet Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.dll SMUnrealEditor Linux Development /home/thelovenityjade/Projects/projectSM/Unreal/SMUnreal.uproject -MaxParallelActions=2 -NoUBA -NoUBALocal
+Log file: /home/thelovenityjade/.config/Epic/UnrealBuildTool/Log.txt
+Executing up to 2 actions based on MaxProcessorCount override
+UbaStorageServer - FileMapping backing: memfd
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+Building SMUnrealEditor...
+===== Toolchain Information =====
+Using ISPC compiler (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Source/ThirdParty/Intel/ISPC/bin/Linux/ispc)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20240919, LLVM 18.1.6)
+Using Clang compiler 20.1.8 (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++)
+  clang version 20.1.8 (github.com/llvm/llvm-project 87f0227cb60147a26a1eeb4fb06e3b505e9c7261) Target: x86_64-unknown-linux-gnu Thread model: posix InstalledDir: /home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin
+Using Clang archiver (/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu/bin/llvm-ar)
+  LLVM (http://llvm.org/):   LLVM version 20.1.8   Optimized build.
+Using toolchain located at '/home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v26_clang-20.1.8-rockylinux8/x86_64-unknown-linux-gnu'
+Using bundled libc++ standard C++ library.
+Compressing debug files
+=================================
+Using Unreal Build Accelerator local executor to run 2 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 15.47 GB physical, 32.88 GB/31.74 GB committed
+  UBA Storage capacity 40 GB
+[1/2] Compile SMProfiles.cpp [NoUba]
+[2/2] Link libUnrealEditor-SMUnreal.so [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 3.57 seconds
+Output binary: /home/thelovenityjade/Applications/UnrealEngine-5.8.2/Engine/Binaries/Linux/UnrealEditor
+
+Result: Succeeded
+Total execution time: 5.06 seconds
+Trace written to file /home/thelovenityjade/.config/Epic/UnrealBuildTool/Trace.uba with size 3.1kb
+
+Native C build
+[  3%] Building C object CMakeFiles/sm_native.dir/sm_80_native.c.o
+[  3%] Building C object CMakeFiles/sm_native.dir/sm_81_native.c.o
+[  4%] Building C object CMakeFiles/sm_native.dir/sm_82_native.c.o
+[  6%] Building C object CMakeFiles/sm_native.dir/sm_84_native.c.o
+[  8%] Building C object CMakeFiles/sm_native.dir/sm_86_native.c.o
+[  9%] Building C object CMakeFiles/sm_native.dir/sm_8f_native.c.o
+[ 11%] Building C object CMakeFiles/sm_native.dir/sm_90_movement.c.o
+[ 13%] Building C object CMakeFiles/sm_native.dir/sm_a0_native.c.o
+[ 14%] Building C object CMakeFiles/sm_native.dir/sm_a8_native.c.o
+[ 16%] Building C object CMakeFiles/sm_native.dir/sm_b4_native.c.o
+[ 18%] Building C object CMakeFiles/sm_native.dir/sm_scene.c.o
+[ 19%] Linking C shared library libsm_native.so
+[ 96%] Built target sm_native
+[ 98%] Linking C executable sm_randomizer_host
+[100%] Built target sm_randomizer_host

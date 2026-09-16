@@ -1,0 +1,127 @@
+{
+  "starts": [
+    {
+      "start": "Ceres",
+      "room": 57157,
+      "area": 6,
+      "station": 0,
+      "customSave": false,
+      "health": 99
+    },
+    {
+      "start": "Landing Site",
+      "room": 37368,
+      "area": 0,
+      "station": 0,
+      "customSave": false,
+      "health": 99
+    },
+    {
+      "start": "Gauntlet Top",
+      "room": 39357,
+      "area": 0,
+      "station": 6,
+      "customSave": true,
+      "health": 99
+    },
+    {
+      "start": "Green Brinstar Elevator",
+      "room": 39641,
+      "area": 1,
+      "station": 8,
+      "customSave": false,
+      "health": 99
+    },
+    {
+      "start": "Big Pink",
+      "room": 41348,
+      "area": 1,
+      "station": 0,
+      "customSave": false,
+      "health": 99
+    },
+    {
+      "start": "Etecoons Supers",
+      "room": 41041,
+      "area": 1,
+      "station": 7,
+      "customSave": true,
+      "health": 99
+    },
+    {
+      "start": "Wrecked Ship Main",
+      "room": 52874,
+      "area": 3,
+      "station": 0,
+      "customSave": false,
+      "health": 39
+    },
+    {
+      "start": "Firefleas Top",
+      "room": 46426,
+      "area": 2,
+      "station": 7,
+      "customSave": true,
+      "health": 99
+    },
+    {
+      "start": "Business Center",
+      "room": 42974,
+      "area": 2,
+      "station": 8,
+      "customSave": false,
+      "health": 99
+    },
+    {
+      "start": "Bubble Mountain",
+      "room": 45277,
+      "area": 2,
+      "station": 1,
+      "customSave": false,
+      "health": 99
+    },
+    {
+      "start": "Mama Turtle",
+      "room": 53333,
+      "area": 4,
+      "station": 6,
+      "customSave": true,
+      "health": 99
+    },
+    {
+      "start": "Watering Hole",
+      "room": 53563,
+      "area": 4,
+      "station": 7,
+      "customSave": true,
+      "health": 99
+    },
+    {
+      "start": "Aqueduct",
+      "room": 54695,
+      "area": 4,
+      "station": 5,
+      "customSave": true,
+      "health": 99
+    },
+    {
+      "start": "Red Brinstar Elevator",
+      "room": 41762,
+      "area": 1,
+      "station": 10,
+      "customSave": false,
+      "health": 99
+    },
+    {
+      "start": "Golden Four",
+      "room": 42477,
+      "area": 0,
+      "station": 7,
+      "customSave": true,
+      "health": 99
+    }
+  ],
+  "cpu": 0,
+  "sourceRomUnchanged": true,
+  "scope": "Native load and SRAM round-trip, controlled item plan; not randomized progression"
+}

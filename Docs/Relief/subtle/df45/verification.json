@@ -1,0 +1,23 @@
+{
+  "native": {
+    "frame": 8550,
+    "room": "df45",
+    "state": 8,
+    "cpu_opcodes": 0
+  },
+  "test": "Same frozen Unreal frame: depth with/without structure bevel",
+  "opacity": 0.75,
+  "exposure": 1.1,
+  "modified_structure_texels": 1048,
+  "source_sprites_gui_far_planes_unchanged": true,
+  "captures": {
+    "flat": {
+      "reference_max_channel_error": 2,
+      "reference_mean_error": 0.050723767154431214
+    },
+    "layered": {
+      "reference_max_channel_error": 2,
+      "reference_mean_error": 0.05016121031746032
+    }
+  }
+}

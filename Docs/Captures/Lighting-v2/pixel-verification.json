@@ -1,0 +1,20 @@
+{
+  "dark_ambient_ratio": 0.3016976051669585,
+  "emitter_brightness_ratio": 1.0990259409451226,
+  "identified_emitting_texels": 272,
+  "effects_pixel_blocks_uniform": true,
+  "viewport": [
+    1280,
+    720
+  ],
+  "integer_scale": 3,
+  "origin": [
+    256,
+    24
+  ],
+  "pixel_blocks_uniform": true,
+  "maximum_channel_error": 0,
+  "exact_matching_fraction": 1.0,
+  "hud_unchanged": true,
+  "atmosphere_changed_pixels": 423279
+}

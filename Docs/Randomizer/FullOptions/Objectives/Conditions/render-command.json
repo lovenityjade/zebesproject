@@ -1,0 +1,23 @@
+{
+  "args": [
+    "./SMUnreal/Binaries/Linux/SMUnreal",
+    "/Engine/Maps/Entry",
+    "-SMAreaTest",
+    "-SMStartTest=0",
+    "-SMAreaConnectionTest=24",
+    "-SMPauseTest",
+    "-SMWarmup=12000",
+    "-RenderOffscreen",
+    "-unattended",
+    "-windowed",
+    "-ResX=1280",
+    "-ResY=720",
+    "-nosplash",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-ExecCmds=t.MaxFPS 60"
+  ],
+  "nativeSha256": "76f0479b2068a93891b8f18f5844ac35ea61dde5ff22a8c642a1d48270a4a7b3",
+  "artificialAllMapReveal": false,
+  "fixture": "Generated connection arrival then native pause; collision discovery separately verified in transitions suite"
+}

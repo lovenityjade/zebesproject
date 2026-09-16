@@ -1,0 +1,3650 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 15092600,
+      "fingerprint": "fdf4da30b7c79f491c08fbc1727d1efe74db185ae002bf05c72ba3311ff92430",
+      "noAdvancedTechs": false,
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 4,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 5,
+          "location": "Bomb",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 6,
+          "location": "Energy Tank, Terminator",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 7,
+          "location": "Missile (Crateria bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 8,
+          "location": "Missile (Crateria middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 9,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 10,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 11,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 12,
+          "location": "Missile (Crateria moat)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 13,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 14,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 15,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 16,
+          "location": "Spazer",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 17,
+          "location": "Hi-Jump Boots",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 18,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 19,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 20,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 21,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 22,
+          "location": "Missile (Kraid)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 24,
+          "location": "Varia Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 25,
+          "location": "Energy Tank, Kraid",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 26,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 27,
+          "location": "Charge Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 28,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 30,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 31,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 32,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 33,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 34,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 35,
+          "location": "Energy Tank, Etecoons",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 36,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 37,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 38,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 39,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 40,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 41,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 42,
+          "location": "Ice Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 43,
+          "location": "Missile (below Ice Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 44,
+          "location": "X-Ray Scope",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 46,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 47,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 48,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 49,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 50,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 51,
+          "location": "Gravity Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 52,
+          "location": "Missile (Gravity Suit)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 53,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 54,
+          "location": "Reserve Tank, Norfair",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 55,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 56,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 57,
+          "location": "Missile (bubble Norfair)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 58,
+          "location": "Speed Booster",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 59,
+          "location": "Missile (Speed Booster)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 60,
+          "location": "Wave Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 61,
+          "location": "Missile (Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 62,
+          "location": "Missile (lava room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 63,
+          "location": "Energy Tank, Firefleas",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 64,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 65,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 66,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 67,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 68,
+          "location": "Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 70,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 71,
+          "location": "Screw Attack",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 72,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 74,
+          "location": "Energy Tank, Ridley",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 75,
+          "location": "Reserve Tank, Maridia",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 76,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 77,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 78,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 79,
+          "location": "Super Missile (green Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 80,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 82,
+          "location": "Missile (below Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 83,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 84,
+          "location": "Energy Tank, Crocomire",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 85,
+          "location": "Missile (Grapple Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 86,
+          "location": "Grapple Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 87,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 88,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 89,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 90,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 91,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 92,
+          "location": "Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 93,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 95,
+          "location": "Energy Tank, Botwoon",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 96,
+          "location": "Missile (Draygon)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 97,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 98,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 99,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 100,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 101,
+          "location": "Super Missile (Crateria)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 102,
+          "location": "Energy Tank, Waterway",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 103,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 104,
+          "location": "Missile (above Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 105,
+          "location": "Spring Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1,
+          "reason": "Accessible"
+        }
+      ]
+    },
+    {
+      "seed": 15092601,
+      "fingerprint": "040315d5b8ee734100864d02345565c55226a7db1c3b4454ca6020be0ff44467",
+      "noAdvancedTechs": true,
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 4,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 6,
+          "location": "Charge Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 7,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 8,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 9,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 10,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 11,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 12,
+          "location": "Energy Tank, Etecoons",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 13,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 14,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 15,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 16,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 17,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 18,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 19,
+          "location": "Bomb",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 20,
+          "location": "Energy Tank, Terminator",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 21,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 22,
+          "location": "Missile (Crateria bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 23,
+          "location": "Super Missile (Crateria)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 24,
+          "location": "Missile (Crateria middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 25,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 26,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 27,
+          "location": "Missile (Crateria moat)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 28,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 29,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 30,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 32,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 33,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 34,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 35,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 36,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 37,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 38,
+          "location": "Gravity Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 39,
+          "location": "Missile (Gravity Suit)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 40,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 41,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 42,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 43,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 44,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 45,
+          "location": "Energy Tank, Waterway",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 46,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 47,
+          "location": "Spazer",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 48,
+          "location": "X-Ray Scope",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 49,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 50,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 51,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 52,
+          "location": "Ice Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 53,
+          "location": "Missile (below Ice Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 54,
+          "location": "Hi-Jump Boots",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 55,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 56,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 57,
+          "location": "Reserve Tank, Norfair",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 58,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 59,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 60,
+          "location": "Missile (bubble Norfair)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 61,
+          "location": "Speed Booster",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 62,
+          "location": "Missile (Speed Booster)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 63,
+          "location": "Wave Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 64,
+          "location": "Missile (Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 65,
+          "location": "Missile (lava room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 66,
+          "location": "Missile (above Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 68,
+          "location": "Energy Tank, Crocomire",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 69,
+          "location": "Grapple Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 70,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 71,
+          "location": "Missile (below Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 72,
+          "location": "Missile (Grapple Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 73,
+          "location": "Missile (Kraid)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 75,
+          "location": "Varia Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 76,
+          "location": "Energy Tank, Kraid",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 77,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 78,
+          "location": "Super Missile (green Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 79,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 80,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 81,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 82,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 83,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 84,
+          "location": "Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 85,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 87,
+          "location": "Energy Tank, Botwoon",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 88,
+          "location": "Missile (Draygon)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 89,
+          "location": "Reserve Tank, Maridia",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 90,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 91,
+          "location": "Spring Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 92,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 93,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 94,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 95,
+          "location": "Energy Tank, Firefleas",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 96,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 97,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 98,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 99,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 101,
+          "location": "Energy Tank, Ridley",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 102,
+          "location": "Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 103,
+          "location": "Screw Attack",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 105,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1,
+          "reason": "Accessible"
+        }
+      ]
+    },
+    {
+      "seed": 15092602,
+      "fingerprint": "123ff614e4489f893a2ba51111474068926730d647151030707ce945d0771a19",
+      "noAdvancedTechs": false,
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 2,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 4,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 5,
+          "location": "Energy Tank, Terminator",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 6,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 7,
+          "location": "Missile (Crateria bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 8,
+          "location": "Missile (Crateria middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 9,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 10,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 11,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 12,
+          "location": "Super Missile (Crateria)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 13,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 14,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 15,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 16,
+          "location": "Bomb",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 17,
+          "location": "Missile (Kraid)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 19,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 20,
+          "location": "Super Missile (green Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 21,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 22,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 23,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 24,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 25,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 26,
+          "location": "Energy Tank, Etecoons",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 27,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 28,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 29,
+          "location": "Spazer",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 30,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 31,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 32,
+          "location": "Hi-Jump Boots",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 33,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 34,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 35,
+          "location": "Reserve Tank, Norfair",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 36,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 37,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 38,
+          "location": "Missile (bubble Norfair)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 39,
+          "location": "Missile (lava room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 40,
+          "location": "Missile (Speed Booster)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 41,
+          "location": "Missile (Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 43,
+          "location": "Energy Tank, Crocomire",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 44,
+          "location": "Grapple Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 45,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 46,
+          "location": "Missile (below Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 47,
+          "location": "Missile (Grapple Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 48,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 50,
+          "location": "Charge Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 51,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 52,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 53,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 54,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 55,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 56,
+          "location": "Missile (Crateria moat)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 57,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 58,
+          "location": "Energy Tank, Firefleas",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 59,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 60,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 61,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 62,
+          "location": "Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 64,
+          "location": "Screw Attack",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 65,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 67,
+          "location": "Energy Tank, Botwoon",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 68,
+          "location": "Missile (Draygon)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 69,
+          "location": "Reserve Tank, Maridia",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 70,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 71,
+          "location": "Spring Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 72,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 73,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 74,
+          "location": "Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 75,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 76,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 77,
+          "location": "Missile (above Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 78,
+          "location": "Speed Booster",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 79,
+          "location": "Wave Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 80,
+          "location": "Energy Tank, Waterway",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 81,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 82,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 83,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 84,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 85,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 86,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 87,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 88,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 89,
+          "location": "Gravity Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 90,
+          "location": "Missile (Gravity Suit)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 91,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 93,
+          "location": "Energy Tank, Ridley",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 94,
+          "location": "X-Ray Scope",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 95,
+          "location": "Ice Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 96,
+          "location": "Missile (below Ice Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 97,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 98,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 99,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 100,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 101,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 102,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 104,
+          "location": "Varia Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 105,
+          "location": "Energy Tank, Kraid",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1,
+          "reason": "Accessible"
+        }
+      ]
+    },
+    {
+      "seed": 15092603,
+      "fingerprint": "d562fc4a8b06b52ffe55ecddb055323488a9f43be218772a0bebf0495c37c593",
+      "noAdvancedTechs": true,
+      "cases": [
+        {
+          "step": 1,
+          "location": "Missile (Crateria moat)",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 4,
+          "location": "Morphing Ball",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 5,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 6,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 7,
+          "location": "Bomb",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 8,
+          "location": "Energy Tank, Terminator",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 9,
+          "location": "Missile (Crateria bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 10,
+          "location": "Missile (Crateria middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 11,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 12,
+          "location": "Spazer",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 13,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 14,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 15,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 17,
+          "location": "Energy Tank, Crocomire",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 18,
+          "location": "Missile (below Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 19,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 20,
+          "location": "X-Ray Scope",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 21,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 22,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 23,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 24,
+          "location": "Hi-Jump Boots",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 25,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 26,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 27,
+          "location": "Reserve Tank, Norfair",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 28,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 29,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 30,
+          "location": "Missile (bubble Norfair)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 31,
+          "location": "Speed Booster",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 32,
+          "location": "Missile (Speed Booster)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 33,
+          "location": "Wave Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 34,
+          "location": "Missile (Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 35,
+          "location": "Missile (lava room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 36,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 38,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 39,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 40,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 41,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 42,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 43,
+          "location": "Gravity Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 44,
+          "location": "Missile (Gravity Suit)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 45,
+          "location": "Energy Tank, Firefleas",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 46,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 47,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 48,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 49,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 50,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 51,
+          "location": "Super Missile (green Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 52,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 53,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 54,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 55,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 56,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 57,
+          "location": "Missile (Kraid)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 59,
+          "location": "Varia Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 60,
+          "location": "Energy Tank, Kraid",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 61,
+          "location": "Reserve Tank, Maridia",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 62,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 63,
+          "location": "Spring Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 64,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 65,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 66,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 67,
+          "location": "Charge Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 69,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 70,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 71,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 72,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 73,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 74,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 75,
+          "location": "Energy Tank, Etecoons",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 76,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 77,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 78,
+          "location": "Missile (above Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 79,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 80,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 81,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 82,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 83,
+          "location": "Grapple Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 84,
+          "location": "Missile (Grapple Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 85,
+          "location": "Super Missile (Crateria)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 86,
+          "location": "Ice Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 87,
+          "location": "Missile (below Ice Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 88,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 89,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 90,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 91,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 92,
+          "location": "Energy Tank, Waterway",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 94,
+          "location": "Energy Tank, Botwoon",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 95,
+          "location": "Missile (Draygon)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 96,
+          "location": "Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 97,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 98,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 99,
+          "location": "Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 101,
+          "location": "Screw Attack",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 102,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 104,
+          "location": "Energy Tank, Ridley",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 105,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1,
+          "reason": "Accessible"
+        }
+      ]
+    },
+    {
+      "seed": 15092604,
+      "fingerprint": "84d576b1b13a107672a83b2bc31bc55cf3e59e9297c2b374747f750fddc6ed27",
+      "noAdvancedTechs": false,
+      "cases": [
+        {
+          "step": 1,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 2,
+          "location": "Missile (pink Brinstar top)",
+          "state": 4,
+          "reason": "Return not guaranteed"
+        },
+        {
+          "step": 3,
+          "location": "Charge Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 4,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 6,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 7,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 8,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 9,
+          "location": "Energy Tank, Etecoons",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 10,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 11,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 12,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 13,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 14,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 15,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 16,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 17,
+          "location": "Spazer",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 18,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 19,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 20,
+          "location": "Energy Tank, Terminator",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 21,
+          "location": "Bomb",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 22,
+          "location": "Missile (Crateria bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 23,
+          "location": "Missile (Crateria middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 24,
+          "location": "Morphing Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 25,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 26,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 27,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 28,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 29,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 30,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 31,
+          "location": "Missile (Crateria moat)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 32,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 33,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 34,
+          "location": "Hi-Jump Boots",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 35,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 36,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 37,
+          "location": "Missile (Kraid)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 39,
+          "location": "Varia Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 40,
+          "location": "Energy Tank, Kraid",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 42,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 43,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 44,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 45,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 46,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 47,
+          "location": "Gravity Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 48,
+          "location": "Missile (Gravity Suit)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 49,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 50,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 51,
+          "location": "X-Ray Scope",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 52,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 53,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 54,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 55,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 56,
+          "location": "Super Missile (Crateria)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 57,
+          "location": "Energy Tank, Waterway",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 58,
+          "location": "Ice Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 59,
+          "location": "Missile (below Ice Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 60,
+          "location": "Reserve Tank, Norfair",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 61,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 62,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 63,
+          "location": "Missile (bubble Norfair)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 64,
+          "location": "Speed Booster",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 65,
+          "location": "Missile (Speed Booster)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 66,
+          "location": "Wave Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 67,
+          "location": "Missile (Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 68,
+          "location": "Missile (lava room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 69,
+          "location": "Missile (above Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 71,
+          "location": "Energy Tank, Crocomire",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 72,
+          "location": "Grapple Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 73,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 74,
+          "location": "Missile (below Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 75,
+          "location": "Missile (Grapple Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 76,
+          "location": "Energy Tank, Firefleas",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 77,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 78,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 79,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 80,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 81,
+          "location": "Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 83,
+          "location": "Screw Attack",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 84,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 85,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 87,
+          "location": "Energy Tank, Ridley",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 88,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 89,
+          "location": "Super Missile (green Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 90,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 91,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 92,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 93,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 94,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 95,
+          "location": "Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 96,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 98,
+          "location": "Energy Tank, Botwoon",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 99,
+          "location": "Missile (Draygon)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 100,
+          "location": "Reserve Tank, Maridia",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 101,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 102,
+          "location": "Spring Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 103,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 104,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 105,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1,
+          "reason": "Accessible"
+        }
+      ]
+    },
+    {
+      "seed": 15092605,
+      "fingerprint": "84174228017cff0fdd88dfd856bfa6664ca14a710d89e197864528b84a55cd02",
+      "noAdvancedTechs": false,
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 3,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 4,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 5,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 6,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 7,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 8,
+          "location": "Bomb",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 9,
+          "location": "Energy Tank, Terminator",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 10,
+          "location": "Missile (Crateria bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 11,
+          "location": "Missile (Crateria middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 12,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 13,
+          "location": "Energy Tank, Etecoons",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 14,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 15,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 16,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 17,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 18,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 19,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 21,
+          "location": "Charge Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 22,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 23,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 24,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 25,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 26,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 27,
+          "location": "X-Ray Scope",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 28,
+          "location": "Spazer",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 29,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 30,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 31,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 32,
+          "location": "Missile (Crateria moat)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 33,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 34,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 35,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 36,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 37,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 38,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 39,
+          "location": "Super Missile (Crateria)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 40,
+          "location": "Energy Tank, Waterway",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 41,
+          "location": "Hi-Jump Boots",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 42,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 43,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 44,
+          "location": "Missile (bubble Norfair)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 45,
+          "location": "Missile (Kraid)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 47,
+          "location": "Varia Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 48,
+          "location": "Energy Tank, Kraid",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 49,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 50,
+          "location": "Speed Booster",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 51,
+          "location": "Missile (Speed Booster)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 52,
+          "location": "Missile (above Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 54,
+          "location": "Energy Tank, Crocomire",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 55,
+          "location": "Grapple Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 56,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 57,
+          "location": "Missile (below Crocomire)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 58,
+          "location": "Missile (Grapple Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 59,
+          "location": "Ice Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 60,
+          "location": "Missile (below Ice Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 61,
+          "location": "Reserve Tank, Norfair",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 62,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 63,
+          "location": "Wave Beam",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 64,
+          "location": "Missile (Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 65,
+          "location": "Missile (lava room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 67,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 68,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 69,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 70,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 71,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 72,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 73,
+          "location": "Gravity Suit",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 74,
+          "location": "Missile (Gravity Suit)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 75,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 76,
+          "location": "Spring Ball",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 77,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 78,
+          "location": "Super Missile (green Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 79,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 80,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 81,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 82,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 83,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 84,
+          "location": "Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 85,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 87,
+          "location": "Energy Tank, Botwoon",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 88,
+          "location": "Missile (Draygon)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 89,
+          "location": "Reserve Tank, Maridia",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 90,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 91,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 92,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 93,
+          "location": "Energy Tank, Firefleas",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 94,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 95,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 96,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 97,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 99,
+          "location": "Energy Tank, Ridley",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 100,
+          "location": "Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 101,
+          "location": "Screw Attack",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 103,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 104,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 105,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1,
+          "reason": "Accessible"
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1,
+          "reason": "Accessible"
+        }
+      ]
+    }
+  ],
+  "queries": 660,
+  "querySeconds": 54.3350049899891,
+  "scope": "End-to-end embedded tracker queries, no emulator or PopTracker dependency."
+}

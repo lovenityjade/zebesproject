@@ -1,0 +1,105 @@
+{
+  "elevators": [
+    {
+      "randomized": false,
+      "flags": 0,
+      "direction": 0,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": false,
+      "flags": 0,
+      "direction": 2,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": false,
+      "flags": 32,
+      "direction": 0,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": false,
+      "flags": 32,
+      "direction": 2,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": false,
+      "flags": 63,
+      "direction": 0,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": false,
+      "flags": 63,
+      "direction": 2,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": true,
+      "flags": 0,
+      "direction": 0,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": true,
+      "flags": 0,
+      "direction": 2,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": true,
+      "flags": 32,
+      "direction": 0,
+      "transitionMoves": 24
+    },
+    {
+      "randomized": true,
+      "flags": 32,
+      "direction": 2,
+      "transitionMoves": 40
+    },
+    {
+      "randomized": true,
+      "flags": 63,
+      "direction": 0,
+      "transitionMoves": 24
+    },
+    {
+      "randomized": true,
+      "flags": 63,
+      "direction": 2,
+      "transitionMoves": 40
+    }
+  ],
+  "hud": [
+    {
+      "seed": 15092060,
+      "split": "Full",
+      "counted": 80
+    },
+    {
+      "seed": 15092061,
+      "split": "Major",
+      "counted": 34
+    },
+    {
+      "seed": 15092062,
+      "split": "Chozo",
+      "counted": 25
+    },
+    {
+      "seed": 15092063,
+      "split": "FullWithHUD",
+      "counted": 16
+    },
+    {
+      "seed": 15092064,
+      "split": "FullWithHUD",
+      "counted": 36
+    }
+  ],
+  "romUnchanged": true,
+  "emulatedCpu": 0
+}

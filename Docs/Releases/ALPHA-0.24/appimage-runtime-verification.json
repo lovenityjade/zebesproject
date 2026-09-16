@@ -1,0 +1,13 @@
+{
+  "host": "gaming-pc",
+  "launcherStoragePassed": true,
+  "stagingRejectionsPassed": true,
+  "bundledPythonSeedParityPassed": true,
+  "missingBundledPythonRejected": true,
+  "romValidationImportPassed": true,
+  "nonAsciiUserDirPassed": true,
+  "seed": 14092026,
+  "fingerprint": "a6497e12a53954cfd4066b7319e270ea3776dfb0ea8fdd9cbe29c32e877389b6",
+  "packagedGameTested": false,
+  "appImageProduced": false
+}

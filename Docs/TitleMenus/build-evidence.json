@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "date": "2026-09-15T09:38:31.729124+00:00",
+  "testHost": "gaming-pc",
+  "isolatedRoot": "/tmp/sm-native-generation-20260914",
+  "interactiveLaunch": false,
+  "installedGameOrUserSavesModified": false,
+  "hashes": {
+    "Native/build/libsm_native.so": "d078a0dca847450ffd6a4518a2547e1739f4593c12772889dff1f09059f397f1",
+    "Unreal/Binaries/Linux/SMUnreal": "fbb02bdaa8d44615e27ab2bc7b9a61dde4860bb2a26d9a7c56d8f552a131ea70",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "1c16caabdae8a7ca515f45d4e736b82595def6715a256bd09c2923d9703b987a",
+    "Unreal/Content/SM/M_Present.uasset": "f151205c1e3c9f24f0a6e4e13f21e9290ecef52e5b87214e5093ddca4392c35b",
+    "Native/sm_cinematics.c": "b63cc27b975da53704b72dcd2d43c754835e90c2c2b5346328de60e8aeb08144",
+    "Native/sm_scene.c": "c49de6ba688a29a9953da2f4c11a4520e930f9997cadb841505fa1d72d56b593",
+    "Shaders/Cinematics.usf": "214d43a1fdf14992e649805f1488cdf42bb67f19b2df4f7203eef18eb69bfea1"
+  },
+  "nativeCaptures": 14,
+  "vulkanCases": 8,
+  "checks": [
+    "Native C, Unreal Editor and Game builds",
+    "Material and cook: zero errors/warnings",
+    "Natural opening, title, save and options menu navigation",
+    "Exact scene plus GUI composition in 14 native captures",
+    "Copy/clear cancellation, controller settings and managed randomizer states",
+    "Eight Vulkan cases: original, Gaussian, full effects and six-frame motion",
+    "Exact protected GUI colors in all Vulkan comparisons",
+    "Gunship and Zebes shader regression",
+    "Native CPU opcodes remain zero"
+  ],
+  "limits": [
+    "Vulkan menu fixture uses isolated A/C Vanilla slots and a pending Randomized B to exercise the normal managed renderer",
+    "Generation-state test commits existing validated fixture placements; no new solver-seed test in this task",
+    "Native existing 4:3 layout is retained within the wide canvas; no menu layout redesign"
+  ],
+  "upstreamPristine": {
+    "native-core": true,
+    "supermetroid": true,
+    "Randomizer/upstream": true
+  }
+}

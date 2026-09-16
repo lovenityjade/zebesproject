@@ -1,0 +1,58 @@
+// Unreal material helpers. Smooth procedural weather at display resolution;
+// the underlying game texture remains nearest sampled and pixel aligned.
+struct SMWeather {
+  float hash(float2 p) {
+    uint2 q=uint2(int2(p));uint h=q.x*1597334677u ^ q.y*3812015801u;
+    h=(h^(h>>16))*2246822519u;h=(h^(h>>13))*3266489917u;
+    return float((h^(h>>16))&0x00ffffffu)/16777216.0;
+  }
+  float noise(float2 p) {
+    float2 i=floor(p),f=frac(p);f=f*f*f*(f*(f*6-15)+10);
+    return lerp(lerp(hash(i),hash(i+float2(1,0)),f.x),
+                lerp(hash(i+float2(0,1)),hash(i+1),f.x),f.y);
+  }
+  float cloud(float2 p) {return .57*noise(p)+.29*noise(p*2.07+13)+.14*noise(p*4.13+29);}
+  float3 bilinear(Texture2D tex,SamplerState samp,float2 pixel,float2 size,float top) {
+    float2 q=clamp(pixel,float2(.5,top+.5),float2(size.x-.5,223.5))-.5;
+    float2 c=floor(q),f=frac(q);
+    return lerp(lerp(Texture2DSampleLevel(tex,samp,(c+.5)/size,0).rgb,
+                     Texture2DSampleLevel(tex,samp,(c+float2(1.5,.5))/size,0).rgb,f.x),
+                lerp(Texture2DSampleLevel(tex,samp,(c+float2(.5,1.5))/size,0).rgb,
+                     Texture2DSampleLevel(tex,samp,(c+1.5)/size,0).rgb,f.x),f.y);
+  }
+  float rain(float2 p,float2 cam,float t,float layer) {
+    float2 q=p+cam*(.35+.25*layer)+float2(t*(12+layer*8),-t*(90+layer*70));
+    q.x+=q.y*.18;
+    float2 spacing=float2(6+layer*3,17+layer*6);
+    float2 id=floor(q/spacing),v=frac(q/spacing)*spacing;
+    float seed=hash(id+layer*79);
+    float2 center=spacing*(.25+.5*float2(seed,hash(id+19)));
+    float width=.20+layer*.09,length=5+layer*2.9;
+    float streak=exp(-pow((v.x-center.x)/width,2))*saturate(1-abs(v.y-center.y)/length);
+    return streak*(.5+.5*seed);
+  }
+  // Slow, soft organic motes at output resolution. Two depth planes drift
+  // independently; no simulation RNG or hostile spore projectiles are changed.
+  float spores(float2 p,float2 cam,float t,float layer) {
+    float2 spacing=float2(29+layer*11,31+layer*9);
+    float2 q=(p+cam*(.65+layer*.2)+float2(t*(1.8+layer),-t*(4+layer*2)))/spacing;
+    float2 id=floor(q),v=frac(q);
+    float seed=hash(id+layer*83);
+    float2 center=.25+.5*float2(seed,hash(id+37));
+    float2 d=(v-center)*spacing;
+    d.x+=sin(t*.65+seed*6.283)*2.4;
+    d.y+=cos(t*.4+seed*9)*1.3;
+    float radius=.5+seed*.45+layer*.2;
+    float fleck=exp(-dot(d,d)/(radius*radius));
+    float halo=exp(-dot(d,d)/(radius*radius*5))*.12;
+    return (fleck+halo)*(.3+.7*seed);
+  }
+  float motes(float2 p,float2 cam,float t) {
+    float2 q=(p+cam*.6+float2(sin(t*.4)*2,t*8))/float2(21,29);
+    float2 id=floor(q),v=frac(q);
+    float2 center=.2+.6*float2(hash(id),hash(id+41));
+    float d=length((v-center)*float2(21,29));
+    return exp(-d*d*5)*(.3+.7*hash(id+7));
+  }
+};
+SMWeather Weather;

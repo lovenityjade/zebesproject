@@ -1,0 +1,539 @@
+{
+  "schema": 1,
+  "abiSize": 272,
+  "eventCatalog": "28e45407171cebf37c19c60e6425751e658e3ff3487599174907648ac3108778",
+  "goals": [
+    {
+      "id": 0,
+      "name": "kill kraid",
+      "symbol": "objectives_kraid_is_dead",
+      "kind": "event",
+      "arg": 72,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 1,
+      "name": "kill phantoon",
+      "symbol": "objectives_phantoon_is_dead",
+      "kind": "event",
+      "arg": 88,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 2,
+      "name": "kill draygon",
+      "symbol": "objectives_draygon_is_dead",
+      "kind": "event",
+      "arg": 96,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 3,
+      "name": "kill ridley",
+      "symbol": "objectives_ridley_is_dead",
+      "kind": "event",
+      "arg": 80,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 4,
+      "name": "kill one G4",
+      "symbol": "objectives_boss_1_killed",
+      "kind": "bosses",
+      "arg": 1,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 5,
+      "name": "kill two G4",
+      "symbol": "objectives_boss_2_killed",
+      "kind": "bosses",
+      "arg": 2,
+      "progress": "objectives_in_progress_boss_2_killed",
+      "supported": true
+    },
+    {
+      "id": 6,
+      "name": "kill three G4",
+      "symbol": "objectives_boss_3_killed",
+      "kind": "bosses",
+      "arg": 3,
+      "progress": "objectives_in_progress_boss_3_killed",
+      "supported": true
+    },
+    {
+      "id": 7,
+      "name": "kill all G4",
+      "symbol": "objectives_all_g4_dead",
+      "kind": "bosses",
+      "arg": 4,
+      "progress": "objectives_in_progress_boss_4_killed",
+      "supported": true
+    },
+    {
+      "id": 8,
+      "name": "kill spore spawn",
+      "symbol": "objectives_spore_spawn_is_dead",
+      "kind": "event",
+      "arg": 73,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 9,
+      "name": "kill botwoon",
+      "symbol": "objectives_botwoon_is_dead",
+      "kind": "event",
+      "arg": 97,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 10,
+      "name": "kill crocomire",
+      "symbol": "objectives_crocomire_is_dead",
+      "kind": "event",
+      "arg": 81,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 11,
+      "name": "kill golden torizo",
+      "symbol": "objectives_golden_torizo_is_dead",
+      "kind": "event",
+      "arg": 82,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 12,
+      "name": "kill one miniboss",
+      "symbol": "objectives_miniboss_1_killed",
+      "kind": "minibosses",
+      "arg": 1,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 13,
+      "name": "kill two minibosses",
+      "symbol": "objectives_miniboss_2_killed",
+      "kind": "minibosses",
+      "arg": 2,
+      "progress": "objectives_in_progress_miniboss_2_killed",
+      "supported": true
+    },
+    {
+      "id": 14,
+      "name": "kill three minibosses",
+      "symbol": "objectives_miniboss_3_killed",
+      "kind": "minibosses",
+      "arg": 3,
+      "progress": "objectives_in_progress_miniboss_3_killed",
+      "supported": true
+    },
+    {
+      "id": 15,
+      "name": "kill all mini bosses",
+      "symbol": "objectives_all_mini_bosses_dead",
+      "kind": "minibosses",
+      "arg": 4,
+      "progress": "objectives_in_progress_miniboss_4_killed",
+      "supported": true
+    },
+    {
+      "id": 16,
+      "name": "finish scavenger hunt",
+      "symbol": "objectives_scavenger_hunt_completed",
+      "kind": "event",
+      "arg": 129,
+      "progress": "objectives_scav_started",
+      "supported": false
+    },
+    {
+      "id": 17,
+      "name": "nothing",
+      "symbol": "objectives_nothing_objective",
+      "kind": "nothing",
+      "arg": 0,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 18,
+      "name": "collect 25% items",
+      "symbol": "objectives_collect_25_items",
+      "kind": "item_percent",
+      "arg": 25,
+      "progress": "objectives_items_percent",
+      "supported": true
+    },
+    {
+      "id": 19,
+      "name": "collect 50% items",
+      "symbol": "objectives_collect_50_items",
+      "kind": "item_percent",
+      "arg": 50,
+      "progress": "objectives_items_percent",
+      "supported": true
+    },
+    {
+      "id": 20,
+      "name": "collect 75% items",
+      "symbol": "objectives_collect_75_items",
+      "kind": "item_percent",
+      "arg": 75,
+      "progress": "objectives_items_percent",
+      "supported": true
+    },
+    {
+      "id": 21,
+      "name": "collect 100% items",
+      "symbol": "objectives_collect_100_items",
+      "kind": "item_percent",
+      "arg": 100,
+      "progress": "objectives_items_percent",
+      "supported": true
+    },
+    {
+      "id": 22,
+      "name": "collect all upgrades",
+      "symbol": "objectives_all_major_items",
+      "kind": "upgrades",
+      "arg": 0,
+      "progress": "objectives_upgrades_collected",
+      "supported": true
+    },
+    {
+      "id": 23,
+      "name": "clear crateria",
+      "symbol": "objectives_crateria_cleared",
+      "kind": "area_clear",
+      "arg": 1,
+      "progress": "objectives_crateria_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 24,
+      "name": "clear green brinstar",
+      "symbol": "objectives_green_brin_cleared",
+      "kind": "area_clear",
+      "arg": 2,
+      "progress": "objectives_green_brin_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 25,
+      "name": "clear red brinstar",
+      "symbol": "objectives_red_brin_cleared",
+      "kind": "area_clear",
+      "arg": 3,
+      "progress": "objectives_red_brin_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 26,
+      "name": "clear wrecked ship",
+      "symbol": "objectives_ws_cleared",
+      "kind": "area_clear",
+      "arg": 4,
+      "progress": "objectives_ws_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 27,
+      "name": "clear kraid's lair",
+      "symbol": "objectives_kraid_cleared",
+      "kind": "area_clear",
+      "arg": 5,
+      "progress": "objectives_kraid_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 28,
+      "name": "clear upper norfair",
+      "symbol": "objectives_upper_norfair_cleared",
+      "kind": "area_clear",
+      "arg": 6,
+      "progress": "objectives_upper_norfair_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 29,
+      "name": "clear croc's lair",
+      "symbol": "objectives_croc_cleared",
+      "kind": "area_clear",
+      "arg": 7,
+      "progress": "objectives_croc_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 30,
+      "name": "clear lower norfair",
+      "symbol": "objectives_lower_norfair_cleared",
+      "kind": "area_clear",
+      "arg": 8,
+      "progress": "objectives_lower_norfair_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 31,
+      "name": "clear west maridia",
+      "symbol": "objectives_west_maridia_cleared",
+      "kind": "area_clear",
+      "arg": 9,
+      "progress": "objectives_west_maridia_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 32,
+      "name": "clear east maridia",
+      "symbol": "objectives_east_maridia_cleared",
+      "kind": "area_clear",
+      "arg": 10,
+      "progress": "objectives_east_maridia_clear_progress",
+      "supported": true
+    },
+    {
+      "id": 33,
+      "name": "explore 25% map",
+      "symbol": "objectives_explored_map_25",
+      "kind": "map_percent",
+      "arg": 25,
+      "progress": "objectives_explored_all_map_percent",
+      "supported": true
+    },
+    {
+      "id": 34,
+      "name": "explore 50% map",
+      "symbol": "objectives_explored_map_50",
+      "kind": "map_percent",
+      "arg": 50,
+      "progress": "objectives_explored_all_map_percent",
+      "supported": true
+    },
+    {
+      "id": 35,
+      "name": "explore 75% map",
+      "symbol": "objectives_explored_map_75",
+      "kind": "map_percent",
+      "arg": 75,
+      "progress": "objectives_explored_all_map_percent",
+      "supported": true
+    },
+    {
+      "id": 36,
+      "name": "explore 100% map",
+      "symbol": "objectives_explored_map_100",
+      "kind": "map_percent",
+      "arg": 100,
+      "progress": "objectives_explored_all_map_percent",
+      "supported": true
+    },
+    {
+      "id": 37,
+      "name": "explore crateria",
+      "symbol": "objectives_crateria_explored",
+      "kind": "area_explore",
+      "arg": 1,
+      "progress": "objectives_crateria_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 38,
+      "name": "explore green brinstar",
+      "symbol": "objectives_green_brin_explored",
+      "kind": "area_explore",
+      "arg": 2,
+      "progress": "objectives_green_brin_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 39,
+      "name": "explore red brinstar",
+      "symbol": "objectives_red_brin_explored",
+      "kind": "area_explore",
+      "arg": 3,
+      "progress": "objectives_red_brin_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 40,
+      "name": "explore wrecked ship",
+      "symbol": "objectives_ws_explored",
+      "kind": "area_explore",
+      "arg": 4,
+      "progress": "objectives_ws_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 41,
+      "name": "explore kraid's lair",
+      "symbol": "objectives_kraid_explored",
+      "kind": "area_explore",
+      "arg": 5,
+      "progress": "objectives_kraid_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 42,
+      "name": "explore upper norfair",
+      "symbol": "objectives_upper_norfair_explored",
+      "kind": "area_explore",
+      "arg": 6,
+      "progress": "objectives_upper_norfair_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 43,
+      "name": "explore croc's lair",
+      "symbol": "objectives_croc_explored",
+      "kind": "area_explore",
+      "arg": 7,
+      "progress": "objectives_croc_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 44,
+      "name": "explore lower norfair",
+      "symbol": "objectives_lower_norfair_explored",
+      "kind": "area_explore",
+      "arg": 8,
+      "progress": "objectives_lower_norfair_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 45,
+      "name": "explore west maridia",
+      "symbol": "objectives_west_maridia_explored",
+      "kind": "area_explore",
+      "arg": 9,
+      "progress": "objectives_west_maridia_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 46,
+      "name": "explore east maridia",
+      "symbol": "objectives_east_maridia_explored",
+      "kind": "area_explore",
+      "arg": 10,
+      "progress": "objectives_east_maridia_explored_percent",
+      "supported": true
+    },
+    {
+      "id": 47,
+      "name": "tickle the red fish",
+      "symbol": "objectives_fish_tickled",
+      "kind": "event",
+      "arg": 130,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 48,
+      "name": "kill the orange geemer",
+      "symbol": "objectives_orange_geemer",
+      "kind": "event",
+      "arg": 131,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 49,
+      "name": "kill shaktool",
+      "symbol": "objectives_shak_dead",
+      "kind": "event",
+      "arg": 144,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 50,
+      "name": "activate chozo robots",
+      "symbol": "objectives_all_chozo_robots",
+      "kind": "robots",
+      "arg": 0,
+      "progress": "objectives_in_progress_chozo_robots",
+      "supported": true
+    },
+    {
+      "id": 51,
+      "name": "visit the animals",
+      "symbol": "objectives_visited_animals",
+      "kind": "animals",
+      "arg": 0,
+      "progress": "objectives_in_progress_animals",
+      "supported": true
+    },
+    {
+      "id": 52,
+      "name": "kill king cacatac",
+      "symbol": "objectives_king_cac_dead",
+      "kind": "event",
+      "arg": 146,
+      "progress": null,
+      "supported": true
+    },
+    {
+      "id": 53,
+      "name": "kill all space pirates",
+      "symbol": "objectives_kill_all_space_pirates",
+      "kind": "enemy_family",
+      "arg": 0,
+      "progress": "objectives_kill_all_space_pirates_progress",
+      "supported": true
+    },
+    {
+      "id": 54,
+      "name": "kill all ki hunters",
+      "symbol": "objectives_kill_all_ki_hunters",
+      "kind": "enemy_family",
+      "arg": 1,
+      "progress": "objectives_kill_all_ki_hunters_progress",
+      "supported": true
+    },
+    {
+      "id": 55,
+      "name": "kill all beetoms",
+      "symbol": "objectives_kill_all_beetoms",
+      "kind": "enemy_family",
+      "arg": 2,
+      "progress": "objectives_kill_all_beetoms_progress",
+      "supported": true
+    },
+    {
+      "id": 56,
+      "name": "kill all cacatacs",
+      "symbol": "objectives_kill_all_cacatacs",
+      "kind": "enemy_family",
+      "arg": 3,
+      "progress": "objectives_kill_all_cacatacs_progress",
+      "supported": true
+    },
+    {
+      "id": 57,
+      "name": "kill all kagos",
+      "symbol": "objectives_kill_all_kagos",
+      "kind": "enemy_family",
+      "arg": 4,
+      "progress": "objectives_kill_all_kagos_progress",
+      "supported": true
+    },
+    {
+      "id": 58,
+      "name": "kill all yapping maws",
+      "symbol": "objectives_kill_all_yapping_maws",
+      "kind": "enemy_family",
+      "arg": 5,
+      "progress": "objectives_kill_all_yapping_maws_progress",
+      "supported": true
+    }
+  ],
+  "sha256": "a752e646fb5e28d7e39c41f41f971e6c897bf76a5538fa1cc4d5b394bc025324"
+}

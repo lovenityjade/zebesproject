@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "rooms": [
+    {
+      "room": "91f8",
+      "samples": 0,
+      "unresolved": 0,
+      "nativeExact": true
+    },
+    {
+      "room": "93d5",
+      "samples": 300,
+      "unresolved": 0,
+      "nativeExact": true
+    },
+    {
+      "room": "9ad9",
+      "samples": 225,
+      "unresolved": 0,
+      "nativeExact": true
+    },
+    {
+      "room": "a923",
+      "samples": 88,
+      "unresolved": 0,
+      "nativeExact": true
+    },
+    {
+      "room": "b236",
+      "samples": 14,
+      "unresolved": 0,
+      "nativeExact": true
+    },
+    {
+      "room": "d1dd",
+      "samples": 150,
+      "unresolved": 0,
+      "nativeExact": true
+    },
+    {
+      "room": "d48e",
+      "samples": 300,
+      "unresolved": 0,
+      "nativeExact": true
+    },
+    {
+      "room": "ca08",
+      "samples": 124,
+      "unresolved": 0,
+      "nativeExact": true
+    }
+  ]
+}

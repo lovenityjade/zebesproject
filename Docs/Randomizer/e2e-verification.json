@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "localAndGamingPcSeeds": 18,
+  "packagedUnrealSeeds": 6,
+  "manifestHashesIdenticalAcrossProcesses": true,
+  "nativePickupSeedsPerHost": 8,
+  "difficultyLimit": 9.999,
+  "checks": [
+    "Docs/Randomizer/native-verification.json",
+    "Docs/GamingPC/Randomizer/native-verification.json",
+    "Docs/GamingPC/Randomizer/negative-verification.json",
+    "Docs/Combat/native-parity.json",
+    "Docs/GamingPC/Combat/native-parity.json",
+    "Docs/WallJump/verification.json",
+    "Docs/GamingPC/WallJump/verification.json",
+    "Docs/Widescreen/verification.json",
+    "Docs/Widescreen/renderer-parity.json",
+    "Docs/Widescreen/ceres-verification.json",
+    "Docs/GamingPC/Unreal/combat-verification.json"
+  ]
+}

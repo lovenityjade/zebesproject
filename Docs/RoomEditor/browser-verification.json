@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "room": 40721,
+  "state": 40739,
+  "paintedCells": 2,
+  "undoRedo": true,
+  "eraser": true,
+  "backgroundFlip": true,
+  "persistedAfterReload": true,
+  "collisionWriteRejected": true,
+  "browserErrors": []
+}

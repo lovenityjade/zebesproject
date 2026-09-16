@@ -1,0 +1,4832 @@
+{
+  "manifest": {
+    "activation": "staged-only",
+    "generationAttempts": 1,
+    "generatorProgression": [
+      {
+        "item": "Morph",
+        "location": "Energy Tank, Brinstar Ceiling"
+      },
+      {
+        "item": "Missile",
+        "location": "Missile (blue Brinstar middle)"
+      },
+      {
+        "item": "PowerBomb",
+        "location": "Missile (blue Brinstar bottom)"
+      },
+      {
+        "item": "Super",
+        "location": "Missile (green Brinstar behind missile)"
+      },
+      {
+        "item": "ETank",
+        "location": "Charge Beam"
+      },
+      {
+        "item": "Bomb",
+        "location": "Bomb"
+      },
+      {
+        "item": "ETank",
+        "location": "Missile (pink Brinstar bottom)"
+      },
+      {
+        "item": "Gravity",
+        "location": "Missile (below Ice Beam)"
+      },
+      {
+        "item": "SpaceJump",
+        "location": "Missile (Wrecked Ship middle)"
+      },
+      {
+        "item": "ETank",
+        "location": "Wave Beam"
+      },
+      {
+        "item": "SpeedBooster",
+        "location": "Gravity Suit"
+      },
+      {
+        "item": "Grapple",
+        "location": "Missile (outside Wrecked Ship bottom)"
+      }
+    ],
+    "logicPatches": [
+      10,
+      22
+    ],
+    "patches": [],
+    "pendingPatches": [],
+    "placements": [
+      {
+        "address": 491980,
+        "item": "Super",
+        "location": "Power Bomb (Crateria surface)",
+        "plm": 61151,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492008,
+        "item": "Grapple",
+        "location": "Missile (outside Wrecked Ship bottom)",
+        "plm": 61207,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492014,
+        "item": "Ice",
+        "location": "Missile (outside Wrecked Ship top)",
+        "plm": 61335,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 492020,
+        "item": "ETank",
+        "location": "Missile (outside Wrecked Ship middle)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492104,
+        "item": "XRayScope",
+        "location": "Missile (Crateria moat)",
+        "plm": 61199,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492132,
+        "item": "Missile",
+        "location": "Energy Tank, Gauntlet",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492526,
+        "item": "PowerBomb",
+        "location": "Missile (Crateria bottom)",
+        "plm": 61155,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492548,
+        "item": "Bomb",
+        "location": "Bomb",
+        "plm": 61243,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 492594,
+        "item": "Missile",
+        "location": "Energy Tank, Terminator",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492644,
+        "item": "Missile",
+        "location": "Missile (Crateria gauntlet right)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492650,
+        "item": "Missile",
+        "location": "Missile (Crateria gauntlet left)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492664,
+        "item": "Missile",
+        "location": "Super Missile (Crateria)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492678,
+        "item": "Missile",
+        "location": "Missile (Crateria middle)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492716,
+        "item": "Missile",
+        "location": "Power Bomb (green Brinstar bottom)",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 492772,
+        "item": "Super",
+        "location": "Super Missile (pink Brinstar)",
+        "plm": 61235,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 492824,
+        "item": "ETank",
+        "location": "Missile (green Brinstar below super missile)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492830,
+        "item": "SpringBall",
+        "location": "Super Missile (green Brinstar top)",
+        "plm": 61187,
+        "visibility": "Visible"
+      },
+      {
+        "address": 492844,
+        "item": "Missile",
+        "location": "Reserve Tank, Brinstar",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 492850,
+        "item": "Super",
+        "location": "Missile (green Brinstar behind missile)",
+        "plm": 61319,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 492856,
+        "item": "ETank",
+        "location": "Missile (green Brinstar behind reserve tank)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493064,
+        "item": "Missile",
+        "location": "Missile (pink Brinstar top)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493070,
+        "item": "ETank",
+        "location": "Missile (pink Brinstar bottom)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493076,
+        "item": "ETank",
+        "location": "Charge Beam",
+        "plm": 61227,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 493148,
+        "item": "Missile",
+        "location": "Power Bomb (pink Brinstar)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493174,
+        "item": "Missile",
+        "location": "Missile (green Brinstar pipe)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493278,
+        "item": "PowerBomb",
+        "location": "Morphing Ball",
+        "plm": 61155,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493388,
+        "item": "Missile",
+        "location": "Power Bomb (blue Brinstar)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493464,
+        "item": "Missile",
+        "location": "Missile (blue Brinstar middle)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493470,
+        "item": "Morph",
+        "location": "Energy Tank, Brinstar Ceiling",
+        "plm": 61387,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 493506,
+        "item": "Missile",
+        "location": "Energy Tank, Etecoons",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493520,
+        "item": "ETank",
+        "location": "Super Missile (green Brinstar bottom)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493562,
+        "item": "Missile",
+        "location": "Energy Tank, Waterway",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493570,
+        "item": "PowerBomb",
+        "location": "Missile (blue Brinstar bottom)",
+        "plm": 61239,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 493604,
+        "item": "Missile",
+        "location": "Energy Tank, Brinstar Gate",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493622,
+        "item": "Missile",
+        "location": "Missile (blue Brinstar top)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493628,
+        "item": "Missile",
+        "location": "Missile (blue Brinstar behind missile)",
+        "plm": 61315,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 493686,
+        "item": "Missile",
+        "location": "X-Ray Scope",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 493770,
+        "item": "Wave",
+        "location": "Power Bomb (red Brinstar sidehopper room)",
+        "plm": 61179,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493838,
+        "item": "Missile",
+        "location": "Power Bomb (red Brinstar spike room)",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 493844,
+        "item": "Missile",
+        "location": "Missile (red Brinstar spike room)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 493934,
+        "item": "Super",
+        "location": "Spazer",
+        "plm": 61235,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 493980,
+        "item": "Super",
+        "location": "Energy Tank, Kraid",
+        "plm": 61319,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 494060,
+        "item": "Charge",
+        "location": "Missile (Kraid)",
+        "plm": 61331,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 494282,
+        "item": "Missile",
+        "location": "Varia Suit",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 494308,
+        "item": "ScrewAttack",
+        "location": "Missile (lava room)",
+        "plm": 61383,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 494372,
+        "item": "PowerBomb",
+        "location": "Ice Beam",
+        "plm": 61239,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 494406,
+        "item": "Gravity",
+        "location": "Missile (below Ice Beam)",
+        "plm": 61363,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 494500,
+        "item": "PowerBomb",
+        "location": "Energy Tank, Crocomire",
+        "plm": 61155,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494508,
+        "item": "Missile",
+        "location": "Hi-Jump Boots",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 494528,
+        "item": "ETank",
+        "location": "Missile (above Crocomire)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494566,
+        "item": "Missile",
+        "location": "Missile (Hi-Jump Boots)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494572,
+        "item": "Missile",
+        "location": "Energy Tank (Hi-Jump Boots)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494596,
+        "item": "Missile",
+        "location": "Power Bomb (Crocomire)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494612,
+        "item": "PowerBomb",
+        "location": "Missile (below Crocomire)",
+        "plm": 61155,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494634,
+        "item": "PowerBomb",
+        "location": "Missile (Grapple Beam)",
+        "plm": 61155,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494646,
+        "item": "Super",
+        "location": "Grapple Beam",
+        "plm": 61235,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 494654,
+        "item": "HiJump",
+        "location": "Reserve Tank, Norfair",
+        "plm": 61255,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 494660,
+        "item": "Missile",
+        "location": "Missile (Norfair Reserve Tank)",
+        "plm": 61315,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 494674,
+        "item": "ETank",
+        "location": "Missile (bubble Norfair green door)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494694,
+        "item": "Super",
+        "location": "Missile (bubble Norfair)",
+        "plm": 61151,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494708,
+        "item": "PowerBomb",
+        "location": "Missile (Speed Booster)",
+        "plm": 61323,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 494722,
+        "item": "Reserve",
+        "location": "Speed Booster",
+        "plm": 61307,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 494780,
+        "item": "Missile",
+        "location": "Missile (Wave Beam)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 494794,
+        "item": "ETank",
+        "location": "Wave Beam",
+        "plm": 61227,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 495214,
+        "item": "PowerBomb",
+        "location": "Missile (Gold Torizo)",
+        "plm": 61155,
+        "visibility": "Visible"
+      },
+      {
+        "address": 495220,
+        "item": "Missile",
+        "location": "Super Missile (Gold Torizo)",
+        "plm": 61315,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 495408,
+        "item": "ETank",
+        "location": "Missile (Mickey Mouse room)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 495562,
+        "item": "ETank",
+        "location": "Missile (lower Norfair above fire flea room)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 495570,
+        "item": "Missile",
+        "location": "Power Bomb (lower Norfair above fire flea room)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 495808,
+        "item": "Missile",
+        "location": "Power Bomb (Power Bombs of shame)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 495872,
+        "item": "Reserve",
+        "location": "Missile (lower Norfair near Wave Beam)",
+        "plm": 61223,
+        "visibility": "Visible"
+      },
+      {
+        "address": 495880,
+        "item": "Missile",
+        "location": "Energy Tank, Ridley",
+        "plm": 61315,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 495888,
+        "item": "Missile",
+        "location": "Screw Attack",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 496004,
+        "item": "Missile",
+        "location": "Energy Tank, Firefleas",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508517,
+        "item": "SpaceJump",
+        "location": "Missile (Wrecked Ship middle)",
+        "plm": 61211,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508649,
+        "item": "Missile",
+        "location": "Reserve Tank, Wrecked Ship",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 508655,
+        "item": "Missile",
+        "location": "Missile (Gravity Suit)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508697,
+        "item": "Varia",
+        "location": "Missile (Wrecked Ship top)",
+        "plm": 61191,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508727,
+        "item": "Plasma",
+        "location": "Energy Tank, Wrecked Ship",
+        "plm": 61203,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508759,
+        "item": "Super",
+        "location": "Super Missile (Wrecked Ship left)",
+        "plm": 61151,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508773,
+        "item": "Super",
+        "location": "Right Super, Wrecked Ship",
+        "plm": 61151,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508781,
+        "item": "SpeedBooster",
+        "location": "Gravity Suit",
+        "plm": 61259,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 508983,
+        "item": "Missile",
+        "location": "Missile (green Maridia shinespark)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 508989,
+        "item": "Reserve",
+        "location": "Super Missile (green Maridia)",
+        "plm": 61223,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509053,
+        "item": "Missile",
+        "location": "Energy Tank, Mama turtle",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509059,
+        "item": "Missile",
+        "location": "Missile (green Maridia tatori)",
+        "plm": 61315,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 509103,
+        "item": "Missile",
+        "location": "Super Missile (yellow Maridia)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509109,
+        "item": "Missile",
+        "location": "Missile (yellow Maridia super missile)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509235,
+        "item": "PowerBomb",
+        "location": "Missile (yellow Maridia false wall)",
+        "plm": 61155,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509273,
+        "item": "Missile",
+        "location": "Plasma Beam",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 509405,
+        "item": "Reserve",
+        "location": "Missile (left Maridia sand pit room)",
+        "plm": 61223,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509411,
+        "item": "Missile",
+        "location": "Reserve Tank, Maridia",
+        "plm": 61231,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 509419,
+        "item": "ETank",
+        "location": "Missile (right Maridia sand pit room)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509425,
+        "item": "Missile",
+        "location": "Power Bomb (right Maridia sand pit room)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509443,
+        "item": "Missile",
+        "location": "Missile (pink Maridia)",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509449,
+        "item": "ETank",
+        "location": "Super Missile (pink Maridia)",
+        "plm": 61143,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509669,
+        "item": "Spazer",
+        "location": "Spring Ball",
+        "plm": 61267,
+        "visibility": "Chozo"
+      },
+      {
+        "address": 509773,
+        "item": "Super",
+        "location": "Missile (Draygon)",
+        "plm": 61319,
+        "visibility": "Hidden"
+      },
+      {
+        "address": 509781,
+        "item": "Missile",
+        "location": "Energy Tank, Botwoon",
+        "plm": 61147,
+        "visibility": "Visible"
+      },
+      {
+        "address": 509863,
+        "item": "ETank",
+        "location": "Space Jump",
+        "plm": 61227,
+        "visibility": "Chozo"
+      }
+    ],
+    "progression": "medium",
+    "rejectedCandidates": [],
+    "requiredNativeBehavior": [
+      "zebes-awake",
+      "morph-eye-item-check",
+      "item-location-save-identity",
+      "blue-brinstar-blue-door",
+      "red-tower-blue-doors"
+    ],
+    "schema": 1,
+    "seed": 14092040,
+    "sha256": "3e62d21b87162e27f9b67d9d14e2a7c126a6a1d96f7c8e97bc711809b8ddaf14",
+    "skill": "veteran",
+    "solverVerification": {
+      "allItemsReachable": true,
+      "difficulty": 6,
+      "escapeToShip": true,
+      "maximumDifficulty": 9.999,
+      "motherBrainDefeated": true,
+      "progressionLog": [
+        {
+          "accessPoint": "Blue Brinstar Elevator Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {},
+          "item": "PowerBomb",
+          "location": "Morphing Ball",
+          "path": [
+            "Landing Site",
+            "Blue Brinstar Elevator Bottom"
+          ],
+          "requirements": [],
+          "step": 1,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Blue Brinstar Elevator Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "PowerBomb": 1
+          },
+          "item": "Morph",
+          "location": "Energy Tank, Brinstar Ceiling",
+          "path": [
+            "Blue Brinstar Elevator Bottom"
+          ],
+          "requirements": [],
+          "step": 2,
+          "techniques": [
+            "CeilingDBoost"
+          ]
+        },
+        {
+          "accessPoint": "Blue Brinstar Elevator Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Morph": 1,
+            "PowerBomb": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (blue Brinstar)",
+          "path": [
+            "Blue Brinstar Elevator Bottom"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb"
+          ],
+          "step": 3,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Blue Brinstar Elevator Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Missile": 1,
+            "Morph": 1,
+            "PowerBomb": 1
+          },
+          "item": "Missile",
+          "location": "Missile (blue Brinstar middle)",
+          "path": [
+            "Blue Brinstar Elevator Bottom"
+          ],
+          "requirements": [
+            "Morph"
+          ],
+          "step": 4,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Blue Brinstar Elevator Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Missile": 2,
+            "Morph": 1,
+            "PowerBomb": 1
+          },
+          "item": "PowerBomb",
+          "location": "Missile (blue Brinstar bottom)",
+          "path": [
+            "Blue Brinstar Elevator Bottom"
+          ],
+          "requirements": [
+            "Morph"
+          ],
+          "step": 5,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Blue Brinstar Elevator Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Missile": 2,
+            "Morph": 1,
+            "PowerBomb": 2
+          },
+          "item": "Missile",
+          "location": "Missile (blue Brinstar top)",
+          "path": [
+            "Blue Brinstar Elevator Bottom"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb"
+          ],
+          "step": 6,
+          "techniques": [
+            "BillyMays"
+          ]
+        },
+        {
+          "accessPoint": "Blue Brinstar Elevator Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Missile": 3,
+            "Morph": 1,
+            "PowerBomb": 2
+          },
+          "item": "Missile",
+          "location": "Missile (blue Brinstar behind missile)",
+          "path": [
+            "Blue Brinstar Elevator Bottom"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb"
+          ],
+          "step": 7,
+          "techniques": [
+            "BillyMays"
+          ]
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Missile": 4,
+            "Morph": 1,
+            "PowerBomb": 2
+          },
+          "item": "Bomb",
+          "location": "Bomb",
+          "path": [
+            "Blue Brinstar Elevator Bottom",
+            "Landing Site"
+          ],
+          "requirements": [
+            "Bomb",
+            "Missile",
+            "Morph"
+          ],
+          "step": 8,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 4,
+            "Morph": 1,
+            "PowerBomb": 2
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Terminator",
+          "path": [
+            "Landing Site"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph"
+          ],
+          "step": 9,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 5,
+            "Morph": 1,
+            "PowerBomb": 2
+          },
+          "item": "PowerBomb",
+          "location": "Missile (Crateria bottom)",
+          "path": [
+            "Landing Site"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph"
+          ],
+          "step": 10,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 5,
+            "Morph": 1,
+            "PowerBomb": 3
+          },
+          "item": "Missile",
+          "location": "Missile (Crateria middle)",
+          "path": [
+            "Landing Site"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph"
+          ],
+          "step": 11,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 6,
+            "Morph": 1,
+            "PowerBomb": 3
+          },
+          "item": "Super",
+          "location": "Power Bomb (Crateria surface)",
+          "path": [
+            "Landing Site"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "PowerBomb"
+          ],
+          "step": 12,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Moat Left",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 6,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 1
+          },
+          "item": "XRayScope",
+          "location": "Missile (Crateria moat)",
+          "path": [
+            "Landing Site",
+            "Keyhunter Room Bottom",
+            "Moat Left"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 13,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Red Brinstar Elevator",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 6,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 1,
+            "XRayScope": 1
+          },
+          "item": "Wave",
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "path": [
+            "Moat Left",
+            "Keyhunter Room Bottom",
+            "Red Brinstar Elevator"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 14,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Red Brinstar Elevator",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 6,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (red Brinstar spike room)",
+          "path": [
+            "Red Brinstar Elevator"
+          ],
+          "requirements": [
+            "Super"
+          ],
+          "step": 15,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Red Brinstar Elevator",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 7,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (red Brinstar spike room)",
+          "path": [
+            "Red Brinstar Elevator"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 16,
+          "techniques": []
+        },
+        {
+          "accessPoint": "East Tunnel Right",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 8,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Spazer",
+          "path": [
+            "Red Brinstar Elevator",
+            "Red Tower Top Left",
+            "East Tunnel Right"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 17,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Business Center",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 8,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Hi-Jump Boots",
+          "path": [
+            "East Tunnel Right",
+            "Warehouse Entrance Left",
+            "Business Center"
+          ],
+          "requirements": [
+            "Bomb",
+            "Missile",
+            "Morph"
+          ],
+          "step": 18,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Business Center",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 9,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (Hi-Jump Boots)",
+          "path": [
+            "Business Center"
+          ],
+          "requirements": [
+            "Bomb",
+            "Missile",
+            "Morph"
+          ],
+          "step": 19,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Business Center",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 10,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "path": [
+            "Business Center"
+          ],
+          "requirements": [
+            "Missile"
+          ],
+          "step": 20,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Warehouse Zeela Room Left",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Missile": 11,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Charge",
+          "location": "Missile (Kraid)",
+          "path": [
+            "Business Center",
+            "Warehouse Entrance Left",
+            "Warehouse Entrance Right",
+            "Warehouse Zeela Room Left"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 21,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Green Hill Zone Top Right",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Missile": 11,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (green Brinstar pipe)",
+          "path": [
+            "Warehouse Zeela Room Left",
+            "Warehouse Entrance Right",
+            "Warehouse Entrance Left",
+            "East Tunnel Right",
+            "Red Tower Top Left",
+            "Noob Bridge Right",
+            "Green Hill Zone Top Right"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "Super",
+            "Wave"
+          ],
+          "step": 22,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Missile": 12,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "SporeSpawn",
+          "location": "Spore Spawn",
+          "path": [
+            "Green Hill Zone Top Right",
+            "Big Pink"
+          ],
+          "requirements": [
+            "Missile",
+            "Morph"
+          ],
+          "step": 23,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Missile": 12,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Charge Beam",
+          "path": [
+            "Big Pink"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph"
+          ],
+          "step": 24,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 1,
+            "Missile": 12,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Brinstar Gate",
+          "path": [
+            "Big Pink"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb",
+            "Wave"
+          ],
+          "step": 25,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 1,
+            "Missile": 13,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 2,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Super Missile (pink Brinstar)",
+          "path": [
+            "Big Pink"
+          ],
+          "requirements": [
+            "Bomb",
+            "Missile",
+            "Morph",
+            "SporeSpawn",
+            "Super"
+          ],
+          "step": 26,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 1,
+            "Missile": 13,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (pink Brinstar top)",
+          "path": [
+            "Big Pink"
+          ],
+          "requirements": [],
+          "step": 27,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 1,
+            "Missile": 14,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (pink Brinstar bottom)",
+          "path": [
+            "Big Pink"
+          ],
+          "requirements": [],
+          "step": 28,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 2,
+            "Missile": 14,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (pink Brinstar)",
+          "path": [
+            "Big Pink"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 29,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Green Brinstar Elevator",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 2,
+            "Missile": 15,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (green Brinstar below super missile)",
+          "path": [
+            "Big Pink",
+            "Green Brinstar Elevator"
+          ],
+          "requirements": [
+            "Bomb",
+            "Missile",
+            "Morph"
+          ],
+          "step": 30,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Etecoons Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 3,
+            "Missile": 15,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Etecoons",
+          "path": [
+            "Green Brinstar Elevator",
+            "Etecoons Bottom"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb"
+          ],
+          "step": 31,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Etecoons Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 3,
+            "Missile": 16,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (green Brinstar bottom)",
+          "path": [
+            "Etecoons Bottom"
+          ],
+          "requirements": [
+            "Missile",
+            "Morph"
+          ],
+          "step": 32,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Etecoons Supers",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 3,
+            "Missile": 17,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Super Missile (green Brinstar bottom)",
+          "path": [
+            "Etecoons Bottom",
+            "Etecoons Supers"
+          ],
+          "requirements": [
+            "Super"
+          ],
+          "step": 33,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Green Brinstar Elevator",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 4,
+            "Missile": 17,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Reserve Tank, Brinstar",
+          "path": [
+            "Etecoons Supers",
+            "Etecoons Bottom",
+            "Green Brinstar Elevator"
+          ],
+          "requirements": [
+            "Missile",
+            "Morph",
+            "PowerBomb"
+          ],
+          "step": 34,
+          "techniques": [
+            "Mockball"
+          ]
+        },
+        {
+          "accessPoint": "Green Brinstar Elevator",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 4,
+            "Missile": 18,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "SpringBall",
+          "location": "Super Missile (green Brinstar top)",
+          "path": [
+            "Green Brinstar Elevator"
+          ],
+          "requirements": [
+            "Missile",
+            "Morph"
+          ],
+          "step": 35,
+          "techniques": [
+            "Mockball"
+          ]
+        },
+        {
+          "accessPoint": "Green Brinstar Elevator",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 4,
+            "Missile": 18,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 3,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Missile (green Brinstar behind missile)",
+          "path": [
+            "Green Brinstar Elevator"
+          ],
+          "requirements": [
+            "Bomb",
+            "Missile",
+            "Morph"
+          ],
+          "step": 36,
+          "techniques": [
+            "Mockball"
+          ]
+        },
+        {
+          "accessPoint": "Green Brinstar Elevator",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 4,
+            "Missile": 18,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 4,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "path": [
+            "Green Brinstar Elevator"
+          ],
+          "requirements": [
+            "Missile",
+            "Morph"
+          ],
+          "step": 37,
+          "techniques": [
+            "Mockball"
+          ]
+        },
+        {
+          "accessPoint": "KraidRoomIn",
+          "difficulty": 1.0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Missile": 18,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 4,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Kraid",
+          "location": "Kraid",
+          "path": [
+            "Green Brinstar Elevator",
+            "Big Pink",
+            "Green Hill Zone Top Right",
+            "Noob Bridge Right",
+            "Red Tower Top Left",
+            "East Tunnel Right",
+            "Warehouse Entrance Left",
+            "Warehouse Entrance Right",
+            "Warehouse Zeela Room Left",
+            "KraidRoomOut",
+            "KraidRoomIn"
+          ],
+          "requirements": [
+            "5-ETank",
+            "Bomb",
+            "Missile",
+            "Morph",
+            "Super"
+          ],
+          "step": 38,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "KraidRoomIn",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Kraid": 1,
+            "Missile": 18,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 4,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Varia Suit",
+          "path": [
+            "KraidRoomIn"
+          ],
+          "requirements": [
+            "Kraid"
+          ],
+          "step": 39,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Warehouse Zeela Room Left",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Kraid": 1,
+            "Missile": 19,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 4,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Energy Tank, Kraid",
+          "path": [
+            "KraidRoomIn",
+            "KraidRoomOut",
+            "Warehouse Zeela Room Left"
+          ],
+          "requirements": [
+            "Bomb",
+            "Kraid",
+            "Missile",
+            "Morph"
+          ],
+          "step": 40,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Business Center",
+          "difficulty": 6,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Kraid": 1,
+            "Missile": 19,
+            "Morph": 1,
+            "PowerBomb": 3,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 5,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "PowerBomb",
+          "location": "Ice Beam",
+          "path": [
+            "Warehouse Zeela Room Left",
+            "Warehouse Entrance Right",
+            "Warehouse Entrance Left",
+            "Business Center"
+          ],
+          "requirements": [
+            "5-ETank",
+            "Bomb",
+            "Morph",
+            "Super"
+          ],
+          "step": 41,
+          "techniques": [
+            "IceHellRun",
+            "Mockball"
+          ]
+        },
+        {
+          "accessPoint": "Business Center",
+          "difficulty": 6,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Kraid": 1,
+            "Missile": 19,
+            "Morph": 1,
+            "PowerBomb": 4,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 5,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Gravity",
+          "location": "Missile (below Ice Beam)",
+          "path": [
+            "Business Center"
+          ],
+          "requirements": [
+            "5-ETank",
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 42,
+          "techniques": [
+            "IceHellRun",
+            "Mockball"
+          ]
+        },
+        {
+          "accessPoint": "Bubble Mountain",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Gravity": 1,
+            "Kraid": 1,
+            "Missile": 19,
+            "Morph": 1,
+            "PowerBomb": 4,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 5,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "HiJump",
+          "location": "Reserve Tank, Norfair",
+          "path": [
+            "Business Center",
+            "Bubble Mountain"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Missile",
+            "Morph",
+            "Super"
+          ],
+          "step": 43,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Bubble Mountain",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 19,
+            "Morph": 1,
+            "PowerBomb": 4,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 5,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (Norfair Reserve Tank)",
+          "path": [
+            "Bubble Mountain"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph",
+            "Super"
+          ],
+          "step": 44,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Bubble Mountain",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 5,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 20,
+            "Morph": 1,
+            "PowerBomb": 4,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 5,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (bubble Norfair green door)",
+          "path": [
+            "Bubble Mountain"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph",
+            "Super"
+          ],
+          "step": 45,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Bubble Mountain",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 6,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 20,
+            "Morph": 1,
+            "PowerBomb": 4,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 5,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Missile (bubble Norfair)",
+          "path": [
+            "Bubble Mountain"
+          ],
+          "requirements": [],
+          "step": 46,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Bubble Mountain Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 6,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 20,
+            "Morph": 1,
+            "PowerBomb": 4,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Reserve",
+          "location": "Speed Booster",
+          "path": [
+            "Bubble Mountain",
+            "Bubble Mountain Top"
+          ],
+          "requirements": [
+            "Gravity",
+            "HiJump",
+            "Missile",
+            "Super"
+          ],
+          "step": 47,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Bubble Mountain Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 6,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 20,
+            "Morph": 1,
+            "PowerBomb": 4,
+            "Reserve": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "PowerBomb",
+          "location": "Missile (Speed Booster)",
+          "path": [
+            "Bubble Mountain Top"
+          ],
+          "requirements": [
+            "Gravity",
+            "Missile",
+            "Super"
+          ],
+          "step": 48,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Bubble Mountain Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 6,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 20,
+            "Morph": 1,
+            "PowerBomb": 5,
+            "Reserve": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Wave Beam",
+          "path": [
+            "Bubble Mountain Top"
+          ],
+          "requirements": [
+            "Gravity",
+            "Missile",
+            "Morph"
+          ],
+          "step": 49,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Bubble Mountain Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 20,
+            "Morph": 1,
+            "PowerBomb": 5,
+            "Reserve": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (Wave Beam)",
+          "path": [
+            "Bubble Mountain Top"
+          ],
+          "requirements": [
+            "Gravity",
+            "Missile"
+          ],
+          "step": 50,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Cathedral",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 21,
+            "Morph": 1,
+            "PowerBomb": 5,
+            "Reserve": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ScrewAttack",
+          "location": "Missile (lava room)",
+          "path": [
+            "Bubble Mountain Top",
+            "Bubble Mountain",
+            "Cathedral"
+          ],
+          "requirements": [
+            "Gravity",
+            "Morph"
+          ],
+          "step": 51,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Crocomire Room Top",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 21,
+            "Morph": 1,
+            "PowerBomb": 5,
+            "Reserve": 1,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Crocomire",
+          "location": "Crocomire",
+          "path": [
+            "Cathedral",
+            "Bubble Mountain",
+            "Bubble Mountain Bottom",
+            "Crocomire Speedway Bottom",
+            "Crocomire Room Top"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph",
+            "Super",
+            "Wave"
+          ],
+          "step": 52,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Crocomire Room Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 21,
+            "Morph": 1,
+            "PowerBomb": 5,
+            "Reserve": 1,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "PowerBomb",
+          "location": "Energy Tank, Crocomire",
+          "path": [
+            "Crocomire Room Top"
+          ],
+          "requirements": [
+            "0-ETank - 0-Reserve",
+            "Crocomire"
+          ],
+          "step": 53,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Crocomire Room Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 21,
+            "Morph": 1,
+            "PowerBomb": 6,
+            "Reserve": 1,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (Crocomire)",
+          "path": [
+            "Crocomire Room Top"
+          ],
+          "requirements": [
+            "Crocomire",
+            "HiJump",
+            "Missile"
+          ],
+          "step": 54,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Crocomire Room Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 22,
+            "Morph": 1,
+            "PowerBomb": 6,
+            "Reserve": 1,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "PowerBomb",
+          "location": "Missile (below Crocomire)",
+          "path": [
+            "Crocomire Room Top"
+          ],
+          "requirements": [
+            "Crocomire",
+            "Missile",
+            "Morph"
+          ],
+          "step": 55,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Crocomire Room Top",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 22,
+            "Morph": 1,
+            "PowerBomb": 7,
+            "Reserve": 1,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 6,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Grapple Beam",
+          "path": [
+            "Crocomire Room Top"
+          ],
+          "requirements": [
+            "Bomb",
+            "Crocomire",
+            "Morph"
+          ],
+          "step": 56,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Crocomire Room Top",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 22,
+            "Morph": 1,
+            "PowerBomb": 7,
+            "Reserve": 1,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "PowerBomb",
+          "location": "Missile (Grapple Beam)",
+          "path": [
+            "Crocomire Room Top"
+          ],
+          "requirements": [
+            "Bomb",
+            "Crocomire",
+            "Morph"
+          ],
+          "step": 57,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Main Street Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 22,
+            "Morph": 1,
+            "PowerBomb": 8,
+            "Reserve": 1,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Reserve",
+          "location": "Super Missile (green Maridia)",
+          "path": [
+            "Crocomire Room Top",
+            "Crocomire Speedway Bottom",
+            "Bubble Mountain Bottom",
+            "Bubble Mountain",
+            "Business Center",
+            "Warehouse Entrance Left",
+            "East Tunnel Right",
+            "Glass Tunnel Top",
+            "Main Street Bottom"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 58,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Main Street Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 22,
+            "Morph": 1,
+            "PowerBomb": 8,
+            "Reserve": 2,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (green Maridia tatori)",
+          "path": [
+            "Main Street Bottom"
+          ],
+          "requirements": [
+            "Gravity",
+            "Missile"
+          ],
+          "step": 59,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Mama Turtle",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 23,
+            "Morph": 1,
+            "PowerBomb": 8,
+            "Reserve": 2,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Mama turtle",
+          "path": [
+            "Main Street Bottom",
+            "Mama Turtle"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Missile",
+            "Morph"
+          ],
+          "step": 60,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Beach",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 24,
+            "Morph": 1,
+            "PowerBomb": 8,
+            "Reserve": 2,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "PowerBomb",
+          "location": "Missile (yellow Maridia false wall)",
+          "path": [
+            "Mama Turtle",
+            "Main Street Bottom",
+            "Crab Shaft Left",
+            "Beach"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph"
+          ],
+          "step": 61,
+          "techniques": [
+            "InfiniteBombJump"
+          ]
+        },
+        {
+          "accessPoint": "Watering Hole Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 24,
+            "Morph": 1,
+            "PowerBomb": 9,
+            "Reserve": 2,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Super Missile (yellow Maridia)",
+          "path": [
+            "Beach",
+            "Watering Hole",
+            "Watering Hole Bottom"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph"
+          ],
+          "step": 62,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Watering Hole Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 25,
+            "Morph": 1,
+            "PowerBomb": 9,
+            "Reserve": 2,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (yellow Maridia super missile)",
+          "path": [
+            "Watering Hole Bottom"
+          ],
+          "requirements": [],
+          "step": 63,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Left Sandpit",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 26,
+            "Morph": 1,
+            "PowerBomb": 9,
+            "Reserve": 2,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Reserve Tank, Maridia",
+          "path": [
+            "Watering Hole Bottom",
+            "Watering Hole",
+            "Beach",
+            "Crab Shaft Left",
+            "Crab Shaft Right",
+            "Aqueduct Top Left",
+            "Aqueduct Bottom",
+            "Left Sandpit"
+          ],
+          "requirements": [
+            "Gravity",
+            "HiJump",
+            "Morph",
+            "PowerBomb",
+            "SpringBall",
+            "Super"
+          ],
+          "step": 64,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Left Sandpit",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "PowerBomb": 9,
+            "Reserve": 2,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Reserve",
+          "location": "Missile (left Maridia sand pit room)",
+          "path": [
+            "Left Sandpit"
+          ],
+          "requirements": [
+            "Gravity",
+            "HiJump",
+            "Morph",
+            "SpringBall"
+          ],
+          "step": 65,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wrecked Ship Main",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "SpaceJump",
+          "location": "Missile (Wrecked Ship middle)",
+          "path": [
+            "Left Sandpit",
+            "Oasis Bottom",
+            "Toilet Top",
+            "Le Coude Right",
+            "Crab Maze Left",
+            "Wrecked Ship Back",
+            "Wrecked Ship Main"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph",
+            "Super"
+          ],
+          "step": 66,
+          "techniques": []
+        },
+        {
+          "accessPoint": "West Ocean Left",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Grapple",
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "path": [
+            "Wrecked Ship Main",
+            "West Ocean Left"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph"
+          ],
+          "step": 67,
+          "techniques": []
+        },
+        {
+          "accessPoint": "PhantoonRoomIn",
+          "difficulty": 0.41777777777777775,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Phantoon",
+          "location": "Phantoon",
+          "path": [
+            "West Ocean Left",
+            "Wrecked Ship Main",
+            "PhantoonRoomOut",
+            "PhantoonRoomIn"
+          ],
+          "requirements": [
+            "7-ETank - 3-Reserve",
+            "Bomb",
+            "Gravity",
+            "Missile",
+            "Morph",
+            "ScrewAttack",
+            "Super"
+          ],
+          "step": 68,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wrecked Ship Main",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 7,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Right Super, Wrecked Ship",
+          "path": [
+            "PhantoonRoomIn",
+            "PhantoonRoomOut",
+            "Wrecked Ship Main"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "Phantoon"
+          ],
+          "step": 69,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wrecked Ship Main",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 8,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Super Missile (Wrecked Ship left)",
+          "path": [
+            "Wrecked Ship Main"
+          ],
+          "requirements": [
+            "Phantoon"
+          ],
+          "step": 70,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wrecked Ship Main",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Ice",
+          "location": "Missile (outside Wrecked Ship top)",
+          "path": [
+            "Wrecked Ship Main"
+          ],
+          "requirements": [
+            "Phantoon"
+          ],
+          "step": 71,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wrecked Ship Main",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 7,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (outside Wrecked Ship middle)",
+          "path": [
+            "Wrecked Ship Main"
+          ],
+          "requirements": [
+            "Morph",
+            "Phantoon",
+            "Super"
+          ],
+          "step": 72,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wrecked Ship Main",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Varia",
+          "location": "Missile (Wrecked Ship top)",
+          "path": [
+            "Wrecked Ship Main"
+          ],
+          "requirements": [
+            "Phantoon"
+          ],
+          "step": 73,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wrecked Ship Back",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Plasma",
+          "location": "Energy Tank, Wrecked Ship",
+          "path": [
+            "Wrecked Ship Main",
+            "Wrecked Ship Back"
+          ],
+          "requirements": [
+            "Gravity",
+            "Missile",
+            "Phantoon"
+          ],
+          "step": 74,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Bowling",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "SpeedBooster",
+          "location": "Gravity Suit",
+          "path": [
+            "Wrecked Ship Back",
+            "Wrecked Ship Main",
+            "Bowling"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "Phantoon"
+          ],
+          "step": 75,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Bowling",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 27,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Reserve Tank, Wrecked Ship",
+          "path": [
+            "Bowling"
+          ],
+          "requirements": [
+            "Morph",
+            "PowerBomb",
+            "SpeedBooster"
+          ],
+          "step": 76,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Bowling",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 28,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (Gravity Suit)",
+          "path": [
+            "Bowling"
+          ],
+          "requirements": [],
+          "step": 77,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 29,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Gauntlet",
+          "path": [
+            "Bowling",
+            "West Ocean Left",
+            "Moat Right",
+            "Moat Left",
+            "Keyhunter Room Bottom",
+            "Landing Site"
+          ],
+          "requirements": [
+            "Grapple",
+            "ScrewAttack",
+            "SpaceJump"
+          ],
+          "step": 78,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Gauntlet Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 30,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (Crateria gauntlet right)",
+          "path": [
+            "Landing Site",
+            "Gauntlet Top"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "ScrewAttack",
+            "SpaceJump"
+          ],
+          "step": 79,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Gauntlet Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 31,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (Crateria gauntlet left)",
+          "path": [
+            "Gauntlet Top"
+          ],
+          "requirements": [],
+          "step": 80,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 32,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Super Missile (Crateria)",
+          "path": [
+            "Gauntlet Top",
+            "Green Pirates Shaft Bottom Right",
+            "Lower Mushrooms Left",
+            "Landing Site"
+          ],
+          "requirements": [
+            "1-ETank",
+            "2-ETank",
+            "Bomb",
+            "Ice",
+            "Missile",
+            "Morph",
+            "PowerBomb",
+            "SpeedBooster"
+          ],
+          "step": 81,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Big Pink",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 33,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Waterway",
+          "path": [
+            "Landing Site",
+            "Lower Mushrooms Left",
+            "Green Brinstar Elevator",
+            "Big Pink"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Missile",
+            "Morph",
+            "PowerBomb",
+            "SpeedBooster"
+          ],
+          "step": 82,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Red Tower Top Left",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 34,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "X-Ray Scope",
+          "path": [
+            "Big Pink",
+            "Green Hill Zone Top Right",
+            "Noob Bridge Right",
+            "Red Tower Top Left"
+          ],
+          "requirements": [
+            "Grapple",
+            "Missile",
+            "Morph",
+            "PowerBomb",
+            "Super"
+          ],
+          "step": 83,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Main Street Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 35,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (green Maridia shinespark)",
+          "path": [
+            "Red Tower Top Left",
+            "East Tunnel Right",
+            "Glass Tunnel Top",
+            "Main Street Bottom"
+          ],
+          "requirements": [
+            "1-ETank",
+            "Gravity",
+            "Missile",
+            "Morph",
+            "PowerBomb",
+            "SpeedBooster",
+            "Super"
+          ],
+          "step": 84,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Oasis Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 36,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Spazer",
+          "location": "Spring Ball",
+          "path": [
+            "Main Street Bottom",
+            "Oasis Bottom"
+          ],
+          "requirements": [
+            "Grapple",
+            "Gravity",
+            "HiJump",
+            "Missile",
+            "Morph",
+            "PowerBomb",
+            "SpaceJump",
+            "Super"
+          ],
+          "step": 85,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Grapple Escape",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 8,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 36,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (above Crocomire)",
+          "path": [
+            "Oasis Bottom",
+            "West Sand Hall Left",
+            "Crab Hole Bottom Left",
+            "East Tunnel Top Right",
+            "East Tunnel Right",
+            "Warehouse Entrance Left",
+            "Business Center",
+            "Crocomire Speedway Bottom",
+            "Grapple Escape"
+          ],
+          "requirements": [
+            "Gravity",
+            "Morph",
+            "SpaceJump",
+            "SpeedBooster",
+            "Super",
+            "Varia",
+            "Wave"
+          ],
+          "step": 86,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Worst Room Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 9,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 36,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (Mickey Mouse room)",
+          "path": [
+            "Grapple Escape",
+            "Crocomire Speedway Bottom",
+            "Kronic Boost Room Bottom Left",
+            "Lava Dive Right",
+            "LN Entrance",
+            "Worst Room Top"
+          ],
+          "requirements": [
+            "Bomb",
+            "Gravity",
+            "Morph",
+            "PowerBomb",
+            "ScrewAttack",
+            "SpaceJump",
+            "Varia"
+          ],
+          "step": 87,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Firefleas",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 10,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 36,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Firefleas",
+          "path": [
+            "Worst Room Top",
+            "Firefleas"
+          ],
+          "requirements": [
+            "Ice",
+            "Super",
+            "Varia"
+          ],
+          "step": 88,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Firefleas",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 10,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 37,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (lower Norfair above fire flea room)",
+          "path": [
+            "Firefleas"
+          ],
+          "requirements": [
+            "Varia"
+          ],
+          "step": 89,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Firefleas",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 37,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 3,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Reserve",
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "path": [
+            "Firefleas"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "Varia"
+          ],
+          "step": 90,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Firefleas Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 37,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 4,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "path": [
+            "Firefleas",
+            "Firefleas Top"
+          ],
+          "requirements": [
+            "Bomb",
+            "Morph",
+            "Varia"
+          ],
+          "step": 91,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Wasteland",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 38,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 4,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (Power Bombs of shame)",
+          "path": [
+            "Firefleas Top",
+            "Firefleas",
+            "Ridley Zone",
+            "Wasteland"
+          ],
+          "requirements": [
+            "Missile",
+            "Morph",
+            "Plasma",
+            "PowerBomb",
+            "SpringBall",
+            "Super",
+            "Varia"
+          ],
+          "step": 92,
+          "techniques": []
+        },
+        {
+          "accessPoint": "RidleyRoomIn",
+          "difficulty": 0.89,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 39,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 4,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Ridley",
+          "location": "Ridley",
+          "path": [
+            "Wasteland",
+            "Ridley Zone",
+            "RidleyRoomOut",
+            "RidleyRoomIn"
+          ],
+          "requirements": [
+            "11-ETank - 4-Reserve",
+            "Gravity",
+            "Missile",
+            "Morph",
+            "Plasma",
+            "PowerBomb",
+            "SpringBall",
+            "Super",
+            "Varia"
+          ],
+          "step": 93,
+          "techniques": []
+        },
+        {
+          "accessPoint": "RidleyRoomIn",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 39,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Ridley",
+          "path": [
+            "RidleyRoomIn"
+          ],
+          "requirements": [
+            "Morph",
+            "Ridley",
+            "Varia"
+          ],
+          "step": 94,
+          "techniques": []
+        },
+        {
+          "accessPoint": "LN Above GT",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 40,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 9,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "PowerBomb",
+          "location": "Missile (Gold Torizo)",
+          "path": [
+            "RidleyRoomIn",
+            "RidleyRoomOut",
+            "Ridley Zone",
+            "Firefleas",
+            "Worst Room Top",
+            "LN Entrance",
+            "LN Above GT"
+          ],
+          "requirements": [
+            "2-ETank",
+            "4-ETank",
+            "Charge",
+            "Gravity",
+            "Ice",
+            "Morph",
+            "Plasma",
+            "PowerBomb",
+            "ScrewAttack",
+            "SpaceJump",
+            "SpringBall",
+            "Varia",
+            "Wave"
+          ],
+          "step": 95,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Screw Attack Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 40,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Screw Attack",
+          "path": [
+            "LN Above GT",
+            "Screw Attack Bottom"
+          ],
+          "requirements": [
+            "2-ETank",
+            "Bomb",
+            "Charge",
+            "Ice",
+            "Morph",
+            "Plasma",
+            "SpaceJump",
+            "Varia",
+            "Wave"
+          ],
+          "step": 96,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Screw Attack Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 41,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "GoldenTorizo",
+          "location": "Golden Torizo",
+          "path": [
+            "Screw Attack Bottom"
+          ],
+          "requirements": [
+            "2-ETank",
+            "Charge",
+            "Ice",
+            "Plasma",
+            "Wave"
+          ],
+          "step": 97,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Screw Attack Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 41,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Super Missile (Gold Torizo)",
+          "path": [
+            "Screw Attack Bottom"
+          ],
+          "requirements": [
+            "2-ETank",
+            "Bomb",
+            "Charge",
+            "Ice",
+            "Morph",
+            "Plasma",
+            "Wave"
+          ],
+          "step": 98,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Aqueduct Bottom",
+          "difficulty": 1,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 42,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Botwoon",
+          "location": "Botwoon",
+          "path": [
+            "Screw Attack Bottom",
+            "LN Entrance",
+            "Lava Dive Right",
+            "Kronic Boost Room Bottom Left",
+            "Bubble Mountain Bottom",
+            "Business Center",
+            "Warehouse Entrance Left",
+            "East Tunnel Right",
+            "Glass Tunnel Top",
+            "Main Street Bottom",
+            "Crab Shaft Left",
+            "Crab Shaft Right",
+            "Aqueduct Top Left",
+            "Aqueduct Bottom"
+          ],
+          "requirements": [
+            "1-ETank",
+            "2-ETank",
+            "Bomb",
+            "Charge",
+            "Grapple",
+            "Gravity",
+            "Ice",
+            "Morph",
+            "Plasma",
+            "PowerBomb",
+            "SpaceJump",
+            "SpeedBooster",
+            "Super",
+            "Varia",
+            "Wave"
+          ],
+          "step": 99,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Post Botwoon",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 42,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Energy Tank, Botwoon",
+          "path": [
+            "Aqueduct Bottom",
+            "Post Botwoon"
+          ],
+          "requirements": [
+            "Botwoon",
+            "Gravity",
+            "Morph",
+            "SpeedBooster"
+          ],
+          "step": 100,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Precious Room Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 43,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 9,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Super",
+          "location": "Missile (Draygon)",
+          "path": [
+            "Post Botwoon",
+            "Colosseum Top Right",
+            "Precious Room Top"
+          ],
+          "requirements": [
+            "Gravity",
+            "SpeedBooster",
+            "Super"
+          ],
+          "step": 101,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Right Sandpit",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 11,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 43,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Missile (right Maridia sand pit room)",
+          "path": [
+            "Precious Room Top",
+            "Colosseum Top Right",
+            "Post Botwoon",
+            "Aqueduct Bottom",
+            "Right Sandpit"
+          ],
+          "requirements": [
+            "Gravity",
+            "Morph"
+          ],
+          "step": 102,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Right Sandpit",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 12,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 43,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "path": [
+            "Right Sandpit"
+          ],
+          "requirements": [
+            "Gravity",
+            "Morph"
+          ],
+          "step": 103,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Aqueduct",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 12,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 44,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Missile (pink Maridia)",
+          "path": [
+            "Right Sandpit",
+            "Oasis Bottom",
+            "West Sand Hall Left",
+            "Crab Hole Bottom Left",
+            "East Tunnel Top Right",
+            "East Tunnel Right",
+            "Glass Tunnel Top",
+            "Main Street Bottom",
+            "Crab Shaft Left",
+            "Crab Shaft Right",
+            "Aqueduct Top Left",
+            "Aqueduct Bottom",
+            "Aqueduct"
+          ],
+          "requirements": [
+            "Grapple",
+            "Gravity",
+            "Morph",
+            "PowerBomb",
+            "SpeedBooster",
+            "Super"
+          ],
+          "step": 104,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Aqueduct",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 12,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 45,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Super Missile (pink Maridia)",
+          "path": [
+            "Aqueduct"
+          ],
+          "requirements": [],
+          "step": 105,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Draygon Room Bottom",
+          "difficulty": 0.41,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "ETank": 13,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 45,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Draygon",
+          "location": "Draygon",
+          "path": [
+            "Aqueduct",
+            "Aqueduct Bottom",
+            "Post Botwoon",
+            "Colosseum Top Right",
+            "Precious Room Top",
+            "DraygonRoomOut",
+            "DraygonRoomIn",
+            "Draygon Room Bottom"
+          ],
+          "requirements": [
+            "13-ETank - 4-Reserve",
+            "Botwoon",
+            "Charge",
+            "Gravity",
+            "Ice",
+            "Missile",
+            "Plasma",
+            "SpeedBooster",
+            "Super",
+            "Wave"
+          ],
+          "step": 106,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Draygon Room Bottom",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "Draygon": 1,
+            "ETank": 13,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 45,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "ETank",
+          "location": "Space Jump",
+          "path": [
+            "Draygon Room Bottom"
+          ],
+          "requirements": [
+            "Draygon"
+          ],
+          "step": 107,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Toilet Top",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "Draygon": 1,
+            "ETank": 14,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 45,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Missile",
+          "location": "Plasma Beam",
+          "path": [
+            "Draygon Room Bottom",
+            "DraygonRoomIn",
+            "DraygonRoomOut",
+            "Precious Room Top",
+            "Colosseum Top Right",
+            "Post Botwoon",
+            "Toilet Top"
+          ],
+          "requirements": [
+            "Draygon",
+            "Gravity",
+            "Morph",
+            "ScrewAttack",
+            "SpaceJump"
+          ],
+          "step": 108,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Golden Four",
+          "difficulty": 0.52,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "Draygon": 1,
+            "ETank": 14,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 46,
+            "Morph": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "MotherBrain",
+          "location": "Mother Brain",
+          "path": [
+            "Toilet Top",
+            "Le Coude Right",
+            "Crab Maze Left",
+            "Wrecked Ship Back",
+            "Wrecked Ship Main",
+            "West Ocean Left",
+            "Moat Right",
+            "Moat Left",
+            "Keyhunter Room Bottom",
+            "Landing Site",
+            "Gauntlet Top",
+            "Green Pirates Shaft Bottom Right",
+            "Golden Four"
+          ],
+          "requirements": [
+            "14-ETank - 4-Reserve",
+            "Bomb",
+            "Charge",
+            "Grapple",
+            "Gravity",
+            "Ice",
+            "Missile",
+            "Morph",
+            "Plasma",
+            "ScrewAttack",
+            "SpaceJump",
+            "Wave"
+          ],
+          "step": 109,
+          "techniques": []
+        },
+        {
+          "accessPoint": "Landing Site",
+          "difficulty": 0,
+          "inventoryBefore": {
+            "Bomb": 1,
+            "Botwoon": 1,
+            "Charge": 1,
+            "Crocomire": 1,
+            "Draygon": 1,
+            "ETank": 14,
+            "GoldenTorizo": 1,
+            "Grapple": 1,
+            "Gravity": 1,
+            "HiJump": 1,
+            "Ice": 1,
+            "Kraid": 1,
+            "Missile": 46,
+            "Morph": 1,
+            "MotherBrain": 1,
+            "Phantoon": 1,
+            "Plasma": 1,
+            "PowerBomb": 10,
+            "Reserve": 4,
+            "Ridley": 1,
+            "ScrewAttack": 1,
+            "SpaceJump": 1,
+            "Spazer": 1,
+            "SpeedBooster": 1,
+            "SporeSpawn": 1,
+            "SpringBall": 1,
+            "Super": 10,
+            "Varia": 1,
+            "Wave": 1,
+            "XRayScope": 1
+          },
+          "item": "Gunship",
+          "location": "Gunship",
+          "path": [
+            "Climb Bottom Left",
+            "Landing Site"
+          ],
+          "requirements": [],
+          "step": 110,
+          "techniques": []
+        }
+      ],
+      "reachableItemCount": 100,
+      "solver": "VARIA RandoSolver, fresh graph and inventory",
+      "unavailable": []
+    },
+    "upstream": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5",
+    "upstreamSeed": 14092040
+  },
+  "ok": true
+}

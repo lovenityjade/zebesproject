@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "inventoryActions": 28,
+  "beamExclusion": true,
+  "reserveTransfer": true,
+  "wireMaxError": 0,
+  "readOnlyAssets": true,
+  "nativeResume": true
+}

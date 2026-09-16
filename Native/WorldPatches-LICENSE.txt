@@ -1,0 +1,33 @@
+Native adaptations of VARIA start, layout, boss-connection, colored-door and gameplay tweak patches.
+Sources: Randomizer/upstream/patches/common, patches/vanilla, graph and rom; pinned revision
+72ec1f30b700442d0c30aad6c43801bd64f1e2a5.
+
+Bomb Torizo awakening: original patch by PJBoy, adapted for VARIA.
+Beam doors: original IPS by Mettyk25jigsaw, disassembled and factorized by
+VARIA contributors; native C hit-check counterparts and unchanged PLM/art data.
+Red missile-only doors: VARIA Randomizer contributors.
+Other start/layout patches: VARIA Randomizer contributors; individual
+source files and exact source spans are recorded in the world catalog audit.
+No executable SNES instructions from these patches run in the C port.
+
+MIT License
+
+Copyright (c) 2022 dude & flo and others
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

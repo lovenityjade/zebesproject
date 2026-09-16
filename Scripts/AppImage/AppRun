@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Also works after --appimage-extract, without FUSE or an Unreal installation.
+app_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+game_dir="$app_dir/usr/game"
+python_dir="$game_dir/Runtime/Python"
+if [[ ${XDG_DATA_HOME:-} = /* ]]; then
+    data_dir="$XDG_DATA_HOME/zebesproject"
+else
+    [[ ${HOME:-} = /* ]] || { echo 'Cannot locate your home directory.' >&2; exit 1; }
+    data_dir="$HOME/.local/share/zebesproject"
+fi
+mkdir -p -- "$data_dir/roms" "$data_dir/Unreal"
+export SM_USER_DATA="$data_dir"
+export SM_PYTHON_LIBRARY="$python_dir/lib/libpython3.11.so.1.0"
+[[ -f "$SM_PYTHON_LIBRARY" ]] || { echo 'The bundled randomizer runtime is missing.' >&2; exit 1; }
+unset PYTHONPATH PYTHONSTARTUP PYTHONUSERBASE PYTHONINSPECT
+export PYTHONHOME="$python_dir"
+export PYTHONNOUSERSITE=1 PYTHONSAFEPATH=1 PYTHONDONTWRITEBYTECODE=1
+export LD_LIBRARY_PATH="$python_dir/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+cd -- "$game_dir"
+# Bypass Unreal's generated .sh launcher: it chmods its binary, which fails on
+# the read-only AppImage mount. All executables are marked during packaging.
+exec "$game_dir/SMUnreal/Binaries/Linux/SMUnreal" SMUnreal /Engine/Maps/Entry \
+    "-UserDir=$data_dir/Unreal" -nosplash '-ExecCmds=t.MaxFPS 60' "$@"

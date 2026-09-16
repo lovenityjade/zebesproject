@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "romSha256": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72",
+  "room": 40721,
+  "state": 40765,
+  "tileset": 6,
+  "cells": [
+    {
+      "x": -1,
+      "y": 8,
+      "layer": 0,
+      "tile": 3084,
+      "expected": -1
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "layer": 0,
+      "tile": 492,
+      "expected": 255
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "layer": 1,
+      "tile": 3084,
+      "expected": -1
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "layer": 1,
+      "tile": 492,
+      "expected": -1
+    }
+  ]
+}

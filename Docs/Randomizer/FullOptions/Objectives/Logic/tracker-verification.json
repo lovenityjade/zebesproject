@@ -1,0 +1,3550 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 15092900,
+      "fingerprint": "a0030fa84335e1452cf46b19e326860232852bf1e05d2f9cb207722f323123c7",
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 4,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1
+        },
+        {
+          "step": 5,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 6,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 7,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 8,
+          "location": "Bomb",
+          "state": 1
+        },
+        {
+          "step": 9,
+          "location": "Energy Tank, Terminator",
+          "state": 1
+        },
+        {
+          "step": 10,
+          "location": "Missile (Crateria bottom)",
+          "state": 1
+        },
+        {
+          "step": 11,
+          "location": "Missile (Crateria middle)",
+          "state": 1
+        },
+        {
+          "step": 12,
+          "location": "Missile (Crateria moat)",
+          "state": 1
+        },
+        {
+          "step": 13,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1
+        },
+        {
+          "step": 14,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 15,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 16,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1
+        },
+        {
+          "step": 17,
+          "location": "Energy Tank, Etecoons",
+          "state": 1
+        },
+        {
+          "step": 18,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 19,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 20,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1
+        },
+        {
+          "step": 21,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 22,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 23,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1
+        },
+        {
+          "step": 25,
+          "location": "Charge Beam",
+          "state": 1
+        },
+        {
+          "step": 26,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 27,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 28,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 29,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 30,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1
+        },
+        {
+          "step": 31,
+          "location": "Spazer",
+          "state": 1
+        },
+        {
+          "step": 32,
+          "location": "Hi-Jump Boots",
+          "state": 1
+        },
+        {
+          "step": 33,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 34,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 35,
+          "location": "Ice Beam",
+          "state": 1
+        },
+        {
+          "step": 36,
+          "location": "Missile (below Ice Beam)",
+          "state": 1
+        },
+        {
+          "step": 37,
+          "location": "Missile (Kraid)",
+          "state": 1
+        },
+        {
+          "step": 39,
+          "location": "Varia Suit",
+          "state": 1
+        },
+        {
+          "step": 40,
+          "location": "Energy Tank, Kraid",
+          "state": 1
+        },
+        {
+          "step": 41,
+          "location": "Super Missile (green Maridia)",
+          "state": 1
+        },
+        {
+          "step": 42,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1
+        },
+        {
+          "step": 43,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 44,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1
+        },
+        {
+          "step": 46,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 47,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1
+        },
+        {
+          "step": 48,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 49,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 50,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 51,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 52,
+          "location": "Gravity Suit",
+          "state": 1
+        },
+        {
+          "step": 53,
+          "location": "Missile (Gravity Suit)",
+          "state": 1
+        },
+        {
+          "step": 54,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 55,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1
+        },
+        {
+          "step": 56,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1
+        },
+        {
+          "step": 57,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1
+        },
+        {
+          "step": 58,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1
+        },
+        {
+          "step": 59,
+          "location": "Super Missile (Crateria)",
+          "state": 1
+        },
+        {
+          "step": 60,
+          "location": "Energy Tank, Waterway",
+          "state": 1
+        },
+        {
+          "step": 61,
+          "location": "X-Ray Scope",
+          "state": 1
+        },
+        {
+          "step": 62,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1
+        },
+        {
+          "step": 63,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1
+        },
+        {
+          "step": 64,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1
+        },
+        {
+          "step": 65,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1
+        },
+        {
+          "step": 66,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1
+        },
+        {
+          "step": 67,
+          "location": "Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 68,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 70,
+          "location": "Energy Tank, Botwoon",
+          "state": 1
+        },
+        {
+          "step": 71,
+          "location": "Missile (Draygon)",
+          "state": 1
+        },
+        {
+          "step": 72,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 73,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 74,
+          "location": "Missile (lava room)",
+          "state": 1
+        },
+        {
+          "step": 75,
+          "location": "Missile (bubble Norfair)",
+          "state": 1
+        },
+        {
+          "step": 76,
+          "location": "Reserve Tank, Norfair",
+          "state": 1
+        },
+        {
+          "step": 77,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1
+        },
+        {
+          "step": 78,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1
+        },
+        {
+          "step": 79,
+          "location": "Speed Booster",
+          "state": 1
+        },
+        {
+          "step": 80,
+          "location": "Missile (Speed Booster)",
+          "state": 1
+        },
+        {
+          "step": 81,
+          "location": "Wave Beam",
+          "state": 1
+        },
+        {
+          "step": 82,
+          "location": "Missile (Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 83,
+          "location": "Missile (above Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 85,
+          "location": "Energy Tank, Crocomire",
+          "state": 1
+        },
+        {
+          "step": 86,
+          "location": "Grapple Beam",
+          "state": 1
+        },
+        {
+          "step": 87,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 88,
+          "location": "Missile (below Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 89,
+          "location": "Missile (Grapple Beam)",
+          "state": 1
+        },
+        {
+          "step": 90,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1
+        },
+        {
+          "step": 91,
+          "location": "Energy Tank, Firefleas",
+          "state": 1
+        },
+        {
+          "step": 92,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 93,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 94,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 95,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1
+        },
+        {
+          "step": 97,
+          "location": "Energy Tank, Ridley",
+          "state": 1
+        },
+        {
+          "step": 98,
+          "location": "Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 99,
+          "location": "Screw Attack",
+          "state": 1
+        },
+        {
+          "step": 101,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 102,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1
+        },
+        {
+          "step": 103,
+          "location": "Spring Ball",
+          "state": 1
+        },
+        {
+          "step": 104,
+          "location": "Reserve Tank, Maridia",
+          "state": 1
+        },
+        {
+          "step": 105,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1
+        }
+      ]
+    },
+    {
+      "seed": 15092901,
+      "fingerprint": "45bb1a7e8ff5fae9c91f2e5d43e8e3f2c82d23ea8ae574a197190b281d50cd58",
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1
+        },
+        {
+          "step": 3,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 4,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 5,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1
+        },
+        {
+          "step": 6,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 7,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 8,
+          "location": "Bomb",
+          "state": 1
+        },
+        {
+          "step": 9,
+          "location": "Energy Tank, Terminator",
+          "state": 1
+        },
+        {
+          "step": 10,
+          "location": "Missile (Crateria bottom)",
+          "state": 1
+        },
+        {
+          "step": 11,
+          "location": "Missile (Crateria middle)",
+          "state": 1
+        },
+        {
+          "step": 12,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1
+        },
+        {
+          "step": 13,
+          "location": "Energy Tank, Etecoons",
+          "state": 1
+        },
+        {
+          "step": 14,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 15,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1
+        },
+        {
+          "step": 16,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 17,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 18,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1
+        },
+        {
+          "step": 20,
+          "location": "Charge Beam",
+          "state": 1
+        },
+        {
+          "step": 21,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 4
+        },
+        {
+          "step": 22,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 23,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 24,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 25,
+          "location": "Energy Tank, Waterway",
+          "state": 1
+        },
+        {
+          "step": 26,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1
+        },
+        {
+          "step": 27,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 28,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1
+        },
+        {
+          "step": 29,
+          "location": "Super Missile (Crateria)",
+          "state": 1
+        },
+        {
+          "step": 30,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1
+        },
+        {
+          "step": 31,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1
+        },
+        {
+          "step": 32,
+          "location": "Super Missile (green Maridia)",
+          "state": 1
+        },
+        {
+          "step": 33,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1
+        },
+        {
+          "step": 34,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1
+        },
+        {
+          "step": 35,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1
+        },
+        {
+          "step": 36,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1
+        },
+        {
+          "step": 37,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1
+        },
+        {
+          "step": 38,
+          "location": "Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 39,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 41,
+          "location": "Energy Tank, Botwoon",
+          "state": 1
+        },
+        {
+          "step": 42,
+          "location": "Missile (Draygon)",
+          "state": 1
+        },
+        {
+          "step": 43,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 44,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 45,
+          "location": "Reserve Tank, Norfair",
+          "state": 1
+        },
+        {
+          "step": 46,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1
+        },
+        {
+          "step": 47,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1
+        },
+        {
+          "step": 48,
+          "location": "Speed Booster",
+          "state": 1
+        },
+        {
+          "step": 49,
+          "location": "Missile (Speed Booster)",
+          "state": 1
+        },
+        {
+          "step": 50,
+          "location": "Wave Beam",
+          "state": 1
+        },
+        {
+          "step": 51,
+          "location": "Missile (Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 52,
+          "location": "Missile (bubble Norfair)",
+          "state": 1
+        },
+        {
+          "step": 53,
+          "location": "Ice Beam",
+          "state": 1
+        },
+        {
+          "step": 54,
+          "location": "Missile (below Ice Beam)",
+          "state": 1
+        },
+        {
+          "step": 55,
+          "location": "Hi-Jump Boots",
+          "state": 1
+        },
+        {
+          "step": 56,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 57,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 58,
+          "location": "Missile (lava room)",
+          "state": 1
+        },
+        {
+          "step": 59,
+          "location": "Missile (above Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 60,
+          "location": "Spazer",
+          "state": 1
+        },
+        {
+          "step": 61,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1
+        },
+        {
+          "step": 62,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 63,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 64,
+          "location": "X-Ray Scope",
+          "state": 1
+        },
+        {
+          "step": 65,
+          "location": "Energy Tank, Firefleas",
+          "state": 1
+        },
+        {
+          "step": 66,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 67,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 68,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 69,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1
+        },
+        {
+          "step": 70,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1
+        },
+        {
+          "step": 71,
+          "location": "Missile (Kraid)",
+          "state": 1
+        },
+        {
+          "step": 73,
+          "location": "Varia Suit",
+          "state": 1
+        },
+        {
+          "step": 74,
+          "location": "Energy Tank, Kraid",
+          "state": 1
+        },
+        {
+          "step": 75,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1
+        },
+        {
+          "step": 76,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1
+        },
+        {
+          "step": 77,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1
+        },
+        {
+          "step": 78,
+          "location": "Missile (Crateria moat)",
+          "state": 1
+        },
+        {
+          "step": 79,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1
+        },
+        {
+          "step": 80,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 82,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 83,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1
+        },
+        {
+          "step": 84,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 85,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 86,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 87,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 88,
+          "location": "Gravity Suit",
+          "state": 1
+        },
+        {
+          "step": 89,
+          "location": "Missile (Gravity Suit)",
+          "state": 1
+        },
+        {
+          "step": 90,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 92,
+          "location": "Energy Tank, Crocomire",
+          "state": 1
+        },
+        {
+          "step": 93,
+          "location": "Grapple Beam",
+          "state": 1
+        },
+        {
+          "step": 94,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 95,
+          "location": "Missile (below Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 96,
+          "location": "Missile (Grapple Beam)",
+          "state": 1
+        },
+        {
+          "step": 98,
+          "location": "Screw Attack",
+          "state": 1
+        },
+        {
+          "step": 99,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 100,
+          "location": "Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 102,
+          "location": "Energy Tank, Ridley",
+          "state": 1
+        },
+        {
+          "step": 103,
+          "location": "Reserve Tank, Maridia",
+          "state": 1
+        },
+        {
+          "step": 104,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 105,
+          "location": "Spring Ball",
+          "state": 1
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1
+        }
+      ]
+    },
+    {
+      "seed": 15092902,
+      "fingerprint": "e8a0b8215961e34077c48ed88e5189b4cc960343d5b9a82cd83447d61abc6d52",
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 4,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1
+        },
+        {
+          "step": 5,
+          "location": "Bomb",
+          "state": 4
+        },
+        {
+          "step": 6,
+          "location": "Energy Tank, Terminator",
+          "state": 1
+        },
+        {
+          "step": 7,
+          "location": "Missile (Crateria bottom)",
+          "state": 1
+        },
+        {
+          "step": 8,
+          "location": "Missile (Crateria middle)",
+          "state": 1
+        },
+        {
+          "step": 9,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 10,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 11,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 12,
+          "location": "Missile (Crateria moat)",
+          "state": 1
+        },
+        {
+          "step": 13,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1
+        },
+        {
+          "step": 14,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 15,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 16,
+          "location": "Spazer",
+          "state": 1
+        },
+        {
+          "step": 17,
+          "location": "Hi-Jump Boots",
+          "state": 1
+        },
+        {
+          "step": 18,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 19,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 20,
+          "location": "Missile (Kraid)",
+          "state": 1
+        },
+        {
+          "step": 22,
+          "location": "Varia Suit",
+          "state": 1
+        },
+        {
+          "step": 23,
+          "location": "Energy Tank, Kraid",
+          "state": 1
+        },
+        {
+          "step": 24,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1
+        },
+        {
+          "step": 25,
+          "location": "Charge Beam",
+          "state": 1
+        },
+        {
+          "step": 27,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 28,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 29,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 30,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 31,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1
+        },
+        {
+          "step": 32,
+          "location": "Energy Tank, Etecoons",
+          "state": 1
+        },
+        {
+          "step": 33,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 34,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 35,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1
+        },
+        {
+          "step": 36,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 37,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 38,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1
+        },
+        {
+          "step": 39,
+          "location": "X-Ray Scope",
+          "state": 1
+        },
+        {
+          "step": 40,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1
+        },
+        {
+          "step": 41,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 42,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1
+        },
+        {
+          "step": 43,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1
+        },
+        {
+          "step": 44,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1
+        },
+        {
+          "step": 45,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1
+        },
+        {
+          "step": 47,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 48,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1
+        },
+        {
+          "step": 49,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 50,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 51,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 52,
+          "location": "Gravity Suit",
+          "state": 1
+        },
+        {
+          "step": 53,
+          "location": "Missile (Gravity Suit)",
+          "state": 1
+        },
+        {
+          "step": 54,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 55,
+          "location": "Spring Ball",
+          "state": 1
+        },
+        {
+          "step": 56,
+          "location": "Super Missile (green Maridia)",
+          "state": 1
+        },
+        {
+          "step": 57,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1
+        },
+        {
+          "step": 58,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1
+        },
+        {
+          "step": 59,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1
+        },
+        {
+          "step": 60,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1
+        },
+        {
+          "step": 61,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1
+        },
+        {
+          "step": 62,
+          "location": "Reserve Tank, Maridia",
+          "state": 1
+        },
+        {
+          "step": 63,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 64,
+          "location": "Ice Beam",
+          "state": 1
+        },
+        {
+          "step": 65,
+          "location": "Missile (below Ice Beam)",
+          "state": 1
+        },
+        {
+          "step": 66,
+          "location": "Reserve Tank, Norfair",
+          "state": 1
+        },
+        {
+          "step": 67,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1
+        },
+        {
+          "step": 68,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1
+        },
+        {
+          "step": 69,
+          "location": "Missile (bubble Norfair)",
+          "state": 1
+        },
+        {
+          "step": 70,
+          "location": "Speed Booster",
+          "state": 1
+        },
+        {
+          "step": 71,
+          "location": "Missile (Speed Booster)",
+          "state": 1
+        },
+        {
+          "step": 72,
+          "location": "Wave Beam",
+          "state": 1
+        },
+        {
+          "step": 73,
+          "location": "Missile (Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 74,
+          "location": "Missile (lava room)",
+          "state": 1
+        },
+        {
+          "step": 75,
+          "location": "Missile (above Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 77,
+          "location": "Energy Tank, Crocomire",
+          "state": 1
+        },
+        {
+          "step": 78,
+          "location": "Grapple Beam",
+          "state": 1
+        },
+        {
+          "step": 79,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 80,
+          "location": "Missile (below Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 81,
+          "location": "Missile (Grapple Beam)",
+          "state": 1
+        },
+        {
+          "step": 82,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1
+        },
+        {
+          "step": 83,
+          "location": "Energy Tank, Firefleas",
+          "state": 1
+        },
+        {
+          "step": 84,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 85,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 86,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 87,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1
+        },
+        {
+          "step": 89,
+          "location": "Energy Tank, Ridley",
+          "state": 1
+        },
+        {
+          "step": 90,
+          "location": "Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 91,
+          "location": "Screw Attack",
+          "state": 1
+        },
+        {
+          "step": 93,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 94,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1
+        },
+        {
+          "step": 96,
+          "location": "Energy Tank, Botwoon",
+          "state": 1
+        },
+        {
+          "step": 97,
+          "location": "Missile (Draygon)",
+          "state": 1
+        },
+        {
+          "step": 98,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 99,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 100,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 101,
+          "location": "Super Missile (Crateria)",
+          "state": 1
+        },
+        {
+          "step": 102,
+          "location": "Energy Tank, Waterway",
+          "state": 1
+        },
+        {
+          "step": 103,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1
+        },
+        {
+          "step": 104,
+          "location": "Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 105,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1
+        }
+      ]
+    },
+    {
+      "seed": 15092903,
+      "fingerprint": "ba50b15aede4d98a070d4d3146a96d2ce22ce4e63b1b413203c350dcebaf34ba",
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1
+        },
+        {
+          "step": 2,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1
+        },
+        {
+          "step": 4,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 5,
+          "location": "Bomb",
+          "state": 4
+        },
+        {
+          "step": 6,
+          "location": "Energy Tank, Terminator",
+          "state": 1
+        },
+        {
+          "step": 7,
+          "location": "Missile (Crateria bottom)",
+          "state": 1
+        },
+        {
+          "step": 8,
+          "location": "Missile (Crateria middle)",
+          "state": 1
+        },
+        {
+          "step": 9,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 10,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 11,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 12,
+          "location": "Missile (Crateria moat)",
+          "state": 1
+        },
+        {
+          "step": 13,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1
+        },
+        {
+          "step": 14,
+          "location": "Energy Tank, Etecoons",
+          "state": 1
+        },
+        {
+          "step": 15,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 16,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1
+        },
+        {
+          "step": 17,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 18,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 19,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1
+        },
+        {
+          "step": 20,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1
+        },
+        {
+          "step": 21,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1
+        },
+        {
+          "step": 22,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1
+        },
+        {
+          "step": 23,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1
+        },
+        {
+          "step": 24,
+          "location": "Super Missile (Crateria)",
+          "state": 1
+        },
+        {
+          "step": 25,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1
+        },
+        {
+          "step": 26,
+          "location": "Charge Beam",
+          "state": 1
+        },
+        {
+          "step": 27,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 28,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 29,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 30,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1
+        },
+        {
+          "step": 31,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1
+        },
+        {
+          "step": 32,
+          "location": "Energy Tank, Waterway",
+          "state": 1
+        },
+        {
+          "step": 34,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 35,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1
+        },
+        {
+          "step": 36,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 37,
+          "location": "X-Ray Scope",
+          "state": 1
+        },
+        {
+          "step": 38,
+          "location": "Spazer",
+          "state": 1
+        },
+        {
+          "step": 39,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 40,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 41,
+          "location": "Hi-Jump Boots",
+          "state": 1
+        },
+        {
+          "step": 42,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 43,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 44,
+          "location": "Missile (bubble Norfair)",
+          "state": 1
+        },
+        {
+          "step": 45,
+          "location": "Missile (Kraid)",
+          "state": 1
+        },
+        {
+          "step": 46,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 48,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 49,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1
+        },
+        {
+          "step": 50,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 51,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 52,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 53,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 54,
+          "location": "Gravity Suit",
+          "state": 1
+        },
+        {
+          "step": 55,
+          "location": "Missile (Gravity Suit)",
+          "state": 1
+        },
+        {
+          "step": 56,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 57,
+          "location": "Ice Beam",
+          "state": 1
+        },
+        {
+          "step": 58,
+          "location": "Missile (below Ice Beam)",
+          "state": 1
+        },
+        {
+          "step": 59,
+          "location": "Reserve Tank, Norfair",
+          "state": 1
+        },
+        {
+          "step": 60,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1
+        },
+        {
+          "step": 61,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1
+        },
+        {
+          "step": 62,
+          "location": "Speed Booster",
+          "state": 1
+        },
+        {
+          "step": 63,
+          "location": "Missile (Speed Booster)",
+          "state": 1
+        },
+        {
+          "step": 64,
+          "location": "Wave Beam",
+          "state": 1
+        },
+        {
+          "step": 65,
+          "location": "Missile (Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 66,
+          "location": "Missile (lava room)",
+          "state": 1
+        },
+        {
+          "step": 67,
+          "location": "Missile (above Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 69,
+          "location": "Energy Tank, Crocomire",
+          "state": 1
+        },
+        {
+          "step": 70,
+          "location": "Grapple Beam",
+          "state": 1
+        },
+        {
+          "step": 71,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 72,
+          "location": "Missile (below Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 73,
+          "location": "Missile (Grapple Beam)",
+          "state": 1
+        },
+        {
+          "step": 74,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1
+        },
+        {
+          "step": 75,
+          "location": "Energy Tank, Firefleas",
+          "state": 1
+        },
+        {
+          "step": 76,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 77,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 78,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 79,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1
+        },
+        {
+          "step": 81,
+          "location": "Energy Tank, Ridley",
+          "state": 1
+        },
+        {
+          "step": 82,
+          "location": "Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 83,
+          "location": "Screw Attack",
+          "state": 1
+        },
+        {
+          "step": 85,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 86,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1
+        },
+        {
+          "step": 87,
+          "location": "Super Missile (green Maridia)",
+          "state": 1
+        },
+        {
+          "step": 88,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1
+        },
+        {
+          "step": 89,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1
+        },
+        {
+          "step": 90,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1
+        },
+        {
+          "step": 91,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1
+        },
+        {
+          "step": 92,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1
+        },
+        {
+          "step": 93,
+          "location": "Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 94,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 96,
+          "location": "Energy Tank, Botwoon",
+          "state": 1
+        },
+        {
+          "step": 97,
+          "location": "Missile (Draygon)",
+          "state": 1
+        },
+        {
+          "step": 98,
+          "location": "Reserve Tank, Maridia",
+          "state": 1
+        },
+        {
+          "step": 99,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 100,
+          "location": "Spring Ball",
+          "state": 1
+        },
+        {
+          "step": 101,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 102,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 104,
+          "location": "Varia Suit",
+          "state": 1
+        },
+        {
+          "step": 105,
+          "location": "Energy Tank, Kraid",
+          "state": 1
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1
+        }
+      ]
+    },
+    {
+      "seed": 15092904,
+      "fingerprint": "2bf94ce12a4d0c6bdf4280eb2fe7e725309de372fa474e510edd6a8fef24c402",
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 4,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1
+        },
+        {
+          "step": 5,
+          "location": "Bomb",
+          "state": 4
+        },
+        {
+          "step": 6,
+          "location": "Energy Tank, Terminator",
+          "state": 1
+        },
+        {
+          "step": 7,
+          "location": "Missile (Crateria bottom)",
+          "state": 1
+        },
+        {
+          "step": 8,
+          "location": "Missile (Crateria middle)",
+          "state": 1
+        },
+        {
+          "step": 9,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 10,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 11,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 12,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1
+        },
+        {
+          "step": 14,
+          "location": "Charge Beam",
+          "state": 1
+        },
+        {
+          "step": 15,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1
+        },
+        {
+          "step": 16,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 17,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 18,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 19,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 20,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1
+        },
+        {
+          "step": 21,
+          "location": "Energy Tank, Etecoons",
+          "state": 1
+        },
+        {
+          "step": 22,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 23,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 24,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1
+        },
+        {
+          "step": 25,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 26,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 27,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1
+        },
+        {
+          "step": 28,
+          "location": "Missile (Crateria moat)",
+          "state": 1
+        },
+        {
+          "step": 29,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1
+        },
+        {
+          "step": 30,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 31,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 32,
+          "location": "X-Ray Scope",
+          "state": 1
+        },
+        {
+          "step": 34,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 35,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 36,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1
+        },
+        {
+          "step": 37,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 38,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 39,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 40,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 41,
+          "location": "Gravity Suit",
+          "state": 1
+        },
+        {
+          "step": 42,
+          "location": "Missile (Gravity Suit)",
+          "state": 1
+        },
+        {
+          "step": 43,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1
+        },
+        {
+          "step": 44,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 45,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1
+        },
+        {
+          "step": 46,
+          "location": "Super Missile (Crateria)",
+          "state": 1
+        },
+        {
+          "step": 47,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1
+        },
+        {
+          "step": 48,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1
+        },
+        {
+          "step": 49,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1
+        },
+        {
+          "step": 50,
+          "location": "Energy Tank, Waterway",
+          "state": 1
+        },
+        {
+          "step": 51,
+          "location": "Spazer",
+          "state": 1
+        },
+        {
+          "step": 52,
+          "location": "Ice Beam",
+          "state": 1
+        },
+        {
+          "step": 53,
+          "location": "Missile (below Ice Beam)",
+          "state": 1
+        },
+        {
+          "step": 54,
+          "location": "Hi-Jump Boots",
+          "state": 1
+        },
+        {
+          "step": 55,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 56,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 57,
+          "location": "Reserve Tank, Norfair",
+          "state": 1
+        },
+        {
+          "step": 58,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1
+        },
+        {
+          "step": 59,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1
+        },
+        {
+          "step": 60,
+          "location": "Missile (bubble Norfair)",
+          "state": 1
+        },
+        {
+          "step": 61,
+          "location": "Speed Booster",
+          "state": 1
+        },
+        {
+          "step": 62,
+          "location": "Missile (Speed Booster)",
+          "state": 1
+        },
+        {
+          "step": 63,
+          "location": "Wave Beam",
+          "state": 1
+        },
+        {
+          "step": 64,
+          "location": "Missile (Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 65,
+          "location": "Missile (lava room)",
+          "state": 1
+        },
+        {
+          "step": 66,
+          "location": "Missile (above Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 68,
+          "location": "Energy Tank, Crocomire",
+          "state": 1
+        },
+        {
+          "step": 69,
+          "location": "Grapple Beam",
+          "state": 1
+        },
+        {
+          "step": 70,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 71,
+          "location": "Missile (below Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 72,
+          "location": "Missile (Grapple Beam)",
+          "state": 1
+        },
+        {
+          "step": 73,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1
+        },
+        {
+          "step": 74,
+          "location": "Energy Tank, Firefleas",
+          "state": 1
+        },
+        {
+          "step": 75,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 76,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 77,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 78,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1
+        },
+        {
+          "step": 80,
+          "location": "Energy Tank, Ridley",
+          "state": 1
+        },
+        {
+          "step": 81,
+          "location": "Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 82,
+          "location": "Screw Attack",
+          "state": 1
+        },
+        {
+          "step": 84,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 85,
+          "location": "Missile (Kraid)",
+          "state": 1
+        },
+        {
+          "step": 87,
+          "location": "Varia Suit",
+          "state": 1
+        },
+        {
+          "step": 88,
+          "location": "Energy Tank, Kraid",
+          "state": 1
+        },
+        {
+          "step": 89,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1
+        },
+        {
+          "step": 90,
+          "location": "Super Missile (green Maridia)",
+          "state": 1
+        },
+        {
+          "step": 91,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1
+        },
+        {
+          "step": 92,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1
+        },
+        {
+          "step": 93,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1
+        },
+        {
+          "step": 94,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1
+        },
+        {
+          "step": 95,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1
+        },
+        {
+          "step": 96,
+          "location": "Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 97,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 99,
+          "location": "Energy Tank, Botwoon",
+          "state": 1
+        },
+        {
+          "step": 100,
+          "location": "Missile (Draygon)",
+          "state": 1
+        },
+        {
+          "step": 101,
+          "location": "Reserve Tank, Maridia",
+          "state": 1
+        },
+        {
+          "step": 102,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 103,
+          "location": "Spring Ball",
+          "state": 1
+        },
+        {
+          "step": 104,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 105,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1
+        }
+      ]
+    },
+    {
+      "seed": 15092905,
+      "fingerprint": "772f7de7b598e4ded8de96b875e1d751939e1c974f9bb83c3753bbf04d78a44d",
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1
+        },
+        {
+          "step": 2,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 4,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1
+        },
+        {
+          "step": 5,
+          "location": "Energy Tank, Terminator",
+          "state": 1
+        },
+        {
+          "step": 6,
+          "location": "Missile (Crateria bottom)",
+          "state": 1
+        },
+        {
+          "step": 7,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1
+        },
+        {
+          "step": 8,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 9,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1
+        },
+        {
+          "step": 11,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 12,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 13,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1
+        },
+        {
+          "step": 14,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1
+        },
+        {
+          "step": 15,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 16,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1
+        },
+        {
+          "step": 17,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 18,
+          "location": "Bomb",
+          "state": 1
+        },
+        {
+          "step": 19,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1
+        },
+        {
+          "step": 20,
+          "location": "Missile (Crateria middle)",
+          "state": 1
+        },
+        {
+          "step": 21,
+          "location": "Super Missile (Crateria)",
+          "state": 1
+        },
+        {
+          "step": 22,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 23,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 24,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 25,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1
+        },
+        {
+          "step": 26,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1
+        },
+        {
+          "step": 27,
+          "location": "Missile (Crateria moat)",
+          "state": 1
+        },
+        {
+          "step": 28,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1
+        },
+        {
+          "step": 29,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 30,
+          "location": "Spazer",
+          "state": 1
+        },
+        {
+          "step": 31,
+          "location": "Hi-Jump Boots",
+          "state": 1
+        },
+        {
+          "step": 32,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 33,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 34,
+          "location": "Missile (bubble Norfair)",
+          "state": 1
+        },
+        {
+          "step": 35,
+          "location": "Ice Beam",
+          "state": 1
+        },
+        {
+          "step": 36,
+          "location": "Missile (below Ice Beam)",
+          "state": 1
+        },
+        {
+          "step": 37,
+          "location": "Missile (lava room)",
+          "state": 1
+        },
+        {
+          "step": 38,
+          "location": "Speed Booster",
+          "state": 1
+        },
+        {
+          "step": 39,
+          "location": "Missile (Speed Booster)",
+          "state": 1
+        },
+        {
+          "step": 40,
+          "location": "Wave Beam",
+          "state": 1
+        },
+        {
+          "step": 41,
+          "location": "Missile (Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 43,
+          "location": "Energy Tank, Crocomire",
+          "state": 1
+        },
+        {
+          "step": 44,
+          "location": "Grapple Beam",
+          "state": 1
+        },
+        {
+          "step": 45,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 46,
+          "location": "Missile (below Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 47,
+          "location": "Missile (Grapple Beam)",
+          "state": 1
+        },
+        {
+          "step": 48,
+          "location": "Reserve Tank, Norfair",
+          "state": 1
+        },
+        {
+          "step": 49,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1
+        },
+        {
+          "step": 50,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1
+        },
+        {
+          "step": 51,
+          "location": "Missile (Kraid)",
+          "state": 1
+        },
+        {
+          "step": 53,
+          "location": "Varia Suit",
+          "state": 1
+        },
+        {
+          "step": 54,
+          "location": "Energy Tank, Kraid",
+          "state": 1
+        },
+        {
+          "step": 55,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1
+        },
+        {
+          "step": 56,
+          "location": "Energy Tank, Etecoons",
+          "state": 1
+        },
+        {
+          "step": 57,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 58,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 59,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 60,
+          "location": "Charge Beam",
+          "state": 1
+        },
+        {
+          "step": 61,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 62,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 63,
+          "location": "Energy Tank, Waterway",
+          "state": 1
+        },
+        {
+          "step": 65,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 66,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1
+        },
+        {
+          "step": 67,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 68,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 69,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 70,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 71,
+          "location": "Gravity Suit",
+          "state": 1
+        },
+        {
+          "step": 72,
+          "location": "Missile (Gravity Suit)",
+          "state": 1
+        },
+        {
+          "step": 73,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 74,
+          "location": "X-Ray Scope",
+          "state": 1
+        },
+        {
+          "step": 75,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1
+        },
+        {
+          "step": 76,
+          "location": "Super Missile (green Maridia)",
+          "state": 1
+        },
+        {
+          "step": 77,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1
+        },
+        {
+          "step": 78,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1
+        },
+        {
+          "step": 79,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1
+        },
+        {
+          "step": 80,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1
+        },
+        {
+          "step": 81,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1
+        },
+        {
+          "step": 82,
+          "location": "Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 83,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 85,
+          "location": "Energy Tank, Botwoon",
+          "state": 1
+        },
+        {
+          "step": 86,
+          "location": "Missile (Draygon)",
+          "state": 1
+        },
+        {
+          "step": 87,
+          "location": "Reserve Tank, Maridia",
+          "state": 1
+        },
+        {
+          "step": 88,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 89,
+          "location": "Spring Ball",
+          "state": 1
+        },
+        {
+          "step": 90,
+          "location": "Missile (above Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 91,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1
+        },
+        {
+          "step": 92,
+          "location": "Energy Tank, Firefleas",
+          "state": 1
+        },
+        {
+          "step": 93,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 94,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 95,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 96,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1
+        },
+        {
+          "step": 98,
+          "location": "Energy Tank, Ridley",
+          "state": 1
+        },
+        {
+          "step": 99,
+          "location": "Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 100,
+          "location": "Screw Attack",
+          "state": 1
+        },
+        {
+          "step": 102,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 103,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1
+        },
+        {
+          "step": 104,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 105,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1
+        }
+      ]
+    },
+    {
+      "seed": 15092906,
+      "fingerprint": "6892985844d6c3ad2a3c749553bdaa6d20db5cf3dd030bfc70b8a36e5753409f",
+      "cases": [
+        {
+          "step": 1,
+          "location": "Morphing Ball",
+          "state": 1
+        },
+        {
+          "step": 2,
+          "location": "Energy Tank, Brinstar Ceiling",
+          "state": 1
+        },
+        {
+          "step": 3,
+          "location": "Missile (blue Brinstar middle)",
+          "state": 1
+        },
+        {
+          "step": 4,
+          "location": "Missile (blue Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 5,
+          "location": "Power Bomb (blue Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 6,
+          "location": "Missile (blue Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 7,
+          "location": "Missile (blue Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 8,
+          "location": "Bomb",
+          "state": 1
+        },
+        {
+          "step": 9,
+          "location": "Energy Tank, Terminator",
+          "state": 1
+        },
+        {
+          "step": 10,
+          "location": "Missile (Crateria bottom)",
+          "state": 1
+        },
+        {
+          "step": 11,
+          "location": "Missile (Crateria middle)",
+          "state": 1
+        },
+        {
+          "step": 12,
+          "location": "Missile (Crateria moat)",
+          "state": 1
+        },
+        {
+          "step": 13,
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "state": 1
+        },
+        {
+          "step": 14,
+          "location": "Power Bomb (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 15,
+          "location": "Missile (red Brinstar spike room)",
+          "state": 1
+        },
+        {
+          "step": 16,
+          "location": "Spazer",
+          "state": 1
+        },
+        {
+          "step": 17,
+          "location": "Hi-Jump Boots",
+          "state": 1
+        },
+        {
+          "step": 18,
+          "location": "Missile (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 19,
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "state": 1
+        },
+        {
+          "step": 20,
+          "location": "Missile (Kraid)",
+          "state": 1
+        },
+        {
+          "step": 22,
+          "location": "Varia Suit",
+          "state": 1
+        },
+        {
+          "step": 23,
+          "location": "Energy Tank, Kraid",
+          "state": 1
+        },
+        {
+          "step": 24,
+          "location": "Missile (green Brinstar pipe)",
+          "state": 1
+        },
+        {
+          "step": 25,
+          "location": "Charge Beam",
+          "state": 1
+        },
+        {
+          "step": 27,
+          "location": "Super Missile (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 28,
+          "location": "Missile (pink Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 29,
+          "location": "Missile (pink Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 30,
+          "location": "Power Bomb (pink Brinstar)",
+          "state": 1
+        },
+        {
+          "step": 31,
+          "location": "Missile (green Brinstar below super missile)",
+          "state": 1
+        },
+        {
+          "step": 32,
+          "location": "Energy Tank, Etecoons",
+          "state": 1
+        },
+        {
+          "step": 33,
+          "location": "Power Bomb (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 34,
+          "location": "Super Missile (green Brinstar bottom)",
+          "state": 1
+        },
+        {
+          "step": 35,
+          "location": "Reserve Tank, Brinstar",
+          "state": 1
+        },
+        {
+          "step": 36,
+          "location": "Super Missile (green Brinstar top)",
+          "state": 1
+        },
+        {
+          "step": 37,
+          "location": "Missile (green Brinstar behind missile)",
+          "state": 1
+        },
+        {
+          "step": 38,
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "state": 1
+        },
+        {
+          "step": 39,
+          "location": "Energy Tank, Brinstar Gate",
+          "state": 1
+        },
+        {
+          "step": 40,
+          "location": "X-Ray Scope",
+          "state": 1
+        },
+        {
+          "step": 41,
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "state": 1
+        },
+        {
+          "step": 42,
+          "location": "Missile (Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 43,
+          "location": "Super Missile (green Maridia)",
+          "state": 1
+        },
+        {
+          "step": 44,
+          "location": "Missile (green Maridia tatori)",
+          "state": 1
+        },
+        {
+          "step": 45,
+          "location": "Energy Tank, Mama turtle",
+          "state": 1
+        },
+        {
+          "step": 46,
+          "location": "Missile (yellow Maridia false wall)",
+          "state": 1
+        },
+        {
+          "step": 47,
+          "location": "Super Missile (yellow Maridia)",
+          "state": 1
+        },
+        {
+          "step": 48,
+          "location": "Missile (yellow Maridia super missile)",
+          "state": 1
+        },
+        {
+          "step": 49,
+          "location": "Spring Ball",
+          "state": 1
+        },
+        {
+          "step": 51,
+          "location": "Right Super, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 52,
+          "location": "Super Missile (Wrecked Ship left)",
+          "state": 1
+        },
+        {
+          "step": 53,
+          "location": "Missile (outside Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 54,
+          "location": "Missile (outside Wrecked Ship middle)",
+          "state": 1
+        },
+        {
+          "step": 55,
+          "location": "Missile (Wrecked Ship top)",
+          "state": 1
+        },
+        {
+          "step": 56,
+          "location": "Energy Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 57,
+          "location": "Gravity Suit",
+          "state": 1
+        },
+        {
+          "step": 58,
+          "location": "Missile (Gravity Suit)",
+          "state": 1
+        },
+        {
+          "step": 59,
+          "location": "Energy Tank, Gauntlet",
+          "state": 1
+        },
+        {
+          "step": 60,
+          "location": "Missile (Crateria gauntlet right)",
+          "state": 1
+        },
+        {
+          "step": 61,
+          "location": "Missile (Crateria gauntlet left)",
+          "state": 1
+        },
+        {
+          "step": 62,
+          "location": "Power Bomb (Crateria surface)",
+          "state": 1
+        },
+        {
+          "step": 63,
+          "location": "Ice Beam",
+          "state": 1
+        },
+        {
+          "step": 64,
+          "location": "Missile (below Ice Beam)",
+          "state": 1
+        },
+        {
+          "step": 65,
+          "location": "Reserve Tank, Norfair",
+          "state": 1
+        },
+        {
+          "step": 66,
+          "location": "Missile (Norfair Reserve Tank)",
+          "state": 1
+        },
+        {
+          "step": 67,
+          "location": "Missile (bubble Norfair green door)",
+          "state": 1
+        },
+        {
+          "step": 68,
+          "location": "Missile (bubble Norfair)",
+          "state": 1
+        },
+        {
+          "step": 69,
+          "location": "Speed Booster",
+          "state": 1
+        },
+        {
+          "step": 70,
+          "location": "Missile (Speed Booster)",
+          "state": 1
+        },
+        {
+          "step": 71,
+          "location": "Wave Beam",
+          "state": 1
+        },
+        {
+          "step": 72,
+          "location": "Missile (Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 73,
+          "location": "Missile (lava room)",
+          "state": 1
+        },
+        {
+          "step": 74,
+          "location": "Missile (above Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 76,
+          "location": "Energy Tank, Crocomire",
+          "state": 1
+        },
+        {
+          "step": 77,
+          "location": "Grapple Beam",
+          "state": 1
+        },
+        {
+          "step": 78,
+          "location": "Power Bomb (Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 79,
+          "location": "Missile (below Crocomire)",
+          "state": 1
+        },
+        {
+          "step": 80,
+          "location": "Missile (Grapple Beam)",
+          "state": 1
+        },
+        {
+          "step": 81,
+          "location": "Missile (Mickey Mouse room)",
+          "state": 1
+        },
+        {
+          "step": 82,
+          "location": "Energy Tank, Firefleas",
+          "state": 1
+        },
+        {
+          "step": 83,
+          "location": "Missile (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 84,
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "state": 1
+        },
+        {
+          "step": 85,
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "state": 1
+        },
+        {
+          "step": 86,
+          "location": "Power Bomb (Power Bombs of shame)",
+          "state": 1
+        },
+        {
+          "step": 88,
+          "location": "Energy Tank, Ridley",
+          "state": 1
+        },
+        {
+          "step": 89,
+          "location": "Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 90,
+          "location": "Screw Attack",
+          "state": 1
+        },
+        {
+          "step": 92,
+          "location": "Super Missile (Gold Torizo)",
+          "state": 1
+        },
+        {
+          "step": 93,
+          "location": "Missile (green Maridia shinespark)",
+          "state": 1
+        },
+        {
+          "step": 95,
+          "location": "Energy Tank, Botwoon",
+          "state": 1
+        },
+        {
+          "step": 96,
+          "location": "Missile (Draygon)",
+          "state": 1
+        },
+        {
+          "step": 97,
+          "location": "Reserve Tank, Maridia",
+          "state": 1
+        },
+        {
+          "step": 98,
+          "location": "Missile (left Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 99,
+          "location": "Reserve Tank, Wrecked Ship",
+          "state": 1
+        },
+        {
+          "step": 100,
+          "location": "Super Missile (Crateria)",
+          "state": 1
+        },
+        {
+          "step": 101,
+          "location": "Energy Tank, Waterway",
+          "state": 1
+        },
+        {
+          "step": 102,
+          "location": "Missile (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 103,
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "state": 1
+        },
+        {
+          "step": 104,
+          "location": "Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 105,
+          "location": "Super Missile (pink Maridia)",
+          "state": 1
+        },
+        {
+          "step": 107,
+          "location": "Space Jump",
+          "state": 1
+        },
+        {
+          "step": 108,
+          "location": "Plasma Beam",
+          "state": 1
+        }
+      ]
+    }
+  ],
+  "queries": 787,
+  "querySeconds": 61.16915970601258,
+  "scope": "End-to-end embedded tracker queries, no emulator or PopTracker dependency."
+}

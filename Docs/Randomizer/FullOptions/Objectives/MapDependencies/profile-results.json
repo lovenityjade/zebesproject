@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "fixtures": 54,
+  "markers": [
+    "SM_START_PROFILE PASS fixtures=54",
+    "SM_FULL_SETTINGS_PROFILE PASS",
+    "SM_PROFILE_SELF_TEST PASS"
+  ],
+  "logSha256": "17b5a7371096eca11953be59e6e3c6904ba2b30b722906b6579da2e894b1d34c"
+}

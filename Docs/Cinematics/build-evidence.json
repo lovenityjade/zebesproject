@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-15T09:14:47.958712+00:00",
+  "testHost": "gaming-pc",
+  "isolatedRoot": "/tmp/sm-native-generation-20260914",
+  "interactiveLaunch": false,
+  "installedGameOrUserSavesModified": false,
+  "hashes": {
+    "Native/build/libsm_native.so": "97d0f0769af0d3a1e789c836a2b4f544845e72c310df5a2a455f1240454763ad",
+    "Unreal/Binaries/Linux/SMUnreal": "7034467ffa017f34a1b4cdfe0604b894f335e5621cecf72bed628f83b2982817",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "61b3a28d8f09e216df84a4befd20d5a8f9e6d6f51b5bc6a94e5011ab86896d38",
+    "Unreal/Content/SM/M_Present.uasset": "30e8c55bd62e20b4bf94190233eff71c2fed60896711fd8f6bd17c43fec34759",
+    "Native/sm_cinematics.c": "585f8b266892eea1da7a2f7b140e6cc387218e0a6ed99cda94714d4d795513c4",
+    "Shaders/Cinematics.usf": "b7f5b56f7da980add849d8c745fb0b44d823860fbd280cbc56cbdfe476d939bc"
+  },
+  "checks": [
+    "Native C build",
+    "Unreal Editor and Game build",
+    "Material compilation: zero errors and warnings",
+    "Cooked Vulkan captures: eight cases, four presentations each",
+    "Original cinematic RGB composition",
+    "Fresh native story to playable Ceres",
+    "Native CPU opcode count remains zero",
+    "Credits preview regression: exact RAM/SRAM/frame/statistics recovery"
+  ],
+  "limits": [
+    "Controlled cinematic/escape entry is not a complete campaign playthrough",
+    "Runtime test fixture clears pending music before isolated intro entry to make sampling deterministic",
+    "Story traversal ran before final light-strength and isolated-fixture refinements"
+  ],
+  "upstreamPristine": {
+    "native-core": true,
+    "supermetroid": true,
+    "Randomizer/upstream": true
+  },
+  "passed": true
+}

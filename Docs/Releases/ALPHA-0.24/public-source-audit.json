@@ -1,0 +1,10 @@
+{
+  "sourceFiles": 1218,
+  "knownPrivateMediaPatternsAbsent": true,
+  "credentialPatternsAbsent": true,
+  "gitlinkPaths": [
+    "native-core"
+  ],
+  "historyPolicy": "New initial commit only; private history is not imported",
+  "limitations": "Targeted inventory and provenance review, not a general copyright or secret classifier"
+}

@@ -1,0 +1,21 @@
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/thelovenityjade/Projects/projectSM/Native/build
+
+[  3%] Building C object CMakeFiles/sm_native.dir/sm_80_native.c.o
+[  3%] Building C object CMakeFiles/sm_native.dir/sm_81_native.c.o
+[  4%] Building C object CMakeFiles/sm_native.dir/sm_82_native.c.o
+[  6%] Building C object CMakeFiles/sm_native.dir/sm_84_native.c.o
+[  8%] Building C object CMakeFiles/sm_native.dir/sm_86_native.c.o
+[  9%] Building C object CMakeFiles/sm_native.dir/sm_8f_native.c.o
+[ 11%] Building C object CMakeFiles/sm_native.dir/sm_90_movement.c.o
+[ 13%] Building C object CMakeFiles/sm_native.dir/sm_a0_native.c.o
+[ 14%] Building C object CMakeFiles/sm_native.dir/sm_a8_native.c.o
+[ 16%] Building C object CMakeFiles/sm_native.dir/sm_b4_native.c.o
+[ 18%] Building C object CMakeFiles/sm_native.dir/sm_scene.c.o
+[ 19%] Linking C shared library libsm_native.so
+[ 96%] Built target sm_native
+[ 98%] Linking C executable sm_randomizer_host
+[100%] Built target sm_randomizer_host
+
+Native SHA256 c22a39b6c60157775f003d128eb725c8727af9bb3ac3e7c08949b52b125ced5a

@@ -1,0 +1,89 @@
+{
+  "destinations": [
+    {
+      "destination": 0,
+      "name": "Crateria - Vaisseau / pluie",
+      "room": "0x91f8",
+      "load_frames": 98,
+      "fx": 10,
+      "water_y": 32767,
+      "heated": 0
+    },
+    {
+      "destination": 1,
+      "name": "Crateria - Refuge interieur",
+      "room": "0x93d5",
+      "load_frames": 98,
+      "fx": 0,
+      "water_y": 32767,
+      "heated": 0
+    },
+    {
+      "destination": 2,
+      "name": "Brinstar - Puits vert",
+      "room": "0x9ad9",
+      "load_frames": 98,
+      "fx": 0,
+      "water_y": 32767,
+      "heated": 0
+    },
+    {
+      "destination": 3,
+      "name": "Norfair - Cavernes chaudes",
+      "room": "0xa923",
+      "load_frames": 98,
+      "fx": 2,
+      "water_y": 32767,
+      "heated": 1
+    },
+    {
+      "destination": 4,
+      "name": "Norfair - Entree des profondeurs",
+      "room": "0xb236",
+      "load_frames": 98,
+      "fx": 4,
+      "water_y": 32767,
+      "heated": 1
+    },
+    {
+      "destination": 5,
+      "name": "Maridia - Ouest",
+      "room": "0xd1dd",
+      "load_frames": 98,
+      "fx": 6,
+      "water_y": 433,
+      "heated": 0
+    },
+    {
+      "destination": 6,
+      "name": "Maridia - Est",
+      "room": "0xd48e",
+      "load_frames": 98,
+      "fx": 6,
+      "water_y": 12,
+      "heated": 0
+    },
+    {
+      "destination": 7,
+      "name": "Vaisseau fantome - Hall",
+      "room": "0xca08",
+      "load_frames": 98,
+      "fx": 0,
+      "water_y": 32767,
+      "heated": 0
+    },
+    {
+      "destination": 0,
+      "name": "Crateria - Vaisseau / pluie",
+      "room": "0x91f8",
+      "load_frames": 98,
+      "fx": 10,
+      "water_y": 32767,
+      "heated": 0
+    }
+  ],
+  "native_cpu_opcodes": 0,
+  "player_save_unchanged": true,
+  "sram_not_written_by_teleport": true,
+  "player_save_sha256": "ce71e6ae9e938411656657e75c12b602f7248df7a69610c8194327851e6d4c12"
+}

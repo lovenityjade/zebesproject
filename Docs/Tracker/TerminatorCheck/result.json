@@ -1,0 +1,51 @@
+{
+  "current": {
+    "index": 8,
+    "address": 492594,
+    "area": 0,
+    "x": 12,
+    "y": 7,
+    "name": "Energy Tank, Terminator",
+    "state": 1,
+    "reason": "Accessible",
+    "reachable": true,
+    "safe": true,
+    "difficulty": 1,
+    "techniques": [
+      "SimpleShortCharge"
+    ],
+    "requirements": [
+      "SpeedBooster"
+    ]
+  },
+  "without_simple_short_charge": {
+    "index": 8,
+    "address": 492594,
+    "area": 0,
+    "x": 12,
+    "y": 7,
+    "name": "Energy Tank, Terminator",
+    "state": 2,
+    "reason": "Blocked by current inventory or rules",
+    "reachable": false,
+    "safe": false,
+    "difficulty": null,
+    "techniques": [],
+    "requirements": []
+  },
+  "without_speed_booster": {
+    "index": 8,
+    "address": 492594,
+    "area": 0,
+    "x": 12,
+    "y": 7,
+    "name": "Energy Tank, Terminator",
+    "state": 2,
+    "reason": "Blocked by current inventory or rules",
+    "reachable": false,
+    "safe": false,
+    "difficulty": null,
+    "techniques": [],
+    "requirements": []
+  }
+}

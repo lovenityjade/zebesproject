@@ -1,0 +1,59 @@
+{
+  "seeds": [
+    {
+      "seed": 15092600,
+      "fingerprint": "fdf4da30b7c79f491c08fbc1727d1efe74db185ae002bf05c72ba3311ff92430",
+      "mode": "area",
+      "start": "Landing Site",
+      "spawn": 0,
+      "checks": 100,
+      "noAdvanced": false
+    },
+    {
+      "seed": 15092601,
+      "fingerprint": "040315d5b8ee734100864d02345565c55226a7db1c3b4454ca6020be0ff44467",
+      "mode": "area",
+      "start": "Landing Site",
+      "spawn": 0,
+      "checks": 100,
+      "noAdvanced": true
+    },
+    {
+      "seed": 15092602,
+      "fingerprint": "123ff614e4489f893a2ba51111474068926730d647151030707ce945d0771a19",
+      "mode": "area-boss",
+      "start": "Landing Site",
+      "spawn": 0,
+      "checks": 100,
+      "noAdvanced": false
+    },
+    {
+      "seed": 15092603,
+      "fingerprint": "d562fc4a8b06b52ffe55ecddb055323488a9f43be218772a0bebf0495c37c593",
+      "mode": "area",
+      "start": "Golden Four",
+      "spawn": 7,
+      "checks": 100,
+      "noAdvanced": true
+    },
+    {
+      "seed": 15092604,
+      "fingerprint": "84d576b1b13a107672a83b2bc31bc55cf3e59e9297c2b374747f750fddc6ed27",
+      "mode": "area",
+      "start": "Red Brinstar Elevator",
+      "spawn": 266,
+      "checks": 100,
+      "noAdvanced": false
+    },
+    {
+      "seed": 15092605,
+      "fingerprint": "84174228017cff0fdd88dfd856bfa6664ca14a710d89e197864528b84a55cd02",
+      "mode": "vanilla",
+      "start": "Landing Site",
+      "spawn": 0,
+      "checks": 100,
+      "noAdvanced": false
+    }
+  ],
+  "nativeSha256": "52b1e958ea90f355c222a78dde7b0d3e638d5d52a06ec2723270d1b81479578a"
+}

@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "originalRomSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "payloadSha256": "e1580678ed4816d350d92fd37a2d6beb3ec553572a4f994640a1ba329224cd0e",
+  "recipeSha256": "25af96dc2de636e0e39a5672d646fbfb64378f1ed78b319c60c7d1c9b0beb58c",
+  "sourceLevels": 24,
+  "changedLevelBytes": 398,
+  "authoredRecordBytes": 988,
+  "reconstructedBytes": 65805,
+  "byteExactReconstruction": true,
+  "levels": [
+    {
+      "patch": "early_super_bridge.ips",
+      "sourceRoomAddress": 12949333,
+      "rooms": [
+        "Early Supers Room"
+      ],
+      "changedBytes": 9,
+      "compressionTemplateBytes": 368,
+      "reconstructedSha256": "32a5af4f298ed16d05702b2c986c27a37b97d5cc9bfeb084d4b2558401e7da51"
+    },
+    {
+      "patch": "spospo_save.ips",
+      "sourceRoomAddress": 12957005,
+      "rooms": [
+        "Big Pink"
+      ],
+      "changedBytes": 71,
+      "compressionTemplateBytes": 2974,
+      "reconstructedSha256": "12d018967a55e66173cb90391c7e4d370d7a24b2432f577ef034864f69001507"
+    },
+    {
+      "patch": "firefleas_shot_block.ips",
+      "sourceRoomAddress": 13212898,
+      "rooms": [
+        "Lower Norfair Escape Power Bomb Room"
+      ],
+      "changedBytes": 2,
+      "compressionTemplateBytes": 140,
+      "reconstructedSha256": "ca1dce7b2f6d8a414c0fa6a4ad2208f4e6b1e0457498855127cccc131890abae"
+    },
+    {
+      "patch": "high_jump.ips",
+      "sourceRoomAddress": 13085296,
+      "rooms": [
+        "Hi Jump Energy Tank Room"
+      ],
+      "changedBytes": 3,
+      "compressionTemplateBytes": 544,
+      "reconstructedSha256": "e4391ded1f7a3ab754f8a7576acdc1372cdafdb7ade6f5301be2616569098652"
+    },
+    {
+      "patch": "nova_boost_platform.ips",
+      "sourceRoomAddress": 13036729,
+      "rooms": [
+        "Cathedral Entrance"
+      ],
+      "changedBytes": 12,
+      "compressionTemplateBytes": 764,
+      "reconstructedSha256": "7fa2d0394b174c50a276ebb1d331e243ba3d53f25d32393edd464b8e4f6e56d7"
+    },
+    {
+      "patch": "area_layout_ln_exit.ips",
+      "sourceRoomAddress": 13102083,
+      "rooms": [
+        "Single Chamber"
+      ],
+      "changedBytes": 18,
+      "compressionTemplateBytes": 1716,
+      "reconstructedSha256": "add518c6da64cb442aca0ec766929687484a76b7489008e8d1d00d3fe2568cac"
+    },
+    {
+      "patch": "mama_save.ips",
+      "sourceRoomAddress": 13279507,
+      "rooms": [
+        "Mama Turtle Room"
+      ],
+      "changedBytes": 4,
+      "compressionTemplateBytes": 1439,
+      "reconstructedSha256": "6fc0f2f31e85ab6089641427f8e96093d062e45ea07fbeb1e276770575a2c9da"
+    },
+    {
+      "patch": "area_layout_crab_hole_lvl.ips",
+      "sourceRoomAddress": 13337563,
+      "rooms": [
+        "Crab Hole"
+      ],
+      "changedBytes": 58,
+      "compressionTemplateBytes": 384,
+      "reconstructedSha256": "06f4ba49b2038d06799e7ee97cf40e37551afffde2ccb4b0e769d14262e079ba"
+    },
+    {
+      "patch": "area_layout_crabe_tunnel.ips",
+      "sourceRoomAddress": 13283225,
+      "rooms": [
+        "Crab Tunnel"
+      ],
+      "changedBytes": 7,
+      "compressionTemplateBytes": 331,
+      "reconstructedSha256": "f9996b8982d825800380cf68ee4c6bd69a4a9eb5b5d4857b79d347aedd3c3e8c"
+    },
+    {
+      "patch": "aqueduct_bomb_blocks.ips",
+      "sourceRoomAddress": 13402792,
+      "rooms": [
+        "Aqueduct"
+      ],
+      "changedBytes": 8,
+      "compressionTemplateBytes": 2663,
+      "reconstructedSha256": "93963ef22ccb2cdb8e15d6a875d960bd88e7a2b3cb6f8d410d1dc670497ca33a"
+    },
+    {
+      "patch": "red_tower.ips",
+      "sourceRoomAddress": 13010158,
+      "rooms": [
+        "Red Tower"
+      ],
+      "changedBytes": 34,
+      "compressionTemplateBytes": 1837,
+      "reconstructedSha256": "fe6265e61d1d510509f168e0d6e9b8f05db33afb2819663c77ea6d6338e187a1"
+    },
+    {
+      "patch": "dachora.ips",
+      "sourceRoomAddress": 12951903,
+      "rooms": [
+        "Dachora Room"
+      ],
+      "changedBytes": 6,
+      "compressionTemplateBytes": 1746,
+      "reconstructedSha256": "308b6513e6531d375bca71fb0e2f5bec5cf07eb3d9bb351bfc37f8a4e3837c42"
+    },
+    {
+      "patch": "moat.ips",
+      "sourceRoomAddress": 12828013,
+      "rooms": [
+        "The Moat"
+      ],
+      "changedBytes": 6,
+      "compressionTemplateBytes": 445,
+      "reconstructedSha256": "4c638b867aebffec3adc0726e709f185dedb0e9d4a3bb7526fe440554ae8acd0"
+    },
+    {
+      "patch": "spazer.ips",
+      "sourceRoomAddress": 13023516,
+      "rooms": [
+        "Below Spazer"
+      ],
+      "changedBytes": 2,
+      "compressionTemplateBytes": 435,
+      "reconstructedSha256": "0dcc8a820a5d8c0470b9e547de89ea7d29f0f802f7b3c0b0d5b6024e352da18b"
+    },
+    {
+      "patch": "climb_supers.ips",
+      "sourceRoomAddress": 12831128,
+      "rooms": [
+        "Climb",
+        "Climb",
+        "Climb"
+      ],
+      "changedBytes": 1,
+      "compressionTemplateBytes": 1253,
+      "reconstructedSha256": "b5898be7c88948d87bd2449d7f86e9d8bee4b3a01890dfc527ee9ff730bcb395"
+    },
+    {
+      "patch": "brinstar_map_room.ips",
+      "sourceRoomAddress": 12949058,
+      "rooms": [
+        "Brinstar Pre-Map Room"
+      ],
+      "changedBytes": 0,
+      "compressionTemplateBytes": 110,
+      "reconstructedSha256": "6af78cf96c0378507583c78112263717bb37b5901f71ee521007690d9549022e"
+    },
+    {
+      "patch": "kraid_save.ips",
+      "sourceRoomAddress": 13026864,
+      "rooms": [
+        "Warehouse Keyhunter Room"
+      ],
+      "changedBytes": 1,
+      "compressionTemplateBytes": 729,
+      "reconstructedSha256": "ad295f00059c804e03945a6479080e27506fca77cc85c388903803b45dc2e8cb"
+    },
+    {
+      "patch": "mission_impossible.ips",
+      "sourceRoomAddress": 12964239,
+      "rooms": [
+        "Pink Brinstar Power Bomb Room"
+      ],
+      "changedBytes": 1,
+      "compressionTemplateBytes": 422,
+      "reconstructedSha256": "b1ce04db629bb7c5527bb1907bd37c57953d6697da9475cb53d173854b5cb887"
+    },
+    {
+      "patch": "area_layout_greenhillzone.ips",
+      "sourceRoomAddress": 12965209,
+      "rooms": [
+        "Green Hill Zone"
+      ],
+      "changedBytes": 10,
+      "compressionTemplateBytes": 1286,
+      "reconstructedSha256": "590207f8d2f83060ad3414ad45d5ec22502d020e85a7b2db37e15e2d2f2bf11c"
+    },
+    {
+      "patch": "east_ocean.ips",
+      "sourceRoomAddress": 12819896,
+      "rooms": [
+        "East Ocean"
+      ],
+      "changedBytes": 40,
+      "compressionTemplateBytes": 1713,
+      "reconstructedSha256": "34ea8c92bfda0e7af7dcabfad6b40b95c1d74f37f05eb8030beab16467af48a3"
+    },
+    {
+      "patch": "area_layout_east_tunnel.ips",
+      "sourceRoomAddress": 13232137,
+      "rooms": [
+        "East Tunnel"
+      ],
+      "changedBytes": 36,
+      "compressionTemplateBytes": 866,
+      "reconstructedSha256": "1d0faf91549d729a4f535a8ca8901ba355e6b5b515dad1c28ea3612ffe092d9b"
+    },
+    {
+      "patch": "area_layout_caterpillar.ips",
+      "sourceRoomAddress": 13016907,
+      "rooms": [
+        "Caterpillar Room"
+      ],
+      "changedBytes": 12,
+      "compressionTemplateBytes": 1335,
+      "reconstructedSha256": "df82983ddb14bcbbbffad1b1264959134387c2139da41607486ee7b9695281ec"
+    },
+    {
+      "patch": "area_layout_single_chamber.ips",
+      "sourceRoomAddress": 13102083,
+      "rooms": [
+        "Single Chamber"
+      ],
+      "changedBytes": 49,
+      "compressionTemplateBytes": 1707,
+      "reconstructedSha256": "2e122373902ef4172957f98383338c820131d5cc1d1e4bb37034b6f12e1599ad"
+    },
+    {
+      "patch": "ln_chozo_platform.ips",
+      "sourceRoomAddress": 13157587,
+      "rooms": [
+        "Acid Statue Room"
+      ],
+      "changedBytes": 8,
+      "compressionTemplateBytes": 1021,
+      "reconstructedSha256": "42f5e38052759effafacce5d16132d8012fabaedaed3c4d19bcde4ff05a46704"
+    }
+  ]
+}

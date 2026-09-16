@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "mode7": [
+    {"name":"Ceres blue status LEDs","hash":"e95f7c15","indices":[33,37,38]},
+    {"name":"Ceres elevator amber lamp NW","hash":"0bc3aff4","indices":[42,45,46]},
+    {"name":"Ceres elevator amber lamp NE","hash":"dc2cc1c5","indices":[41,42,44,45,46]},
+    {"name":"Ceres elevator amber lamp SW","hash":"7800cc99","indices":[41,42,44,45,46]},
+    {"name":"Ceres elevator amber lamp SE","hash":"c491e38a","indices":[42,45,46]}
+  ],
+  "fire_sprite_definitions": ["0xa0d1bf","0xa0e07f","0xa0e0bf","0xa0e4bf","0xa0e4ff","0xa0e53f","0xa0e57f","0xa0e83f"],
+  "note":"Approved fire-only sheets and Ceres lamp texels. Other enemy bodies and metal highlights are not assumed emissive. Runtime palette supplies the light color."
+}

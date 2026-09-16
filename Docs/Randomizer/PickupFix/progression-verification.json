@@ -1,0 +1,6838 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 14092026,
+      "fingerprint": "7bfd1c5f1e00ad46f5c9b99cc958e1afabc9bb7e831c9ac8b58bf8abc13449d9",
+      "skill": "casual",
+      "checks": [
+        {
+          "location": "Morphing Ball",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Brinstar Ceiling",
+          "item": "Morph",
+          "visibility": "Hidden",
+          "plm": "0xefcb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 9
+        },
+        {
+          "location": "Missile (blue Brinstar middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            10,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (blue Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            15,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Bomb",
+          "item": "Bomb",
+          "visibility": "Chozo",
+          "plm": "0xef3b",
+          "stateBefore": 4,
+          "inventory": [
+            99,
+            15,
+            0,
+            0,
+            4100,
+            0,
+            0
+          ],
+          "message": 19
+        },
+        {
+          "location": "Energy Tank, Terminator",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            15,
+            0,
+            5,
+            4100,
+            0,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (Crateria bottom)",
+          "item": "Wave",
+          "visibility": "Visible",
+          "plm": "0xeefb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            15,
+            0,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 16
+        },
+        {
+          "location": "Missile (Crateria middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            20,
+            0,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (blue Brinstar)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            20,
+            5,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (blue Brinstar top)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            20,
+            5,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (blue Brinstar behind missile)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            25,
+            5,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria moat)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            30,
+            5,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            35,
+            5,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (red Brinstar spike room)",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            40,
+            5,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (red Brinstar spike room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            45,
+            5,
+            5,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Brinstar pipe)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            45,
+            5,
+            10,
+            4100,
+            1,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Charge Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            50,
+            5,
+            10,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Brinstar Gate",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            55,
+            5,
+            10,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (pink Brinstar)",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            60,
+            5,
+            10,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            65,
+            5,
+            10,
+            4100,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Brinstar bottom)",
+          "item": "SpaceJump",
+          "visibility": "Visible",
+          "plm": "0xef1b",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            65,
+            5,
+            10,
+            4612,
+            1,
+            0
+          ],
+          "message": 12
+        },
+        {
+          "location": "Power Bomb (pink Brinstar)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            70,
+            5,
+            10,
+            4612,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Brinstar below super missile)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            75,
+            5,
+            10,
+            4612,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Etecoons",
+          "item": "Grapple",
+          "visibility": "Visible",
+          "plm": "0xef17",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            75,
+            5,
+            10,
+            20996,
+            1,
+            0
+          ],
+          "message": 5
+        },
+        {
+          "location": "Power Bomb (green Brinstar bottom)",
+          "item": "Reserve",
+          "visibility": "Chozo",
+          "plm": "0xef7b",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            75,
+            5,
+            10,
+            20996,
+            1,
+            100
+          ],
+          "message": 25
+        },
+        {
+          "location": "Super Missile (green Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            80,
+            5,
+            10,
+            20996,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (Crateria surface)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            80,
+            5,
+            15,
+            20996,
+            1,
+            100
+          ],
+          "message": 4
+        },
+        {
+          "location": "X-Ray Scope",
+          "item": "PowerBomb",
+          "visibility": "Chozo",
+          "plm": "0xef37",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            80,
+            5,
+            20,
+            20996,
+            1,
+            100
+          ],
+          "message": 4
+        },
+        {
+          "location": "Spazer",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            85,
+            5,
+            20,
+            20996,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Hi-Jump Boots",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            90,
+            5,
+            20,
+            20996,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Hi-Jump Boots)",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            90,
+            5,
+            20,
+            20996,
+            1,
+            200
+          ],
+          "message": 25
+        },
+        {
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            95,
+            5,
+            20,
+            20996,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Kraid)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            100,
+            5,
+            20,
+            20996,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Varia Suit",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            105,
+            5,
+            20,
+            20996,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Kraid",
+          "item": "ScrewAttack",
+          "visibility": "Hidden",
+          "plm": "0xefc7",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            105,
+            5,
+            20,
+            21004,
+            1,
+            200
+          ],
+          "message": 10
+        },
+        {
+          "location": "Energy Tank, Gauntlet",
+          "item": "Gravity",
+          "visibility": "Visible",
+          "plm": "0xef0b",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            105,
+            5,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 26
+        },
+        {
+          "location": "Missile (Crateria gauntlet right)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            110,
+            5,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria gauntlet left)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            110,
+            10,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            115,
+            10,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Wrecked Ship middle)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            115,
+            15,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Right Super, Wrecked Ship",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            120,
+            15,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (Wrecked Ship left)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            125,
+            15,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (outside Wrecked Ship top)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            130,
+            15,
+            20,
+            21036,
+            1,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (outside Wrecked Ship middle)",
+          "item": "HiJump",
+          "visibility": "Visible",
+          "plm": "0xeef3",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            130,
+            15,
+            20,
+            21292,
+            1,
+            200
+          ],
+          "message": 11
+        },
+        {
+          "location": "Missile (Wrecked Ship top)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            130,
+            15,
+            25,
+            21292,
+            1,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Energy Tank, Wrecked Ship",
+          "item": "Charge",
+          "visibility": "Visible",
+          "plm": "0xeeeb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            130,
+            15,
+            25,
+            21292,
+            4097,
+            200
+          ],
+          "message": 14
+        },
+        {
+          "location": "Gravity Suit",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            135,
+            15,
+            25,
+            21292,
+            4097,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Gravity Suit)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            135,
+            15,
+            30,
+            21292,
+            4097,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Spring Ball",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            135,
+            20,
+            30,
+            21292,
+            4097,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Super Missile (green Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            140,
+            20,
+            30,
+            21292,
+            4097,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Maridia tatori)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            145,
+            20,
+            30,
+            21292,
+            4097,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Mama turtle",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            150,
+            20,
+            30,
+            21292,
+            4097,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (yellow Maridia false wall)",
+          "item": "Spazer",
+          "visibility": "Visible",
+          "plm": "0xeeff",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            150,
+            20,
+            30,
+            21292,
+            4101,
+            200
+          ],
+          "message": 17
+        },
+        {
+          "location": "Super Missile (yellow Maridia)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            150,
+            25,
+            30,
+            21292,
+            4101,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (yellow Maridia super missile)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            155,
+            25,
+            30,
+            21292,
+            4101,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Reserve Tank, Maridia",
+          "item": "Ice",
+          "visibility": "Chozo",
+          "plm": "0xef43",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            155,
+            25,
+            30,
+            21292,
+            4103,
+            200
+          ],
+          "message": 15
+        },
+        {
+          "location": "Missile (left Maridia sand pit room)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            155,
+            30,
+            30,
+            21292,
+            4103,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Reserve Tank, Norfair",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            155,
+            30,
+            30,
+            21292,
+            4103,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Norfair Reserve Tank)",
+          "item": "Super",
+          "visibility": "Hidden",
+          "plm": "0xef87",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            155,
+            35,
+            30,
+            21292,
+            4103,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (bubble Norfair green door)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            155,
+            35,
+            35,
+            21292,
+            4103,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (bubble Norfair)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            155,
+            40,
+            35,
+            21292,
+            4103,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Speed Booster",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            155,
+            40,
+            35,
+            21292,
+            4103,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Speed Booster)",
+          "item": "SpringBall",
+          "visibility": "Hidden",
+          "plm": "0xefab",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            155,
+            40,
+            35,
+            21294,
+            4103,
+            200
+          ],
+          "message": 8
+        },
+        {
+          "location": "Wave Beam",
+          "item": "SpeedBooster",
+          "visibility": "Chozo",
+          "plm": "0xef4b",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            155,
+            40,
+            35,
+            29486,
+            4103,
+            200
+          ],
+          "message": 13
+        },
+        {
+          "location": "Missile (Wave Beam)",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            155,
+            40,
+            35,
+            29486,
+            4103,
+            300
+          ],
+          "message": 25
+        },
+        {
+          "location": "Ice Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            160,
+            40,
+            35,
+            29486,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (below Ice Beam)",
+          "item": "ETank",
+          "visibility": "Hidden",
+          "plm": "0xef7f",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            160,
+            40,
+            35,
+            29486,
+            4103,
+            300
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (lava room)",
+          "item": "XRayScope",
+          "visibility": "Hidden",
+          "plm": "0xefb7",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            160,
+            40,
+            35,
+            62254,
+            4103,
+            300
+          ],
+          "message": 6
+        },
+        {
+          "location": "Missile (above Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            165,
+            40,
+            35,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Crocomire",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            165,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 4
+        },
+        {
+          "location": "Grapple Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            170,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            175,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (below Crocomire)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            175,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Grapple Beam)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            180,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Mickey Mouse room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            185,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Firefleas",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            190,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (lower Norfair above fire flea room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            195,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            200,
+            40,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            200,
+            45,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 3
+        },
+        {
+          "location": "Power Bomb (Power Bombs of shame)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            205,
+            45,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Gold Torizo)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            210,
+            45,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Screw Attack",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            210,
+            45,
+            40,
+            62254,
+            4103,
+            300
+          ],
+          "message": 1
+        },
+        {
+          "location": "Super Missile (Gold Torizo)",
+          "item": "Varia",
+          "visibility": "Hidden",
+          "plm": "0xefaf",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            210,
+            45,
+            40,
+            62255,
+            4103,
+            300
+          ],
+          "message": 7
+        },
+        {
+          "location": "Missile (green Maridia shinespark)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            210,
+            45,
+            40,
+            62255,
+            4103,
+            300
+          ],
+          "message": 1
+        },
+        {
+          "location": "Energy Tank, Botwoon",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            215,
+            45,
+            40,
+            62255,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Draygon)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            215,
+            45,
+            45,
+            62255,
+            4103,
+            300
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (right Maridia sand pit room)",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            215,
+            45,
+            45,
+            62255,
+            4103,
+            400
+          ],
+          "message": 25
+        },
+        {
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            215,
+            50,
+            45,
+            62255,
+            4103,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Reserve Tank, Wrecked Ship",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            215,
+            50,
+            45,
+            62255,
+            4103,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Super Missile (Crateria)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            220,
+            50,
+            45,
+            62255,
+            4103,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Reserve Tank, Brinstar",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            225,
+            50,
+            45,
+            62255,
+            4103,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (green Brinstar top)",
+          "item": "Plasma",
+          "visibility": "Visible",
+          "plm": "0xef13",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            225,
+            50,
+            45,
+            62255,
+            4111,
+            400
+          ],
+          "message": 18
+        },
+        {
+          "location": "Missile (green Brinstar behind missile)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            225,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            225,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Energy Tank, Waterway",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Maridia)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Super Missile (pink Maridia)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Energy Tank, Ridley",
+          "item": "ETank",
+          "visibility": "Hidden",
+          "plm": "0xef7f",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Space Jump",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Plasma Beam",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 1
+        }
+      ]
+    },
+    {
+      "seed": 14092027,
+      "fingerprint": "c255c7de57d2c7ac4b21fb714aa0d35e0555835de60196aeceb901cd1fe2f64d",
+      "skill": "regular",
+      "checks": [
+        {
+          "location": "Morphing Ball",
+          "item": "Morph",
+          "visibility": "Visible",
+          "plm": "0xef23",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 9
+        },
+        {
+          "location": "Missile (blue Brinstar middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (blue Brinstar bottom)",
+          "item": "SpeedBooster",
+          "visibility": "Chozo",
+          "plm": "0xef4b",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            0,
+            0,
+            8196,
+            0,
+            0
+          ],
+          "message": 13
+        },
+        {
+          "location": "Energy Tank, Brinstar Ceiling",
+          "item": "ETank",
+          "visibility": "Hidden",
+          "plm": "0xef7f",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            5,
+            0,
+            0,
+            8196,
+            0,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Bomb",
+          "item": "Bomb",
+          "visibility": "Chozo",
+          "plm": "0xef3b",
+          "stateBefore": 4,
+          "inventory": [
+            199,
+            5,
+            0,
+            0,
+            12292,
+            0,
+            0
+          ],
+          "message": 19
+        },
+        {
+          "location": "Energy Tank, Terminator",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            5,
+            0,
+            0,
+            12292,
+            0,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Crateria bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            10,
+            0,
+            0,
+            12292,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            15,
+            0,
+            0,
+            12292,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Reserve Tank, Brinstar",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            15,
+            0,
+            0,
+            12292,
+            0,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Super Missile (green Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            20,
+            0,
+            0,
+            12292,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Brinstar behind missile)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            25,
+            0,
+            0,
+            12292,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "item": "HiJump",
+          "visibility": "Visible",
+          "plm": "0xeef3",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            25,
+            0,
+            0,
+            12548,
+            0,
+            0
+          ],
+          "message": 11
+        },
+        {
+          "location": "Missile (green Brinstar below super missile)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            25,
+            0,
+            5,
+            12548,
+            0,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Energy Tank, Etecoons",
+          "item": "Charge",
+          "visibility": "Visible",
+          "plm": "0xeeeb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            25,
+            0,
+            5,
+            12548,
+            4096,
+            0
+          ],
+          "message": 14
+        },
+        {
+          "location": "Power Bomb (green Brinstar bottom)",
+          "item": "PowerBomb",
+          "visibility": "Chozo",
+          "plm": "0xef37",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            25,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Charge Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            30,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Brinstar top)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            30,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (pink Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            35,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Waterway",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            40,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (Crateria surface)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            45,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (Crateria)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            45,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Power Bomb (blue Brinstar)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            50,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (blue Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            55,
+            0,
+            10,
+            12548,
+            4096,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (blue Brinstar behind missile)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            55,
+            0,
+            15,
+            12548,
+            4096,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (green Brinstar pipe)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            60,
+            0,
+            15,
+            12548,
+            4096,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Gauntlet",
+          "item": "Spazer",
+          "visibility": "Visible",
+          "plm": "0xeeff",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            60,
+            0,
+            15,
+            12548,
+            4100,
+            0
+          ],
+          "message": 17
+        },
+        {
+          "location": "Missile (Crateria gauntlet right)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            60,
+            5,
+            15,
+            12548,
+            4100,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (Crateria gauntlet left)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            60,
+            5,
+            15,
+            12548,
+            4100,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Crateria moat)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            65,
+            5,
+            15,
+            12548,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            5,
+            15,
+            12548,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (red Brinstar spike room)",
+          "item": "PowerBomb",
+          "visibility": "Chozo",
+          "plm": "0xef37",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            5,
+            20,
+            12548,
+            4100,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (red Brinstar spike room)",
+          "item": "ScrewAttack",
+          "visibility": "Visible",
+          "plm": "0xef1f",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            5,
+            20,
+            12556,
+            4100,
+            0
+          ],
+          "message": 10
+        },
+        {
+          "location": "Spazer",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            10,
+            20,
+            12556,
+            4100,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Hi-Jump Boots",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            15,
+            20,
+            12556,
+            4100,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (Hi-Jump Boots)",
+          "item": "XRayScope",
+          "visibility": "Visible",
+          "plm": "0xef0f",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            15,
+            20,
+            45324,
+            4100,
+            0
+          ],
+          "message": 6
+        },
+        {
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            15,
+            25,
+            45324,
+            4100,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (bubble Norfair)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            15,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (Kraid)",
+          "item": "Super",
+          "visibility": "Hidden",
+          "plm": "0xef87",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            70,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Varia Suit",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            75,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Kraid",
+          "item": "ETank",
+          "visibility": "Hidden",
+          "plm": "0xef7f",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            75,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            80,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Wrecked Ship middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            85,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (pink Brinstar)",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            90,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (pink Brinstar)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            95,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (green Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            100,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Brinstar Gate",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            105,
+            20,
+            30,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (bubble Norfair green door)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            105,
+            20,
+            35,
+            45324,
+            4100,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Speed Booster",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            105,
+            20,
+            35,
+            45324,
+            4100,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Speed Booster)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            110,
+            20,
+            35,
+            45324,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Crocomire",
+          "item": "Grapple",
+          "visibility": "Visible",
+          "plm": "0xef17",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            110,
+            20,
+            35,
+            61708,
+            4100,
+            0
+          ],
+          "message": 5
+        },
+        {
+          "location": "Grapple Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            115,
+            20,
+            35,
+            61708,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            120,
+            20,
+            35,
+            61708,
+            4100,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (below Crocomire)",
+          "item": "Plasma",
+          "visibility": "Visible",
+          "plm": "0xef13",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            120,
+            20,
+            35,
+            61708,
+            4108,
+            0
+          ],
+          "message": 18
+        },
+        {
+          "location": "Missile (Grapple Beam)",
+          "item": "SpringBall",
+          "visibility": "Visible",
+          "plm": "0xef03",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            120,
+            20,
+            35,
+            61710,
+            4108,
+            0
+          ],
+          "message": 8
+        },
+        {
+          "location": "X-Ray Scope",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            125,
+            20,
+            35,
+            61710,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Right Super, Wrecked Ship",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            130,
+            20,
+            35,
+            61710,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (Wrecked Ship left)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            130,
+            20,
+            35,
+            61710,
+            4108,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (outside Wrecked Ship top)",
+          "item": "Gravity",
+          "visibility": "Hidden",
+          "plm": "0xefb3",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            130,
+            20,
+            35,
+            61742,
+            4108,
+            0
+          ],
+          "message": 26
+        },
+        {
+          "location": "Missile (outside Wrecked Ship middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            135,
+            20,
+            35,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Wrecked Ship top)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            135,
+            25,
+            35,
+            61742,
+            4108,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Reserve Tank, Wrecked Ship",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            135,
+            25,
+            35,
+            61742,
+            4108,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Gravity Suit",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            140,
+            25,
+            35,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Gravity Suit)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            140,
+            25,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Energy Tank, Wrecked Ship",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            145,
+            25,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Spring Ball",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            150,
+            25,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Ice Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            155,
+            25,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (below Ice Beam)",
+          "item": "ETank",
+          "visibility": "Hidden",
+          "plm": "0xef7f",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            155,
+            25,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (lava room)",
+          "item": "Super",
+          "visibility": "Hidden",
+          "plm": "0xef87",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            155,
+            30,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Reserve Tank, Norfair",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            160,
+            30,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Norfair Reserve Tank)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            165,
+            30,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Wave Beam",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            165,
+            35,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (Wave Beam)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            170,
+            35,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (above Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            175,
+            35,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Maridia shinespark)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            175,
+            40,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Super Missile (green Maridia)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            175,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (green Maridia tatori)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            180,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Mama turtle",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            185,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (yellow Maridia false wall)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            190,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (yellow Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            195,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (yellow Maridia super missile)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            200,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            205,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (pink Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            210,
+            45,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Botwoon",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            210,
+            50,
+            40,
+            61742,
+            4108,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (Draygon)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            210,
+            50,
+            45,
+            61742,
+            4108,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Reserve Tank, Maridia",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            215,
+            50,
+            45,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (left Maridia sand pit room)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            215,
+            50,
+            50,
+            61742,
+            4108,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (right Maridia sand pit room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            220,
+            50,
+            50,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            225,
+            50,
+            50,
+            61742,
+            4108,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Space Jump",
+          "item": "Reserve",
+          "visibility": "Chozo",
+          "plm": "0xef7b",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            225,
+            50,
+            50,
+            61742,
+            4108,
+            100
+          ],
+          "message": 25
+        },
+        {
+          "location": "Plasma Beam",
+          "item": "SpaceJump",
+          "visibility": "Chozo",
+          "plm": "0xef6f",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            225,
+            50,
+            50,
+            62254,
+            4108,
+            100
+          ],
+          "message": 12
+        },
+        {
+          "location": "Missile (Mickey Mouse room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            230,
+            50,
+            50,
+            62254,
+            4108,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Firefleas",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            230,
+            50,
+            50,
+            62254,
+            4108,
+            200
+          ],
+          "message": 25
+        },
+        {
+          "location": "Missile (lower Norfair above fire flea room)",
+          "item": "Wave",
+          "visibility": "Visible",
+          "plm": "0xeefb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            230,
+            50,
+            50,
+            62254,
+            4109,
+            200
+          ],
+          "message": 16
+        },
+        {
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "item": "Varia",
+          "visibility": "Visible",
+          "plm": "0xef07",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            230,
+            50,
+            50,
+            62255,
+            4109,
+            200
+          ],
+          "message": 7
+        },
+        {
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            230,
+            50,
+            50,
+            62255,
+            4109,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Power Bomb (Power Bombs of shame)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            230,
+            50,
+            50,
+            62255,
+            4109,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Energy Tank, Ridley",
+          "item": "Ice",
+          "visibility": "Hidden",
+          "plm": "0xef97",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            200
+          ],
+          "message": 15
+        },
+        {
+          "location": "Missile (Gold Torizo)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Screw Attack",
+          "item": "Reserve",
+          "visibility": "Chozo",
+          "plm": "0xef7b",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            300
+          ],
+          "message": 25
+        },
+        {
+          "location": "Super Missile (Gold Torizo)",
+          "item": "Reserve",
+          "visibility": "Hidden",
+          "plm": "0xefcf",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 25
+        }
+      ]
+    },
+    {
+      "seed": 14092028,
+      "fingerprint": "56206d82bd2e877ae0f24e009120675b84f08f332cd2f3df9957a4fb8fa20545",
+      "skill": "veteran",
+      "checks": [
+        {
+          "location": "Morphing Ball",
+          "item": "Morph",
+          "visibility": "Visible",
+          "plm": "0xef23",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 9
+        },
+        {
+          "location": "Missile (blue Brinstar middle)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            0,
+            5,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (blue Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            5,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Brinstar Ceiling",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            10,
+            5,
+            0,
+            4,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Bomb",
+          "item": "PowerBomb",
+          "visibility": "Chozo",
+          "plm": "0xef37",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            10,
+            5,
+            5,
+            4,
+            0,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Energy Tank, Terminator",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            15,
+            5,
+            5,
+            4,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria bottom)",
+          "item": "Gravity",
+          "visibility": "Visible",
+          "plm": "0xef0b",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            15,
+            5,
+            5,
+            36,
+            0,
+            0
+          ],
+          "message": 26
+        },
+        {
+          "location": "Missile (Crateria middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            20,
+            5,
+            5,
+            36,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (blue Brinstar)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            20,
+            5,
+            5,
+            36,
+            0,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (blue Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            25,
+            5,
+            5,
+            36,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (blue Brinstar behind missile)",
+          "item": "Ice",
+          "visibility": "Hidden",
+          "plm": "0xef97",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            25,
+            5,
+            5,
+            36,
+            2,
+            0
+          ],
+          "message": 15
+        },
+        {
+          "location": "Missile (Crateria moat)",
+          "item": "Bomb",
+          "visibility": "Visible",
+          "plm": "0xeee7",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            25,
+            5,
+            5,
+            4132,
+            2,
+            0
+          ],
+          "message": 19
+        },
+        {
+          "location": "Power Bomb (Crateria surface)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            25,
+            10,
+            5,
+            4132,
+            2,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (green Brinstar below super missile)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            25,
+            10,
+            5,
+            4132,
+            2,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Energy Tank, Etecoons",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            30,
+            10,
+            5,
+            4132,
+            2,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (green Brinstar bottom)",
+          "item": "Charge",
+          "visibility": "Chozo",
+          "plm": "0xef3f",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            30,
+            10,
+            5,
+            4132,
+            4098,
+            0
+          ],
+          "message": 14
+        },
+        {
+          "location": "Super Missile (green Brinstar bottom)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            30,
+            10,
+            5,
+            4132,
+            4098,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Reserve Tank, Brinstar",
+          "item": "Reserve",
+          "visibility": "Chozo",
+          "plm": "0xef7b",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            30,
+            10,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 25
+        },
+        {
+          "location": "Super Missile (green Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            35,
+            10,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Brinstar behind missile)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            40,
+            10,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            45,
+            10,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Charge Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            50,
+            10,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (pink Brinstar)",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            50,
+            15,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (pink Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            55,
+            15,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            60,
+            15,
+            5,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (pink Brinstar)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            60,
+            15,
+            10,
+            4132,
+            4098,
+            100
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (green Brinstar pipe)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            65,
+            15,
+            10,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "X-Ray Scope",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            70,
+            15,
+            10,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Spazer",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            75,
+            15,
+            10,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            80,
+            15,
+            10,
+            4132,
+            4098,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (red Brinstar spike room)",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            80,
+            20,
+            10,
+            4132,
+            4098,
+            100
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (red Brinstar spike room)",
+          "item": "Wave",
+          "visibility": "Visible",
+          "plm": "0xeefb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            80,
+            20,
+            10,
+            4132,
+            4099,
+            100
+          ],
+          "message": 16
+        },
+        {
+          "location": "Energy Tank, Gauntlet",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            85,
+            20,
+            10,
+            4132,
+            4099,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria gauntlet right)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            85,
+            20,
+            10,
+            4132,
+            4099,
+            100
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Crateria gauntlet left)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            85,
+            25,
+            10,
+            4132,
+            4099,
+            100
+          ],
+          "message": 3
+        },
+        {
+          "location": "Energy Tank, Brinstar Gate",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            90,
+            25,
+            10,
+            4132,
+            4099,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Hi-Jump Boots",
+          "item": "Reserve",
+          "visibility": "Chozo",
+          "plm": "0xef7b",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            90,
+            25,
+            10,
+            4132,
+            4099,
+            200
+          ],
+          "message": 25
+        },
+        {
+          "location": "Missile (Hi-Jump Boots)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            90,
+            25,
+            15,
+            4132,
+            4099,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            90,
+            25,
+            20,
+            4132,
+            4099,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Ice Beam",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            90,
+            25,
+            20,
+            4132,
+            4099,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (below Ice Beam)",
+          "item": "Spazer",
+          "visibility": "Hidden",
+          "plm": "0xefa7",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            90,
+            25,
+            20,
+            4132,
+            4103,
+            200
+          ],
+          "message": 17
+        },
+        {
+          "location": "Reserve Tank, Norfair",
+          "item": "PowerBomb",
+          "visibility": "Chozo",
+          "plm": "0xef37",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            90,
+            25,
+            25,
+            4132,
+            4103,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (Norfair Reserve Tank)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            90,
+            25,
+            30,
+            4132,
+            4103,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (bubble Norfair green door)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            95,
+            25,
+            30,
+            4132,
+            4103,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (bubble Norfair)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            100,
+            25,
+            30,
+            4132,
+            4103,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Speed Booster",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            100,
+            25,
+            30,
+            4132,
+            4103,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Speed Booster)",
+          "item": "SpeedBooster",
+          "visibility": "Hidden",
+          "plm": "0xef9f",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            100,
+            25,
+            30,
+            12324,
+            4103,
+            200
+          ],
+          "message": 13
+        },
+        {
+          "location": "Wave Beam",
+          "item": "PowerBomb",
+          "visibility": "Chozo",
+          "plm": "0xef37",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            100,
+            25,
+            35,
+            12324,
+            4103,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (Wave Beam)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            100,
+            25,
+            35,
+            12324,
+            4103,
+            200
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (lava room)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            100,
+            25,
+            40,
+            12324,
+            4103,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (above Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            105,
+            25,
+            40,
+            12324,
+            4103,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Crocomire",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            110,
+            25,
+            40,
+            12324,
+            4103,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Grapple Beam",
+          "item": "HiJump",
+          "visibility": "Chozo",
+          "plm": "0xef47",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            110,
+            25,
+            40,
+            12580,
+            4103,
+            200
+          ],
+          "message": 11
+        },
+        {
+          "location": "Power Bomb (Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            115,
+            25,
+            40,
+            12580,
+            4103,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (below Crocomire)",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            115,
+            25,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 25
+        },
+        {
+          "location": "Missile (Grapple Beam)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            120,
+            25,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Kraid)",
+          "item": "Super",
+          "visibility": "Hidden",
+          "plm": "0xef87",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            120,
+            30,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 3
+        },
+        {
+          "location": "Varia Suit",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            120,
+            30,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 1
+        },
+        {
+          "location": "Energy Tank, Kraid",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            125,
+            30,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Maridia shinespark)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            130,
+            30,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (green Maridia)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            130,
+            30,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (green Maridia tatori)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            135,
+            30,
+            40,
+            12580,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Mama turtle",
+          "item": "ScrewAttack",
+          "visibility": "Visible",
+          "plm": "0xef1f",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            135,
+            30,
+            40,
+            12588,
+            4103,
+            300
+          ],
+          "message": 10
+        },
+        {
+          "location": "Missile (yellow Maridia false wall)",
+          "item": "XRayScope",
+          "visibility": "Visible",
+          "plm": "0xef0f",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            135,
+            30,
+            40,
+            45356,
+            4103,
+            300
+          ],
+          "message": 6
+        },
+        {
+          "location": "Super Missile (yellow Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            140,
+            30,
+            40,
+            45356,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (yellow Maridia super missile)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            145,
+            30,
+            40,
+            45356,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            150,
+            30,
+            40,
+            45356,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (pink Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            155,
+            30,
+            40,
+            45356,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Botwoon",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            160,
+            30,
+            40,
+            45356,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Draygon)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            165,
+            30,
+            40,
+            45356,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (right Maridia sand pit room)",
+          "item": "Grapple",
+          "visibility": "Visible",
+          "plm": "0xef17",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            165,
+            30,
+            40,
+            61740,
+            4103,
+            300
+          ],
+          "message": 5
+        },
+        {
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            170,
+            30,
+            40,
+            61740,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Spring Ball",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            175,
+            30,
+            40,
+            61740,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Wrecked Ship middle)",
+          "item": "SpaceJump",
+          "visibility": "Visible",
+          "plm": "0xef1b",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            175,
+            30,
+            40,
+            62252,
+            4103,
+            300
+          ],
+          "message": 12
+        },
+        {
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            180,
+            30,
+            40,
+            62252,
+            4103,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Right Super, Wrecked Ship",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            180,
+            30,
+            40,
+            62252,
+            4103,
+            400
+          ],
+          "message": 25
+        },
+        {
+          "location": "Super Missile (Wrecked Ship left)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            180,
+            30,
+            40,
+            62252,
+            4103,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (outside Wrecked Ship top)",
+          "item": "Super",
+          "visibility": "Hidden",
+          "plm": "0xef87",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            180,
+            35,
+            40,
+            62252,
+            4103,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (outside Wrecked Ship middle)",
+          "item": "Varia",
+          "visibility": "Visible",
+          "plm": "0xef07",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            180,
+            35,
+            40,
+            62253,
+            4103,
+            400
+          ],
+          "message": 7
+        },
+        {
+          "location": "Missile (Wrecked Ship top)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            180,
+            35,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 4
+        },
+        {
+          "location": "Reserve Tank, Wrecked Ship",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            185,
+            35,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Gravity Suit",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            185,
+            35,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Gravity Suit)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            185,
+            35,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Energy Tank, Wrecked Ship",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            190,
+            35,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (Crateria)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            195,
+            35,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Waterway",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            195,
+            40,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Reserve Tank, Maridia",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            195,
+            40,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (left Maridia sand pit room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            200,
+            40,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Mickey Mouse room)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            200,
+            45,
+            45,
+            62253,
+            4103,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Energy Tank, Firefleas",
+          "item": "SpringBall",
+          "visibility": "Visible",
+          "plm": "0xef03",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            200,
+            45,
+            45,
+            62255,
+            4103,
+            400
+          ],
+          "message": 8
+        },
+        {
+          "location": "Missile (lower Norfair above fire flea room)",
+          "item": "Plasma",
+          "visibility": "Visible",
+          "plm": "0xef13",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            200,
+            45,
+            45,
+            62255,
+            4111,
+            400
+          ],
+          "message": 18
+        },
+        {
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            200,
+            45,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 4
+        },
+        {
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            205,
+            45,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (Power Bombs of shame)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            210,
+            45,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Ridley",
+          "item": "Super",
+          "visibility": "Hidden",
+          "plm": "0xef87",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            210,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (Gold Torizo)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            215,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Screw Attack",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            220,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (Gold Torizo)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            225,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Space Jump",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Plasma Beam",
+          "item": "ETank",
+          "visibility": "Chozo",
+          "plm": "0xef2b",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 1
+        }
+      ]
+    },
+    {
+      "seed": 14092032,
+      "fingerprint": "f9cc2f3e2a205ad2f62253df56e97419df2a3d7be229b936bfd09bf60240133d",
+      "skill": "casual",
+      "checks": [
+        {
+          "location": "Morphing Ball",
+          "item": "HiJump",
+          "visibility": "Visible",
+          "plm": "0xeef3",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            0,
+            0,
+            0,
+            256,
+            0,
+            0
+          ],
+          "message": 11
+        },
+        {
+          "location": "Energy Tank, Brinstar Ceiling",
+          "item": "Morph",
+          "visibility": "Hidden",
+          "plm": "0xefcb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            0,
+            0,
+            0,
+            260,
+            0,
+            0
+          ],
+          "message": 9
+        },
+        {
+          "location": "Missile (blue Brinstar middle)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            0,
+            0,
+            260,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (blue Brinstar bottom)",
+          "item": "SpeedBooster",
+          "visibility": "Chozo",
+          "plm": "0xef4b",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            0,
+            0,
+            8452,
+            0,
+            0
+          ],
+          "message": 13
+        },
+        {
+          "location": "Energy Tank, Terminator",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            5,
+            0,
+            5,
+            8452,
+            0,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Bomb",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            99,
+            10,
+            0,
+            5,
+            8452,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (Crateria surface)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            10,
+            0,
+            5,
+            8452,
+            0,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Crateria bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            15,
+            0,
+            5,
+            8452,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria middle)",
+          "item": "Gravity",
+          "visibility": "Visible",
+          "plm": "0xef0b",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            15,
+            0,
+            5,
+            8484,
+            0,
+            0
+          ],
+          "message": 26
+        },
+        {
+          "location": "Super Missile (Crateria)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            20,
+            0,
+            5,
+            8484,
+            0,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (blue Brinstar)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            20,
+            0,
+            10,
+            8484,
+            0,
+            0
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (blue Brinstar top)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            199,
+            20,
+            5,
+            10,
+            8484,
+            0,
+            0
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (blue Brinstar behind missile)",
+          "item": "ETank",
+          "visibility": "Hidden",
+          "plm": "0xef7f",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            20,
+            5,
+            10,
+            8484,
+            0,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Crateria moat)",
+          "item": "Wave",
+          "visibility": "Visible",
+          "plm": "0xeefb",
+          "stateBefore": 1,
+          "inventory": [
+            299,
+            20,
+            5,
+            10,
+            8484,
+            1,
+            0
+          ],
+          "message": 16
+        },
+        {
+          "location": "Power Bomb (red Brinstar sidehopper room)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            20,
+            5,
+            10,
+            8484,
+            1,
+            0
+          ],
+          "message": 1
+        },
+        {
+          "location": "Power Bomb (red Brinstar spike room)",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            25,
+            5,
+            10,
+            8484,
+            1,
+            0
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (red Brinstar spike room)",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            25,
+            5,
+            10,
+            8484,
+            1,
+            100
+          ],
+          "message": 25
+        },
+        {
+          "location": "Spazer",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            30,
+            5,
+            10,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Ice Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            35,
+            5,
+            10,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (below Ice Beam)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            35,
+            5,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 4
+        },
+        {
+          "location": "Hi-Jump Boots",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            35,
+            10,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (Hi-Jump Boots)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            40,
+            10,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank (Hi-Jump Boots)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            45,
+            10,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (lava room)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            50,
+            10,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (bubble Norfair)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            55,
+            10,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Speed Booster",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            60,
+            10,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Speed Booster)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            65,
+            10,
+            15,
+            8484,
+            1,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Wave Beam",
+          "item": "Plasma",
+          "visibility": "Chozo",
+          "plm": "0xef67",
+          "stateBefore": 1,
+          "inventory": [
+            399,
+            65,
+            10,
+            15,
+            8484,
+            9,
+            100
+          ],
+          "message": 18
+        },
+        {
+          "location": "Missile (Wave Beam)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            65,
+            10,
+            15,
+            8484,
+            9,
+            100
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (above Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            499,
+            70,
+            10,
+            15,
+            8484,
+            9,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Crocomire",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            70,
+            10,
+            15,
+            8484,
+            9,
+            100
+          ],
+          "message": 1
+        },
+        {
+          "location": "Grapple Beam",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            70,
+            15,
+            15,
+            8484,
+            9,
+            100
+          ],
+          "message": 3
+        },
+        {
+          "location": "Power Bomb (Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            75,
+            15,
+            15,
+            8484,
+            9,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (below Crocomire)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            80,
+            15,
+            15,
+            8484,
+            9,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Grapple Beam)",
+          "item": "SpaceJump",
+          "visibility": "Visible",
+          "plm": "0xef1b",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            80,
+            15,
+            15,
+            8996,
+            9,
+            100
+          ],
+          "message": 12
+        },
+        {
+          "location": "Reserve Tank, Norfair",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            85,
+            15,
+            15,
+            8996,
+            9,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Norfair Reserve Tank)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            90,
+            15,
+            15,
+            8996,
+            9,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (bubble Norfair green door)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            95,
+            15,
+            15,
+            8996,
+            9,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "X-Ray Scope",
+          "item": "PowerBomb",
+          "visibility": "Chozo",
+          "plm": "0xef37",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            95,
+            15,
+            20,
+            8996,
+            9,
+            100
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (green Brinstar pipe)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            95,
+            15,
+            25,
+            8996,
+            9,
+            100
+          ],
+          "message": 4
+        },
+        {
+          "location": "Charge Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            100,
+            15,
+            25,
+            8996,
+            9,
+            100
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Waterway",
+          "item": "ScrewAttack",
+          "visibility": "Visible",
+          "plm": "0xef1f",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            100,
+            15,
+            25,
+            9004,
+            9,
+            100
+          ],
+          "message": 10
+        },
+        {
+          "location": "Energy Tank, Brinstar Gate",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            100,
+            15,
+            25,
+            9004,
+            9,
+            200
+          ],
+          "message": 25
+        },
+        {
+          "location": "Super Missile (pink Brinstar)",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            100,
+            20,
+            25,
+            9004,
+            9,
+            200
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (pink Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            105,
+            20,
+            25,
+            9004,
+            9,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (pink Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            110,
+            20,
+            25,
+            9004,
+            9,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Power Bomb (pink Brinstar)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            115,
+            20,
+            25,
+            9004,
+            9,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Reserve Tank, Brinstar",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            120,
+            20,
+            25,
+            9004,
+            9,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (green Brinstar top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            125,
+            20,
+            25,
+            9004,
+            9,
+            200
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (green Brinstar behind missile)",
+          "item": "Charge",
+          "visibility": "Hidden",
+          "plm": "0xef93",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            125,
+            20,
+            25,
+            9004,
+            4105,
+            200
+          ],
+          "message": 14
+        },
+        {
+          "location": "Missile (green Brinstar behind reserve tank)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            125,
+            20,
+            30,
+            9004,
+            4105,
+            200
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (green Brinstar below super missile)",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            125,
+            20,
+            30,
+            9004,
+            4105,
+            300
+          ],
+          "message": 25
+        },
+        {
+          "location": "Energy Tank, Etecoons",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            125,
+            20,
+            35,
+            9004,
+            4105,
+            300
+          ],
+          "message": 4
+        },
+        {
+          "location": "Power Bomb (green Brinstar bottom)",
+          "item": "Grapple",
+          "visibility": "Chozo",
+          "plm": "0xef6b",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            125,
+            20,
+            35,
+            25388,
+            4105,
+            300
+          ],
+          "message": 5
+        },
+        {
+          "location": "Super Missile (green Brinstar bottom)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            130,
+            20,
+            35,
+            25388,
+            4105,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Gauntlet",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            135,
+            20,
+            35,
+            25388,
+            4105,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria gauntlet right)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            140,
+            20,
+            35,
+            25388,
+            4105,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Crateria gauntlet left)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            145,
+            20,
+            35,
+            25388,
+            4105,
+            300
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (outside Wrecked Ship bottom)",
+          "item": "Reserve",
+          "visibility": "Visible",
+          "plm": "0xef27",
+          "stateBefore": 1,
+          "inventory": [
+            599,
+            145,
+            20,
+            35,
+            25388,
+            4105,
+            400
+          ],
+          "message": 25
+        },
+        {
+          "location": "Missile (Wrecked Ship middle)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            145,
+            20,
+            35,
+            25388,
+            4105,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Right Super, Wrecked Ship",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            150,
+            20,
+            35,
+            25388,
+            4105,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Super Missile (Wrecked Ship left)",
+          "item": "Ice",
+          "visibility": "Visible",
+          "plm": "0xeeef",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            150,
+            20,
+            35,
+            25388,
+            4107,
+            400
+          ],
+          "message": 15
+        },
+        {
+          "location": "Missile (outside Wrecked Ship top)",
+          "item": "PowerBomb",
+          "visibility": "Hidden",
+          "plm": "0xef8b",
+          "stateBefore": 1,
+          "inventory": [
+            699,
+            150,
+            20,
+            40,
+            25388,
+            4107,
+            400
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (outside Wrecked Ship middle)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            150,
+            20,
+            40,
+            25388,
+            4107,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (Wrecked Ship top)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            155,
+            20,
+            40,
+            25388,
+            4107,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Reserve Tank, Wrecked Ship",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            155,
+            25,
+            40,
+            25388,
+            4107,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Gravity Suit",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            160,
+            25,
+            40,
+            25388,
+            4107,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Gravity Suit)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            165,
+            25,
+            40,
+            25388,
+            4107,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Wrecked Ship",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            170,
+            25,
+            40,
+            25388,
+            4107,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Spring Ball",
+          "item": "Spazer",
+          "visibility": "Chozo",
+          "plm": "0xef53",
+          "stateBefore": 1,
+          "inventory": [
+            799,
+            170,
+            25,
+            40,
+            25388,
+            4111,
+            400
+          ],
+          "message": 17
+        },
+        {
+          "location": "Missile (green Maridia shinespark)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            899,
+            170,
+            25,
+            40,
+            25388,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Super Missile (green Maridia)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            170,
+            25,
+            40,
+            25388,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (green Maridia tatori)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            175,
+            25,
+            40,
+            25388,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Mama turtle",
+          "item": "Varia",
+          "visibility": "Visible",
+          "plm": "0xef07",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            175,
+            25,
+            40,
+            25389,
+            4111,
+            400
+          ],
+          "message": 7
+        },
+        {
+          "location": "Missile (yellow Maridia false wall)",
+          "item": "Super",
+          "visibility": "Visible",
+          "plm": "0xeedf",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            175,
+            30,
+            40,
+            25389,
+            4111,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Super Missile (yellow Maridia)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            999,
+            180,
+            30,
+            40,
+            25389,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (yellow Maridia super missile)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1099,
+            180,
+            30,
+            40,
+            25389,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Missile (pink Maridia)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            180,
+            30,
+            40,
+            25389,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Super Missile (pink Maridia)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            180,
+            30,
+            45,
+            25389,
+            4111,
+            400
+          ],
+          "message": 4
+        },
+        {
+          "location": "Energy Tank, Botwoon",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            185,
+            30,
+            45,
+            25389,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Draygon)",
+          "item": "XRayScope",
+          "visibility": "Hidden",
+          "plm": "0xefb7",
+          "stateBefore": 1,
+          "inventory": [
+            1199,
+            185,
+            30,
+            45,
+            58157,
+            4111,
+            400
+          ],
+          "message": 6
+        },
+        {
+          "location": "Missile (right Maridia sand pit room)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            185,
+            30,
+            45,
+            58157,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Power Bomb (right Maridia sand pit room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            190,
+            30,
+            45,
+            58157,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (Kraid)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            195,
+            30,
+            45,
+            58157,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Varia Suit",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            200,
+            30,
+            45,
+            58157,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Kraid",
+          "item": "SpringBall",
+          "visibility": "Hidden",
+          "plm": "0xefab",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            200,
+            30,
+            45,
+            58159,
+            4111,
+            400
+          ],
+          "message": 8
+        },
+        {
+          "location": "Missile (Mickey Mouse room)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            205,
+            30,
+            45,
+            58159,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Firefleas",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            210,
+            30,
+            45,
+            58159,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Missile (lower Norfair above fire flea room)",
+          "item": "PowerBomb",
+          "visibility": "Visible",
+          "plm": "0xeee3",
+          "stateBefore": 1,
+          "inventory": [
+            1299,
+            210,
+            30,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 4
+        },
+        {
+          "location": "Missile (lower Norfair near Wave Beam)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1399,
+            210,
+            30,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Power Bomb (lower Norfair above fire flea room)",
+          "item": "ETank",
+          "visibility": "Visible",
+          "plm": "0xeed7",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            210,
+            30,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 1
+        },
+        {
+          "location": "Power Bomb (Power Bombs of shame)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            215,
+            30,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Energy Tank, Ridley",
+          "item": "Super",
+          "visibility": "Hidden",
+          "plm": "0xef87",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            215,
+            35,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (Gold Torizo)",
+          "item": "Missile",
+          "visibility": "Visible",
+          "plm": "0xeedb",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            220,
+            35,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Screw Attack",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            220,
+            40,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Super Missile (Gold Torizo)",
+          "item": "Missile",
+          "visibility": "Hidden",
+          "plm": "0xef83",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            225,
+            40,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 2
+        },
+        {
+          "location": "Reserve Tank, Maridia",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            225,
+            45,
+            50,
+            58159,
+            4111,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Missile (left Maridia sand pit room)",
+          "item": "Bomb",
+          "visibility": "Visible",
+          "plm": "0xeee7",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            225,
+            45,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 19
+        },
+        {
+          "location": "Space Jump",
+          "item": "Super",
+          "visibility": "Chozo",
+          "plm": "0xef33",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            225,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 3
+        },
+        {
+          "location": "Plasma Beam",
+          "item": "Missile",
+          "visibility": "Chozo",
+          "plm": "0xef2f",
+          "stateBefore": 1,
+          "inventory": [
+            1499,
+            230,
+            50,
+            50,
+            62255,
+            4111,
+            400
+          ],
+          "message": 2
+        }
+      ]
+    }
+  ],
+  "pickups": 400,
+  "cpuOpcodes": 0,
+  "rendering": "Native turbo render-skip after real boot; graphics verified separately by 63 rendered variant tests and ceiling collision capture",
+  "sourceRomUnchanged": true,
+  "scope": "Real C-core frames + embedded oracle + native pause/minimap pixel checks."
+}

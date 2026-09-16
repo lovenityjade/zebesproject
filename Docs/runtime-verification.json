@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-14",
+  "engine": "Unreal Engine 5.8.2",
+  "runtime": "Packaged Linux executable on gaming-pc",
+  "renderer": "Vulkan, NVIDIA GeForce RTX 3060",
+  "nativeGameplay": "C-only; emulated 65816 opcode guard remained zero in every documented scenario",
+  "widescreen": {
+    "world": [
+      400,
+      224
+    ],
+    "integerScaled": true,
+    "hudBackgroundRemoved": true,
+    "minimap": [
+      7,
+      4
+    ],
+    "nativeRooms": 8,
+    "ceresMode7": true,
+    "centerByteExact": true,
+    "optimizedRendererParity": "Widescreen/renderer-parity.json"
+  },
+  "combat": "GamingPC/Unreal/combat-verification.json",
+  "simulationParity": "GamingPC/Combat/native-parity.json",
+  "wallJump": "GamingPC/WallJump/verification.json",
+  "randomizer": "Randomizer/e2e-verification.json",
+  "weather": [
+    "Weather/91f8/verification.json",
+    "GamingPC/Weather/a923/verification.json",
+    "GamingPC/Weather/d48e/verification.json"
+  ],
+  "performance": "GamingPC/Performance.json",
+  "launchOnGamingPc": "/home/nobara-user/Games/SuperMetroid-Unreal/Lancer-Super-Metroid.sh",
+  "testsClosedAutomatically": true,
+  "preservedSettings": {
+    "blend": "Lighten",
+    "opacity": 0.75,
+    "brightness": 1.1,
+    "depth": true,
+    "relief": true,
+    "parallax": false
+  },
+  "sourceCommits": {
+    "native-core": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
+    "supermetroid": "b7785a19024454ef366500243648cb64e687164b",
+    "RandomMetroidSolver": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5"
+  },
+  "limitations": [
+    "Complete seed progression is verified by the solver; native gameplay tests cover targeted boots and pickups, not complete playthroughs.",
+    "Randomizer menus and normal user activation remain deliberately unwired.",
+    "Optional QoL/UI patches marked pending-native are catalogued but not implemented.",
+    "Bosses, transitions and rooms outside documented scenarios still need gameplay traversal."
+  ],
+  "previousPresentationChecks": "runtime-verification-before-night.json"
+}

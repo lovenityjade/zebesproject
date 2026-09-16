@@ -1,0 +1,12 @@
+{
+  "nativeBuild": true,
+  "gameBuild": true,
+  "seed": 14092026,
+  "seedFingerprint": "a6497e12a53954cfd4066b7319e270ea3776dfb0ea8fdd9cbe29c32e877389b6",
+  "matchesWindows": true,
+  "settingsCatalogBytes": 126911,
+  "settingsCatalogSha256": "a7b6a971c4cf99a30411d376369a769253ab0be42b46c74772be10eaaa9ca37b",
+  "settingsCatalogContentUnchanged": true,
+  "testHost": "gaming-pc",
+  "installedPlayerBuildChanged": false
+}

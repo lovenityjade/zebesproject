@@ -1,0 +1,1117 @@
+{
+  "format": "ZOE1",
+  "eventBase": 128,
+  "eventBytes": 33,
+  "events": {
+    "tourian_open_event": 10,
+    "escape_event": 14,
+    "LN_chozo_lowered_acid_event": 12,
+    "kraid_event": 72,
+    "phantoon_event": 88,
+    "draygon_event": 96,
+    "ridley_event": 80,
+    "spospo_event": 73,
+    "botwoon_event": 97,
+    "croc_event": 81,
+    "GT_event": 82,
+    "BT_event": 66,
+    "objectives_completed_event": 10,
+    "all_objectives_completed_event": 160,
+    "objectives_revealed_event": 161,
+    "hunt_over_event": 129,
+    "hunt_started_event": 147,
+    "crateria_cleared_event": 133,
+    "green_brin_cleared_event": 134,
+    "red_brin_cleared_event": 135,
+    "ws_cleared_event": 136,
+    "kraid_cleared_event": 137,
+    "upper_norfair_cleared_event": 138,
+    "croc_cleared_event": 139,
+    "lower_norfair_cleared_event": 140,
+    "west_maridia_cleared_event": 141,
+    "east_maridia_cleared_event": 142,
+    "tourian_cleared_event": 143,
+    "crateria_clear_start_event": 148,
+    "green_brin_clear_start_event": 149,
+    "red_brin_clear_start_event": 150,
+    "ws_clear_start_event": 151,
+    "kraid_clear_start_event": 152,
+    "upper_norfair_clear_start_event": 153,
+    "croc_clear_start_event": 154,
+    "lower_norfair_clear_start_event": 155,
+    "west_maridia_clear_start_event": 156,
+    "east_maridia_clear_start_event": 157,
+    "fish_tickled_event": 130,
+    "orange_geemer_event": 131,
+    "shak_dead_event": 144,
+    "bowling_chozo_event": 145,
+    "king_cac_event": 146,
+    "etecoons_event": 158,
+    "dachora_event": 159,
+    "space_pirates_all_event": 198,
+    "space_pirates_climb_all_event": 217,
+    "space_pirates_pit_room__old_mother_brain_room__all_event": 229,
+    "space_pirates_green_pirates_shaft_all_event": 238,
+    "space_pirates_climb_0_event": 218,
+    "space_pirates_climb_1_event": 219,
+    "space_pirates_climb_2_event": 220,
+    "space_pirates_climb_3_event": 221,
+    "space_pirates_climb_4_event": 222,
+    "space_pirates_climb_5_event": 223,
+    "space_pirates_climb_6_event": 224,
+    "space_pirates_climb_7_event": 225,
+    "space_pirates_climb_8_event": 226,
+    "space_pirates_climb_9_event": 227,
+    "space_pirates_climb_10_event": 228,
+    "space_pirates_pit_room__old_mother_brain_room__0_event": 230,
+    "space_pirates_pit_room__old_mother_brain_room__1_event": 231,
+    "space_pirates_pit_room__old_mother_brain_room__2_event": 232,
+    "space_pirates_pit_room__old_mother_brain_room__3_event": 233,
+    "space_pirates_pit_room__old_mother_brain_room__4_event": 234,
+    "space_pirates_green_pirates_shaft_0_event": 239,
+    "space_pirates_green_pirates_shaft_1_event": 240,
+    "space_pirates_green_pirates_shaft_2_event": 241,
+    "space_pirates_green_pirates_shaft_3_event": 242,
+    "space_pirates_green_pirates_shaft_4_event": 243,
+    "space_pirates_baby_kraid_room_all_event": 294,
+    "space_pirates_baby_kraid_room_0_event": 295,
+    "space_pirates_baby_kraid_room_1_event": 296,
+    "space_pirates_baby_kraid_room_2_event": 297,
+    "space_pirates_crocomire_speedway_all_event": 298,
+    "space_pirates_red_pirate_shaft_all_event": 322,
+    "space_pirates_crocomire_speedway_0_event": 299,
+    "space_pirates_crocomire_speedway_1_event": 300,
+    "space_pirates_crocomire_speedway_2_event": 301,
+    "space_pirates_crocomire_speedway_3_event": 302,
+    "space_pirates_crocomire_speedway_4_event": 303,
+    "space_pirates_red_pirate_shaft_0_event": 323,
+    "space_pirates_red_pirate_shaft_1_event": 324,
+    "space_pirates_red_pirate_shaft_2_event": 325,
+    "space_pirates_fast_pillars_setup_room_all_event": 326,
+    "space_pirates_the_worst_room_in_the_game_all_event": 330,
+    "space_pirates_amphitheatre_all_event": 337,
+    "space_pirates_metal_pirates_room_all_event": 351,
+    "space_pirates_fast_pillars_setup_room_0_event": 327,
+    "space_pirates_fast_pillars_setup_room_1_event": 328,
+    "space_pirates_fast_pillars_setup_room_2_event": 329,
+    "space_pirates_the_worst_room_in_the_game_0_event": 331,
+    "space_pirates_the_worst_room_in_the_game_1_event": 332,
+    "space_pirates_the_worst_room_in_the_game_2_event": 333,
+    "space_pirates_the_worst_room_in_the_game_3_event": 334,
+    "space_pirates_the_worst_room_in_the_game_4_event": 335,
+    "space_pirates_the_worst_room_in_the_game_5_event": 336,
+    "space_pirates_amphitheatre_0_event": 338,
+    "space_pirates_amphitheatre_1_event": 339,
+    "space_pirates_amphitheatre_2_event": 340,
+    "space_pirates_amphitheatre_3_event": 341,
+    "space_pirates_amphitheatre_4_event": 342,
+    "space_pirates_amphitheatre_5_event": 343,
+    "space_pirates_amphitheatre_6_event": 344,
+    "space_pirates_amphitheatre_7_event": 345,
+    "space_pirates_amphitheatre_8_event": 346,
+    "space_pirates_metal_pirates_room_0_event": 352,
+    "space_pirates_metal_pirates_room_1_event": 353,
+    "space_pirates_fish_tank_all_event": 363,
+    "space_pirates_fish_tank_0_event": 364,
+    "space_pirates_fish_tank_1_event": 365,
+    "space_pirates_fish_tank_2_event": 366,
+    "space_pirates_fish_tank_3_event": 367,
+    "space_pirates_plasma_room_all_event": 368,
+    "space_pirates_plasma_room_0_event": 369,
+    "space_pirates_plasma_room_1_event": 370,
+    "space_pirates_plasma_room_2_event": 371,
+    "space_pirates_plasma_room_3_event": 372,
+    "space_pirates_plasma_room_4_event": 373,
+    "space_pirates_plasma_room_5_event": 374,
+    "ki_hunters_all_event": 199,
+    "ki_hunters_crateria_keyhunter_room_all_event": 209,
+    "ki_hunters_crateria_keyhunter_room_0_event": 210,
+    "ki_hunters_crateria_keyhunter_room_1_event": 211,
+    "ki_hunters_spore_spawn_keyhunter_room_all_event": 247,
+    "ki_hunters_spore_spawn_keyhunter_room_0_event": 248,
+    "ki_hunters_spore_spawn_keyhunter_room_1_event": 249,
+    "ki_hunters_spore_spawn_keyhunter_room_2_event": 250,
+    "ki_hunters_warehouse_keyhunter_room_all_event": 289,
+    "ki_hunters_warehouse_keyhunter_room_0_event": 290,
+    "ki_hunters_warehouse_keyhunter_room_1_event": 291,
+    "ki_hunters_warehouse_keyhunter_room_2_event": 292,
+    "ki_hunters_warehouse_keyhunter_room_3_event": 293,
+    "ki_hunters_red_keyhunter_shaft_all_event": 347,
+    "ki_hunters_three_muskateers__room_all_event": 354,
+    "ki_hunters_red_keyhunter_shaft_0_event": 348,
+    "ki_hunters_red_keyhunter_shaft_1_event": 349,
+    "ki_hunters_red_keyhunter_shaft_2_event": 350,
+    "ki_hunters_three_muskateers__room_0_event": 355,
+    "ki_hunters_three_muskateers__room_1_event": 356,
+    "ki_hunters_three_muskateers__room_2_event": 357,
+    "ki_hunters_attic_all_event": 358,
+    "ki_hunters_attic_0_event": 359,
+    "ki_hunters_attic_1_event": 360,
+    "ki_hunters_attic_2_event": 361,
+    "ki_hunters_attic_3_event": 362,
+    "beetoms_all_event": 200,
+    "beetoms_green_pirates_shaft_all_event": 244,
+    "beetoms_green_pirates_shaft_0_event": 245,
+    "beetoms_green_pirates_shaft_1_event": 246,
+    "beetoms_green_brinstar_beetom_room_all_event": 256,
+    "beetoms_etecoon_energy_tank_room_all_event": 261,
+    "beetoms_green_brinstar_beetom_room_0_event": 257,
+    "beetoms_green_brinstar_beetom_room_1_event": 258,
+    "beetoms_green_brinstar_beetom_room_2_event": 259,
+    "beetoms_green_brinstar_beetom_room_3_event": 260,
+    "beetoms_etecoon_energy_tank_room_0_event": 262,
+    "beetoms_etecoon_energy_tank_room_1_event": 263,
+    "beetoms_etecoon_energy_tank_room_2_event": 264,
+    "beetoms_etecoon_energy_tank_room_3_event": 265,
+    "beetoms_etecoon_energy_tank_room_4_event": 266,
+    "beetoms_red_tower_all_event": 267,
+    "beetoms_red_tower_0_event": 268,
+    "beetoms_warehouse_energy_tank_room_all_event": 284,
+    "beetoms_warehouse_energy_tank_room_0_event": 285,
+    "beetoms_warehouse_energy_tank_room_1_event": 286,
+    "beetoms_warehouse_energy_tank_room_2_event": 287,
+    "beetoms_warehouse_energy_tank_room_3_event": 288,
+    "beetoms_frog_speedway_all_event": 315,
+    "beetoms_frog_speedway_0_event": 316,
+    "beetoms_frog_speedway_1_event": 317,
+    "beetoms_frog_speedway_2_event": 318,
+    "beetoms_frog_speedway_3_event": 319,
+    "beetoms_frog_speedway_4_event": 320,
+    "beetoms_frog_speedway_5_event": 321,
+    "cacatacs_all_event": 201,
+    "cacatacs_noob_bridge_all_event": 251,
+    "cacatacs_noob_bridge_0_event": 252,
+    "cacatacs_noob_bridge_1_event": 253,
+    "cacatacs_noob_bridge_2_event": 254,
+    "cacatacs_noob_bridge_3_event": 255,
+    "cacatacs_caterpillar_room_all_event": 273,
+    "cacatacs_below_spazer_all_event": 282,
+    "cacatacs_caterpillar_room_0_event": 274,
+    "cacatacs_caterpillar_room_1_event": 275,
+    "cacatacs_below_spazer_0_event": 283,
+    "cacatacs_crocomire_speedway_all_event": 304,
+    "cacatacs_bubble_mountain_all_event": 307,
+    "cacatacs_crocomire_speedway_0_event": 305,
+    "cacatacs_crocomire_speedway_1_event": 306,
+    "cacatacs_bubble_mountain_0_event": 308,
+    "cacatacs_cactus_alley__west__all_event": 378,
+    "cacatacs_cactus_alley__east__all_event": 383,
+    "cacatacs_cactus_alley__west__0_event": 379,
+    "cacatacs_cactus_alley__west__1_event": 380,
+    "cacatacs_cactus_alley__west__2_event": 381,
+    "cacatacs_cactus_alley__west__3_event": 382,
+    "cacatacs_cactus_alley__east__0_event": 384,
+    "cacatacs_cactus_alley__east__1_event": 385,
+    "cacatacs_cactus_alley__east__2_event": 386,
+    "cacatacs_cactus_alley__east__3_event": 387,
+    "cacatacs_cactus_alley__east__4_event": 388,
+    "cacatacs_cactus_alley__east__5_event": 389,
+    "kagos_all_event": 202,
+    "kagos_forgotten_highway_kago_room_all_event": 212,
+    "kagos_forgotten_highway_kago_room_0_event": 213,
+    "kagos_forgotten_highway_kago_room_1_event": 214,
+    "kagos_lower_mushrooms_all_event": 235,
+    "kagos_lower_mushrooms_0_event": 236,
+    "kagos_lower_mushrooms_1_event": 237,
+    "kagos_double_chamber_all_event": 309,
+    "kagos_double_chamber_0_event": 310,
+    "yapping_maws_all_event": 203,
+    "yapping_maws_gauntlet_entrance_all_event": 204,
+    "yapping_maws_gauntlet_energy_tank_room_all_event": 215,
+    "yapping_maws_gauntlet_entrance_0_event": 205,
+    "yapping_maws_gauntlet_entrance_1_event": 206,
+    "yapping_maws_gauntlet_entrance_2_event": 207,
+    "yapping_maws_gauntlet_entrance_3_event": 208,
+    "yapping_maws_gauntlet_energy_tank_room_0_event": 216,
+    "yapping_maws_red_brinstar_fireflea_room_all_event": 269,
+    "yapping_maws_beta_power_bomb_room_all_event": 276,
+    "yapping_maws_below_spazer_all_event": 279,
+    "yapping_maws_red_brinstar_fireflea_room_0_event": 270,
+    "yapping_maws_red_brinstar_fireflea_room_1_event": 271,
+    "yapping_maws_red_brinstar_fireflea_room_2_event": 272,
+    "yapping_maws_beta_power_bomb_room_0_event": 277,
+    "yapping_maws_beta_power_bomb_room_1_event": 278,
+    "yapping_maws_below_spazer_0_event": 280,
+    "yapping_maws_below_spazer_1_event": 281,
+    "yapping_maws_spiky_acid_snakes_tunnel_all_event": 311,
+    "yapping_maws_spiky_acid_snakes_tunnel_0_event": 312,
+    "yapping_maws_spiky_acid_snakes_tunnel_1_event": 313,
+    "yapping_maws_spiky_acid_snakes_tunnel_2_event": 314,
+    "yapping_maws_bug_sand_hole_all_event": 375,
+    "yapping_maws_bug_sand_hole_0_event": 376,
+    "yapping_maws_bug_sand_hole_1_event": 377
+  },
+  "enemies": [
+    {
+      "population": 35017,
+      "event": 218,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35033,
+      "event": 219,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35049,
+      "event": 220,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35065,
+      "event": 221,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35081,
+      "event": 222,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35097,
+      "event": 223,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35113,
+      "event": 224,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35129,
+      "event": 225,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35145,
+      "event": 226,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35161,
+      "event": 227,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 35177,
+      "event": 228,
+      "type": 0,
+      "roomEvent": 217
+    },
+    {
+      "population": 33831,
+      "event": 230,
+      "type": 0,
+      "roomEvent": 229
+    },
+    {
+      "population": 33847,
+      "event": 231,
+      "type": 0,
+      "roomEvent": 229
+    },
+    {
+      "population": 33863,
+      "event": 232,
+      "type": 0,
+      "roomEvent": 229
+    },
+    {
+      "population": 33879,
+      "event": 233,
+      "type": 0,
+      "roomEvent": 229
+    },
+    {
+      "population": 33895,
+      "event": 234,
+      "type": 0,
+      "roomEvent": 229
+    },
+    {
+      "population": 34048,
+      "event": 239,
+      "type": 0,
+      "roomEvent": 238
+    },
+    {
+      "population": 34064,
+      "event": 240,
+      "type": 0,
+      "roomEvent": 238
+    },
+    {
+      "population": 34080,
+      "event": 241,
+      "type": 0,
+      "roomEvent": 238
+    },
+    {
+      "population": 34096,
+      "event": 242,
+      "type": 0,
+      "roomEvent": 238
+    },
+    {
+      "population": 34112,
+      "event": 243,
+      "type": 0,
+      "roomEvent": 238
+    },
+    {
+      "population": 41146,
+      "event": 295,
+      "type": 0,
+      "roomEvent": 294
+    },
+    {
+      "population": 41162,
+      "event": 296,
+      "type": 0,
+      "roomEvent": 294
+    },
+    {
+      "population": 41178,
+      "event": 297,
+      "type": 0,
+      "roomEvent": 294
+    },
+    {
+      "population": 43482,
+      "event": 299,
+      "type": 0,
+      "roomEvent": 298
+    },
+    {
+      "population": 43514,
+      "event": 300,
+      "type": 0,
+      "roomEvent": 298
+    },
+    {
+      "population": 43546,
+      "event": 301,
+      "type": 0,
+      "roomEvent": 298
+    },
+    {
+      "population": 43594,
+      "event": 302,
+      "type": 0,
+      "roomEvent": 298
+    },
+    {
+      "population": 43610,
+      "event": 303,
+      "type": 0,
+      "roomEvent": 298
+    },
+    {
+      "population": 43367,
+      "event": 323,
+      "type": 0,
+      "roomEvent": 322
+    },
+    {
+      "population": 43383,
+      "event": 324,
+      "type": 0,
+      "roomEvent": 322
+    },
+    {
+      "population": 43399,
+      "event": 325,
+      "type": 0,
+      "roomEvent": 322
+    },
+    {
+      "population": 42225,
+      "event": 327,
+      "type": 0,
+      "roomEvent": 326
+    },
+    {
+      "population": 42241,
+      "event": 328,
+      "type": 0,
+      "roomEvent": 326
+    },
+    {
+      "population": 42257,
+      "event": 329,
+      "type": 0,
+      "roomEvent": 326
+    },
+    {
+      "population": 43070,
+      "event": 331,
+      "type": 0,
+      "roomEvent": 330
+    },
+    {
+      "population": 43086,
+      "event": 332,
+      "type": 0,
+      "roomEvent": 330
+    },
+    {
+      "population": 43102,
+      "event": 333,
+      "type": 0,
+      "roomEvent": 330
+    },
+    {
+      "population": 43134,
+      "event": 334,
+      "type": 0,
+      "roomEvent": 330
+    },
+    {
+      "population": 43166,
+      "event": 335,
+      "type": 0,
+      "roomEvent": 330
+    },
+    {
+      "population": 43214,
+      "event": 336,
+      "type": 0,
+      "roomEvent": 330
+    },
+    {
+      "population": 44788,
+      "event": 338,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44804,
+      "event": 339,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44820,
+      "event": 340,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44836,
+      "event": 341,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44852,
+      "event": 342,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44868,
+      "event": 343,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44884,
+      "event": 344,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44900,
+      "event": 345,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 44916,
+      "event": 346,
+      "type": 0,
+      "roomEvent": 337
+    },
+    {
+      "population": 41497,
+      "event": 352,
+      "type": 0,
+      "roomEvent": 351
+    },
+    {
+      "population": 41513,
+      "event": 353,
+      "type": 0,
+      "roomEvent": 351
+    },
+    {
+      "population": 57519,
+      "event": 364,
+      "type": 0,
+      "roomEvent": 363
+    },
+    {
+      "population": 57535,
+      "event": 365,
+      "type": 0,
+      "roomEvent": 363
+    },
+    {
+      "population": 57551,
+      "event": 366,
+      "type": 0,
+      "roomEvent": 363
+    },
+    {
+      "population": 57567,
+      "event": 367,
+      "type": 0,
+      "roomEvent": 363
+    },
+    {
+      "population": 54253,
+      "event": 369,
+      "type": 0,
+      "roomEvent": 368
+    },
+    {
+      "population": 54269,
+      "event": 370,
+      "type": 0,
+      "roomEvent": 368
+    },
+    {
+      "population": 54285,
+      "event": 371,
+      "type": 0,
+      "roomEvent": 368
+    },
+    {
+      "population": 54301,
+      "event": 372,
+      "type": 0,
+      "roomEvent": 368
+    },
+    {
+      "population": 54317,
+      "event": 373,
+      "type": 0,
+      "roomEvent": 368
+    },
+    {
+      "population": 54333,
+      "event": 374,
+      "type": 0,
+      "roomEvent": 368
+    },
+    {
+      "population": 36633,
+      "event": 210,
+      "type": 1,
+      "roomEvent": 209
+    },
+    {
+      "population": 36665,
+      "event": 211,
+      "type": 1,
+      "roomEvent": 209
+    },
+    {
+      "population": 36805,
+      "event": 248,
+      "type": 1,
+      "roomEvent": 247
+    },
+    {
+      "population": 36837,
+      "event": 249,
+      "type": 1,
+      "roomEvent": 247
+    },
+    {
+      "population": 36869,
+      "event": 250,
+      "type": 1,
+      "roomEvent": 247
+    },
+    {
+      "population": 39159,
+      "event": 290,
+      "type": 1,
+      "roomEvent": 289
+    },
+    {
+      "population": 39191,
+      "event": 291,
+      "type": 1,
+      "roomEvent": 289
+    },
+    {
+      "population": 39223,
+      "event": 292,
+      "type": 1,
+      "roomEvent": 289
+    },
+    {
+      "population": 39255,
+      "event": 293,
+      "type": 1,
+      "roomEvent": 289
+    },
+    {
+      "population": 42024,
+      "event": 348,
+      "type": 1,
+      "roomEvent": 347
+    },
+    {
+      "population": 42056,
+      "event": 349,
+      "type": 1,
+      "roomEvent": 347
+    },
+    {
+      "population": 42088,
+      "event": 350,
+      "type": 1,
+      "roomEvent": 347
+    },
+    {
+      "population": 47755,
+      "event": 355,
+      "type": 1,
+      "roomEvent": 354
+    },
+    {
+      "population": 47787,
+      "event": 356,
+      "type": 1,
+      "roomEvent": 354
+    },
+    {
+      "population": 47819,
+      "event": 357,
+      "type": 1,
+      "roomEvent": 354
+    },
+    {
+      "population": 49126,
+      "event": 359,
+      "type": 1,
+      "roomEvent": 358
+    },
+    {
+      "population": 49158,
+      "event": 360,
+      "type": 1,
+      "roomEvent": 358
+    },
+    {
+      "population": 49190,
+      "event": 361,
+      "type": 1,
+      "roomEvent": 358
+    },
+    {
+      "population": 49286,
+      "event": 362,
+      "type": 1,
+      "roomEvent": 358
+    },
+    {
+      "population": 34128,
+      "event": 245,
+      "type": 2,
+      "roomEvent": 244
+    },
+    {
+      "population": 34144,
+      "event": 246,
+      "type": 2,
+      "roomEvent": 244
+    },
+    {
+      "population": 38709,
+      "event": 257,
+      "type": 2,
+      "roomEvent": 256
+    },
+    {
+      "population": 38725,
+      "event": 258,
+      "type": 2,
+      "roomEvent": 256
+    },
+    {
+      "population": 38741,
+      "event": 259,
+      "type": 2,
+      "roomEvent": 256
+    },
+    {
+      "population": 38757,
+      "event": 260,
+      "type": 2,
+      "roomEvent": 256
+    },
+    {
+      "population": 38824,
+      "event": 262,
+      "type": 2,
+      "roomEvent": 261
+    },
+    {
+      "population": 38840,
+      "event": 263,
+      "type": 2,
+      "roomEvent": 261
+    },
+    {
+      "population": 38856,
+      "event": 264,
+      "type": 2,
+      "roomEvent": 261
+    },
+    {
+      "population": 38872,
+      "event": 265,
+      "type": 2,
+      "roomEvent": 261
+    },
+    {
+      "population": 38888,
+      "event": 266,
+      "type": 2,
+      "roomEvent": 261
+    },
+    {
+      "population": 38034,
+      "event": 268,
+      "type": 2,
+      "roomEvent": 267
+    },
+    {
+      "population": 39054,
+      "event": 285,
+      "type": 2,
+      "roomEvent": 284
+    },
+    {
+      "population": 39070,
+      "event": 286,
+      "type": 2,
+      "roomEvent": 284
+    },
+    {
+      "population": 39086,
+      "event": 287,
+      "type": 2,
+      "roomEvent": 284
+    },
+    {
+      "population": 39102,
+      "event": 288,
+      "type": 2,
+      "roomEvent": 284
+    },
+    {
+      "population": 42565,
+      "event": 316,
+      "type": 2,
+      "roomEvent": 315
+    },
+    {
+      "population": 42581,
+      "event": 317,
+      "type": 2,
+      "roomEvent": 315
+    },
+    {
+      "population": 42597,
+      "event": 318,
+      "type": 2,
+      "roomEvent": 315
+    },
+    {
+      "population": 42613,
+      "event": 319,
+      "type": 2,
+      "roomEvent": 315
+    },
+    {
+      "population": 42629,
+      "event": 320,
+      "type": 2,
+      "roomEvent": 315
+    },
+    {
+      "population": 42645,
+      "event": 321,
+      "type": 2,
+      "roomEvent": 315
+    },
+    {
+      "population": 37539,
+      "event": 252,
+      "type": 3,
+      "roomEvent": 251
+    },
+    {
+      "population": 37555,
+      "event": 253,
+      "type": 3,
+      "roomEvent": 251
+    },
+    {
+      "population": 37571,
+      "event": 254,
+      "type": 3,
+      "roomEvent": 251
+    },
+    {
+      "population": 37587,
+      "event": 255,
+      "type": 3,
+      "roomEvent": 251
+    },
+    {
+      "population": 41111,
+      "event": 274,
+      "type": 3,
+      "roomEvent": 273
+    },
+    {
+      "population": 41127,
+      "event": 275,
+      "type": 3,
+      "roomEvent": 273
+    },
+    {
+      "population": 38404,
+      "event": 283,
+      "type": 3,
+      "roomEvent": 282
+    },
+    {
+      "population": 43626,
+      "event": 305,
+      "type": 3,
+      "roomEvent": 304
+    },
+    {
+      "population": 43642,
+      "event": 306,
+      "type": 3,
+      "roomEvent": 304
+    },
+    {
+      "population": 46152,
+      "event": 308,
+      "type": 3,
+      "roomEvent": 307
+    },
+    {
+      "population": 57305,
+      "event": 379,
+      "type": 3,
+      "roomEvent": 378
+    },
+    {
+      "population": 57321,
+      "event": 380,
+      "type": 3,
+      "roomEvent": 378
+    },
+    {
+      "population": 57337,
+      "event": 381,
+      "type": 3,
+      "roomEvent": 378
+    },
+    {
+      "population": 57353,
+      "event": 382,
+      "type": 3,
+      "roomEvent": 378
+    },
+    {
+      "population": 57372,
+      "event": 384,
+      "type": 3,
+      "roomEvent": 383
+    },
+    {
+      "population": 57388,
+      "event": 385,
+      "type": 3,
+      "roomEvent": 383
+    },
+    {
+      "population": 57404,
+      "event": 386,
+      "type": 3,
+      "roomEvent": 383
+    },
+    {
+      "population": 57420,
+      "event": 387,
+      "type": 3,
+      "roomEvent": 383
+    },
+    {
+      "population": 57436,
+      "event": 388,
+      "type": 3,
+      "roomEvent": 383
+    },
+    {
+      "population": 57452,
+      "event": 389,
+      "type": 3,
+      "roomEvent": 383
+    },
+    {
+      "population": 35646,
+      "event": 213,
+      "type": 4,
+      "roomEvent": 212
+    },
+    {
+      "population": 35662,
+      "event": 214,
+      "type": 4,
+      "roomEvent": 212
+    },
+    {
+      "population": 35786,
+      "event": 236,
+      "type": 4,
+      "roomEvent": 235
+    },
+    {
+      "population": 35802,
+      "event": 237,
+      "type": 4,
+      "roomEvent": 235
+    },
+    {
+      "population": 43329,
+      "event": 310,
+      "type": 4,
+      "roomEvent": 309
+    },
+    {
+      "population": 33914,
+      "event": 205,
+      "type": 5,
+      "roomEvent": 204
+    },
+    {
+      "population": 33930,
+      "event": 206,
+      "type": 5,
+      "roomEvent": 204
+    },
+    {
+      "population": 33946,
+      "event": 207,
+      "type": 5,
+      "roomEvent": 204
+    },
+    {
+      "population": 34010,
+      "event": 208,
+      "type": 5,
+      "roomEvent": 204
+    },
+    {
+      "population": 35314,
+      "event": 216,
+      "type": 5,
+      "roomEvent": 215
+    },
+    {
+      "population": 39827,
+      "event": 270,
+      "type": 5,
+      "roomEvent": 269
+    },
+    {
+      "population": 39843,
+      "event": 271,
+      "type": 5,
+      "roomEvent": 269
+    },
+    {
+      "population": 39859,
+      "event": 272,
+      "type": 5,
+      "roomEvent": 269
+    },
+    {
+      "population": 37063,
+      "event": 277,
+      "type": 5,
+      "roomEvent": 276
+    },
+    {
+      "population": 37079,
+      "event": 278,
+      "type": 5,
+      "roomEvent": 276
+    },
+    {
+      "population": 38372,
+      "event": 280,
+      "type": 5,
+      "roomEvent": 279
+    },
+    {
+      "population": 38388,
+      "event": 281,
+      "type": 5,
+      "roomEvent": 279
+    },
+    {
+      "population": 41973,
+      "event": 312,
+      "type": 5,
+      "roomEvent": 311
+    },
+    {
+      "population": 41989,
+      "event": 313,
+      "type": 5,
+      "roomEvent": 311
+    },
+    {
+      "population": 42005,
+      "event": 314,
+      "type": 5,
+      "roomEvent": 311
+    },
+    {
+      "population": 57136,
+      "event": 376,
+      "type": 5,
+      "roomEvent": 375
+    },
+    {
+      "population": 57168,
+      "event": 377,
+      "type": 5,
+      "roomEvent": 375
+    }
+  ],
+  "sha256": "28e45407171cebf37c19c60e6425751e658e3ff3487599174907648ac3108778"
+}

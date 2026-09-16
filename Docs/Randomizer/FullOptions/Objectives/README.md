@@ -1,0 +1,34 @@
+# General objectives — native event foundation
+
+The newer [native conditions and Tourian checkpoint](Conditions/README.md) and [generation/profile binding](Binding/README.md) build on this event foundation. Nondefault goal solver/tracker/UI activation remains unfinished.
+
+The full objective integration remains in progress. This checkpoint implements the persistent evidence used by special-interaction and enemy-family goals. It does not enable general goals in generation, replace the G4 endgame gate, or add their pause/tracker presentation yet. Existing unsupported-mode guards remain in place.
+
+## Source identities and native execution
+
+`Scripts/build-objective-events.py` reads the pinned VARIA `event_list.asm`, `enemies_events.asm`, `objectives/enemies.asm`, the original objective code and metadata. `events-audit.json` records all 59 goal definitions (including the internal Scavenger goal), original event IDs, 145 individually identified enemy population records, room/type membership, and exact original AI targets. There is no new artwork and no emulated patch code.
+
+The generated `sm_objective_events.inc` preserves the original event identities. Native `InitializeEnemies` and `SpawnEnemy` apply VARIA's source extra-property tags to the selected population entry in randomized sessions. The compiler checks every original property word and source index; Vanilla keeps its original properties. `EnemyDeathAnimation` records the corresponding event before clearing the enemy structure. Repeated deaths of the same population member do not count again. Room-completion and enemy-family events derive from those unique members. The six families are Space Pirates, Ki Hunters, Beetoms, Cacatacs, Kagos and Yapping Maws. The current totals cover the full world; Minimizer/escape filtering still needs effective per-seed masks before those modes can be enabled.
+
+The native `CallEnemyAi` wrapper invokes the original dispatcher exactly once, then observes the exact source-defined interaction calls for red fish, orange geemer, Shaktool and King Cacatac. Enemy headers are derived from the patched `EnemyDef` field offsets and checked against their original initialization routines. Original zero Power Bomb AI fields resolve to the original bank-specific `$8037` fallback. Room and health checks match VARIA, including orange geemer's special enemy-zero health check. Other AI calls cannot mark these events. The original bowling Chozo animation records its event when control is returned, and native Brinstar exploration records the Etecoons/Dachora visits without granting map knowledge or changing geometry.
+
+These are gameplay facts, not completed objective flags. A later configured objective evaluator must decide which facts satisfy this seed's active goals and required count. In particular, existing statistics such as total kills are not substitutes for population identity.
+
+## Persistence
+
+Custom events occupy a 33-byte bitmap with a `ZOE1` signature at `$180` of the existing 1,280-byte compressed-map save field. This is disjoint from original map data (`0..326`) and the `ZME1` portal extension (`$150..$154`). Standard native SRAM save/load, checksums and slot copies already cover the complete field. Original events and boss bits remain in their original locations. No sidecar is required and no old slot offset changes. `Randomizer/native_objective_events.json` locks the event/population identity catalog for `ZOE1`; the compiler refuses a changed identity layout until an explicit format migration is provided.
+
+A historical file without `ZOE1` supplies no invented enemy/interactions history; its bitmap starts when the first new fact is observed. Existing immutable seeds currently use their original G4/relic completion rules, so unknown historical meme/enemy progress does not change their endgame. Switching Vanilla does not interpret or write the custom event extension.
+
+## Validation checkpoint
+
+Native compilation passes. On isolated gaming-pc, `test-native-objective-events.py` exercises all 145 original death-routine records and 145 repeat deaths, all room/type completion flags, 44 exact original-vs-wrapped AI calls, bowling/animal events, native checksummed A/B/C saves with six out-of-order reloads, historical data without the signature and Vanilla guards. A real native Climb room load checks all 11 source-tagged pirates. Separate Red Fish and Bubble Mountain loads invoke the real fish-grapple and Cacatac contact handlers on enemies obtained from those room populations, without substituting headers. The fixture must set the ordinary Zebes-awake event: the initial sleeping-Zebes state correctly has no such population. Zero emulated CPU opcodes execute and the ROM file remains unchanged.
+
+The final candidate also passes the complete native map/exploration suite, 3,394 source-pixel comparisons, live tracker and mixed-bank regressions, all 40 collision-driven transitions across five generated seeds with save/reload, and an inspected Vulkan native pause/navigation/resume run. `Proofs/build-hashes.json` binds every suite and the unchanged Unreal executable to the final native library. Only the isolated gaming-pc runtime was staged; the local package, frozen Save Refill release and pristine upstreams remain unchanged. These tests are controlled native fixtures, not a manual full-goal playthrough or verification of an enabled general-objective seed.
+
+## Next required work
+
+1. Capture VARIA's effective active goals, required count, item totals/upgrade masks, per-region split lists, map thresholds and filtered enemy membership into a versioned native per-slot descriptor. Carry it through generation, profile parsing, activation, copy/reload and old-save defaults. The current context already records goal names/count but is not this complete contract.
+2. Implement evaluation and latching for all goal families, Scavenger order and partial progress. Use `sm_map_exploration_value` and the events/unique enemy records; do not infer completion from icon visibility or global kill totals. Bind G4-statue/Tourian and automatic-escape behavior to the effective mode, retaining Chozo Tablet hunt semantics.
+3. Replace the `Objectives().setVanilla()` assumptions in `sm_validation.py` and `sm_live_tracker.py` when general goals are enabled. Fresh solver progression, live tracker availability and the serialized native goal descriptor must agree. `sm_tracker_data.py` also needs its hardcoded G4/MB/ship goal list replaced for nonstandard completion.
+4. Draw the original VARIA objectives screen/progress and map/boss icons in the native pause UI. Respect hidden/distributed objectives and required-vs-total counts. Finish mirror/Minimizer/Tourian/escape/race and remaining patches rather than weakening their guards or declaring partial parity complete.

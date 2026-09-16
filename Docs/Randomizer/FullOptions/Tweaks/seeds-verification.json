@@ -1,0 +1,122 @@
+[
+  {
+    "seed": 15092200,
+    "selection": [],
+    "checks": 100,
+    "world": {
+      "catalogSha256": "03f697bd736d649d40d3ee33eccf62940cb3de3346404d94c9476df4e6ce18dc",
+      "dataPatchIds": [],
+      "dataPatches": [],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        50
+      ],
+      "startSpawn": 0
+    },
+    "logicPatches": [
+      10,
+      22
+    ]
+  },
+  {
+    "seed": 15092201,
+    "selection": [
+      "bomb_torizo"
+    ],
+    "checks": 100,
+    "world": {
+      "catalogSha256": "03f697bd736d649d40d3ee33eccf62940cb3de3346404d94c9476df4e6ce18dc",
+      "dataPatchIds": [
+        41
+      ],
+      "dataPatches": [
+        "bomb_torizo.ips"
+      ],
+      "nativeCode": [
+        "bomb_torizo.ips"
+      ],
+      "schema": 1,
+      "startDoors": [
+        50
+      ],
+      "startSpawn": 0
+    },
+    "logicPatches": [
+      10,
+      22,
+      1008
+    ]
+  },
+  {
+    "seed": 15092202,
+    "selection": [
+      "LN_Chozo"
+    ],
+    "checks": 100,
+    "world": {
+      "catalogSha256": "03f697bd736d649d40d3ee33eccf62940cb3de3346404d94c9476df4e6ce18dc",
+      "dataPatchIds": [
+        40,
+        39
+      ],
+      "dataPatches": [
+        "LN_Chozo_SpaceJump_Check_Disable",
+        "ln_chozo_platform.ips"
+      ],
+      "nativeCode": [
+        "LN_Chozo_SpaceJump_Check_Disable"
+      ],
+      "schema": 1,
+      "startDoors": [
+        50
+      ],
+      "startSpawn": 0
+    },
+    "logicPatches": [
+      10,
+      22,
+      1002
+    ]
+  },
+  {
+    "seed": 15092203,
+    "selection": [
+      "WS_Etank",
+      "LN_Chozo",
+      "bomb_torizo"
+    ],
+    "checks": 100,
+    "world": {
+      "catalogSha256": "03f697bd736d649d40d3ee33eccf62940cb3de3346404d94c9476df4e6ce18dc",
+      "dataPatchIds": [
+        4,
+        40,
+        39,
+        41
+      ],
+      "dataPatches": [
+        "WS_Etank",
+        "LN_Chozo_SpaceJump_Check_Disable",
+        "ln_chozo_platform.ips",
+        "bomb_torizo.ips"
+      ],
+      "nativeCode": [
+        "LN_Chozo_SpaceJump_Check_Disable",
+        "bomb_torizo.ips"
+      ],
+      "schema": 1,
+      "startDoors": [
+        50
+      ],
+      "startSpawn": 0
+    },
+    "logicPatches": [
+      10,
+      22,
+      1001,
+      1002,
+      1008
+    ]
+  }
+]

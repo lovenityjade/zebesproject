@@ -1,0 +1,47 @@
+name: Bug report
+description: Report an alpha gameplay, logic, display or installation issue.
+title: "[ALPHA-0.24] "
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not attach a ROM, downloaded music, credentials or private player data."
+  - type: input
+    id: version
+    attributes:
+      label: Game version and build
+      placeholder: ALPHA-0.24
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system, GPU and graphics driver
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Vanilla
+        - Randomizer
+        - New Game+
+        - Front end / setup
+    validations:
+      required: true
+  - type: textarea
+    id: seed
+    attributes:
+      label: Seed and settings string
+      description: Include the logic/combat profile for randomizer accessibility issues. No ROM files.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behavior and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, clip or minimal redacted log
+      description: Mention controller/keyboard inputs and whether this happens after loading an existing save.

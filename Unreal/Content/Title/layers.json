@@ -1,0 +1,254 @@
+{
+  "chozo": {
+    "file": "chozo.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "crop": [
+      70,
+      12,
+      977,
+      1513
+    ],
+    "sha256": "91d5ccd6c56f9032c803f36a2eaa2417e4787d1a4154b422f4a64ffe0f762a6e"
+  },
+  "brain": {
+    "file": "brain.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      100,
+      12,
+      1349,
+      1072
+    ],
+    "sha256": "88f0afa41873a34f9486e53af97391c43f82c428be73598bd1c0bdc022c60361"
+  },
+  "kraid": {
+    "file": "kraid.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      154,
+      7,
+      1431,
+      1078
+    ],
+    "sha256": "cc70288b7d5570c3992705ad40d2344738b4f810a3eb337d92d7e39b28822f13"
+  },
+  "frontWide": {
+    "file": "frontWide.png",
+    "size": [
+      1672,
+      941
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "sha256": "e3e8f794a827060d6b8a25a8584f9a77b45e4b6cb89bb1b96a8ed9a99b1e38e8"
+  },
+  "samus": {
+    "file": "samus.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "crop": [
+      274,
+      72,
+      795,
+      1486
+    ],
+    "sha256": "789819d1a16b70b3e8f29c3c8800824d50ede218856e0fe868f2c44b66f6c03b"
+  },
+  "skyClassic": {
+    "file": "skyClassic.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      0,
+      0,
+      1448,
+      1086
+    ],
+    "sha256": "2e05b45c47e8b96923c16fdba7c66e7097bf216b504f132cfea4b7f9b337fb71"
+  },
+  "midClassic": {
+    "file": "midClassic.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      0,
+      0,
+      1448,
+      1086
+    ],
+    "sha256": "69accaebe1fa7f25a4106db73ad11223ec05a54eb96b963828d09f388b6e38f2"
+  },
+  "skyWide": {
+    "file": "skyWide.png",
+    "size": [
+      1672,
+      941
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "sha256": "38e1e0c835ebac9b90b2dd6ed9bb00e7e4296a606f65487c9dc7a75564a8bf07"
+  },
+  "midWide": {
+    "file": "midWide.png",
+    "size": [
+      1672,
+      941
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "sha256": "cda9f1669e956e81ec3ae4a16d883c8e96c359a207aef5dcbe9006e96acb8a51"
+  },
+  "frontClassic": {
+    "file": "frontClassic.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      0,
+      0,
+      1448,
+      1086
+    ],
+    "sha256": "9c18018697aa5bd0194b15a43b6756f05d48223b42984bb2e9f2703c31a18fdf"
+  },
+  "ridley": {
+    "file": "ridley.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      115,
+      16,
+      1417,
+      1073
+    ],
+    "sha256": "8011b764a4dc6f62618051f168b67e55860043d4ac2d9c08f87152b07a6c4cfe"
+  },
+  "phantoon": {
+    "file": "phantoon.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "crop": [
+      57,
+      13,
+      968,
+      1523
+    ],
+    "sha256": "1635512b5a8f27d95a9324d497aa9374701f3bceeae1cc14bd26bf1b814fc8ec"
+  },
+  "botwoon": {
+    "file": "botwoon.png",
+    "size": [
+      1234,
+      1274
+    ],
+    "crop": [
+      137,
+      12,
+      1154,
+      1262
+    ],
+    "sha256": "a279b09964f2ca9b7ac6b8231837c985b23d32b6766524386ae72c7e51dba70c"
+  },
+  "draygon": {
+    "file": "draygon.png",
+    "size": [
+      1549,
+      1015
+    ],
+    "crop": [
+      8,
+      28,
+      1549,
+      1008
+    ],
+    "sha256": "4fc3bb8b466acb2219f13d4f580ef57702bb0746c0b31a0b2e0e0bfb1cab1b95"
+  },
+  "motherBrain": {
+    "file": "motherBrain.png",
+    "size": [
+      1089,
+      1445
+    ],
+    "crop": [
+      73,
+      8,
+      1010,
+      1429
+    ],
+    "sha256": "f8cf8212a115e26a7fbf8e3a3a3f52c632f1fb350a64f5c4ba1946710bf68820"
+  },
+  "crocomire": {
+    "file": "crocomire.png",
+    "size": [
+      1340,
+      1174
+    ],
+    "crop": [
+      46,
+      43,
+      1306,
+      1147
+    ],
+    "sha256": "18778456b1eb89b804d39eabbfd7386f3ee8b1623f14bd3ea68c470058d7ee60"
+  },
+  "logo": {
+    "file": "logo.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      53,
+      133,
+      1380,
+      952
+    ],
+    "sha256": "1e85b7a61903a198f90bdbea89af0bab0354166b8ef5266c63d5abe5689d4798"
+  },
+  "creator": {
+    "file": "creator.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "crop": [
+      23,
+      9,
+      1440,
+      1086
+    ],
+    "sha256": "9874cc85f78c82c8ad68ef2f47decdb0d8b1c808183fc94dab35391ec2cc5f07"
+  }
+}

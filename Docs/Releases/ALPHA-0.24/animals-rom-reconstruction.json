@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "originalRomSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "payloadSha256": "d5bfca40d8be244e40292e9afe4d2cf65e476cbc49f26843489270e2a35d7211",
+  "recipeSha256": "85343d982740044cb9f92997e4f22d33d46cd17dbff420412a584ba705419365",
+  "sourceLevels": 2,
+  "changedLevelBytes": 0,
+  "authoredRecordBytes": 312,
+  "reconstructedBytes": 602,
+  "byteExactReconstruction": true,
+  "levels": [
+    {
+      "patch": "Animal surprise 1",
+      "sourceRoomAddress": 12837072,
+      "rooms": [
+        "Bomb Torizo Room",
+        "Bomb Torizo Room",
+        "Bomb Torizo Room"
+      ],
+      "changedBytes": 0,
+      "compressionTemplateBytes": 54,
+      "reconstructedSha256": "22425da961da5ea54a5cfe9ae8b104eb61993feeced60a0aacf35ae3d01857c9"
+    },
+    {
+      "patch": "Animal surprise 2",
+      "sourceRoomAddress": 12837072,
+      "rooms": [
+        "Bomb Torizo Room",
+        "Bomb Torizo Room",
+        "Bomb Torizo Room"
+      ],
+      "changedBytes": 0,
+      "compressionTemplateBytes": 54,
+      "reconstructedSha256": "22425da961da5ea54a5cfe9ae8b104eb61993feeced60a0aacf35ae3d01857c9"
+    }
+  ]
+}

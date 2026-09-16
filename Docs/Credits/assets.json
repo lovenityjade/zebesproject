@@ -1,0 +1,9 @@
+{
+  "romSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "fontAddress": "97:E7DE",
+  "fontBytes": 6144,
+  "planetTiles": "96:EC76",
+  "planetMap": "97:8ADB",
+  "upstreamCreditRows": 248,
+  "upstreamRevision": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5"
+}

@@ -1,0 +1,18 @@
+{
+  "nativeSha256": "4149a9136f4e4ef7ab5a2510b30b6d764ac3d6adf4b5ac6a24aee39ddfc900b6",
+  "previousNativeSha256": "d078a0dca847450ffd6a4518a2547e1739f4593c12772889dff1f09059f397f1",
+  "sourceRomSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "changedSourceHashes": {
+    "Native/sm_seed.c": "3326e1e58230b72415f82e29ee80ba403fcbf07d552f0051ee7b1a7070695af4",
+    "Native/sm_seed.h": "e1c3d54f001c69564c2a1f953c654dc1d494ae62053f8963255fd32a95571177",
+    "Native/prepare_overlays.py": "c8d6652cf8fef5d4d78c19e98a42f104e234b494fe1d8e0d00f0e558cf43acb1",
+    "Native/sm_bridge.c": "802e867345b2b78eab009e34be6c107548007be0743d7e8db2d5406a327604a8",
+    "Native/sm_bridge.h": "772928368f368350b7cb1cb62dbc709e105f730a63cde5de1db1e1e37812e74d",
+    "Scripts/test-item-grants-native.py": "95b0da14b1234575eb4cf09847a71a2ad580b9fa718252d6fa319ab570cabb99",
+    "Scripts/test-ceiling-morph-native.py": "c0d4381432e1ab2ed38ef35c3412e06586b692abd8e76600fc813fa3b85f056a",
+    "Scripts/test-seed-pickup-progression.py": "8f377c9df8a64f25361e68aa1f967e1d45dbdfdf63a334c473fb103817af2140",
+    "Scripts/test-morph-save-recovery.py": "857a8f14a32c7aed1b5d940d9e537a821feea882f887e8c3a6335e4eadf80b68"
+  },
+  "build": "cmake --build Native/build -j2",
+  "editor": "Native dynamic library ABI preserved; no Unreal code or asset change needed"
+}

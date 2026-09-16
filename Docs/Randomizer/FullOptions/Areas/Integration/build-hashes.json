@@ -1,0 +1,51 @@
+{
+  "candidate": "area-generation-initial-doors",
+  "files": {
+    ".tmp/areas-native/libsm_native.so": "28e8e715243eb4cd78664787ccd77a93a169c9f3b567b09e98aafe8644fa4ebb",
+    "Unreal/Binaries/Linux/SMUnreal": "de68294b11471456ece4070d156a625a0225506a2bcd044e5175fe3d80c4e45a",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "68c85e891376e767229714b687febace7fbf5b8a70e7ef9adb08b039c8c8cb44",
+    "Scripts/test-native-initial-doors.py": "c133cbb1b32ee632f7bb141d4e4d47f632662c1af3d399881331ac823a39f346",
+    "Scripts/test-generated-area-transitions.py": "190fd0f7d013b053c68008f1c38efb917bb5b1e36ee283d675d7af7804e2b495",
+    "Scripts/test-area-seeds.py": "abc5a102bc2ab26d7946d0ea55dbc6035aa1c062dd57aaa0715da1546cafccdf",
+    "Scripts/test-area-tracker-progression.py": "1daae7bef41b77717232fef4ef84ee105b07e9d08b9349f11101fef8948436d0",
+    "Scripts/test-native-start-slots.py": "ad8413fbb553d2a397da64bb18c5244816201781d5b08df437dbc7f09ae03bde",
+    "Randomizer/sm_topology.py": "44f360fce88279da11eeb147220e177cb891bfc0930923cffa3785d31cf53f15",
+    "Randomizer/sm_initial_doors.py": "c1eff51dc22eecb811d2fb3f36015c2f3f4eef85be33567544e37696786b0575",
+    "Randomizer/native_initial_doors.json": "06a5639f9a213e0b49334360bddb53e3571139f35812bbea4a2cf70bc2ac7356",
+    "Randomizer/native_areas.json": "27587db1f4434b5f89ec23d96a52b91f0c177088b116bce6f3d8eacadbd90e6d",
+    "Native/sm_start.c": "0efce968127815991471d6914148063d914e9cb7eaa3f8d8c54005223d6b23f7",
+    "Native/sm_areas.c": "f2aed73a0d2ffdfe603a4234d793586668218f8d2837b14d842e8f4a9f6215be",
+    "Unreal/Source/SMUnreal/SMRandomizer.cpp": "b2d035361d4a5f3514e496b77cde44d4a42886a8482784f9b95dadb77fc862c5",
+    "Unreal/Source/SMUnreal/SMProfiles.cpp": "54a723c1aa7abc2f3b45805bccb7862c2d4c6abb95b51094d04ad6cef2ac7bb1",
+    "Unreal/Source/SMUnreal/SMSystemMenu.cpp": "c2863555163c68a52d52cdadb4f95b3dacb319d4208932c20a0333ec19c4442c",
+    "Unreal/Source/SMUnreal/SMHUD.cpp": "922f4e65f776120bcfe9801685b6f8836733b6a7f439ebdfcae62830acc2518c"
+  },
+  "remoteHashes": [
+    "28e8e715243eb4cd78664787ccd77a93a169c9f3b567b09e98aafe8644fa4ebb  /tmp/sm-native-generation-20260914/areas/libsm_native.so",
+    "28e8e715243eb4cd78664787ccd77a93a169c9f3b567b09e98aafe8644fa4ebb  /tmp/sm-native-generation-20260914/Native/build/libsm_native.so",
+    "de68294b11471456ece4070d156a625a0225506a2bcd044e5175fe3d80c4e45a  /tmp/sm-native-generation-20260914/SMUnreal/Binaries/Linux/SMUnreal"
+  ],
+  "nativeBuild": "passed",
+  "gameBuild": "passed",
+  "editorBuild": "passed",
+  "saveRefillReleaseUnchanged": true,
+  "validation": {
+    "seeds": 6,
+    "trackerProgressionChecks": 600,
+    "nativeStartDefinitions": 15,
+    "nativeBanks": 3,
+    "historicalBank": true,
+    "generatedWorldTransitions": 15,
+    "profileFixtures": 35,
+    "vulkanCaptures": 3,
+    "visuallyInspected": [
+      "golden-four-unreal.png",
+      "red-brinstar-unreal.png",
+      "combined-arrival-unreal.png",
+      "generated-transitions/02-05-to-28.png"
+    ]
+  },
+  "sourceGenerationLibraryNote": "The six seed-generation proofs record the earlier foundation library. Generation ran the current embedded Python source; the native save, transition and render proofs use the integrated candidate hash above.",
+  "staging": "Only isolated gaming-pc runtime replaced. Local Native/build and packaged runtime remain the DoorColors increment. No local launch.",
+  "remaining": "Area portal/door map rendering and exploration counters; full mirror/Minimizer/Scavenger/objective/Tourian/escape/race/remaining-patch parity"
+}

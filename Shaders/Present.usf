@@ -1,0 +1,202 @@
+// Photoshop-style duplicate layer: original nearest image + Gaussian copy.
+// No bright-pass threshold, emitter mask, or per-object lighting.
+float2 Size = float2(ViewWidth,240);
+float2 Cell = clamp(floor(UV*Size),float2(0,0),Size-1);
+float2 Center = (Cell+.5)/Size;
+// Keep UI bytes in the same color path as the native image. A separate Canvas
+// DrawTexture pass gamma-encoded these already encoded SNES colors a second time.
+float4 Gui = Texture2DSampleLevel(GuiTexture,GuiTextureSampler,Center,0);
+if(Gui.a>.5) return Gui.rgb;
+float3 Original = Texture2DSampleLevel(GameTexture,GameTextureSampler,Center,0).rgb;
+if(Enabled<.5 || Gameplay<.5 || Cell.y<HudTop) return Original;
+float3 Base = Texture2DSampleLevel(SceneTexture,SceneTextureSampler,Center,0).rgb;
+
+// Sigma 1.25 source pixels. Weights follow continuous output coordinates:
+// only the overlay is smooth at display resolution, never the original layer.
+float2 P = UV*Size;
+float3 Blurred = 0;
+float TotalWeight = 0;
+[unroll] for(int y=-4;y<=4;++y) {
+    [unroll] for(int x=-4;x<=4;++x) {
+        float2 SampleCell = Cell+float2(x,y);
+        float2 D = SampleCell+.5-P;
+        float Weight = exp(-dot(D,D)/(2*1.25*1.25));
+        // Exclude HUD texels from the blur itself, not just its final output.
+        float2 SampleUV = (clamp(SampleCell,float2(0,HudTop),float2(Size.x-1,223))+.5)/Size;
+        Blurred += Texture2DSampleLevel(SceneTexture,SceneTextureSampler,SampleUV,0).rgb*Weight;
+        TotalWeight += Weight;
+    }
+}
+Blurred /= TotalWeight;
+Base = saturate(Base*Brightness);
+Blurred = saturate(Blurred*Brightness);
+// Lighten is channel-wise MAX (not Screen); Multiply is the RGB product.
+float3 Composite = BlendMode<.5 ? max(Base,Blurred) : Base*Blurred;
+float3 Result=lerp(Base,Composite,saturate(Intensity));
+if(CreditsState.x>.5) {
+    // Original Zebes pixels are unchanged; glow is evaluated at output resolution.
+    float2 Screen=UV*Size;
+    float2 D=(Screen-float2(ViewWidth*.5+52,104))/float2(52,57);
+    float R=length(D);
+    float Rim=exp(-pow((R-1.025)/.07,2));
+    float Halo=exp(-pow(max(0,R-1)/.24,2))*smoothstep(.93,1.04,R);
+    float LitSide=saturate(.7-D.y*.35+D.x*.1);
+    Result+=float3(.38,.22,.075)*(Rim*.42+Halo*.16)*LitSide;
+    // Glints are anchored to authored stars from the original approach backdrop.
+    const float2 Stars[6]={float2(51,58),float2(228,40),float2(236,87),float2(204,180),float2(60,164),float2(107,12)};
+    [unroll] for(int S=0;S<6;S++) {
+        float2 Q=Screen-(Stars[S]+float2(ViewWidth*.5+52-123,0));
+        float Twinkle=pow(.5+.5*sin(CreditsState.y*1.5+S*2.37),5);
+        float Glow=exp(-dot(Q,Q)/14)*.18;
+        float Cross=exp(-abs(Q.x)*3-abs(Q.y)*.6)+exp(-abs(Q.y)*3-abs(Q.x)*.6);
+        Result+=float3(.45,.57,.85)*(Glow+Cross*.22)*Twinkle;
+    }
+    Result=saturate(Result);
+}
+// CINEMATIC_EFFECTS
+if(EngineWeather>.5) {
+    float2 Screen=UV*Size,World=Screen+WeatherView.xy;
+    float Time=WeatherView.w;
+    float3 Mask=Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,Center,0).rgb;
+    float Far=Mask.b,Sprite=Mask.g;
+    float Water=WeatherState.z*smoothstep(WeatherView.z,WeatherView.z+3,Screen.y);
+    float Heat=WeatherState.w;
+    // Refraction affects the scenery only. Exclude a 2px guard around sprites,
+    // structures, the HUD and the waterline to keep silhouettes legible.
+    float Safe=Far;
+    [unroll] for(int k=-1;k<=1;k+=2) {
+        Safe=min(Safe,Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,(Cell+float2(k*2,0)+.5)/Size,0).b);
+        Safe=min(Safe,Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,(Cell+float2(0,k*2)+.5)/Size,0).b);
+    }
+    Safe*=smoothstep(HudTop+1,HudTop+5,Screen.y);
+    float2 Bend=float2(sin(World.y*.12-Time*2.2)+.35*sin(World.y*.29+Time*1.3),0)*Heat*.9;
+    Bend+=float2(sin(World.y*.08+Time*1.4),cos(World.x*.055-Time*.9))*.7*Water;
+    if(Safe>.01 && (Water+Heat)>.01) {
+        float3 Warped=Weather.bilinear(SceneTexture,SceneTextureSampler,Screen+Bend,Size,HudTop);
+        float3 Stable=Weather.bilinear(SceneTexture,SceneTextureSampler,Screen,Size,HudTop);
+        Result+=(Warped-Stable)*Safe*Brightness;
+    }
+    float Mist=Weather.cloud(World*float2(.018,.030)+float2(Time*.05,-Time*.012));
+    float Mist2=Weather.cloud(World*float2(.010,.042)+float2(-Time*.03,Time*.016)+17);
+    float Low=smoothstep(60,224,Screen.y);
+    float Fog=WeatherState.y*(1-SporeAtmosphere*.7)*(.04+.16*Far+.10*Low)*smoothstep(.22,.8,Mist);
+    Fog+=WeatherState.x*(.025+.12*Far)*Mist2;
+    Fog+=SporeAtmosphere*(.018+.065*Far+.025*Low)*smoothstep(.18,.82,Mist2);
+    float3 FogColor=lerp(float3(.24,.30,.34),float3(.24,.29,.18),SporeAtmosphere);
+    Result=lerp(Result,FogColor,saturate(Fog));
+    if(SporeAtmosphere>.01) {
+        float Spores=Weather.spores(Screen,WeatherView.xy,Time,0)*.35
+                    +Weather.spores(Screen,WeatherView.xy,Time,1)*.24;
+        // Keep Samus and the original damaging spores clearly in front.
+        Spores*=SporeAtmosphere*(1-Sprite*.8)*smoothstep(HudTop,HudTop+6,Screen.y);
+        Result=lerp(Result,float3(.54,.59,.34),saturate(Spores));
+    }
+    if(WeatherState.x>.01) {
+        float Rain=Weather.rain(Screen,WeatherView.xy,Time,0)*(.12+.25*Far)
+                  +Weather.rain(Screen,WeatherView.xy,Time,1)*(.10+.22*Far)
+                  +Weather.rain(Screen,WeatherView.xy,Time,2)*.26
+                  +Weather.rain(Screen,WeatherView.xy,Time,3)*.18;
+        Result=lerp(Result,float3(.62,.75,.83),saturate(Rain*WeatherState.x));
+    }
+    if(Water>.01) {
+        float Depth=saturate((Screen.y-WeatherView.z)/160);
+        Result=lerp(Result*float3(.85,.97,1.0),float3(.035,.16,.20),Water*(.04+.11*Far+.04*Depth));
+        float2 W=World*.08;
+        float Flow=sin(W.x+sin(W.y+Time*.8))+sin(W.y*1.4-Time*.6+sin(W.x*.7));
+        float Caustic=pow(saturate(1-abs(Flow)*2),5);
+        float Shafts=pow(saturate(sin(World.x*.035+World.y*.018+sin(Time*.23))),12);
+        Result+=Water*(1-.85*Sprite)*(Caustic*.045+Shafts*.022)*float3(.25,.8,.85);
+        Result+=Water*Weather.motes(Screen,WeatherView.xy,Time)*float3(.10,.22,.24);
+    }
+    if(Heat>.01) {
+        float Haze=Heat*(.025+.045*Far)*Mist;
+        Result=lerp(Result,float3(.39,.17,.07),Haze);
+    }
+    Result=saturate(Result);
+}
+if(CombatEffects>.5) {
+    float2 Screen=UV*Size;
+    if(GrappleState.z>.5 && length(GrappleEndState.xy-GrappleState.xy)>1) {
+        float2 A=GrappleState.xy,B=GrappleEndState.xy,V=B-A;
+        float Length=max(length(V),1),T=saturate(dot(Screen-A,V)/(Length*Length));
+        float2 Normal=float2(-V.y,V.x)/Length;
+        float Along=T*Length,Phase=floor(GrappleState.w*28);
+        float Segment=Along/7,Index=floor(Segment),F=frac(Segment);
+        float N0=frac(sin(Index*127.1+Phase*311.7)*43758.5453)*2-1;
+        float N1=frac(sin((Index+1)*127.1+Phase*311.7)*43758.5453)*2-1;
+        float Arc=lerp(N0,N1,F)*2.1*sin(T*3.14159);
+        float Cross=dot(Screen-lerp(A,B,T),Normal),EndGuard=step(0,dot(Screen-A,V))*step(0,dot(B-Screen,V));
+        float Line=exp(-pow((Cross-Arc)/.48,2))*EndGuard;
+        float Halo=exp(-pow(Cross/3.2,2))*EndGuard;
+        float Tip=exp(-dot(Screen-B,Screen-B)/26),Muzzle=exp(-dot(Screen-A,Screen-A)/38);
+        Result+=float3(.46,.7,1)*(Line*1.4+Halo*.18+Tip*.55+Muzzle*(.2+exp(-GrappleEndState.z*12)));
+    }
+    if(ScrewState.z>.5) {
+        float2 D=Screen-ScrewState.xy;
+        float Angle=atan2(D.y,D.x),Radius=length(D/float2(1,1.13));
+        float Pulse=sin(Angle*7+ScrewState.w*31)+sin(Angle*13-ScrewState.w*47)*.45;
+        float Ring=exp(-pow((Radius-14-Pulse)/.65,2));
+        float Broken=.4+.6*pow(abs(sin(Angle*3-ScrewState.w*20)),2);
+        Result+=float3(1,.82,.3)*(Ring*Broken*.95+exp(-Radius*Radius/430)*.16);
+    }
+    // CPU-side engine particles upload positions and lifetimes; their profiles
+    // are shaded continuously by Unreal, independently of the SNES pixel grid.
+    [loop] for(int i=0;i<64;i++) {
+        float4 E=Texture2DSampleLevel(EffectsTexture,EffectsTextureSampler,float2((i+.5)/64,.25),0);
+        if(E.w>.001 && E.z>.01) {
+            float4 C=Texture2DSampleLevel(EffectsTexture,EffectsTextureSampler,float2((i+.5)/64,.75),0);
+            float2 D=(Screen-E.xy)/E.z;
+            if(C.w>2.5) {
+                // Dust/silt use coverage, so footsteps do not glow like weapons.
+                float Coverage=C.w>3.5 ? exp(-pow((length(D)-.7)*6,2)) : exp(-dot(D,D)*2.5);
+                Result=lerp(Result,C.rgb,saturate(Coverage*E.w));
+            } else {
+                if(C.w>1.5)D.y*=1.65;
+                float Glow=exp(-dot(D,D)*2.5)*E.w;
+                Result+=C.rgb*Glow*(C.w>.5 && C.w<1.5 ? .6:.9);
+            }
+        }
+    }
+    if(ChargeState.z>.01) {
+        float2 D=Screen-ChargeState.xy;
+        float Halo=exp(-dot(D,D)/16)*ChargeState.z;
+        Result+=float3(.5,.85,1)*Halo*.45;
+    }
+    if(PowerBombPhase.x>.5) {
+        float2 D=Screen-PowerBombState.xy;
+        float Distance=length(D),Angle=atan2(D.y,D.x);
+        float Time=PowerBombState.w;
+        if(PowerBombPhase.y<.5) {
+            float Inward=20+35*frac(1-Time*.8);
+            float Gathering=exp(-pow((Distance-Inward)/1.5,2))*.12;
+            float Core=exp(-Distance*Distance/110)*(.18+.05*sin(Time*5));
+            Result+=float3(.28,.65,1)*(Gathering+Core);
+        } else {
+            float Radius=max(4,PowerBombState.z);
+            float Turbulence=Weather.cloud(D*.035+float2(Time*.6,-Time*.3));
+            float Width=3+Radius*.022;
+            float Front=exp(-pow((Distance-Radius-(Turbulence-.5)*7)/Width,2));
+            float Echo=exp(-pow((Distance-Radius*.84)/max(2,Width*.55),2))*.25;
+            float Core=exp(-Distance*Distance/1800)*exp(-Time*1.5);
+            float Rays=pow(saturate(sin(Angle*19+Turbulence*3)),14)*exp(-Distance/145)*exp(-Time*1.8);
+            float Afterglow=exp(-Distance*Distance/max(Radius*Radius*.5,100))*exp(-Time*.9)*.12;
+            float3 Mask=Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,Center,0).rgb;
+            // The shock distorts only the distant scenery, leaving Samus and
+            // the separately composed HUD crisp and easy to read.
+            if(Mask.b>.5 && Distance>1) {
+                float2 Bend=D/Distance*Front*2;
+                Result+=(Weather.bilinear(SceneTexture,SceneTextureSampler,Screen+Bend,Size,HudTop)-
+                         Weather.bilinear(SceneTexture,SceneTextureSampler,Screen,Size,HudTop))*.7;
+            }
+            Result+=float3(1,.85,.48)*(Front*1.7+Echo*.75);
+            Result+=float3(1,.72,.34)*(Core*1.5+Rays*.8+Afterglow*2.5);
+            Result+=float3(1,.95,.8)*Front*Core*1.2;
+            // A single decaying detonation flash, independent of source pixels.
+            // GuiTexture returned above, so all native UI remains untouched.
+            float Flash=exp(-Time*Time/0.016)*FlashStrength;
+            Result=lerp(Result,float3(1,.97,.86),saturate(Flash*.90));
+        }
+    }
+    Result=saturate(Result);
+}
+return lerp(Original,Result,SceneFade);

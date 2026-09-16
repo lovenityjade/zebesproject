@@ -1,0 +1,20 @@
+{
+  "nativeSha256": "9a62646764e99c02408d8dadc900c6161d93287254043f8215aac41eb8f1fdf4",
+  "sourceRomSha1": "da957f0d63d14cb441d215462904c4fa8519c613",
+  "build": "cmake -S Native -B Native/build; cmake --build Native/build -j2",
+  "sourceHashes": {
+    "Native/sm_map_browser.c": "ca85a629d082282d2363d55fbd040dd416abed85b987d38a2e61d1d6fdefaf53",
+    "Native/sm_map_browser.h": "d7f866ac0ef423a3db6645fb11f407ece5f16729c6db4755562f3d9fb416c4e3",
+    "Native/sm_tracker.c": "e05292bfa17fb82024e7a9211b39828465b906b0d6eea9a5abdc0bfc2901742e",
+    "Native/sm_tracker.h": "545b66ec058efc46cfb0b31b8a31b69fd1322e0993a89f734cade45076c1a762",
+    "Native/sm_bridge.c": "99a3ac90f2339ba25fc4090509e8a4d4919321f7f0de72b5676b41a07e204fa5",
+    "Native/sm_scene.c": "92baa58dd9a8d4db8af1e99df27ed9a7d37789739da7122c5a5d362fbc1df4fe",
+    "Native/sm_wide.inc": "70c152fa7db56c81dd9c5987931293c640790b1dd988cbc04a0f9faa21bf955f",
+    "Native/prepare_overlays.py": "9b0635c3a52fb52ae008c51c4b329c22448ba877b5e91effcedac75b13823676",
+    "Native/CMakeLists.txt": "3e939aace3ce226c7f8deb00e61aa539c56b1714a179eca604877667c80074d9",
+    "Scripts/test-map-browser-native.py": "8bb7885462c27b1b322a36b698e29624912a413a7d15f86cbc11299d860bf65f"
+  },
+  "userRecoveredSaveUnchanged": true,
+  "unrealIntegration": "Existing dynamic native library ABI; no Unreal assets or code changed",
+  "validationHost": "gaming-pc"
+}

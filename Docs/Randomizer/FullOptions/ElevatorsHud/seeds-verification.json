@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 15092060,
+    "split": "Full",
+    "counted": 80,
+    "fingerprint": "85ae1997f4ce98529f661262daec6ba1d1de654f55e83a5abad04aeb0542a45c"
+  },
+  {
+    "seed": 15092061,
+    "split": "Major",
+    "counted": 34,
+    "fingerprint": "8ae7882bfaedbdbb1f167931edfdb1eb7bf48d44695d34253a32062e51619bd6"
+  },
+  {
+    "seed": 15092062,
+    "split": "Chozo",
+    "counted": 25,
+    "fingerprint": "b08e980686edb559e8fce05c34e48ea8915520ec5782487bf389a622bcc222f3"
+  },
+  {
+    "seed": 15092063,
+    "split": "FullWithHUD",
+    "counted": 16,
+    "fingerprint": "349459f1b3a71ee32f957efbe10c41625a6ff1ad00a17295a908532fc1628d5c"
+  },
+  {
+    "seed": 15092064,
+    "split": "FullWithHUD",
+    "counted": 36,
+    "fingerprint": "24130fb041292b2c5cdb532d14a01162fe0ef8b1ab611667178ae3693d52a65e"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "args": [
+        "./SMUnreal/Binaries/Linux/SMUnreal",
+        "/Engine/Maps/Entry",
+        "-SMObjectiveLogicTest",
+        "-SMStartTest=1",
+        "-SMObjectivePauseTest",
+        "-SMWarmup=12000",
+        "-RenderOffscreen",
+        "-unattended",
+        "-windowed",
+        "-ResX=1280",
+        "-ResY=720",
+        "-nosplash",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=t.MaxFPS 60",
+        "-SMAreaTest",
+        "-SMAreaConnectionTest=24"
+      ],
+      "seed": 15092901,
+      "fingerprint": "45bb1a7e8ff5fae9c91f2e5d43e8e3f2c82d23ea8ae574a197190b281d50cd58",
+      "hidden": true
+    },
+    {
+      "args": [
+        "./SMUnreal/Binaries/Linux/SMUnreal",
+        "/Engine/Maps/Entry",
+        "-SMObjectiveLogicTest",
+        "-SMStartTest=2",
+        "-SMObjectivePauseTest",
+        "-SMWarmup=12000",
+        "-RenderOffscreen",
+        "-unattended",
+        "-windowed",
+        "-ResX=1280",
+        "-ResY=720",
+        "-nosplash",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=t.MaxFPS 60"
+      ],
+      "seed": 15092902,
+      "fingerprint": "e8a0b8215961e34077c48ed88e5189b4cc960343d5b9a82cd83447d61abc6d52",
+      "hidden": false
+    }
+  ],
+  "nativeSha256": "ab8d73a8db61b5661e61a1798f57ddf8dc5911f12f191490f2687d6039d27591",
+  "gameSha256": "702152a0f424ff798bd3ea316e75eac0e7e97574e6bb736915d327615d4ec169",
+  "scope": "Render native hidden/visible objectives and original navigation in Unreal."
+}

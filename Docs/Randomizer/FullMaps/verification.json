@@ -1,0 +1,193 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "cases": [
+    {
+      "area": 0,
+      "authoredTiles": 233,
+      "secretTiles": 50,
+      "digest": "9baf90830f8cfad310eed6d8c3fc860198c298df1d4bd1f04fb013f64074d164",
+      "bounds": [
+        48,
+        448,
+        8,
+        168
+      ],
+      "seed": 14092026
+    },
+    {
+      "area": 0,
+      "authoredTiles": 233,
+      "secretTiles": 50,
+      "digest": "9baf90830f8cfad310eed6d8c3fc860198c298df1d4bd1f04fb013f64074d164",
+      "bounds": [
+        48,
+        448,
+        8,
+        168
+      ],
+      "seed": 14092027
+    },
+    {
+      "area": 1,
+      "authoredTiles": 254,
+      "secretTiles": 86,
+      "digest": "f091759cbbc18fc32bacba8dfcc9896015cfbb82fd4a3a5b40bddd6b4184dc70",
+      "bounds": [
+        40,
+        456,
+        8,
+        176
+      ],
+      "seed": 14092026
+    },
+    {
+      "area": 1,
+      "authoredTiles": 254,
+      "secretTiles": 86,
+      "digest": "f091759cbbc18fc32bacba8dfcc9896015cfbb82fd4a3a5b40bddd6b4184dc70",
+      "bounds": [
+        40,
+        456,
+        8,
+        176
+      ],
+      "seed": 14092027
+    },
+    {
+      "area": 2,
+      "authoredTiles": 361,
+      "secretTiles": 131,
+      "digest": "e395d8c596954a5603e5c51a6d044204c79f130ffe72a41ad7c875ca089151b7",
+      "bounds": [
+        16,
+        296,
+        8,
+        144
+      ],
+      "seed": 14092026
+    },
+    {
+      "area": 2,
+      "authoredTiles": 361,
+      "secretTiles": 131,
+      "digest": "e395d8c596954a5603e5c51a6d044204c79f130ffe72a41ad7c875ca089151b7",
+      "bounds": [
+        16,
+        296,
+        8,
+        144
+      ],
+      "seed": 14092027
+    },
+    {
+      "area": 3,
+      "authoredTiles": 69,
+      "secretTiles": 24,
+      "digest": "6fad6c099b97c09427ca443f52f6826ee057ec0bc1cec6d720cfed780e7ee021",
+      "bounds": [
+        80,
+        168,
+        88,
+        160
+      ],
+      "seed": 14092026
+    },
+    {
+      "area": 3,
+      "authoredTiles": 69,
+      "secretTiles": 24,
+      "digest": "6fad6c099b97c09427ca443f52f6826ee057ec0bc1cec6d720cfed780e7ee021",
+      "bounds": [
+        80,
+        168,
+        88,
+        160
+      ],
+      "seed": 14092027
+    },
+    {
+      "area": 4,
+      "authoredTiles": 278,
+      "secretTiles": 53,
+      "digest": "98662c5d3023384a3fd47b9fcb8822992b71e92a9530ce0527448080b10d56da",
+      "bounds": [
+        48,
+        336,
+        8,
+        160
+      ],
+      "seed": 14092026
+    },
+    {
+      "area": 4,
+      "authoredTiles": 278,
+      "secretTiles": 53,
+      "digest": "98662c5d3023384a3fd47b9fcb8822992b71e92a9530ce0527448080b10d56da",
+      "bounds": [
+        48,
+        336,
+        8,
+        160
+      ],
+      "seed": 14092027
+    },
+    {
+      "area": 5,
+      "authoredTiles": 79,
+      "secretTiles": 34,
+      "digest": "70ef93fd9ce4fef96985fffcd00584312ee6ccf4ebcfcf29387b14db2e38c59e",
+      "bounds": [
+        88,
+        168,
+        72,
+        176
+      ],
+      "seed": 14092026
+    },
+    {
+      "area": 5,
+      "authoredTiles": 79,
+      "secretTiles": 34,
+      "digest": "70ef93fd9ce4fef96985fffcd00584312ee6ccf4ebcfcf29387b14db2e38c59e",
+      "bounds": [
+        88,
+        168,
+        72,
+        176
+      ],
+      "seed": 14092027
+    },
+    {
+      "area": 6,
+      "authoredTiles": 15,
+      "secretTiles": 0,
+      "digest": "2609c3d0d1142b0875af746fb39a6e2abbc43845d25cfb8d1adef592ee3121a1",
+      "bounds": [
+        96,
+        160,
+        88,
+        136
+      ],
+      "seed": 14092026
+    },
+    {
+      "area": 6,
+      "authoredTiles": 15,
+      "secretTiles": 0,
+      "digest": "2609c3d0d1142b0875af746fb39a6e2abbc43845d25cfb8d1adef592ee3121a1",
+      "bounds": [
+        96,
+        160,
+        88,
+        136
+      ],
+      "seed": 14092027
+    }
+  ],
+  "vanillaExactParityAreas": 7,
+  "sourceRomUnchanged": true,
+  "nativeSha256": "c22a39b6c60157775f003d128eb725c8727af9bb3ac3e7c08949b52b125ced5a",
+  "scope": "Controlled map-area fixtures through native pause and minimap; two seeds, no fake exploration flags.",
+  "fullScrollBoundsVerified": true
+}

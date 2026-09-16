@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "exitCode": 0,
+      "case": "Rom",
+      "passed": true
+    },
+    {
+      "exitCode": 0,
+      "case": "SeedSharing",
+      "passed": true
+    },
+    {
+      "exitCode": 0,
+      "case": "Profile",
+      "passed": true
+    },
+    {
+      "exitCode": 0,
+      "case": "Tracker",
+      "passed": true
+    }
+  ],
+  "host": "Windows 10 x64",
+  "rendered": false,
+  "archiveSha256": "9142be19d55a198e2ec9001970d74299ce2528f8e849f5dec60165b11b9bda37",
+  "packagedGame": true,
+  "testedArchiveBeforeNoticesSha256": "3c7eb3bcf314df84c4caf9469c00ee56082de53ba68497a502cb92dc78de8f66",
+  "postTestChange": {
+    "onlyAddedLicenseFiles": [
+      "Licenses/MinGW/crt/COPYING",
+      "Licenses/MinGW/crt/COPYING.MinGW-w64-runtime.txt",
+      "Licenses/MinGW/crt/COPYING.MinGW-w64.txt",
+      "Licenses/MinGW/gcc-libs/COPYING.LIB",
+      "Licenses/MinGW/gcc-libs/COPYING.RUNTIME",
+      "Licenses/MinGW/gcc-libs/COPYING3",
+      "Licenses/MinGW/gcc-libs/README",
+      "Licenses/MinGW/mingw-w64-libraries/COPYING.libmangle"
+    ],
+    "executableAndRuntimeUnchanged": true
+  }
+}

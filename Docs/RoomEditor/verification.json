@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "rooms": 261,
+  "roomStates": 310,
+  "tileDefinitionChecks": 48,
+  "comparedFrames": 180,
+  "nativePixelsAndRamExact": true,
+  "changedBlockGuard": true,
+  "collisionEditsRejected": true,
+  "visualChecks": [
+    {
+      "layer": 0,
+      "frame": 0,
+      "widescreen": true,
+      "changedRgbChannels": 185
+    },
+    {
+      "layer": 0,
+      "frame": 90,
+      "widescreen": false,
+      "changedRgbChannels": 552
+    },
+    {
+      "layer": 0,
+      "frame": 179,
+      "widescreen": false,
+      "changedRgbChannels": 552
+    },
+    {
+      "layer": 1,
+      "frame": 0,
+      "widescreen": true,
+      "changedRgbChannels": 64
+    },
+    {
+      "layer": 1,
+      "frame": 90,
+      "widescreen": false,
+      "changedRgbChannels": 542
+    },
+    {
+      "layer": 1,
+      "frame": 179,
+      "widescreen": false,
+      "changedRgbChannels": 542
+    }
+  ],
+  "foregroundAndBackground": true,
+  "nativeAspectRetouches": true
+}

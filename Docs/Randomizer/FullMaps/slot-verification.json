@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "slots": [
+    "vanilla",
+    14092026,
+    14092027
+  ],
+  "events": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      4,
+      1,
+      0
+    ],
+    [
+      4,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      4,
+      2,
+      0
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      3,
+      0,
+      0
+    ]
+  ],
+  "nativeSha256": "c22a39b6c60157775f003d128eb725c8727af9bb3ac3e7c08949b52b125ced5a",
+  "scope": "Native menu, seed switching, autosave/reload; not Unreal profile persistence"
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "actualUnchargedChargedMissilesSupersBombsPowerBombs": true,
+  "specialBeamSeparateFromPowerBombs": true,
+  "actualDeathTransition": true,
+  "pauseSeparatedFromRegions": true,
+  "persistenceAndResetCount": true,
+  "naturalCreditsComplete": true,
+  "postCreditsState": 39,
+  "nativeCpuOpcodes": 0,
+  "sourceRomUnchanged": true,
+  "nativeSha256": "dba5ec1513c6ba12e82190f443e37baa84f4cfd5e3c8cd105cc202d76c2ae0d7"
+}

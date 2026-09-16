@@ -1,0 +1,306 @@
+[
+  {
+    "start": "Ceres",
+    "seed": 15092100,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [],
+      "dataPatches": [],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        50
+      ],
+      "startSpawn": 65534
+    },
+    "adjustments": []
+  },
+  {
+    "start": "Landing Site",
+    "seed": 15092101,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [],
+      "dataPatches": [],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        50
+      ],
+      "startSpawn": 0
+    },
+    "adjustments": []
+  },
+  {
+    "start": "Gauntlet Top",
+    "seed": 15092102,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        0
+      ],
+      "dataPatches": [
+        "Save_Gauntlet"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [],
+      "startSpawn": 6
+    },
+    "adjustments": [
+      "morphPlacement: 'normal' -> 'early' (effective VARIA setting)."
+    ]
+  },
+  {
+    "start": "Green Brinstar Elevator",
+    "seed": 15092103,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        1
+      ],
+      "dataPatches": [
+        "early_super_bridge.ips"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        31,
+        33,
+        38
+      ],
+      "startSpawn": 264
+    },
+    "adjustments": [
+      "hud: 'off' -> 'on' (effective VARIA setting).",
+      "layoutPatches: 'off' -> 'on' (effective VARIA setting).",
+      "layoutCustom: [] -> ['early_super_bridge'] (effective VARIA setting)."
+    ]
+  },
+  {
+    "start": "Big Pink",
+    "seed": 15092104,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        2
+      ],
+      "dataPatches": [
+        "spospo_save.ips"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [],
+      "startSpawn": 256
+    },
+    "adjustments": [
+      "layoutPatches: 'off' -> 'on' (effective VARIA setting).",
+      "layoutCustom: [] -> ['spospo_save'] (effective VARIA setting)."
+    ]
+  },
+  {
+    "start": "Etecoons Supers",
+    "seed": 15092105,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        3
+      ],
+      "dataPatches": [
+        "Save_Etecoons"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        52
+      ],
+      "startSpawn": 263
+    },
+    "adjustments": []
+  },
+  {
+    "start": "Wrecked Ship Main",
+    "seed": 15092106,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        4
+      ],
+      "dataPatches": [
+        "WS_Etank"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        131,
+        139
+      ],
+      "startSpawn": 768
+    },
+    "adjustments": [
+      "variaTweaks: 'off' -> 'on' (effective VARIA setting).",
+      "variaTweaksCustom: [] -> ['WS_Etank'] (effective VARIA setting)."
+    ]
+  },
+  {
+    "start": "Firefleas Top",
+    "seed": 15092107,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "dataPatches": [
+        "Save_Firefleas",
+        "LN_PB_Heat_Disable",
+        "LN_Firefleas_Remove_Fune",
+        "firefleas_shot_block.ips"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [],
+      "startSpawn": 519
+    },
+    "adjustments": []
+  },
+  {
+    "start": "Business Center",
+    "seed": 15092108,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        9,
+        10
+      ],
+      "dataPatches": [
+        "high_jump.ips",
+        "nova_boost_platform.ips"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        77
+      ],
+      "startSpawn": 520
+    },
+    "adjustments": [
+      "layoutPatches: 'off' -> 'on' (effective VARIA setting).",
+      "layoutCustom: [] -> ['high_jump', 'nova_boost_platform'] (effective VARIA setting)."
+    ]
+  },
+  {
+    "start": "Bubble Mountain",
+    "seed": 15092109,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        10
+      ],
+      "dataPatches": [
+        "nova_boost_platform.ips"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        84,
+        85
+      ],
+      "startSpawn": 513
+    },
+    "adjustments": [
+      "layoutPatches: 'off' -> 'on' (effective VARIA setting).",
+      "layoutCustom: [] -> ['nova_boost_platform'] (effective VARIA setting)."
+    ]
+  },
+  {
+    "start": "Mama Turtle",
+    "seed": 15092110,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        12,
+        13
+      ],
+      "dataPatches": [
+        "Save_Mama",
+        "mama_save.ips"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        142
+      ],
+      "startSpawn": 1030
+    },
+    "adjustments": []
+  },
+  {
+    "start": "Watering Hole",
+    "seed": 15092111,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        18
+      ],
+      "dataPatches": [
+        "Save_Watering_Hole"
+      ],
+      "nativeCode": [
+        "wh_open_tube.ips"
+      ],
+      "schema": 1,
+      "startDoors": [],
+      "startSpawn": 1031
+    },
+    "adjustments": []
+  },
+  {
+    "start": "Aqueduct",
+    "seed": 15092112,
+    "attempts": 1,
+    "checks": 100,
+    "world": {
+      "catalogSha256": "897db44f6a94428ccf02cc8003aee7bc30d07a52cd4c95a9466b39c62be8837b",
+      "dataPatchIds": [
+        19
+      ],
+      "dataPatches": [
+        "Save_Aqueduct"
+      ],
+      "nativeCode": [],
+      "schema": 1,
+      "startDoors": [
+        150
+      ],
+      "startSpawn": 1029
+    },
+    "adjustments": []
+  }
+]

@@ -1,0 +1,971 @@
+{
+  "schema": 1,
+  "upstream": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5",
+  "patches": [
+    {
+      "id": 0,
+      "name": "Save_Gauntlet",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 17689,
+          "snes": 8439065,
+          "size": 14,
+          "sha256": "3ee2f542296d1cc4a1946591459c3b532c69c71ed247327011a383186300aaf7"
+        },
+        {
+          "address": 84075,
+          "snes": 8570987,
+          "size": 4,
+          "sha256": "869b131b8886d50cacd7cd9d0d6dbd5bfa678ed4a70bb218e337631d341978fd"
+        },
+        {
+          "address": 498126,
+          "snes": 9411022,
+          "size": 1,
+          "sha256": "2b4c342f5433ebe591a1da77e013d1b72475562d48578dca8b84bac6651c3cb9"
+        }
+      ],
+      "additionalPlm": {
+        "room": 39357,
+        "plm_bytes_list": [
+          [
+            111,
+            183,
+            12,
+            10,
+            6,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "early_super_bridge.ips",
+      "source": "patches/vanilla/ips/early_super_bridge.ips",
+      "spans": [
+        {
+          "address": 2266987,
+          "snes": 12949355,
+          "size": 643,
+          "sha256": "37f0158663d505e0ca4b6e1ea09009e4ef80d90585e23bf58b971f8d3c07ce61"
+        },
+        {
+          "address": 2267631,
+          "snes": 12949999,
+          "size": 272,
+          "sha256": "f493acc6d716b7843d52ecef8643ef79bac85f84dd8851de91627c38dc4f7e41"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 2,
+      "name": "spospo_save.ips",
+      "source": "patches/vanilla/ips/spospo_save.ips",
+      "spans": [
+        {
+          "address": 493052,
+          "snes": 9405948,
+          "size": 10,
+          "sha256": "e496aeda46adebdf74dfe52c1b6330ee01b54c0944de6d8fb2b0aba05f876cf7"
+        },
+        {
+          "address": 499027,
+          "snes": 9411923,
+          "size": 1,
+          "sha256": "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76ea986457d986"
+        },
+        {
+          "address": 2274651,
+          "snes": 12957019,
+          "size": 3882,
+          "sha256": "a9615122475d3502e56a17153190b3ed60f3e06574dc07aefe735443a6c77890"
+        },
+        {
+          "address": 2278533,
+          "snes": 12960901,
+          "size": 1825,
+          "sha256": "2e9de69b64b902e3ef2b684e0c48f88cc1e008fc5f4037800607beb5de169c60"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 3,
+      "name": "Save_Etecoons",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 17969,
+          "snes": 8439345,
+          "size": 14,
+          "sha256": "699f4fca5a885f6023997dce90bcdd094dd2ca504ce0f76c0b9e544e80a6a252"
+        },
+        {
+          "address": 84185,
+          "snes": 8571097,
+          "size": 4,
+          "sha256": "ea2a68b38c288dd9af0c8c0531fec93b16af521f28bf895c7629b9593c337ced"
+        },
+        {
+          "address": 499810,
+          "snes": 9412706,
+          "size": 2,
+          "sha256": "5ed9f33e4b004682e03bed14211e218c9dba2d75b3a76be0a1274c0a37ecc9e3"
+        }
+      ],
+      "additionalPlm": {
+        "room": 41041,
+        "plm_bytes_list": [
+          [
+            111,
+            183,
+            4,
+            11,
+            7,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "WS_Etank",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 510971,
+          "snes": 9423867,
+          "size": 2,
+          "sha256": "c93d91910a1305a777a839003a31fdc3c4c9cbce4bb9182bf9f31d76a874eb33"
+        },
+        {
+          "address": 511053,
+          "snes": 9423949,
+          "size": 2,
+          "sha256": "84ad88c7cb1a484bc0fc49f0dbe5161cfea114c7e53e774048855e4192f1f340"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 5,
+      "name": "Save_Firefleas",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 18235,
+          "snes": 8439611,
+          "size": 14,
+          "sha256": "917234f6de0c8b7706799930c08ce241584aa32ef6cd24cbb86b6f0b2da0e2d7"
+        },
+        {
+          "address": 84287,
+          "snes": 8571199,
+          "size": 4,
+          "sha256": "5648c62f63916dccb303892004ac10e57dd4f827f25bb47a4069646d7ba58abb"
+        },
+        {
+          "address": 505195,
+          "snes": 9418091,
+          "size": 2,
+          "sha256": "5afca95c7d5190420fa373feaa3bbf6e80cb798ef81553700e18ba9091f5c122"
+        }
+      ],
+      "additionalPlm": {
+        "room": 46426,
+        "plm_bytes_list": [
+          [
+            111,
+            183,
+            7,
+            9,
+            7,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "LN_PB_Heat_Disable",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 100472,
+          "snes": 8620152,
+          "size": 2,
+          "sha256": "8509b81230019d2ad970d970f791dfbdc8caf54f5c594fcd327cef9feed206c1"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 7,
+      "name": "LN_Firefleas_Remove_Fune",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 1092546,
+          "snes": 10595266,
+          "size": 4,
+          "sha256": "af7dbb0b76a10012c5a38e9780fa9e43ba878a9e87a3c05cde5039f8fee47960"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 8,
+      "name": "firefleas_shot_block.ips",
+      "source": "patches/vanilla/ips/firefleas_shot_block.ips",
+      "spans": [
+        {
+          "address": 1093284,
+          "snes": 10596004,
+          "size": 1,
+          "sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89"
+        },
+        {
+          "address": 2399484,
+          "snes": 13212924,
+          "size": 288,
+          "sha256": "998f212980371caccc38d1af36a9d71957c8093a3287744743ec28c346179d62"
+        },
+        {
+          "address": 2399772,
+          "snes": 13213212,
+          "size": 94,
+          "sha256": "d0627d2d3d1a206be03ef699559483a4f2bb57e7be548b0af351cf55a24fd08a"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 9,
+      "name": "high_jump.ips",
+      "source": "patches/vanilla/ips/high_jump.ips",
+      "spans": [
+        {
+          "address": 2337399,
+          "snes": 13085303,
+          "size": 837,
+          "sha256": "80ab4d594462e3b66c24ffa53304c4c43d65a7fbda6efd971f769cd78b3bd776"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 10,
+      "name": "nova_boost_platform.ips",
+      "source": "patches/vanilla/ips/nova_boost_platform.ips",
+      "spans": [
+        {
+          "address": 2321603,
+          "snes": 13036739,
+          "size": 1072,
+          "sha256": "b02caeab42376694302fb5de53ee9f4f40878fd584bab09e2c7e9d65b8091966"
+        },
+        {
+          "address": 2322676,
+          "snes": 13037812,
+          "size": 492,
+          "sha256": "1e129a53e316de73b1c3f207144bde598aeb948a48062d905624507b8923d752"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 11,
+      "name": "area_layout_ln_exit.ips",
+      "source": "patches/vanilla/ips/area_layout_ln_exit.ips",
+      "spans": [
+        {
+          "address": 2354193,
+          "snes": 13102097,
+          "size": 2219,
+          "sha256": "891ccdf148fbccda95de63cd222a2d321ed47b26cb0c75cb988a3398c9678169"
+        },
+        {
+          "address": 2356412,
+          "snes": 13104316,
+          "size": 2629,
+          "sha256": "ea701bcc91308e294898dec77683012afd1729d263fdd8f8a318b7e195de7ac7"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 12,
+      "name": "Save_Mama",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 18795,
+          "snes": 8440171,
+          "size": 14,
+          "sha256": "16f16a5542576abb0177ef3ea09a16a08d8d91aeebaa5e5561be671507b1ac59"
+        },
+        {
+          "address": 84491,
+          "snes": 8571403,
+          "size": 4,
+          "sha256": "6ce8f5248f48666fafa9ad283bb84f84126168e8e20f725c2d614ec1095ed425"
+        },
+        {
+          "address": 512102,
+          "snes": 9424998,
+          "size": 2,
+          "sha256": "67399f7b7b578ddfb367d6e7d02708cbd7b4c108fdad4c4c9de7ddeac1906e3e"
+        }
+      ],
+      "additionalPlm": {
+        "room": 53333,
+        "plm_bytes_list": [
+          [
+            111,
+            183,
+            38,
+            11,
+            6,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": "mama_save.ips",
+      "source": "patches/vanilla/ips/mama_save.ips",
+      "spans": [
+        {
+          "address": 2433309,
+          "snes": 13279517,
+          "size": 1742,
+          "sha256": "bde87dbb34146e047ebb1827c43a4fa0b62e3f1e5733ebfdfa8ea7e195e4fe37"
+        },
+        {
+          "address": 2435051,
+          "snes": 13281259,
+          "size": 1965,
+          "sha256": "2d8522ef5bb55aed0812a3d4eab632b1be0ea5d9c444092b57110d8f77dc418c"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 14,
+      "name": "area_layout_crab_hole_lvl.ips",
+      "source": "patches/vanilla/ips/area_layout_crab_hole_lvl.ips",
+      "spans": [
+        {
+          "address": 2458607,
+          "snes": 13337583,
+          "size": 614,
+          "sha256": "35512347d608ed2fd801e41e11396a75300b18c9fce344a4b0f86fd3951a640e"
+        },
+        {
+          "address": 2459221,
+          "snes": 13338197,
+          "size": 484,
+          "sha256": "d72674baf21b2f65f74ecc9fbd4985ee3916bead8c4745266ad61b43ab964322"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 15,
+      "name": "area_layout_crab_hole_plms_enemies.ips",
+      "source": "patches/vanilla/ips/area_layout_crab_hole_plms_enemies.ips",
+      "spans": [
+        {
+          "address": 509245,
+          "snes": 9422141,
+          "size": 2,
+          "sha256": "82cb0b6c8239aa1dad7532c6c719422d80de8c98439d37db2bd00cec51bb4a25"
+        },
+        {
+          "address": 509251,
+          "snes": 9422147,
+          "size": 2,
+          "sha256": "b6b19577cf655a9a13f59fcc5753f2c67b8c3b56ceba38e0c3137f70f77a0ac7"
+        },
+        {
+          "address": 1105481,
+          "snes": 10608201,
+          "size": 4,
+          "sha256": "eb6123bd36f44f51045aa1377eb1f940d30a5f097f75f0834d03e83096b12a71"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 16,
+      "name": "area_layout_crabe_tunnel.ips",
+      "source": "patches/vanilla/ips/area_layout_crabe_tunnel.ips",
+      "spans": [
+        {
+          "address": 2437031,
+          "snes": 13283239,
+          "size": 565,
+          "sha256": "6a7d0736253bfb614abd43a6fc3716a07a3c16b67ebb28666017039bfa5581a7"
+        },
+        {
+          "address": 2437596,
+          "snes": 13283804,
+          "size": 114,
+          "sha256": "40efbcc2aa1fe56a9a7f4a60c75622eca43ff7d541225d791d065709af52aa16"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 17,
+      "name": "area_rando_gate_crab_tunnel.ips",
+      "source": "patches/common/ips/area_rando_gate_crab_tunnel.ips",
+      "spans": [
+        {
+          "address": 509067,
+          "snes": 9421963,
+          "size": 2,
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 18,
+      "name": "Save_Watering_Hole",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 18809,
+          "snes": 8440185,
+          "size": 14,
+          "sha256": "8837890e18aa536f68b2c13e513a8d50734ccd77dd94d437c3c05d11275fc109"
+        },
+        {
+          "address": 84495,
+          "snes": 8571407,
+          "size": 4,
+          "sha256": "3214789bae7f89411d85129cc7661739e0293708c2155ff96dfd9899c7058417"
+        },
+        {
+          "address": 512332,
+          "snes": 9425228,
+          "size": 2,
+          "sha256": "67399f7b7b578ddfb367d6e7d02708cbd7b4c108fdad4c4c9de7ddeac1906e3e"
+        }
+      ],
+      "additionalPlm": {
+        "room": 53563,
+        "plm_bytes_list": [
+          [
+            111,
+            183,
+            20,
+            10,
+            7,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Save_Aqueduct",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 18781,
+          "snes": 8440157,
+          "size": 14,
+          "sha256": "7df4b3acaeca3a3a8746b9558446c24ceceda992ca09d634320c4daf616fa008"
+        },
+        {
+          "address": 84487,
+          "snes": 8571399,
+          "size": 4,
+          "sha256": "675c68b71381c1868ad736926b01f8217de0019f6f2777dce6f50c2211bbc61d"
+        }
+      ],
+      "additionalPlm": {
+        "room": 54695,
+        "plm_bytes_list": [
+          [
+            111,
+            183,
+            89,
+            9,
+            5,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "aqueduct_bomb_blocks.ips",
+      "source": "patches/vanilla/ips/aqueduct_bomb_blocks.ips",
+      "spans": [
+        {
+          "address": 2491094,
+          "snes": 13402838,
+          "size": 1,
+          "sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+        },
+        {
+          "address": 2491104,
+          "snes": 13402848,
+          "size": 1,
+          "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+        },
+        {
+          "address": 2491114,
+          "snes": 13402858,
+          "size": 3320,
+          "sha256": "f0a5ca7221699c14b80af82109d898ee08e471e625bd5df4ee1a4afef79288c7"
+        },
+        {
+          "address": 2494434,
+          "snes": 13406178,
+          "size": 4440,
+          "sha256": "b9bee13acb3f03d210c695ea5fe9ec90b153284b51fc881877bd7a017a0e1fa1"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 21,
+      "name": "red_tower.ips",
+      "source": "patches/vanilla/ips/red_tower.ips",
+      "spans": [
+        {
+          "address": 2295031,
+          "snes": 13010167,
+          "size": 2357,
+          "sha256": "12d559b67ee5d9c2d7aa7da5b6448ccbb02b51be3ef091ea302b4f8c0e925b52"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 22,
+      "name": "area_rando_gate_caterpillar.ips",
+      "source": "patches/vanilla/ips/area_rando_gate_caterpillar.ips",
+      "spans": [
+        {
+          "address": 493726,
+          "snes": 9406622,
+          "size": 12,
+          "sha256": "c53a4ace87b52951f61bd5c41cdd2d1f32e1a4290d97cde0f9ec3e21c999bdc0"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 23,
+      "name": "area_rando_gate_east_tunnel.ips",
+      "source": "patches/common/ips/area_rando_gate_east_tunnel.ips",
+      "spans": [
+        {
+          "address": 508957,
+          "snes": 9421853,
+          "size": 2,
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 24,
+      "name": "Save_G4",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 17703,
+          "snes": 8439079,
+          "size": 14,
+          "sha256": "fdd21dc9b50a29bed46f557dfc45ac6090a800dce72463cc7743aa530a79e4fb"
+        },
+        {
+          "address": 84079,
+          "snes": 8570991,
+          "size": 4,
+          "sha256": "6e22783dad685b37c9ba17a810fac02b429aadb0ae42c105d6bc27ce72a7bdb1"
+        }
+      ],
+      "additionalPlm": {
+        "room": 42477,
+        "plm_bytes_list": [
+          [
+            111,
+            183,
+            61,
+            12,
+            7,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "dachora.ips",
+      "source": "patches/vanilla/ips/dachora.ips",
+      "spans": [
+        {
+          "address": 2269555,
+          "snes": 12951923,
+          "size": 2310,
+          "sha256": "d8f86a9f5138b62cae2913f19a459f0118ac0e7ddbd2ff699a1e22cd65b74975"
+        },
+        {
+          "address": 2271865,
+          "snes": 12954233,
+          "size": 2771,
+          "sha256": "886bfbafd05e565ee3e602b07e9d63393e3f05b4260dbbbf8b35b443c6733632"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 26,
+      "name": "moat.ips",
+      "source": "patches/vanilla/ips/moat.ips",
+      "spans": [
+        {
+          "address": 1082845,
+          "snes": 10585565,
+          "size": 1,
+          "sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89"
+        },
+        {
+          "address": 2211200,
+          "snes": 12828032,
+          "size": 5,
+          "sha256": "0a8f1adcff51a0ddd6b94007ba16d6100ba8bcb2369c73dc186942ecad919caf"
+        },
+        {
+          "address": 2211218,
+          "snes": 12828050,
+          "size": 677,
+          "sha256": "a5c4681fbb67e53c65dc52a4a2db12f8542cd65a5a056803a2b5e1358782e2a4"
+        },
+        {
+          "address": 2211895,
+          "snes": 12828727,
+          "size": 269,
+          "sha256": "2d67277b308729fd2b63e570615dc4b56110a29bda7d22af126cfa3a47d21858"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 27,
+      "name": "spazer.ips",
+      "source": "patches/vanilla/ips/spazer.ips",
+      "spans": [
+        {
+          "address": 2308395,
+          "snes": 13023531,
+          "size": 647,
+          "sha256": "2a6a2b95e679b8b88ed146071b6ffc606c8520198d4964731b6173d0340211fd"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 28,
+      "name": "climb_supers.ips",
+      "source": "patches/vanilla/ips/climb_supers.ips",
+      "spans": [
+        {
+          "address": 2214321,
+          "snes": 12831153,
+          "size": 1514,
+          "sha256": "d592a74302c01e119372dbfbf783b1644445f52867660bb2bc465f353b0989ec"
+        },
+        {
+          "address": 2215835,
+          "snes": 12832667,
+          "size": 2651,
+          "sha256": "89cf01ca36709c4c50f770208f75b17e9cf1571ac8f8f7abc542cc9c0e2ff83d"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 29,
+      "name": "brinstar_map_room.ips",
+      "source": "patches/vanilla/ips/brinstar_map_room.ips",
+      "spans": [
+        {
+          "address": 492780,
+          "snes": 9405676,
+          "size": 4,
+          "sha256": "5db2f7b474529fa843aeb278bb1ae3ab174a9032fdc772b5e953076d648df04d"
+        },
+        {
+          "address": 2266716,
+          "snes": 12949084,
+          "size": 163,
+          "sha256": "8fdef81adb2b6234b4420d892812705886b13373f3bf3e3b26e5f7a8969f1a7c"
+        },
+        {
+          "address": 2266879,
+          "snes": 12949247,
+          "size": 85,
+          "sha256": "79d6b20a8ff9e25a6b26185e4f6c5b31a7061c6d044361bd542e4640f30b7e04"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 30,
+      "name": "kraid_save.ips",
+      "source": "patches/vanilla/ips/kraid_save.ips",
+      "spans": [
+        {
+          "address": 2311746,
+          "snes": 13026882,
+          "size": 1211,
+          "sha256": "dd633d74bacdc8a54fc6ae0583f9cbad5785d437be56a52be80241a2253455c4"
+        },
+        {
+          "address": 2312958,
+          "snes": 13028094,
+          "size": 698,
+          "sha256": "ae2563782211a01fd35bd74eb7f4a42c27a0b69ea0b422ba499b472592f494a5"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 31,
+      "name": "mission_impossible.ips",
+      "source": "patches/vanilla/ips/mission_impossible.ips",
+      "spans": [
+        {
+          "address": 2281888,
+          "snes": 12964256,
+          "size": 679,
+          "sha256": "375fb8bccd918ded5792742909c20b5fb907d6140b2b6f5da8ee0fd1af329753"
+        },
+        {
+          "address": 2282567,
+          "snes": 12964935,
+          "size": 273,
+          "sha256": "e4924116dc3c9bd1dbb382a6b3ea82f6a0aa637c0cb25901f6ce96005c122779"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 32,
+      "name": "area_rando_gate_greenhillzone.ips",
+      "source": "patches/vanilla/ips/area_rando_gate_greenhillzone.ips",
+      "spans": [
+        {
+          "address": 493156,
+          "snes": 9406052,
+          "size": 12,
+          "sha256": "908865edd55296a25591b9173ebe2d0f85f963635a4f973a5a030c2546d70d28"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 33,
+      "name": "area_layout_greenhillzone.ips",
+      "source": "patches/vanilla/ips/area_layout_greenhillzone.ips",
+      "spans": [
+        {
+          "address": 2282852,
+          "snes": 12965220,
+          "size": 1609,
+          "sha256": "0178051bc0629eb6c13aa5837be0be0341910e63ae65e2fd2379bc82c4b14fc6"
+        },
+        {
+          "address": 2284461,
+          "snes": 12966829,
+          "size": 807,
+          "sha256": "62394403e2c9c33cd08a6f07e19a6dfb40a6fabec75f87c3f989787584a3d2c3"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 34,
+      "name": "east_ocean.ips",
+      "source": "patches/vanilla/ips/east_ocean.ips",
+      "spans": [
+        {
+          "address": 2203071,
+          "snes": 12819903,
+          "size": 2283,
+          "sha256": "78e0abcec30c52b6b9fe5c381008b09d4ec87461444250de79ff88bcb10060b2"
+        },
+        {
+          "address": 2205354,
+          "snes": 12822186,
+          "size": 1584,
+          "sha256": "9fb1db9ef44166dfbf425b5eacaa2e83bd1c0bc8dbe8fb671d6139cb177566ee"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 35,
+      "name": "Sponge_Bath_Blinking_Door",
+      "source": "dictionary",
+      "spans": [
+        {
+          "address": 508534,
+          "snes": 9421430,
+          "size": 1,
+          "sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977"
+        },
+        {
+          "address": 1101417,
+          "snes": 10604137,
+          "size": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 36,
+      "name": "area_layout_east_tunnel.ips",
+      "source": "patches/vanilla/ips/area_layout_east_tunnel.ips",
+      "spans": [
+        {
+          "address": 2418710,
+          "snes": 13232150,
+          "size": 1154,
+          "sha256": "29f8c34f36f4aab5a0fea0f8c9e29cbb39140a00aecd4168092974fcb64203fc"
+        },
+        {
+          "address": 2419864,
+          "snes": 13233304,
+          "size": 1420,
+          "sha256": "caab377590a323fc70bffd43e1adaae6385ecb2c0fb240b366a51a01b5d21431"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 37,
+      "name": "area_layout_caterpillar.ips",
+      "source": "patches/vanilla/ips/area_layout_caterpillar.ips",
+      "spans": [
+        {
+          "address": 2301794,
+          "snes": 13016930,
+          "size": 1830,
+          "sha256": "d7274aa7b2855911643745826596ea18c15af3b6755b9eba3e8d796e326ba342"
+        },
+        {
+          "address": 2303624,
+          "snes": 13018760,
+          "size": 3222,
+          "sha256": "8e8674cb9f90d0dca4a9557af972e20eaf32dd9d6a0cca09998aab1e4f82013c"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 38,
+      "name": "area_layout_single_chamber.ips",
+      "source": "patches/vanilla/ips/area_layout_single_chamber.ips",
+      "spans": [
+        {
+          "address": 2354193,
+          "snes": 13102097,
+          "size": 2209,
+          "sha256": "85458744ba19bc183a3594ae728b026b569f293ed5ab72a0be2b738d0e624b58"
+        },
+        {
+          "address": 2356402,
+          "snes": 13104306,
+          "size": 2639,
+          "sha256": "730c714d3828a88e345bff4e7efe4870617ced9b676f43e9859de9d31551d331"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 39,
+      "name": "ln_chozo_platform.ips",
+      "source": "patches/vanilla/ips/ln_chozo_platform.ips",
+      "spans": [
+        {
+          "address": 2376925,
+          "snes": 13157597,
+          "size": 1411,
+          "sha256": "af89a5767718c389329a30b8b3152b5d9d71bfb3b98e137be9adcf17eeef80e6"
+        },
+        {
+          "address": 2378336,
+          "snes": 13159008,
+          "size": 840,
+          "sha256": "2e966af6faf79c32dacb4a611202c51cb546a9711cdf72b992592f78c8e3dd24"
+        }
+      ],
+      "additionalPlm": null
+    },
+    {
+      "id": 40,
+      "name": "LN_Chozo_SpaceJump_Check_Disable",
+      "source": "dictionary",
+      "spans": [],
+      "additionalPlm": null,
+      "nativeBehavior": "LN_CHOZO",
+      "sourceSpans": [
+        {
+          "address": 151951,
+          "snes": 8704399,
+          "size": 8,
+          "sha256": "90961fe2de2d340db3a96d20473c5d6c692df792bb7d7ed11c907c4afbceddf3"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "bomb_torizo.ips",
+      "source": "patches/common/ips/bomb_torizo.ips",
+      "spans": [],
+      "additionalPlm": null,
+      "nativeBehavior": "BOMB_TORIZO",
+      "sourceSpans": [
+        {
+          "address": 146031,
+          "snes": 8698479,
+          "size": 13,
+          "sha256": "11502d39c187194f0f5ea850071250c1eb7738cf85ff4160d9a313f15f29353c"
+        },
+        {
+          "address": 152379,
+          "snes": 8704827,
+          "size": 25,
+          "sha256": "305e45e7e72caba0e44204cbf96290f7fdceeaee7a5114baba970291bd4e62fc"
+        },
+        {
+          "address": 161856,
+          "snes": 8714304,
+          "size": 13,
+          "sha256": "f1ef55b79aa8908bc567bb80ebf007a4252b3b52615ca29e337587157233f19a"
+        }
+      ]
+    }
+  ],
+  "requiresNativeCode": [
+    "LN_Chozo_SpaceJump_Check_Disable",
+    "bomb_torizo.ips",
+    "door_indicators_plms.ips",
+    "wh_open_tube.ips"
+  ],
+  "sha256": "03f697bd736d649d40d3ee33eccf62940cb3de3346404d94c9476df4e6ce18dc"
+}

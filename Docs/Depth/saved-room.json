@@ -1,0 +1,14 @@
+{
+  "changed_background_pixels": 7163,
+  "foreground_and_hud_unchanged": true,
+  "room": "0x91f8",
+  "state": 8,
+  "mode": 1,
+  "parallax_supported": 1,
+  "far_pixels": 32342,
+  "layer_counts": {
+    "0": 13497,
+    "1": 32342,
+    "4": 11505
+  }
+}

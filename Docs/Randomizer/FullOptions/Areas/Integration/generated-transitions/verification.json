@@ -1,0 +1,215 @@
+{
+  "passed": true,
+  "transitions": [
+    {
+      "seed": 15092600,
+      "fingerprint": "fdf4da30b7c79f491c08fbc1727d1efe74db185ae002bf05c72ba3311ff92430",
+      "source": "Crocomire Room Top",
+      "destination": "Crab Hole Bottom Left",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 112,
+      "room": 53788,
+      "capture": "00-05-to-02.png"
+    },
+    {
+      "seed": 15092600,
+      "fingerprint": "fdf4da30b7c79f491c08fbc1727d1efe74db185ae002bf05c72ba3311ff92430",
+      "source": "West Ocean Left",
+      "destination": "Red Tower Top Left",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 41555,
+      "capture": "00-31-to-25.png"
+    },
+    {
+      "seed": 15092600,
+      "fingerprint": "fdf4da30b7c79f491c08fbc1727d1efe74db185ae002bf05c72ba3311ff92430",
+      "source": "Crab Shaft Right",
+      "destination": "Glass Tunnel Top",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 52987,
+      "capture": "00-04-to-09.png"
+    },
+    {
+      "seed": 15092601,
+      "fingerprint": "040315d5b8ee734100864d02345565c55226a7db1c3b4454ca6020be0ff44467",
+      "source": "Crocomire Room Top",
+      "destination": "Crocomire Speedway Bottom",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 112,
+      "room": 43299,
+      "capture": "01-05-to-06.png"
+    },
+    {
+      "seed": 15092601,
+      "fingerprint": "040315d5b8ee734100864d02345565c55226a7db1c3b4454ca6020be0ff44467",
+      "source": "West Ocean Left",
+      "destination": "Moat Right",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 105,
+      "room": 38399,
+      "capture": "01-31-to-20.png"
+    },
+    {
+      "seed": 15092601,
+      "fingerprint": "040315d5b8ee734100864d02345565c55226a7db1c3b4454ca6020be0ff44467",
+      "source": "Crab Shaft Right",
+      "destination": "Red Tower Top Left",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 41555,
+      "capture": "01-04-to-25.png"
+    },
+    {
+      "seed": 15092602,
+      "fingerprint": "123ff614e4489f893a2ba51111474068926730d647151030707ce945d0771a19",
+      "source": "Crocomire Room Top",
+      "destination": "Warehouse Entrance Left",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 112,
+      "room": 42657,
+      "capture": "02-05-to-28.png"
+    },
+    {
+      "seed": 15092602,
+      "fingerprint": "123ff614e4489f893a2ba51111474068926730d647151030707ce945d0771a19",
+      "source": "West Ocean Left",
+      "destination": "Glass Tunnel Top",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 52987,
+      "capture": "02-31-to-09.png"
+    },
+    {
+      "seed": 15092602,
+      "fingerprint": "123ff614e4489f893a2ba51111474068926730d647151030707ce945d0771a19",
+      "source": "Crab Shaft Right",
+      "destination": "Green Brinstar Elevator",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 39224,
+      "capture": "02-04-to-11.png"
+    },
+    {
+      "seed": 15092603,
+      "fingerprint": "d562fc4a8b06b52ffe55ecddb055323488a9f43be218772a0bebf0495c37c593",
+      "source": "Crocomire Room Top",
+      "destination": "Red Brinstar Elevator",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 97,
+      "room": 38442,
+      "capture": "03-05-to-23.png"
+    },
+    {
+      "seed": 15092603,
+      "fingerprint": "d562fc4a8b06b52ffe55ecddb055323488a9f43be218772a0bebf0495c37c593",
+      "source": "West Ocean Left",
+      "destination": "Keyhunter Room Bottom",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 105,
+      "room": 38028,
+      "capture": "03-31-to-14.png"
+    },
+    {
+      "seed": 15092603,
+      "fingerprint": "d562fc4a8b06b52ffe55ecddb055323488a9f43be218772a0bebf0495c37c593",
+      "source": "Crab Shaft Right",
+      "destination": "Warehouse Zeela Room Left",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 42097,
+      "capture": "03-04-to-30.png"
+    },
+    {
+      "seed": 15092604,
+      "fingerprint": "84d576b1b13a107672a83b2bc31bc55cf3e59e9297c2b374747f750fddc6ed27",
+      "source": "Crocomire Room Top",
+      "destination": "Kronic Boost Room Bottom Left",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 112,
+      "room": 44660,
+      "capture": "04-05-to-15.png"
+    },
+    {
+      "seed": 15092604,
+      "fingerprint": "84d576b1b13a107672a83b2bc31bc55cf3e59e9297c2b374747f750fddc6ed27",
+      "source": "West Ocean Left",
+      "destination": "Morph Ball Room Left",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 40607,
+      "capture": "04-31-to-21.png"
+    },
+    {
+      "seed": 15092604,
+      "fingerprint": "84d576b1b13a107672a83b2bc31bc55cf3e59e9297c2b374747f750fddc6ed27",
+      "source": "Crab Shaft Right",
+      "destination": "Glass Tunnel Top",
+      "states": [
+        11,
+        8
+      ],
+      "transitionFrames": 120,
+      "room": 52987,
+      "capture": "04-04-to-09.png"
+    }
+  ],
+  "forcedBlueAreaDoors": [
+    "GreenPiratesShaftBottomRight",
+    "KihunterBottom",
+    "GreenHillZoneTopRight",
+    "NoobBridgeRight",
+    "KronicBoostBottomLeft",
+    "CrocomireSpeedwayBottom",
+    "CrabShaftRight",
+    "LeCoudeBottom",
+    "RedBrinstarElevatorTop"
+  ],
+  "nativeSha256": "28e8e715243eb4cd78664787ccd77a93a169c9f3b567b09e98aafe8644fa4ebb",
+  "cpu": 0,
+  "sourceRomUnchanged": true,
+  "scope": "Real C-core frames + embedded oracle + native pause/minimap pixel checks."
+}

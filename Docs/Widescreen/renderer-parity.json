@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "rooms": 8,
+  "parallaxCases": 4,
+  "buffersCompared": 192,
+  "byteExact": true,
+  "nativeRamIncluded": true,
+  "cpuOpcodes": 0
+}

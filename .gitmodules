@@ -1,0 +1,3 @@
+[submodule "native-core"]
+	path = native-core
+	url = https://github.com/snesrev/sm.git

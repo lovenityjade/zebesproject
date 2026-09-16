@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "areas": [
+    {
+      "area": 1,
+      "counts": [
+        2,
+        31,
+        31
+      ],
+      "verifiedMarkers": 26
+    },
+    {
+      "area": 4,
+      "counts": [
+        0,
+        18,
+        18
+      ],
+      "verifiedMarkers": 16
+    },
+    {
+      "area": 2,
+      "counts": [
+        0,
+        30,
+        30
+      ],
+      "verifiedMarkers": 28
+    },
+    {
+      "area": 0,
+      "counts": [
+        0,
+        13,
+        13
+      ],
+      "verifiedMarkers": 11
+    },
+    {
+      "area": 3,
+      "counts": [
+        0,
+        8,
+        8
+      ],
+      "verifiedMarkers": 8
+    },
+    {
+      "area": 5,
+      "counts": [
+        0,
+        0,
+        0
+      ],
+      "verifiedMarkers": 0
+    }
+  ],
+  "vanillaVisibleMask": 1,
+  "allSixRegions": true,
+  "sramUnchanged": true,
+  "worldUnchanged": true,
+  "nativeEquipmentReturn": true,
+  "nativeResume": true,
+  "pendingIsUnknown": true,
+  "cpuOpcodes": 0
+}

@@ -1,0 +1,19 @@
+{
+  "passed": [
+    "test-native-objectives.py",
+    "test-objective-live-state.py",
+    "test-native-map-icons.py",
+    "test-varia-ui.py",
+    "test-objective-pause-native.py",
+    "test-objective-hud-native.py"
+  ],
+  "executedScriptSha256": {
+    "test-native-objectives.py": "d891a6927296e2df423b956d1964449b0c5e4cb0aed9981f01de5fdd552b6ad8",
+    "test-objective-live-state.py": "37f5ecb2605ba2c97371cf79a645416520ea0a4fd138a80a26ca1d15c41fbb34",
+    "test-native-map-icons.py": "97c299e9650012dd9dbbc560028ede159db5ee00fd5d97a5a770c62627b423be",
+    "test-varia-ui.py": "fc5192c558265a47941aed9be3865945a9b77bdbc992a545f1ff95aa2d253792",
+    "test-objective-pause-native.py": "b8f4b39228aee4149d20b50b43e17d30486e0fcdb5af48c977775c08e413578b",
+    "test-objective-hud-native.py": "223c88855ec8534dc4ebc103fd984497bf61d2b17735d43fc83ea353fa009bbe"
+  },
+  "nativeSha256": "28ff5312a8c86e99dc950b47ce106e095c95c23c05f1d6dc4c57b85f3f1ee6be"
+}

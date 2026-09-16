@@ -1,0 +1,2 @@
+static const TCHAR* NativeAnimalsCatalog=TEXT("a2e2abd262d01066b4c0bc56aa69a2ace10e8e34cbc194ff09f52f0f925deca3");
+static const TCHAR* NativeAnimalNames[]={TEXT(""),TEXT("animal_enemies.ips"),TEXT("animals.ips"),TEXT("draygonimals.ips"),TEXT("escapimals.ips"),TEXT("gameend.ips"),TEXT("grey_door_animals.ips"),TEXT("low_timer.ips"),TEXT("metalimals.ips"),TEXT("phantoonimals.ips"),TEXT("ridleyimals.ips")};

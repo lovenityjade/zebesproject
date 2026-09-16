@@ -1,0 +1,14 @@
+{
+  "emptyBeforeRom": true,
+  "byteExactDomains": {
+    "world": "e1580678ed4816d350d92fd37a2d6beb3ec553572a4f994640a1ba329224cd0e",
+    "areas": "485fcda151fcf36afcb221540176729c8147fcbe81c9073ecd5c53b03783ba0d",
+    "escape": "ca5e4131d9fef3bc4087e64d199e20c4d7ad27de287bb533b8c426c6cf9aa949",
+    "animals": "d5bfca40d8be244e40292e9afe4d2cf65e476cbc49f26843489270e2a35d7211"
+  },
+  "trackerIcons": 26,
+  "trackerRgbaSha256": "88cbc243b6c7f56549db8fa80fb8f4a82dd84563200ba1ee5dd56b5bc6c9d143",
+  "helmetRgbaSha256": "b185e21b76e9079d9f33c89650987275727b612197566c637f4fedea8b159e67",
+  "sourceRomUnchanged": true,
+  "librarySha256": "90e8349b925f051c08d982b55a93451e36f19c74a79d244de20628c809a1fe00"
+}

@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "rooms": [
+    {
+      "destination": 0,
+      "room": "91f8",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "destination": 1,
+      "room": "93d5",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        0,
+        0
+      ]
+    },
+    {
+      "destination": 2,
+      "room": "9ad9",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        0,
+        512
+      ]
+    },
+    {
+      "destination": 3,
+      "room": "a923",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        3072,
+        512
+      ]
+    },
+    {
+      "destination": 4,
+      "room": "b236",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        1024,
+        512
+      ]
+    },
+    {
+      "destination": 5,
+      "room": "d1dd",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        0,
+        0
+      ]
+    },
+    {
+      "destination": 6,
+      "room": "d48e",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        0,
+        256
+      ]
+    },
+    {
+      "destination": 7,
+      "room": "ca08",
+      "centerByteExact": true,
+      "worldWidth": 400,
+      "hudRows": 32,
+      "camera": [
+        0,
+        0
+      ]
+    }
+  ],
+  "cpuOpcodes": 0,
+  "userSaveUnchanged": true,
+  "note": "Side pixels are decoded from real room data; space beyond a room boundary stays empty."
+}

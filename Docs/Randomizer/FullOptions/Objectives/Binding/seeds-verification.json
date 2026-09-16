@@ -1,0 +1,37 @@
+{
+  "seeds": [
+    {
+      "seed": 15092800,
+      "fingerprint": "aa53a707f64901a06d52085b07119a7939d9cd4c884de1f7db3e75f88e053736",
+      "checks": 100,
+      "split": "Full",
+      "objectiveCount": 4,
+      "completionMode": "mother-brain"
+    },
+    {
+      "seed": 15092801,
+      "fingerprint": "478502ed41dba4f27c1f9d1dd97a71bc4325dcdcd5183dad5ee3869b791e9663",
+      "checks": 100,
+      "split": "FullWithHUD",
+      "objectiveCount": 4,
+      "completionMode": "mother-brain"
+    },
+    {
+      "seed": 15092802,
+      "fingerprint": "229c3e06878e1234c6ebd42a100a662d0587e5ef8be885bb2c954f818a7003e0",
+      "checks": 100,
+      "split": "Chozo",
+      "objectiveCount": 4,
+      "completionMode": "mother-brain"
+    },
+    {
+      "seed": 15092803,
+      "fingerprint": "26e08fc4460b312033c04d860f68d403a500dedbfb6f3b86ccd33ff448f5ed42",
+      "checks": 100,
+      "split": "Full",
+      "objectiveCount": 0,
+      "completionMode": "chozo-relic-hunt"
+    }
+  ],
+  "nativeSha256": "1a83b5f5c1e04b0367a6a8d5c1cd1b3148be259b4c549298420393474f191369"
+}

@@ -1,0 +1,281 @@
+{
+  "passed": true,
+  "starts": [
+    {
+      "name": "Ceres",
+      "slot": 0,
+      "spawn": 65534,
+      "opened": [
+        16,
+        31,
+        35,
+        50,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Landing Site",
+      "slot": 1,
+      "spawn": 0,
+      "opened": [
+        16,
+        31,
+        35,
+        50,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Gauntlet Top",
+      "slot": 2,
+      "spawn": 6,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Green Brinstar Elevator",
+      "slot": 3,
+      "spawn": 264,
+      "opened": [
+        16,
+        31,
+        33,
+        35,
+        38,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Big Pink",
+      "slot": 0,
+      "spawn": 256,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Etecoons Supers",
+      "slot": 1,
+      "spawn": 263,
+      "opened": [
+        16,
+        31,
+        35,
+        52,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Wrecked Ship Main",
+      "slot": 2,
+      "spawn": 768,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        131,
+        139,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Firefleas Top",
+      "slot": 3,
+      "spawn": 519,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Business Center",
+      "slot": 0,
+      "spawn": 520,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        77,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Bubble Mountain",
+      "slot": 1,
+      "spawn": 513,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        84,
+        85,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Mama Turtle",
+      "slot": 2,
+      "spawn": 1030,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        142,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Watering Hole",
+      "slot": 3,
+      "spawn": 1031,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Aqueduct",
+      "slot": 0,
+      "spawn": 1029,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Red Brinstar Elevator",
+      "slot": 1,
+      "spawn": 266,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        60,
+        61,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    },
+    {
+      "name": "Golden Four",
+      "slot": 2,
+      "spawn": 7,
+      "opened": [
+        16,
+        31,
+        35,
+        56,
+        68,
+        140,
+        146,
+        150,
+        152
+      ],
+      "invalidReplacements": 4
+    }
+  ],
+  "independentSelectors": 4,
+  "legacyEmptyContract": true,
+  "mismatchedSpawnRejected": true,
+  "areaOnlyDependencyGuard": true,
+  "cpu": 0,
+  "sourceRomUnchanged": true,
+  "nativeSha256": "28e8e715243eb4cd78664787ccd77a93a169c9f3b567b09e98aafe8644fa4ebb",
+  "scope": "Real C-core frames + embedded oracle + native pause/minimap pixel checks."
+}

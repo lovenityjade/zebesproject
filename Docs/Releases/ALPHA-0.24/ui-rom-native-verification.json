@@ -1,0 +1,18 @@
+{
+  "sourceRomUnchanged": true,
+  "librarySha256": "994f9328fe75df9b9de5880cb214407f4cdf8fd0ea51d3e7ca4553bbe73bf329",
+  "sheets": {
+    "varia_gfx": {
+      "usedTiles": 256,
+      "allUsedTilesByteExact": true,
+      "emptyBeforeRom": true,
+      "sha256": "52e1cc21202604931bcfffdbf0867724c716704e5a97783c0ba85b9d418f3858"
+    },
+    "objective_pause_gfx": {
+      "usedTiles": 85,
+      "allUsedTilesByteExact": true,
+      "emptyBeforeRom": true,
+      "sha256": "b1aaec8b04dd8ecd79d3580971f23d3f4cf0e8dd1261fbe5a201f3febb919ebd"
+    }
+  }
+}

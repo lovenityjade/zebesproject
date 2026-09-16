@@ -1,0 +1,21 @@
+{
+  "release": {
+    "Runtime/Native/build/libsm_native.so": "f7b41713be853d49cdaa66e346ecbcfe9370faab150d28fc76ac4f1387a59a56",
+    "Runtime/SMUnreal/Binaries/Linux/SMUnreal": "e241eca60095ccda29caa41e0e2c40af58a0d5feed264eee66449170807d8bf6",
+    "Runtime/roms/Super Metroid (Japan, USA) (En,Ja).sfc": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72"
+  },
+  "upstream": {
+    "native-core": {
+      "head": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
+      "clean": true
+    },
+    "supermetroid": {
+      "head": "b7785a19024454ef366500243648cb64e687164b",
+      "clean": true
+    },
+    "Randomizer/upstream": {
+      "head": "72ec1f30b700442d0c30aad6c43801bd64f1e2a5",
+      "clean": true
+    }
+  }
+}

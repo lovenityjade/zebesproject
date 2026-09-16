@@ -1,0 +1,15 @@
+{
+  "sourceRomUnchanged": true,
+  "vanillaOptionsExactParity": true,
+  "ammoGlyphParityBothWidths": true,
+  "areaRemainingCounter": true,
+  "manualPreservesSurplus": true,
+  "manualCancelAndReselect": true,
+  "autoPreservesSurplusAndInvincibility": true,
+  "objectiveNotificationFiveSeconds": true,
+  "fourBossesAndAllObjectivesQueue": true,
+  "actualReservePickupFilled": true,
+  "passed": true,
+  "host": "gaming-pc",
+  "nativeSha256": "43df27d2ae05bc5a54acbbd9029a4086d6265307c10dbdd241c243291de1b0e6"
+}

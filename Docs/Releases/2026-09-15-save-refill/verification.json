@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "randomized": false,
+      "enabled": false,
+      "accepted": true,
+      "current": [
+        37,
+        13,
+        7,
+        2,
+        1
+      ],
+      "reloaded": true
+    },
+    {
+      "randomized": false,
+      "enabled": true,
+      "accepted": false,
+      "current": [
+        37,
+        13,
+        7,
+        2,
+        1
+      ],
+      "reloaded": false
+    },
+    {
+      "randomized": false,
+      "enabled": true,
+      "accepted": true,
+      "current": [
+        399,
+        200,
+        30,
+        10,
+        5
+      ],
+      "reloaded": true
+    },
+    {
+      "randomized": true,
+      "enabled": false,
+      "accepted": true,
+      "current": [
+        37,
+        13,
+        7,
+        2,
+        1
+      ],
+      "reloaded": true
+    },
+    {
+      "randomized": true,
+      "enabled": true,
+      "accepted": false,
+      "current": [
+        37,
+        13,
+        7,
+        2,
+        1
+      ],
+      "reloaded": false
+    },
+    {
+      "randomized": true,
+      "enabled": true,
+      "accepted": true,
+      "current": [
+        399,
+        200,
+        30,
+        10,
+        5
+      ],
+      "reloaded": true
+    }
+  ],
+  "sourceRomUnchanged": true,
+  "emulatedCpu": 0
+}

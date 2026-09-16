@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "renderer": "Unreal Vulkan",
+  "testHost": "gaming-pc",
+  "comparison": "Original / Gaussian Lighten 110% / Gaussian plus cinematic effects / six native frames later",
+  "samples": [
+    {
+      "scene": "cinema-0-900",
+      "protectedGuiPixels": 166698,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 0,
+      "maximumCinematicDelta": 0,
+      "motionChangedChannels": 5050
+    },
+    {
+      "scene": "cinema-1-45",
+      "protectedGuiPixels": 0,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 54166,
+      "maximumCinematicDelta": 251,
+      "motionChangedChannels": 684254
+    },
+    {
+      "scene": "cinema-1-90",
+      "protectedGuiPixels": 0,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 14906,
+      "maximumCinematicDelta": 212,
+      "motionChangedChannels": 109139
+    },
+    {
+      "scene": "cinema-2-120",
+      "protectedGuiPixels": 0,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 18994,
+      "maximumCinematicDelta": 111,
+      "motionChangedChannels": 176224
+    },
+    {
+      "scene": "cinema-2-1250",
+      "protectedGuiPixels": 0,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 97036,
+      "maximumCinematicDelta": 214,
+      "motionChangedChannels": 45361
+    },
+    {
+      "scene": "cinema-2-2000",
+      "protectedGuiPixels": 27162,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 81382,
+      "maximumCinematicDelta": 247,
+      "motionChangedChannels": 1588710
+    },
+    {
+      "scene": "cinema-2-800",
+      "protectedGuiPixels": 5589,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 92497,
+      "maximumCinematicDelta": 70,
+      "motionChangedChannels": 32022
+    },
+    {
+      "scene": "cinema-3-2300",
+      "protectedGuiPixels": 0,
+      "guiByteExact": true,
+      "cinematicChangedChannels": 121786,
+      "maximumCinematicDelta": 254,
+      "motionChangedChannels": 654377
+    }
+  ]
+}

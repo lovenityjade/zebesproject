@@ -1,0 +1,128 @@
+{
+  "pass_": true,
+  "results": [
+    {
+      "kind": "ownership",
+      "layout": 0,
+      "tiles": 1262,
+      "rooms": 261,
+      "totals": [
+        0,
+        165,
+        145,
+        67,
+        141,
+        25,
+        185,
+        55,
+        121,
+        96,
+        170,
+        0
+      ]
+    },
+    {
+      "kind": "ownership",
+      "layout": 1,
+      "tiles": 1262,
+      "rooms": 261,
+      "totals": [
+        0,
+        158,
+        146,
+        63,
+        139,
+        25,
+        179,
+        55,
+        132,
+        96,
+        172,
+        0
+      ]
+    },
+    {
+      "kind": "native_minimap_slopes",
+      "cases": 8
+    },
+    {
+      "kind": "source_portal_semantics",
+      "cases": 1024
+    },
+    {
+      "kind": "native_sram_reload",
+      "counts": [
+        0,
+        158,
+        146,
+        63,
+        139,
+        25,
+        179,
+        55,
+        132,
+        96,
+        172,
+        0
+      ],
+      "extension": "ZME1",
+      "historical": true
+    },
+    {
+      "kind": "independent_sram_slots",
+      "counts": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "loads": [
+        2,
+        0,
+        1,
+        2,
+        1,
+        0
+      ]
+    }
+  ],
+  "cpuOpcodes": 0
+}

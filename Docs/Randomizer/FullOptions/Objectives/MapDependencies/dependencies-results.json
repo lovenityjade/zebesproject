@@ -1,0 +1,232 @@
+{
+  "passed": true,
+  "bombTorizo": [
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": true
+    },
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": true,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": true,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": true,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "tweak": false,
+      "sleep": false,
+      "robots": true,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": true
+    },
+    {
+      "tweak": false,
+      "sleep": true,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "tweak": false,
+      "sleep": true,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": false,
+      "sleep": true,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "tweak": false,
+      "sleep": true,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": true
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": true,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": true,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": true,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": true
+    },
+    {
+      "tweak": true,
+      "sleep": false,
+      "robots": true,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": true,
+      "sleep": true,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "tweak": true,
+      "sleep": true,
+      "robots": false,
+      "bombs": false,
+      "itemPresent": true,
+      "wake": false
+    },
+    {
+      "tweak": true,
+      "sleep": true,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": false,
+      "wake": false
+    },
+    {
+      "tweak": true,
+      "sleep": true,
+      "robots": false,
+      "bombs": true,
+      "itemPresent": true,
+      "wake": false
+    }
+  ],
+  "pickupDeletion": true,
+  "mixedSlots": true,
+  "pendingRollback": true,
+  "spc": [
+    {
+      "mode": "vanilla",
+      "voices": 2,
+      "priority": 0,
+      "afterCompetingSound": 6,
+      "audioSha256": "0cf8a1ac96d68e206d1eeec7bef60a6a052e1735173fd826d3ca61fd87bf292a"
+    },
+    {
+      "mode": "historical",
+      "voices": 2,
+      "priority": 0,
+      "afterCompetingSound": 6,
+      "audioSha256": "0cf8a1ac96d68e206d1eeec7bef60a6a052e1735173fd826d3ca61fd87bf292a"
+    },
+    {
+      "mode": "goals",
+      "voices": 2,
+      "priority": 1,
+      "afterCompetingSound": 25,
+      "audioSha256": "fac8f0959fcaf018b2d448002ed388a50e67c5a295feddc4e623ae6042cd6571"
+    },
+    {
+      "mode": "hidden-goals",
+      "voices": 2,
+      "priority": 1,
+      "afterCompetingSound": 25,
+      "audioSha256": "fac8f0959fcaf018b2d448002ed388a50e67c5a295feddc4e623ae6042cd6571"
+    }
+  ],
+  "cpuOpcodes": 0,
+  "nativeSha256": "28ff5312a8c86e99dc950b47ce106e095c95c23c05f1d6dc4c57b85f3f1ee6be"
+}

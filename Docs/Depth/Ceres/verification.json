@@ -1,0 +1,23 @@
+{
+  "native": {
+    "frame": 8550,
+    "room": "df45",
+    "state": 8,
+    "cpu_opcodes": 0
+  },
+  "test": "Same frozen native frame in Unreal, flat vs layered, Gaussian Lighten preserved",
+  "opacity": 0.75,
+  "exposure": 1.1,
+  "modified_source_texels": 4550,
+  "source_foreground_and_gui_unchanged": true,
+  "captures": {
+    "flat": {
+      "reference_max_channel_error": 2,
+      "reference_mean_error": 0.0510731853505291
+    },
+    "layered": {
+      "reference_max_channel_error": 2,
+      "reference_mean_error": 0.050723767154431214
+    }
+  }
+}

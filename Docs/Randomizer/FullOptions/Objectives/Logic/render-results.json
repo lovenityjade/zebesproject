@@ -1,0 +1,26 @@
+{
+  "args": [
+    "./SMUnreal/Binaries/Linux/SMUnreal",
+    "/Engine/Maps/Entry",
+    "-SMObjectiveLogicTest",
+    "-SMAreaTest",
+    "-SMStartTest=1",
+    "-SMAreaConnectionTest=24",
+    "-SMPauseTest",
+    "-SMWarmup=12000",
+    "-RenderOffscreen",
+    "-unattended",
+    "-windowed",
+    "-ResX=1280",
+    "-ResY=720",
+    "-nosplash",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-ExecCmds=t.MaxFPS 60"
+  ],
+  "seed": 15092901,
+  "fingerprint": "45bb1a7e8ff5fae9c91f2e5d43e8e3f2c82d23ea8ae574a197190b281d50cd58",
+  "nativeSha256": "a9346799c1a6230e447af1571012eb87f04efa53025cf5358e7b6ecc6408b9f7",
+  "gameSha256": "06a164d60cb437a224e2ebaed6e73f79380e2c27b1ed96acfb2f76c6880a2355",
+  "scope": "Native objective progress through Unreal's real async tracker, plus pause QA."
+}

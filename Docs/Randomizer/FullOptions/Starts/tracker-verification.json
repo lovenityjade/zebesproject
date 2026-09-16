@@ -1,0 +1,353 @@
+[
+  {
+    "seed": 15092100,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 37
+      },
+      {
+        "step": 20,
+        "green": 41
+      },
+      {
+        "step": 50,
+        "green": 85
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092101,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 32
+      },
+      {
+        "step": 20,
+        "green": 35
+      },
+      {
+        "step": 50,
+        "green": 67
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092102,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 3
+      },
+      {
+        "step": 20,
+        "green": 35
+      },
+      {
+        "step": 50,
+        "green": 73
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092103,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 1
+      },
+      {
+        "step": 5,
+        "green": 25
+      },
+      {
+        "step": 20,
+        "green": 35
+      },
+      {
+        "step": 50,
+        "green": 83
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092104,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 32
+      },
+      {
+        "step": 20,
+        "green": 54
+      },
+      {
+        "step": 50,
+        "green": 66
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092105,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 32
+      },
+      {
+        "step": 20,
+        "green": 54
+      },
+      {
+        "step": 50,
+        "green": 81
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092106,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 1
+      },
+      {
+        "step": 5,
+        "green": 2
+      },
+      {
+        "step": 20,
+        "green": 54
+      },
+      {
+        "step": 50,
+        "green": 85
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092107,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 1
+      },
+      {
+        "step": 5,
+        "green": 65
+      },
+      {
+        "step": 20,
+        "green": 72
+      },
+      {
+        "step": 50,
+        "green": 87
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092108,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 1
+      },
+      {
+        "step": 5,
+        "green": 26
+      },
+      {
+        "step": 20,
+        "green": 41
+      },
+      {
+        "step": 50,
+        "green": 87
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092109,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 1
+      },
+      {
+        "step": 5,
+        "green": 10
+      },
+      {
+        "step": 20,
+        "green": 69
+      },
+      {
+        "step": 50,
+        "green": 84
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092110,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 6
+      },
+      {
+        "step": 20,
+        "green": 83
+      },
+      {
+        "step": 50,
+        "green": 96
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092111,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 0
+      },
+      {
+        "step": 5,
+        "green": 6
+      },
+      {
+        "step": 20,
+        "green": 75
+      },
+      {
+        "step": 50,
+        "green": 86
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  },
+  {
+    "seed": 15092112,
+    "nativePlanReload": true,
+    "vanillaRestored": true,
+    "queries": [
+      {
+        "step": 0,
+        "green": 2
+      },
+      {
+        "step": 5,
+        "green": 65
+      },
+      {
+        "step": 20,
+        "green": 74
+      },
+      {
+        "step": 50,
+        "green": 86
+      },
+      {
+        "step": 109,
+        "green": 100
+      }
+    ]
+  }
+]

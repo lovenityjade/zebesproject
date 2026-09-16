@@ -1,0 +1,41 @@
+{
+  "spans": [
+    {
+      "address": 2547479,
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "address": 2547490,
+      "size": 448,
+      "sha256": "584bdd67cabf06eebc39bd3e86d0f5a03322b6a208f61c970e68ade6814e00b7"
+    },
+    {
+      "address": 2547938,
+      "size": 300,
+      "sha256": "5263250339d3961c91f0bb1150e95ff862f8cd6a4ca873bc8d274dbe86fd6ce7"
+    },
+    {
+      "address": 501270,
+      "size": 2,
+      "sha256": "cccc490bb253f92c87c0d4706bd3f9dde3444e300cee693496682177507b107e"
+    },
+    {
+      "address": 109150,
+      "size": 1,
+      "sha256": "c3641f8544d7c02f3580b07c0f9887f0c6a27ff5ab1d4a3e29caf197cfc299ae"
+    },
+    {
+      "address": 515563,
+      "size": 2,
+      "sha256": "44d974c80487ea9a237f1cac2b456204480961271a2338ec81331fbff575d526"
+    },
+    {
+      "address": 102936,
+      "size": 1,
+      "sha256": "c3641f8544d7c02f3580b07c0f9887f0c6a27ff5ab1d4a3e29caf197cfc299ae"
+    }
+  ],
+  "sourceSha256": "ce4dceb6435b391086ef4da10eb199efc4480eb415c8c7f2e462cb6fb95b65ca",
+  "scope": "Room and door data; native code follows minimizer_tourian_common.asm"
+}

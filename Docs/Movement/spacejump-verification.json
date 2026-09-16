@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "originalRamAndPixelsExact": true,
+  "originalFrames": 1440,
+  "noHeldAutoJump": true,
+  "itemRequired": true,
+  "underwaterRestrictionPreserved": true,
+  "scenarios": [
+    {
+      "mode": "baseline",
+      "case": "quick",
+      "boosts": 5,
+      "minY": 1100
+    },
+    {
+      "mode": "baseline",
+      "case": "steady",
+      "boosts": 3,
+      "minY": 1100
+    },
+    {
+      "mode": "baseline",
+      "case": "late",
+      "boosts": 0,
+      "minY": 1100
+    },
+    {
+      "mode": "baseline",
+      "case": "held",
+      "boosts": 0,
+      "minY": 1028
+    },
+    {
+      "mode": "baseline",
+      "case": "missing",
+      "boosts": 0,
+      "minY": 1100
+    },
+    {
+      "mode": "baseline",
+      "case": "water_without_gravity",
+      "boosts": 0,
+      "minY": 364
+    },
+    {
+      "mode": "original",
+      "case": "quick",
+      "boosts": 5,
+      "minY": 1100
+    },
+    {
+      "mode": "original",
+      "case": "steady",
+      "boosts": 3,
+      "minY": 1100
+    },
+    {
+      "mode": "original",
+      "case": "late",
+      "boosts": 0,
+      "minY": 1100
+    },
+    {
+      "mode": "original",
+      "case": "held",
+      "boosts": 0,
+      "minY": 1028
+    },
+    {
+      "mode": "original",
+      "case": "missing",
+      "boosts": 0,
+      "minY": 1100
+    },
+    {
+      "mode": "original",
+      "case": "water_without_gravity",
+      "boosts": 0,
+      "minY": 364
+    },
+    {
+      "mode": "assisted",
+      "case": "quick",
+      "boosts": 10,
+      "minY": 721
+    },
+    {
+      "mode": "assisted",
+      "case": "steady",
+      "boosts": 5,
+      "minY": 1023
+    },
+    {
+      "mode": "assisted",
+      "case": "late",
+      "boosts": 1,
+      "minY": 1060
+    },
+    {
+      "mode": "assisted",
+      "case": "held",
+      "boosts": 0,
+      "minY": 1028
+    },
+    {
+      "mode": "assisted",
+      "case": "missing",
+      "boosts": 0,
+      "minY": 1100
+    },
+    {
+      "mode": "assisted",
+      "case": "water_without_gravity",
+      "boosts": 0,
+      "minY": 364
+    }
+  ]
+}
