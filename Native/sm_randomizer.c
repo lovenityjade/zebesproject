@@ -71,11 +71,16 @@ static int prepare(void) {
     // AppRun selects its bundled runtime explicitly. Never silently fall back
     // to a different system Python when a packaged installation is broken.
     if (*bundled != '/') { snprintf(error,sizeof(error),"Bundled Python path must be absolute"); return 0; }
-    if (dlsym(RTLD_DEFAULT, "Py_IsInitialized")) {
-      snprintf(error,sizeof(error),"Cannot select bundled Python in a host with Python already loaded"); return 0;
-    }
+    void *existing = dlsym(RTLD_DEFAULT, "Py_IsInitialized");
     runtime = dlopen(bundled, RTLD_NOW | RTLD_GLOBAL);
     if (!runtime) { snprintf(error,sizeof(error),"Bundled Python runtime unavailable: %.190s",dlerror()); return 0; }
+    // Unreal can unload/reopen this bridge between validation and generation.
+    // Python remains alive in the process: reuse exactly that bundled library,
+    // but still reject a different interpreter supplied by the host.
+    if (existing && existing != dlsym(runtime, "Py_IsInitialized")) {
+      dlclose(runtime); runtime = NULL;
+      snprintf(error,sizeof(error),"Cannot select bundled Python in a host with a different Python loaded"); return 0;
+    }
   } else if (!dlsym(runtime, "Py_IsInitialized")) {
     const char *libs[] = {"libpython3.14.so.1.0", "libpython3.13.so.1.0",
                         "libpython3.12.so.1.0", "libpython3.11.so.1.0", NULL};

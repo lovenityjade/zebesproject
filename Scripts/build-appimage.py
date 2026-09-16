@@ -62,7 +62,7 @@ def main():
     parser.add_argument('--python', type=Path, help='Relocatable CPython 3.11 prefix with lib/python3.11/LICENSE.txt')
     parser.add_argument('--appimagetool', type=Path, help='Verified local appimagetool executable')
     parser.add_argument('--runtime-file', type=Path, help='Verified local x86_64 type-2 runtime')
-    parser.add_argument('--engine-notices', type=Path, required=True, help='Engine/Source/ThirdParty/Licenses from the packaging engine')
+    parser.add_argument('--engine-notices', type=Path, help='Engine/Source/ThirdParty/Licenses from the packaging engine')
     parser.add_argument('--output', type=Path, default=ROOT / 'Build/AppImage')
     parser.add_argument('--check-only', action='store_true')
     args = parser.parse_args()
@@ -73,8 +73,8 @@ def main():
     if args.check_only:
         print('Known source/staging checks passed; full provenance and runtime review still required.')
         return
-    if not all((args.python, args.appimagetool, args.runtime_file)):
-        parser.error('--python, --appimagetool and --runtime-file are required to build')
+    if not all((args.python, args.appimagetool, args.runtime_file, args.engine_notices)):
+        parser.error('--python, --appimagetool, --runtime-file and --engine-notices are required to build')
     python = args.python.resolve(strict=True)
     tool = args.appimagetool.resolve(strict=True)
     runtime = args.runtime_file.resolve(strict=True)

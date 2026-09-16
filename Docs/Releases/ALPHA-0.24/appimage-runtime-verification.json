@@ -1,13 +1,10 @@
 {
-  "host": "gaming-pc",
   "launcherStoragePassed": true,
   "stagingRejectionsPassed": true,
-  "bundledPythonSeedParityPassed": true,
-  "missingBundledPythonRejected": true,
-  "romValidationImportPassed": true,
   "nonAsciiUserDirPassed": true,
-  "seed": 14092026,
-  "fingerprint": "a6497e12a53954cfd4066b7319e270ea3776dfb0ea8fdd9cbe29c32e877389b6",
-  "packagedGameTested": false,
-  "appImageProduced": false
+  "packagedGameTested": true,
+  "appImageProduced": true,
+  "artifactSha256": "9108a52411aad722305979d8f4480393823e8949158672448515f4d12a56b3ce",
+  "packagedEvidence": "linux-package-verification.json",
+  "reloadRegression": "python-reload-verification.json"
 }

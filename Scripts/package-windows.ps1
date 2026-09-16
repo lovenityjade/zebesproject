@@ -31,7 +31,8 @@ Get-ChildItem $Stage -Recurse -File | Where-Object { $_.Extension -in '.pdb','.d
 $Version=(Get-Content "$Root\VERSION" -Raw).Trim()
 if($Version -notmatch '^ALPHA-\d+\.\d+$'){throw 'Invalid VERSION'}
 $Zip="$Output\The_Zebes_Project-$Version-Windows-x64.zip"
-Compress-Archive -Path "$Stage\*" -DestinationPath $Zip -CompressionLevel Optimal
+& $Python "$PSScriptRoot\zip-package.py" $Stage $Zip
+if($LASTEXITCODE -ne 0){throw 'ZIP verification failed'}
 $Hash=(Get-FileHash -Algorithm SHA256 $Zip).Hash.ToLower()
 Set-Content -Encoding ASCII "$Zip.sha256" "$Hash  $([IO.Path]::GetFileName($Zip))"
 @{version=$Version;sha256=$Hash;packagedGameTested=$false} | ConvertTo-Json | Set-Content -Encoding UTF8 "$Zip.build.json"

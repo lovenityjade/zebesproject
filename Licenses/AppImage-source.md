@@ -3,7 +3,7 @@
 The launcher is a separate executable; it mounts/extracts the application and
 executes AppRun. It is not linked with the game or Unreal Engine.
 
-- Runtime: https://github.com/AppImage/type2-runtime
+- Runtime source for this build: https://github.com/AppImage/type2-runtime/tree/75849dce7cc37e4319b633df1f116ca895c71a12
 - Build instructions and pinned dependencies: the repository's build scripts.
 - musl: https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
 - libfuse (LGPL 2): https://github.com/libfuse/libfuse/blob/master/LGPL2.txt

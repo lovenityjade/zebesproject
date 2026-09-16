@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "librarySha256": "fb95302044d63b521964914642c702070445e5b474225db6bfab1f4cf1c812f0",
+  "cases": [
+    "Bundled runtime preflight followed by native bridge unload",
+    "Generation after bridge reload",
+    "Identical seed fingerprint after another reload",
+    "Different already-loaded Python is rejected",
+    "Missing explicitly selected Python is rejected"
+  ],
+  "test": "Scripts/test-python-runtime-reload.py",
+  "noRomRequired": true
+}

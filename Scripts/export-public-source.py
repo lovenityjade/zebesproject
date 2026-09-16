@@ -46,6 +46,7 @@ def export(destination):
  subprocess.run(['git','config','core.hooksPath','.githooks'],cwd=destination,check=True)
  subprocess.run(['git','add','.'],cwd=destination,check=True)
  subprocess.run(['git','update-index','--add','--cacheinfo',f'160000,{core},native-core'],cwd=destination,check=True)
+ subprocess.run(['git','submodule','update','--init','native-core'],cwd=destination,check=True)
  print('Public snapshot prepared; audit, commit and publication are separate steps:',destination)
 if __name__=='__main__':
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('destination',type=Path)

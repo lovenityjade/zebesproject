@@ -1,9 +1,9 @@
 {
-  "platform": "Windows x64 cooked game under UMU/Proton Experimental",
-  "artifactSha256": "0161bf4277566de9850e1e5d97146f374a9d426c5285f3e6437e7bda3b100da9",
+  "platform": "Linux x86-64 AppImage",
+  "artifactSha256": "9108a52411aad722305979d8f4480393823e8949158672448515f4d12a56b3ce",
   "host": "gaming-pc",
   "gpu": "NVIDIA GeForce RTX 3060",
-  "api": "D3D11 / DXVK",
+  "api": "Vulkan",
   "packagedGameTested": true,
   "headlessChecks": {
     "ROM": "PASS",
@@ -34,60 +34,60 @@
         "cpuOpcodes": 0
       },
       {
-        "frame": 1770,
+        "frame": 1773,
         "state": 4,
         "room": "0000",
         "position": "0,0",
         "cpuOpcodes": 0
       },
       {
-        "frame": 1984,
+        "frame": 1987,
         "state": 2,
         "room": "0000",
         "position": "0,0",
         "cpuOpcodes": 0
       },
       {
-        "frame": 2128,
+        "frame": 2132,
         "state": 5,
         "room": "0000",
         "position": "0,0",
         "cpuOpcodes": 0
       },
       {
-        "frame": 2586,
+        "frame": 2590,
         "state": 6,
         "room": "91f8",
         "position": "1152,1088",
         "cpuOpcodes": 0
       },
       {
-        "frame": 2654,
+        "frame": 2658,
         "state": 7,
         "room": "91f8",
         "position": "1152,1088",
         "cpuOpcodes": 0
       },
       {
-        "frame": 2684,
+        "frame": 2688,
         "state": 8,
         "room": "91f8",
         "position": "1152,1088",
         "cpuOpcodes": 0
       }
     ],
-    "logSha256": "86cae986d169898019eaedd91f39e4132521b03296d92f0d2988e8189b3e43bc",
+    "logSha256": "f57635fea820aa3f9ae52acaf9de138198f36e21fe459a5061f8d3395b49a604",
     "audioLast8Seconds": {
       "samples": 705600,
-      "peak": 6222,
-      "activeSamples": 624083,
+      "peak": 8169,
+      "activeSamples": 635614,
       "nonSilent": true
     }
   },
   "screenshotSha256": {
-    "rom-missing.png": "66618660be2ee63e3045b2b1b787d6618dcb3a5473ea579451591b12f54a0617",
-    "title-wide-save-select.png": "1433558d67678b35e668ba17b738e6a6385beb67ea3d4b96c76deea7264d5913",
-    "gameplay-final.png": "6e1be3e65ee9b242d0603b97f74db712125fff782669060695d447196304f555"
+    "rom-missing.png": "347258b4c581f4d23cf30341c7f24c36c793c7895642b7442831f1faa5a4de5e",
+    "title-wide-save-select.png": "be14f631573e9294e788a025907d86f499959fd18987d61f9edffe058a6ed530",
+    "gameplay.png": "1faa4d3eeddd98082c2152b52ccf680eb83741a96dd19873ce58e24ddcafe1b0"
   },
   "privateDataIsolated": true,
   "playerSavesUntouched": true,
@@ -95,6 +95,10 @@
     "Brief runtime smoke test, not a full playthrough or exhaustive option/GPU/controller validation.",
     "Private screenshots are hashed for evidence, not distributed."
   ],
-  "umu": "1.4.1",
-  "proton": "experimental-11.0-20260903c-x86_64"
+  "actualMountedAppImage": true,
+  "extractedAppRunAlsoTested": true,
+  "dataOutsideImage": true,
+  "glibcSymbolFloor": "2.35",
+  "minimumDistroCertified": false,
+  "audioCaptureRouting": "Moved only the test game Pulse stream to its isolated recording sink; the engine selected a physical device despite PULSE_SINK."
 }

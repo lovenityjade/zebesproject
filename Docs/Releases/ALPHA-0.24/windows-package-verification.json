@@ -23,20 +23,14 @@
   ],
   "host": "Windows 10 x64",
   "rendered": false,
-  "archiveSha256": "9142be19d55a198e2ec9001970d74299ce2528f8e849f5dec60165b11b9bda37",
+  "archiveSha256": "0161bf4277566de9850e1e5d97146f374a9d426c5285f3e6437e7bda3b100da9",
   "packagedGame": true,
   "testedArchiveBeforeNoticesSha256": "3c7eb3bcf314df84c4caf9469c00ee56082de53ba68497a502cb92dc78de8f66",
   "postTestChange": {
-    "onlyAddedLicenseFiles": [
-      "Licenses/MinGW/crt/COPYING",
-      "Licenses/MinGW/crt/COPYING.MinGW-w64-runtime.txt",
-      "Licenses/MinGW/crt/COPYING.MinGW-w64.txt",
-      "Licenses/MinGW/gcc-libs/COPYING.LIB",
-      "Licenses/MinGW/gcc-libs/COPYING.RUNTIME",
-      "Licenses/MinGW/gcc-libs/COPYING3",
-      "Licenses/MinGW/gcc-libs/README",
-      "Licenses/MinGW/mingw-w64-libraries/COPYING.libmangle"
-    ],
+    "canonicalZipPaths": true,
+    "onlyAddedLicenseFiles": 8,
+    "nonLicenseFilesByteExactAgainstTestedExtraction": 355,
     "executableAndRuntimeUnchanged": true
-  }
+  },
+  "windowsBootstrapRomCheck": true
 }
