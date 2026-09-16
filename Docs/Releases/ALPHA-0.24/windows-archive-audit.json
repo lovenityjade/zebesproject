@@ -1,0 +1,12 @@
+{
+  "archiveSha256": "0161bf4277566de9850e1e5d97146f374a9d426c5285f3e6437e7bda3b100da9",
+  "files": 1657,
+  "forbiddenPayloadsAbsent": true,
+  "authoredPresentationFilesMatch": true,
+  "canonicalZipPaths": true,
+  "filesSha256": {
+    "Native/build/sm_native.dll": "5fac920ad2e9bec89422e3c2b63b93090adc03f56576c9e29bfff130d34dbae9",
+    "SMUnreal/Binaries/Win64/SMUnreal.exe": "fdf8fbcc0f9ef4ca093fcec0170e564e6d39b1e1641ee8cef24bf72df0cc2375",
+    "Runtime/Python/python313.dll": "e820bf024efd2b56bb2b82791e6b6ddc7303f070f8e72cba7637482a8a906238"
+  }
+}
