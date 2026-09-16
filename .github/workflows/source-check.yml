@@ -1,0 +1,31 @@
+name: Source and native core
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          submodules: recursive
+      - name: Verify ROM asset boundary
+        run: python3 Scripts/check-distribution.py
+      - name: Compile native core without a ROM
+        run: |
+          cmake -S Native -B Native/build -DCMAKE_BUILD_TYPE=Release
+          cmake --build Native/build --parallel 2
+      - name: Check vendored runtime provenance
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          root = Path('Randomizer/upstream')
+          proof = json.loads(Path('Randomizer/upstream-provenance.json').read_text())
+          for name, digest in proof['files'].items():
+              assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest, name
+          print('All pinned VARIA runtime files match')
+          PY
