@@ -1,3 +1,4 @@
+#include "sm_ending.h"
 /* External MSU-1 playback for the native port. Cue mapping follows DarkShock's
  * SuperMetroid-MSU1 mapping, as retained in VARIA's supermetroid_msu1.asm.
  * PCM: MSU1 + u32le loop frame + 44100 Hz signed 16-bit stereo frames.
@@ -56,6 +57,7 @@ void sm_soundtrack_gameover_configure(const char *filename){
 }
 int sm_soundtrack_gameover_status(void){return gameover_music.file && !gameover_music.done;}
 uint8_t sm_soundtrack_command(unsigned bank,uint8_t command) {
+  if(sm_ending_preview_active())return command; /* Pause the real external track. */
   /* The original Game Over bank is still uploaded: its Metroid cries and
    * cursor SFX remain native. Only its ambience command is replaced. */
   if(sm_state()==26 && bank==3 && command==4 && gameover_path[0]){

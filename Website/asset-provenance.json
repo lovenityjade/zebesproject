@@ -1,0 +1,116 @@
+[
+  {
+    "file": "logo.webp",
+    "source": "Unreal/Content/Title/logo.png",
+    "sha256": "e48de70096a77f195885bbbc34334d08b9a9198a86214ccf2da9d89cd95faa73",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "1e85b7a61903a198f90bdbea89af0bab0354166b8ef5266c63d5abe5689d4798"
+  },
+  {
+    "file": "sky.webp",
+    "source": "Unreal/Content/Title/skyWide.png",
+    "sha256": "f37c4275ca88b5a7a33f92f9b9d72bf31ae00acd759407a9cfd7752a936a5913",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "38e1e0c835ebac9b90b2dd6ed9bb00e7e4296a606f65487c9dc7a75564a8bf07"
+  },
+  {
+    "file": "ridley.webp",
+    "source": "Unreal/Content/Title/ridley.png",
+    "sha256": "cbdb54d2dc74b9b9f1ffb69e9c9dab6d335bb85da9061db2ed2a21bf4ae48434",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "8011b764a4dc6f62618051f168b67e55860043d4ac2d9c08f87152b07a6c4cfe"
+  },
+  {
+    "file": "kraid.webp",
+    "source": "Unreal/Content/Title/kraid.png",
+    "sha256": "9fa265d37a5e01eacf8a4989475d5670f48d0848489505f77a0fb4f445164aa8",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "cc70288b7d5570c3992705ad40d2344738b4f810a3eb337d92d7e39b28822f13"
+  },
+  {
+    "file": "samus.webp",
+    "source": "Unreal/Content/Title/samus.png",
+    "sha256": "b2f0f5d0df328638df7f668fe9cb4dfe830fb3e2a814706fda25139c53cda2a0",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "789819d1a16b70b3e8f29c3c8800824d50ede218856e0fe868f2c44b66f6c03b"
+  },
+  {
+    "file": "chozo.webp",
+    "source": "Unreal/Content/Title/chozo.png",
+    "sha256": "251cccf735dcc41aca73bfb1e2466d9eb87c89f64e0902706d236c66783adf4e",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "91d5ccd6c56f9032c803f36a2eaa2417e4787d1a4154b422f4a64ffe0f762a6e"
+  },
+  {
+    "file": "rocks.webp",
+    "source": "Unreal/Content/Title/frontWide.png",
+    "sha256": "38d8cc1fa4b82640c771fff86043ef18f2c8d6924c239cd950a127ff10f91e78",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "e3e8f794a827060d6b8a25a8584f9a77b45e4b6cb89bb1b96a8ed9a99b1e38e8"
+  },
+  {
+    "file": "tablet.png",
+    "source": "Assets/ChozoRelic/Import/fragment-e-16.png",
+    "sha256": "4c5eac4014d3f4794f831acdecac3851bafdbe59e18dab4718e3d137a5f9b912",
+    "treatment": "Unmodified source copied for website display"
+  },
+  {
+    "file": "title.png",
+    "source": ".tmp/release-alpha024/final-captures/proton/title-wide-ready.png",
+    "sha256": "d46dccd26ca92edd4059e92c66b875e862b4a80058134edaea81d47c731128ed",
+    "treatment": "Unmodified source copied for website display"
+  },
+  {
+    "file": "brinstar.webp",
+    "source": "Docs/Footsteps/GamingPC/footstep-2.png",
+    "sha256": "ae608234deed1a25e95bb8aa3e718b5a255514f4e9c46228dc5068bcc6348c00",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "031ae350569f08f3113aa12c95a5d8644f4d7fd06f2e212283496eb236bc083f"
+  },
+  {
+    "file": "crateria.webp",
+    "source": "Docs/VisualPause/GamingPC/electric-grapple.png",
+    "sha256": "0db005540b147e45a5bf5250fc7fcbf3d762ada130e1f5da0020043ac8624a90",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "37699824154adc1abce35940f612fc8acb0f5b1571e8612a356fbe5c87965d8e"
+  },
+  {
+    "file": "tracker.webp",
+    "source": ".tmp/playtest-polish/map-all-items.png",
+    "sha256": "73a18301bccc9ff3acb8e0b0e1dcf674871f4f8095e6cb873f6157b63a998263",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "d830a0680c974497202fa038c6f43431d864e13b00896850ade92a1dfdfabdab"
+  },
+  {
+    "file": "ceres.webp",
+    "source": "Docs/Cinematics/ceres.png",
+    "sha256": "315ca18e35436b91f44a315b342e6df97db1ceeb3f1da7c6f2c9cd48918f7e9f",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "24f596be1bd54cd96bfdd3ddd55f984be4ce9a47e6ebd72f6900c451a15110d8"
+  },
+  {
+    "file": "recap.webp",
+    "source": ".tmp/playtest-polish/route.png",
+    "sha256": "61ad80cd06c2075015a27fcad5a3e2166f2df9f4dadca90fcf1df9728474fc6b",
+    "treatment": "Lossless WebP container conversion; identical decoded RGBA pixels verified",
+    "source_sha256": "0e608b8904bf1b04ad6d536ee34ba1d6a9bcb49240fac684f6af3803e3d89ea1"
+  },
+  {
+    "file": "Montserrat-Regular.ttf",
+    "source": "Unreal/Content/UI/Montserrat-Regular.ttf",
+    "sha256": "c3fb0280e4339f6c70cea42b8b432c6fb17fde130fbb12e9209c7cdfa79d976f",
+    "treatment": "Unmodified source copied for website display"
+  },
+  {
+    "file": "Montserrat-OFL.txt",
+    "source": "Unreal/Content/UI/OFL.txt",
+    "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e",
+    "treatment": "Unmodified font license notice"
+  },
+  {
+    "file": "seed-map.png",
+    "source": "User-provided gameplay capture, 2026-09-17, seed 15092602",
+    "sha256": "2a9975ca89bd381d64f28543dc2917e60ae40b5240427a1e83b46cce2dc5b7ab",
+    "treatment": "Unmodified screenshot copied for website display; development preview"
+  }
+]

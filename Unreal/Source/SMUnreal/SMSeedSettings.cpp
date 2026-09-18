@@ -1,4 +1,5 @@
 #include "SMSeedSettings.h"
+#include "SMLocalization.h"
 #include "Serialization/JsonReader.h"
 #include "Serialization/JsonSerializer.h"
 #include "SMSeedCatalog.inl"
@@ -66,13 +67,13 @@ bool SMSeedSettings::ValidateDraft(const FSMSeedRequest& R,FString& Error){
                 else if(P.Value->Type==EJson::String)Ok=P.Value->AsString()==TEXT("random") || (Key==TEXT("nbObjectivesRequired") && P.Value->AsString()==TEXT("off"));
             }else if(P.Value->Type==EJson::String)for(auto& V:F->GetArrayField(TEXT("choices")))Ok|=V->AsObject()->GetStringField(TEXT("value"))==P.Value->AsString();
         }
-        if(!Ok){Error=TEXT("Invalid gameplay option: ")+Key;return false;}
+        if(!Ok){Error=SMLocalization::Text(FString(TEXT("Invalid gameplay option: ")))+Key;return false;}
     }
     TSet<FString> Known;for(auto& V:C->GetArrayField(TEXT("techniques")))Known.Add(V->AsObject()->GetStringField(TEXT("key")));
     for(const auto& P:T->Values){bool Ok=Known.Contains(FString(*P.Key)) && P.Value->Type==EJson::Array;
         if(Ok){auto V=P.Value->AsArray();Ok=V.Num()==2 && V[0]->Type==EJson::Boolean && V[1]->Type==EJson::Number && FMath::IsFinite(V[1]->AsNumber()) && V[1]->AsNumber()>=0 && V[1]->AsNumber()<=800;}
-        if(!Ok){Error=TEXT("Invalid technique: ")+FString(*P.Key);return false;}
+        if(!Ok){Error=SMLocalization::Text(FString(TEXT("Invalid technique: ")))+FString(*P.Key);return false;}
     }
-    for(const auto& P:S->Values){bool Ok=false;if(P.Value->Type==EJson::String)for(const auto& G:C->GetObjectField(TEXT("skillSettings"))->Values){const TArray<TSharedPtr<FJsonValue>>* Values=nullptr;if(G.Value->AsObject()->TryGetArrayField(P.Key,Values))for(auto& V:*Values)Ok|=V->AsString()==P.Value->AsString();}if(!Ok){Error=TEXT("Invalid combat or traversal tolerance: ")+FString(*P.Key);return false;}}
+    for(const auto& P:S->Values){bool Ok=false;if(P.Value->Type==EJson::String)for(const auto& G:C->GetObjectField(TEXT("skillSettings"))->Values){const TArray<TSharedPtr<FJsonValue>>* Values=nullptr;if(G.Value->AsObject()->TryGetArrayField(P.Key,Values))for(auto& V:*Values)Ok|=V->AsString()==P.Value->AsString();}if(!Ok){Error=SMLocalization::Text(FString(TEXT("Invalid combat or traversal tolerance: ")))+FString(*P.Key);return false;}}
     return true;
 }

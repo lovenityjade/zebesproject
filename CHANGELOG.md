@@ -1,5 +1,18 @@
 # Changelog
 
+## ALPHA-0.25 — 2026-09-18
+
+- French Canadian language choice across game and randomizer menus, native text,
+  messages, cinematics, credits, trackers and the website/help. English remains available.
+- Requested Special Thanks for Guiz de Pessemier and Eric Certossini.
+- Seed-dependent map layout and saved-station travel; save refills default on
+  for fresh configurations, while existing preferences are retained.
+- Suit transformation presentation, Maridia border cleanup and Mother Brain
+  widescreen sprite clipping corrections.
+- Native story-dialogue foundation and restored planetary escape presentation.
+- Windows retains the native-library hotfix and the selected Remastered tracks.
+
+
 ## ALPHA-0.24 — 2026-09-16
 
 - Native mode selector: Vanilla, Story preview, Boss Rush preview and Randomizer.

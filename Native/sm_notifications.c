@@ -1,3 +1,4 @@
+#include "sm_locale.h"
 #include "sm_notifications.h"
 #include "sm_map_browser.h"
 #include "sm_scene.h"
@@ -19,7 +20,7 @@ static void draw(uint8_t *out,int width){
     p[0]=edge?130:12;p[1]=edge?105:8;p[2]=edge?45:4;p[3]=255;
   }
   sm_native_map_text(out,width,x+20,y+5,"ACHIEVEMENT UNLOCKED",0x84cfff);
-  const char *name=names[current];sm_native_map_text(out,width,(width-(int)strlen(name)*8)/2,y+18,name,0xffffff);
+  const char *name=sm_locale_text(names[current]);sm_native_map_text(out,width,(width-sm_locale_length(name)*8)/2,y+18,name,0xffffff);
 }
 void sm_notifications_frame(uint8_t *pixels){
   if(game_state!=8 || sm_message_active())return;

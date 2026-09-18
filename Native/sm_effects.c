@@ -30,6 +30,15 @@ int sm_visual_eye(void) {
       (hdma_object_pre_instructions[i]==0xe9e6 || hdma_object_pre_instructions[i]==0xea3c || hdma_object_pre_instructions[i]==0xeacb))return 1;
   return 0;
 }
+int sm_visual_suit(void) {
+  if(game_state!=8)return 0;
+  for(int i=0;i<6;i++)if(hdma_object_channels_bitmask[i] &&
+      (hdma_object_pre_instruction_bank[i]&255)==0x88) {
+    if(hdma_object_pre_instructions[i]==0xe026)return 1;
+    if(hdma_object_pre_instructions[i]==0xe05c)return 2;
+  }
+  return 0;
+}
 int sm_visual_state(int field,int index) {
   int i=index;
   switch(field) {
@@ -77,6 +86,8 @@ int sm_visual_state(int field,int index) {
     case 46:return sm_relic_escape_active();
     case 47:return samus_contact_damage_index==1 || samus_contact_damage_index==2;
     case 48:return button_config_run_b;
+    case 49:return sm_visual_suit();
+    case 50:return sm_visual_suit()?substate:0;
     case 42:case 43:case 44:case 45:return totals[field-42];
     default:return 0;
   }

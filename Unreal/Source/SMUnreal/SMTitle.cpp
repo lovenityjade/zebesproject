@@ -1,4 +1,5 @@
 #include "SMHUD.h"
+#include "SMLocalization.h"
 #include "ImageUtils.h"
 #include "CanvasItem.h"
 #include "Framework/Application/SlateApplication.h"
@@ -173,8 +174,8 @@ void ASMHUD::DrawStartupWarning(){
     DrawRect(FLinearColor::Black,0,0,W,H);
     auto Measure=FSlateApplication::Get().GetRenderer()->GetFontMeasureService();
     auto Text=[&](const FString& Line,float X,float Y,float Size,FLinearColor Color){
-        FCanvasTextItem Item(FVector2D(FMath::RoundToFloat(X),FMath::RoundToFloat(Y)),FText::FromString(Line),CleanFont(GetTitleUiFont(),Size),Color);Canvas->DrawItem(Item);};
-    auto Center=[&](const FString& Line,float Y,float Size,FLinearColor Color){const FVector2D Extent=Measure->Measure(Line,CleanFont(GetTitleUiFont(),Size));Text(Line,(W-Extent.X)/2,Y,Size,Color);};
+        FCanvasTextItem Item(FVector2D(FMath::RoundToFloat(X),FMath::RoundToFloat(Y)),FText::FromString(SMLocalization::Text(Line)),CleanFont(GetTitleUiFont(),Size),Color);Canvas->DrawItem(Item);};
+    auto Center=[&](const FString& Original,float Y,float Size,FLinearColor Color){const FString Line=SMLocalization::Text(Original);const FVector2D Extent=Measure->Measure(Line,CleanFont(GetTitleUiFont(),Size));Text(Line,(W-Extent.X)/2,Y,Size,Color);};
     const float Width=FMath::Min(W-80*S,980*S),Left=(W-Width)/2;
     Center(StartupWarning==0?TEXT("PHOTOSENSITIVITY WARNING"):TEXT("AI TRANSPARENCY"),H*.23f,32*S,FLinearColor::White);
     const TArray<FString> Paragraphs=StartupWarning==0?TArray<FString>{
@@ -184,7 +185,7 @@ void ASMHUD::DrawStartupWarning(){
         TEXT("Some graphics in this development version were generated using AI as temporary placeholders. These assets are not intended to be final and will be replaced with human-created artwork.")};
     float Y=H*.37f;const float Size=23*S;const FSlateFontInfo Font=CleanFont(GetTitleUiFont(),Size);
     for(const FString& Paragraph:Paragraphs){
-        TArray<FString> Words;Paragraph.ParseIntoArrayWS(Words);FString Line;
+        TArray<FString> Words;SMLocalization::Text(Paragraph).ParseIntoArrayWS(Words);FString Line;
         for(const FString& Word:Words){const FString Candidate=Line.IsEmpty()?Word:Line+TEXT(" ")+Word;
             if(Measure->Measure(Candidate,Font).X>Width && !Line.IsEmpty()){Text(Line,Left,Y,Size,FLinearColor(.87f,.89f,.92f));Y+=34*S;Line=Word;}else Line=Candidate;}
         Text(Line,Left,Y,Size,FLinearColor(.87f,.89f,.92f));Y+=57*S;
@@ -233,7 +234,8 @@ bool ASMHUD::DrawTitlePresentation(){
         if(FX<=0)return;const FVector4f P=Project(FVector4f(X-Radius,Y-Radius,Radius*2,Radius*2),D);Color*=Alpha*Bright*FX;Color.A=1;
         DrawTexture(TitleGlow,P.X,P.Y,P.Z,P.W,0,0,1,1,Color,BLEND_Additive);
     };
-    auto Text=[&](const FString& Value,float X,float Y,float Scale,float Alpha){
+    auto Text=[&](const FString& English,float X,float Y,float Scale,float Alpha){
+        const FString Value=SMLocalization::Text(English);
         for(int I=0;I<Value.Len();I++){const TCHAR C=Value[I];const int Tile=C>='A'&&C<='Z'?C-'A':C>='0'&&C<='9'?26+C-'0':-1;if(Tile<0)continue;
             const float TX=Origin.X+(X-Value.Len()*4*Scale+I*8*Scale)*Fit,TY=Origin.Y+Y*Fit;
             // A one-pixel dark edge keeps the native lettering readable over Zebes.

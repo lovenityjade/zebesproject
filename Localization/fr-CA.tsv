@@ -1,0 +1,1388 @@
+# English source<TAB>French Canadian translation. Authored for The Zebes Project.
+Language	Langue
+English	English
+French (Canada)	Français (Canada)
+Home	Accueil
+Settings	Options
+Graphics	Graphismes
+Audio	Audio
+Input	Commandes
+Quality of Life	Confort de jeu
+Trackers	Suivi de progression
+Debug	Débogage
+Save library	Sauvegardes
+Randomizer	Mode aléatoire
+Achievements	Succès
+Return to game	Reprendre la partie
+Exit game	Quitter le jeu
+Cancel	Annuler
+Confirm	Confirmer
+Back	Retour
+Close	Fermer
+Apply	Appliquer
+Reset	Réinitialiser
+Enabled	Activé
+Disabled	Désactivé
+On	Activé
+Off	Désactivé
+Yes	Oui
+No	Non
+Default	Par défaut
+Original	Originale
+Remastered	Rematricée
+Search	Rechercher
+Search settings...	Rechercher une option…
+WELCOME TO ZEBES	BIENVENUE SUR ZEBES
+Play from the original game menus. Use this menu whenever you want to adjust your experience.	Lancez votre partie à partir des menus du jeu. Ouvrez ce menu pour personnaliser votre expérience.
+VANILLA MODE	MODE CLASSIQUE
+STORY MODE	MODE HISTOIRE
+BOSS RUSH MODE	DÉFI DES BOSS
+RANDOMIZER MODE	MODE ALÉATOIRE
+THE ORIGINAL ADVENTURE	L'AVENTURE ORIGINALE
+EXPLORE ZEBES AS SAMUS ARAN	EXPLOREZ ZEBES AVEC SAMUS
+VANILLA REIMAGINED WITH	L'AVENTURE REVUE AVEC
+CINEMATICS, VOICE ACTING	CINÉMATIQUES, DOUBLAGE
+AND AN EXPANDED STORY	ET HISTOIRE ENRICHIE
+COMING SOON	À VENIR
+DEFEAT EVERY BOSS AND MINIBOSS	BATTEZ BOSS ET MINIBOSS
+AS FAST AS POSSIBLE WITH	AU PLUS VITE AVEC
+MINIMUM ITEMS. ONE CHANCE.	LE MINIMUM. UN SEUL ESSAI.
+DIFFICULTY	DIFFICULTÉ
+EASY	FACILE
+MEDIUM	MOYEN
+HARD	DIFFICILE
+HARDCORE	EXTRÊME
+ITEMS, ROUTES AND GOALS	OBJETS, TRAJETS ET BUTS
+SHUFFLED BY YOUR SETTINGS	SELON VOS OPTIONS
+EVERY SEED IS A NEW ADVENTURE	CHAQUE SEED EST UNE AVENTURE
+RANDOMIZER OPTIONS	OPTIONS ALÉATOIRES
+GENERATING	GÉNÉRATION
+GENERATE GAME	GÉNÉRER LA PARTIE
+GAME GENERATED	PARTIE GÉNÉRÉE
+GENERATION IN PROGRESS	GÉNÉRATION EN COURS
+SAVE ERROR - OPEN OPTIONS	ÉCHEC - VOIR LES OPTIONS
+CHECK RANDOMIZER OPTIONS	VÉRIFIEZ LES OPTIONS
+GENERATE A SEED TO START	GÉNÉREZ UNE SEED
+START GAME	COMMENCER
+CONTINUE	CONTINUER
+END	QUITTER
+SEED MAP	CARTE SEED
+SELECT AREAS	SELECT ZONES
+SELECT AREAS   Y ZOOM   A SAMUS	SELECT ZONES   Y ZOOM   A SAMUS
+SELECT AREAS  Y ZOOM  A SAMUS	SELECT ZONES  Y ZOOM  A SAMUS
+AVAILABLE OF TOTAL	ACCESSIBLES SUR LE TOTAL
+A MAP  B BACK	A CARTE  B RETOUR
+SAVED STATIONS ONLY	STATIONS DÉBLOQUÉES
+A REGION  B BACK	A RÉGION  B RETOUR
+L R STATION  A START	L R STATION  A JOUER
+B BACK	B RETOUR
+RETURN TO SHIP	RETOUR AU VAISSEAU
+CHOZO TABLET	TABLETTE CHOZO
+ACHIEVEMENT UNLOCKED	SUCCÈS DÉVERROUILLÉ
+Morph Ball	Morphosphère
+MORPH BALL	MORPHOSPHÈRE
+Bombs	Bombes
+BOMBS	BOMBES
+Power Bomb	Bombe de puissance
+POWER BOMB	BOMBE DE PUISSANCE
+Missile	Missile
+Super Missile	Super missile
+Charge Beam	Rayon de charge
+Ice Beam	Rayon de glace
+Wave Beam	Rayon à ondes
+Spazer	Rayon Spazer
+Plasma Beam	Rayon plasma
+Grapple Beam	Rayon grappin
+X-Ray Scope	Viseur radioscopique
+Varia Suit	Combinaison Varia
+Gravity Suit	Combinaison de gravité
+Hi-Jump Boots	Bottes de saut
+Speed Booster	Accélérateur
+Space Jump	Saut spatial
+Screw Attack	Attaque en vrille
+Spring Ball	Boule de saut
+Energy Tank	Réserve d'énergie
+Reserve Tank	Réserve auxiliaire
+Soundtrack	Trame sonore
+Master volume	Volume principal
+Overall volume of music and sound effects.	Volume de la musique et des effets sonores.
+Mute audio	Couper le son
+Silence game audio without changing its volume setting.	Couper le son sans modifier le volume choisi.
+Windowed	Fenêtré
+Borderless fullscreen	Plein écran sans bordure
+Fit to screen	Adapter à l'écran
+Integer scaling	Échelle entière
+Image scaling	Mise à l'échelle
+Vertical sync	Synchronisation verticale
+Synchronize presentation with the display.	Synchroniser l'affichage avec l'écran.
+Atmosphere & lighting	Ambiance et éclairage
+Enable the presentation layer and native combat effects.	Activer les effets visuels d'ambiance et de combat.
+Soft Gaussian blend	Flou gaussien doux
+Lighten	Éclaircir
+Multiply	Multiplier
+Blend opacity	Opacité du mélange
+Strength of the soft Gaussian layer.	Intensité de la couche de flou gaussien.
+Scene brightness	Luminosité de la scène
+Brightness of the softened scene. 1.00 is neutral; 1.10 adds a gentle lift.	Luminosité de la scène adoucie. 1,00 est neutre; 1,10 l'éclaircit légèrement.
+Background parallax	Parallaxe du décor
+Offset supported background layers as Samus moves.	Décaler les plans du décor selon les déplacements de Samus.
+Background depth	Profondeur du décor
+Add restrained depth to the original scenery.	Ajouter une profondeur discrète au décor original.
+Surface relief	Relief des surfaces
+Light and shade edges to emphasize structure.	Éclairer et ombrer les contours pour accentuer le relief.
+Engine weather	Effets météo
+Rain, fog, underwater and heat effects by environment.	Pluie, brume, effets sous-marins et chaleur selon le milieu.
+Refill energy and ammo when saving	Rétablir l'énergie et les munitions à la sauvegarde
+Travel between saved stations	Voyager entre les stations de sauvegarde
+Trackers in Vanilla	Suivi en mode classique
+Map tracker	Suivi sur la carte
+Item tracker	Suivi des objets
+Tracker legend	Légende du suivi
+Green: accessible	Vert : accessible
+Red: blocked	Rouge : inaccessible
+Yellow: advanced route / uncertain return	Jaune : trajet avancé ou retour incertain
+Blue: inspect only (when supported)	Bleu : visible seulement (si pris en charge)
+Gray: collected / defeated	Gris : obtenu ou vaincu
+Vanilla tracker techniques	Techniques du suivi classique
+Casual	Détente
+Regular	Normal
+Veteran	Vétéran
+Seed number	Numéro de seed
+Settings string	Code de configuration
+Copy settings	Copier la configuration
+Paste	Coller
+Import settings	Importer la configuration
+Import	Importer
+Export	Exporter
+Settings preset	Préréglage
+Skill preset	Profil de techniques
+Choose a preset...	Choisissez un préréglage…
+Import / export configuration	Importer ou exporter la configuration
+Chozo Tablet Hunt	Chasse aux tablettes chozo
+Tablets in the world	Tablettes placées
+Tablets required	Tablettes requises
+Tablet escape timer	Durée de l'évacuation
+3 minutes	3 minutes
+5 minutes	5 minutes
+6 minutes	6 minutes
+7 minutes	7 minutes
+10 minutes	10 minutes
+Leave empty for a random number when you select Generate Game. Enter a number to reproduce a seed with the same settings.	Laissez vide pour obtenir un numéro aléatoire à la génération. Entrez un numéro pour reproduire une seed avec les mêmes options.
+Copy your complete randomizer configuration to share it. Import replaces the draft settings but keeps your seed number. It does not change an already generated save.	Copiez la configuration complète pour la partager. L'importation remplace les options en préparation, mais conserve le numéro de seed. Une sauvegarde déjà générée n'est pas modifiée.
+Collect the required quota to trigger a timed escape to your ship. Mother Brain is not required. Tablets replace surplus ammo packs; all checks must remain reachable.	Rassemblez le quota requis pour déclencher une évacuation vers le vaisseau. Il n'est pas nécessaire de vaincre Mother Brain. Les tablettes remplacent des munitions excédentaires; tous les emplacements doivent rester accessibles.
+Collect this many tablets to start the escape. Space Jump is granted and incoming damage doubles during the escape.	Rassemblez ce nombre de tablettes pour déclencher l'évacuation. Le saut spatial est accordé et les dégâts subis sont doublés pendant la fuite.
+The generator preserves enough ammo packs for progression. Very high totals can fail pool validation.	Le générateur conserve assez de munitions pour la progression. Un total trop élevé peut rendre la répartition impossible.
+Collect the required quota, then reach and board Samus's ship before the native timer expires.	Rassemblez le quota requis, puis montez à bord du vaisseau de Samus avant la fin du compte à rebours.
+Settings string copied. Share the seed number separately to reproduce the same world.	Configuration copiée. Partagez aussi le numéro de seed pour reproduire le même monde.
+Settings imported. Your seed number was kept.	Configuration importée. Votre numéro de seed a été conservé.
+Clipboard text is too large.	Le texte du presse-papiers est trop long.
+Configuration exported.	Configuration exportée.
+Cannot write configuration file.	Impossible d'écrire le fichier de configuration.
+Invalid configuration. The previous draft was kept.	Configuration invalide. Les options précédentes ont été conservées.
+Cannot read seed settings. Reload the slot before editing.	Impossible de lire les options de la seed. Rechargez la sauvegarde avant de les modifier.
+THE ZEBES PROJECT SPECIAL THANKS	THE ZEBES PROJECT - MERCI
+SPECIAL THANKS	REMERCIEMENTS SPÉCIAUX
+PRESS START	APPUYEZ SUR START
+A SUPER METROID FAN PROJECT	UN PROJET DE FANS DE SUPER METROID
+Original save	Sauvegarde d'origine
+Select weapon	Choisir une arme
+Native pause / map	Pause et carte du jeu
+Move up	Monter
+Move down	Descendre
+Move left	Aller à gauche
+Move right	Aller à droite
+Cancel weapon	Désélectionner l'arme
+Aim up	Viser vers le haut
+Aim down	Viser vers le bas
+Previous weapon	Arme précédente
+Next weapon	Arme suivante
+Jump	Sauter
+Run	Courir
+Shoot	Tirer
+Selected objectives	Objectifs choisis
+That key is reserved for a system shortcut.	Cette touche est réservée à un raccourci système.
+Binding saved. Conflicting bindings are swapped.	Commande enregistrée. Les commandes en conflit ont été échangées.
+Please wait for generation in the native game menu to finish.	Attendez la fin de la génération dans le menu du jeu.
+Resolve the highlighted settings conflicts before creating a randomized game.	Corrigez les incompatibilités signalées avant de créer une partie aléatoire.
+Save transaction interrupted. Reload this save bank to recover.	Sauvegarde interrompue. Rechargez cette banque pour la récupérer.
+A save-slot seed is incompatible with this ROM.	La seed d'un emplacement est incompatible avec cette ROM.
+Update the native module before generating with these settings.	Mettez le jeu à jour avant de générer une partie avec ces options.
+Generating from the native new-game menu...	Génération depuis le menu de nouvelle partie…
+Discarded generation from a previous session.	La génération de la session précédente a été écartée.
+Game generated and saved. Select Start Game in the native menu.	Partie générée et sauvegardée. Choisissez Commencer dans le menu du jeu.
+Could not save the generated slot. Generate Game can retry.	Impossible de sauvegarder la partie générée. Choisissez Générer la partie pour réessayer.
+Cannot flush the current SRAM. Session change cancelled.	Impossible d'enregistrer les données actuelles. Changement de session annulé.
+The selected SRAM has an invalid size. It was not loaded or modified.	La taille de la sauvegarde choisie est invalide. Elle n'a été ni chargée ni modifiée.
+Please wait for seed generation to finish before exiting.	Attendez la fin de la génération avant de quitter.
+Cannot flush SRAM; exit cancelled.	Impossible d'enregistrer les données; fermeture annulée.
+Settings changed. Wait for the compatibility check before creating a game.	Options modifiées. Attendez la vérification de compatibilité avant de créer une partie.
+Could not configure the new run. The source save was preserved.	Impossible de configurer la nouvelle partie. La sauvegarde d'origine est intacte.
+START A GAME	COMMENCER UNE PARTIE
+Choose SAMUS A, B or C in the game's file-select screen.	Choisissez SAMUS A, B ou C à l'écran de sélection des sauvegardes.
+Vanilla: choose Vanilla Mode, then Start Game.	Classique : choisissez Mode classique, puis Commencer.
+Randomized: choose Randomizer Mode, review Randomizer Options, then Generate Game. Start Game unlocks when generation finishes.	Aléatoire : choisissez Mode aléatoire, ajustez les Options aléatoires, puis choisissez Générer la partie. Commencer devient disponible à la fin de la génération.
+Each slot keeps its own mode and seed. Your randomizer settings are remembered for the next new slot; existing games keep their original rules.	Chaque emplacement conserve son mode et sa seed. Vos options sont mémorisées pour la prochaine partie; les parties existantes conservent leurs règles.
+Game settings	Options du jeu
+Prepare randomizer settings	Préparer les options aléatoires
+Save library / New Game+	Sauvegardes et Nouvelle partie+
+CURRENT SAVE BANK	BANQUE ACTUELLE
+SAMUS %c  /  %s	SAMUS %c  /  %s
+Seed %d	Seed %d
+Waiting for Generate Game in the native menu.	En attente de Générer la partie dans le menu du jeu.
+Open settings: Escape / F4 / right stick click. Open the original map and equipment screen: Start.	Options : Échap / F4 / clic du levier droit. Carte et équipement : Start.
+SAVE LIBRARY	SAUVEGARDES
+Each save bank contains three independent A/B/C slots. Choose Vanilla or Randomized inside the game, separately for each new slot.	Chaque banque contient trois emplacements indépendants A/B/C. Choisissez Classique ou Aléatoire dans le jeu pour chaque nouvel emplacement.
+You can play immediately using the current bank. Create an additional bank only when you need more slots, a speedrun or New Game+.	Vous pouvez jouer avec la banque actuelle. Créez une banque supplémentaire pour avoir plus d'emplacements, commencer une course chronométrée ou une Nouvelle partie+.
+New save bank name (optional)	Nom de la nouvelle banque (facultatif)
+Run category	Catégorie de partie
+Ranked by native in-game time. Glitches allowed. QoL permits only Wall Jump / Space Jump assists. Save refills and trackers are disabled during speedruns.	Classement selon le temps du jeu. Les glitchs sont permis. La catégorie Confort autorise seulement les aides au saut mural et au saut spatial. Recharge aux sauvegardes et suivis désactivés en course.
+Create Vanilla speedrun bank	Créer une banque de courses classiques
+Create additional save bank	Créer une banque supplémentaire
+Save at a station in the game. Flushing SRAM does not save your current position. Loading a profile returns to its title and file-select screen.	Sauvegardez à une station du jeu. L'écriture des données ne sauvegarde pas votre position actuelle. Charger un profil ramène au titre et au choix des sauvegardes.
+Refresh library	Actualiser la liste
+Profile unavailable: %s	Profil indisponible : %s
+New Game+ from SAMUS %c	Nouvelle partie+ depuis SAMUS %c
+Creates a separate bank with the first completed game's equipment and ammo capacities. Enemy endurance x2; enemy damage x1.5.	Crée une banque distincte avec l'équipement et les capacités de munitions de la première partie terminée. Endurance ennemie ×2; dégâts ennemis ×1,5.
+  /  CURRENT	  /  ACTUELLE
+Seed %d  /  %s	Seed %d  /  %s
+Seed %d  /  Awaiting Generate Game	Seed %d  /  En attente de génération
+Random seed  /  Awaiting Generate Game	Seed aléatoire  /  En attente de génération
+Awaiting generation	En attente de génération
+Samus %c settings copied. Seed: %s.	Options de Samus %c copiées. Seed : %s.
+random at generation	aléatoire à la génération
+Your existing save file, kept at its original location.	Votre sauvegarde existante, conservée à son emplacement d'origine.
+Load save bank	Charger la banque
+SEED & SHARING	SEED ET PARTAGE
+LOGIC & DIFFICULTY	LOGIQUE ET DIFFICULTÉ
+ITEM PROGRESSION	PROGRESSION DES OBJETS
+ITEMS & AMMUNITION	OBJETS ET MUNITIONS
+WORLD & ESCAPE	MONDE ET ÉVACUATION
+GOALS & VICTORY	OBJECTIFS ET VICTOIRE
+GAMEPLAY PATCHES	MODIFICATIONS DU JEU
+ADVANCED / TECHNIQUES	AVANCÉ / TECHNIQUES
+ADVANCED / COMBAT & HEAT	AVANCÉ / COMBAT ET CHALEUR
+Start with a preset, share a configuration or leave the seed blank for a surprise.	Partez d'un préréglage, partagez votre configuration ou laissez le numéro de seed vide pour une surprise.
+Choose what the generator and tracker expect you to be able to do.	Choisissez les techniques que le générateur et le suivi vous considèrent capable d'exécuter.
+Decide how progression items are spread through the world.	Choisissez comment répartir les objets de progression dans le monde.
+Configure the equipment pool, energy and ammunition.	Configurez l'ensemble d'équipement, l'énergie et les munitions.
+Choose starting locations, world connections, doors and escape rules.	Choisissez les points de départ, les connexions, les portes et les règles d'évacuation.
+Choose what completes your adventure, including Chozo Tablet Hunt.	Choisissez les conditions de victoire, y compris la chasse aux tablettes chozo.
+Optional changes to the original game's behavior and routes.	Modifications facultatives aux mécaniques et aux trajets du jeu original.
+Fine-tune individual techniques. Presets already provide values for all of them.	Ajustez chaque technique. Les préréglages fournissent déjà une valeur pour chacune.
+Fine-tune boss fights, damage tolerance and heat runs. These affect both generation and tracking.	Ajustez les combats de boss, la tolérance aux dégâts et les passages en zone surchauffée. Ces options influencent la génération et le suivi.
+Checking settings...	Vérification des options…
+Seed number: leave it blank or enter 1 to 2147483647.	Numéro de seed : laissez vide ou entrez un nombre de 1 à 2147483647.
+Resolve these conflicts before Generate Game:	Corrigez ces incompatibilités avant de générer la partie :
+Seed & presets	Seed et préréglages
+Logic & difficulty	Logique et difficulté
+Items & ammo	Objets et munitions
+World & escape	Monde et évacuation
+Goals & victory	Objectifs et victoire
+Gameplay patches	Modifications du jeu
+Combat & heat	Combat et chaleur
+Settings compatible	Options compatibles
+Generation will also verify a complete playable route.	La génération vérifiera aussi qu'un parcours complet est possible.
+EDITING SAMUS %c  /  SAVED AUTOMATICALLY	OPTIONS DE SAMUS %c  /  ENREGISTREMENT AUTOMATIQUE
+New-slot defaults / saved automatically. Existing seeds are unchanged.	Options des nouvelles parties / enregistrement automatique. Les seeds existantes restent intactes.
+Random when blank	Aléatoire si vide
+Enter 1 to 2147483647, or leave the field empty.	Entrez un nombre de 1 à 2147483647, ou laissez le champ vide.
+Return to the native menu and select Generate Game when your settings are ready.	Une fois les options prêtes, retournez au menu du jeu et choisissez Générer la partie.
+Return to the game, choose an empty A/B/C slot and select Randomizer Mode to use these settings.	Retournez au jeu, choisissez un emplacement A/B/C vide, puis Mode aléatoire pour utiliser ces options.
+Generation is running in the native game menu.	La génération est en cours dans le menu du jeu.
+GAMEPLAY & COMFORT	JOUABILITÉ ET CONFORT
+ATMOSPHERE & EFFECTS	AMBIANCE ET EFFETS
+MAP & TRACKERS	CARTE ET SUIVI
+Window, screen proportions and frame presentation.	Fenêtre, proportions de l'image et affichage.
+Music, sound effects and soundtrack selection.	Musique, effets sonores et choix de la trame sonore.
+Keyboard and controller bindings. Select a button to reassign it.	Commandes au clavier et à la manette. Choisissez une commande à réassigner.
+Optional assists and comfort settings. Speedrun rules take precedence.	Aides et options de confort facultatives. Les règles de course ont priorité.
+Menu readability, shortcut help and native VARIA interface options.	Lisibilité des menus, aide aux raccourcis et options de l'interface VARIA.
+Lighting, depth and weather over the original pixel art.	Éclairage, profondeur et météo sur les graphismes originaux.
+Tracking integrated into the original map and minimap.	Suivi intégré à la carte et à la minicarte du jeu.
+Changes are applied and saved automatically.	Les modifications sont appliquées et enregistrées automatiquement.
+Extend the gameplay view horizontally.	Élargir horizontalement la vue du jeu.
+Window mode	Mode d'affichage
+Choose a windowed or borderless fullscreen presentation.	Choisir une fenêtre ou le plein écran sans bordure.
+Fit to screen uses the largest image that preserves its proportions. Integer scaling keeps uniform pixel blocks with black margins; very small windows fall back to fit. Neither mode stretches or crops the game.	Adapter à l'écran maximise l'image sans la déformer. L'échelle entière conserve des pixels uniformes et peut laisser des marges noires; les très petites fenêtres utilisent l'adaptation. Aucun mode n'étire ni ne rogne l'image.
+Blend a lightly blurred copy over the scene. The HUD is excluded.	Superposer une copie légèrement floutée à la scène, sans toucher aux indicateurs du jeu.
+Original SNES music or the selected Remastered arrangements. Sound effects stay original. Missing tracks use Original automatically.	Musique SNES originale ou arrangements rematricés choisis. Les effets sonores restent d'origine. Les pistes manquantes utilisent automatiquement la musique originale.
+Left stick deadzone	Zone morte du levier gauche
+Ignore small analog-stick movements around its center.	Ignorer les petits mouvements du levier près du centre.
+Press a button...	Appuyez sur un bouton…
+Restore default bindings	Rétablir les commandes par défaut
+Select a binding, then press a key or button. Escape cancels; duplicate bindings swap. Menu: Escape / F4 / right stick click. Native pause: Start.	Choisissez une commande, puis appuyez sur une touche ou un bouton. Échap annule; les doublons sont échangés. Menu : Échap / F4 / clic du levier droit. Pause du jeu : Start.
+Speedrun rules override these preferences: save refills and trackers are off. No QoL also forces both jump assists off.	Les règles de course ont priorité : recharge aux sauvegardes et suivis désactivés. Sans confort désactive aussi les deux aides au saut.
+Fully restore energy, reserves, Missiles, Super Missiles and Power Bombs when you confirm a save at a station. On by default for new installations; existing preferences are preserved. A seed that requires refills keeps them enabled.	Rétablir l'énergie, les réserves, les missiles, les super missiles et les bombes de puissance en confirmant une sauvegarde. Activé par défaut à la première installation; les préférences existantes sont conservées. Une seed qui exige la recharge la maintient active.
+Randomized games only. When loading a save, choose a region, then use L / R to select a station already unlocked in that slot. Off by default. Unavailable during an escape or a speedrun.	Parties aléatoires seulement. Au chargement, choisissez une région, puis une station débloquée dans cet emplacement avec L / R. Désactivé par défaut. Indisponible pendant une évacuation ou une course chronométrée.
+Assisted wall jump	Aide au saut mural
+Enable the forgiving wall jump. Disable to retain original timing.	Rendre le saut mural plus permissif. Désactivez pour garder le rythme original.
+Assisted Space Jump	Aide au saut spatial
+Relax the original repeated-jump rhythm.	Assouplir le rythme des sauts répétés.
+Combat flash strength	Intensité des éclairs de combat
+Reduce added combat flashes, including power bombs. Does not modify original ROM flashes.	Atténuer les éclairs ajoutés aux combats, y compris les bombes de puissance. Les éclairs du jeu original ne sont pas modifiés.
+VARIA maximum ammo	Capacités de munitions VARIA
+Randomized slots only. Maximum capacity above the compact ammo icon, current ammo below. Supports three-digit Supers and Power Bombs.	Parties aléatoires : capacité maximale au-dessus de l'icône, munitions restantes en dessous. Les super missiles et bombes de puissance peuvent afficher trois chiffres.
+VARIA area & objective HUD	Région et objectifs VARIA
+Randomized slots only. Graph-area name, uncollected locations, compact energy tanks and five-second objective notifications.	Parties aléatoires : région logique, emplacements restants, réserves d'énergie compactes et avis d'objectifs de cinq secondes.
+VARIA improved reserves	Réserves améliorées VARIA
+Randomized slots only. Filled tank pickups, no wasted reserve energy, cancelable manual transfer, safer auto-refill and empty/partial/full HUD indicator.	Parties aléatoires : réserves remplies à l'obtention, énergie préservée, transfert manuel annulable, recharge automatique plus sûre et indicateur vide, partiel ou plein.
+VARIA map item markers	Repères d'objets VARIA
+Randomized slots only. Native collection dots when the logic map tracker is disabled; tracker colors take precedence when enabled.	Parties aléatoires : repères de collecte natifs lorsque le suivi logique est désactivé. Les couleurs du suivi ont priorité lorsqu'il est activé.
+Menu text scale	Taille du texte des menus
+Resize the system interface independently of the game pixels.	Redimensionner l'interface système sans modifier les pixels du jeu.
+Native pause & map	Pause et carte du jeu
+The original game assets, equipment screen and map remain available with Start.	La carte et l'écran d'équipement du jeu original restent accessibles avec Start.
+Original Super Metroid UI	Interface originale de Super Metroid
+Gameplay shortcut help	Aide aux raccourcis
+Show the existing in-game shortcut overlay.	Afficher les raccourcis pendant le jeu.
+Off by default. Enables tracking with original item placements and unpatched vanilla rules; does not randomize the save.	Désactivé par défaut. Active le suivi avec les objets et les règles d'origine, sans rendre la sauvegarde aléatoire.
+Item squares and boss diamonds on the native pause map and minimap. Both use the effective rules of the seed.	Carrés d'objets et losanges de boss sur la carte et la minicarte. Les deux suivent les règles effectives de la seed.
+Original pack icons and acquired capacities in the native map header. Dim equipment is missing; dim boss portraits are defeated.	Icônes et capacités acquises au-dessus de la carte. Équipement sombre : manquant. Portrait de boss sombre : vaincu.
+Only used for Vanilla tracking. Randomized saves always use their saved skill configuration.	Pour le suivi classique seulement. Les parties aléatoires utilisent toujours leur profil de techniques sauvegardé.
+Squares: items. Diamonds: boss fights. Green: reachable and beatable with a safe return after victory. Mixed item checks share a square. White outlines: pending.	Carrés : objets. Losanges : boss. Vert : accessible et vainquable avec un retour sûr après la victoire. Plusieurs objets peuvent partager un carré. Contour blanc : calcul en attente.
+The original F1-F12 tools, with their current values. Changes also update Settings.	Les outils F1 à F12 et leurs valeurs actuelles. Les changements mettent aussi les options à jour.
+Ending sequence	Séquence de fin
+Escape from Zebes, the planet's destruction and the credit roll. Start returns to your session without changing saves or run statistics.	Évacuation de Zebes, destruction de la planète et générique. Start retourne à votre session sans modifier les sauvegardes ni les statistiques.
+Return from Ending Sequence	Quitter l'aperçu de la fin
+View Ending Sequence	Voir la séquence de fin
+Finish the current message or transition before previewing the ending.	Terminez le message ou la transition avant de voir la séquence de fin.
+Credit roll preview	Aperçu du générique
+Original assets, Zebes atmosphere and this slot's tracked statistics. Start returns to the untouched session; hold Right to fast-forward.	Graphismes d'origine, ambiance de Zebes et statistiques de cette sauvegarde. Start retourne à la session intacte; maintenez Droite pour accélérer.
+Return from Credit Roll	Quitter l'aperçu du générique
+Launch Credit Roll	Voir le générique
+Finish the current message or transition before previewing credits.	Terminez le message ou la transition avant de voir le générique.
+Resume game	Reprendre la partie
+Reset to title	Retourner à l'écran titre
+Reset and Exit preserve SRAM. Progress since the last save station is not saved.	Le retour au titre et la fermeture conservent les sauvegardes. La progression depuis la dernière station n'est pas enregistrée.
+Run recap	Récapitulatif du parcours
+Replay your recorded path on the original area maps. Visits and backtracking stay in chronological order.	Revoyez votre parcours sur les cartes du jeu. Les visites et les retours sont présentés dans l'ordre chronologique.
+Your discoveries and milestones across this save bank.	Vos découvertes et vos exploits dans cette banque de sauvegardes.
+A NEW DISCOVERY	UNE NOUVELLE DÉCOUVERTE
+HUNTER	CHASSEUSE
+POWER UNLEASHED	PUISSANCE LIBÉRÉE
+REACH FURTHER	TOUJOURS PLUS LOIN
+CHARGED ARMOR	ARMURE ÉLECTRISÉE
+Acquire a new equipment or beam upgrade.	Obtenir une amélioration d'équipement ou de rayon.
+Defeat 10 enemies.	Vaincre 10 ennemis.
+Detonate a Power Bomb.	Faire exploser une bombe de puissance.
+Use the Grapple Beam.	Utiliser le rayon grappin.
+Use the Screw Attack.	Utiliser l'attaque en vrille.
+%d / 5 unlocked	%d / 5 déverrouillés
+Progress: %d / 10	Progression : %d / 10
+The Zebes Project settings	Options de The Zebes Project
+SETTINGS & EXTRAS	OPTIONS ET EXTRAS
+Search all settings and saves...	Rechercher une option ou une sauvegarde…
+Debug tools	Outils de débogage
+Seed & sharing	Seed et partage
+Gameplay & comfort	Jouabilité et confort
+Atmosphere & effects	Ambiance et effets
+Map & trackers	Carte et suivi
+SEARCH RESULTS	RÉSULTATS DE RECHERCHE
+Matching settings and saved games.	Options et sauvegardes correspondantes.
+Tab / arrows to navigate. Enter or A to select. Escape / Back to return. Start belongs to the original pause screen.	Tab / flèches : naviguer. Entrée ou A : choisir. Échap / Retour : revenir. Start ouvre l'écran pause du jeu.
+Leave this session?	Quitter cette session?
+Progress since your last save station will be lost.	La progression depuis la dernière station sera perdue.
+The existing save file and profile will be kept.	La sauvegarde et le profil existants seront conservés.
+LOCKED	VERROUILLÉ
+UNLOCKED	DÉVERROUILLÉ
+ADVANCED	AVANCÉ
+PHOTOSENSITIVITY WARNING	AVERTISSEMENT DE PHOTOSENSIBILITÉ
+AI TRANSPARENCY	TRANSPARENCE SUR L'UTILISATION DE L'IA
+This game contains flashing lights, bright visual effects, and rapidly changing images. These may trigger seizures or other symptoms in people with photosensitive epilepsy, including those with no previous history of seizures.	Ce jeu contient des lumières clignotantes, des effets lumineux intenses et des images qui changent rapidement. Ces éléments peuvent déclencher des crises ou d'autres symptômes chez les personnes atteintes d'épilepsie photosensible, même sans antécédents de crise.
+Play in a well-lit room and take regular breaks. Stop playing immediately if you experience dizziness, visual disturbances, involuntary movements, or discomfort.	Jouez dans une pièce bien éclairée et prenez régulièrement des pauses. Cessez immédiatement de jouer si vous ressentez des étourdissements, des troubles de la vision, des mouvements involontaires ou un malaise.
+We believe in being open about how The Zebes Project is made. The voice performances and music are created and performed by real people. The game's code is developed by humans with AI assistance.	Nous tenons à expliquer clairement comment The Zebes Project est créé. Les voix et les musiques sont réalisées et interprétées par de vraies personnes. Le code du jeu est développé par des humains avec l'aide de l'IA.
+Some graphics in this development version were generated using AI as temporary placeholders. These assets are not intended to be final and will be replaced with human-created artwork.	Certains graphismes de cette version en développement ont été générés par IA à titre temporaire. Ils ne sont pas définitifs et seront remplacés par des créations humaines.
+Press any button to continue	Appuyez sur une touche pour continuer
+SOMETHING'S WRONG,	QUELQUE CHOSE CLOCHE,
+GET TO THE SHIP !	RETOURNEZ AU VAISSEAU !
+STRESS GIVES	LE STRESS DONNE
+DETERMINATION !	DE LA DÉTERMINATION !
+Game world	Monde du jeu
+Original Super Metroid or mirrored world geometry.	Super Metroid original ou géométrie du monde en miroir.
+Maximum difficulty	Difficulté maximale
+Hard ceiling for techniques, traversal and combat in generation and the live tracker. A skill preset alone is not an accessibility guarantee.	Limite absolue pour les techniques, les déplacements et les combats lors de la génération et du suivi en jeu. Un profil de maîtrise ne garantit pas, à lui seul, l'accessibilité.
+Progression speed	Vitesse de progression
+How early progression equipment appears. Random draws from the allowed choices below.	Détermine à quel moment l'équipement de progression apparaît. Le choix aléatoire utilise les possibilités autorisées ci-dessous.
+Placement difficulty	Difficulté des placements
+Favor easier or harder routes within your allowed skill and difficulty settings.	Favorise des parcours plus simples ou plus difficiles, dans les limites de vos techniques et de votre difficulté.
+Morph Ball placement	Placement de la Morphosphère
+Early, late or unrestricted placement of the Morph Ball.	Placement précoce, tardif ou sans contrainte de la Morphosphère.
+Suit progression restriction	Progression des combinaisons
+Restrict suit placement to keep Varia and Gravity part of progression.	Limite le placement des combinaisons Varia et de gravité pour les intégrer à la progression.
+Hide items	Cacher les objets
+Randomly conceal eligible visible pickups in shot blocks, as in VARIA.	Dissimule aléatoirement certains objets visibles dans des blocs destructibles au tir, comme dans VARIA.
+Item split	Répartition des objets
+Full mixes all items. Major and Chozo restrict major equipment locations. Scavenger defines an ordered list of mandatory pickups.	Complète mélange tous les objets. Majeurs et Chozo limitent les emplacements de l'équipement majeur. Chasse ordonnée impose une liste d'objets à ramasser dans l'ordre.
+Scavenger mandatory locations	Étapes de la chasse ordonnée
+Number of required locations in the scavenger route.	Nombre d'emplacements obligatoires du parcours de chasse.
+Randomize scavenger items	Objets de chasse aléatoires
+Randomize the items at mandatory scavenger locations.	Mélange les objets placés aux étapes obligatoires de la chasse ordonnée.
+Energy quantity	Quantité d'énergie
+Amount of energy tanks and reserves available in the item pool.	Quantité de réserves d'énergie et de réserves auxiliaires dans l'ensemble des objets.
+Ammo pack density	Densité des munitions
+Percentage of ammo locations which contain ammo. Empty locations remain collectable checks.	Pourcentage d'emplacements de munitions qui en contiennent réellement. Les emplacements vides restent des points à ramasser.
+Missile weight	Poids des missiles
+Relative Missile share of the ammo pool, from 1 to 9.	Proportion relative des missiles parmi les munitions, de 1 à 9.
+Super Missile weight	Poids des super missiles
+Relative Super Missile share of the ammo pool, from 1 to 9.	Proportion relative des super missiles parmi les munitions, de 1 à 9.
+Power Bomb weight	Poids des bombes de puissance
+Relative Power Bomb share of the ammo pool, from 1 to 9.	Proportion relative des bombes de puissance parmi les munitions, de 1 à 9.
+Strict ammo proportions	Proportions strictes des munitions
+Enforce the selected ammo ratios more strictly.	Respecte plus strictement les proportions de munitions choisies.
+Remove combat items	Retirer l'équipement de combat
+Challenge pool: remove nonessential combat equipment.	Défi : retire l'équipement de combat non essentiel.
+Remove movement items	Retirer l'équipement de déplacement
+Challenge pool: remove nonessential movement equipment.	Défi : retire l'équipement de déplacement non essentiel.
+Remove suits	Retirer des combinaisons
+Challenge pool: remove nonessential suits; your heat and suitless logic still applies.	Défi : retire les combinaisons non essentielles. Vos règles de résistance à la chaleur et de déplacement sans combinaison s'appliquent toujours.
+Starting location	Lieu de départ
+Choose where Samus begins this seed.	Choisissez où Samus commence cette seed.
+Area connections	Connexions entre les régions
+Shuffle entrances between areas: Off, Light or Full.	Mélange les entrées entre les régions : désactivé, léger ou complet.
+Boss connections	Connexions des boss
+Shuffle the entrances to the four main bosses.	Mélange les entrées des quatre boss principaux.
+Door colors	Couleurs des portes
+Randomize the ammo or beam required to open doors.	Change aléatoirement les munitions ou le rayon requis pour ouvrir les portes.
+Allow grey doors	Autoriser les portes grises
+Include locked grey doors in door color randomization.	Inclut les portes grises verrouillées dans le mélange des couleurs.
+Minimizer	Monde réduit
+Build a smaller world. Enables mixed area/boss routing and disables suit restrictions. Below 100 locations, uses Full item placement.	Crée un monde plus petit. Mélange les connexions des régions et des boss et désactive les contraintes des combinaisons. Sous 100 emplacements, utilise la répartition complète des objets.
+Minimizer locations	Emplacements du monde réduit
+Target location count. Whole regions may yield more checks. Random chooses a target from 30 to 60.	Nombre d'emplacements visé. Les régions entières peuvent ajouter des points. Le choix aléatoire vise entre 30 et 60 emplacements.
+Randomize escape	Évasion aléatoire
+Randomize the final escape route and timer.	Change aléatoirement le parcours et le temps de l'évasion finale.
+Remove escape enemies	Retirer les ennemis de l'évasion
+Remove enemies along the randomized escape route.	Retire les ennemis du parcours d'évasion aléatoire.
+Animals surprise	Surprise des animaux
+Randomize the surprise associated with saving the animals.	Change aléatoirement la surprise liée au sauvetage des animaux.
+Finale after objectives	Finale après les objectifs
+Vanilla Tourian, shortened Tourian, or return to the ship without Tourian.	Tourian classique, Tourian abrégé ou retour au vaisseau sans Tourian.
+Draw random objectives	Objectifs tirés au sort
+Select objectives from your eligible pool when Generate Game runs.	Choisit les objectifs parmi ceux que vous autorisez lors de la génération de la partie.
+Objectives drawn	Objectifs tirés
+Number of objectives selected from the eligible pool.	Nombre d'objectifs choisis parmi ceux que vous autorisez.
+Objectives required	Objectifs requis
+All, a fixed count, or a random count of the selected objectives.	Tous les objectifs choisis, un nombre fixe ou un nombre aléatoire.
+Hidden objectives	Objectifs cachés
+Hide the selected objectives until discovered in the run.	Masque les objectifs choisis jusqu'à leur découverte en jeu.
+Distribute objective categories	Répartir les catégories d'objectifs
+Balance random objectives across categories.	Équilibre les objectifs aléatoires entre les catégories.
+Choose up to 18 goals. Mutually exclusive goals cannot be selected together.	Choisissez jusqu'à 18 objectifs. Les objectifs incompatibles ne peuvent pas être choisis ensemble.
+Eligible random objectives	Objectifs aléatoires autorisés
+Pool of goals from which the seed draws its objectives.	Ensemble dans lequel la seed tire ses objectifs.
+Suit behavior	Protection des combinaisons
+Vanilla, balanced heat protection, or progressive protection from both suits.	Protection classique, résistance à la chaleur équilibrée ou protection progressive avec les deux combinaisons.
+Initial weakened Charge Beam	Rayon de charge initial affaibli
+Start with a weak charge shot; the Charge pickup restores full damage.	Commencez avec un tir chargé faible. Ramassez le rayon de charge pour retrouver sa pleine puissance.
+Flexible Crystal Flash	Crystal Flash assoupli
+Use the relaxed round-robin ammunition requirements for Crystal Flash.	Assouplit les exigences de munitions de Crystal Flash en les consommant à tour de rôle.
+Layout patches	Ajustements des salles
+Choose all, none, or individual traversal and escape adjustments.	Activez tous les ajustements de déplacement et d'évasion, aucun, ou choisissez-les individuellement.
+Area layout patches	Ajustements pour régions aléatoires
+Choose individual room changes intended for area randomization.	Choisissez les modifications de salles prévues pour le mélange des régions.
+VARIA tweaks	Ajustements VARIA
+Choose individual small gameplay changes.	Choisissez individuellement les petites modifications de jouabilité.
+VARIA HUD	Affichage VARIA
+Area, check and objective information on the native HUD.	Région, emplacements et objectifs dans l'affichage natif du jeu.
+Reveal map	Révéler la carte
+Show room geometry. Exploration objectives must still count rooms actually visited.	Affiche la géométrie des salles. Les objectifs d'exploration comptent toujours les salles réellement visitées.
+Short item fanfare	Fanfare d'objet courte
+Shorten the interruption when collecting an item.	Raccourcit l'interruption lors de l'acquisition d'un objet.
+Fast elevators	Ascenseurs rapides
+Speed up elevator travel.	Accélère les déplacements en ascenseur.
+Fast door transitions	Transitions de portes rapides
+Speed up transitions between rooms.	Accélère les transitions entre les salles.
+Respin	Reprise du saut en vrille
+Restart a spin jump while airborne.	Permet de reprendre un saut en vrille en plein vol.
+Speedkeep	Maintien de la vitesse
+Preserve running speed through eligible transitions.	Conserve la vitesse de course pendant les transitions admissibles.
+Infinite Space Jump	Saut spatial illimité
+Relax the timing window for successive Space Jumps.	Assouplit le rythme requis pour enchaîner les sauts spatiaux.
+Refill before saving	Recharge avant sauvegarde
+Seed-specific refill at a save station. The independent local comfort option remains available in Settings.	Recharge aux stations propre à cette seed. L'option de confort locale indépendante reste disponible dans les options.
+Better Reserves	Réserves améliorées
+Improved native reserve energy controls and display.	Améliore les commandes et l'affichage natifs de l'énergie auxiliaire.
+Race mode	Mode course
+Protect seed spoilers for races; this is separate from the numeric seed.	Protège les divulgâcheurs de la seed pour les courses. Ce réglage est distinct du numéro de seed.
+Random	Aléatoire
+Vanilla	Classique
+vanilla	classique
+Balanced	Équilibrée
+Progressive	Progressive
+Fast	Rapide
+Full	Complète
+Full Countdown	Complète avec compteur
+Major	Majeurs
+Scavenger	Chasse ordonnée
+Aqueduct	Aqueduc
+Big Pink	Grande salle rose
+Bubble Mountain	Montagne des bulles
+Business Center	Carrefour de Norfair
+Etecoons Supers	Super missiles des Etecoons
+Firefleas Top	Sommet des lucioles
+Gauntlet Top	Sommet du corridor d'épreuves
+Golden Four	Quatre statues dorées
+Green Brinstar Elevator	Ascenseur de Brinstar vert
+Landing Site	Site d'atterrissage
+Mama Turtle	Maman tortue
+Red Brinstar Elevator	Ascenseur de Brinstar rouge
+Watering Hole	Point d'eau
+Wrecked Ship Main	Salle principale de l'épave
+basic	de base
+early	précoce
+easier	plus facile
+easy	facile
+fast	rapide
+fastest	très rapide
+full	complet
+hard	difficile
+hardcore	extrême
+harder	plus difficile
+late	tardif
+light	léger
+mania	mania
+medium	moyen
+no difficulty cap	sans limite de difficulté
+normal	normal
+off	désactivé
+slow	lent
+slowest	très lent
+sparse	faible
+speedrun	course chronométrée
+ultra sparse	très faible
+very hard	très difficile
+He's annoying	Il est agaçant
+Quick Kill	Victoire éclair
+A lot of trouble	Beaucoup de difficulté
+Used to it	J'ai l'habitude
+No problemo	Aucun problème
+I'm scared!	Il me fait peur!
+Piece of cake	Un jeu d'enfant
+It can get ugly	Ça peut mal tourner
+Is this really the last boss?	C'est vraiment le dernier boss?
+Nice cutscene bro	Belle cinématique!
+No thanks	Non merci
+Gimme energy	Il me faut de l'énergie
+Bring the heat	Même pas chaud
+I run RBO	Je joue en ordre inversé
+Solution	Solution
+Aarghh	Aarghh
+I don't like spikes	Je n'aime pas les pics
+I don't mind spikes	Les pics ne me gênent pas
+D-Boost master	Maîtrise des dégâts propulsifs
+I don't like acid	Je n'aime pas l'acide
+Bosses	Boss
+Minibosses	Miniboss
+No additional objectives	Aucun objectif supplémentaire
+Items	Objets
+Map	Carte
+Memes	Défis insolites
+Enemies	Ennemis
+nothing	aucun
+collect all upgrades	obtenir toutes les améliorations
+tickle the red fish	chatouiller le poisson rouge
+kill the orange geemer	vaincre le Geemer orange
+kill shaktool	vaincre Shaktool
+activate chozo robots	activer les robots Chozo
+visit the animals	rendre visite aux animaux
+kill king cacatac	vaincre le roi Cacatac
+kill kraid	vaincre Kraid
+kill phantoon	vaincre Phantoon
+kill draygon	vaincre Draygon
+kill ridley	vaincre Ridley
+kill spore spawn	vaincre Spore Spawn
+kill botwoon	vaincre Botwoon
+kill crocomire	vaincre Crocomire
+kill golden torizo	vaincre le Torizo doré
+kill one G4	vaincre un boss principal
+kill one miniboss	vaincre un miniboss
+kill two G4	vaincre deux boss principaux
+kill two minibosses	vaincre deux miniboss
+kill three G4	vaincre trois boss principaux
+kill three minibosses	vaincre trois miniboss
+kill all G4	vaincre les quatre boss principaux
+kill all mini bosses	vaincre les quatre miniboss
+collect 25% items	obtenir 25% des objets
+explore 25% map	explorer 25% de la carte
+collect 50% items	obtenir 50% des objets
+explore 50% map	explorer 50% de la carte
+collect 75% items	obtenir 75% des objets
+explore 75% map	explorer 75% de la carte
+collect 100% items	obtenir 100% des objets
+explore 100% map	explorer 100% de la carte
+clear crateria	obtenir tous les objets de Crateria
+explore crateria	explorer Crateria
+clear green brinstar	obtenir tous les objets de Brinstar vert
+explore green brinstar	explorer Brinstar vert
+clear red brinstar	obtenir tous les objets de Brinstar rouge
+explore red brinstar	explorer Brinstar rouge
+clear wrecked ship	obtenir tous les objets de l'épave
+explore wrecked ship	explorer l'épave
+clear kraid's lair	obtenir tous les objets de l’antre de Kraid
+explore kraid's lair	explorer l’antre de Kraid
+clear upper norfair	obtenir tous les objets de Norfair supérieur
+explore upper norfair	explorer Norfair supérieur
+clear croc's lair	obtenir tous les objets de l’antre de Crocomire
+explore croc's lair	explorer l’antre de Crocomire
+clear lower norfair	obtenir tous les objets de Norfair inférieur
+explore lower norfair	explorer Norfair inférieur
+clear west maridia	obtenir tous les objets de Maridia ouest
+explore west maridia	explorer Maridia ouest
+clear east maridia	obtenir tous les objets de Maridia est
+explore east maridia	explorer Maridia est
+kill all space pirates	vaincre tous les Pirates de l'espace
+kill all ki hunters	vaincre tous les Ki Hunters
+kill all beetoms	vaincre tous les Beetoms
+kill all cacatacs	vaincre tous les Cacatacs
+kill all kagos	vaincre tous les Kagos
+kill all yapping maws	vaincre tous les Yapping Maws
+Rebuild the native library to enable the new-game menu.	Recompilez la bibliothèque native pour activer le menu de nouvelle partie.
+Native seed activation API is unavailable.	L'activation native des seeds est indisponible.
+Cannot load profile: 	Impossible de charger le profil : 
+ Previous session could not be reopened; saves remain on disk.	 La session précédente n'a pas pu être rouverte; les sauvegardes sont conservées sur disque.
+Profile loaded: 	Profil chargé : 
+Settings were not saved: 	Les options n'ont pas été enregistrées : 
+Pad: 	Manette : 
+Key: 	Touche : 
+F1 / Shortcut help	F1 / Aide des raccourcis
+Show the gameplay shortcut overlay after resuming.	Affiche l'aide des raccourcis à la reprise du jeu.
+F2 / Atmosphere	F2 / Ambiance
+Enable the Gaussian presentation layer, lighting and associated effects.	Active le flou gaussien, l'éclairage et les effets associés.
+F3 / Blend opacity	F3 / Opacité du mélange
+Cycle the original presets: 25%, 50%, 75%, 100%.	Passe entre les préréglages d'origine : 25%, 50%, 75%, 100%.
+Current: %.0f%%	Actuelle : %.0f%%
+Next opacity preset	Opacité suivante
+F4 / Scene brightness	F4 / Luminosité de la scène
+Original F4 tool: 85%, 100%, 110%, 115%. The F4 key now opens the system menu.	Ancien outil F4 : 85%, 100%, 110%, 115%. La touche F4 ouvre maintenant le menu système.
+Next brightness preset	Luminosité suivante
+F5 / Background parallax	F5 / Parallaxe du décor
+Offset supported background layers as the camera moves.	Décale les plans de décor compatibles selon les mouvements de la caméra.
+F6 / Gaussian blend mode	F6 / Mode de mélange gaussien
+Switch between Lighten and Multiply over the scene, excluding the HUD.	Passe du mode Éclaircir au mode Produit sur la scène, sans modifier l'affichage d'état.
+F7 / Background depth	F7 / Profondeur du décor
+Enable the layered 2.5D scenery presentation.	Active les décors en plusieurs plans pour un effet 2,5D.
+F8 / Surface relief	F8 / Relief des surfaces
+Enable illuminated and shaded edges on scenery.	Ajoute de la lumière et des ombres aux bords des décors.
+Ctrl+F8 / Reload painted scenery	Ctrl+F8 / Recharger les décors peints
+Reload the room decorations saved by the external editor. Collisions remain unchanged.	Recharge les décors de salle enregistrés dans l'éditeur externe. Les collisions restent inchangées.
+Reload decorations	Recharger les décors
+Reloaded painted scenery: %d tiles.	Décors peints rechargés : %d tuiles.
+F9 / Engine weather	F9 / Effets météo
+Enable the Unreal rain, fog, underwater and heat effects.	Active les effets Unreal de pluie, de brouillard, de milieu aquatique et de chaleur.
+F10 / Teleportation	F10 / Téléportation
+Open the existing destination selector. Available during gameplay, outside item messages and transitions.	Ouvre le choix des destinations. Disponible en jeu, en dehors des messages d'objets et des transitions.
+Open teleport destinations	Choisir une destination
+Resume gameplay to enable teleportation.	Reprenez le jeu pour activer la téléportation.
+F11 / Fullscreen	F11 / Plein écran
+Toggle windowed or borderless fullscreen and remember the choice.	Passe du mode fenêtre au plein écran sans bordure et mémorise votre choix.
+Toggle fullscreen	Basculer le plein écran
+Ctrl+F11 / Widescreen	Ctrl+F11 / Écran large
+Switch between the wide view and the native game width.	Passe de l'écran large à la largeur originale du jeu.
+F12 / Assisted wall jump	F12 / Saut mural assisté
+Enabled: forgiving wall jumps. Disabled: original timing.	Activé : sauts muraux plus faciles. Désactivé : précision d'origine.
+Shift+F12 / Assisted Space Jump	Maj+F12 / Saut spatial assisté
+Enabled: forgiving repeated jumps. Disabled: original rhythm. Ctrl+F12 is also supported in gameplay.	Activé : sauts consécutifs plus faciles. Désactivé : rythme d'origine. Ctrl+F12 fonctionne aussi en jeu.
+Session controls and local achievements.	Commandes de session et succès locaux.
+SPEEDRUN  /  %s  /  %s	COURSE  /  %s  /  %s
+NEW GAME+	NOUVELLE PARTIE+
+NO QOL	SANS AIDES
+In-game: %02llu:%02llu:%02llu   Real: %02llu:%02llu:%02llu	Jeu : %02llu:%02llu:%02llu   Réel : %02llu:%02llu:%02llu
+Unranked: this run has incomplete history or used a debug action.	Hors classement : historique incomplet ou outil de débogage utilisé.
+Apply a bundled VARIA configuration. This replaces gameplay options and applies the preset's base skill when supplied. Custom skill overrides remain separate.	Applique une configuration VARIA fournie. Remplace les options de jeu et applique le profil de maîtrise associé, s'il y en a un. Vos ajustements de maîtrise restent séparés.
+Settings preset loaded: 	Configuration chargée : 
+. Native compatibility is checked before generation.	. La compatibilité native est vérifiée avant la génération.
+Local JSON includes every seed option, technique, tolerance and tablet quota. Imports replace this draft; generated saves remain immutable.	Le fichier JSON local comprend toutes les options, techniques, tolérances et quotas de tablettes. L'importation remplace ce brouillon; les sauvegardes déjà générées restent inchangées.
+Configuration imported. Generate Game will validate all rules before publishing a seed.	Configuration importée. Générer la partie vérifiera toutes les règles avant de créer une seed.
+All eight VARIA skill presets. Overrides below are preserved when changing the base preset.	Les huit profils de maîtrise VARIA. Vos ajustements ci-dessous sont conservés lorsque vous changez le profil de base.
+Custom skill preset	Profil de maîtrise personnalisé
+Load all techniques and tolerances from a bundled skill preset. No Advanced Techs takes precedence when enabled.	Charge les techniques et les tolérances d'un profil fourni. Sans techniques avancées a priorité lorsque cette option est activée.
+No Advanced Techs	Sans techniques avancées
+Disable advanced traversal and heat runs in both generation and tracker logic. Basic wall jumps and full-length shinesparks remain enabled.	Désactive les déplacements avancés et les parcours sans protection thermique dans la génération et le suivi. Les sauts muraux simples et les Shinesparks avec élan complet restent autorisés.
+Reset skill overrides	Réinitialiser les ajustements de maîtrise
+Return individual techniques and tolerances to the selected base preset.	Rétablit les techniques et les tolérances du profil de base choisi.
+Use base preset	Utiliser le profil de base
+Allowed choices	Choix autorisés
+Select at least one allowed choice.	Autorisez au moins un choix.
+%d selected	%d sélectionnés
+Choose goals	Choisir les objectifs
+finish scavenger hunt	terminer la chasse ordonnée
+Conflicts with a selected objective.	Incompatible avec un objectif choisi.
+Select at least one goal.	Choisissez au moins un objectif.
+Reset to default	Rétablir la valeur par défaut
+No Advanced Techs overrides these values during generation. Your custom choices are preserved for when you turn it off.	Sans techniques avancées remplace ces valeurs pendant la génération. Vos choix sont conservés pour la désactivation de cette option.
+Allowed in logic	Autorisé dans la logique
+Use preset value	Utiliser la valeur du profil
+Combat tolerance used to estimate required equipment and difficulty.	Tolérance au combat utilisée pour estimer l'équipement requis et la difficulté.
+Heat-run tolerance used by the solver and live tracker.	Tolérance aux parcours sans protection thermique utilisée par le solveur et le suivi en jeu.
+Tolerance for damage and difficult traversal in this room.	Tolérance aux dégâts et aux déplacements difficiles dans cette salle.
+Ice Beam heat run	Parcours chaud du rayon de glace
+Upper Norfair heat runs	Parcours chauds de Norfair supérieur
+Lower Norfair heat runs	Parcours chauds de Norfair inférieur
+X-Ray room	Salle du viseur radioscopique
+Folder not found. Enter a folder path or choose Home.	Dossier introuvable. Entrez un chemin ou choisissez Dossier personnel.
+Compatible ROM confirmed. CRC32: D63ED5F8. SHA-1 verified.	ROM compatible confirmée. CRC32 : D63ED5F8. SHA-1 vérifié.
+ROM setup	Configuration de la ROM
+Set up Super Metroid	Configurer Super Metroid
+Select your unmodified Japan/USA ROM. It will be verified and copied into the game's local roms folder.	Choisissez votre ROM Japon/États-Unis non modifiée. Elle sera vérifiée puis copiée dans le dossier roms local du jeu.
+CRC32: D63ED5F8  |  Size: 3,145,728 bytes  |  No copier header	CRC32 : D63ED5F8  |  Taille : 3 145 728 octets  |  Sans en-tête de copieur
+A different filename is fine; the file contents must match.	Le nom du fichier peut varier; son contenu doit correspondre.
+Paste a ROM file path, or browse below	Collez le chemin de la ROM ou parcourez les dossiers ci-dessous
+Verify selected ROM	Vérifier la ROM choisie
+Hide browser	Masquer les dossiers
+Browse files	Parcourir les fichiers
+[Folder] 	[Dossier] 
+No folders or .sfc/.smc files here.	Aucun dossier ni fichier .sfc ou .smc ici.
+Confirm, copy ROM and continue	Confirmer, copier la ROM et continuer
+Local copy: %s	Copie locale : %s
+The local copy is checked again at every launch. Your source file is kept unchanged.	La copie locale est vérifiée à chaque démarrage. Votre fichier d'origine reste inchangé.
+Wall Jump	Saut mural
+Kick-jump from wall: wall to wall, single wall climb	Se propulser d'un mur à l'autre, ou grimper le long d'un seul mur.
+Shinespark	Shinespark
+With Speed Booster, press down to activate Shinespark. Then launch it in every possible direction, from ground or mid-air	Avec l'Accélérateur, appuyer vers le bas pour charger le Shinespark, puis le déclencher dans la direction voulue, au sol ou en plein vol.
+Mid-air Morph	Morphosphère en plein vol
+Activate Morph Ball while jumping straight up (keep jump pressed) to reach high places in Morph Ball form without bomb jumping	Activer la Morphosphère pendant un saut vertical en maintenant Saut, pour atteindre des endroits élevés sans sauts à la bombe.
+Crouch Jump	Saut accroupi
+Jump higher by crouching before jumping	S'accroupir avant de sauter pour gagner de la hauteur.
+Unequip items	Déséquiper des objets
+Unequip Gravity suit to have more time to morph after jumping or unequip Hi-Jump Boots to limit jump height	Retirer la combinaison de gravité pour avoir plus de temps pour se transformer après un saut, ou les bottes de saut pour limiter la hauteur.
+Mockball	Mockball
+Morph from running without loosing momentum to get Early Super and Ice Beam	Passer de la course à la Morphosphère sans perdre son élan pour obtenir tôt les super missiles et le rayon de glace.
+Simple Short Charge	Charge courte simple
+Activate SpeedBooster faster than normal by delaying run button input	Activer l'Accélérateur plus tôt en retardant l'appui sur Course.
+Infinite Bomb-Jump	Sauts à la bombe infinis
+To access certain locations without Hi-Jump or Space-Jump	Atteindre certains endroits sans bottes de saut ni saut spatial.
+Green Gate Glitch	Faille des barrières vertes
+Open gates from other side to access Screw Attack and Crocomire	Ouvrir les barrières du mauvais côté pour atteindre l'attaque en vrille et Crocomire.
+Tight Short Charge	Charge courte serrée
+Activate SpeedBooster really fast (3 taps or stutter 3)	Activer l'Accélérateur très rapidement avec trois appuis ou la technique « stutter 3 ».
+Gravity-Jump	Saut de gravité
+Super Hi-Jumps in water/lava using game's bug	Effectuer des sauts très hauts dans l'eau ou la lave grâce à une faille du jeu.
+SpringBall-Jump	Saut avec la boule de saut
+Do a SpringBall Jump from a jump to Access to Wrecked Ship Etank without anything else, Suitless Maridia navigation	Se transformer pendant un saut puis rebondir avec la boule de saut pour atteindre la réserve d'énergie de l'épave, ou se déplacer dans Maridia sans combinaison de gravité.
+SpringBall-Jump from wall	Boule de saut après saut mural
+Do a SpringBall jump after a Wall jump to exit Screw Attack area, climb Worst Room without Hi-Jump	Enchaîner saut mural et boule de saut pour sortir de la zone de l'attaque en vrille ou monter la salle Worst Room sans bottes de saut.
+Get around Wall-Jump	Saut mural en contournement
+Tricky Wall-Jumps where you have to get around the platform you want to Wall-Jump on using Hi-Jump boots	Avec les bottes de saut, contourner une plateforme pour prendre appui sur son côté. Demande des sauts muraux précis.
+Draygon Grapple Kill	Draygon au rayon grappin
+Instant kill on Draygon with electric grapple	Vaincre Draygon instantanément avec l'électricité transmise par le rayon grappin.
+Draygon Spark Kill	Draygon au Shinespark
+Kill Draygon using Speed Booster and shinesparks	Vaincre Draygon à l'aide de l'Accélérateur et des Shinesparks.
+Microwave Draygon	Draygon au « micro-ondes »
+Charge/Plasma/X-Ray glitch on Draygon	Exploiter la combinaison rayon de charge, rayon plasma et viseur radioscopique contre Draygon.
+Microwave Phantoon	Phantoon au « micro-ondes »
+Same as Draygon, with a few missiles to start	Comme pour Draygon, avec quelques missiles au départ.
+Low Ammo Crocomire fight	Crocomire avec peu de munitions
+Use drops to fight Crocomire with no charge and just 10 missiles, or 5 missiles/5 supers. With the technique disabled and no charge beam, VARIA requires 5000 damage worth of ammo.	Utiliser les munitions laissées par les ennemis pour combattre Crocomire sans rayon de charge avec seulement 10 missiles, ou 5 missiles et 5 super missiles. Sinon, VARIA exige de quoi infliger 5 000 dégâts avec les munitions.
+Low Ammo/Health Botwoon fight	Botwoon avec peu de ressources
+Fight Botwoon with no charge and just 3500 damage worth of ammo (Botwoon has 3000 HP). With the technique disabled, VARIA requires 6000 damage worth of ammo (if no charge beam) and 4 tanks of energy (with no suits).	Combattre Botwoon sans rayon de charge avec de quoi infliger 3 500 dégâts (il a 3 000 PV). Sinon, VARIA exige 6 000 dégâts en munitions sans rayon de charge, et 4 réserves d'énergie sans combinaison protectrice.
+Low Ammo/Health Golden Torizo	Torizo doré avec peu de ressources
+Fight GT with either charge beam or 5 supers and nothing else. Otherwise require either 30 supers or Charge+Plasma and 4 tanks of energy (with Varia).	Combattre le Torizo doré avec le rayon de charge ou seulement 5 super missiles. Sinon, exige 30 super missiles ou les rayons de charge et plasma, et 4 réserves d'énergie avec Varia.
+Ice Zeb Skip	Contourner les Zebetites avec la glace
+Skip the Zebetites with Ice beam	Passer les Zebetites grâce au rayon de glace.
+Speed Zeb Skip	Contourner les Zebetites au Shinespark
+Skip the Zebetites with a shinespark	Passer les Zebetites avec un Shinespark.
+Mama Turtle E-Tank with High-Jump+Speed	Réserve de maman tortue : saut et vitesse
+Access Mama Turtle E-Tank with High-Jump and Speed Booster (and Morph or X-Ray to turn around without moving)	Atteindre la réserve d'énergie de maman tortue avec les bottes de saut et l'Accélérateur, puis la Morphosphère ou le viseur radioscopique pour se retourner sans bouger.
+Mama Turtle Wall Jump Bomb Boost	Maman tortue : saut mural et bombe
+Access Mama Turtle E-Tank by accurately placing a bomb or Power Bomb in mid-air following a wall jump, then using that bomb explosion to propel Samus forward. There is a timing component where the bomb is placed while rising then hit while falling, and a momentum component for maximizing horizontal distance.	Après un saut mural, placer une bombe ou une bombe de puissance en montant, puis toucher son explosion en redescendant pour se propulser vers la réserve d'énergie. Le rythme et l'élan horizontal doivent être précis.
+Various Maridia wall jumps	Sauts muraux de Maridia
+Kinda tricky wall jumps to: access items in West Sand Hole without Spring Ball or Bombs, exit Spring Ball area without Hi Jump, exit Crab Hole with Gravity+Hi-Jump	Sauts muraux délicats pour atteindre les objets de la fosse de sable ouest sans boule de saut ni bombes, sortir de la zone de la boule de saut sans bottes, ou sortir du puits aux crabes avec la combinaison de gravité et les bottes de saut.
+West Sand Hole Items with Morph	Fosse ouest avec la Morphosphère
+Once at the top of West Sand Hole, collect items without Spring Ball or Bombs/Power Bombs by performing some wiggling (turn-around cancel with angle) and tricky Alcatraz-like wall jumps. <b>Note:</b> in Mirrortroid flavor, the wiggling to access the Reserve location is not possible, thus will not be required.	Au sommet de la fosse de sable ouest, obtenir les objets sans boule de saut ni bombes en annulant les demi-tours avec la visée et en faisant des sauts muraux de type Alcatraz. Dans la version miroir, la manœuvre vers la réserve est impossible et n'est donc pas exigée.
+Mount Everest Gravity Jump	Saut de gravité du mont Everest
+Access Mount Everest top door by doing a crouch+gravity jump in the last couple frames possible	Atteindre la porte supérieure du mont Everest par un saut accroupi de gravité déclenché dans les dernières images possibles.
+Access Watering Hole with Gravity and Morph	Point d'eau avec gravité et Morphosphère
+Wait for the Owtch to go under the sand, then do a quick run and jump into morph in the hole	Attendre que l'Owtch passe sous le sable, puis courir, sauter et se transformer rapidement pour entrer dans le trou.
+Level 1	Niveau 1
+Make your way underwater with Hi-Jump, and Ice for freezing crabs and fishes or Spring Ball for spring ball jumps. Access Botwoon with grapple.	Se déplacer sous l'eau avec les bottes de saut et le rayon de glace pour geler crabes et poissons, ou avec la boule de saut. Atteindre Botwoon avec le rayon grappin.
+Level 2	Niveau 2
+Level 1 + access Draygon's lair and do the Draygon fight (exiting Draygon are separate techniques)	Niveau 1, plus atteindre l'antre de Draygon et le combattre. Les techniques pour en sortir sont distinctes.
+Level 3	Niveau 3
+Level 2 and : no problem getting out of sand suitless, traverse mini-draygons area, wall jumps to access items in the left sand pit, access missile location in the right sand pit.	Niveau 2, plus sortir facilement du sable sans combinaison de gravité, traverser les petits Draygons, atteindre les objets de la fosse gauche par sauts muraux et le missile de la fosse droite.
+Ceiling Damage Boost	Propulsion par dégâts au plafond
+Hit an enemy at the right time to get the item in Blue Brinstar Ceiling	Toucher un ennemi au bon moment pour atteindre l'objet du plafond de Brinstar bleu.
+Billy Mays access without Gravity or Space Jump	Billy Mays sans gravité ni saut spatial
+Jump through the door to get on the invisible platform	Sauter en traversant la porte pour atteindre la plateforme invisible.
+Alcatraz Escape	Sortie Alcatraz
+Escape from Bomb area using its entrance tunnel	Sortir de la zone des bombes par son tunnel d'entrée.
+Backdoor to Spore Spawn item	Objet de Spore Spawn par l'arrière
+Break the Spore Spawn exit super block from Big Pink to access the item	Détruire depuis la grande salle rose le bloc à super missile de la sortie de Spore Spawn pour atteindre l'objet.
+Reverse Gate Glitch	Faille de barrière inversée
+Open wave gate in Pink Brinstar from bottom left corner with Hi-Jump	Ouvrir la barrière à rayon à ondes de Brinstar rose depuis le coin inférieur gauche avec les bottes de saut.
+Reverse Gate Glitch w/o Hi-Jump	Barrière inversée sans bottes de saut
+Open wave gate in Pink Brinstar from bottom left corner without Hi-Jump	Ouvrir la barrière à rayon à ondes de Brinstar rose depuis le coin inférieur gauche sans bottes de saut.
+Mirrored Wave Gate Glitch	Faille de barrière à ondes en miroir
+Open wave gate in Pink Brinstar by doing a GGG out of a wall jump	Ouvrir la barrière à ondes de Brinstar rose par la faille de barrière verte après un saut mural.
+Early Kraid	Kraid précoce
+Access Kraid area by Wall-Jumping	Atteindre la région de Kraid par sauts muraux.
+X-Ray Damage Boost	Viseur radioscopique par dégâts propulsifs
+Get to X-Ray location without Space-Jump, Grapple (no energy requirements), Ice+Hi-Jump or Bombs (see Hard Room settings)	Atteindre le viseur sans saut spatial ni rayon grappin (sans exigence d'énergie), ni glace et bottes de saut, ni bombes. Voir les réglages de salles difficiles.
+X-Ray Ice Climb	Viseur radioscopique par escalade sur glace
+Get to X-Ray location with Ice beam and no Hi-Jump (see Hard Room settings for energy requirements)	Atteindre le viseur avec le rayon de glace sans bottes de saut. Voir les besoins d'énergie dans les réglages de salles difficiles.
+Red Tower Climb	Ascension de la tour rouge
+Climb Red Tower without Ice Beam	Monter la tour rouge sans rayon de glace.
+Clip into the Tube with Morph	Traverser le tube en Morphosphère
+Clip through the Maridia tube with unmorphing and wiggling. Mostly useful in area rando.	Traverser le tube de Maridia en quittant la Morphosphère et en oscillant. Surtout utile lorsque les régions sont mélangées.
+Tube exit Gravity jump	Sortie du tube par saut de gravité
+Exit through the already broken tube with no items by gravity jumping from an adjacent room. Adjust direction just as you enter the tube room. Mostly useful in area rando.	Sortir du tube déjà brisé sans équipement, par un saut de gravité depuis une salle voisine. Ajuster la direction à l'entrée de la salle du tube. Surtout utile avec les régions mélangées.
+Bomb-less Ron Popeil Missiles	Missiles Ron Popeil sans bombes
+Access the most behind missile in Green Brinstar Reserve with Morph and Screw Attack	Atteindre les missiles les plus reculés de la réserve de Brinstar vert avec la Morphosphère et l'attaque en vrille.
+Old Mother Brain with Speed	Ancienne Mother Brain avec l'Accélérateur
+Access Old Mother Brain Missile pack location with just the Speed Booster	Atteindre l'emplacement des missiles de l'ancienne salle de Mother Brain avec seulement l'Accélérateur.
+Moondance	Moondance
+Access Etecoons area using moonfall shenanigans	Atteindre la zone des Etecoons grâce aux manipulations de chute lunaire.
+Gauntlet Access w/o Hi-Jump	Corridor d'épreuves sans bottes de saut
+Access Gauntlet area using really tricky Wall-Jumps	Atteindre le corridor d'épreuves avec des sauts muraux très délicats.
+Hi-Jump Gauntlet Access	Corridor d'épreuves avec bottes de saut
+Access Gauntlet area using tricky Wall-Jumps	Atteindre le corridor d'épreuves avec des sauts muraux délicats.
+Gauntlet Minors Access	Munitions du corridor d'épreuves
+Access Gauntlet minors with SpeedBooster, 1 Etank and 1 Power Bomb pack	Obtenir les munitions du corridor d'épreuves avec l'Accélérateur, une réserve d'énergie et un lot de bombes de puissance.
+Ice Escape	Sortie de la zone du rayon de glace
+Freeze the platforms and exit Ice Beam area without bombs	Geler les plateformes pour sortir de la zone du rayon de glace sans bombes.
+Ice Escape without Ice	Sortie de la zone de glace sans glace
+Ice escape without freezing the platforms	Sortir de la zone du rayon de glace sans geler les plateformes.
+Wall Jump to exit Cathedral	Sortie de la cathédrale par saut mural
+Use a delayed wall jump to exit Cathedral	Effectuer un saut mural retardé pour sortir de la cathédrale.
+Bubble Mountain wall jump	Saut mural de la montagne des bulles
+Run from the save room and get up Bubble Mountain without Hi-Jump	Prendre de l'élan depuis la station de sauvegarde pour monter la montagne des bulles sans bottes de saut.
+Double Chamber wall jump	Saut mural de la double salle
+Climb up Double Chamber (pre-Wave Beam room) after entering through the bottom door	Monter la double salle avant le rayon à ondes après être entré par la porte du bas.
+Nova Boost	Nova Boost
+Use a D-Boost on the Sova to enter Cathedral	Se propulser en subissant les dégâts d'un Sova pour entrer dans la cathédrale.
+Norfair Reserve Damage Boost	Réserve de Norfair par dégâts propulsifs
+Use a D-Boost to reach Norfair Reserve area	Se propulser en subissant des dégâts pour atteindre la zone de la réserve de Norfair.
+Crocomire Power Bombs Damage Boost	Bombes de Crocomire par dégâts propulsifs
+Use a D-Boost to reach Crocomire Power Bombs	Se propulser en subissant des dégâts pour atteindre les bombes de puissance de Crocomire.
+Crocomire Power Bombs with Ice Beam	Bombes de Crocomire au rayon de glace
+Get the farm bugs up and freeze them to reach Crocomire Power Bombs	Attirer les insectes vers le haut puis les geler pour atteindre les bombes de puissance de Crocomire.
+Missile under Ice beam from Crocomire	Missiles sous le rayon de glace depuis Crocomire
+Access missile pack under Ice beam location by reverse sparking Crocomire speedway	Atteindre les missiles sous le rayon de glace avec un Shinespark en sens inverse dans le couloir rapide de Crocomire.
+Frog speedway without speed	Couloir des grenouilles sans Accélérateur
+Traverse frog speedway from right to left, without Speed Booster, but with Wave and either Spazer or Plasma	Traverser le couloir des grenouilles de droite à gauche sans Accélérateur, avec le rayon à ondes et le rayon Spazer ou plasma.
+Lava Dive	Plongeon dans la lave
+Enter Lower Norfair with Varia and Hi-Jump	Entrer dans Norfair inférieur avec Varia et les bottes de saut.
+Hi-Jump less Lava Dive	Plongeon sans bottes de saut
+Enter Lower Norfair with just the Varia suit	Entrer dans Norfair inférieur avec seulement la combinaison Varia.
+Worst Room Ice and Charge	Worst Room avec glace et charge
+Go through Worst Room In The Game JUST by freezing pirates	Traverser la salle Worst Room In The Game uniquement en gelant les Pirates.
+Worst Room insane wall jump	Saut mural extrême de Worst Room
+Do the frame+pixel perfect wall jump to get out Worst Room without Hi-Jump	Sortir de Worst Room sans bottes de saut avec un saut mural précis au pixel et à l'image près.
+Screw Attack Exit	Sortie de l'attaque en vrille
+Gain momentum with Hi-Jump and Speed Booster from Golden Torizo Energy Recharge room, then Wall Jump in Screw Attack room, destroying the ceiling with Screw Attack.	Prendre de l'élan avec les bottes de saut et l'Accélérateur depuis la station d'énergie du Torizo doré. Faire un saut mural dans la salle de l'attaque en vrille et détruire le plafond avec celle-ci.
+Screw Attack Exit without Screw	Sortie sans attaque en vrille
+Destroy the ceiling, then jump from inside the door with Hi-Jump and Speed Booster to climb up in Screw Attack room	Détruire le plafond, puis sauter depuis l'intérieur de la porte avec les bottes de saut et l'Accélérateur pour remonter la salle.
+Firefleas Wall Jump	Sauts muraux des lucioles
+Get back up from bottom of firefleas without movement items or Ice Beam	Remonter du bas de la salle des lucioles sans équipement de déplacement ni rayon de glace.
+Dodge Lower Norfair Enemies	Esquive dans Norfair inférieur
+Go through hard-hitting enemies in Lower Norfair without taking damage or killing them	Traverser les ennemis puissants de Norfair inférieur sans subir de dégâts ni les vaincre.
+Continuous Wall-Jump	Saut mural continu
+Get over the Moat using CWJ	Traverser les douves avec un saut mural continu (CWJ).
+Diagonal Bomb-Jump	Sauts à la bombe diagonaux
+Get over The Moat using Bomb-Jumps	Traverser les douves avec des sauts à la bombe.
+Mockball Wrecked Ship	Mockball vers l'épave
+Get over the moat using Mockball and Spring Ball	Traverser les douves avec un Mockball et la boule de saut.
+SpongeBath Bomb-Jump	Salle des éponges par sauts à la bombe
+Get through Sponge Bath room with Bomb-Jumps	Traverser la salle des éponges avec des sauts à la bombe.
+SpongeBath Hi-Jump	Salle des éponges avec bottes de saut
+Get through sponge bath room with Hi-Jump and Wall-Jumps	Traverser la salle des éponges avec les bottes de saut et des sauts muraux.
+SpongeBath Speed	Salle des éponges avec Accélérateur
+Get through sponge bath room with Speed Booster and Wall-Jumps	Traverser la salle des éponges avec l'Accélérateur et des sauts muraux.
+Mt. Everest without anything	Mont Everest avec équipement minimal
+Make your way through Mt. Everest with nothing but Ice and Hi-Jump	Traverser le mont Everest avec seulement le rayon de glace et les bottes de saut.
+Double SpringBall-Jump	Double saut de la boule de saut
+With Hi-Jump boots do two SpringBall-Jumps in a row	Avec les bottes de saut, enchaîner deux sauts de la boule de saut.
+Botwoon to Draygon with Ice	De Botwoon à Draygon avec la glace
+When past Botwoon, access Draygon using Hi-Jump and Ice only	Après Botwoon, atteindre Draygon avec seulement les bottes de saut et le rayon de glace.
+West Sand Hole suitless Wall Jumps	Sauts muraux de la fosse ouest sans gravité
+Access items in West Sand Hole (aka Left Sand Pit) with just Hi-Jump	Atteindre les objets de la fosse de sable ouest avec seulement les bottes de saut.
+East Sand Hall Spring Ball jump	Couloir de sable est avec boule de saut
+Cross East Sand Hall left to right with Hi-Jump and Spring Ball. On the left side of the raised platform, jump for max height. Lateral Midair Morph for horizontal momentum, and perform the springball jump the moment before touching the sandfall. Pause again to disable springball as soon as possible.	Traverser de gauche à droite avec les bottes et la boule de saut. Depuis la gauche de la plateforme surélevée, sauter au maximum, se transformer en gardant l'élan horizontal et rebondir juste avant la chute de sable. Désactiver la boule de saut dès que possible par le menu pause.
+West Sand Hall Insane Bomb Jump	Saut à la bombe extrême du sable ouest
+Time a bomb to hit Samus when she is morphed, 1 pixel into the sand, inside a sandfall, and moving horizontally. There is a setup using a sand IBJ to get the right timing, and another setup using a very fast jump morph.	Synchroniser une bombe pour toucher Samus en Morphosphère, un pixel dans le sable, sous une chute de sable et en mouvement horizontal. Préparer le rythme avec des sauts à la bombe dans le sable, ou un saut suivi d'une transformation très rapide.
+Cacatac Alley Underwater Wall Jump	Saut mural sous l'eau de l'allée Cacatac
+Traverse East Cactus Alley Room left to right suitless, using space jump and an underwater wall jump	Traverser l'allée des cactus est de gauche à droite sans combinaison de gravité, avec le saut spatial et un saut mural sous l'eau.
+Exit Draygon room with the Grapple	Sortie de Draygon au rayon grappin
+Use Grapple to bounce them morph and demorph up to the platform	Rebondir avec le rayon grappin, puis se transformer et se redresser pour atteindre la plateforme.
+Exit Draygon room or precious room with a shine spark	Sortie de Draygon au Shinespark
+Doing a Crystal flash and being grabbed by Draygon gives a free shine spark	Déclencher un Crystal Flash puis se faire attraper par Draygon pour obtenir une charge de Shinespark gratuite.
+Exit the Precious room with an Xray glitch	Sortie de Precious au viseur radioscopique
+Use an XrayScope glitch to climb out of the Precious room	Exploiter une faille du viseur radioscopique pour remonter la salle Precious.
+Exit the Precious room with a Gravity Jump	Sortie de Precious par saut de gravité
+Jump through the exit door into the water in the next room to climb up with a Gravity Jump	Sauter à travers la porte de sortie vers l'eau de la salle voisine pour remonter grâce à un saut de gravité.
+Mochtroid Clip	Passage à travers un Mochtroid
+Get to Botwoon with Ice Beam	Atteindre Botwoon avec le rayon de glace.
+Puyo Clip	Passage à travers un Puyo
+Get to Spring Ball with Gravity Suit and Ice Beam	Atteindre la boule de saut avec la combinaison de gravité et le rayon de glace.
+Puyo Clip with X-Ray	Passage Puyo avec viseur radioscopique
+Get to Spring Ball with Gravity Suit, Ice Beam and X-Ray	Atteindre la boule de saut avec la combinaison de gravité, le rayon de glace et le viseur radioscopique.
+Snail Clip	Passage à travers un escargot
+Access Aqueduct Missile and Super Missile without SpeedBooster	Atteindre les missiles et super missiles de l'aqueduc sans Accélérateur.
+Suitless Puyo Clip	Passage Puyo sans combinaison de gravité
+Do the Puyo clip with Hi Jump and without Gravity	Effectuer le passage à travers un Puyo avec les bottes de saut, sans combinaison de gravité.
+Suitless Spring Ball item access with R-Jump	Boule de saut sans gravité par saut R
+Use X-Ray to force a stand, clip into the ground slightly, hold Angle Up or Down before jumping, jump, release Angle Up/Down (can be done the frame before jump is pressed), and then Morph. Inputs can be buffered with a pause.	Utiliser le viseur radioscopique pour se redresser en s'enfonçant légèrement dans le sol. Maintenir une visée diagonale, sauter, relâcher la visée puis se transformer. La visée peut être relâchée une image avant le saut. La pause peut servir à préparer les entrées.
+Escape Spring Ball item suitless with Space Jump	Sortie de la boule de saut au saut spatial
+Mid-air morph after escaping water line with Space Jump. Look for the water being between the metal and green tiles.	Se transformer en plein vol après avoir dépassé la surface de l'eau avec le saut spatial. Repérer l'eau entre les tuiles métalliques et vertes.
+Crystal Flash Clip	Passage par Crystal Flash
+Use a Crystal Flash to clip through crumble blocks to get to Botwoon or Shaktool, using Gravity and Bombs	Avec la combinaison de gravité et les bombes, utiliser un Crystal Flash pour traverser des blocs friables vers Botwoon ou Shaktool.
+Suitless Crystal Flash Clip	Passage Crystal Flash sans gravité
+Use a Crystal Flash to clip through crumble blocks to get to Botwoon or Shaktool	Utiliser un Crystal Flash pour traverser des blocs friables vers Botwoon ou Shaktool.
+Kill Plasma Pirates with Spark	Pirates du plasma au Shinespark
+Use shinesparks to kill the pirates in Plasma Beam room	Vaincre les Pirates de la salle du rayon plasma avec des Shinesparks.
+Kill Plasma Pirates with Charge	Pirates du plasma au rayon de charge
+Use pseudo-screw to kill the pirates in Plasma Beam room	Vaincre les Pirates de la salle du rayon plasma avec une pseudo-attaque en vrille.
+Access Spring Ball location with Hi-Jump	Boule de saut avec bottes de saut
+With Gravity and Hi-Jump, jump to get through the grapple hole	Avec la combinaison de gravité et les bottes de saut, franchir le passage du bloc à grappin.
+Access Spring Ball location with bomb jumps and spring ball	Boule de saut avec rebonds et bombes
+With Gravity, bounce on the sand and bomb jump up to get through the grapple hole	Avec la combinaison de gravité, rebondir sur le sable puis monter à la bombe pour franchir le passage du bloc à grappin.
+Access Spring Ball location with bomb jumps only	Boule de saut avec bombes seulement
+With Gravity, bomb jump up from the sand to get through the grapple hole	Avec la combinaison de gravité, monter depuis le sable à l'aide des bombes pour franchir le passage du bloc à grappin.
+Access Spring Ball location with a spring ball jump	Accès par la boule de saut
+With Gravity, use a spring ball jump, either from the sand or a ledge to get through the grapple hole	Avec la combinaison de gravité, rebondir en boule de saut depuis le sable ou un rebord pour franchir le passage du bloc à grappin.
+Access Spring Ball location with X-Ray climbing	Accès par escalade au viseur radioscopique
+Use inbounds X-Ray climbing to get past the grapple hole. Can be required suitless if suitless movement level 3 is enabled.	Grimper avec le viseur radioscopique, en restant dans les limites de la salle, pour franchir le passage du bloc à grappin. Peut être requis sans combinaison de gravité si le déplacement sans gravité de niveau 3 est activé.
+Access Spring Ball location with a Gravity jump	Accès par saut de gravité
+Do a tricky gravity jump from the sand and get through the grapple hole	Faire un saut de gravité délicat depuis le sable pour franchir le passage du bloc à grappin.
+Access Spring Ball location suitless with a flatley jump and Space Jump	Accès sans gravité par saut Flatley
+Do a suitless flatley jump to get through the grapple hole, and get out of the water with Space Jump	Faire un saut Flatley sans combinaison de gravité pour franchir le passage du bloc à grappin, puis sortir de l'eau avec le saut spatial.
+Overview	Vue d'ensemble
+Display	Affichage
+DISPLAY	AFFICHAGE
+Widescreen	Écran large
+Controls	Commandes
+CONTROLS	COMMANDES
+AUDIO	AUDIO
+INTERFACE	INTERFACE
+DEBUG	DÉBOGAGE
+SYSTEM	SYSTÈME
+QOL	AVEC AIDES
+ACHIEVEMENTS	SUCCÈS
+RANDOMIZED	ALÉATOIRE
+VANILLA	CLASSIQUE
+Randomized	Aléatoire
+Ready	Prête
+Fire	Tir
+All	Tous
+None	Aucun
+Fixed	Fixe
+Custom	Personnalisé
+Drives	Lecteurs
+Filesystem	Système de fichiers
+Files	Fichiers
+Animals	Animaux
+Current save	Sauvegarde actuelle
+Not rescued	Non sauvés
+Rescued	Sauvés
+Unrated	Non évaluée
+Very hard	Très difficile
+God	Divine
+Impossible	Impossible
+Speedrun - No QoL	Course - Sans aides
+Speedrun - QoL	Course - Avec aides
+Common	Communes
+Basics	Bases
+Used across the game	Utilisées partout
+Wrecked Ship	Épave
+Access	Accès
+Sponge Bath	Salle des éponges
+Underwater movement without Gravity Suit	Déplacements sous l'eau sans combinaison de gravité
+Clips	Traversées de surfaces
+Plasma Room	Salle du rayon plasma
+Jumps	Sauts
+Spring Ball Access	Accès à la boule de saut
+Suitless Draygon Exit	Sortie de Draygon sans gravité
+Obscure suitless stuff	Manœuvres rares sans gravité
+Upper Norfair	Norfair supérieur
+Main Upper Norfair	Secteur principal de Norfair supérieur
+Lower Norfair	Norfair inférieur
+Worst Room In The Game	Worst Room In The Game
+Other	Autres
+Bosses/End	Boss et finale
+Mini-Bosses	Miniboss
+End Game	Fin du jeu
+NATIVE DECOMPILATION	DÉCOMPILATION NATIVE
+NATIVE RUNTIME	EXÉCUTION NATIVE
+DISASSEMBLY REFERENCES	RÉFÉRENCES DE DÉSASSEMBLAGE
+ANONYMOUS CONTRIBUTORS	CONTRIBUTIONS ANONYMES
+REMASTERED SOUNDTRACK	TRAME SONORE REMATRICÉE
+MUSIC RESTORATION	RESTAURATION MUSICALE
+ORCHESTRAL ARRANGEMENTS	ARRANGEMENTS ORCHESTRAUX
+INTRO VOICE	VOIX DE L'INTRODUCTION
+MSU PACK COMPILATION	COMPILATION DES ENSEMBLES MSU
+MSU MUSIC INTEGRATION	INTÉGRATION MUSICALE MSU
+ENGINE AND MIDDLEWARE	MOTEUR ET COMPOSANTS
+AND CONTRIBUTORS	ET LES AUTRES CONTRIBUTEURS
+GAMEPLAY STATISTICS	STATISTIQUES DE PARTIE
+TRACKED SINCE THIS UPDATE	SUIVI DEPUIS CETTE MISE À JOUR
+RANDOMIZED GAME	PARTIE ALÉATOIRE
+VANILLA GAME	PARTIE CLASSIQUE
+CHOZO RELIC HUNT	CHASSE AUX TABLETTES CHOZO
+REAL TIME	TEMPS RÉEL
+IN GAME TIME	TEMPS DE JEU
+DEATHS	MORTS
+RESETS	REDÉMARRAGES
+DOOR TRANSITIONS	PORTES TRAVERSÉES
+TIME IN DOORS	TEMPS AUX PORTES
+DOOR ALIGNMENT	ALIGNEMENT AUX PORTES
+PAUSE MENU	MENU PAUSE
+TIME SPENT IN	TEMPS PASSÉ DANS
+GREEN BRINSTAR	BRINSTAR VERT
+RED BRINSTAR	BRINSTAR ROUGE
+WRECKED SHIP	ÉPAVE
+KRAID'S LAIR	ANTRE DE KRAID
+UPPER NORFAIR	NORFAIR SUPÉRIEUR
+LOWER NORFAIR	NORFAIR INFÉRIEUR
+WEST MARIDIA	MARIDIA OUEST
+EAST MARIDIA	MARIDIA EST
+SHOTS AND AMMO FIRED	TIRS ET MUNITIONS UTILISÉS
+UNCHARGED SHOTS	TIRS NON CHARGÉS
+CHARGED SHOTS	TIRS CHARGÉS
+BEAM ATTACKS	ATTAQUES AU RAYON
+MISSILES	MISSILES
+SUPER MISSILES	SUPER MISSILES
+POWER BOMBS	BOMBES DE PUISSANCE
+LAG TIME	TEMPS DE RALENTISSEMENT
+THANKS FOR PLAYING	MERCI D'AVOIR JOUÉ
+WAIT	ATTENDEZ
+Flashing Doors	Portes clignotantes
+Show the color of a locked door from the other side.	Affiche la couleur d'une porte verrouillée depuis l'autre côté.
+Dachora	Dachora
+Disable respawning blocks in the [[Dachora Room]]	Empêche les blocs de réapparaître dans la salle du Dachora.
+Early Supers	Super missiles précoces
+Add shot blocks to [[Early Supers Room]] to escape without morph.	Ajoute des blocs destructibles au tir dans la salle des premiers super missiles pour en sortir sans Morphosphère.
+Hi Jump	Bottes de saut
+Replace bomb blocks with shot blocks in [[Hi Jump Energy Tank Room]]	Remplace les blocs à bombes par des blocs destructibles au tir dans la salle de la réserve d'énergie des bottes de saut.
+Moat	Douves
+Replace bomb blocks with shot blocks at [[The Moat]]	Remplace les blocs à bombes par des blocs destructibles au tir dans les douves.
+SpoSpo Save	Sauvegarde de Spore Spawn
+Access [[Big Pink]] save station without morph	Permet d'atteindre la station de sauvegarde de la grande salle rose sans Morphosphère.
+Get though [[Cathedral Entrance]] without Hi Jump	Permet de traverser l'entrée de la cathédrale sans bottes de saut.
+Red Tower	Tour rouge
+Always be able to get back up from bottom [[Red Tower]]	Permet toujours de remonter depuis le bas de la tour rouge.
+Replace bomb block with shot block in [[Below Spazer]]	Remplace le bloc à bombes sous le Spazer par un bloc destructible au tir.
+Climb	Puits d'ascension
+Replace [[Climb]] Supers exit bomb block with a shot block	Remplace le bloc à bombes de la sortie des super missiles du puits d'ascension par un bloc destructible au tir.
+Brinstar Map	Carte de Brinstar
+Remove grey door in [[Brinstar Pre-Map Room]]	Retire la porte grise de la salle précédant la carte de Brinstar.
+Kraid Save	Sauvegarde de Kraid
+Replace the bomb block in the [[Warehouse Kihunter Room]] with a shot block	Remplace le bloc à bombes de l'entrepôt aux Ki Hunters par un bloc destructible au tir.
+Mission Impossible	Mission impossible
+Replace bomb block with shot block in [[Pink Brinstar Power Bomb Room]]	Remplace le bloc à bombes de la salle des bombes de puissance de Brinstar rose par un bloc destructible au tir.
+Crab Tunnel Gate	Barrière du tunnel aux crabes
+Remove green gate in [[Crab Tunnel]]	Retire la barrière verte du tunnel aux crabes.
+Crab Hole	Puits aux crabes
+Rearrange blocks in [[Crab Hole]] for grav-less access	Réorganise les blocs du puits aux crabes pour permettre le passage sans combinaison de gravité.
+Green Hill Gate	Barrière de la colline verte
+Remove blue gate in [[Green Hill Zone]] and make meme route wall jump easier	Retire la barrière bleue de la colline verte et facilite le saut mural du parcours inhabituel.
+Aqueduct Blocks	Blocs de l'aqueduc
+Replace [[Aqueduct]] power-bomb blocks with bomb blocks	Remplace les blocs à bombes de puissance de l'aqueduc par des blocs à bombes ordinaires.
+Red Tower Gate	Barrière de la tour rouge
+Remove the green gate in the [[Caterpillar Room]]	Retire la barrière verte de la salle de la chenille.
+Red Tower Access	Accès de la tour rouge
+Access maridia entrance in the [[Caterpillar Room]]	Permet d'atteindre l'entrée de Maridia dans la salle de la chenille.
+East Tunnel Gate	Barrière du tunnel est
+Remove green gate in [[East Tunnel]]	Retire la barrière verte du tunnel est.
+East Tunnel	Tunnel est
+Reveals ceilling access in the east tunnel.	Révèle l'accès au plafond du tunnel est.
+LN Crumbles	Blocs friables de Norfair inférieur
+Remove crumble blocks in [[Single Chamber]]	Retire les blocs friables de la salle Single Chamber.
+LN Access	Accès à Norfair inférieur
+Makes the hidden LN entrance in [[Single Chamber]] more accessible. Also removes crumble blocks.	Facilite l'accès à l'entrée cachée de Norfair inférieur dans Single Chamber. Retire aussi les blocs friables.
+East Ocean	Océan est
+Open door to [[Sponge Bath]] and add two platforms to [[East Ocean]] (access [[Forgoten Highway]] with only hi-jump boots)	Ouvre la porte de la salle des éponges et ajoute deux plateformes dans l'océan est pour atteindre la route oubliée avec seulement les bottes de saut.
+Bomb Torizo	Torizo des bombes
+WS Energy	Énergie de l'épave
+Places the item in [[Wrecked Ship Energy Tank Room]] and colors upper door in [[Electric Death Room]] before the ship is activated.	Rend l'objet de la réserve d'énergie de l'épave disponible et colore la porte supérieure de la salle Electric Death avant l'activation du vaisseau.
+Acid Statue	Statue de l'acide
+Activate the statue in the [[Acid Statue Room]] before space jump has been found and adds a platform for easy access.	Permet d'activer la statue de la salle d'acide avant d'obtenir le saut spatial et ajoute une plateforme pour faciliter l'accès.
+ROM not found or unreadable. Select your Super Metroid ROM below.	ROM introuvable ou illisible. Choisissez votre ROM de Super Metroid ci-dessous.
+Wrong ROM size: %lld bytes. Expected 3,145,728 bytes (unheadered Japan/USA ROM).	Taille incorrecte : %lld octets. Taille attendue : 3 145 728 octets (ROM Japon/États-Unis sans en-tête).
+Could not read the complete ROM. Select the file again.	Impossible de lire la ROM au complet. Choisissez de nouveau le fichier.
+Incompatible ROM. CRC32: %08X; expected D63ED5F8. Use the unmodified Japan/USA ROM.	ROM incompatible. CRC32 : %08X; valeur attendue : D63ED5F8. Utilisez la ROM Japon/États-Unis non modifiée.
+ROM integrity check failed (SHA-1 mismatch). Use the unmodified Japan/USA ROM.	Échec de vérification de la ROM (SHA-1 différent). Utilisez la ROM Japon/États-Unis non modifiée.
+Cannot create the local ROM folder. Move the game to a writable folder and retry.	Impossible de créer le dossier local de la ROM. Déplacez le jeu dans un dossier accessible en écriture et réessayez.
+Could not write and verify the local copy. Check free disk space and folder permissions.	Impossible d'enregistrer et de vérifier la copie locale. Vérifiez l'espace libre et les permissions du dossier.
+Cannot preserve the invalid local ROM. Check folder permissions and retry.	Impossible de conserver l'ancienne ROM locale invalide. Vérifiez les permissions du dossier et réessayez.
+Could not install the verified ROM. Your selected source file was not changed.	Impossible d'installer la ROM vérifiée. Votre fichier d'origine n'a pas été modifié.
+Invalid seed, skill, progression or tablet quota.	Le numéro de seed, le niveau, la progression ou le quota de tablettes est invalide.
+Settings must contain JSON objects.	Les paramètres doivent contenir des objets JSON.
+Mirror and Race are outside the supported scope of this port.	Les modes miroir et course ne sont pas pris en charge dans ce port.
+Invalid gameplay option: 	Option de jeu invalide : 
+Invalid technique: 	Technique invalide : 
+Invalid combat or traversal tolerance: 	Tolérance de combat ou de déplacement invalide : 
+Settings exceed the sharing limit.	Les paramètres dépassent la limite de partage.
+Could not encode settings.	Impossible d'encoder les paramètres.
+Invalid or damaged settings string. The current settings were kept.	Le code de paramètres est invalide ou endommagé. Les paramètres actuels ont été conservés.
+Invalid save-bank recovery journal	Le journal de récupération des sauvegardes est invalide.
+Cannot finish save-bank recovery	Impossible de terminer la récupération des sauvegardes.
+This seed requires patches that are not implemented in the native port.	Cette seed exige des modifications qui ne sont pas encore intégrées au port natif.
+Unsupported seed behavior: 	Comportement de seed non pris en charge : 
+Save bank awaits recovery: 	Le groupe de sauvegardes attend une récupération : 
+Invalid A/B/C save bank	Le groupe de sauvegardes A/B/C est invalide.
+Invalid slot manifest	Le manifeste de l'emplacement est invalide.
+Invalid save profile: 	Profil de sauvegarde invalide : 
+Invalid profile ID.	L'identifiant du profil est invalide.
+Invalid generation state	L'état de génération est invalide.
+Invalid pending randomizer settings	Les paramètres de randomisation en attente sont invalides.
+Invalid completion or technique settings	Les paramètres de victoire ou de techniques sont invalides.
+Seed manifest is missing, changed or incompatible.	Le manifeste de la seed est absent, modifié ou incompatible.
+Missing tracker data in generated profile	Il manque des données de suivi dans le profil généré.
+Invalid saved seed rules	Les règles de seed sauvegardées sont invalides.
+Invalid saved seed request	La demande de seed sauvegardée est invalide.
+Invalid saved patch selection	La sélection de modifications sauvegardée est invalide.
+Invalid complete seed draft	Les paramètres complets de la seed sont invalides.
+Cannot create save directory.	Impossible de créer le dossier de sauvegarde.
+Cannot publish save profile. Existing saves were preserved.	Impossible d'enregistrer le profil. Les sauvegardes existantes ont été préservées.
+Profile is not awaiting a complete seed and tracker contract	Ce profil n'attend pas de seed complète ni de données de suivi.
+This profile already owns another generated game	Ce profil contient déjà une autre partie générée.
+Seed does not match the new game's settings	La seed ne correspond pas aux paramètres de la nouvelle partie.
+Invalid profile metadata	Les métadonnées du profil sont invalides.
+Seed rules differ from the new game request	Les règles de la seed diffèrent de celles demandées pour la nouvelle partie.
+Invalid effective rules	Les règles appliquées sont invalides.
+Completion or technique settings changed during generation	Les paramètres de victoire ou de techniques ont changé pendant la génération.
+Seed options changed during generation	Les options de la seed ont changé pendant la génération.
+Cannot save generated game and tracker data	Impossible de sauvegarder la partie générée et ses données de suivi.
+Cannot publish generated game metadata	Impossible d'enregistrer les métadonnées de la partie générée.
+Invalid SRAM transaction	L'opération sur la SRAM est invalide.
+Cannot prepare save-bank transaction	Impossible de préparer la modification des sauvegardes.
+Cannot publish A/B/C slot metadata	Impossible d'enregistrer les métadonnées des emplacements A/B/C.
+Cannot create slot manifest	Impossible de créer le manifeste de l'emplacement.
+Cannot create save bank	Impossible de créer le groupe de sauvegardes.
+Cannot import SRAM	Impossible d'importer la SRAM.
+Cannot import existing achievements	Impossible d'importer les succès existants.
+Invalid save slot	L'emplacement de sauvegarde est invalide.
+This slot is not awaiting generation.	Cet emplacement n'attend pas de génération.
+Cannot save slot settings	Impossible de sauvegarder les paramètres de cet emplacement.
+The target save slot changed during generation	L'emplacement de sauvegarde visé a changé pendant la génération.
+Isolated marker missing	Le marqueur d'environnement isolé est absent.
+Invalid seed settings	Les paramètres de la seed sont invalides.
+Native randomizer module unavailable	Le module natif de randomisation n'est pas disponible.
+Randomizer runtime failed; see native log	La randomisation a échoué. Consultez le journal natif.
+Invalid seed JSON	Le fichier JSON de la seed est invalide.
+Generation failed	La génération a échoué.
+Missing manifest	Le manifeste est absent.
+Unsupported or incomplete seed manifest	Le manifeste de la seed est incomplet ou non pris en charge.
+Invalid seed fingerprint	L'empreinte de la seed est invalide.
+Invalid placement	Le placement d'objet est invalide.
+Placement out of bounds	Un objet est placé hors des limites permises.
+Invalid native pickup kind	Le type natif d'objet à ramasser est invalide.
+Placement outside native item tables	Le placement est absent des tables d'objets natives.
+Missing or inconsistent HUD count contract	Les données de compteurs du HUD sont absentes ou incohérentes.
+Invalid suit behavior	Le comportement des combinaisons est invalide.
+Missing suit behavior	Le comportement des combinaisons n'est pas défini.
+Gameplay option and native behavior disagree	L'option de jeu ne correspond pas au comportement natif.
+Relic count and completion quota disagree	Le nombre de reliques ne correspond pas au quota de victoire.
+Invalid tablet escape duration	La durée de fuite des tablettes est invalide.
+Door indicators require the native world contract	Les indicateurs de portes exigent les données du monde natif.
+Area/initial doors require the native world contract	Les connexions de régions et les portes initiales exigent les données du monde natif.
+Invalid native start/world contract	Les données de départ ou du monde natif sont invalides.
+Invalid world catalog fingerprint	L'empreinte du catalogue du monde est invalide.
+World capabilities and door data disagree	Les fonctions du monde ne correspondent pas aux données de portes.
+Invalid initial-door contract	Les données de portes initiales sont invalides.
+Initial doors do not match this start	Les portes initiales ne correspondent pas à ce point de départ.
+Initial door bits disagree with VARIA	L'état des portes initiales ne correspond pas à VARIA.
+Invalid ordered world patches	L'ordre des modifications du monde est invalide.
+Door indicator capability and data disagree	Les fonctions d'indicateurs de portes ne correspondent pas aux données.
+Missing native door indicators	Les indicateurs de portes natifs sont absents.
+Invalid native door indicator	Un indicateur de porte natif est invalide.
+Routing capability and topology disagree	Les fonctions de connexions ne correspondent pas au réseau de salles.
+Unexpected native routing table	La table de connexions natives est inattendue.
+Invalid native Minimizer routing or membership	Les connexions ou les salles incluses dans le Minimizer natif sont invalides.
+Invalid native area connection contract	Les données de connexions natives entre régions sont invalides.
+Invalid area catalog fingerprint	L'empreinte du catalogue de régions est invalide.
+Invalid area destination table	La table des destinations de régions est invalide.
+Invalid reciprocal area routing	Les connexions aller-retour entre régions sont invalides.
+Malformed area graph pair	Une paire de connexions du réseau de régions est mal formée.
+Area graph disagrees with native doors	Le réseau de régions ne correspond pas aux portes natives.
+Invalid native boss connection contract	Les données de connexions natives des boss sont invalides.
+Invalid boss catalog fingerprint	L'empreinte du catalogue de boss est invalide.
+Invalid boss destination table	La table des destinations de boss est invalide.
+Invalid reciprocal boss routing	Les connexions aller-retour des boss sont invalides.
+Malformed boss graph pair	Une paire de connexions du réseau de boss est mal formée.
+Boss graph disagrees with native doors	Le réseau de boss ne correspond pas aux portes natives.
+Beam indicators require native colored doors	Les indicateurs de rayons exigent les portes colorées natives.
+Door-color capability and data disagree	Les fonctions de couleur des portes ne correspondent pas aux données.
+Invalid native door-color contract	Les données natives de couleur des portes sont invalides.
+Invalid door-color catalog fingerprint	L'empreinte du catalogue de couleurs de portes est invalide.
+Native and tracker door requirements disagree	Les conditions des portes natives diffèrent de celles du suivi.
+Animals capability and data disagree	Les fonctions liées aux animaux ne correspondent pas aux données.
+Invalid Animals Surprise contract	Les données du mode Animaux surprise sont invalides.
+Animals enabled without a native plan	Les animaux sont activés sans plan natif.
+Scavenger capability and data disagree	Les fonctions de chasse ordonnée ne correspondent pas aux données.
+Invalid native Scavenger contract	Les données natives de chasse ordonnée sont invalides.
+Invalid Scavenger location	Un emplacement de chasse ordonnée est invalide.
+Scavenger location identities disagree	Les identifiants des emplacements de chasse ordonnée ne correspondent pas.
+Missing escape dependency	Une condition de fuite est absente.
+Missing escape graph edge	Une connexion du réseau de fuite est absente.
+Escape graph disagrees with native doors	Le réseau de fuite ne correspond pas aux portes natives.
+Fast Tourian requires native objectives	Le Tourian abrégé exige les objectifs natifs.
+Objective capability and data disagree	Les fonctions d'objectifs ne correspondent pas aux données.
+Incompatible native objective completion mode	Le mode de victoire des objectifs natifs est incompatible.
+Tourian capability and objective contract disagree	Les fonctions de Tourian ne correspondent pas aux données d'objectifs.
+Effective objective summary disagrees	Le résumé des objectifs appliqués ne correspond pas.
+Effective objective names disagree	Les noms des objectifs appliqués ne correspondent pas.
+Escape objective contract disagrees	Les données d'objectifs de fuite ne correspondent pas.
+Minimizer objective membership disagrees	Les objectifs inclus dans le Minimizer ne correspondent pas.
+Scavenger objective order disagrees	L'ordre des objectifs de chasse ordonnée ne correspond pas.
+Relic seed has no completion quota	La seed de reliques n'a pas de quota de victoire.
+Invalid tracker contract	Les données de suivi sont invalides.
+Tracker Scavenger capability disagrees	Les fonctions de chasse ordonnée du suivi ne correspondent pas.
+Tracker Scavenger order disagrees	L'ordre de chasse ordonnée du suivi ne correspond pas.
+Tracker objective capability disagrees	Les fonctions d'objectifs du suivi ne correspondent pas.
+Tracker and native objective rules disagree	Les règles d'objectifs du suivi diffèrent des règles natives.
+Boss tracker has no world connections	Le suivi des boss n'a pas de connexions au monde.
+Tracker topology disagrees with native world	Le réseau de salles du suivi diffère du monde natif.
+Tracker has no matching initial doors	Le suivi n'a pas de portes initiales correspondantes.
+Tracker initial door bits disagree	L'état des portes initiales du suivi ne correspond pas.
+Missing colored-door tracker contract	Les données de suivi des portes colorées sont absentes.
+Tracker door-color contract disagrees	Les données de suivi des couleurs de portes ne correspondent pas.
+Tracker door requirements disagree	Les conditions des portes du suivi ne correspondent pas.
+Missing escape tracker topology	Le réseau de fuite du suivi est absent.
+Escape tracker disagrees	Le suivi de fuite ne correspond pas.
+Tracker locations disagree with the native seed	Les emplacements du suivi diffèrent de ceux de la seed native.
+Tracker pickup kind disagrees with native seed	Le type d'objet du suivi diffère de celui de la seed native.
+Native world plan requires its tracker contract	Le plan du monde natif exige ses données de suivi.
+Cannot stage seed	Impossible de préparer la seed.
+Continue	Continuer
+Settings must be an object.	Les paramètres doivent former un objet.
+Seed number: leave it blank or enter a number from 1 to 2147483647.	Numéro de seed : laissez le champ vide ou entrez un nombre de 1 à 2147483647.
+Gameplay patches: unknown or duplicate patch selection.	Modifications du jeu : la sélection contient une modification inconnue ou répétée.
+Random choices are checked again after they are drawn during generation.	Les choix aléatoires sont vérifiés de nouveau après leur tirage pendant la génération.
+Tourian must be Vanilla	Tourian doit être classique
+Escape randomization must be off	la randomisation de la fuite doit être désactivée
+Item split cannot be Scavenger	la répartition des objets ne peut pas être Chasse ordonnée
+Chozo Relic Hunt: {0}. Change that setting or disable the tablet hunt.	Chasse aux reliques Chozo : {0}. Modifiez ce paramètre ou désactivez la chasse aux tablettes.
+Selected objectives: at most {0} can be active.	Objectifs choisis : un maximum de {0} objectifs peuvent être actifs.
+Objective "{0}" conflicts with the current selection ({1}) or the selected start / Tourian mode. Remove the conflicting objective or adjust World & escape.	L'objectif « {0} » est incompatible avec la sélection actuelle ({1}), le point de départ ou le mode de Tourian. Retirez cet objectif ou ajustez les paramètres de Monde et fuite.
+{0} / {1}: even with full equipment and ample ammo, VARIA rates this fight {2}, above Maximum difficulty / {3}. Raise Maximum difficulty or change this boss tolerance.	{0} / {1} : même avec tout l'équipement et beaucoup de munitions, VARIA évalue ce combat à {2}, au-delà de Difficulté maximale / {3}. Augmentez la difficulté maximale ou modifiez la tolérance pour ce boss.
+Settings check failed: {0}: {1}	La vérification des paramètres a échoué : {0} : {1}
+Invalid setting: {0}	Paramètre invalide : {0}
+Native settings validator unavailable. Rebuild the native module.	Le vérificateur natif de paramètres n'est pas disponible. Recompilez le module natif.
+Settings check unavailable. Update the native module before creating a game.	La vérification des paramètres n'est pas disponible. Mettez à jour le module natif avant de créer une partie.
+Invalid settings-check response.	La réponse de vérification des paramètres est invalide.
+Invalid settings-check issue.	Un résultat de vérification des paramètres est invalide.
+New Game+ from SAMUS {0}	Nouvelle partie+ depuis SAMUS {0}
+Seed {0}  /  Awaiting Generate Game	Seed {0}  /  En attente de génération
+Samus {0} settings copied. Seed: {1}.	Paramètres de Samus {0} copiés. Seed : {1}.
+Reloaded painted scenery: {0} tiles.	Décor peint rechargé : {0} tuiles.
+unreachable	inaccessible
+Unsupported skill preset	Le profil de techniques n'est pas pris en charge.
+Unsupported progression	Le mode de progression n'est pas pris en charge.
+Relic quota must satisfy 1 <= required <= placed <= 60	Le quota de reliques doit respecter : 1 ≤ requises ≤ placées ≤ 60.
+Tablet escape time must be 3, 5, 6, 7 or 10 minutes	Le temps de fuite des tablettes doit être de 3, 5, 6, 7 ou 10 minutes.
+Chozo Relic Hunt already bypasses Tourian	La chasse aux reliques Chozo permet déjà d'éviter Tourian.
+Chozo Relic Hunt uses its own quota escape; VARIA escape route randomization cannot be combined	La chasse aux reliques Chozo utilise sa propre fuite au quota; elle ne peut pas être combinée à la randomisation du trajet de fuite de VARIA.
+Chozo Relic Hunt and Scavenger are separate completion modes	La chasse aux reliques Chozo et la chasse ordonnée sont deux modes de victoire distincts.
+TEN ENEMIES DEFEATED	DIX ENNEMIS VAINCUS
+NEW UPGRADE	NOUVEL ÉQUIPEMENT
+F1 Help | F2 Effects | F3 Opacity | F4 System menu | F5 Parallax | F6 Lighten/Multiply | F7 Depth | F8 Relief | F9 Weather | F10 Teleport	F1 Aide | F2 Effets | F3 Opacité | F4 Menu système | F5 Parallaxe | F6 Éclaircir/Multiplier | F7 Profondeur | F8 Relief | F9 Météo | F10 Téléportation
+F11 Full screen | Ctrl+F11 Wide/4:3 | F12 Wall Jump assist | Shift+F12 Space Jump assist	F11 Plein écran | Ctrl+F11 Large/4:3 | F12 Aide au saut mural | Maj+F12 Aide au saut spatial
+Arrows: move | Z: jump | X: run | S: shoot | C: cancel item | A/D: aim	Flèches : bouger | Z : sauter | X : courir | S : tirer | C : annuler l'objet | A/D : viser
+Right Shift: select item | Enter: Start | P: pause | Escape: system menu	Maj droite : choisir l'objet | Entrée : Start | P : pause | Échap : menu système
+Choose a destination	Choisissez une destination
+Up/Down: select   Enter/Z: travel   Escape/F10: close	Haut/Bas : choisir   Entrée/Z : partir   Échap/F10 : fermer
+Wait for the current action to finish, then try again.	Attendez la fin de l'action en cours, puis réessayez.
+Crateria - Ship / rain	Crateria - Vaisseau / pluie
+Crateria - Indoor refuge	Crateria - Refuge intérieur
+Brinstar - Green shaft	Brinstar - Puits vert
+Norfair - Heated caverns	Norfair - Cavernes chaudes
+Norfair - Lower entrance	Norfair - Entrée des profondeurs
+Maridia - West	Maridia - Ouest
+Maridia - East	Maridia - Est
+Wrecked Ship - Main hall	Épave - Hall principal
+SUPER METROID STAFF	ÉQUIPE DE SUPER METROID
+PRODUCER	PRODUCTION
+DIRECTOR	RÉALISATION
+BACK GROUND DESIGNERS	CONCEPTION DES DÉCORS
+OBJECT DESIGNERS	CONCEPTION DES ÉLÉMENTS
+SAMUS ORIGINAL DESIGNER	CONCEPTION ORIGINALE DE SAMUS
+SAMUS DESIGNER	CONCEPTION DE SAMUS
+SOUND PROGRAM	PROGRAMMATION AUDIO
+AND SOUND EFFECTS	ET EFFETS SONORES
+MUSIC COMPOSERS	COMPOSITION MUSICALE
+PROGRAM DIRECTOR	DIRECTION DE LA PROGRAMMATION
+SYSTEM COORDINATOR	COORDINATION DU SYSTÈME
+SYSTEM PROGRAMMER	PROGRAMMATION DU SYSTÈME
+SAMUS PROGRAMMER	PROGRAMMATION DE SAMUS
+EVENT PROGRAMMER	PROGRAMMATION DES ÉVÉNEMENTS
+ENEMY PROGRAMMER	PROGRAMMATION DES ENNEMIS
+MAP PROGRAMMER	PROGRAMMATION DES CARTES
+ASSISTANT PROGRAMMER	PROGRAMMATION ADJOINTE
+COORDINATORS	COORDINATION
+PRINTED ART WORK	ILLUSTRATIONS IMPRIMÉES
+SPECIAL THANKS TO	REMERCIEMENTS PARTICULIERS
+GENERAL MANAGER	DIRECTION GÉNÉRALE
+VARIA RANDOMIZER STAFF	ÉQUIPE DU RANDOMIZER VARIA
+ORIGINAL ITEM RANDOMIZERS	RANDOMIZERS D'OBJETS ORIGINAUX
+CONTRIBUTORS	COLLABORATION
+ROTATED SUPER METROID HACKS	MODIFICATIONS DE ZEBES TOURNÉE
+MAP OVERHAUL PATCH	MODIFICATION DES CARTES
+SUPER METROID DISASSEMBLY	DÉSASSEMBLAGE DE SUPER METROID
+DEBUG TOOLS	OUTILS DE DÉBOGAGE
+Destination: {0}	Destination : {0}
+{0}: {1}	{0} : {1}
+Assisted	Assisté
+Gaussian layer: {0} | {1} | Opacity: {2}% | Brightness: {3}% | Depth: {4} | Relief: {5} | Weather: {6}	Calque gaussien : {0} | {1} | Opacité : {2}% | Luminosité : {3}% | Profondeur : {4} | Relief : {5} | Météo : {6}
+Up	Dossier parent
+Go	Ouvrir
+control	commande
+label	action
+Tracker module unavailable	Module de suivi indisponible
+Incomplete effective seed rules	Règles effectives de la seed incomplètes
+Incomplete tracker response	Réponse du suivi incomplète
+Invalid check identity/state	Identité ou état d'emplacement invalide
+Invalid encounter identity/state	Identité ou état de combat invalide
+Invalid tracker response	Réponse du suivi invalide
+Live — native inventory / effective seed rules	En direct — inventaire du jeu / règles effectives de la seed
+Missing effective seed rules	Règles effectives de la seed manquantes
+Missing encounter states	États des combats manquants
+Tracker interpreter failed	Échec de l'interpréteur du suivi
+Updating reachability...	Mise à jour de l'accessibilité...
+Native library is missing. Reinstall the game.	Bibliothèque native introuvable. Réinstallez le jeu.
+Easy	Facile
+Medium	Moyenne
+Hard	Difficile
+Hardcore	Extrême
+Mania	Insensée
+Samus	Samus
+Gamepad Face Button Bottom	Bouton du bas (A / Croix)
+Gamepad Face Button Right	Bouton droit (B / Cercle)
+Gamepad Face Button Left	Bouton gauche (X / Carré)
+Gamepad Face Button Top	Bouton du haut (Y / Triangle)
+Gamepad Special Left	Select / Partage
+Gamepad Special Right	Start / Options
+Gamepad Left Shoulder	Gâchette supérieure gauche (LB / L1)
+Gamepad Right Shoulder	Gâchette supérieure droite (RB / R1)
+Gamepad Left Trigger	Gâchette gauche (LT / L2)
+Gamepad Right Trigger	Gâchette droite (RT / R2)
+Gamepad Left Trigger Threshold	Gâchette gauche (LT / L2)
+Gamepad Right Trigger Threshold	Gâchette droite (RT / R2)
+Gamepad Left Thumbstick	Clic du levier gauche (L3)
+Gamepad Right Thumbstick	Clic du levier droit (R3)
+Gamepad D-pad Up	Croix directionnelle : haut
+Gamepad D-pad Down	Croix directionnelle : bas
+Gamepad D-pad Left	Croix directionnelle : gauche
+Gamepad D-pad Right	Croix directionnelle : droite
+Right Shift	Maj droite
+Left Shift	Maj gauche
+Left Ctrl	Ctrl gauche
+Right Ctrl	Ctrl droite
+Left Alt	Alt gauche
+Right Alt	Alt droite
+Space Bar	Barre d’espacement
+Enter	Entrée
+Escape	Échap
+Down	Bas
+Left	Gauche
+Right	Droite
+Backspace	Retour arrière
+Delete	Suppr
+Insert	Inser
+Page Up	Page précédente
+Page Down	Page suivante
+End	Fin
+Tab	Tabulation
+Caps Lock	Verr. maj.
+Num Lock	Verr. num.
+Scroll Lock	Arrêt défil.
+Invalid	Aucune

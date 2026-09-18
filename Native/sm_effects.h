@@ -11,6 +11,8 @@ void sm_visual_sprite(uint16_t x,uint16_t y,uint16_t kind);
 void sm_visual_charge(uint16_t x,uint16_t y);
 
 int sm_visual_eye(void);
+int sm_visual_suit(void); /* 0 none, 1 Varia, 2 Gravity; native HDMA lifecycle */
+SM_API int sm_test_suit_pickup(int suit,int start); /* isolated SMTests only */
 
 void sm_visual_reset(void);
 void sm_visual_end_frame(void);

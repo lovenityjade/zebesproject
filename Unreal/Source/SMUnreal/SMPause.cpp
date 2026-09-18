@@ -9,6 +9,7 @@
 #include "UnrealClient.h"
 
 void ASMHUD::ResetToTitle() {
+    CloseDialogue();
     Paused=false;TeleportMenu=false;
     AudioComponent->SetPaused(true);AudioWave->ResetAudio();Shutdown();
     Ready=Init(TCHAR_TO_UTF8(*CoreRomPath),TCHAR_TO_UTF8(*CoreSavePath))!=0;

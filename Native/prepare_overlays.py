@@ -5,7 +5,7 @@ import sys
 source=Path(sys.argv[1]);out=Path(sys.argv[2])
 
 def write(bank,replacements):
-    text='#include "sm_runs.h"\n#include "sm_soundtrack.h"\n#include "sm_animals.h"\n#include "sm_mirror.h"\n#include "sm_escape.h"\n#include "sm_minimizer.h"\n#include "sm_tourian.h"\n#include "sm_scavenger.h"\n#include "sm_objective_pause.h"\n#include "sm_objectives.h"\n#include "sm_objective_events.h"\n#include "sm_areas.h"\n#include "sm_doors.h"\n#include "sm_connections.h"\n#include "sm_world_data.h"\n'+(source/f'sm_{bank}.c').read_text()
+    text='#include "sm_locale.h"\n#include "sm_runs.h"\n#include "sm_soundtrack.h"\n#include "sm_animals.h"\n#include "sm_mirror.h"\n#include "sm_escape.h"\n#include "sm_minimizer.h"\n#include "sm_tourian.h"\n#include "sm_scavenger.h"\n#include "sm_objective_pause.h"\n#include "sm_objectives.h"\n#include "sm_objective_events.h"\n#include "sm_areas.h"\n#include "sm_doors.h"\n#include "sm_connections.h"\n#include "sm_world_data.h"\n'+(source/f'sm_{bank}.c').read_text()
     for old,new,count in replacements:
         actual=text.count(old)
         if actual!=count:raise RuntimeError(f'{bank}: expected {count} matches, got {actual}: {old[:100]}')
@@ -48,10 +48,13 @@ sprite_source=sprite_source.replace('void SaveToSram(uint16 a) {','void SaveToSr
 for old,new in [('  PackMapToSave();','  PackMapToSave();\n  sm_map_exploration_pack();'),('    UnpackMapFromSave();','    UnpackMapFromSave();\n    sm_map_exploration_unpack();')]:
     assert sprite_source.count(old)==1,old
     sprite_source=sprite_source.replace(old,new)
-sprite_source='#include \"sm_map_exploration.h\"\n'+sprite_source
+sprite_source=sprite_source.replace('eproj_id[16] + 8298',"(sm_locale_get()?0x2000|sm_locale_menu_small('A'+eproj_id[16]):eproj_id[16]+8298)").replace('eproj_id[17] + 8298',"(sm_locale_get()?0x2000|sm_locale_menu_small('A'+eproj_id[17]):eproj_id[17]+8298)")
+sprite_source='#include \"sm_locale.h\"\n#include \"sm_map_exploration.h\"\n'+sprite_source
 assert sprite_source.count('uint8 LoadFromSram(uint16 a) {')==1
 sprite_source=sprite_source.replace('uint8 LoadFromSram(uint16 a) {','uint8 LoadFromSram(uint16 a) {\n  sm_tracker_new_session();')
 for old,new in [
+    ('void DrawMenuSpritemap(uint16 a, uint16 k, uint16 j, uint16 chr_r3) {','void DrawMenuSpritemap(uint16 a, uint16 k, uint16 j, uint16 chr_r3) {\n  if(sm_locale_area_label(a,k,j,chr_r3))return;'),
+    ('void LoadMenuTilemap(uint16 k, uint16 j) {','void LoadMenuTilemap(uint16 k, uint16 j) {\n  if(sm_locale_menu_tilemap(k,j))return;'),
     ('void DrawFileSelectSlotSamusHelmet(uint16 k) {','void DrawFileSelectSlotSamusHelmet(uint16 k) {\n  if(sm_slots_mode_badges_active())return;'),
     ('void FileSelectMap_6_AreaSelectMap(void) {','void FileSelectMap_6_AreaSelectMap(void) {\n  if(sm_travel_area_input())return;'),
     ('void FileSelectMap_10_RoomSelectMap(void) {','void FileSelectMap_10_RoomSelectMap(void) {\n  if(sm_travel_room_input())return;'),
@@ -98,8 +101,6 @@ write('82',[
     ('    if ((layer1_y_pos & 0x80) != 0)\n      ++layer1_y_pos;',
      '    if (sm_seed_rule(SM_SEED_FAST_DOORS)) sm_seed_align_camera(&layer1_y_pos);\n    else if ((layer1_y_pos & 0x80) != 0)\n      ++layer1_y_pos;',1),
 
-    ('    cinematic_function = FUNC16(CinematicFunctionEscapeFromCebes);',
-     '    cinematic_function = sm_relic_ending()?FUNC16(CinematicFunction_Intro_Func126):FUNC16(CinematicFunctionEscapeFromCebes);',1),
     ('void DrawFileSelectMapIcons(void) {', 'void DrawFileSelectMapIcons(void) {\n  sm_travel_draw_stations();',1),
     ('  DrawBossMapIcons(9, addr_kMapIconDataPointers);','  if(!sm_objectives_state(0)) DrawBossMapIcons(9, addr_kMapIconDataPointers);',1),
     ('  ReleaseButtonsFilter(3);\n  MainPauseRoutine();','  ReleaseButtonsFilter(3);\n  if(sm_map_browser_tick())return kCoroutineNone;\n  MainPauseRoutine();',1),
@@ -177,15 +178,16 @@ write('84',[
 ])
 
 write('85',[
+    ('  WriteRegWord(VMADDL, addr_unk_6059A0);','  sm_locale_message_choices(ram3000.pause_menu_map_tilemap+384);\n  WriteRegWord(VMADDL, addr_unk_6059A0);',1),
     ('  CancelSoundEffects();','  if(!sm_seed_rule(SM_SEED_ITEM_SOUNDS))CancelSoundEffects();',1),
     ('      my_counter = 360;','      my_counter = sm_seed_rule(SM_SEED_ITEM_SOUNDS)?32:360;',1),
 
     ('  uint16 r0 = kMessageBoxDefs[message_box_index - 1].message_tilemap;',
-     '  if(sm_relic_message()){sm_relic_message_tiles(ram3000.pause_menu_map_tilemap+288);message_box_das0l_value=384;return 160;}\n  uint16 r0 = kMessageBoxDefs[message_box_index - 1].message_tilemap;',1),
+     '  if(sm_relic_message()){sm_relic_message_tiles(ram3000.pause_menu_map_tilemap+288);message_box_das0l_value=384;return 160;}\n  if(sm_locale_get()){sm_locale_message_tiles(ram3000.pause_menu_map_tilemap+288,message_box_index);message_box_das0l_value=384;return 160;}\n  uint16 r0 = kMessageBoxDefs[message_box_index - 1].message_tilemap;',1),
     ('static void InitializeMessageBox(void) {',
-     'static void InitializeMessageBox(void) {\n  if(sm_relic_message()){WriteLargeMessageBoxTilemap();SetupPpuForLargeMessageBox();return;}',1),
+     'static void InitializeMessageBox(void) {\n  sm_locale_message_font();\n  if(sm_relic_message()){WriteLargeMessageBoxTilemap();SetupPpuForLargeMessageBox();return;}\n  if(sm_locale_get()){WriteLargeMessageBoxTilemap();SetupPpuForLargeMessageBox();return;}',1),
     ('  RestorePpuForMessageBox();',
-     '  RestorePpuForMessageBox();\n  sm_relic_message_closed();',1),
+     '  RestorePpuForMessageBox();\n  sm_locale_message_restore();\n  sm_relic_message_closed();',1),
 ])
 
 write('b4',[
@@ -255,6 +257,10 @@ text=text.replace('void Samus_FootstepGraphics(void) {',
 movement.write_text('#include "sm_spacejump.h"\n'+text)
 
 write('8b',[
+    ('void CinematicUpdateSomeBg(void) {','void CinematicUpdateSomeBg(void) {\n  sm_locale_ending_roles();',1),
+    ('void ProcessCinematicBgObject_DrawToTextTilemap(uint16 k, uint16 j, uint16 r18) {','void ProcessCinematicBgObject_DrawToTextTilemap(uint16 k, uint16 j, uint16 r18) {\n  if(sm_locale_ending_char(j,r18))return;',1),
+    ('  cinematic_function = FUNC16(CinematicFunction_Intro_FadeIn);','  sm_locale_intro_setup();\n  cinematic_function = FUNC16(CinematicFunction_Intro_FadeIn);',1),
+    ('void ProcessCinematicBgObject_DrawChar(uint16 k, uint16 j, uint16 r18) {', 'void ProcessCinematicBgObject_DrawChar(uint16 k, uint16 j, uint16 r18) {\n  if(sm_locale_intro_char(k,j,r18))return;',1),
     ('void CinematicFunction_Intro_Initial(void) {','void CinematicFunction_Intro_Initial(void) {\n  sm_cinema_begin(1);',1),
     ('void CinematicFunction_Intro_Func54(void) {','void CinematicFunction_Intro_Func54(void) {\n  sm_cinema_begin(2);',1),
     ('    QueueMode7Transfers(0x8b, addr_kCinematicFunction_Intro_Func56_M7);','    sm_cinema_begin(8);\n    QueueMode7Transfers(0x8b, addr_kCinematicFunction_Intro_Func56_M7);',1),
@@ -264,7 +270,7 @@ write('8b',[
     ('void CinematicFunctionEscapeFromCebes(void) {','void CinematicFunctionEscapeFromCebes(void) {\n  sm_cinema_begin(5);',1),
     ('void CinematicFunction_Intro_Func112(void) {','void CinematicFunction_Intro_Func112(void) {\n  sm_cinema_begin(6);',1),
     ('void CinematicFunction_Intro_Func120(void) {','void CinematicFunction_Intro_Func120(void) {\n  sm_cinema_begin(7);',1),
-    ('void CinematicFunction_Intro_Func126(void) {','void CinematicFunction_Intro_Func126(void) {\n  sm_cinema_begin(0);\n  if(sm_relic_ending()){QueueMusic_Delayed8(0xFF3C);QueueMusic_DelayedY(5,0xE);}',1),
+    ('void CinematicFunction_Intro_Func126(void) {','void CinematicFunction_Intro_Func126(void) {\n  sm_cinema_begin(0);',1),
     ('uint8 SpawnCimenaticSpriteObjectInner(uint16 k, uint16 j) {','uint8 SpawnCimenaticSpriteObjectInner(uint16 k, uint16 j) {\n  sm_cinema_sprite(j>>1,k);',1),
 
     ('void CreditsObject_Process(void) {', 'void CreditsObject_Process(void) {\n  if(sm_credits_native_tick())return;',1),
@@ -281,7 +287,7 @@ for name in ['DrawCinematicSpriteObjects_Intro','DrawCinematicSpriteObjects_Endi
     a=text.index('void '+name+'(void) {');b=text.index('\n}\n',a)
     body=text[a:b];needle='      uint16 chr = cinematicbg_arr9[v1];'
     assert body.count(needle)==1
-    body=body.replace(needle,needle+'\n      sm_sprite_view_set_gui(sm_cinema_sprite_gui(v1));')
+    body=body.replace(needle,needle+'\n      if(sm_cinema_localized_sprite(v1))continue;\n      sm_sprite_view_set_gui(sm_cinema_sprite_gui(v1));')
     text=text[:a]+body+'\n  sm_sprite_view_set_gui(0);'+text[b:]
 p.write_text(text)
 

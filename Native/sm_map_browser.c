@@ -1,4 +1,6 @@
+#include "sm_locale.h"
 #include "sm_map_browser.h"
+#include "sm_seed_atlas.h"
 #include "sm_seed.h"
 #include "sm_tracker.h"
 #include "ida_types.h"
@@ -18,7 +20,7 @@ static Dma pause_dma;
 static const uint8_t order[]={0,3,5,1,4,2};
 static const int label_xy[][2]={{91,50},{42,127},{94,181},{206,80},{206,159},{135,139}};
 extern uint8_t sm_wide_hud[];
-void sm_map_browser_reset(void){mode=dirty=suppress_start=0;selected=0;}
+void sm_map_browser_reset(void){sm_seed_atlas_reset();mode=dirty=suppress_start=0;selected=0;}
 int sm_map_browser_overview(void){return mode==1 && game_state==15;}
 int sm_map_browser_view_area(void){return game_state==15 && mode==2?selected:area_index;}
 void sm_map_browser_refresh(void){if(mode==2)dirty=2;}
@@ -110,7 +112,12 @@ int sm_map_browser_tick(void){
       suppress_start=!!(keys&kButton_Start);
       /* Start means select here, never unpause through the same press. */
       newly_held_down_timed_held_input&=~kButton_Start;joypad1_newkeys&=~kButton_Start;
-      QueueSfx1_Max6(0x38);draw_detail();return 1;
+      QueueSfx1_Max6(0x38);
+      if(sm_seed_atlas_available()){
+        mode=0;
+        sm_seed_atlas_focus_area(selected);return 1;
+      }
+      draw_detail();return 1;
     }
     int direction=keys&(kButton_Up|kButton_Left)?-1:keys&(kButton_Down|kButton_Right|kButton_Select)?1:0;
     if(direction){
@@ -128,7 +135,8 @@ int sm_map_browser_tick(void){
     draw_detail();HandleHudTilemap();HandlePauseScreenPaletteAnimation();return 1;
   }
   if(keys&kButton_Select){selected=area_index;origin_x=reg_BG1HOFS;origin_y=reg_BG1VOFS;open_overview();QueueSfx1_Max6(0x38);return 1;}
-  return 0;
+  if(suppress_start){if(!(joypad1_lastkeys&kButton_Start))suppress_start=0;else newly_held_down_timed_held_input&=~kButton_Start;}
+  return sm_seed_atlas_tick();
 }
 /* Original 8x8 pause alphabet and HUD digits, at their original pixel grid.
  * No generated font, bitmap map reconstruction, or external assets. */
@@ -138,14 +146,21 @@ static void pixel(uint8_t *out,int w,int h,int x,int y,uint32_t rgb){
   uint8_t *p=out+(y*w+x)*4;p[0]=(rgb&255)*b/15;p[1]=((rgb>>8)&255)*b/15;p[2]=(rgb>>16)*b/15;p[3]=255;
 }
 void sm_native_text_height(uint8_t *out,int w,int h,int x,int y,const char *s,uint32_t color){
-  for(;*s;s++,x+=8){
+  s=sm_locale_text(s);
+  for(;*s;x+=8){
+    int cp=sm_locale_next(&s),ch=sm_locale_base(cp),accent=sm_locale_accent(cp);
     const uint8_t *gfx;int planes;
-    if(*s>='A'&&*s<='Z'){gfx=RomFixedPtr(0xb68000)+(0x30+*s-'A')*32;planes=4;}
-    else if(*s>='0'&&*s<='9'){gfx=RomFixedPtr(0x9ab200)+((*s-'0'+9)%10)*16;planes=2;}
-    else if(*s==':'){
+    if(ch>='A'&&ch<='Z'){gfx=RomFixedPtr(0xb68000)+(0x30+ch-'A')*32;planes=4;}
+    else if(ch>='0'&&ch<='9'){gfx=RomFixedPtr(0x9ab200)+((ch-'0'+9)%10)*16;planes=2;}
+    else if(ch==':'){
       for(int dy=2;dy<=5;dy+=3){pixel(out,w,h,x+3,y+dy, color);pixel(out,w,h,x+4,y+dy,color);}continue;
     }
-    else continue;
+    else {
+      if(ch=='\'' || ch==0x2019){pixel(out,w,h,x+3,y,color);pixel(out,w,h,x+3,y+1,color);}
+      else if(ch=='-' || ch==0x2014){for(int i=2;i<6;i++)pixel(out,w,h,x+i,y+4,color);}
+      else if(ch=='.' || ch==',' || ch=='!'){pixel(out,w,h,x+3,y+7,color);if(ch=='!')for(int i=1;i<5;i++)pixel(out,w,h,x+3,y+i,color);}
+      continue;
+    }
     uint8_t mask[64];
     for(int dy=0;dy<8;dy++)for(int dx=0;dx<8;dx++){
       int c=0;for(int p=0;p<planes;p++)c|=((gfx[dy*2+p/2*16+p%2]>>(7-dx))&1)<<p;
@@ -156,12 +171,19 @@ void sm_native_text_height(uint8_t *out,int w,int h,int x,int y,const char *s,ui
     for(int dy=0;dy<8;dy++)for(int dx=0;dx<8;dx++)if(mask[dy*8+dx])
       for(int oy=-1;oy<=1;oy++)for(int ox=-1;ox<=1;ox++)pixel(out,w,h,x+dx+ox,y+dy+oy,0);
     for(int dy=0;dy<8;dy++)for(int dx=0;dx<8;dx++)if(mask[dy*8+dx])pixel(out,w,h,x+dx,y+dy,color);
+    if(accent){
+      if(accent==1){pixel(out,w,h,x+4,y-2,color);pixel(out,w,h,x+3,y-1,color);}
+      if(accent==2){pixel(out,w,h,x+2,y-2,color);pixel(out,w,h,x+3,y-1,color);}
+      if(accent==3){pixel(out,w,h,x+3,y-2,color);pixel(out,w,h,x+2,y-1,color);pixel(out,w,h,x+4,y-1,color);}
+      if(accent==4){pixel(out,w,h,x+2,y-1,color);pixel(out,w,h,x+5,y-1,color);}
+      if(accent==5){pixel(out,w,h,x+4,y+8,color);pixel(out,w,h,x+3,y+9,color);}
+    }
   }
 }
 void sm_native_map_text(uint8_t *out,int w,int x,int y,const char *s,uint32_t color){sm_native_text_height(out,w,224,x,y,s,color);}
 static void counts(char *buf,int area){
   int available=sm_tracker_area_count(area,1),total=sm_tracker_area_count(area,3);
-  if(available<0)snprintf(buf,24,"WAIT");else snprintf(buf,24,"%02d OF %02d",available,total);
+  if(available<0)snprintf(buf,24,"WAIT");else snprintf(buf,24,sm_locale_get()?"%02d SUR %02d":"%02d OF %02d",available,total);
 }
 static void draw(uint8_t *out,int w){
   int shift=(w-256)/2;char buf[24];
@@ -174,10 +196,19 @@ static void draw(uint8_t *out,int w){
     }
     sm_native_map_text(out,w,shift+56,216,"A MAP  B BACK",0xffffff);
   }else if(!menu_index && !pause_screen_mode && area_index<6){
-    if(sm_tracker_area_count(0,0)){
+    if(sm_tracker_area_count(0,0) && !sm_seed_atlas_active()){
       counts(buf,mode==2?selected:area_index);sm_native_map_text(out,w,w-88,216,buf,0x20ff20);
     }
-    sm_native_map_text(out,w,8,216,"SELECT AREAS",0xffffff);
+    if(sm_seed_atlas_active()){
+      sm_native_map_text(out,w,8,216,w==400?"SELECT AREAS   Y ZOOM   A SAMUS":"SELECT AREAS  Y ZOOM  A SAMUS",0xffffff);
+      if(w==400 && sm_tracker_area_count(0,0)){
+        int available=0,total=0,pending=0;
+        for(int a=0;a<6;a++){int n=sm_tracker_area_count(a,1);if(n<0)pending=1;else available+=n;total+=sm_tracker_area_count(a,3);}
+        if(pending)snprintf(buf,sizeof(buf),"WAIT");else snprintf(buf,sizeof(buf),sm_locale_get()?"%02d SUR %03d":"%02d OF %03d",available,total);
+        sm_native_map_text(out,w,w-88,216,buf,0x20ff20);
+      }
+    }
+    else sm_native_map_text(out,w,8,216,"SELECT AREAS",0xffffff);
   }
 }
 void sm_map_browser_render(uint8_t *pixels){

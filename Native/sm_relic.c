@@ -1,3 +1,4 @@
+#include "sm_locale.h"
 #include "sm_relic.h"
 #include "sm_seed.h"
 #include "sm_generation.h"
@@ -51,13 +52,15 @@ void sm_relic_message_closed(void){
   pickup_message=warning_message=0;
 }
 static void message_line(uint16_t *row,const char *s){
-  int x=(32-(int)strlen(s))/2;
-  for(;*s && x<29;s++,x++){
-    if(*s>='A' && *s<='Z')row[x]=0x28e0+*s-'A';
-    else if(*s>='0' && *s<='9')row[x]=0x2800+(*s-'0'+9)%10;
-    else if(*s=='\'')row[x]=0x28fd;
-    else if(*s==',')row[x]=0x28fb;
-    else if(*s=='!')row[x]=0x28ff;
+  s=sm_locale_text(s);int x=(32-sm_locale_length(s))/2;
+  for(;*s && x<29;x++){
+    int cp=sm_locale_next(&s),ch=sm_locale_base(cp);
+    if(sm_locale_get()){row[x]=sm_locale_message_glyph(cp);continue;}
+    if(ch>='A' && ch<='Z')row[x]=0x28e0+ch-'A';
+    else if(ch>='0' && ch<='9')row[x]=0x2800+(ch-'0'+9)%10;
+    else if(ch=='\'')row[x]=0x28fd;
+    else if(ch==',')row[x]=0x28fb;
+    else if(ch=='!')row[x]=0x28ff;
   }
 }
 void sm_relic_message_tiles(uint16_t *body){
@@ -71,7 +74,7 @@ void sm_relic_message_tiles(uint16_t *body){
     return;
   }
   message_line(body,"CHOZO TABLET");
-  char line[32];snprintf(line,sizeof(line),"%d COLLECTED OUT OF %d",pickup_count,pickup_quota);
+  char line[32];snprintf(line,sizeof(line),sm_locale_get()?"%d OBTENUES SUR %d":"%d COLLECTED OUT OF %d",pickup_count,pickup_quota);
   message_line(body+64,line);
 }
 int sm_relic_depart(void){
@@ -93,7 +96,7 @@ static void draw_sprite(uint8_t *out,int width,int x,int y,int min_y){
 void sm_relic_icon(uint8_t *out,int width,int x,int y){draw_sprite(out,width,x,y,0);}
 static void counter(uint8_t *out,int width){
   char line[40];int have=sm_relic_count(),need=sm_relic_required();
-  snprintf(line,sizeof(line),"RELICS %02d OF %02d",have,need);
+  snprintf(line,sizeof(line),sm_locale_get()?"RELIQUES %02d SUR %02d":"RELICS %02d OF %02d",have,need);
   if(have>=need)snprintf(line,sizeof(line),"RETURN TO SHIP");
   sm_native_map_text(out,width,(width-(int)strlen(line)*8)/2,32,line,0x53dec7);
 }

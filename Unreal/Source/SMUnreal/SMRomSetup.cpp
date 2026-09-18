@@ -1,7 +1,7 @@
 #include "SMRomSetup.h"
 #include "SMRom.h"
 #include "SMImGuiWidget.h"
-#include "imgui.h"
+#include "SMLocalizedImGui.h"
 #include "Engine/Engine.h"
 #include "Engine/GameViewportClient.h"
 #include "GameFramework/PlayerController.h"
@@ -52,66 +52,68 @@ void FSMRomSetup::Select(const FString& File) {
     if (Verified) { Status = TEXT("Compatible ROM confirmed. CRC32: D63ED5F8. SHA-1 verified."); BrowserOpen = false; }
 }
 void FSMRomSetup::Draw() {
-    const ImVec2 Screen = ImGui::GetIO().DisplaySize;
-    ImGui::SetNextWindowPos(ImVec2(0, 0));
-    ImGui::SetNextWindowSize(Screen);
-    ImGui::Begin("ROM setup", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings);
-    ImGui::TextColored(ImVec4(.83f,.68f,.33f,1), "THE ZEBES PROJECT");
-    ImGui::TextUnformatted("Set up Super Metroid");
-    ImGui::Separator();
-    ImGui::TextWrapped("Select your unmodified Japan/USA ROM. It will be verified and copied into the game's local roms folder.");
-    ImGui::TextUnformatted("Super Metroid (Japan, USA) (En,Ja).sfc");
-    ImGui::TextUnformatted("CRC32: D63ED5F8  |  Size: 3,145,728 bytes  |  No copier header");
-    ImGui::TextDisabled("A different filename is fine; the file contents must match.");
-    ImGui::Spacing();
-    ImGui::SetNextItemWidth(-1);
-    if (ImGui::InputTextWithHint("##rom", "Paste a ROM file path, or browse below", Candidate, UE_ARRAY_COUNT(Candidate))) {
+    const ImVec2 Screen = SMUI::GetIO().DisplaySize;
+    SMUI::SetNextWindowPos(ImVec2(0, 0));
+    SMUI::SetNextWindowSize(Screen);
+    SMUI::Begin("ROM setup", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings);
+    SMUI::TextColored(ImVec4(.83f,.68f,.33f,1), "THE ZEBES PROJECT");
+    SMUI::TextUnformatted("Set up Super Metroid");
+    int Language=SMLocalization::Language();SMUI::SetNextItemWidth(230);
+    if(SMUI::Combo("Language",&Language,"English\0French (Canada)\0")){SMLocalization::SetLanguage(Language);SMLocalization::Save(FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SM/Presentation.ini")));}
+    SMUI::Separator();
+    SMUI::TextWrapped("Select your unmodified Japan/USA ROM. It will be verified and copied into the game's local roms folder.");
+    SMUI::TextUnformatted("Super Metroid (Japan, USA) (En,Ja).sfc");
+    SMUI::TextUnformatted("CRC32: D63ED5F8  |  Size: 3,145,728 bytes  |  No copier header");
+    SMUI::TextDisabled("A different filename is fine; the file contents must match.");
+    SMUI::Spacing();
+    SMUI::SetNextItemWidth(-1);
+    if (SMUI::InputTextWithHint("##rom", "Paste a ROM file path, or browse below", Candidate, UE_ARRAY_COUNT(Candidate))) {
         Verified = false; Status.Reset();
     }
-    if (ImGui::Button("Verify selected ROM")) Select(UTF8_TO_TCHAR(Candidate));
-    ImGui::SameLine();
-    if (ImGui::Button(BrowserOpen ? "Hide browser" : "Browse files")) BrowserOpen = !BrowserOpen;
+    if (SMUI::Button("Verify selected ROM")) Select(UTF8_TO_TCHAR(Candidate));
+    SMUI::SameLine();
+    if (SMUI::Button(BrowserOpen ? "Hide browser" : "Browse files")) BrowserOpen = !BrowserOpen;
     if (BrowserOpen) {
-        ImGui::Spacing();
-        if (ImGui::Button("Home")) Browse(FPlatformProcess::UserHomeDir());
-        ImGui::SameLine();
-        if (ImGui::Button("Up")) Browse(CurrentDirectory / TEXT(".."));
+        SMUI::Spacing();
+        if (SMUI::Button("Home")) Browse(FPlatformProcess::UserHomeDir());
+        SMUI::SameLine();
+        if (SMUI::Button("Up")) Browse(CurrentDirectory / TEXT(".."));
 #if PLATFORM_LINUX
-        ImGui::SameLine(); if (ImGui::Button("Drives")) Browse(TEXT("/run/media"));
-        ImGui::SameLine(); if (ImGui::Button("Filesystem")) Browse(TEXT("/"));
+        SMUI::SameLine(); if (SMUI::Button("Drives")) Browse(TEXT("/run/media"));
+        SMUI::SameLine(); if (SMUI::Button("Filesystem")) Browse(TEXT("/"));
 #endif
-        ImGui::SetNextItemWidth(-80);
-        bool Go = ImGui::InputText("##folder", Folder, UE_ARRAY_COUNT(Folder), ImGuiInputTextFlags_EnterReturnsTrue);
-        ImGui::SameLine(); Go |= ImGui::Button("Go");
+        SMUI::SetNextItemWidth(-80);
+        bool Go = SMUI::InputText("##folder", Folder, UE_ARRAY_COUNT(Folder), ImGuiInputTextFlags_EnterReturnsTrue);
+        SMUI::SameLine(); Go |= SMUI::Button("Go");
         if (Go) Browse(UTF8_TO_TCHAR(Folder));
-        ImGui::BeginChild("Files", ImVec2(0, FMath::Clamp(Screen.y - 410.f, 100.f, 310.f)), ImGuiChildFlags_Borders);
+        SMUI::BeginChild("Files", ImVec2(0, FMath::Clamp(Screen.y - 410.f, 100.f, 310.f)), ImGuiChildFlags_Borders);
         FString NextDirectory, NextFile;
         for (const FString& Name : Directories) {
-            const FString Label = TEXT("[Folder] ") + Name;
+            const FString Label = SMLocalization::Text(FString(TEXT("[Folder] "))) + Name;
             if (ImGui::Selectable(TCHAR_TO_UTF8(*Label))) NextDirectory = CurrentDirectory / Name;
         }
         for (const FString& Name : Files)
             if (ImGui::Selectable(TCHAR_TO_UTF8(*Name))) NextFile = CurrentDirectory / Name;
-        if (Directories.IsEmpty() && Files.IsEmpty()) ImGui::TextDisabled("No folders or .sfc/.smc files here.");
-        ImGui::EndChild();
+        if (Directories.IsEmpty() && Files.IsEmpty()) SMUI::TextDisabled("No folders or .sfc/.smc files here.");
+        SMUI::EndChild();
         if (!NextDirectory.IsEmpty()) Browse(NextDirectory);
         if (!NextFile.IsEmpty()) Select(NextFile);
     }
-    ImGui::Spacing();
+    SMUI::Spacing();
     if (!Status.IsEmpty()) {
-        ImGui::PushStyleColor(ImGuiCol_Text, Verified ? ImVec4(.4f,.85f,.65f,1) : ImVec4(1,.65f,.4f,1));
-        ImGui::TextWrapped("%s", TCHAR_TO_UTF8(*Status));
-        ImGui::PopStyleColor();
+        SMUI::PushStyleColor(ImGuiCol_Text, Verified ? ImVec4(.4f,.85f,.65f,1) : ImVec4(1,.65f,.4f,1));
+        SMUI::TextWrapped("%s", TCHAR_TO_UTF8(*Status));
+        SMUI::PopStyleColor();
     }
-    ImGui::BeginDisabled(!Verified);
-    if (ImGui::Button("Confirm, copy ROM and continue")) {
+    SMUI::BeginDisabled(!Verified);
+    if (SMUI::Button("Confirm, copy ROM and continue")) {
         Completed = SMRom::Import(UTF8_TO_TCHAR(Candidate), Destination, Status);
         if (!Completed) Verified = false;
     }
-    ImGui::EndDisabled();
-    ImGui::SameLine();
-    if (ImGui::Button("Exit game")) FPlatformMisc::RequestExit(false);
-    ImGui::TextWrapped("Local copy: %s", TCHAR_TO_UTF8(*Destination));
-    ImGui::TextDisabled("The local copy is checked again at every launch. Your source file is kept unchanged.");
-    ImGui::End();
+    SMUI::EndDisabled();
+    SMUI::SameLine();
+    if (SMUI::Button("Exit game")) FPlatformMisc::RequestExit(false);
+    SMUI::TextWrapped("Local copy: %s", SMUI::Raw(TCHAR_TO_UTF8(*Destination)));
+    SMUI::TextDisabled("The local copy is checked again at every launch. Your source file is kept unchanged.");
+    SMUI::End();
 }

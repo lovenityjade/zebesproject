@@ -1,0 +1,159 @@
+{
+  "date": "2026-09-16",
+  "url": "https://thelovenityjade.me/zebes/",
+  "receiver_tests_passed": 16,
+  "isolated_browser": {
+    "passed": true,
+    "isolatedSubmissionReviewFlow": true,
+    "url": "http://127.0.0.1:28742/zebes/",
+    "host": "gaming-pc",
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "runtimeErrors": [],
+    "networkFailures": [],
+    "cases": [
+      "asset loading",
+      "no horizontal overflow",
+      "live empty leaderboard",
+      "mode and category filters",
+      "screenshot lightbox and Escape",
+      "submission dialog",
+      "mobile navigation",
+      "reduced motion"
+    ]
+  },
+  "public_browser": {
+    "passed": true,
+    "isolatedSubmissionReviewFlow": false,
+    "url": "https://thelovenityjade.me/zebes/",
+    "host": "gaming-pc",
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "runtimeErrors": [],
+    "networkFailures": [],
+    "cases": [
+      "asset loading",
+      "no horizontal overflow",
+      "live empty leaderboard",
+      "mode and category filters",
+      "screenshot lightbox and Escape",
+      "submission dialog",
+      "mobile navigation",
+      "reduced motion"
+    ]
+  },
+  "live_http": {
+    "/": {
+      "status": 200
+    },
+    "/tdng/": {
+      "status": 200
+    },
+    "/zebes": {
+      "status": 200
+    },
+    "/zebes/": {
+      "status": 200,
+      "source_hash_matches": true
+    },
+    "/zebes/site.js?v=1": {
+      "status": 200
+    },
+    "/zebes/assets/logo.webp": {
+      "status": 200
+    },
+    "/zebes/sitemap.xml": {
+      "status": 200
+    },
+    "/zebes/api/leaderboard?mode=vanilla&category=noqol": {
+      "status": 200,
+      "data": {
+        "ruleset": "zebes-v1",
+        "mode": "vanilla",
+        "category": "noqol",
+        "page": 1,
+        "page_size": 20,
+        "total": 0,
+        "runs": []
+      }
+    },
+    "/zebes/api/leaderboard?mode=vanilla&category=qol": {
+      "status": 200,
+      "data": {
+        "ruleset": "zebes-v1",
+        "mode": "vanilla",
+        "category": "qol",
+        "page": 1,
+        "page_size": 20,
+        "total": 0,
+        "runs": []
+      }
+    },
+    "/zebes/api/leaderboard?mode=ngplus&category=noqol": {
+      "status": 200,
+      "data": {
+        "ruleset": "zebes-v1",
+        "mode": "ngplus",
+        "category": "noqol",
+        "page": 1,
+        "page_size": 20,
+        "total": 0,
+        "runs": []
+      }
+    },
+    "/zebes/api/leaderboard?mode=ngplus&category=qol": {
+      "status": 200,
+      "data": {
+        "ruleset": "zebes-v1",
+        "mode": "ngplus",
+        "category": "qol",
+        "page": 1,
+        "page_size": 20,
+        "total": 0,
+        "runs": []
+      }
+    },
+    "/zebes/api/v1/runs": {
+      "status": 404
+    },
+    "/zebes/api/health": {
+      "status": 404
+    },
+    "/zebes/app.py": {
+      "status": 404
+    },
+    "/zebes/runs.sqlite": {
+      "status": 404
+    },
+    "invalid_submission": {
+      "status": 422,
+      "writes_to_database": false
+    },
+    "foreign_origin": {
+      "status": 403
+    }
+  },
+  "visual_inspection": [
+    "desktop hero",
+    "mobile hero",
+    "leaderboard",
+    "submission dialog"
+  ],
+  "new_generated_images": 0,
+  "existing_asset_reuse": true,
+  "lossless_conversion_rgba_equality": true,
+  "production_fake_scores": 0,
+  "backup": "/var/backups/zebes-website/20260916T230433Z/"
+}

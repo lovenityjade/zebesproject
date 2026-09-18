@@ -1,4 +1,5 @@
 #include "sm_cinematics.h"
+#include "sm_locale.h"
 #include "sm_credits.h"
 #include "sm_bridge.h"
 #include "sm_scene.h"
@@ -29,6 +30,33 @@ int sm_cinema_sprite_gui(int slot){
   if(slot<0||slot>=16)return 0;
   int d=definitions[slot];return d==0xa113||d==0xa125||d==0xce97||d==0xce9d||d==0xceaf||d==0xceb5||d==0xeec7||d==0xeecd||d==0xeefd||
     d==0xef03||d==0xef09||d==0xef0f||d==0xef15||d==0xef1b;
+}
+int sm_cinema_localized_sprite(int slot){
+ if(slot<0 || slot>=16 || !sm_locale_get())return 0;
+ int d=definitions[slot];
+ const char* text;unsigned full_address;int dx=0,dy=0;
+ switch(d){
+ case 0xce97:text="COLONIE SPATIALE";full_address=0x8c921f;break;
+ case 0xceaf:text="PLANÈTE ZEBES";full_address=0x8c9654;break;
+ case 0xeec7:text="L'OPÉRATION EST";full_address=0x8caad3;break;
+ case 0xeecd:text="TERMINÉE AVEC SUCCÈS";full_address=0x8cb3c7;dy=24;break;
+ case 0xeefd:text="TEMPS ÉCOULÉ";full_address=0x8cb613;dx=-32;break;
+ default:return 0;
+ }
+ unsigned address=0x8c0000u|cinematicspr_whattodraw[slot];
+ const uint8_t* map=RomPtr(address);
+ int pieces=GET_WORD(map),full=GET_WORD(RomPtr(full_address));
+ if(!pieces || !full)return 0;
+ int palette=128+((cinematicbg_arr9[slot]>>9)&7)*16;
+ int color=0,value=-1;
+ for(int i=1;i<16;i++){int c=g_snes->ppu->cgram[palette+i],v=(c&31)+((c>>5)&31)+((c>>10)&31);if(v>value){value=v;color=c;}}
+ // The success lettering uses the original green accent, independent of
+ // the grayscale planet background palette transition.
+ if(d==0xeec7 || d==0xeecd)color=0x1fe0;
+ sm_locale_caption(text,
+   (int16_t)(cinematicbg_arr7[slot]-layer1_x_pos)+dx,
+   (int16_t)(cinematicbg_arr8[slot]-layer1_y_pos)+dy,pieces,full,color);
+ return 1;
 }
 static void add(int type,float x,float y,float radius,float r,float g,float b,float power,float dx,float dy,float length,float phase){
   if(count>=N||!isfinite(x)||!isfinite(y)||radius<=0||x < -100||x>356||y < -100||y>324)return;
@@ -168,7 +196,26 @@ void sm_cinema_frame(void){
   if(scene==5 && g_snes->ppu->mode==7){
     float x,y,s;if(project(128,128,&x,&y,&s)&&s<3)add(4,x,y,86*s,.32f,.6f,1,.5f,0,0,1,0);
   }
-  if(scene==7 && g_snes->ppu->mode==7){jet(28,35,4,1.6f);jet(84,35,4,1.6f);}
+  if(scene==6){
+    if(g_snes->ppu->mode==7){
+      float x,y,s;if(project(128,128,&x,&y,&s)&&s<3)
+        add(4,x,y,86*s,1,.38f,.12f,.65f,0,0,1,0);
+    }
+    if(cinematic_function==FUNC16(CinematicFunction_Intro_Func117)){
+      float t=fmaxf(0,fminf(1,1-cinematic_var4/63.f));
+      add(7,128,112,12+145*t,1,.42f,.16f,.8f*(1-t),0,0,0,t);
+    }
+  }
+  if(scene==7){
+    if(g_snes->ppu->mode==7){jet(28,35,4,1.6f);jet(84,35,4,1.6f);}
+    // EF21 is the original rescued-animals ship. Follow its actual position;
+    // never invent a rescue or key this effect to a wall-clock timer.
+    for(int i=0;i<16;i++)if(definitions[i]==0xef21 && cinematicspr_instr_ptr[i] && cinematicspr_whattodraw[i]){
+      float x=(int16_t)(cinematicbg_arr7[i]-layer1_x_pos);
+      float y=(int16_t)(cinematicbg_arr8[i]-layer1_y_pos);
+      add(6,x,y,4.5f,.12f,.6f,1,1.25f,1,0,26,i);
+    }
+  }
   if(scene==8 && g_snes->ppu->mode==7)jet(56,33,6,1.8f);
   if(scene==9 && g_snes->ppu->mode==7){jet(28,35,4,1.8f);jet(84,35,4,1.8f);}
   if(scene==3 && g_snes->ppu->mode==7)beacons();

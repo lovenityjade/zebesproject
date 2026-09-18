@@ -1,3 +1,6 @@
+#include "sm_locale.h"
+#include "sm_ending.h"
+#include "sm_dialogue.h"
 #include "sm_animals.h"
 #include "sm_escape.h"
 #include "sm_objective_pause.h"
@@ -21,6 +24,7 @@
 #include "sm_tracker.h"
 #include "sm_world_data.h"
 #include "sm_map_browser.h"
+#include "sm_seed_atlas.h"
 #include "sm_travel.h"
 #include "sm_varia_ui.h"
 #include "sm_bridge.h"
@@ -100,6 +104,8 @@ int sm_init(const char *rom_path, const char *sram_path) {
   test_room_pending=test_room_door=0;
   snes_frame_counter=0;
   if (!SnesInit(rom_path)) { guarded = 0; return 0; }
+  sm_locale_reset();
+  sm_dialogue_load_assets();
   sm_soundtrack_reset();
   sm_credits_load_assets();
   sm_world_data_load_assets();
@@ -134,6 +140,7 @@ int sm_step(uint16_t buttons) {
   if (!initialized || last_error[0]) return 0;
   guarded = 1;
   if (setjmp(recovery)) { guarded = 0; return 0; }
+  if(sm_ending_preview_step(buttons,pixels,audio_samples)){guarded=0;return 1;}
   if(sm_credits_preview_step(buttons,pixels,audio_samples)){guarded=0;return 1;}
   sm_scene_active=sm_presentation_kind()==1;
   sm_visual_begin_frame();
@@ -160,8 +167,8 @@ int sm_step(uint16_t buttons) {
   profile_start=sm_clock_ns();
   sm_scene_finish();
   sm_varia_ui_frame();
-  if(!sm_map_browser_overview()){sm_varia_ui_render(pixels);sm_map_icons_render(pixels);sm_tracker_render(pixels);}
-  sm_objective_map_render(pixels);
+  if(!sm_map_browser_overview()){sm_varia_ui_render(pixels);sm_seed_atlas_render(pixels);sm_seed_atlas_minimap(pixels);sm_map_icons_render(pixels);sm_tracker_render(pixels);}
+  sm_objective_map_render(pixels);sm_seed_atlas_cursor(pixels);
   sm_relic_render(pixels);
   sm_map_browser_render(pixels);sm_travel_render(pixels);
   sm_credits_render(pixels);sm_cinema_frame();
@@ -169,6 +176,7 @@ int sm_step(uint16_t buttons) {
   sm_run_render(pixels);
   sm_generation_render(pixels);
   sm_notifications_frame(pixels);
+  sm_locale_render(pixels);
   sm_profile_ns[4]=sm_clock_ns()-profile_start;
   guarded = 0;
   return 1;
@@ -222,17 +230,17 @@ int sm_heated_room(void) {
 void sm_set_engine_weather(int enabled) { sm_scene_weather=enabled; }
 typedef struct {const char *name;uint16_t area,station,room;} SmDestination;
 static const SmDestination destinations[]={
-  {"Crateria - Vaisseau / pluie",0,0,0x91f8},
-  {"Crateria - Refuge interieur",0,1,0x93d5},
-  {"Brinstar - Puits vert",1,8,0x9ad9},
-  {"Norfair - Cavernes chaudes",2,17,0xa923},
-  {"Norfair - Entree des profondeurs",2,10,0xb236},
-  {"Maridia - Ouest",4,16,0xd1dd},
-  {"Maridia - Est",4,19,0xd48e},
-  {"Vaisseau fantome - Hall",3,16,0xca08},
+  {"Crateria - Ship / rain",0,0,0x91f8},
+  {"Crateria - Indoor refuge",0,1,0x93d5},
+  {"Brinstar - Green shaft",1,8,0x9ad9},
+  {"Norfair - Heated caverns",2,17,0xa923},
+  {"Norfair - Lower entrance",2,10,0xb236},
+  {"Maridia - West",4,16,0xd1dd},
+  {"Maridia - East",4,19,0xd48e},
+  {"Wrecked Ship - Main hall",3,16,0xca08},
 };
 int sm_teleport_count(void) {return sizeof(destinations)/sizeof(*destinations);}
-const char *sm_teleport_name(int i) {return i>=0 && i<sm_teleport_count()?destinations[i].name:"";}
+const char *sm_teleport_name(int i) {return i>=0 && i<sm_teleport_count()?sm_locale_text(destinations[i].name):"";}
 int sm_teleport_room(int i) {return i>=0 && i<sm_teleport_count()?destinations[i].room:0;}
 int sm_teleport(int i) {
   sm_run_invalidate(1);
@@ -269,6 +277,7 @@ int sm_presentation_kind(void) {
 int sm_brightness(void) { return g_snes ? g_snes->ppu->brightness : 0; }
 int sm_slots_copy_sram(uint8_t *out,int capacity){if(!initialized || !out || capacity<8192)return 0;memcpy(out,g_sram,8192);return 8192;}
 int sm_save(void) {
+  if(sm_ending_preview_active())return 1;
   if(defer_sram_write)return 1;
   if (!initialized) return 0;
   char tmp[4100]; snprintf(tmp, sizeof(tmp), "%s.tmp", save_path);
@@ -278,6 +287,8 @@ int sm_save(void) {
   return ok && rename(tmp, save_path) == 0 && sm_stats_save() && sm_runs_save() && sm_route_save();
 }
 void sm_shutdown(void) {
+  sm_dialogue_unload();
+  sm_ending_preview_close();
   if (!initialized) return;
   sm_route_close();
   sm_credits_reset();
@@ -290,6 +301,18 @@ void sm_shutdown(void) {
   if(sm_slots_managed())sm_seed_clear();
 }
 
+int sm_test_suit_pickup(int suit,int start){
+  if(!initialized || !strstr(save_path,"SMTests") || game_state!=8 ||
+      sm_message_active() || sm_visual_suit() || (suit!=1 && suit!=2))return 0;
+  sm_run_invalidate(1);
+  if(!start) {
+    collected_items=(collected_items&~0x21)|(suit==2?1:0);
+    equipped_items=(equipped_items&~0x21)|(suit==2?1:0);
+    Samus_LoadSuitPalette();
+  } else if(suit==1)VariaSuitPickup();
+  else GravitySuitPickup();
+  return 1;
+}
 int sm_test_gameover(void){
   if(!initialized || !strstr(save_path,"SMTests") || game_state!=8)return 0;
   game_state=kGameState_26_GameOverMenu;menu_index=0;
@@ -309,7 +332,7 @@ int sm_test_combat_equipment(void) {
 }
 int sm_test_room(int room,int x,int y) {
   if(!initialized || !strstr(save_path,"SMTests") || game_state!=8)return 0;
-  const uint16_t allowed[]={0x948c,0x96ba,0x975c,0x97b5,0x9e9f,0x9f11,0x9f64,0xd104,0xacb3,0xa66a,0xa5ed,0xddc4,0xdd58,0xacf0,0x9dc7};
+  const uint16_t allowed[]={0x948c,0x96ba,0x975c,0x97b5,0x9e9f,0x9f11,0x9f64,0xd104,0xacb3,0xa66a,0xa5ed,0xddc4,0xdd58,0xacf0,0x9dc7,0xa6e2,0xce40};
   int found=0;for(unsigned i=0;i<sizeof(allowed)/sizeof(*allowed);i++)found|=room==allowed[i];
   if(!found)return 0;
   const RoomDefHeader *r=get_RoomDefHeader(room);
@@ -341,7 +364,7 @@ void sm_test_load_room(void) {
   /* Use an actual incoming door. An outgoing door would make the native room
    * loader correctly load its neighbour, despite the requested test room. */
   const uint16_t pairs[][2]={{0x948c,0x8ad2},{0x96ba,0x8c76},{0x975c,0x8b62},{0x97b5,0x8b86},
-    {0x9e9f,0x8ec2},{0x9f11,0x8eaa},{0x9f64,0x8ece},{0xd104,0x90c6},{0xacb3,0x97ce},{0xa66a,0x91f2},{0xa5ed,0x9216},{0xddc4,0xaa5c},{0xdd58,0xaac8},{0xacf0,0x95be},{0x9dc7,0x8e3e}};
+    {0x9e9f,0x8ec2},{0x9f11,0x8eaa},{0x9f64,0x8ece},{0xd104,0x90c6},{0xacb3,0x97ce},{0xa66a,0x91f2},{0xa5ed,0x9216},{0xddc4,0xaa5c},{0xdd58,0xaac8},{0xacf0,0x95be},{0x9dc7,0x8e3e},{0xa6e2,0x91da},{0xce40,0xa1a4}};
   for(unsigned i=0;i<sizeof(pairs)/sizeof(*pairs);i++)if(room_ptr==pairs[i][0])door_def_ptr=pairs[i][1];
   if(test_room_door){door_def_ptr=test_room_door;test_room_door=0;}
   layer1_x_pos=bg1_x_offset=(test_room_x/256)*256;

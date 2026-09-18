@@ -5,6 +5,7 @@
 #include "sm_tracker.h"
 #include "sm_objective_pause.h"
 #include "sm_map_browser.h"
+#include "sm_seed_atlas.h"
 #include "sm_seed.h"
 #include "sm_varia_ui.h"
 #include "ida_types.h"
@@ -204,11 +205,15 @@ static void draw_tracker(uint8_t *out,int width,const SmTrackerSnapshot *s){
   if(pause && tracker_enabled && tracker_items)inventory_bar(out,width,s);
   const int logical=tracker_enabled && tracker_map;
   if(!logical && !sm_varia_ui_active(SM_VARIA_MARKERS))return;
-  int groups[32][64];memset(groups,0xff,sizeof(groups));
+  const int atlas=pause && sm_seed_atlas_active();
   int fresh=current_logic(s);
+  for(int draw_area=0;draw_area<6;draw_area++){
+  if(!atlas && draw_area!=(pause?sm_map_browser_view_area():area_index))continue;
+  int groups[32][64];memset(groups,0xff,sizeof(groups));
   for(int i=0;i<100;i++){
     if(!sm_minimizer_check(i))continue;
-    const uint8_t *p=tracker_positions[i];if(p[0]!=(pause?sm_map_browser_view_area():area_index))continue;
+    const uint8_t *p=tracker_positions[i];if(p[0]!=draw_area)continue;
+    if(!pause && !sm_seed_atlas_local(p[0],p[1],p[2]))continue;
     int state=s->collected[i]?0:!logical?16:fresh?logic_states[i]:-2;
     if(groups[p[2]][p[1]]==-1)groups[p[2]][p[1]]=state;
     else if(state==-2 || groups[p[2]][p[1]]==-2)groups[p[2]][p[1]]=-2;
@@ -218,7 +223,11 @@ static void draw_tracker(uint8_t *out,int width,const SmTrackerSnapshot *s){
     int state=groups[y][x];if(state==-1)continue;
     int dx,dy,r=state==0 || state==16?1:3;
     if(pause){
-      dx=x*8+4-(int16_t)reg_BG1HOFS+(width-256)/2;dy=y*8+4-(int16_t)reg_BG1VOFS;
+      if(atlas){
+        if(!sm_seed_atlas_project(draw_area,x*8+4,y*8+4,width,&dx,&dy))continue;
+        if(r>sm_seed_atlas_cell_size()/2-1)r=sm_seed_atlas_cell_size()/2-1;
+        if(r<1)r=1;
+      }else{dx=x*8+4-(int16_t)reg_BG1HOFS+(width-256)/2;dy=y*8+4-(int16_t)reg_BG1VOFS;}
       if(dx-r<8 || dx+r>=width-8 || dy-r<48 || dy+r>=192)continue;
     }else{
       int mx=x-s->map_x+(width==400?4:2),my=y-s->map_y+1;
@@ -232,12 +241,17 @@ static void draw_tracker(uint8_t *out,int width,const SmTrackerSnapshot *s){
     if(!pause && x==s->map_x && y==s->map_y)pixel(out,width,dx,dy,0xffffff);
   }
   if(logical && fresh && bosses_ready)for(int i=0;i<SM_TRACKER_BOSS_COUNT;i++){
-    const uint8_t *p=boss_positions[i];if(p[0]!=(pause?sm_map_browser_view_area():area_index) || boss_states[i]==255)continue;
+    const uint8_t *p=boss_positions[i];if(p[0]!=draw_area || boss_states[i]==255)continue;
+    if(!pause && !sm_seed_atlas_local(p[0],p[1],p[2]))continue;
     const int x=p[1],y=p[2],state=(s->boss_bits[p[3]]&p[4])?0:boss_states[i];
     const int shared=groups[y][x]!=-1;
     int dx,dy,r=state==0?1:shared?2:3;
     if(pause){
-      dx=x*8+4-(int16_t)reg_BG1HOFS+(width-256)/2;dy=y*8+4-(int16_t)reg_BG1VOFS;
+      if(atlas){
+        if(!sm_seed_atlas_project(draw_area,x*8+4,y*8+4,width,&dx,&dy))continue;
+        if(r>sm_seed_atlas_cell_size()/2-1)r=sm_seed_atlas_cell_size()/2-1;
+        if(r<1)r=1;
+      }else{dx=x*8+4-(int16_t)reg_BG1HOFS+(width-256)/2;dy=y*8+4-(int16_t)reg_BG1VOFS;}
     }else{
       const int mx=x-s->map_x+(width==400?4:2),my=y-s->map_y+1;
       if(mx<0 || mx>=(width==400?7:5) || my<0 || my>=(width==400?4:3))continue;
@@ -252,6 +266,7 @@ static void draw_tracker(uint8_t *out,int width,const SmTrackerSnapshot *s){
       pixel(out,width,(width==400?336:208)+(width==400?4:2)*8+4,12,0xffffff);
     }
   }
+  } // physical areas share one presentation projection
 }
 void sm_tracker_render(uint8_t *native_pixels){
   if(sm_run_state(0))return;

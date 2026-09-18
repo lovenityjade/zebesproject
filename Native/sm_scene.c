@@ -92,6 +92,22 @@ static void sm_draw_full_line(Ppu *p,int line) {
   memcpy(p->screenEnabled,screens,2);memcpy(p->screenWindowed,windows,2);
 }
 
+static int sm_scene_finite_bg2(const Ppu *p) {
+  // Mother Brain switches BG2 to a 256px body tilemap for her ascent and
+  // phases 2/3 (A9:8D11). Phase 1 and ordinary tiled backgrounds stay native.
+  return p->mode==1 && room_ptr==0xdd58 && layer2_scroll_x==1 &&
+      layer2_scroll_y==1 && !p->bgLayer[1].tilemapWider;
+}
+
+/* Only the presentation PPU copy loses the 256px suit beam. Native HDMA,
+ * acquisition, palette transition, sprite animation and reference pixels run
+ * unchanged. Both decoders have their own window representation. */
+static void sm_scene_replace_suit(Ppu *p) {
+  memset(p->mathEnabled,0,sizeof(p->mathEnabled));
+  memset(p->windowLayer,0,sizeof(p->windowLayer));p->windowsel=0;
+  p->clipMode=p->preventMathMode=0;
+  for(int i=0;i<5;i++)p->layer[i].mainScreenWindowed=p->layer[i].subScreenWindowed=false;
+}
 #include "sm_wide.inc"
 
 static Ppu combat_ppu;
@@ -110,10 +126,12 @@ void ppu_runLine(Ppu *ppu, int line) {
   sm_profile_ns[1]+=sm_clock_ns()-profile_start;
   profile_start=sm_clock_ns();
   if (line < 1 || line > 224) return;
-  const int replace_pb=sm_combat_effects && game_state==8 && ((power_bomb_explosion_status&0x8000) || sm_visual_eye());
+  const int replace_suit=sm_combat_effects && sm_visual_suit();
+  const int replace_pb=replace_suit || (sm_combat_effects && game_state==8 && ((power_bomb_explosion_status&0x8000) || sm_visual_eye()));
   if(replace_pb && line>32) {
     memcpy(&combat_ppu,ppu,sizeof(combat_ppu));ppu=&combat_ppu;
     memset(ppu->mathEnabled,0,sizeof(ppu->mathEnabled));ppu->clipMode=0;
+    if(replace_suit)sm_scene_replace_suit(ppu);
   }
   uint8_t *dst = sm_scene_pixels+(line-1)*256*4;
   uint8_t *meta = sm_scene_layers+(line-1)*256*4;
@@ -254,7 +272,7 @@ void ppu_runLine(Ppu *ppu, int line) {
   }
   /* BG2 often uses a streamed 512px tilemap: small bounded offsets avoid
    * exposing the far side of its streaming ring. Never change BG1 or OAM. */
-  if (sm_scene_parallax && (sm_scene_camera_x || sm_scene_camera_y) && ppu->mode == 1) {
+  if (sm_scene_parallax && (sm_scene_camera_x || sm_scene_camera_y) && ppu->mode == 1 && !sm_scene_finite_bg2(ppu)) {
     uint16_t scroll_x=ppu->bgLayer[1].hScroll,scroll_y=ppu->bgLayer[1].vScroll;
     uint8_t *original=ppu->renderBuffer;
     size_t pitch=ppu->renderPitch;

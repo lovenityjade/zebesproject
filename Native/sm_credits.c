@@ -1,3 +1,5 @@
+#include "sm_locale.h"
+#include "sm_ending.h"
 #include "sm_soundtrack.h"
 #include "sm_relic.h"
 #include "sm_credits.h"
@@ -43,6 +45,7 @@ void sm_credits_load_assets(void){
 uint16 CinematicFunction_Intro_Func219(uint16 k,uint16 j);
 extern uint8_t sm_wide_pixels[],sm_wide_hud[];
 static uint16_t rows[1024][32];
+static uint8_t row_accents[1024][32];
 static int count,mode,frame,ending_frame,buttons_before,section_start[5];
 static SpcPlayer *preview_music;
 static uint8_t saved[256*240*4*3+400*240*4*2];
@@ -51,10 +54,10 @@ static void copy_buffers(int restore){
   size_t sizes[]={256*240*4,256*240*4,256*240*4,400*240*4,400*240*4};size_t offset=0;
   for(int i=0;i<5;i++){if(restore)memcpy(ptrs[i],saved+offset,sizes[i]);else memcpy(saved+offset,ptrs[i],sizes[i]);offset+=sizes[i];}
 }
-static void blank(int n){while(n-- && count<1024){for(int i=0;i<32;i++)rows[count][i]=0x7f;count++;}}
+static void blank(int n){while(n-- && count<1024){for(int i=0;i<32;i++){rows[count][i]=0x7f;row_accents[count][i]=0;}count++;}}
 static void small(const char *s,int palette){
-  blank(1);int len=strlen(s);if(len>32)len=32;int x=(32-len)/2;
-  for(int i=0;i<len;i++)rows[count-1][x+i]=credits_small_font[(unsigned char)s[i]&127]|palette<<10;
+  s=sm_locale_text(s);blank(1);int len=sm_locale_length(s);if(len>32)len=32;int x=(32-len)/2;
+  for(int i=0;i<len;i++){int cp=sm_locale_next(&s);rows[count-1][x+i]=credits_small_font[sm_locale_base(cp)&127]|palette<<10;row_accents[count-1][x+i]=cp=='/'?6:sm_locale_accent(cp);}
 }
 static uint16_t big_glyph(char ch,int bottom){
   if(ch>='a'&&ch<='z')ch=toupper((unsigned char)ch);
@@ -64,23 +67,67 @@ static uint16_t big_glyph(char ch,int bottom){
   return t;
 }
 static void big(const char *s){
-  blank(2);int len=strlen(s);if(len>32)len=32;int x=(32-len)/2;
-  for(int i=0;i<len;i++){rows[count-2][x+i]=big_glyph(s[i],0);rows[count-1][x+i]=big_glyph(s[i],1);}
+  s=sm_locale_text(s);blank(2);int len=sm_locale_length(s);if(len>32)len=32;int x=(32-len)/2;
+  for(int i=0;i<len;i++){int cp=sm_locale_next(&s),ch=sm_locale_base(cp);rows[count-2][x+i]=big_glyph(ch,0);rows[count-1][x+i]=big_glyph(ch,1);row_accents[count-(sm_locale_accent(cp)==5?1:2)][x+i]=sm_locale_accent(cp);}
 }
 static void stat(const char *label,int id,int time){
-  char value[32],line[33];uint64_t v=sm_stats_value(id);
+  char value[32];uint64_t v=sm_stats_value(id);
   if(time)snprintf(value,sizeof(value),"%02llu:%02llu:%02llu.%02llu",(unsigned long long)(v/216000),(unsigned long long)(v/3600%60),(unsigned long long)(v/60%60),(unsigned long long)(v%60));
   else snprintf(value,sizeof(value),"%llu",(unsigned long long)v);
-  memset(line,' ',32);line[32]=0;size_t n=strlen(label),m=strlen(value);if(n>17)n=17;if(m>13)m=13;
-  memcpy(line+1,label,n);memcpy(line+31-m,value,m);big(line);blank(1);
+  label=sm_locale_text(label);
+  if(sm_locale_length(label)>17){small(label,6);big(value);blank(1);return;}
+  blank(2);int x=1;
+  while(*label){int cp=sm_locale_next(&label),ch=sm_locale_base(cp);rows[count-2][x]=big_glyph(ch,0);rows[count-1][x]=big_glyph(ch,1);row_accents[count-2][x]=sm_locale_accent(cp);x++;}
+  int n=strlen(value);if(n>13)n=13;x=31-n;
+  for(int i=0;i<n;i++){rows[count-2][x+i]=big_glyph(value[i],0);rows[count-1][x+i]=big_glyph(value[i],1);}blank(1);
 }
 static void build(void){
-  count=0;blank(25);section_start[0]=count;
+  count=0;memset(row_accents,0,sizeof(row_accents));blank(25);section_start[0]=count;
   small("THE ZEBES PROJECT",4);blank(2);big("THELOVENITYJADE");blank(2);big("SEKAILINK");big("SEKAILINK.COM");blank(6);
+  small("THE ZEBES PROJECT",4);small("SPECIAL THANKS",5);blank(2);
+  big("GUIZ DE PESSEMIER");small("TWITCH.TV/JEUSERIEUX",6);big("LE JEUX C'EST SÉRIEUX");blank(3);
+  big("ERIC CERTOSSINI");small("TWITCH.TV/CERTOJEUXDROLES",6);big("CERTO JEUX DROLES");blank(6);
   section_start[1]=count;small("NATIVE DECOMPILATION",5);blank(2);big("SNESREV");blank(1);big("DABANANA64   LYWX");blank(2);small("NATIVE RUNTIME",6);big("ELZO_D");blank(2);
   small("DISASSEMBLY REFERENCES",6);blank(1);big("STRAGER - MATTHEW GLAZAR");big("BLAKE SMITH");big("ANONYMOUS CONTRIBUTORS");blank(2);big("PJBOY   KEJARDON");blank(4);
   section_start[2]=count;
-  for(unsigned i=0;i<sizeof(credits_upstream)/sizeof(credits_upstream[0]);i++){memcpy(rows[count++],credits_upstream[i],64);}
+  static const struct {int row;const char* role;} roles[]={
+    {1,"SUPER METROID STAFF"},
+    {3,"PRODUCER"},
+    {8,"DIRECTOR"},
+    {13,"BACK GROUND DESIGNERS"},
+    {24,"OBJECT DESIGNERS"},
+    {32,"SAMUS ORIGINAL DESIGNER"},
+    {37,"SAMUS DESIGNER"},
+    {42,"SOUND PROGRAM"},
+    {43,"AND SOUND EFFECTS"},
+    {48,"MUSIC COMPOSERS"},
+    {56,"PROGRAM DIRECTOR"},
+    {61,"SYSTEM COORDINATOR"},
+    {66,"SYSTEM PROGRAMMER"},
+    {71,"SAMUS PROGRAMMER"},
+    {76,"EVENT PROGRAMMER"},
+    {81,"ENEMY PROGRAMMER"},
+    {86,"MAP PROGRAMMER"},
+    {91,"ASSISTANT PROGRAMMER"},
+    {96,"COORDINATORS"},
+    {104,"PRINTED ART WORK"},
+    {124,"SPECIAL THANKS TO"},
+    {174,"GENERAL MANAGER"},
+    {183,"VARIA RANDOMIZER STAFF"},
+    {189,"ORIGINAL ITEM RANDOMIZERS"},
+    {195,"CONTRIBUTORS"},
+    {204,"ROTATED SUPER METROID HACKS"},
+    {210,"MAP OVERHAUL PATCH"},
+    {216,"SPECIAL THANKS TO"},
+    {232,"SUPER METROID DISASSEMBLY"},
+    {237,"DEBUG TOOLS"},
+  };
+  for(unsigned i=0;i<sizeof(credits_upstream)/sizeof(credits_upstream[0]);i++){
+    const char* role=0;
+    if(sm_locale_get())for(unsigned r=0;r<sizeof(roles)/sizeof(*roles);r++)if(roles[r].row==(int)i)role=roles[r].role;
+    if(role){int palette=6;for(int x=0;x<32;x++)if((credits_upstream[i][x]&1023)!=0x7f){palette=(credits_upstream[i][x]>>10)&7;break;}small(role,palette);}
+    else memcpy(rows[count++],credits_upstream[i],64);
+  }
   blank(3);small("VARIA.RUN",6);small("DISCORD.VARIA.RUN",6);blank(5);
   small("REMASTERED SOUNDTRACK",5);blank(2);
   small("MUSIC RESTORATION",6);big("JAMMIN' SAM MILLER");blank(2);
@@ -101,7 +148,7 @@ static void build(void){
   section_start[3]=count;small("GAMEPLAY STATISTICS",5);blank(2);
   if(sm_stats_partial()){small("TRACKED SINCE THIS UPDATE",6);blank(2);}
   small(sm_seed_active()?"RANDOMIZED GAME":"VANILLA GAME",4);blank(2);
-  if(sm_relic_required()){char relics[33];small("CHOZO RELIC HUNT",4);snprintf(relics,sizeof(relics),"FRAGMENTS %d OF %d",sm_relic_count(),sm_relic_required());big(relics);blank(2);}
+  if(sm_relic_required()){char relics[33];small("CHOZO RELIC HUNT",4);snprintf(relics,sizeof(relics),sm_locale_get()?"FRAGMENTS %d SUR %d":"FRAGMENTS %d OF %d",sm_relic_count(),sm_relic_required());big(relics);blank(2);}
   stat("REAL TIME",0,1);stat("IN GAME TIME",1,1);stat("DEATHS",40,0);stat("RESETS",41,0);
   stat("DOOR TRANSITIONS",2,0);stat("TIME IN DOORS",3,1);stat("DOOR ALIGNMENT",5,1);stat("PAUSE MENU",38,1);
   small("TIME SPENT IN",2);blank(2);
@@ -116,7 +163,7 @@ static void build(void){
 void sm_credits_reset(void){sm_credits_close();mode=frame=0;}
 int sm_credits_state(int field){if(field==0)return mode;if(field==1)return frame;if(field==2)return ending_frame;if(field==3)return count;if(field==4){int n=0;for(int i=0;i<5;i++)if(frame/16+14>=section_start[i])n=i;return n;}return 0;}
 int sm_credits_launch(void){
-  if(!g_snes || mode || (game_state!=8&&game_state!=15) || sm_message_active())return 0;
+  if(!g_snes || sm_ending_preview_active() || mode || (game_state!=8&&game_state!=15) || sm_message_active())return 0;
   copy_buffers(0);build();frame=0;mode=2;buttons_before=0;
   sm_soundtrack_preview_begin();
   preview_music=SpcPlayer_Create();SpcPlayer_Initialize(preview_music);SpcPlayer_Upload(preview_music,RomPtr(0xcf8000));
@@ -140,8 +187,16 @@ static void pixel(uint8_t *p,int w,int x,int y,uint16_t c,float light){
   if(x<0||x>=w||y<0||y>=224)return;uint8_t *d=p+(y*w+x)*4;
   d[0]=fminf(255,((c>>10)&31)*255/31*light);d[1]=fminf(255,((c>>5)&31)*255/31*light);d[2]=fminf(255,(c&31)*255/31*light);d[3]=255;
 }
-static void glyph(uint8_t *p,int w,int x,int y,uint16_t id){
-  int tile=id&1023,pal=(id>>10)&7;if(tile>=sizeof(credits_font)/32)return;
+static void glyph(uint8_t *p,int w,int x,int y,uint16_t id,int accent){
+  int tile=id&511,pal=(id>>10)&7;
+  uint16_t ink=credits_palette[pal*16+15];
+  if(accent==1){pixel(p,w,x+4,y-2,ink,1);pixel(p,w,x+3,y-1,ink,1);}
+  if(accent==2){pixel(p,w,x+2,y-2,ink,1);pixel(p,w,x+3,y-1,ink,1);}
+  if(accent==3){pixel(p,w,x+3,y-2,ink,1);pixel(p,w,x+2,y-1,ink,1);pixel(p,w,x+4,y-1,ink,1);}
+  if(accent==4){pixel(p,w,x+2,y-1,ink,1);pixel(p,w,x+5,y-1,ink,1);}
+  if(accent==5){pixel(p,w,x+4,y+8,ink,1);pixel(p,w,x+3,y+9,ink,1);}
+  if(accent==6)for(int i=0;i<7;i++)pixel(p,w,x+6-i,y+i,ink,1);
+  if(tile>=sizeof(credits_font)/32)return;
   for(int dy=0;dy<8;dy++)for(int dx=0;dx<8;dx++){
     int off=tile*32+((id&32768)?7-dy:dy)*2,bit=(id&16384)?dx:7-dx,c=0;
     for(int b=0;b<4;b++)c|=((credits_font[off+b/2*16+b%2]>>bit)&1)<<b;
@@ -163,7 +218,7 @@ static void draw(uint8_t *scene,uint8_t *gui,int w){
   for(int i=0;i<70;i++){unsigned h=i*2654435761u+12345;int x=h%(unsigned)w,y=(h>>16)%224;if(x>cx-123&&x<cx+133)continue;
     pixel(scene,w,x,y,0x7fff,.12f+.35f*powf(.5f+.5f*sinf(frame*.02f+i),4));}
   int scroll=frame/2;
-  for(int row=scroll/8;row<count && row*8-scroll<224;row++)for(int x=0;x<32;x++)glyph(gui,w,(w-256)/2+x*8,row*8-scroll,rows[row][x]);
+  for(int row=scroll/8;row<count && row*8-scroll<224;row++)for(int x=0;x<32;x++)glyph(gui,w,(w-256)/2+x*8,row*8-scroll,rows[row][x],row_accents[row][x]);
 }
 void sm_credits_render(uint8_t *pixels){
   if(!mode)return;

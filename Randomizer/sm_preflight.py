@@ -12,8 +12,11 @@ ROOT = Path(__file__).resolve().parent
 
 def check_settings(request):
     issues = []
-    def issue(message, page=1, other=None):
-        issues.append(dict(message=message, page=page, otherPage=other))
+    def issue(message, page=1, other=None, key=None, args=()):
+        entry = dict(message=message, page=page, otherPage=other)
+        if key is not None:
+            entry.update(messageKey=key, messageArgs=[str(a) for a in args])
+        issues.append(entry)
     if not isinstance(request, dict):
         return dict(ok=False, issues=[dict(message='Settings must be an object.', page=0, otherPage=None)], notes=[])
     if type(request.get('seed', 0)) is not int or not 0 <= request.get('seed', 0) <= 2147483647:
@@ -33,7 +36,7 @@ def check_settings(request):
             else:
                 compatible = value in allowed
             if not compatible:
-                issue(f'Chozo Relic Hunt: {label}. Change that setting or disable the tablet hunt.', 5, page)
+                issue(f'Chozo Relic Hunt: {label}. Change that setting or disable the tablet hunt.', 5, page, 'Chozo Relic Hunt: {0}. Change that setting or disable the tablet hunt.', (label,))
         if issues:
             return dict(ok=False, issues=issues, notes=[])
     sys.path.insert(0, str(ROOT/'upstream'))
@@ -43,7 +46,7 @@ def check_settings(request):
     except (ValueError, KeyError, TypeError, IndexError) as ex:
         message = str(ex)
         page = 5 if any(k in message for k in ('Relic', 'relic', 'quota', 'Scavenger', 'objective')) else 8 if 'skill setting' in message else 7 if 'technique' in message else 1
-        issue(message, page)
+        issue(message, page, key="Invalid setting: {0}" if message.startswith("Invalid ") else None, args=(message[8:],))
         return dict(ok=False, issues=issues, notes=[])
     from sm_integration import patch_catalog
     patches = request.get('patches', [])
@@ -59,12 +62,12 @@ def check_settings(request):
         Objectives.startAP = options['startLocation'] if options['startLocation'] != 'random' else 'Landing Site'
         names = options['objective']
         if len(names) > Objectives.maxActiveGoals:
-            issue(f'Selected objectives: at most {Objectives.maxActiveGoals} can be active.', 5)
+            issue(f'Selected objectives: at most {Objectives.maxActiveGoals} can be active.', 5, key='Selected objectives: at most {0} can be active.', args=(Objectives.maxActiveGoals,))
         else:
             for name in names:
                 if goals.conflict(Objectives.goals[name]):
                     active = ', '.join(g.name for g in Objectives.activeGoals)
-                    issue(f'Objective "{name}" conflicts with the current selection ({active}) or the selected start / Tourian mode. Remove the conflicting objective or adjust World & escape.', 5, 4)
+                    issue(f'Objective "{name}" conflicts with the current selection ({active}) or the selected start / Tourian mode. Remove the conflicting objective or adjust World & escape.', 5, 4, 'Objective "{0}" conflicts with the current selection ({1}) or the selected start / Tourian mode. Remove the conflicting objective or adjust World & escape.', (name, active))
                 else:
                     goals.addGoal(name)
         # Generation runs later in this same isolated interpreter. Its objective
@@ -104,7 +107,7 @@ def check_settings(request):
             if not result.bool or result.difficulty > limit:
                 tolerance = rules['preset']['Settings'].get(name, 'Default')
                 rating = diffValue2txt(result.difficulty) if result.bool else 'unreachable'
-                issue(f"{name} / {tolerance}: even with full equipment and ample ammo, VARIA rates this fight {rating}, above Maximum difficulty / {options['maxDifficulty']}. Raise Maximum difficulty or change this boss tolerance.", 8, 1)
+                issue(f"{name} / {tolerance}: even with full equipment and ample ammo, VARIA rates this fight {rating}, above Maximum difficulty / {options['maxDifficulty']}. Raise Maximum difficulty or change this boss tolerance.", 8, 1, "{0} / {1}: even with full equipment and ample ammo, VARIA rates this fight {2}, above Maximum difficulty / {3}. Raise Maximum difficulty or change this boss tolerance.", (name, tolerance, rating, options["maxDifficulty"]))
     return dict(ok=not issues, issues=issues, notes=notes)
 
 
@@ -112,4 +115,4 @@ def validate_json(request_json, attempt=0):
     try:
         return json.dumps(check_settings(json.loads(request_json)), sort_keys=True)
     except Exception as ex:
-        return json.dumps(dict(ok=False, issues=[dict(message=f'Settings check failed: {type(ex).__name__}: {ex}', page=0, otherPage=None)], notes=[]))
+        return json.dumps(dict(ok=False, issues=[dict(message=f'Settings check failed: {type(ex).__name__}: {ex}', page=0, otherPage=None, messageKey='Settings check failed: {0}: {1}', messageArgs=[type(ex).__name__, str(ex)])], notes=[]))

@@ -25,6 +25,8 @@ struct FSMSeedItem {
 struct FSMSettingsIssue {
     FString Message;
     int32 Page=0, OtherPage=-1;
+    FString MessageKey;
+    TArray<FString> MessageArgs;
 };
 struct FSMSettingsValidation {
     bool Ok=false;

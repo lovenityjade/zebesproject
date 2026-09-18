@@ -1,3 +1,4 @@
+#include "sm_locale.h"
 #include "sm_start.h"
 #include "sm_relic.h"
 #include "sm_generation.h"
@@ -108,15 +109,11 @@ int sm_generation_input(void) {
   QueueSfx1_Max6(ok?0x38:0x3d);return 1;
 }
 // Original two-tile menu alphabet. V shares U's upper half: 2E is blank.
-static void glyph(char c,uint16_t *top,uint16_t *bottom) {
-  static const uint8_t tops[26]={0x0a,0x0b,0x0c,0x0d,0x0e,0x0e,0x0c,0x21,0x22,0x23,0x24,0x25,0x26,0x27,0x00,0x0d,0x00,0x0d,0x2b,0x2c,0x2d,0x2d,0x2d,0x40,0x41,0x42};
-  static const uint8_t bots[26]={0x1a,0x1b,0x1c,0x1d,0x1e,0x25,0x30,0x31,0x11,0x33,0x34,0x35,0x36,0x37,0x10,0x38,0x39,0x3a,0x3b,0x11,0x3d,0x3e,0x3f,0x50,0x11,0x52};
-  *top=c>='A'&&c<='Z'?tops[c-'A']:0x0f;*bottom=c>='A'&&c<='Z'?bots[c-'A']:0x0f;
-}
 static void text(int row,const char *label,int disabled) {
-  int x=(32-(int)strlen(label))/2;
-  for(;*label && x<31;x++,label++){
-    uint16_t a,b;glyph(*label,&a,&b);uint16_t pal=disabled?0x400:0;
+  label=sm_locale_text(label);int x=(32-sm_locale_length(label))/2;
+  for(;*label && x<31;x++){
+    uint16_t a,b;sm_locale_menu_big(sm_locale_next(&label),&a,&b);uint16_t pal=disabled?0x400:0;
+    if(x<0)continue;
     ram3000.pause_menu_map_tilemap[row*32+x]=a|pal;
     ram3000.pause_menu_map_tilemap[(row+1)*32+x]=b|pal;
   }
@@ -126,14 +123,25 @@ static uint16_t small_glyph(char c){
   switch(c){case '.':return 0x88;case ',':return 0x89;case '!':return 0x84;case '-':return 0x87;case ':':return 0x8c;default:return 0x0f;}
 }
 static void small(int row,const char *label,int disabled){
-  int x=(32-(int)strlen(label))/2;for(;*label && x<31;x++,label++)if(x>=0)ram3000.pause_menu_map_tilemap[row*32+x]=small_glyph(*label)|(disabled?0x400:0);
+  label=sm_locale_text(label);int x=(32-sm_locale_length(label))/2;for(;*label && x<31;x++){int cp=sm_locale_next(&label);if(x>=0)ram3000.pause_menu_map_tilemap[row*32+x]=(sm_locale_get()?sm_locale_menu_small(cp):small_glyph(sm_locale_base(cp)))|(disabled?0x400:0);}
 }
 void sm_generation_draw(void) {
   if(game_options_screen_index!=2 && game_options_screen_index!=3)return;
+  sm_locale_menu_font();
   // Keep the native frame/header and controller footer; rebuild only the body.
   for(int y=5;y<25;y++)for(int x=1;x<31;x++)ram3000.pause_menu_map_tilemap[y*32+x]=0x0f;
   const char *names[]={"VANILLA MODE","STORY MODE","BOSS RUSH MODE","RANDOMIZER MODE"};
   int future=display_mode==SM_MODE_STORY || display_mode==SM_MODE_BOSS_RUSH;
+  if(sm_locale_get()){
+    for(int y=1;y<=2;y++)for(int x=9;x<23;x++)ram3000.pause_menu_map_tilemap[y*32+x]=15;
+    text(1,"OPTIONS",0);
+    // Footer keeps the original D-pad and A/B sprites as input cues.
+    for(int x=4;x<12;x++)ram3000.pause_menu_map_tilemap[26*32+x]=15;
+    for(int x=15;x<20;x++)ram3000.pause_menu_map_tilemap[26*32+x]=15;
+    for(int x=22;x<31;x++)ram3000.pause_menu_map_tilemap[26*32+x]=15;
+    const struct {int x;const char* label;} hints[]={{4,"CHOISIR"},{16,"OK"},{23,"RETOUR"}};
+    for(int h=0;h<3;h++)for(int i=0;hints[h].label[i];i++)ram3000.pause_menu_map_tilemap[26*32+hints[h].x+i]=sm_locale_menu_small(hints[h].label[i]);
+  }
   text(6,names[display_mode],future);
   uint16_t arrows=menu_option_index==1?0:0x400;
   ram3000.pause_menu_map_tilemap[7*32+2]=0x405c|arrows;ram3000.pause_menu_map_tilemap[7*32+29]=0x5c|arrows;

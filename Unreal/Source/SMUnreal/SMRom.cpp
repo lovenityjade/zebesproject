@@ -1,4 +1,5 @@
 #include "SMRom.h"
+#include "SMLocalization.h"
 #include "HAL/FileManager.h"
 #include "HAL/PlatformFileManager.h"
 #include "HAL/PlatformMisc.h"
@@ -14,7 +15,7 @@ bool ReadValidated(const FString& Path, TArray<uint8>& Bytes, FString& Error) {
     const int64 Length = IFileManager::Get().FileSize(*Path);
     if (Length < 0) { Error = TEXT("ROM not found or unreadable. Select your Super Metroid ROM below."); return false; }
     if (Length != SMRom::Size) {
-        Error = FString::Printf(TEXT("Wrong ROM size: %lld bytes. Expected 3,145,728 bytes (unheadered Japan/USA ROM)."), Length);
+        Error = SMLocalization::Text(FString(TEXT("Wrong ROM size: %lld bytes. Expected 3,145,728 bytes (unheadered Japan/USA ROM)."))).Replace(TEXT("%lld"),*LexToString(Length));
         return false;
     }
     if (!FFileHelper::LoadFileToArray(Bytes, *Path) || Bytes.Num() != SMRom::Size) {
@@ -22,7 +23,7 @@ bool ReadValidated(const FString& Path, TArray<uint8>& Bytes, FString& Error) {
     }
     const uint32 Actual = FCrc::MemCrc32(Bytes.GetData(), Bytes.Num());
     if (Actual != SMRom::Crc) {
-        Error = FString::Printf(TEXT("Incompatible ROM. CRC32: %08X; expected D63ED5F8. Use the unmodified Japan/USA ROM."), Actual);
+        Error = SMLocalization::Text(FString(TEXT("Incompatible ROM. CRC32: %08X; expected D63ED5F8. Use the unmodified Japan/USA ROM."))).Replace(TEXT("%08X"),*FString::Printf(TEXT("%08X"),Actual));
         return false;
     }
     FSHAHash Hash;

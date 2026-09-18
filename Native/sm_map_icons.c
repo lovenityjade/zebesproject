@@ -5,6 +5,7 @@
 #include "sm_doors.h"
 #include "sm_seed.h"
 #include "sm_map_browser.h"
+#include "sm_seed_atlas.h"
 #include "sm_objectives.h"
 #include "sm_objective_events.h"
 #include "ida_types.h"
@@ -22,7 +23,7 @@ static int explored(const MapIconPosition *p){
 }
 static int portal_sprite(const MapPortal *portals,int count,int index,int destination){
   if(index<0 || index>=count || destination<0 || destination>=count)return -1;
-  const MapIconPosition *p=&portals[index].display;
+  const MapIconPosition *p=sm_seed_atlas_available()?&portals[index].actual:&portals[index].display;
   if(!explored(p))return sm_map_fully_known() || map_station_byte_array[p->area]?MAP_UNKNOWN_PORTAL:-1;
   /* VARIA reveals the destination only after both ends are explored. An
    * explored source with an unexplored target intentionally has no icon. */
@@ -30,11 +31,14 @@ static int portal_sprite(const MapPortal *portals,int count,int index,int destin
 }
 static void draw_at(uint8_t *out,int width,int area_id,int map_x,int map_y,int offset_x,int offset_y,const uint16_t *pixels){
   int pause=game_state==15,area=pause?sm_map_browser_view_area():area_index;
-  if(area!=area_id)return;
+  int atlas=pause && sm_seed_atlas_active(),scale=atlas?sm_seed_atlas_cell_size():8;
+  if(!atlas && area!=area_id)return;
+  if(!pause && !sm_seed_atlas_local(area_id,map_x/8,map_y/8))return;
   int left,right,top,bottom,x,y;
   if(pause){
     left=8;right=width-8;top=48;bottom=192;
-    x=map_x-(int16_t)reg_BG1HOFS+(width-256)/2;y=map_y-(int16_t)reg_BG1VOFS;
+    if(atlas){if(!sm_seed_atlas_project(area_id,map_x,map_y,width,&x,&y))return;}
+    else{x=map_x-(int16_t)reg_BG1HOFS+(width-256)/2;y=map_y-(int16_t)reg_BG1VOFS;}
   }else{
     int mx=room_x_coordinate_on_map+(samus_x_pos>>8),my=room_y_coordinate_on_map+(samus_y_pos>>8)+1;
     /* Preserve Samus's native minimap cursor on the occupied tile. */
@@ -42,10 +46,10 @@ static void draw_at(uint8_t *out,int width,int area_id,int map_x,int map_y,int o
     left=width==400?336:208;right=left+(width==400?7:5)*8;top=0;bottom=(width==400?4:3)*8;
     x=left+map_x+(-mx+(width==400?4:2))*8;y=map_y+(-my+1)*8;
   }
-  x+=offset_x;y+=offset_y;
+  x+=offset_x*scale/8;y+=offset_y*scale/8;
   const uint8_t *brightness=g_snes->ppu->brightnessMult;
-  for(int dy=0;dy<8;dy++)for(int dx=0;dx<8;dx++){
-    uint16_t c=pixels[dy*8+dx];int px=x+dx,py=y+dy;
+  for(int dy=0;dy<scale;dy++)for(int dx=0;dx<scale;dx++){
+    uint16_t c=pixels[(dy*8/scale)*8+dx*8/scale];int px=x+dx,py=y+dy;
     if(c==65535 || px<left || px>=right || py<top || py>=bottom)continue;
     uint8_t *pixel=out+(py*width+px)*4;
     pixel[0]=brightness[(c>>10)&31];pixel[1]=brightness[(c>>5)&31];pixel[2]=brightness[c&31];pixel[3]=255;
@@ -97,14 +101,15 @@ static void render(uint8_t *out,int width){
     for(int i=0;i<40;i++){
       int j=sm_minimizer_destination(i);
       const MapPortal *src=i<32?&map_area_portals[i]:&map_boss_portals[i-32];
+      if(j<0 || j>=40)continue;
       const MapPortal *dst=j<32?&map_area_portals[j]:&map_boss_portals[j-32];
-      int sprite=explored(&src->display)?(explored(&dst->actual)?dst->sprite:-1):
+      int sprite=explored(sm_seed_atlas_available()?&src->actual:&src->display)?(explored(&dst->actual)?dst->sprite:-1):
         (sm_map_fully_known() || map_station_byte_array[src->display.area]?MAP_UNKNOWN_PORTAL:-1);
-      draw(out,width,&src->display,sprite);
+      draw(out,width,sm_seed_atlas_available()?&src->actual:&src->display,sprite);
     }
     return;
   }
-  for(int i=0;i<32;i++)draw(out,width,&map_area_portals[i].display,
+  for(int i=0;i<32;i++)draw(out,width,sm_seed_atlas_available()?&map_area_portals[i].actual:&map_area_portals[i].display,
       portal_sprite(map_area_portals,32,i,sm_areas_destination(i)));
   for(int i=0;i<8;i++)draw(out,width,&map_boss_portals[i].display,
       portal_sprite(map_boss_portals,8,i,sm_connections_destination(i)));

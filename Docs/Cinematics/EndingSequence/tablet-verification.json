@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "cases": [
+    {
+      "tabletDeparture": {
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            654,
+            5
+          ],
+          [
+            861,
+            6
+          ],
+          [
+            1969,
+            7
+          ],
+          [
+            3210,
+            0
+          ]
+        ],
+        "frames": 3210,
+        "animalFrames": 0,
+        "animalFirst": [],
+        "animalLast": [],
+        "shock": [
+          984,
+          1002,
+          1020,
+          1038
+        ]
+      },
+      "escapeTimerStopped": true
+    }
+  ]
+}

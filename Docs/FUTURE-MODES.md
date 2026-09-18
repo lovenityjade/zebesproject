@@ -36,6 +36,9 @@ implementation or a confirmed protocol contract.
   portrait on the left, two lines of text on the right, no speaker name, native
   frame/font and blinking yellow downward arrow. See the
   [approved dialogue lab reference](../Labs/Dialogue/README.md).
+- The [dialogue foundation](StoryMode/DIALOGUE.md) is implemented as a dormant
+  native/Unreal scripting API. No story scene or trigger is included, and Story
+  Mode remains unavailable in the menu.
 
 To define with the user: the story, cinematic events, the four endings and their
 unlock conditions. Whether endings depend on choices, actions, discoveries or a

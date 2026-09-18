@@ -7,6 +7,7 @@ class UTexture2D;
 class USoundWaveProcedural;
 class UAudioComponent;
 class UMaterialInstanceDynamic;
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSMDialogueClosed, bool, Completed);
 UCLASS()
 class ASMHUD : public AHUD {
     GENERATED_BODY()
@@ -16,7 +17,37 @@ public:
     virtual void Tick(float DeltaSeconds) override;
     virtual void DrawHUD() override;
     virtual void EndPlay(const EEndPlayReason::Type Reason) override;
+    UFUNCTION(BlueprintCallable, Category="Story|Dialogue")
+    bool ShowDialogue(const FString& Text, UTexture2D* Portrait = nullptr);
+    UFUNCTION(BlueprintCallable, Category="Story|Dialogue")
+    void CloseDialogue();
+    UFUNCTION(BlueprintPure, Category="Story|Dialogue")
+    bool IsDialogueOpen() const;
+    UPROPERTY(BlueprintAssignable, Category="Story|Dialogue")
+    FSMDialogueClosed OnDialogueClosed;
 private:
+    void AdvanceSuitTransformation(float Dt);
+    void DrawSuitTransformation(float X,float Y,float Scale);
+    bool PrepareSuitCapture();
+    void CaptureSuitFrame();
+    UPROPERTY() TObjectPtr<UTexture2D> SuitGlow;
+    int SuitKind=0,SuitPhase=0,SuitRoom=0,SuitTest=0,SuitCaptureFrame=0;
+    float SuitTime=0,SuitReleaseTime=-1,SuitFade=0;
+    FVector2D SuitPosition=FVector2D::ZeroVector;
+    TArray<uint8> SuitCaptureAudio;
+    FString SuitCapturePath;
+    bool TickDialogue(float Dt);
+    void DrawDialogue(float X,float Y,float Scale);
+    void FinishDialogue(bool Completed);
+    UPROPERTY() TObjectPtr<UTexture2D> DialogueTexture;
+    UPROPERTY() TObjectPtr<UTexture2D> DialoguePortrait;
+    bool DialogueVisible=false,DialogueInputFence=false;
+    int DialogueWidth=400;
+    int (*DialogueOpen)(const char*,int)=nullptr;
+    void (*DialogueTick)(float,int)=nullptr;
+    void (*DialogueClose)()=nullptr;
+    int (*DialogueState)(int)=nullptr;
+    const uint8* (*DialoguePixels)()=nullptr;
     void ApplyRomWindowIcon();
     void ReleaseRomWindowIcon();
     void* RomWindowIcon=nullptr;

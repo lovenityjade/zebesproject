@@ -2,6 +2,7 @@
  * all temporary scroll, VRAM, OAM and line-buffer changes. Native PPU state is
  * never modified by the wide view. 400x224, integer-scaled in Unreal. */
 #include "sm_sprite_view.h"
+#include "ida_types.h"
 int sm_wide_enabled;
 uint8_t sm_wide_pixels[400*240*4],sm_wide_layers[400*240*4];
 uint8_t sm_wide_far[400*240],sm_wide_hud[400*240*4];
@@ -11,6 +12,22 @@ static int wide_valid;
 static int wide_blank_tiles[2];
 #include "sm_border.inc"
 #include "sm_pause_wide.inc"
+static uint16_t wide_maridia_fill(uint16_t block,int bx) {
+  // Temporary presentation for unused solid cells revealed past native camera
+  // limits. Only the exact X marker is replaced; authored paint wins above it.
+  // These are original interior materials, never doors, plants or collision edits.
+  if(area_index!=4 || block!=0x83ff)return block;
+  int set=get_RoomDefRoomstate(roomdefroomstate_ptr)->graphics_set;
+  if(set==11)switch(room_ptr) {
+    case 0xcf80:case 0xcfc9:case 0xd055:case 0xd0b9:case 0xd1a3:
+      return 0x811d; // Dark interior of west Maridia's rock walls.
+    case 0xd16d:case 0xd1dd:case 0xd340:
+      return 0x8210; // Continuous sand, matching the surrounding solid fill.
+  }
+  if(set==12 && room_ptr==0xd913)
+    return 0x8000 | ((bx&1)?0x1e1:0x1e3); // Native alternating purple masonry.
+  return block;
+}
 static uint16_t wide_room_tile(int layer,int wx,int wy) {
   int outside=wx<0 || wy<0 || wx>=room_width_in_blocks*16 || wy>=room_height_in_blocks*16;
   int bx=wx>=0?wx/16:-((-wx+15)/16),by=wy>=0?wy/16:-((-wy+15)/16);
@@ -33,6 +50,7 @@ static uint16_t wide_room_tile(int layer,int wx,int wy) {
    * Continue their material only in the newly exposed presentation spans. */
   if(!authored && border_enabled && !outside && !layer && (block>>12)==8 && !border_visible(block,0))
     block=border_choose(0,bx,by);
+  if(!authored && !layer)block=wide_maridia_fill(block,bx);
   int tx=(wx>>3)&1,ty=(wy>>3)&1;
   if(block&0x400)tx^=1;if(block&0x800)ty^=1;
   const uint16_t *tiles=(const uint16_t*)(g_ram+0xa000+(block&1023)*8);
@@ -75,12 +93,19 @@ static void wide_fill_row(Ppu *p,int layer,int line,int offset,int count) {
 }
 static void wide_draw_span(Ppu *original,int line,int offset,int count,int destination) {
   Ppu *p=&wide_ppu;memcpy(p,original,sizeof(*p));
+  if(sm_combat_effects && sm_visual_suit())sm_scene_replace_suit(p);
   if(sm_combat_effects && ((power_bomb_explosion_status&0x8000) || sm_visual_eye())) {memset(p->mathEnabled,0,sizeof(p->mathEnabled));p->clipMode=0;}
   // Rebuild the streamed maps on the copy. Animated/destructible blocks have
   // already updated level_data, so the side view follows their current state.
   // During the middle of a door load the RAM room, VRAM and scroll registers
   // describe different rooms. Only reconstruct once that data is coherent.
   int room_ready=game_state!=11 || door_transition_function<0xe36e || door_transition_function==0xe737;
+  const int boss_body=sm_scene_finite_bg2(p);
+  // BG2 is a single body texture here, not a repeating room background.
+  // Recover the signed scroll from the PPU's ten-bit register so the real
+  // texture can extend into a side span without revealing its next copy.
+  int body_scroll=p->bgLayer[1].hScroll&1023;
+  if(body_scroll&512)body_scroll-=1024;
   if(p->mode==1 && room_ready) {
     wide_fill_row(p,0,line,offset,count);
     if(!(layer2_scroll_x&1) && !(layer2_scroll_y&1)) {
@@ -141,10 +166,18 @@ static void wide_draw_span(Ppu *original,int line,int offset,int count,int desti
     int bx=wx>=0?wx/16:-((-wx+15)/16),by=wy>=0?wy/16:-((-wy+15)/16);uint16_t authored;
     int painted=outside && (sm_decor_get(0,bx,by,&authored)||sm_decor_get(1,bx,by,&authored));
     if(!room_ready || (outside && (!border_enabled || p->mode!=1) && !painted)) {memset(out,0,4);out[3]=255;memset(meta,0,4);continue;}
-    if(!fast)ppu_handlePixel(p,x,line);
+    int body_x=offset+x+body_scroll;
+    if(boss_body && (body_x<0 || body_x>=256)) {
+      bool main=p->layer[1].mainScreenEnabled,sub=p->layer[1].subScreenEnabled;
+      p->layer[1].mainScreenEnabled=p->layer[1].subScreenEnabled=false;
+      // Recompose the underlying layers, including sprites and color math;
+      // blacking out the final pixel would erase legitimate room content.
+      ppu_handlePixel(p,x,line);
+      p->layer[1].mainScreenEnabled=main;p->layer[1].subScreenEnabled=sub;
+    } else if(!fast)ppu_handlePixel(p,x,line);
     int layer=sm_last_main_layer[x];
     meta[0]=layer;meta[1]=meta[2]=0;meta[3]=255;
-    if(p->mode==1 && (layer==1 || layer==5)) {
+    if(p->mode==1 && !boss_body && (layer==1 || layer==5)) {
       int wy=layer1_y_pos+line;
       sm_wide_far[idx]=room_ptr==0x91f8?(wy<1168?64:(wy<1192?128:192)):255;
       if(sm_scene_parallax && (sm_scene_camera_x || sm_scene_camera_y)) {

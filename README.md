@@ -5,7 +5,7 @@
 <h1 align="center">The Zebes Project</h1>
 <p align="center"><strong>Rediscover Zebes. Keep the pixels. Change the adventure.</strong></p>
 <p align="center">Native gameplay · Unreal atmosphere · Integrated VARIA randomizer</p>
-<p align="center"><strong>ALPHA-0.24</strong> · Code: MIT · Project artwork: separate terms</p>
+<p align="center"><strong>ALPHA-0.25</strong> · Code: MIT · Project artwork: separate terms</p>
 
 A fan-made native Super Metroid PC project that preserves the original game's
 pixel art and brings it into Unreal Engine: widescreen exploration, atmospheric
@@ -15,7 +15,9 @@ Play the familiar adventure, or make Zebes surprise you all over again.
 **This is an alpha for bug testing, not a finished remake.** Vanilla and Randomizer
 are playable; Story and Boss Rush remain unavailable previews. Download the
 Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjade/zebesproject/releases). See the
-[release status](Docs/Releases/ALPHA-0.24/README.md).
+[release status](Docs/Releases/ALPHA-0.25/README.md).
+
+**French Canadian localization:** choose **Language → French (Canada)** in the system menu. The [French website and help](https://thelovenityjade.me/zebes/fr/) are live; see [localization coverage and validation](Docs/Localization/README.md).
 
 ## One planet. Your way to play.
 
@@ -24,7 +26,7 @@ Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjad
 - **Vanilla gameplay**, with optional improvements rather than mandatory assists.
 - **Independent A/B/C saves**: mix Vanilla and Randomized games, each randomized
   slot keeping its own seed and settings.
-- **Native menus and maps**, original fonts and mode emblems; English system
+- **Native menus and maps**, original fonts and mode emblems; localized system
   settings for display, effects, audio, controls and comfort.
 - **New Game+** from a completed Vanilla save: retain the recorded equipment and
   resources, face tougher enemies, and preserve the original save.
@@ -61,7 +63,7 @@ Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjad
 ### Less friction, more playing
 
 - Optional **Wall Jump and Space Jump assists**, with original behavior retained.
-- Optional **energy/ammo refill at save stations**.
+- Optional **energy/ammo refill at save stations**, enabled by default for new configurations.
 - **LT/RT item cycling**, controller bindings and keyboard controls.
 - **Vanilla and NG+ speedrun categories**, using native in-game time. No QoL and
   QoL categories are separate; only the two jump assists qualify for QoL runs.
@@ -76,7 +78,7 @@ Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjad
 For exact behavior and limitations, see [quality of life](Docs/QUALITY-OF-LIFE.md),
 [playtest features](Docs/PLAYTEST-FEATURES.md), [trackers](Docs/Tracker/README.md),
 [randomizer settings](Docs/Randomizer/FullOptions/STATUS.md) and
-[ALPHA-0.24 validation](Docs/ALPHA-0.24-VALIDATION.md).
+[ALPHA-0.25 validation](Docs/Releases/ALPHA-0.25/README.md).
 
 ## Bring your own game
 
@@ -106,7 +108,7 @@ includes the selected third-party Remastered recordings, with their credits.
 - **Linux x86-64:** make the AppImage executable, then run it. A recent Vulkan
   driver and glibc 2.35 or newer are required. If FUSE is unavailable, run with
   `--appimage-extract-and-run`.
-- **macOS:** not included in ALPHA-0.24.
+- **macOS:** not included in ALPHA-0.25.
 
 Linux AppImage user data lives in `$XDG_DATA_HOME/zebesproject`, or
 `~/.local/share/zebesproject` by default. ROMs and saves remain outside the
@@ -130,14 +132,14 @@ credentials.** Use the [bug report template](.github/ISSUE_TEMPLATE/bug_report.y
 
 ## On the horizon
 
-These are planned features, **not promises for ALPHA-0.24**:
+These are planned features, **not promises for ALPHA-0.25**:
 
 | Feature | Direction |
 | --- | --- |
 | **Boss Rush** | All bosses and minibosses, minimum equipment, one chance, a timed challenge and a dedicated leaderboard; Easy, Medium, Hard and Hardcore. |
 | **Multiworld** | Native integration with **SekaiLink: Rebooted** and **Archipelago**. |
 | **Story Mode** | A Vanilla-based adventure with scripted cinematics, human voice acting and **four endings**. |
-| **Online competition** | Discord identity and in-game/web leaderboards. A private receiver/database foundation exists; automatic upload and public rankings are not live. |
+| **Online competition** | In-game rankings and Discord identity are planned. The website already accepts completed run records for review and displays approved scores; automatic in-game upload is not available. |
 
 See the [roadmap](Docs/FUTURE-MODES.md). There are no announced delivery dates.
 
@@ -162,6 +164,8 @@ See the [roadmap](Docs/FUTURE-MODES.md). There are no announced delivery dates.
 intro voice by **Luke Correia**; MSU integration references by **DarkShock** and
 **Cubear**. These works belong to their respective creators. See the
 [soundtrack credits and sources](Docs/REMASTERED-SOUNDTRACK.md).
+
+**The Zebes Project — Special Thanks:** **Guiz de Pessemier** ([Le Jeux c'est Sérieux](https://twitch.tv/jeuserieux)) and **Eric Certossini** ([Certo Jeux Droles](https://twitch.tv/certojeuxdroles)).
 
 Full notices, pinned dependencies and attribution boundaries are recorded in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Upstream notices are retained;
@@ -217,4 +221,4 @@ and packaging tools; use the commands above for the current public source build.
 
 [Developer notes](Docs/DEVELOPMENT-GUIDE.md) ·
 [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) ·
-[Security](SECURITY.md) · [Release status](Docs/Releases/ALPHA-0.24/README.md)
+[Security](SECURITY.md) · [Release status](Docs/Releases/ALPHA-0.25/README.md)

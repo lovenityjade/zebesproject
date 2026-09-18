@@ -1,5 +1,6 @@
 #include "SMHUD.h"
 #include "SMRom.h"
+#include "SMLocalization.h"
 #include "HAL/FileManager.h"
 #include "ImageUtils.h"
 #include "Engine/Canvas.h"
@@ -16,7 +17,7 @@ void ASMHUD::LoadGameOverPresentation(){
     };
     GameOverWideTexture=Load(TEXT("GameOver-16x9.png"));
     GameOverClassicTexture=Load(TEXT("GameOver-4x3.png"));
-    GameOverLabelsTexture=UTexture2D::CreateTransient(128,48,PF_B8G8R8A8);
+    GameOverLabelsTexture=UTexture2D::CreateTransient(128,64,PF_B8G8R8A8);
     GameOverLabelsTexture->SRGB=true;GameOverLabelsTexture->Filter=TF_Nearest;GameOverLabelsTexture->UpdateResource();
     GameOverDustTexture=UTexture2D::CreateTransient(32,32,PF_B8G8R8A8);
     GameOverDustTexture->SRGB=true;GameOverDustTexture->Filter=TF_Bilinear;
@@ -81,15 +82,25 @@ bool ASMHUD::DrawGameOver(){
         const float Size=FMath::Max(1.f,W/1280.f*(2.5f+Seed*3.5f));
         DrawTexture(GameOverDustTexture,X+U*W,Y+V*H,Size,Size,0,0,1,1,FLinearColor(1,1,1,Alpha),BLEND_Translucent);
     }
-    const int Key=GameOverState(1)+Brightness()*2;
+    const int Key=GameOverState(1)+Brightness()*2+SMLocalization::Language()*64;
     if(Key!=GameOverLabelKey){
-        auto* Copy=static_cast<uint8*>(FMemory::Malloc(128*48*4));FMemory::Memcpy(Copy,GameOverLabels(),128*48*4);
-        auto* Region=new FUpdateTextureRegion2D(0,0,0,0,128,48);
+        auto* Copy=static_cast<uint8*>(FMemory::Malloc(128*64*4));FMemory::Memcpy(Copy,GameOverLabels(),128*64*4);
+        auto* Region=new FUpdateTextureRegion2D(0,0,0,0,128,64);
         GameOverLabelsTexture->UpdateTextureRegions(0,1,Region,128*4,4,Copy,
             [](uint8* Bytes,const FUpdateTextureRegion2D* R){FMemory::Free(Bytes);delete R;});
         GameOverLabelKey=Key;
     }
     const float LabelScale=H/224.f;
-    DrawTexture(GameOverLabelsTexture,X+(W-128*LabelScale)/2,Y+H*.32f,128*LabelScale,48*LabelScale,0,0,1,1,FLinearColor::White,BLEND_Translucent);
+    if(SMLocalization::Language()){
+        // The source illustration has an English title baked into it. A native
+        // lettering panel translates that title without changing the artwork,
+        // spotlight, particles or recorded audio files.
+        const float PX=X+W*.11f,PY=Y+H*.125f,PW=W*.78f,PH=H*.165f,Edge=FMath::Max(1.f,LabelScale);
+        DrawRect(FLinearColor(.2f*Fade,.3f*Fade,.4f*Fade,1),PX,PY,PW,PH);
+        DrawRect(FLinearColor(.01f*Fade,.018f*Fade,.025f*Fade,1),PX+Edge,PY+Edge,PW-2*Edge,PH-2*Edge);
+        const float TitleScale=W*.6f/104.f;
+        DrawTexture(GameOverLabelsTexture,X+(W-128*TitleScale)/2,Y+H*.2075f-8*TitleScale,128*TitleScale,16*TitleScale,0,.75f,1,.25f,FLinearColor::White,BLEND_Translucent);
+    }
+    DrawTexture(GameOverLabelsTexture,X+(W-128*LabelScale)/2,Y+H*.32f,128*LabelScale,48*LabelScale,0,0,1,.75f,FLinearColor::White,BLEND_Translucent);
     return true;
 }

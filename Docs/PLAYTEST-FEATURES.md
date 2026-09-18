@@ -11,8 +11,9 @@ categories force it off; the preference remains available for casual games.
 
 The reported local incident was configuration: the local preference was false
 and the active seed's setting was off. The personal preference is now true for
-the next launch. The seed and its placements were preserved. The installation
-default remains off.
+the next launch. The seed and its placements were preserved. Since September 17, the installation
+default is on; existing explicit preferences are preserved. See the
+[seed map and saved-station travel update](Tracker/SeedAtlas/README.md).
 
 ## Vanilla runs and New Game+
 

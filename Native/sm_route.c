@@ -1,3 +1,4 @@
+#include "sm_locale.h"
 #include "sm_route.h"
 #include "sm_seed.h"
 #include "sm_generation.h"
@@ -134,7 +135,7 @@ const uint8_t *sm_route_pixels(int at){
   static const char *names[]={"CRATERIA","BRINSTAR","NORFAIR","WRECKED SHIP","MARIDIA","TOURIAN"};
   sm_native_text_height(pixels,528,320,8,8,"RUN RECAP",0xffffff);
   sm_native_text_height(pixels,528,320,232,8,names[area],0xffcf45);
-  char label[48];snprintf(label,sizeof(label),"%d OF %u",cursor+1,count);sm_native_text_height(pixels,528,320,392,8,label,0xffffff);
+  char label[48];snprintf(label,sizeof(label),sm_locale_get()?"%d SUR %u":"%d OF %u",cursor+1,count);sm_native_text_height(pixels,528,320,392,8,label,0xffffff);
   sm_native_text_height(pixels,528,320,8,299,"A PLAY PAUSE   LEFT RIGHT SEEK   L R SPEED   B BACK",0xb0d8ff);
   if(header.partial)sm_native_text_height(pixels,528,320,8,19,"PARTIAL HISTORY",0xffaa55);
   return pixels;

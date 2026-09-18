@@ -2,7 +2,7 @@
 #include "sm_save_refill.h"
 #include "ida_types.h"
 #include "variables.h"
-static int refill_enabled;
+static int refill_enabled=1;
 void sm_set_refill_before_save(int enabled){refill_enabled=enabled!=0;}
 int sm_refill_before_save(void){return refill_enabled;}
 void sm_refill_at_save(void){

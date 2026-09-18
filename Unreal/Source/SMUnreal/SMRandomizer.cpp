@@ -115,6 +115,8 @@ FSMSettingsValidation FSMRandomizer::ValidateSettings(const FString& Root,const 
     for(const auto& Value:*Issues){
         auto I=Value->AsObject();FSMSettingsIssue Issue;double Other=-1;
         if(!I || !I->TryGetStringField(TEXT("message"),Issue.Message))return Fail(TEXT("Invalid settings-check issue."));
+        I->TryGetStringField(TEXT("messageKey"),Issue.MessageKey);
+        I->TryGetStringArrayField(TEXT("messageArgs"),Issue.MessageArgs);
         Issue.Page=FMath::Clamp(I->GetIntegerField(TEXT("page")),0,8);
         if(I->TryGetNumberField(TEXT("otherPage"),Other))Issue.OtherPage=FMath::Clamp(int32(Other),0,8);
         Result.Issues.Add(Issue);

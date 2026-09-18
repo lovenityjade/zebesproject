@@ -1,6 +1,9 @@
+#include "sm_locale.h"
 #include "sm_travel.h"
 #include "sm_generation.h"
 #include "sm_map_browser.h"
+#include "sm_runs.h"
+#include "sm_relic.h"
 #include "ida_types.h"
 #include "variables.h"
 #include "funcs.h"
@@ -15,7 +18,8 @@ void sm_travel_reset(void){memset(enabled,0,sizeof(enabled));}
 void sm_travel_configure(int slot,int value){if(slot>=0 && slot<3)enabled[slot]=!!value;}
 int sm_travel_enabled(void){
   int slot=sm_slots_current();
-  return slot>=0 && slot<3 && enabled[slot] && sm_seed_active() && sm_generation_state()==2;
+  return slot>=0 && slot<3 && enabled[slot] && sm_seed_active() && sm_generation_state()==2 &&
+    !sm_run_state(0) && !sm_relic_escape_active() && !CheckEventHappened(14);
 }
 static const uint8_t *icons(int area){return RomPtr_82(GET_WORD(RomPtr_82(0xc80b+2*area)));}
 int sm_travel_station_mask(int area){
@@ -94,7 +98,7 @@ static void draw(uint8_t *out,int w){
     for(int area=0;area<6;area++){
       unsigned mask=sm_travel_station_mask(area);if(!mask)continue;
       int count=0;for(int i=0;i<8;i++)count+=!!(mask&(1u<<i));
-      snprintf(text,sizeof(text),"%d SAVE%s",count,count==1?"":"S");
+      snprintf(text,sizeof(text),sm_locale_get()?"%d STATION%s":"%d SAVE%s",count,count==1?"":"S");
       sm_native_map_text(out,w,shift+labels[area][0]-(int)strlen(text)*4,labels[area][1]+(area==3?16:8),text,0x20ff20);
     }
     sm_native_map_text(out,w,shift+40,200,"SAVED STATIONS ONLY",0x20ff20);
@@ -102,7 +106,7 @@ static void draw(uint8_t *out,int w){
   }else if(menu_index==10){
     unsigned mask=sm_travel_station_mask(area_index);int count=0,rank=0;
     for(int i=0;i<8;i++)if(mask&(1u<<i)){++count;if(i==load_station_index)rank=count;}
-    snprintf(text,sizeof(text),"STATION %d OF %d",rank,count);
+    snprintf(text,sizeof(text),sm_locale_get()?"STATION %d SUR %d":"STATION %d OF %d",rank,count);
     sm_native_map_text(out,w,shift+64,192,text,0x20ff20);
     sm_native_map_text(out,w,shift+16,208,"L R STATION  A START",0xffffff);
     sm_native_map_text(out,w,shift+104,216,"B BACK",0xffffff);

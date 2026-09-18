@@ -1,4 +1,5 @@
 #include "SMProfiles.h"
+#include "SMLocalization.h"
 #include "SMSeedSettings.h"
 #include "Dom/JsonObject.h"
 #include "Serialization/JsonSerializer.h"
@@ -78,7 +79,7 @@ bool Supported(const FSMSeedPlan& Plan, FString& Error) {
     for(const FString& Behavior : Plan.RequiredNativeBehavior) {
         if(Behavior!=TEXT("zebes-awake") && Behavior!=TEXT("morph-eye-item-check") &&
            Behavior!=TEXT("native-animals-v1") && Behavior!=TEXT("respin-v1") && Behavior!=TEXT("infinite-spacejump-v1") && Behavior!=TEXT("item-sounds-v1") && Behavior!=TEXT("native-suits-v1") && Behavior!=TEXT("round-robin-cf-v1") && Behavior!=TEXT("momentum-landing-v1") && Behavior!=TEXT("nerfed-charge-v1") && Behavior!=TEXT("native-escape-v1") && Behavior!=TEXT("native-minimizer-v1") && Behavior!=TEXT("native-fast-tourian-v1") && Behavior!=TEXT("native-scavenger-v1") && Behavior!=TEXT("native-objectives-v1") && Behavior!=TEXT("native-area-connections-v1") && Behavior!=TEXT("native-initial-doors-v1") && Behavior!=TEXT("native-door-colors-v1") && Behavior!=TEXT("native-boss-connections-v1") && Behavior!=TEXT("native-door-indicators-v1") && Behavior!=TEXT("native-start-v1") && Behavior!=TEXT("seed-interface-v1") && Behavior!=TEXT("hidden-items-v1") && Behavior!=TEXT("fast-elevators-v1") && Behavior!=TEXT("hud-counts-v1") && Behavior!=TEXT("fast-doors-v1") && Behavior!=TEXT("nerfed-rainbow-v1") && Behavior!=TEXT("save-refill-v1") && Behavior!=TEXT("chozo-relic-v1") && Behavior!=TEXT("empty-pickup-v1") && Behavior!=TEXT("item-location-save-identity") && Behavior!=TEXT("red-tower-blue-doors") && Behavior!=TEXT("blue-brinstar-blue-door")) {
-            Error=TEXT("Unsupported seed behavior: ")+Behavior; return false;
+            Error=SMLocalization::Text(FString(TEXT("Unsupported seed behavior: ")))+Behavior; return false;
         }
     }
     return true;
@@ -87,7 +88,7 @@ bool Supported(const FSMSeedPlan& Plan, FString& Error) {
 FString FSMProfiles::Root() { if(!TestProfileRoot.IsEmpty())return TestProfileRoot;return FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SM/Profiles")); }
 bool FSMProfiles::Read(FString Directory, FSMGameProfile& Out, FString& Error,bool Recover) {
     if(Recover){if(!RecoverBank(Directory,Error))return false;}
-    else if(IFileManager::Get().FileExists(*(Directory/TEXT("bank.transaction.json")))){Error=TEXT("Save bank awaits recovery: ")+Directory;return false;}
+    else if(IFileManager::Get().FileExists(*(Directory/TEXT("bank.transaction.json")))){Error=SMLocalization::Text(FString(TEXT("Save bank awaits recovery: ")))+Directory;return false;}
     Out={}; FString Text,Mode,Id; double Schema=0; bool Flag=false;
     TSharedPtr<FJsonObject> Obj;
     if(FFileHelper::LoadFileToString(Text,*(Directory/TEXT("profile.json"))) &&
@@ -114,7 +115,7 @@ bool FSMProfiles::Read(FString Directory, FSMGameProfile& Out, FString& Error,bo
        !Obj->TryGetStringField(TEXT("name"),Out.Name) || Out.Name.IsEmpty() ||
        !Obj->TryGetStringField(TEXT("mode"),Mode) || (Mode!=TEXT("vanilla") && Mode!=TEXT("randomized")) ||
        !Obj->TryGetBoolField(TEXT("randomized"),Flag) || Flag!=(Mode==TEXT("randomized"))) {
-        Error=TEXT("Invalid save profile: ")+Directory; return false;
+        Error=SMLocalization::Text(FString(TEXT("Invalid save profile: ")))+Directory; return false;
     }
     FGuid Guid; if(!FGuid::ParseExact(Id,EGuidFormats::Digits,Guid)) {Error=TEXT("Invalid profile ID.");return false;}
     Out.Id=Id; Out.Directory=Directory; Out.Randomized=Flag;

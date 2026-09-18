@@ -1,4 +1,6 @@
 #include "sm_objective_pause.h"
+#include "sm_locale.h"
+#include "sm_locale_goals.inc"
 #include "sm_objectives.h"
 #include "sm_objective_events.h"
 #include "sm_map_browser.h"
@@ -11,7 +13,26 @@
 #include <string.h>
 #include "sm_ui_rom_assets.h"
 #include "sm_objective_pause_assets.inc"
-void sm_objective_pause_load_assets(void){objective_pause_gfx_load();}
+static uint16_t accent_tiles[5];
+void sm_objective_pause_load_assets(void){
+ objective_pause_gfx_load();
+ // Reserve only tiles unreferenced by this page, its alphabet and its footer.
+ // The complete original graphics bank is restored when leaving objectives.
+ uint8_t used[512]={0};
+ for(unsigned i=0;i<sizeof(objective_pause_base)/2;i++)used[objective_pause_base[i]&511]=1;
+ for(int i=0;i<128;i++)used[objective_pause_chars[i]&511]=1;
+ for(unsigned i=0;i<sizeof(objective_pause_footer_tiles)/sizeof(*objective_pause_footer_tiles);i++)used[objective_pause_footer_tiles[i][1]&511]=1;
+ for(int i=0x1f8;i<512;i++)used[i]=1;
+ used[0x176]=used[0x177]=used[0x1b8]=1;
+ static const uint8_t masks[5][2]={{8,16},{32,16},{16,40},{0,36},{0,16}};
+ int tile=0x1f7;
+ for(int a=0;a<5;a++){
+  while(tile>0 && used[tile])--tile;
+  accent_tiles[a]=tile;uint8_t* p=objective_pause_gfx+32*tile--;
+  memset(p,0,32);
+  for(int y=0;y<2;y++){int row=(a==4?0:6)+y;p[row*2]=masks[a][y];p[row*2+16]=masks[a][y];p[row*2+17]=masks[a][y];}
+ }
+}
 enum {OBJ_PAGE=11,MAP_OUT=12,OBJ_LOAD=13,OBJ_IN=14,OBJ_OUT=15,MAP_LOAD=16};
 static uint16_t tiles[2048],wide_tiles[2048],saved_palette[128],saved_footer[64];
 static uint8_t saved_gfx[0x4000];
@@ -23,7 +44,13 @@ const uint16_t *sm_objective_pause_wide(void){return wide_tiles;}
 static int offset(int x,int y){return (x&31)+y*32+(x>=32?1024:0);}
 static void word(uint16_t *map,int x,int y,uint16_t tile){map[offset(x,y+5)]=tile;}
 static int text(uint16_t *map,int x,int y,const char *s){
-  for(;*s;s++,x++)word(map,x,y,*s==' '?0x2800:(unsigned char)*s<128?objective_pause_chars[(unsigned char)*s]:0);
+  s=sm_locale_text(s);
+  for(;*s && x<62;x++){
+    int cp=sm_locale_next(&s),ch=cp<128?cp:sm_locale_base(cp),accent=sm_locale_accent(cp);
+    if(cp>=0xe0 && cp<=0xfc && ch>='A'&&ch<='Z')ch+=32;
+    word(map,x,y,ch==' '?0x2800:ch<128?objective_pause_chars[ch]:0);
+    if(accent && y>0)word(map,x,y+(accent==5?1:-1),0x2800|accent_tiles[accent-1]);
+  }
   return x;
 }
 static void compose(uint16_t *map,int width,const SmObjectiveSnapshot *s){
@@ -38,9 +65,15 @@ static void compose(uint16_t *map,int width,const SmObjectiveSnapshot *s){
     else {int sx=x<30?x:x==width-2?30:x==width-1?31:-1;if(sx>=0)tile=objective_pause_base[y*32+sx];}
     word(map,x,y,tile);
   }
-  char buffer[48];snprintf(buffer,sizeof(buffer),"%-2d",s->state[3]);text(map,2,2,buffer);
-  text(map,width-10,2,(s->state[6]&SM_OBJECTIVE_DISABLED_TOURIAN)?"Disabled":(s->state[6]&SM_OBJECTIVE_FAST_TOURIAN)?"    Fast":" Vanilla");
-  if(!s->state[7]){text(map,7,12," Golden Statues Room.");return;}
+  if(sm_locale_get()){
+    for(int x=width/2-5;x<width/2+5;x++)word(map,x,0,0);
+    text(map,width/2-4,0,"OBJECTIFS");
+    for(int x=4;x<12;x++)word(map,x,2,0x2800);
+    text(map,4,2,"restants");
+  }
+  char buffer[128];snprintf(buffer,sizeof(buffer),"%-2d",s->state[3]);text(map,2,2,buffer);
+  text(map,width-10,2,sm_locale_get()?((s->state[6]&SM_OBJECTIVE_DISABLED_TOURIAN)?"    Non":(s->state[6]&SM_OBJECTIVE_FAST_TOURIAN)?" Abrégé":" Normal"):(s->state[6]&SM_OBJECTIVE_DISABLED_TOURIAN)?"Disabled":(s->state[6]&SM_OBJECTIVE_FAST_TOURIAN)?"    Fast":" Vanilla");
+  if(!s->state[7]){if(sm_locale_get()){for(int y=10;y<=12;y++)for(int x=2;x<width-2;x++)word(map,x,y,0);text(map,2,10,"Pour révéler les objectifs,");text(map,2,12,"allez aux statues dorées.");}else text(map,7,12," Golden Statues Room.");return;}
   for(int y=5;y<18;y++)for(int x=2;x<width-2;x++)word(map,x,y,0);
   const int center=width/2;
   if(first){word(map,center-1,5,0x39b8);word(map,center,5,0x79b8);}
@@ -54,14 +87,14 @@ static void compose(uint16_t *map,int width,const SmObjectiveSnapshot *s){
       && (!objective_pause_labels[id].nonzero || have);
     word(map,2,row,complete?0x2576:progress && (have || start)?0x2577:0);
     char number[8];snprintf(number,sizeof(number),"%d.",i+1);
-    snprintf(buffer,sizeof(buffer),"%-3s%s",number,objective_pause_labels[id].text);
+    snprintf(buffer,sizeof(buffer),"%-3s%s",number,sm_locale_get()?french_goals[id]:objective_pause_labels[id].text);
     int x=text(map,3,row,buffer);
     if(progress && total){
       if(pct>=0)snprintf(buffer,sizeof(buffer)," (%d%%)",pct);
       else snprintf(buffer,sizeof(buffer)," (%d/%d)",have,total);
       /* Keep every original glyph on-grid when a three-digit counter would
        * cross the frame. Native 4:3 wraps the counter onto the spare row. */
-      if(x+(int)strlen(buffer)>width-2)text(map,6,row+1,buffer+1);
+      if(x+sm_locale_length(buffer)>width-2)text(map,6,row+1,buffer+1);
       else text(map,x,row,buffer);
     }
     last=i;

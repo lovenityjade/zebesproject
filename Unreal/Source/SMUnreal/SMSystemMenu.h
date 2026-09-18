@@ -4,11 +4,13 @@
 #include "Async/Future.h"
 #include "SMProfiles.h"
 #include "../../../Native/sm_save_refill.h"
+#include "../../../Native/sm_travel.h"
 #include "SMTracker.h"
 #include "../../../Native/sm_runs.h"
 #include "../../../Native/sm_seed_rules.h"
 #include "../../../Native/sm_varia_ui.h"
 #include "../../../Native/sm_credits.h"
+#include "../../../Native/sm_ending.h"
 #include "../../../Native/sm_relic.h"
 #include "InputCoreTypes.h"
 #include "../../../Native/sm_generation.h"
@@ -54,10 +56,11 @@ private:
     char PresetPath[1024]={};
     int TechniquePage=0;
     bool NoAdvancedTechs=false,RelicHunt=false;
-    bool RefillBeforeSave=false;
+    bool RefillBeforeSave=true, SaveStationTravel=false;
     int MenuPreviewFrame=0;
     FString MenuPreviewName;
     decltype(&sm_set_refill_before_save) SetRefillBeforeSave=nullptr;
+    decltype(&sm_travel_configure) ConfigureTravel=nullptr;
     decltype(&sm_start_configure) ConfigureStart=nullptr;
     decltype(&sm_start_configure_world) ConfigureWorld=nullptr;
     decltype(&sm_world_data_catalog_sha256) WorldCatalog=nullptr;
@@ -116,6 +119,10 @@ private:
     bool VanillaTracker=false,MapTracker=true,ItemTracker=true;
     int VanillaTrackerSkill=0;
     bool VariaAmmo=true,VariaHud=true,VariaReserves=true,VariaMarkers=true;
+    decltype(&sm_ending_preview_launch) LaunchEnding=nullptr;
+    decltype(&sm_ending_preview_close) CloseEnding=nullptr;
+    decltype(&sm_ending_preview_active) EndingPreview=nullptr;
+    int EndingAnimals=0;
     decltype(&sm_credits_launch) LaunchCredits=nullptr;
     decltype(&sm_credits_close) CloseCredits=nullptr;
     decltype(&sm_credits_state) CreditsState=nullptr;

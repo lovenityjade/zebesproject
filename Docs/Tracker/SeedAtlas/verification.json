@@ -1,0 +1,213 @@
+{
+  "date": "2026-09-17",
+  "host": "gaming-pc",
+  "isolated": true,
+  "localBuildOrGameLaunch": false,
+  "scope": "Automated native fixtures, saved solver progression logs and Unreal/Vulkan pause navigation. Not complete human playthroughs.",
+  "render": {
+    "passed": true,
+    "seeds": [
+      {
+        "seed": 15092600,
+        "mappedChecks": 100,
+        "colorSamples": 400,
+        "bossColorSamples": 40,
+        "worldUnchanged": true,
+        "sramUnchanged": true,
+        "nativeAreaSelection": true
+      },
+      {
+        "seed": 15092601,
+        "mappedChecks": 100,
+        "colorSamples": 400,
+        "bossColorSamples": 40,
+        "worldUnchanged": true,
+        "sramUnchanged": true,
+        "nativeAreaSelection": true
+      },
+      {
+        "seed": 15092602,
+        "mappedChecks": 100,
+        "colorSamples": 400,
+        "bossColorSamples": 40,
+        "worldUnchanged": true,
+        "sramUnchanged": true,
+        "nativeAreaSelection": true
+      }
+    ],
+    "cpuOpcodes": 0
+  },
+  "logic": {
+    "passed": true,
+    "seeds": [
+      {
+        "seed": 15092600,
+        "checks": 100,
+        "bossStates": 1100,
+        "mode": "area"
+      },
+      {
+        "seed": 15092601,
+        "checks": 100,
+        "bossStates": 1100,
+        "mode": "area"
+      },
+      {
+        "seed": 15092602,
+        "checks": 100,
+        "bossStates": 1100,
+        "mode": "area-boss"
+      },
+      {
+        "seed": 15092603,
+        "checks": 100,
+        "bossStates": 1100,
+        "mode": "area"
+      },
+      {
+        "seed": 15092604,
+        "checks": 100,
+        "bossStates": 1100,
+        "mode": "area"
+      },
+      {
+        "seed": 15092605,
+        "checks": 100,
+        "bossStates": 1100,
+        "mode": "vanilla"
+      }
+    ],
+    "queries": 660,
+    "seconds": 56.50677943060873,
+    "scope": "End-to-end embedded tracker queries, no emulator or PopTracker dependency."
+  },
+  "minimizer": {
+    "passed": true,
+    "seeds": [
+      {
+        "seed": 15093300,
+        "retainedChecks": 42,
+        "retainedTiles": 447,
+        "noOverlaps": true
+      },
+      {
+        "seed": 15093301,
+        "retainedChecks": 64,
+        "retainedTiles": 777,
+        "noOverlaps": true
+      },
+      {
+        "seed": 15093302,
+        "retainedChecks": 100,
+        "retainedTiles": 1165,
+        "noOverlaps": true
+      }
+    ]
+  },
+  "travel": {
+    "passed": true,
+    "area": 1,
+    "stations": [
+      0,
+      1
+    ],
+    "room": "0xa201",
+    "disabledForVanillaAndPending": true,
+    "fullMapDoesNotUnlock": true,
+    "escapeBlocked": true,
+    "sramUnchanged": true,
+    "cpuOpcodes": 0
+  },
+  "refill": {
+    "passed": true,
+    "cases": [
+      {
+        "randomized": false,
+        "enabled": false,
+        "accepted": true,
+        "current": [
+          37,
+          13,
+          7,
+          2,
+          1
+        ],
+        "reloaded": true
+      },
+      {
+        "randomized": false,
+        "enabled": true,
+        "accepted": false,
+        "current": [
+          37,
+          13,
+          7,
+          2,
+          1
+        ],
+        "reloaded": false
+      },
+      {
+        "randomized": false,
+        "enabled": true,
+        "accepted": true,
+        "current": [
+          399,
+          200,
+          30,
+          10,
+          5
+        ],
+        "reloaded": true
+      },
+      {
+        "randomized": true,
+        "enabled": false,
+        "accepted": true,
+        "current": [
+          37,
+          13,
+          7,
+          2,
+          1
+        ],
+        "reloaded": true
+      },
+      {
+        "randomized": true,
+        "enabled": true,
+        "accepted": false,
+        "current": [
+          37,
+          13,
+          7,
+          2,
+          1
+        ],
+        "reloaded": false
+      },
+      {
+        "randomized": true,
+        "enabled": true,
+        "accepted": true,
+        "current": [
+          399,
+          200,
+          30,
+          10,
+          5
+        ],
+        "reloaded": true
+      }
+    ],
+    "sourceRomUnchanged": true,
+    "emulatedCpu": 0
+  },
+  "unreal": {
+    "passed": true,
+    "nativePause": true,
+    "nativeNavigation": true,
+    "nativeResume": true,
+    "cpuOpcodes": 0
+  }
+}

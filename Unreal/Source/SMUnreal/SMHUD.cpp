@@ -1,4 +1,5 @@
 #include "SMHUD.h"
+#include "SMLocalization.h"
 #include "SMNativeLibrary.h"
 #include "Misc/ScopeExit.h"
 #include "SMRom.h"
@@ -41,6 +42,7 @@ static void UploadPresentation(UTexture2D* Texture,const uint8* Bytes,int W,int 
 ASMHUD::ASMHUD() { PrimaryActorTick.bCanEverTick = true; }
 void ASMHUD::BeginPlay() {
     Super::BeginPlay();
+    SMLocalization::Load(FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SM/Presentation.ini")));
     const FString Root = FPaths::ConvertRelativePathToFull(FPaths::ProjectDir() / TEXT(".."));
     FString Reason;
     if (!SMRom::Validate(SMRom::LocalPath(Root), Reason)) {
@@ -85,7 +87,7 @@ void ASMHUD::StartVerifiedGame() {
     const FString RomPath = SMRom::LocalPath(Root);
     if (!SMRom::Validate(RomPath, Failure)) return;
     CoreHandle = SMNativeLibrary::Open(Root);
-    if (!CoreHandle) { Failure = TEXT("Native library missing. See the build instructions in README.md."); return; }
+    if (!CoreHandle) { Failure = TEXT("Native library is missing. Reinstall the game."); return; }
 #define SM_LOAD(Member, Name) Member = reinterpret_cast<decltype(Member)>(FPlatformProcess::GetDllExport(CoreHandle, TEXT(Name))); if (!Member) { Failure = TEXT("API native incomplete: " Name); return; }
     SM_LOAD(Init, "sm_init"); SM_LOAD(Step, "sm_step"); SM_LOAD(Pixels, "sm_pixels");
     SM_LOAD(Scene,"sm_scene"); SM_LOAD(FarMask,"sm_background_mask"); SM_LOAD(Layers,"sm_layers"); SM_LOAD(Emission,"sm_emission"); SM_LOAD(Lightmap,"sm_lightmap");
@@ -135,6 +137,10 @@ void ASMHUD::StartVerifiedGame() {
 #endif
     PixelTest = FParse::Param(FCommandLine::Get(), TEXT("SMPixelTest"));
 #if !UE_BUILD_SHIPPING
+    if(IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")))){
+        FParse::Value(FCommandLine::Get(),TEXT("SMSuitTest="),SuitTest);
+        if(SuitTest!=1 && SuitTest!=2)SuitTest=0;
+    }
     GameOverTest=FParse::Param(FCommandLine::Get(),TEXT("SMGameOverTest")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")));
 #endif
     CinemaTest=FParse::Param(FCommandLine::Get(),TEXT("SMCinemaTest"));
@@ -162,6 +168,7 @@ void ASMHUD::StartVerifiedGame() {
     WideTest=StartFixtureIndex>=0 || RelicTest || CinemaTest || CreditsTest || DisplayTest || CombatTest || PauseTest || FootstepTest || FParse::Param(FCommandLine::Get(),TEXT("SMWideTest"));
     AutoTest |= WideTest || TeleportUiTest || PixelTest || DepthTest || DepthMotion || WeatherTest;
     if(GameOverTest){AutoTest=true;WideTest=!FParse::Param(FCommandLine::Get(),TEXT("SMGameOverClassic"));}
+    if(SuitTest){AutoTest=WideTest=true;}
     if(TitleTest){AutoTest=true;WideTest=!FParse::Param(FCommandLine::Get(),TEXT("SMTitleClassic"));}
     RecapCheck=FParse::Param(FCommandLine::Get(),TEXT("SMRecapCheck")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")));
     SporeCheck=FParse::Param(FCommandLine::Get(),TEXT("SMSporeCheck")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")));
@@ -179,6 +186,7 @@ void ASMHUD::StartVerifiedGame() {
     if(DepthMotion || WideTest){Intensity=.75f;Exposure=1.10f;}
     FParse::Value(FCommandLine::Get(), TEXT("SMTestFrames="), TestFrames);
     SettingsPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir() / TEXT("SM/Presentation.ini"));
+    SMLocalization::Load(SettingsPath);
     if(HudPreview) {
         const FString PreviewSettings=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMTests/HUDPreview/Presentation.ini"));
         IFileManager::Get().MakeDirectory(*FPaths::GetPath(PreviewSettings),true);
@@ -218,9 +226,9 @@ void ASMHUD::StartVerifiedGame() {
     FString SaveFile=SaveDir/(AutoTest?FString::Printf(TEXT("validation-%llu.sram"),FPlatformTime::Cycles64()):TEXT("sram.dat"));
     if(HudPreview && !IFileManager::Get().FileExists(*SaveFile)) {
         const FString Fixture=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMTests/HUD-all-items.sram"));
-        if(IFileManager::Get().Copy(*SaveFile,*Fixture)!=COPY_OK){Failure=TEXT("HUD preview save missing. This preview requires a private development fixture.");return;}
+        if(IFileManager::Get().Copy(*SaveFile,*Fixture)!=COPY_OK){Failure=TEXT("Sauvegarde HUD absente : lancer Scripts/test-display-regressions.py.");return;}
     }
-    if(AutoTest && SavedRoomTest) {
+    if(AutoTest && (SavedRoomTest || SuitTest)) {
         FString Saved=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMPreview/sram.dat"));
         FParse::Value(FCommandLine::Get(),TEXT("SMTestSave="),Saved);
         if(IFileManager::Get().Copy(*SaveFile,*Saved)!=COPY_OK) {Failure=TEXT("Copie de la sauvegarde de validation impossible.");return;}
@@ -250,6 +258,9 @@ void ASMHUD::StartVerifiedGame() {
     if (!Init(TCHAR_TO_UTF8(*RomPath), TCHAR_TO_UTF8(*SaveFile))) {
         Failure = UTF8_TO_TCHAR(Error()); return;
     }
+    // The native presentation must also inherit the saved language in previews
+    // and automated fixtures, which intentionally do not create the system menu.
+    if(auto SetLanguage=reinterpret_cast<void(*)(int)>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_locale_set"))))SetLanguage(SMLocalization::Language());
     ApplyRomWindowIcon();
     if(StartFixtureIndex>=0){
         auto Enable=reinterpret_cast<decltype(&sm_slots_enable)>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_slots_enable")));
@@ -314,7 +325,10 @@ void ASMHUD::StartVerifiedGame() {
     if ((AutoTest || LightingPreview || HudPreview) && Warmup > 0) {
         UE_LOG(LogTemp, Display, TEXT("SM_WARMUP frames=%d"), Warmup);
         for (int I = 0; I < Warmup; ++I) {
-            if (!Step((State()<7 || State()>18) && Frame()>180 && Frame()%120<2 ? 8 : 0)) {
+            int Button=(State()<7 || State()>18) && Frame()>180 && Frame()%120<2 ? 8 : 0;
+            // Automated fixtures must navigate the redesigned mode row to Start Game.
+            if((CinemaTest || GameOverTest || StartFixtureIndex>=0 || RelicTest) && Button && State()==2 && CinemaState && CinemaState(3)==3 && CinemaState(4)!=0)Button=32;
+            if (!Step(Button)) {
                 Failure = UTF8_TO_TCHAR(Error()); return;
             }
             if((StartFixtureIndex>=0 || LightingPreview || SavedRoomTest || HudPreview) && State()==8)break;
@@ -455,11 +469,13 @@ void ASMHUD::StartVerifiedGame() {
     }
     LoadGameOverPresentation();
     LoadTitlePresentation();
+    if(SuitTest && !PrepareSuitCapture()){Failure=TEXT("Suit capture fixture failed; see log.");return;}
     if(GameOverTest){
         auto Test=reinterpret_cast<int(*)()>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_test_gameover")));
         if(!Test || !Test()){Failure=TEXT("Game Over fixture requires loaded gameplay.");return;}
-        for(int I=0;I<180;I++)if(!Step(0)){Failure=UTF8_TO_TCHAR(Error());return;}
-        if(!GameOverState(0)){Failure=TEXT("Game Over fixture did not reach the menu.");return;}
+        for(int I=0;I<2400 && GameOverState(2)<4;I++)if(!Step(0)){Failure=UTF8_TO_TCHAR(Error());return;}
+        if(GameOverState(2)!=4){Failure=TEXT("Game Over fixture did not finish its music cue and fade.");UE_LOG(LogTemp,Error,TEXT("SM_GAMEOVER_FIXTURE_NOT_READY phase=%d"),GameOverState(2));return;}
+        TestFrames=0; // Dedicated captures below run for 120 rendered frames.
     }
     AudioWave = NewObject<USoundWaveProcedural>(this);
     AudioWave->SetSampleRate(44100);
@@ -508,6 +524,7 @@ uint16 ASMHUD::ReadButtons() const {
     return Buttons;
 }
 void ASMHUD::Tick(float DeltaSeconds) {
+    if(SuitTest)DeltaSeconds=736.f/44100.f;
     Super::Tick(DeltaSeconds);
     if (RomSetup) {
         if (!RomSetup->Completed) {
@@ -535,6 +552,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
     }
     if(Ready && TitleTest)TickTitleTest(DeltaSeconds);
     if(Ready && TickStartupWarnings(DeltaSeconds))return;
+    if(Ready && TickDialogue(DeltaSeconds))return;
     if(Ready && PlaytestCheck)TickPlaytestCheck();
     if(Ready && TickRunRecap(DeltaSeconds))return;
     if(SystemMenu){
@@ -555,7 +573,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
     if(PlayerOwner->WasInputKeyJustPressed(EKeys::F8) &&
        (PlayerOwner->IsInputKeyDown(EKeys::LeftControl)||PlayerOwner->IsInputKeyDown(EKeys::RightControl))) {
         const int Count=LoadRoomDecorations();
-        Notice=FString::Printf(TEXT("Decors recharges : %d cases"),Count);NoticeUntil=FPlatformTime::Seconds()+3;
+        Notice=SMLocalization::Format(TEXT("Reloaded painted scenery: {0} tiles."),{Count});NoticeUntil=FPlatformTime::Seconds()+3;
         return;
     }
     if(PlayerOwner->WasInputKeyJustPressed(EKeys::F10)) {
@@ -571,10 +589,10 @@ void ASMHUD::Tick(float DeltaSeconds) {
             if(Teleport(TeleportSelection)) {
                 TeleportMenu=false;Paused=false;Accumulator=0;PresentationRoom=-1;
                 AudioWave->ResetAudio();AudioComponent->SetPaused(false);
-                Notice=FString::Printf(TEXT("Destination : %s"),UTF8_TO_TCHAR(TeleportName(TeleportSelection)));
+                Notice=SMLocalization::Format(TEXT("Destination: {0}"),{FString(UTF8_TO_TCHAR(TeleportName(TeleportSelection)))});
                 NoticeUntil=FPlatformTime::Seconds()+4;
                 UE_LOG(LogTemp,Display,TEXT("SM_TELEPORT_REQUEST destination=%d"),TeleportSelection);
-            } else {Notice=TEXT("Attends la fin de l'action en cours, puis reessaie.");NoticeUntil=FPlatformTime::Seconds()+3;}
+            } else {Notice=SMLocalization::Text(FString(TEXT("Wait for the current action to finish, then try again.")));NoticeUntil=FPlatformTime::Seconds()+3;}
         }
         return;
     }
@@ -591,8 +609,8 @@ void ASMHUD::Tick(float DeltaSeconds) {
             AssistedSpaceJump=!AssistedSpaceJump;SetAssistedSpaceJump(AssistedSpaceJump);
         } else {AssistedWallJump=!AssistedWallJump;SetAssistedWallJump(AssistedWallJump);}
         NotifySettings();
-        Notice=FString::Printf(TEXT("%s : %s"),Space?TEXT("Space Jump"):TEXT("Wall jump"),
-            (Space?AssistedSpaceJump:AssistedWallJump)?TEXT("ASSISTE"):TEXT("ORIGINAL"));
+        Notice=SMLocalization::Format(TEXT("{0}: {1}"),{SMLocalization::Text(FString(Space?TEXT("Space Jump"):TEXT("Wall jump"))),
+            SMLocalization::Text(FString((Space?AssistedSpaceJump:AssistedWallJump)?TEXT("Assisted"):TEXT("Original")))});
     }
     if (PlayerOwner->WasInputKeyJustPressed(EKeys::F9)) { EngineWeather=!EngineWeather; NotifySettings(); }
     if (PlayerOwner->WasInputKeyJustPressed(EKeys::F8)) { Relief=!Relief; RefreshScenePresentation(); NotifySettings(); }
@@ -655,7 +673,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
     WeatherTime+=DeltaSeconds; // Atmospheric motion continues through native fades and item messages.
     SetEngineWeather(EngineWeather && Atmosphere);
     SetCombatEffects(Atmosphere && (!AutoTest || WideTest));
-    Accumulator += FMath::Min<double>(DeltaSeconds, 0.1);
+    Accumulator += SuitTest?736.0/44100.0:FMath::Min<double>(DeltaSeconds, 0.1);
     const double StepSeconds = 736.0 / 44100.0;
     bool Advanced = false;
     while (Accumulator >= StepSeconds) {
@@ -742,10 +760,12 @@ void ASMHUD::Tick(float DeltaSeconds) {
         const int LookY=Depth?FMath::Clamp((SamusY()-CameraY()-112)/48,-1,1):0;
         SetParallax(FMath::Clamp(-(CameraX()-AnchorX)/(Depth?8:12)-LookX,-8,8),
                     FMath::Clamp(-(CameraY()-AnchorY)/(Depth?12:18)-LookY,-6,6),Shift);
+        if(SuitTest)Buttons=0;
         if (!Step(Buttons)) { Failure = UTF8_TO_TCHAR(Error()); Ready = false; UE_LOG(LogTemp, Error, TEXT("SM_NATIVE_ERROR %s"), *Failure); break; }
         UpdateTitleTimeline();
+        AdvanceSuitTransformation(float(StepSeconds));
         if(PresentationKind()==1 && State()==8 && !MessageActive())VisualEffects.Advance(VisualState,Room(),FxType(),WaterY(),float(StepSeconds));
-        if(PresentationKind()==1 && State()==8) {
+        if(PresentationKind()==1 && State()==8 && !SuitTest && !VisualState(49,0)) {
             TrackAchievements();
         }
         const int CreditMode=CreditsState?CreditsState(0):0;
@@ -753,6 +773,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
         const bool GameOverAudio=State()==26;
         if(GameOverAudio!=LastGameOverAudio){AudioWave->ResetAudio();LastGameOverAudio=GameOverAudio;}
         AudioWave->QueueAudio(reinterpret_cast<const uint8*>(Audio()), 736 * 2 * sizeof(int16));
+        if(SuitTest)SuitCaptureAudio.Append(reinterpret_cast<const uint8*>(Audio()),736*4);
         Accumulator -= StepSeconds;
         Advanced = true;
         if (State() != LastState) {
@@ -761,6 +782,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
         }
         if (!(CreditsState && CreditsState(0)==2) && Frame() % 600 == 0) Save();
     }
+    if(SuitTest)CaptureSuitFrame();
     if (AudioWave->GetAvailableAudioByteCount() > 44100 * 4 / 2) AudioWave->ResetAudio();
     GameOverTime=GameOverState && GameOverState(0)?GameOverTime+DeltaSeconds:0.f;
     if(GameOverTest){
@@ -1023,8 +1045,8 @@ void ASMHUD::DrawHUD() {
     Super::DrawHUD();
     if (!Canvas) return;
     DrawRect(FLinearColor::Black, 0, 0, Canvas->SizeX, Canvas->SizeY);
-    if (!Failure.IsEmpty()) { DrawText(Failure, FLinearColor::Red, 40, 40); return; }
-    ON_SCOPE_EXIT {DrawBuildVersion();};
+    if (!Failure.IsEmpty()) { DrawText(SMLocalization::Text(Failure), FLinearColor::Red, 40, 40); return; }
+    ON_SCOPE_EXIT {if(!DialogueVisible)DrawBuildVersion();};
     if(StartupWarning>=0){DrawStartupWarning();return;}
     if(DrawTitlePresentation())return;
     if(DrawRunRecap())return;
@@ -1047,22 +1069,28 @@ void ASMHUD::DrawHUD() {
     } else {
         DrawTexture(GameTexture, X, Y, W, H, 0, 0, 1, 224.f/240.f, FLinearColor::White, BLEND_Opaque);
     }
+    DrawSuitTransformation(X,Y,Scale);
+    DrawDialogue(X,Y,Scale);
     if (!AutoTest && (ShowHelp || FPlatformTime::Seconds() < NoticeUntil)) {
-        const FString Text = ShowHelp ? TEXT("F1 Aide  |  F2 Effet  |  F3 Opacite  |  F4 Menu systeme  |  F5 Parallaxe  |  F6 Lighten/Multiply  |  F7 Profondeur  |  F8 Relief  |  F9 Meteo  |  F10 Teleportation\nF11 Plein ecran  |  Ctrl+F11 Large/4:3  |  F12 Wall jump assiste/original  |  Maj+F12 Space Jump assiste/original\nFleches: bouger  Z: sauter  X: courir  S: tirer  C: annuler objet\nA/D: viser  Maj droite: objet  Entree: Start  P: pause  Echap: menu systeme") : Notice;
+        const FString Text = ShowHelp ?
+            SMLocalization::Text(FString(TEXT("F1 Help | F2 Effects | F3 Opacity | F4 System menu | F5 Parallax | F6 Lighten/Multiply | F7 Depth | F8 Relief | F9 Weather | F10 Teleport")))+TEXT("\n")+
+            SMLocalization::Text(FString(TEXT("F11 Full screen | Ctrl+F11 Wide/4:3 | F12 Wall Jump assist | Shift+F12 Space Jump assist")))+TEXT("\n")+
+            SMLocalization::Text(FString(TEXT("Arrows: move | Z: jump | X: run | S: shoot | C: cancel item | A/D: aim")))+TEXT("\n")+
+            SMLocalization::Text(FString(TEXT("Right Shift: select item | Enter: Start | P: pause | Escape: system menu"))) : SMLocalization::Text(Notice);
         DrawRect(FLinearColor(0,0,0,.85f), 12, 12, 1250, ShowHelp ? 90 : 27);
         DrawText(Text, FLinearColor(.8f,.95f,1.f), 20, 18);
     }
     if(TeleportMenu) {
         const float MX=FMath::Max(16.f,(Canvas->SizeX-660.f)*.5f),MY=FMath::Max(16.f,(Canvas->SizeY-390.f)*.5f);
         DrawRect(FLinearColor(.012f,.025f,.04f,.97f),MX,MY,660,390);
-        DrawText(TEXT("TELEPORTATION"),FLinearColor(.35f,.85f,1.f),MX+24,MY+18,nullptr,1.6f);
-        DrawText(TEXT("Choisis une destination"),FLinearColor(.7f,.8f,.85f),MX+24,MY+52);
+        DrawText(SMLocalization::Text(FString(TEXT("TELEPORTATION"))),FLinearColor(.35f,.85f,1.f),MX+24,MY+18,nullptr,1.6f);
+        DrawText(SMLocalization::Text(FString(TEXT("Choose a destination"))),FLinearColor(.7f,.8f,.85f),MX+24,MY+52);
         for(int I=0;I<TeleportCount();++I) {
             const float Row=MY+85+I*31;
             if(I==TeleportSelection)DrawRect(FLinearColor(.04f,.22f,.30f,1.f),MX+16,Row-4,628,29);
             DrawText(FString::Printf(TEXT("%s %s"),I==TeleportSelection?TEXT(">"):TEXT(" "),UTF8_TO_TCHAR(TeleportName(I))),I==TeleportSelection?FLinearColor::White:FLinearColor(.65f,.75f,.8f),MX+26,Row,nullptr,1.15f);
         }
-        DrawText(TEXT("Haut/Bas : choisir   Entree/Z : partir   Echap/F10 : fermer"),FLinearColor(.65f,.8f,.85f),MX+24,MY+350);
+        DrawText(SMLocalization::Text(FString(TEXT("Up/Down: select   Enter/Z: travel   Escape/F10: close"))),FLinearColor(.65f,.8f,.85f),MX+24,MY+350);
     }
     if (Paused && !TeleportMenu) DrawText(TEXT("PAUSE"), FLinearColor::White, 20, 20, nullptr, 2);
 }
@@ -1089,7 +1117,9 @@ void ASMHUD::PersistSettings() {
     if(!Settings.Write(SettingsPath))UE_LOG(LogTemp,Warning,TEXT("SM_SETTINGS_WRITE_FAILED %s"),*SettingsPath);
 }
 void ASMHUD::NotifySettings() {
-    Notice = FString::Printf(TEXT("Calque gaussien %s  |  %s  |  Opacite %.0f%%  |  Luminosite %.0f%%  |  Profondeur %s  |  Relief %s  |  Meteo UE %s  |  Wall jump %s  |  Space Jump %s"), Atmosphere ? TEXT("ON") : TEXT("OFF"), BlendMode ? TEXT("Multiply") : TEXT("Lighten"), Intensity*100,Exposure*100,Depth?TEXT("ON"):TEXT("OFF"),Relief?TEXT("ON"):TEXT("OFF"),EngineWeather?TEXT("ON"):TEXT("OFF"),AssistedWallJump?TEXT("ASSISTE"):TEXT("ORIGINAL"),AssistedSpaceJump?TEXT("ASSISTE"):TEXT("ORIGINAL"));
+    auto OnOff=[](bool Value){return SMLocalization::Text(FString(Value?TEXT("On"):TEXT("Off")));};
+    Notice=SMLocalization::Format(TEXT("Gaussian layer: {0} | {1} | Opacity: {2}% | Brightness: {3}% | Depth: {4} | Relief: {5} | Weather: {6}"),
+        {OnOff(Atmosphere),SMLocalization::Text(FString(BlendMode?TEXT("Multiply"):TEXT("Lighten"))),FMath::RoundToInt(Intensity*100),FMath::RoundToInt(Exposure*100),OnOff(Depth),OnOff(Relief),OnOff(EngineWeather)});
     NoticeUntil = FPlatformTime::Seconds() + 3;
     PersistSettings();
     UE_LOG(LogTemp, Display, TEXT("SM_PRESENTATION %s"), *Notice);
@@ -1142,6 +1172,7 @@ void ASMHUD::UpdatePresentation() {
     PresentMaterial->SetScalarParameterValue(TEXT("SceneFade"), CreditsState && CreditsState(0)?1.f:Brightness() / 15.f);
 }
 void ASMHUD::EndPlay(const EEndPlayReason::Type Reason) {
+    DialogueVisible=false;DialoguePortrait=nullptr;
     ReleaseRomWindowIcon();
     RomSetup.Reset();
     SystemMenu.Reset();
@@ -1192,7 +1223,11 @@ void ASMHUD::TickCinemaTest(){
             for(int I=0;I<900 && State()==0;I++)if(!Step(0))break;
             if(State()!=1){UE_LOG(LogTemp,Error,TEXT("SM_CINEMA_BOOT_FIXTURE_FAILED"));PlayerOwner->ConsoleCommand(TEXT("quit"));return;}
         }
-        if(CinemaCase==3){auto End=reinterpret_cast<int(*)()>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_test_credits_ending")));Ok=End && End();}
+        if(CinemaCase==3){
+            int Animals=-1;FParse::Value(FCommandLine::Get(),TEXT("SMEndingAnimals="),Animals);
+            auto End=reinterpret_cast<int(*)(int)>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_ending_preview_launch")));
+            Ok=End && End(Animals);
+        }
         else Ok=TestCinematic && TestCinematic(CinemaCase>=5?5:CinemaCase);
         if(!Ok){UE_LOG(LogTemp,Error,TEXT("SM_CINEMA_FIXTURE_FAILED"));PlayerOwner->ConsoleCommand(TEXT("quit"));return;}
         if(CinemaCase>=5){
