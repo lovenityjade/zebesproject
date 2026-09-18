@@ -9,7 +9,7 @@ import json
 ROOT=Path(__file__).resolve().parent
 PUBLIC=ROOT/'public'
 CATALOG=ROOT.parent/'Localization/site.fr-CA.tsv'
-UNCHANGED={'$XDG_DATA_HOME/zebesproject','--appimage-extract-and-run','.', '.run-<uuid>.json','/','01','02','03','>_','A','ALPHA-0.24','ALPHA-0.24 · 2026','B','CRATERIA','Cyb3R · The T · PopTracker','D63ED5F8','Discord','Discord ↗','Engine/Extras/Redist/en-us/vc_redist.x64.exe','F11','FAQ','GitHub','GitHub ↗','Linux','PROJECT','SMUnreal.exe','SMUnreal.log','Saved','Saved/Logs','Sekailink','Soundtracks/Remastered','Super Metroid (Japan, USA) (En,Ja).sfc','THE ZEBES','THE ZEBES PROJECT','The Zebes Project','TheLovenityJade','TheLovenityJade ↗','VARIA · dude & flo','Windows','~/.local/share/zebesproject','·','×','←','→','↓','↗','↻','⊞','✦','⤢','＋','https://www.youtube.com/watch?v=…'}
+UNCHANGED={'$XDG_DATA_HOME/zebesproject','--appimage-extract-and-run','.', '.run-<uuid>.json','/','01','02','03','>_','A','ALPHA-0.25','ALPHA-0.25 · 2026','B','CRATERIA','Cyb3R · The T · PopTracker','D63ED5F8','Discord','Discord ↗','Engine/Extras/Redist/en-us/vc_redist.x64.exe','F11','FAQ','GitHub','GitHub ↗','Linux','PROJECT','SMUnreal.exe','SMUnreal.log','Saved','Saved/Logs','Sekailink','Soundtracks/Remastered','Super Metroid (Japan, USA) (En,Ja).sfc','THE ZEBES','THE ZEBES PROJECT','The Zebes Project','TheLovenityJade','TheLovenityJade ↗','VARIA · dude & flo','Windows','~/.local/share/zebesproject','·','×','←','→','↓','↗','↻','⊞','✦','⤢','＋','https://www.youtube.com/watch?v=…'}
 META={'description','og:title','og:description','og:image:alt','twitter:title','twitter:description'}
 def generate():
     catalog={}

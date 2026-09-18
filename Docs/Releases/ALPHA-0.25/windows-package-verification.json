@@ -1,0 +1,48 @@
+{
+  "version": "ALPHA-0.25",
+  "sha256": "dd2b5a9be8e1a1a8d15fd74193c30a004cf8a46f3e55fb7f44215d9bb41ee2dc",
+  "size": 802604679,
+  "tracks": 32,
+  "trackHashesVerified": true,
+  "noRomOrSave": true,
+  "zipMembersVerified": true,
+  "filesSha256": {
+    "Native/build/sm_native.dll": "f339f121a97eab85f9f555e2d4012ad2243d331e6ee3694300fb229203155468",
+    "SMUnreal/Binaries/Win64/SMUnreal.exe": "7f8127b4b790e7db86e982673733caf3d52860773c117f9ef71c65c52db0b293",
+    "Runtime/Python/python313.dll": "e820bf024efd2b56bb2b82791e6b6ddc7303f070f8e72cba7637482a8a906238"
+  },
+  "filesVerifiedAfterExtraction": 1691,
+  "platform": "Windows x64, compiled on Windows; tested on gaming-pc / Proton Experimental / D3D11",
+  "tests": {
+    "Rom": [
+      "[2026.09.18-04.31.41:921][  0]LogTemp: Display: SM_ROM_SELF_TEST PASS"
+    ],
+    "SeedSharing": [
+      "[2026.09.18-04.31.54:132][  0]LogTemp: Display: SM_SEED_SHARING_SELF_TEST PASS"
+    ],
+    "Profile": [
+      "[2026.09.18-04.31.59:476][  0]LogTemp: Display: SM_PROFILE_SELF_TEST PASS"
+    ],
+    "Tracker": [
+      "[2026.09.18-04.32.06:637][  0]LogTemp: Display: SM_TRACKER_SELF_TEST PASS"
+    ],
+    "french-menus": [
+      "[2026.09.18-04.32.13:309][  8]LogTemp: Display: SM_LOCALE_PERSISTENCE PASS"
+    ]
+  },
+  "frenchPagesCaptured": 21,
+  "visuallyReviewed": [
+    "randomizer seed and sharing"
+  ],
+  "audio": {
+    "passed": true,
+    "host": "gaming-pc / Windows Python under Proton Experimental",
+    "track": 4,
+    "nativeFrames": 409,
+    "playingFrames": 240,
+    "peak": 2107,
+    "sha256": "b6d491afed567cc8d939641924a23e1cdf04c1ca6907b47247775ae05f612a01",
+    "scope": "Fresh combined archive: packaged Windows native DLL and bundled Windows Python play bundled track 4 during title; nonzero PCM verified, no speaker capture"
+  },
+  "scope": "Clean package smoke tests, not a full gameplay run or Windows GPU certification. Audio PCM verified, not speaker capture."
+}

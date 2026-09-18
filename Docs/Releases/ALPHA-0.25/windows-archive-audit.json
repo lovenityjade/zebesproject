@@ -1,0 +1,14 @@
+{
+  "version": "ALPHA-0.25",
+  "sha256": "dd2b5a9be8e1a1a8d15fd74193c30a004cf8a46f3e55fb7f44215d9bb41ee2dc",
+  "size": 802604679,
+  "tracks": 32,
+  "trackHashesVerified": true,
+  "noRomOrSave": true,
+  "zipMembersVerified": true,
+  "filesSha256": {
+    "Native/build/sm_native.dll": "f339f121a97eab85f9f555e2d4012ad2243d331e6ee3694300fb229203155468",
+    "SMUnreal/Binaries/Win64/SMUnreal.exe": "7f8127b4b790e7db86e982673733caf3d52860773c117f9ef71c65c52db0b293",
+    "Runtime/Python/python313.dll": "e820bf024efd2b56bb2b82791e6b6ddc7303f070f8e72cba7637482a8a906238"
+  }
+}

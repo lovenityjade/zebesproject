@@ -106,7 +106,7 @@ not substitute for a complete bilingual playthrough. User-authored profile
 names, seeds, URLs, technical identifiers and proper names are intentionally
 preserved. No French voice recording is added.
 
-The French website is live. The localized game has **not** been packaged into a
-new Windows ZIP/Linux AppImage, published as a release, or installed over the
-player's local build. Windows packaging/runtime validation remains necessary
-before shipping these game changes.
+The French website is live. The localized game is packaged for **ALPHA-0.25**:
+Windows ZIP and Linux AppImage, with fresh-package startup, profile, tracker,
+settings-sharing and French menu checks. See [release validation](../Releases/ALPHA-0.25/README.md)
+for exact scope and reports. The player's local build was not replaced.
