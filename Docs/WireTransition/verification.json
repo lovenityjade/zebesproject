@@ -1,0 +1,45 @@
+{
+  "renderer": "Unreal Engine 5.8.2, gaming-pc",
+  "frames": 420,
+  "fps": 30,
+  "duration": 14,
+  "morphSeconds": 2.5,
+  "idleHoldSeconds": 0,
+  "preloadedRoomSnapshots": true,
+  "nativeSimulationFrozen": true,
+  "donorAndRomUnchanged": true,
+  "markers": [
+    "[2026.09.19-02.07.13:881][  0]LogTemp: Display: SM_WIRE_ROOM room=948c edges=1197 pose=009b samus=200,152 extracted=847",
+    "[2026.09.19-02.07.21:455][  0]LogTemp: Display: SM_WIRE_ROOM room=96ba edges=1284 pose=009b samus=200,152 extracted=828",
+    "[2026.09.19-02.07.21:457][  0]LogTemp: Display: SM_WIRE_READY pairs=1377 direction=2 frame=2882 ram=e752180d",
+    "[2026.09.19-02.07.38:165][541]LogTemp: Display: SM_WIRE_COMPLETE frames=420 native_frozen=1 cpu_opcodes=0"
+  ],
+  "videoSha256": "a3b0c84a40166009dd211c26c2b7d4f1f66107b19dd857c1bd81679d8441bb30",
+  "decodedVideoReview": {
+    "resolution": [
+      1200,
+      672
+    ],
+    "frames": 420,
+    "fps": 30,
+    "durationSeconds": 14,
+    "inspectedFrames": [
+      0,
+      45,
+      100,
+      134,
+      160,
+      180,
+      255,
+      310,
+      344
+    ],
+    "observations": [
+      "Original room art and native front-facing Samus visible before and after the transition",
+      "No textured background during the wireframe morph",
+      "Destination geometry reached before the reveal sweep",
+      "Shared edges retained; local geometric motion and perspective depth remain readable"
+    ],
+    "scope": "Preloaded isolated visual lab; production loading/input recovery not implemented"
+  }
+}

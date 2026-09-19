@@ -1,0 +1,1142 @@
+{
+  "host": "gaming-pc",
+  "passed": true,
+  "method": "Injected aim, weapon dispatch and positioning; practice outside MB cinematic; not player victories",
+  "saveUnchanged": true,
+  "nativeDamage": [
+    {
+      "difficulty": 0,
+      "before": 198,
+      "afterTenDamage": 188
+    },
+    {
+      "difficulty": 1,
+      "before": 99,
+      "afterTenDamage": 89
+    },
+    {
+      "difficulty": 2,
+      "before": 99,
+      "afterTenDamage": 89
+    },
+    {
+      "difficulty": 3,
+      "before": 99,
+      "afterTenDamage": 79
+    },
+    {
+      "difficulty": 4,
+      "before": 99,
+      "afterTenDamage": 0
+    }
+  ],
+  "encounters": [
+    {
+      "difficulty": 0,
+      "boss": 0,
+      "kit": {
+        "energy": 198,
+        "missiles": 20,
+        "supers": 0,
+        "items": 4100,
+        "beams": 0
+      },
+      "damagingShots": [
+        6,
+        0,
+        0,
+        0
+      ],
+      "frames": 841,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 1,
+      "kit": {
+        "energy": 398,
+        "missiles": 20,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "frames": 841,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 2,
+      "kit": {
+        "energy": 398,
+        "missiles": 20,
+        "supers": 10,
+        "items": 256,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        3,
+        0,
+        0
+      ],
+      "frames": 1771,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 3,
+      "kit": {
+        "energy": 398,
+        "missiles": 30,
+        "supers": 10,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "frames": 1342,
+      "recoilPixelsFor12NativeSteps": 64,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 4,
+      "kit": {
+        "energy": 598,
+        "missiles": 50,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        32,
+        0
+      ],
+      "frames": 1561,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 5,
+      "kit": {
+        "energy": 598,
+        "missiles": 60,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        38,
+        0
+      ],
+      "frames": 1741,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 6,
+      "kit": {
+        "energy": 798,
+        "missiles": 120,
+        "supers": 0,
+        "items": 32,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        75,
+        0
+      ],
+      "frames": 2851,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 7,
+      "kit": {
+        "energy": 798,
+        "missiles": 0,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        169,
+        0
+      ],
+      "frames": 5671,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 8,
+      "kit": {
+        "energy": 998,
+        "missiles": 0,
+        "supers": 60,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        23,
+        0,
+        0
+      ],
+      "frames": 1291,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 0,
+      "boss": 9,
+      "kit": {
+        "energy": 1398,
+        "missiles": 80,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        23,
+        0,
+        225,
+        27
+      ],
+      "frames": 20671,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 118,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 0,
+      "kit": {
+        "energy": 99,
+        "missiles": 10,
+        "supers": 0,
+        "items": 4100,
+        "beams": 0
+      },
+      "damagingShots": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "frames": 901,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 1,
+      "kit": {
+        "energy": 199,
+        "missiles": 10,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        10,
+        0,
+        0,
+        0
+      ],
+      "frames": 901,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 2,
+      "kit": {
+        "energy": 199,
+        "missiles": 10,
+        "supers": 5,
+        "items": 256,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        4,
+        0,
+        0
+      ],
+      "frames": 1531,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 3,
+      "kit": {
+        "energy": 199,
+        "missiles": 15,
+        "supers": 5,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "frames": 1568,
+      "recoilPixelsFor12NativeSteps": 48,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 4,
+      "kit": {
+        "energy": 299,
+        "missiles": 25,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        42,
+        0
+      ],
+      "frames": 1861,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 5,
+      "kit": {
+        "energy": 299,
+        "missiles": 30,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        50,
+        0
+      ],
+      "frames": 2101,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 6,
+      "kit": {
+        "energy": 399,
+        "missiles": 60,
+        "supers": 0,
+        "items": 32,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        100,
+        0
+      ],
+      "frames": 3601,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 7,
+      "kit": {
+        "energy": 399,
+        "missiles": 0,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        225,
+        0
+      ],
+      "frames": 7351,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 8,
+      "kit": {
+        "energy": 499,
+        "missiles": 0,
+        "supers": 30,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        30,
+        0,
+        0
+      ],
+      "frames": 1501,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 40,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        30,
+        0,
+        300,
+        36
+      ],
+      "frames": 19921,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 159,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 0,
+      "kit": {
+        "energy": 99,
+        "missiles": 20,
+        "supers": 0,
+        "items": 4100,
+        "beams": 0
+      },
+      "damagingShots": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "frames": 1171,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 1,
+      "kit": {
+        "energy": 199,
+        "missiles": 20,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        20,
+        0,
+        0,
+        0
+      ],
+      "frames": 1201,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 2,
+      "kit": {
+        "energy": 199,
+        "missiles": 20,
+        "supers": 10,
+        "items": 256,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        7,
+        0,
+        0
+      ],
+      "frames": 1591,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 3,
+      "kit": {
+        "energy": 199,
+        "missiles": 30,
+        "supers": 10,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "frames": 2468,
+      "recoilPixelsFor12NativeSteps": 24,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 4,
+      "kit": {
+        "energy": 299,
+        "missiles": 50,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        84,
+        0
+      ],
+      "frames": 3121,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 5,
+      "kit": {
+        "energy": 299,
+        "missiles": 60,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        100,
+        0
+      ],
+      "frames": 3601,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 6,
+      "kit": {
+        "energy": 399,
+        "missiles": 120,
+        "supers": 0,
+        "items": 32,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        200,
+        0
+      ],
+      "frames": 6601,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 7,
+      "kit": {
+        "energy": 399,
+        "missiles": 0,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        450,
+        0
+      ],
+      "frames": 14101,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 8,
+      "kit": {
+        "energy": 499,
+        "missiles": 0,
+        "supers": 60,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        60,
+        0,
+        0
+      ],
+      "frames": 2401,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 80,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        60,
+        0,
+        600,
+        72
+      ],
+      "frames": 30421,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 79,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 0,
+      "kit": {
+        "energy": 99,
+        "missiles": 20,
+        "supers": 0,
+        "items": 4100,
+        "beams": 0
+      },
+      "damagingShots": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "frames": 1171,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 1,
+      "kit": {
+        "energy": 199,
+        "missiles": 20,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        20,
+        0,
+        0,
+        0
+      ],
+      "frames": 1201,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 2,
+      "kit": {
+        "energy": 199,
+        "missiles": 20,
+        "supers": 10,
+        "items": 256,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        7,
+        0,
+        0
+      ],
+      "frames": 1651,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 3,
+      "kit": {
+        "energy": 199,
+        "missiles": 30,
+        "supers": 10,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "frames": 2468,
+      "recoilPixelsFor12NativeSteps": 24,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 4,
+      "kit": {
+        "energy": 299,
+        "missiles": 50,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        84,
+        0
+      ],
+      "frames": 3121,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 5,
+      "kit": {
+        "energy": 299,
+        "missiles": 60,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        100,
+        0
+      ],
+      "frames": 3601,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 6,
+      "kit": {
+        "energy": 399,
+        "missiles": 120,
+        "supers": 0,
+        "items": 32,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        200,
+        0
+      ],
+      "frames": 6601,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 7,
+      "kit": {
+        "energy": 399,
+        "missiles": 0,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        450,
+        0
+      ],
+      "frames": 14101,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 8,
+      "kit": {
+        "energy": 499,
+        "missiles": 0,
+        "supers": 60,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        60,
+        0,
+        0
+      ],
+      "frames": 2401,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 80,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        60,
+        0,
+        600,
+        72
+      ],
+      "frames": 30211,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 99,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 0,
+      "kit": {
+        "energy": 99,
+        "missiles": 20,
+        "supers": 0,
+        "items": 4100,
+        "beams": 0
+      },
+      "damagingShots": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "frames": 1171,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 1,
+      "kit": {
+        "energy": 199,
+        "missiles": 20,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        20,
+        0,
+        0,
+        0
+      ],
+      "frames": 1201,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 2,
+      "kit": {
+        "energy": 199,
+        "missiles": 20,
+        "supers": 10,
+        "items": 256,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        7,
+        0,
+        0
+      ],
+      "frames": 1471,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 3,
+      "kit": {
+        "energy": 199,
+        "missiles": 30,
+        "supers": 10,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "frames": 2468,
+      "recoilPixelsFor12NativeSteps": 24,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 4,
+      "kit": {
+        "energy": 299,
+        "missiles": 50,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        84,
+        0
+      ],
+      "frames": 3121,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 5,
+      "kit": {
+        "energy": 299,
+        "missiles": 60,
+        "supers": 0,
+        "items": 0,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        100,
+        0
+      ],
+      "frames": 3601,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 6,
+      "kit": {
+        "energy": 399,
+        "missiles": 120,
+        "supers": 0,
+        "items": 32,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        200,
+        0
+      ],
+      "frames": 6601,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 7,
+      "kit": {
+        "energy": 399,
+        "missiles": 0,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        0,
+        450,
+        0
+      ],
+      "frames": 14101,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 8,
+      "kit": {
+        "energy": 499,
+        "missiles": 0,
+        "supers": 60,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        0,
+        60,
+        0,
+        0
+      ],
+      "frames": 2401,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": null,
+      "minimumCinematicEnergy": null,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 80,
+        "supers": 0,
+        "items": 1,
+        "beams": 4096
+      },
+      "damagingShots": [
+        60,
+        0,
+        600,
+        72
+      ],
+      "frames": 30361,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 699,
+      "defeatConfirmed": true
+    }
+  ],
+  "nativeLibrarySha256": "f1ab2394e507f6c967f0a7dd3ef52b51c878541f46e9e8ece81446daa71e67d2",
+  "rulesTest": {
+    "strictC17": true,
+    "rareDropsRetained": 25207,
+    "rareDropCandidates": 100000
+  },
+  "crocomireRenderRegression": true
+}

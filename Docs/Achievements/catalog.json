@@ -1,0 +1,452 @@
+[
+  {
+    "id": 0,
+    "mode": 0,
+    "name": "A NEW DISCOVERY",
+    "nameFr": "UNE DÉCOUVERTE",
+    "description": "Acquire a new equipment or beam upgrade.",
+    "descriptionFr": "Obtenir un nouvel équipement ou rayon.",
+    "icon": 0,
+    "secret": false
+  },
+  {
+    "id": 1,
+    "mode": 0,
+    "name": "HUNTER",
+    "nameFr": "CHASSEUSE",
+    "description": "Defeat 10 enemies.",
+    "descriptionFr": "Vaincre 10 ennemis.",
+    "icon": 14,
+    "secret": false
+  },
+  {
+    "id": 2,
+    "mode": 0,
+    "name": "POWER UNLEASHED",
+    "nameFr": "PUISSANCE LIBÉRÉE",
+    "description": "Detonate a Power Bomb.",
+    "descriptionFr": "Faire exploser une bombe de puissance.",
+    "icon": 1,
+    "secret": false
+  },
+  {
+    "id": 3,
+    "mode": 0,
+    "name": "REACH FURTHER",
+    "nameFr": "PLUS LOIN",
+    "description": "Use the Grapple Beam.",
+    "descriptionFr": "Utiliser le rayon grappin.",
+    "icon": 8,
+    "secret": false
+  },
+  {
+    "id": 4,
+    "mode": 0,
+    "name": "CHARGED ARMOR",
+    "nameFr": "ARMURE CHARGÉE",
+    "description": "Use the Screw Attack.",
+    "descriptionFr": "Utiliser l’attaque en vrille.",
+    "icon": 6,
+    "secret": false
+  },
+  {
+    "id": 5,
+    "mode": 1,
+    "name": "SMALL BEGINNINGS",
+    "nameFr": "PETITS DÉBUTS",
+    "description": "Obtain the Morph Ball.",
+    "descriptionFr": "Obtenir la boule morphing.",
+    "icon": 0,
+    "secret": false
+  },
+  {
+    "id": 6,
+    "mode": 1,
+    "name": "BREAK THE SHELL",
+    "nameFr": "BRISER LA COQUILLE",
+    "description": "Obtain Bombs.",
+    "descriptionFr": "Obtenir les bombes.",
+    "icon": 1,
+    "secret": false
+  },
+  {
+    "id": 7,
+    "mode": 1,
+    "name": "HEAT SHIELD",
+    "nameFr": "BOUCLIER THERMIQUE",
+    "description": "Obtain the Varia Suit.",
+    "descriptionFr": "Obtenir le costume Varia.",
+    "icon": 2,
+    "secret": false
+  },
+  {
+    "id": 8,
+    "mode": 1,
+    "name": "DEEP DIVER",
+    "nameFr": "EN EAUX PROFONDES",
+    "description": "Obtain the Gravity Suit.",
+    "descriptionFr": "Obtenir le costume de gravité.",
+    "icon": 3,
+    "secret": false
+  },
+  {
+    "id": 9,
+    "mode": 1,
+    "name": "TERMINAL VELOCITY",
+    "nameFr": "VITESSE TERMINALE",
+    "description": "Obtain the Speed Booster.",
+    "descriptionFr": "Obtenir l’accélérateur.",
+    "icon": 4,
+    "secret": false
+  },
+  {
+    "id": 10,
+    "mode": 1,
+    "name": "SKY IS THE LIMIT",
+    "nameFr": "VERS LES SOMMETS",
+    "description": "Obtain the Space Jump.",
+    "descriptionFr": "Obtenir le saut spatial.",
+    "icon": 5,
+    "secret": false
+  },
+  {
+    "id": 11,
+    "mode": 1,
+    "name": "LIVING LIGHTNING",
+    "nameFr": "ÉCLAIR VIVANT",
+    "description": "Obtain the Screw Attack.",
+    "descriptionFr": "Obtenir l’attaque en vrille.",
+    "icon": 6,
+    "secret": false
+  },
+  {
+    "id": 12,
+    "mode": 1,
+    "name": "FULL SPECTRUM",
+    "nameFr": "SPECTRE COMPLET",
+    "description": "Collect all five beam upgrades.",
+    "descriptionFr": "Obtenir les cinq améliorations de rayon.",
+    "icon": 8,
+    "secret": false
+  },
+  {
+    "id": 13,
+    "mode": 1,
+    "name": "BUILT TO LAST",
+    "nameFr": "À TOUTE ÉPREUVE",
+    "description": "Reach 1,099 maximum energy.",
+    "descriptionFr": "Atteindre une énergie maximale de 1 099.",
+    "icon": 9,
+    "secret": false
+  },
+  {
+    "id": 14,
+    "mode": 1,
+    "name": "WELL STOCKED",
+    "nameFr": "BIEN ÉQUIPÉE",
+    "description": "Reach a capacity of 100 missiles.",
+    "descriptionFr": "Atteindre une capacité de 100 missiles.",
+    "icon": 10,
+    "secret": false
+  },
+  {
+    "id": 15,
+    "mode": 1,
+    "name": "GIANT FALL",
+    "nameFr": "CHUTE DU GÉANT",
+    "description": "Defeat Kraid.",
+    "descriptionFr": "Vaincre Kraid.",
+    "icon": 11,
+    "secret": false
+  },
+  {
+    "id": 16,
+    "mode": 1,
+    "name": "GHOST BUSTER",
+    "nameFr": "CHASSE AUX FANTÔMES",
+    "description": "Defeat Phantoon.",
+    "descriptionFr": "Vaincre Phantoon.",
+    "icon": 12,
+    "secret": false
+  },
+  {
+    "id": 17,
+    "mode": 1,
+    "name": "ABYSS TAMER",
+    "nameFr": "MAÎTRESSE DES ABYSSES",
+    "description": "Defeat Draygon.",
+    "descriptionFr": "Vaincre Draygon.",
+    "icon": 13,
+    "secret": false
+  },
+  {
+    "id": 18,
+    "mode": 1,
+    "name": "OLD RIVAL",
+    "nameFr": "VIEUX RIVAL",
+    "description": "Defeat Ridley.",
+    "descriptionFr": "Vaincre Ridley.",
+    "icon": 14,
+    "secret": false
+  },
+  {
+    "id": 19,
+    "mode": 1,
+    "name": "FOUR SEALS",
+    "nameFr": "QUATRE SCEAUX",
+    "description": "Defeat Kraid, Phantoon, Draygon and Ridley in one save.",
+    "descriptionFr": "Vaincre Kraid, Phantoon, Draygon et Ridley dans une même sauvegarde.",
+    "icon": 15,
+    "secret": false
+  },
+  {
+    "id": 20,
+    "mode": 1,
+    "name": "NO LOOSE ENDS",
+    "nameFr": "RIEN À LAISSER",
+    "description": "Defeat Spore Spawn, Crocomire, Botwoon and Golden Torizo in one save.",
+    "descriptionFr": "Vaincre Spore Spawn, Crocomire, Botwoon et Golden Torizo dans une même sauvegarde.",
+    "icon": 16,
+    "secret": true
+  },
+  {
+    "id": 21,
+    "mode": 1,
+    "name": "EVERY CORNER",
+    "nameFr": "CHAQUE RECOIN",
+    "description": "Collect all 100 item locations.",
+    "descriptionFr": "Récupérer les objets aux 100 emplacements.",
+    "icon": 17,
+    "secret": false
+  },
+  {
+    "id": 22,
+    "mode": 1,
+    "name": "NO ONE LEFT BEHIND",
+    "nameFr": "TOUT LE MONDE À BORD",
+    "description": "Free the animals during the escape.",
+    "descriptionFr": "Libérer les animaux pendant la fuite.",
+    "icon": 18,
+    "secret": true
+  },
+  {
+    "id": 23,
+    "mode": 1,
+    "name": "MISSION COMPLETE",
+    "nameFr": "MISSION ACCOMPLIE",
+    "description": "Escape Zebes and reach the ending.",
+    "descriptionFr": "S’échapper de Zebes et atteindre la fin.",
+    "icon": 19,
+    "secret": false
+  },
+  {
+    "id": 24,
+    "mode": 1,
+    "name": "THREE HOUR TOUR",
+    "nameFr": "MOINS DE TROIS HEURES",
+    "description": "Finish in under three hours of in-game time.",
+    "descriptionFr": "Terminer en moins de trois heures au chrono du jeu.",
+    "icon": 4,
+    "secret": true
+  },
+  {
+    "id": 25,
+    "mode": 2,
+    "name": "FIRST CHECK",
+    "nameFr": "PREMIÈRE TROUVAILLE",
+    "description": "Collect your first randomized location.",
+    "descriptionFr": "Récupérer un objet à un premier emplacement randomisé.",
+    "icon": 17,
+    "secret": false
+  },
+  {
+    "id": 26,
+    "mode": 2,
+    "name": "GETTING STARTED",
+    "nameFr": "BIEN PARTIE",
+    "description": "Collect 10 locations in one seed.",
+    "descriptionFr": "Récupérer les objets de 10 emplacements dans une seed.",
+    "icon": 17,
+    "secret": false
+  },
+  {
+    "id": 27,
+    "mode": 2,
+    "name": "ON THE TRAIL",
+    "nameFr": "SUR LA PISTE",
+    "description": "Collect 25 locations in one seed.",
+    "descriptionFr": "Récupérer les objets de 25 emplacements dans une seed.",
+    "icon": 17,
+    "secret": false
+  },
+  {
+    "id": 28,
+    "mode": 2,
+    "name": "SEED EXPLORER",
+    "nameFr": "EXPLORATRICE",
+    "description": "Collect 50 locations in one seed.",
+    "descriptionFr": "Récupérer les objets de 50 emplacements dans une seed.",
+    "icon": 17,
+    "secret": false
+  },
+  {
+    "id": 29,
+    "mode": 2,
+    "name": "SEED SWEPT",
+    "nameFr": "TOUT RATISSÉ",
+    "description": "Collect every active item location in the seed.",
+    "descriptionFr": "Récupérer tous les objets aux emplacements actifs de la seed.",
+    "icon": 17,
+    "secret": false
+  },
+  {
+    "id": 30,
+    "mode": 2,
+    "name": "SHUFFLED GIANT",
+    "nameFr": "GÉANT MÉLANGÉ",
+    "description": "Defeat Kraid in a randomized game.",
+    "descriptionFr": "Vaincre Kraid dans une partie randomisée.",
+    "icon": 11,
+    "secret": false
+  },
+  {
+    "id": 31,
+    "mode": 2,
+    "name": "SHUFFLED GHOST",
+    "nameFr": "FANTÔME MÉLANGÉ",
+    "description": "Defeat Phantoon in a randomized game.",
+    "descriptionFr": "Vaincre Phantoon dans une partie randomisée.",
+    "icon": 12,
+    "secret": false
+  },
+  {
+    "id": 32,
+    "mode": 2,
+    "name": "SHUFFLED DEPTHS",
+    "nameFr": "ABYSSES MÉLANGÉS",
+    "description": "Defeat Draygon in a randomized game.",
+    "descriptionFr": "Vaincre Draygon dans une partie randomisée.",
+    "icon": 13,
+    "secret": false
+  },
+  {
+    "id": 33,
+    "mode": 2,
+    "name": "SHUFFLED RIVAL",
+    "nameFr": "RIVAL MÉLANGÉ",
+    "description": "Defeat Ridley in a randomized game.",
+    "descriptionFr": "Vaincre Ridley dans une partie randomisée.",
+    "icon": 14,
+    "secret": false
+  },
+  {
+    "id": 34,
+    "mode": 2,
+    "name": "SEALS REASSEMBLED",
+    "nameFr": "SCEAUX RÉUNIS",
+    "description": "Defeat all four main bosses in one seed.",
+    "descriptionFr": "Vaincre les quatre boss principaux dans une même seed.",
+    "icon": 15,
+    "secret": false
+  },
+  {
+    "id": 35,
+    "mode": 2,
+    "name": "SUITED FOR ANYTHING",
+    "nameFr": "PRÊTE À TOUT",
+    "description": "Collect both Varia and Gravity Suits in one seed.",
+    "descriptionFr": "Obtenir les costumes Varia et de gravité dans une même seed.",
+    "icon": 2,
+    "secret": false
+  },
+  {
+    "id": 36,
+    "mode": 2,
+    "name": "RANDOM SPECTRUM",
+    "nameFr": "SPECTRE MÉLANGÉ",
+    "description": "Collect all five beam upgrades in one seed.",
+    "descriptionFr": "Obtenir les cinq améliorations de rayon dans une même seed.",
+    "icon": 8,
+    "secret": false
+  },
+  {
+    "id": 37,
+    "mode": 2,
+    "name": "CHOZO WHISPER",
+    "nameFr": "MURMURE CHOZO",
+    "description": "Collect a Chozo Tablet in a tablet hunt.",
+    "descriptionFr": "Obtenir une tablette Chozo dans une chasse aux tablettes.",
+    "icon": 7,
+    "secret": false
+  },
+  {
+    "id": 38,
+    "mode": 2,
+    "name": "HALFWAY HOME",
+    "nameFr": "À MI-CHEMIN",
+    "description": "Reach half the required Chozo Tablet quota, rounded up.",
+    "descriptionFr": "Atteindre la moitié du quota de tablettes Chozo, arrondie au supérieur.",
+    "icon": 7,
+    "secret": false
+  },
+  {
+    "id": 39,
+    "mode": 2,
+    "name": "THE FINAL TABLET",
+    "nameFr": "LA DERNIÈRE TABLETTE",
+    "description": "Reach the required Chozo Tablet quota.",
+    "descriptionFr": "Atteindre le quota requis de tablettes Chozo.",
+    "icon": 7,
+    "secret": false
+  },
+  {
+    "id": 40,
+    "mode": 2,
+    "name": "SEED COMPLETE",
+    "nameFr": "SEED TERMINÉE",
+    "description": "Reach the ending of a randomized game.",
+    "descriptionFr": "Atteindre la fin d’une partie randomisée.",
+    "icon": 19,
+    "secret": false
+  },
+  {
+    "id": 41,
+    "mode": 2,
+    "name": "ANCIENT ESCAPE",
+    "nameFr": "FUITE ANCESTRALE",
+    "description": "Complete a tablet hunt and escape aboard the ship.",
+    "descriptionFr": "Terminer une chasse aux tablettes et s’échapper à bord du vaisseau.",
+    "icon": 19,
+    "secret": true
+  },
+  {
+    "id": 42,
+    "mode": 2,
+    "name": "GRAVITY FIRST",
+    "nameFr": "LA GRAVITÉ D’ABORD",
+    "description": "Find the Gravity Suit before owning the Varia Suit.",
+    "descriptionFr": "Trouver le costume de gravité avant de posséder le costume Varia.",
+    "icon": 3,
+    "secret": true
+  },
+  {
+    "id": 43,
+    "mode": 2,
+    "name": "STANDING TALL",
+    "nameFr": "DEBOUT FACE AU GÉANT",
+    "description": "Defeat Kraid without owning the Morph Ball.",
+    "descriptionFr": "Vaincre Kraid sans posséder la boule morphing.",
+    "icon": 11,
+    "secret": true
+  },
+  {
+    "id": 44,
+    "mode": 2,
+    "name": "QUICK SOLUTION",
+    "nameFr": "SOLUTION EXPRESS",
+    "description": "Finish a seed in under two hours of in-game time.",
+    "descriptionFr": "Terminer une seed en moins de deux heures au chrono du jeu.",
+    "icon": 4,
+    "secret": true
+  }
+]

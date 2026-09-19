@@ -1,0 +1,122 @@
+[
+  {
+    "file": "morph.png",
+    "sha256": "c21a2f0cfc6dce3f592016159dff70a824fe974f97776886642be28abae2e948",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "bombs.png",
+    "sha256": "779c70b81c4e4790f912d98fffc6c93b5c73c939256f9988938bdde9a826614d",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "varia.png",
+    "sha256": "5dda7e27a9ab4f6b8fa987007f1365cc07cb1cd7ed3f5f47392e3bdcb108acbc",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "gravity.png",
+    "sha256": "9bd2558ebdb57b3bdc52bfa1024e929f00a155ce6dcd43b220c5905070b8ea9b",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "speed.png",
+    "sha256": "a0155bf5325b994293332fb6e244777609d847b47a46cdadedfb3a16b2739a6c",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "space.png",
+    "sha256": "7fef6c3f1695b2f7286ff0f4872ca65f4996e569aa8c603864955c18d7fa7f25",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "screw.png",
+    "sha256": "887d37a6aeec36d725bcefc838eefd757efb6f11b6a6b70f7331910a5aea4309",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "tablet.png",
+    "sha256": "343526be605ee8e9758c8855bb90c943c5ccdfec81442b0b4a44d8d4278b914c",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "beams.png",
+    "sha256": "c90916dd9ba5e1d091ae8ed25466d650297f9f2d4ec2a2373c973dd6fda5e5d8",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "energy.png",
+    "sha256": "2ce55e6db368f23ae89c4c15c2bd4076c692b1af0daddb2c0beecd78790c98e6",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "missiles.png",
+    "sha256": "0a9388eef8eec924e1bb0717d14a47cc2da758c57f418ff03b674b8619928660",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "kraid.png",
+    "sha256": "f70b6cb680bac3cfa42228e2d47e3f9bfb24d8017fad73981a6cc6ad1afa158d",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "phantoon.png",
+    "sha256": "4ae45a00acfdc2e196340e4bd52f4d9b6875d3695e7769c4270d9de7db50e640",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "draygon.png",
+    "sha256": "a55bbec9f33c1727979b548812e84a1f5507f4089906622a026ee1b4f620f72c",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "ridley.png",
+    "sha256": "e8eb7e21893f6d4c000f7cf8cce1abc43e3c79df9cb6eb27a67b21af19334c58",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "seals.png",
+    "sha256": "d11baffa69d3342a70f958cfdf4f4458596d9b81ce307f5ca60f002db0e46b60",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "miniboss.png",
+    "sha256": "0a871df7830656f86bb99e21def7973a0c841e70cc531787616beac7e38ec29c",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "map.png",
+    "sha256": "6a34e88ca84f33e597ced81a81e2946aed4edc532b7a77943b743e0081b67463",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "animals.png",
+    "sha256": "d383f4a401f20ab38e5afdd611d1071c6f1cdc61300bf07212ad81598ce17b17",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  },
+  {
+    "file": "ship.png",
+    "sha256": "1e14c76e64bb74ab08e80ee2b72b57055a4daf9ed833ba64058d480e88c50624",
+    "source": "Built-in ImageGen",
+    "temporary": true
+  }
+]

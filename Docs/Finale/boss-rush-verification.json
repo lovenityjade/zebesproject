@@ -1,0 +1,146 @@
+{
+  "host": "gaming-pc",
+  "passed": true,
+  "enhancedEffects": true,
+  "method": "Injected aim, weapon dispatch and positioning; practice outside MB cinematic; not player victories",
+  "saveUnchanged": true,
+  "nativeDamage": [
+    {
+      "difficulty": 0,
+      "before": 198,
+      "afterTenDamage": 188
+    },
+    {
+      "difficulty": 1,
+      "before": 99,
+      "afterTenDamage": 89
+    },
+    {
+      "difficulty": 2,
+      "before": 99,
+      "afterTenDamage": 89
+    },
+    {
+      "difficulty": 3,
+      "before": 99,
+      "afterTenDamage": 79
+    },
+    {
+      "difficulty": 4,
+      "before": 99,
+      "afterTenDamage": 0
+    }
+  ],
+  "encounters": [
+    {
+      "difficulty": 0,
+      "boss": 9,
+      "kit": {
+        "energy": 1398,
+        "missiles": 80,
+        "supers": 0,
+        "items": 16421,
+        "beams": 4107
+      },
+      "damagingShots": [
+        23,
+        0,
+        15,
+        27
+      ],
+      "frames": 14131,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 78,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 1,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 40,
+        "supers": 0,
+        "items": 16421,
+        "beams": 4107
+      },
+      "damagingShots": [
+        30,
+        0,
+        20,
+        36
+      ],
+      "frames": 11881,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 79,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 2,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 80,
+        "supers": 0,
+        "items": 16421,
+        "beams": 4107
+      },
+      "damagingShots": [
+        60,
+        0,
+        40,
+        72
+      ],
+      "frames": 14251,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 79,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 3,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 80,
+        "supers": 0,
+        "items": 16421,
+        "beams": 4107
+      },
+      "damagingShots": [
+        60,
+        0,
+        40,
+        72
+      ],
+      "frames": 13321,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 99,
+      "defeatConfirmed": true
+    },
+    {
+      "difficulty": 4,
+      "boss": 9,
+      "kit": {
+        "energy": 699,
+        "missiles": 80,
+        "supers": 0,
+        "items": 16421,
+        "beams": 4107
+      },
+      "damagingShots": [
+        60,
+        0,
+        40,
+        72
+      ],
+      "frames": 13351,
+      "recoilPixelsFor12NativeSteps": null,
+      "scriptedSurvival": true,
+      "minimumCinematicEnergy": 699,
+      "defeatConfirmed": true
+    }
+  ]
+}

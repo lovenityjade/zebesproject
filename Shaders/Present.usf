@@ -76,6 +76,57 @@ if(EngineWeather>.5) {
         float3 Stable=Weather.bilinear(SceneTexture,SceneTextureSampler,Screen,Size,HudTop);
         Result+=(Warped-Stable)*Safe*Brightness;
     }
+    if(LiquidState.x>.5) {
+        const float Surface=LiquidState.y;
+        float Molten=Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,Center,0).a;
+        // Guard both ends of the sample displacement, including the surface,
+        // foreground platforms and sprites. Original art is only gently warped.
+        [unroll] for(int k=-1;k<=1;k+=2) {
+            Molten=min(Molten,Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,(Cell+float2(k*2,0)+.5)/Size,0).a);
+            Molten=min(Molten,Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,(Cell+float2(0,k*2)+.5)/Size,0).a);
+        }
+        float Flow=Weather.noise(World*.035+float2(Time*.22,-Time*.13));
+        float2 Drift=float2(sin(World.y*.10+Time*1.6+Flow*3),cos(World.x*.075-Time*1.1+Flow*2));
+        Drift*=float2(1.35,.65);
+        if(Molten>.01){
+            float3 Fluid=Weather.bilinear(SceneTexture,SceneTextureSampler,Screen+Drift,Size,HudTop);
+            float3 Still=Weather.bilinear(SceneTexture,SceneTextureSampler,Screen,Size,HudTop);
+            Result+=(Fluid-Still)*Molten*.8*Brightness;
+            // Broad breathing of the existing colors, never a replacement texture.
+            Result*=1+Molten*(Flow-.5)*.08;
+        }
+        // Sparse ballistic droplets rise from exposed pools, fall back and cool.
+        // World-space seeds keep emitters stable as the camera moves.
+        if(Surface>34 && Surface<246 && Screen.y>=32 && Mask.r<.5 && Sprite<.5){
+            float CellX=floor(World.x/32);
+            [unroll] for(int J=-1;J<=1;J++){
+                float Id=CellX+J,Seed=Weather.hash(float2(Id,19));
+                float Period=2.0+Seed*2.2;
+                float Cycle=floor(Time/Period+Seed);
+                float Age=frac(Time/Period+Seed)*Period;
+                float Random=Weather.hash(float2(Id,Cycle+71));
+                float Velocity=23+Random*29,Gravity=100;
+                float Flight=2*Velocity/Gravity;
+                float OriginX=(Id+.18+Seed*.64)*32-WeatherView.x;
+                float2 Origin=float2(OriginX,Surface+3);
+                // Only exposed liquid can emit; covered or off-screen pools cannot.
+                float Open=0;
+                if(Origin.x>2 && Origin.x<ViewWidth-2 && Origin.y<224)
+                    Open=Texture2DSampleLevel(EnvironmentMask,EnvironmentMaskSampler,(Origin+.5)/Size,0).a;
+                if(Open>.5 && Age<Flight){
+                    float2 Drop=float2(OriginX+(Random-.5)*25*Age,Surface-Velocity*Age+.5*Gravity*Age*Age);
+                    float2 Q=Screen-Drop;
+                    float Radius=.48+Random*.58;
+                    float Core=exp(-dot(Q,Q)/(Radius*Radius));
+                    float Halo=exp(-dot(Q,Q)/(Radius*Radius*9))*.045;
+                    float Fade=smoothstep(0,.08,Age)*(1-smoothstep(Flight-.12,Flight,Age));
+                    float3 Hot=LiquidState.x>1.5?float3(1,.68,.25):float3(1,.44,.06);
+                    float3 Color=lerp(float3(1,.85,.38),Hot,saturate(Age/Flight));
+                    Result+=Color*(Core*.75+Halo)*Fade;
+                }
+            }
+        }
+    }
     float Mist=Weather.cloud(World*float2(.018,.030)+float2(Time*.05,-Time*.012));
     float Mist2=Weather.cloud(World*float2(.010,.042)+float2(-Time*.03,Time*.016)+17);
     float Low=smoothstep(60,224,Screen.y);

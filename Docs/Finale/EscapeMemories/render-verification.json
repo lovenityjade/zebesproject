@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "events": [
+    {
+      "cue": "1",
+      "line": "0",
+      "top": "1",
+      "time": "8.011",
+      "frame": "1994",
+      "portrait": "virginia_aran"
+    },
+    {
+      "cue": "1",
+      "line": "1",
+      "top": "1",
+      "time": "11.165",
+      "frame": "2183",
+      "portrait": "zero_suit"
+    },
+    {
+      "cue": "2",
+      "line": "0",
+      "top": "0",
+      "time": "28.005",
+      "frame": "3192",
+      "portrait": "rodney_aran"
+    },
+    {
+      "cue": "2",
+      "line": "1",
+      "top": "0",
+      "time": "31.159",
+      "frame": "3381",
+      "portrait": "zero_suit"
+    },
+    {
+      "cue": "3",
+      "line": "0",
+      "top": "1",
+      "time": "48.015",
+      "frame": "4391",
+      "portrait": "old_bird"
+    },
+    {
+      "cue": "3",
+      "line": "1",
+      "top": "1",
+      "time": "51.153",
+      "frame": "4579",
+      "portrait": "zero_suit"
+    },
+    {
+      "cue": "4",
+      "line": "0",
+      "top": "0",
+      "time": "68.010",
+      "frame": "5589",
+      "portrait": "ridley"
+    },
+    {
+      "cue": "4",
+      "line": "1",
+      "top": "0",
+      "time": "71.165",
+      "frame": "5778",
+      "portrait": "zero_suit"
+    },
+    {
+      "cue": "5",
+      "line": "0",
+      "top": "1",
+      "time": "88.008",
+      "frame": "6787",
+      "portrait": "adam_malkovich"
+    },
+    {
+      "cue": "5",
+      "line": "1",
+      "top": "1",
+      "time": "91.163",
+      "frame": "6976",
+      "portrait": "zero_suit"
+    },
+    {
+      "cue": "6",
+      "line": "0",
+      "top": "0",
+      "time": "108.007",
+      "frame": "7985",
+      "portrait": "mother_brain"
+    },
+    {
+      "cue": "6",
+      "line": "1",
+      "top": "0",
+      "time": "111.162",
+      "frame": "8174",
+      "portrait": "zero_suit"
+    },
+    {
+      "cue": "7",
+      "line": "0",
+      "top": "1",
+      "time": "128.005",
+      "frame": "9183",
+      "portrait": "baby_metroid"
+    },
+    {
+      "cue": "7",
+      "line": "1",
+      "top": "1",
+      "time": "131.160",
+      "frame": "9372",
+      "portrait": "zero_suit"
+    }
+  ],
+  "complete": "SM_ESCAPE_MEMORIES_COMPLETE time=136.001 cue=7 line=1 visible=0 frame=9662",
+  "nativeSimulationContinued": true,
+  "scope": "Scripted rendered escape, not a human playthrough"
+}

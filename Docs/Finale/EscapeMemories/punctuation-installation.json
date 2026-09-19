@@ -1,0 +1,10 @@
+{
+  "installed": "20260919-092949",
+  "builtAndTestedOn": "gaming-pc",
+  "restartRequired": true,
+  "backup": ".tmp/dialogue-punctuation/before-install-20260919-092949",
+  "sha256": {
+    "Native/build/libsm_native.so": "d8e82bf592abfb095e5f6a97d7df602315a4f2e4c09858ad1a9052c65bd938fe",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "a45de05a77f5540f7bd2d3648931d5756135ba3695f793e0c23ad76c5754d4f2"
+  }
+}

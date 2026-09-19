@@ -1,0 +1,10 @@
+{
+  "installed": "20260919-091231",
+  "builtAndTestedOn": "gaming-pc",
+  "localGameLaunched": false,
+  "backup": ".tmp/escape-memories/before-install-20260919-091231",
+  "sha256": {
+    "Native/build/libsm_native.so": "9b12c74fcbbff29272da4bd901800fa88e2542060ee8a211c29830e2668b26d7",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "004916b2b1ab801b25c21e3c84e748c96bdec78a7f45627975496e5155bf0c16"
+  }
+}

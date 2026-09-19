@@ -1,0 +1,7 @@
+{
+  "markers": [
+    "[2026.09.19-13.11.57:107][  1]LogTemp: Display: SM_FINALE_PIXEL_ATLAS ready=1254x1254 native_grid=1",
+    "[2026.09.19-13.12.09:691][420]LogTemp: Display: SM_FINALE_ESCAPE_COMPLETE room=91f8 escape=1 hyper=32768 meteors=7 atlas=6290064 cpu_opcodes=0"
+  ],
+  "scope": "Rendered native scripted phases; setup survival and final lethal health injected, not a human victory."
+}

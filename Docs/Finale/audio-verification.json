@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "finaleCueSeconds": 74,
+  "fadeSeconds": 2,
+  "sacrificeSilent": true,
+  "pausePreservesCursor": true,
+  "normalRushStartsAtZero": true
+}

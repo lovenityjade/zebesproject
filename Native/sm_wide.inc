@@ -2,7 +2,6 @@
  * all temporary scroll, VRAM, OAM and line-buffer changes. Native PPU state is
  * never modified by the wide view. 400x224, integer-scaled in Unreal. */
 #include "sm_sprite_view.h"
-#include "ida_types.h"
 int sm_wide_enabled;
 uint8_t sm_wide_pixels[400*240*4],sm_wide_layers[400*240*4];
 uint8_t sm_wide_far[400*240],sm_wide_hud[400*240*4];
@@ -93,7 +92,8 @@ static void wide_fill_row(Ppu *p,int layer,int line,int offset,int count) {
 }
 static void wide_draw_span(Ppu *original,int line,int offset,int count,int destination) {
   Ppu *p=&wide_ppu;memcpy(p,original,sizeof(*p));
-  if(sm_combat_effects && sm_visual_suit())sm_scene_replace_suit(p);
+  if(sm_combat_effects && (sm_visual_suit() || sm_visual_motherbrain_beam()>=2))sm_scene_replace_suit(p);
+  if(sm_combat_effects && sm_visual_motherbrain_beam_mask() && sm_visual_motherbrain_beam()<2)p->fixedColorR=p->fixedColorG=p->fixedColorB=0;
   if(sm_combat_effects && ((power_bomb_explosion_status&0x8000) || sm_visual_eye())) {memset(p->mathEnabled,0,sizeof(p->mathEnabled));p->clipMode=0;}
   // Rebuild the streamed maps on the copy. Animated/destructible blocks have
   // already updated level_data, so the side view follows their current state.
@@ -106,9 +106,26 @@ static void wide_draw_span(Ppu *original,int line,int offset,int count,int desti
   // texture can extend into a side span without revealing its next copy.
   int body_scroll=p->bgLayer[1].hScroll&1023;
   if(body_scroll&512)body_scroll-=1024;
+  if(boss_body && room_ptr==0xa98d){
+    // Crocomire hides BG2 with scroll=256 outside the old viewport. That
+    // sentinel wraps the body into the opposite widescreen edge. Project its
+    // finite texture from the enemy's actual room position instead.
+    body_scroll=(int)layer1_x_pos-(int)enemy_data[0].x_pos+51;
+    p->bgLayer[1].hScroll=body_scroll;
+  }
+  int body_y_scroll=0;
+  const int draygon_body=boss_body && room_ptr==0xda60;
+  if(draygon_body){
+    // Native BG2 wraps at 512x256. Recover its one finite 256x128 body
+    // from world coordinates so offscreen entrances cannot reappear opposite.
+    const Enemy_Draygon *e=Get_Draygon(0);
+    body_scroll=(int16_t)e->draygon_var_5E+layer1_x_pos-(int16_t)e->base.x_pos+62;
+    body_y_scroll=(int16_t)e->draygon_var_5F+layer1_y_pos-(int16_t)e->base.y_pos+64;
+    p->bgLayer[1].hScroll=body_scroll;p->bgLayer[1].vScroll=body_y_scroll;
+  }
   if(p->mode==1 && room_ready) {
     wide_fill_row(p,0,line,offset,count);
-    if(!(layer2_scroll_x&1) && !(layer2_scroll_y&1)) {
+    if(!boss_body && !(layer2_scroll_x&1) && !(layer2_scroll_y&1)) {
       wide_fill_row(p,1,line,offset,count);
       if(sm_scene_parallax && (sm_scene_camera_x || sm_scene_camera_y)) {
         int sx=sm_scene_camera_x,sy=sm_scene_camera_y,wy=layer1_y_pos+line;
@@ -167,22 +184,25 @@ static void wide_draw_span(Ppu *original,int line,int offset,int count,int desti
     int painted=outside && (sm_decor_get(0,bx,by,&authored)||sm_decor_get(1,bx,by,&authored));
     if(!room_ready || (outside && (!border_enabled || p->mode!=1) && !painted)) {memset(out,0,4);out[3]=255;memset(meta,0,4);continue;}
     int body_x=offset+x+body_scroll;
-    if(boss_body && (body_x<0 || body_x>=256)) {
-      bool main=p->layer[1].mainScreenEnabled,sub=p->layer[1].subScreenEnabled;
+    int hide_body=boss_body && (body_x<0 || body_x>=256 || (draygon_body && (line+body_y_scroll<0 || line+body_y_scroll>=128)));
+    bool main=p->layer[1].mainScreenEnabled,sub=p->layer[1].subScreenEnabled;
+    if(hide_body) {
       p->layer[1].mainScreenEnabled=p->layer[1].subScreenEnabled=false;
       // Recompose the underlying layers, including sprites and color math;
       // blacking out the final pixel would erase legitimate room content.
       ppu_handlePixel(p,x,line);
-      p->layer[1].mainScreenEnabled=main;p->layer[1].subScreenEnabled=sub;
     } else if(!fast)ppu_handlePixel(p,x,line);
-    int layer=sm_last_main_layer[x];
+    int layer=sm_capture_layer(p,x,line,sm_last_main_layer[x]);
     meta[0]=layer;meta[1]=meta[2]=0;meta[3]=255;
+    if(layer==2)meta[2]=sm_scene_liquid_occlusion(p,x,line,layer);
+    if(hide_body){p->layer[1].mainScreenEnabled=main;p->layer[1].subScreenEnabled=sub;}
     if(p->mode==1 && !boss_body && (layer==1 || layer==5)) {
       int wy=layer1_y_pos+line;
       sm_wide_far[idx]=room_ptr==0x91f8?(wy<1168?64:(wy<1192?128:192)):255;
       if(sm_scene_parallax && (sm_scene_camera_x || sm_scene_camera_y)) {
         int sx=sm_scene_camera_x,sy=sm_scene_camera_y;
         if(room_ptr==0x91f8){sx=wy<1168?sx/3:(wy<1192?sx*2/3:sx);sy=0;}
+        sx=sm_decor_parallax(0,wy,sx);sy=sm_decor_parallax(1,wy,sy);
         uint16_t hx=p->bgLayer[1].hScroll,hy=p->bgLayer[1].vScroll;
         p->bgLayer[1].hScroll=hx+sx;p->bgLayer[1].vScroll=hy+sy;
         ppu_handlePixel(p,x,line);
@@ -206,10 +226,11 @@ static void wide_draw_span(Ppu *original,int line,int offset,int count,int desti
       }
     }
     memcpy(out,wide_line_buffer+(line-1)*1024+x*4,4);out[3]=255;
+    sm_finale_pixel(p,x,line,wx,destination+x,out,meta);
   }
 }
 static void wide_map(void) {
-  if(area_index>=7 || debug_disable_minimap)return;
+  if(sm_rush_active() || area_index>=7 || debug_disable_minimap)return;
   const uint8_t *ptr=RomFixedPtr(0x82964a)+area_index*3;
   const uint16_t *map=(const uint16_t*)RomPtr(ptr[0]|ptr[1]<<8|ptr[2]<<16);
   const uint8_t *known=sm_seed_map_data(area_index);
@@ -245,7 +266,7 @@ static void wide_hud_line(Ppu *p,int line) {
   }
 }
 static void sm_wide_line(Ppu *p,int line) {
-  if(!sm_wide_enabled && !sm_decor_room_active())return;
+  if(!sm_wide_enabled && !sm_decor_room_active() && !sm_scene_finite_bg2(p))return;
   if(line==1) {
     memset(border_cache,0,sizeof(border_cache));border_samples=border_missing=0;
     memset(border_visible_cache,0,sizeof(border_visible_cache));
@@ -286,7 +307,7 @@ static void sm_wide_line(Ppu *p,int line) {
   memcpy(sm_wide_layers+(row*400+72)*4,sm_scene_layers+row*1024,1024);
   memcpy(sm_wide_far+row*400+72,sm_scene_background_mask+row*256,256);
   memcpy(sm_wide_hud+(row*400+72)*4,sm_ui_pixels+row*1024,1024);
-  if(sm_decor_room_active() && p->mode==1) {
+  if((sm_decor_room_active() || sm_scene_finite_bg2(p)) && p->mode==1) {
     wide_draw_span(p,line,-72,200,0);wide_draw_span(p,line,128,200,200);return;
   }
   wide_draw_span(p,line,-72,72,0);wide_draw_span(p,line,256,72,328);

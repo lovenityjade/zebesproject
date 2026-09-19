@@ -1,18 +1,25 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="editor-token" content="__EDITOR_TOKEN__"><title>Atelier de décors — Super Metroid</title>
-<link rel="stylesheet" href="/editor.css"><script defer src="/editor.js"></script></head>
+<meta name="editor-token" content="__EDITOR_TOKEN__"><title>Atelier de décors — The Zebes Project</title>
+<link rel="stylesheet" href="/editor.css"><script defer src="/editor.js"></script><script defer src="/studio.js"></script></head>
 <body>
-<header><strong>ATELIER DE DÉCORS</strong><span>Super Metroid · éditeur externe</span><button id="save">Enregistrer</button><span id="saveState">Aucune retouche</span></header>
+<header><strong>ATELIER DE DÉCORS</strong><span>The Zebes Project · éditeur externe</span><button id="save">Enregistrer</button><span id="saveState">Aucune retouche</span></header>
 <nav aria-label="Salle"><label>Zone <select id="zone"></select></label><label>Salle <select id="room"></select></label><label>État <select id="state"></select></label></nav>
 <main><aside>
-<h2>Tiles d’origine</h2><label><input type="checkbox" id="used" checked> Utilisées dans cette salle</label>
+<h2>Bibliothèque de tiles</h2>
+<label>Source <select id="paletteSource"><option value="room">Tiles de la salle</option><option value="all">Tous les tilesets du jeu</option><option value="custom">Mes créations</option></select></label>
+<label id="allSets" hidden>Tileset <select id="allSet"></select></label>
+<button id="importTiles">Importer un tileset PNG</button><input id="tilesFile" type="file" accept="image/png" hidden>
+<div class="studio-actions"><button id="newTile">Nouvelle tile</button><button id="blackTile">Tile noire</button><button id="editTile">Éditer les pixels</button><button id="rotateTile">Pivoter la tile ↻</button><button id="rotateSet">Pivoter le tileset ↻</button><button id="exportTiles">Exporter PNG</button></div><label><input type="checkbox" id="used" checked> Utilisées dans cette salle</label>
 <p id="tilesetInfo"></p><canvas id="palette" width="256" height="1024" aria-label="Palette de tiles"></canvas>
 </aside><section id="workspace">
 <div class="tools" aria-label="Outils">
 <label>Calque <select id="layer"><option value="0">Décor avant</option><option value="1">Décor arrière</option></select></label>
 <button id="brush" class="active" title="B">Pinceau</button><button id="eraser" title="E — retirer une retouche">Gomme</button><button id="picker" title="I">Pipette</button>
-<button id="undo" title="Ctrl+Z">Annuler</button><button id="redo" title="Ctrl+Maj+Z">Rétablir</button>
+<label><input id="secret" type="checkbox"> Cache-secret</label>
+<label>Rayon <input id="radius" type="number" min="16" max="256" value="64" step="16"> px</label>
+<label>Opacité proche <input id="opacity" type="number" min="0" max="100" value="25"> %</label>
+<button id="eventTool">Zone d’événement</button><button id="undo" title="Ctrl+Z">Annuler</button><button id="redo" title="Ctrl+Maj+Z">Rétablir</button>
 <label><input type="checkbox" id="flipX"> Miroir X</label><label><input type="checkbox" id="flipY"> Miroir Y</label>
 </div>
 <div class="tools secondary">
@@ -21,9 +28,18 @@
 <label><input id="collision" type="checkbox"> Collisions</label><label><input id="original" type="checkbox"> Original seul</label>
 <label><input id="showBack" type="checkbox" checked> Arrière</label><label><input id="showFront" type="checkbox" checked> Avant</label>
 </div>
+<details id="sceneStudio"><summary>Parallaxe, PNG et aperçu en mouvement</summary>
+<div class="tools"><label>Cible <select id="planeTarget"></select></label><button id="importBackground">Importer PNG</button><input id="backgroundFile" type="file" accept="image/png" hidden><button id="clearBackground">Rétablir le plan original</button></div>
+<div class="tools"><label>Défilement X <input id="speedX" type="number" min="0" max="200" value="100"> %</label><label>Y <input id="speedY" type="number" min="0" max="200" value="100"> %</label><label>Décalage X <input id="offsetX" type="number" min="-8192" max="8192" value="0"></label><label>Y <input id="offsetY" type="number" min="-8192" max="8192" value="0"></label><label><input id="repeatX" type="checkbox" checked> Répéter X</label><label><input id="repeatY" type="checkbox" checked> Répéter Y</label></div>
+<p>PNG : 100 % suit la caméra, 0 % reste fixe. Plans natifs : pourcentage de l’effet de profondeur existant. Les fonds spéciaux animés ne sont pas simulés dans cet aperçu.</p>
+<div class="tools"><button id="animatePreview">Animer la caméra</button><label>Caméra X <input id="previewX" type="number" min="0" value="0"></label><label>Y <input id="previewY" type="number" min="0" value="0"></label></div>
+<canvas id="preview" width="400" height="224" aria-label="Aperçu du décor, de la caméra et des secrets"></canvas><p>Le repère turquoise représente Samus. Cliquer dans l’aperçu pour tester la proximité.</p>
+</details>
 <div id="viewport"><canvas id="scene" aria-label="Salle et prolongements peignables" tabindex="0"></canvas></div>
 <footer><span id="position">Choisis une tile et peins dans la salle ou autour.</span><span id="selection">Tile 000</span></footer>
 </section></main>
+<dialog id="pixelDialog"><h2>Atelier pixel art · 16 × 16</h2><canvas id="pixelCanvas" width="256" height="256" aria-label="Éditeur de pixels"></canvas><div class="tools"><input id="pixelColor" type="color" value="#ffffff"><label><input id="pixelErase" type="checkbox"> Transparent</label><button id="pixelUndo">Annuler</button><button id="pixelApply">Appliquer</button><button id="pixelCancel">Fermer</button></div><p>L’original reste intact. Les modifications créent une tile personnalisée.</p></dialog>
+<dialog id="eventDialog"><h2>Zone d’événement</h2><p id="eventLocation"></p><textarea id="eventNote" maxlength="2000" rows="5" placeholder="Ex. lumière bleue pulsante, ou obscurité progressive quand Samus entre…"></textarea><p>Note pour la programmation du comportement; aucun effet automatique en jeu.</p><div class="tools"><button id="eventApply">Enregistrer la note</button><button id="eventDelete">Supprimer la zone</button><button id="eventCancel">Fermer</button></div></dialog>
 <div id="status" role="status">Lecture des assets de la ROM…</div>
 <details><summary>Repères et commandes</summary>
 <p>Glisser pour peindre · clic droit pour retirer une retouche · molette pour se déplacer · B pinceau · E gomme · I pipette · Ctrl+S enregistrer.</p>

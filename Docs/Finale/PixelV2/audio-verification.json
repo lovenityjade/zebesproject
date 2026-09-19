@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "finaleCueSeconds": 0,
+  "escapeKeepsSong": true,
+  "escapeCommandSuppressed": true,
+  "shipCinematicReleasesMusic": true,
+  "fadeSeconds": 2,
+  "sacrificeSilent": true,
+  "pausePreservesCursor": true,
+  "normalRushStartsAtZero": true
+}

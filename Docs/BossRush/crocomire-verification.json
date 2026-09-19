@@ -1,0 +1,78 @@
+[
+  {
+    "frame": 0,
+    "camera": 1003,
+    "boss": 1152,
+    "bodyPixels": 6395,
+    "screenBounds": [
+      170,
+      293
+    ]
+  },
+  {
+    "frame": 80,
+    "camera": 809,
+    "boss": 1152,
+    "bodyPixels": 1750,
+    "screenBounds": [
+      364,
+      399
+    ]
+  },
+  {
+    "frame": 160,
+    "camera": 589,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  },
+  {
+    "frame": 240,
+    "camera": 512,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  },
+  {
+    "frame": 320,
+    "camera": 512,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  },
+  {
+    "frame": 400,
+    "camera": 512,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  },
+  {
+    "frame": 480,
+    "camera": 512,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  },
+  {
+    "frame": 560,
+    "camera": 512,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  },
+  {
+    "frame": 640,
+    "camera": 512,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  },
+  {
+    "frame": 720,
+    "camera": 512,
+    "boss": 1152,
+    "bodyPixels": 0,
+    "screenBounds": null
+  }
+]

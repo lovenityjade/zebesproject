@@ -1,0 +1,54 @@
+{
+  "sources": {
+    "Boss Rush Theme - Face the Memory.mp3": "cc5a9293b062395cc4ab727d80aa41b24f7abc20a1cd448d01fce08c3b5a44bd",
+    "boss-rush-transition-tobefixed.mp3": "97f7b8de5c80e77a7d81f457aa8a7a551970e75c30c3bc5afc3d3c7e1bd6f177"
+  },
+  "sampleRate": 44100,
+  "channels": 2,
+  "transitionTrimSeconds": [
+    0.0,
+    3.258542
+  ],
+  "sweepDurationSeconds": 0.65,
+  "reverseStereoFrames": true,
+  "themeTargetLUFS": -21,
+  "sweepTargetLUFS": -18,
+  "themeAnalysis": {
+    "input_i": "-15.52",
+    "input_tp": "-4.39",
+    "input_lra": "3.20",
+    "input_thresh": "-25.61",
+    "output_i": "-20.36",
+    "output_tp": "-7.53",
+    "output_lra": "2.50",
+    "output_thresh": "-30.40",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.64"
+  },
+  "sweepAnalysis": {
+    "input_i": "-10.30",
+    "input_tp": "-1.11",
+    "input_lra": "0.00",
+    "input_thresh": "-20.30",
+    "output_i": "-18.00",
+    "output_tp": "-8.80",
+    "output_lra": "0.00",
+    "output_thresh": "-28.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "Theme.pcm": {
+      "frames": 10566360,
+      "sha256": "bb0545c7e0103b20b29cd39ca05450190b4c21fbbbe358e4ff31f8c9c06208fa"
+    },
+    "WireIn.pcm": {
+      "frames": 28665,
+      "sha256": "3b3154cb2ef2653ce4743d9ea3f9b4c4eecc610912e7125a41d7e64b00f89490"
+    },
+    "WireOut.pcm": {
+      "frames": 28665,
+      "sha256": "c2f87d8a3b8b56856b2e4ec1a5923d868ba59570b60b9e0f75d15ef03d0c77da"
+    }
+  }
+}

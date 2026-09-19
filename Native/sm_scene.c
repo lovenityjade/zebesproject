@@ -1,6 +1,8 @@
+#include "sm_finale.h"
 #include "sm_credits.h"
 #include "sm_map_browser.h"
 #include "sm_objective_pause.h"
+#include "sm_rush_runtime.h"
 /* Keep the upstream PPU intact and extend only its public scanline entry.
  * This exposes layer provenance, BG2 offsets and an authored Ceres backdrop.
  * All altered PPU fields are restored before game code resumes. */
@@ -13,6 +15,8 @@
 #include "sm_effects.h"
 #include "sm_profile.h"
 #include "variables.h"
+#include "ida_types.h"
+#include "enemy_types.h"
 #include "sm_rtl.h"
 #include "sm_cpu_infra.h"
 #include "sm_emitters.generated.h"
@@ -58,11 +62,13 @@ static uint8_t sm_ui_pixels[256*240*4];
 uint16_t sm_hud_palette[32];
 const uint8_t *sm_ui_overlay(void) {return sm_ui_pixels;}
 int sm_scene_active, sm_scene_parallax;
+int sm_scene_capture_metadata;
 int sm_scene_weather;
 int sm_scene_camera_x, sm_scene_camera_y;
 static uint8_t stable_hud[256*32*4],stable_wide_hud[400*32*4];
 static int stable_hud_brightness;
 void sm_scene_reset(void) {
+  sm_scene_capture_metadata=0;
   stable_hud_brightness=0;
   memset(sm_scene_pixels,0,sizeof(sm_scene_pixels));
   memset(sm_scene_layers,0,sizeof(sm_scene_layers));
@@ -95,8 +101,10 @@ static void sm_draw_full_line(Ppu *p,int line) {
 static int sm_scene_finite_bg2(const Ppu *p) {
   // Mother Brain switches BG2 to a 256px body tilemap for her ascent and
   // phases 2/3 (A9:8D11). Phase 1 and ordinary tiled backgrounds stay native.
-  return p->mode==1 && room_ptr==0xdd58 && layer2_scroll_x==1 &&
-      layer2_scroll_y==1 && !p->bgLayer[1].tilemapWider;
+  return p->mode==1 &&
+      ((room_ptr==0xdd58 && !p->bgLayer[1].tilemapWider && layer2_scroll_x==1 && layer2_scroll_y==1) ||
+       ((room_ptr==0xa98d || room_ptr==0xda60) && sm_rush_active()) ||
+       (room_ptr==0xcd13 && sm_rush_active() && enemy_data[0].enemy_ptr==0xe4bf)); /* Rush combat uses a finite body. */
 }
 
 /* Only the presentation PPU copy loses the 256px suit beam. Native HDMA,
@@ -108,12 +116,42 @@ static void sm_scene_replace_suit(Ppu *p) {
   p->clipMode=p->preventMathMode=0;
   for(int i=0;i<5;i++)p->layer[i].mainScreenWindowed=p->layer[i].subScreenWindowed=false;
 }
+// The lava is often BG3 on the main screen, while Samus and platforms
+// remain visible via the subscreen. Preserve that second layer as well.
+static uint8_t sm_scene_liquid_occlusion(Ppu *p,int x,int line,int layer) {
+  if(layer!=2 || p->mode!=1 || (fx_type!=2 && fx_type!=4) ||
+     !p->addSubscreen || !p->mathEnabled[2] || line<=32)return 0;
+  int r,g,b;
+  const int behind=ppu_getPixel(p,x,line,true,&r,&g,&b);
+  return behind==0?SM_SCENE_LIQUID_SOLID:
+      (behind==4 || behind==6 || (behind==1 && sm_scene_finite_bg2(p)))?SM_SCENE_LIQUID_SPRITE:0;
+}
+// The VR lab needs the architecture beneath main-screen fog/backdrop. Keep
+// actual pixels and normal-game provenance intact; inspect the subscreen only
+// when the isolated fixture explicitly asks for this effective-layer mask.
+static int sm_capture_layer(Ppu *p,int x,int y,int layer) {
+  if((!sm_scene_capture_metadata && !sm_finale_enabled()) || (layer!=2 && layer!=5) || !p->addSubscreen)return layer;
+  int r,g,b;int sub=ppu_getPixel(p,x,y,true,&r,&g,&b);
+  return sub==5?layer:sub;
+}
+#include "sm_finale.h"
+#include "sm_finale_scene.inc"
 #include "sm_wide.inc"
 
 static Ppu combat_ppu;
 static void sm_wide_profiled(Ppu *p,int line) {
-  uint64_t t=sm_clock_ns();sm_wide_line(p,line);
-  if(sm_decor_room_active() && sm_scene_active && p->mode==1 && !p->forcedBlank && line>32 && line<=224) {
+  uint64_t t=sm_clock_ns();
+  if(line==1)sm_decor_prepare();
+  sm_wide_line(p,line);
+  if(sm_decor_room_active() && sm_scene_active && p->mode==1 && !p->forcedBlank && line>32 && line<=224 && game_state!=11 && !sm_scene_finite_bg2(p)) {
+    for(int row=(line==33?0:line-1);row<line;row++)for(int x=0;x<400;x++) {
+      int i=(row*400+x)*4,wx=(int)layer1_x_pos+x-72,wy=(int)layer1_y_pos+row+1;
+      int layer=sm_wide_layers[i];
+      if(!sm_wide_layers[i+3]&&(wx<0||wy<0||wx>=room_width_in_blocks*16||wy>=room_height_in_blocks*16))layer=5;
+      sm_decor_pixel(wx,wy,x-72,row+1,layer,p->brightness,p->vram,p->cgram,p->bgLayer[0].tileAdr,sm_wide_pixels+i);
+    }
+  }
+  if((sm_decor_room_active() || sm_scene_finite_bg2(p)) && sm_scene_active && p->mode==1 && !p->forcedBlank && line>32 && line<=224) {
     memcpy(sm_scene_pixels+(line-1)*1024,sm_wide_pixels+((line-1)*400+72)*4,1024);
     memcpy(sm_scene_layers+(line-1)*1024,sm_wide_layers+((line-1)*400+72)*4,1024);
   }
@@ -126,12 +164,16 @@ void ppu_runLine(Ppu *ppu, int line) {
   sm_profile_ns[1]+=sm_clock_ns()-profile_start;
   profile_start=sm_clock_ns();
   if (line < 1 || line > 224) return;
-  const int replace_suit=sm_combat_effects && sm_visual_suit();
+  const int replace_suit=sm_combat_effects && (sm_visual_suit() || sm_visual_motherbrain_beam()>=2);
+  const int beam_recovery=sm_combat_effects && sm_visual_motherbrain_beam_mask() && sm_visual_motherbrain_beam()<2;
   const int replace_pb=replace_suit || (sm_combat_effects && game_state==8 && ((power_bomb_explosion_status&0x8000) || sm_visual_eye()));
-  if(replace_pb && line>32) {
+  if((replace_pb || beam_recovery) && line>32) {
     memcpy(&combat_ppu,ppu,sizeof(combat_ppu));ppu=&combat_ppu;
-    memset(ppu->mathEnabled,0,sizeof(ppu->mathEnabled));ppu->clipMode=0;
+    if(replace_pb){memset(ppu->mathEnabled,0,sizeof(ppu->mathEnabled));ppu->clipMode=0;}
     if(replace_suit)sm_scene_replace_suit(ppu);
+    // Recovery renders the boss/room through subscreen addition. Preserve that
+    // composition and remove only the last HDMA fixed-color value.
+    if(beam_recovery)ppu->fixedColorR=ppu->fixedColorG=ppu->fixedColorB=0;
   }
   uint8_t *dst = sm_scene_pixels+(line-1)*256*4;
   uint8_t *meta = sm_scene_layers+(line-1)*256*4;
@@ -210,7 +252,7 @@ void ppu_runLine(Ppu *ppu, int line) {
   const int replace_weather=sm_scene_weather && sm_scene_active &&
       ppu->mode==1 && (fx_type==10 || fx_type==12) && gameplay_BG3SC!=0x58;
   const bool main_bg3=ppu->layer[2].mainScreenEnabled,sub_bg3=ppu->layer[2].subScreenEnabled;
-  if(replace_weather || replace_pb || message || timer_ui || clipped) {
+  if(replace_weather || replace_pb || beam_recovery || message || timer_ui || clipped) {
     uint8_t *original=ppu->renderBuffer;size_t pitch=ppu->renderPitch;
     if(replace_weather || message)ppu->layer[2].mainScreenEnabled=ppu->layer[2].subScreenEnabled=false;
     ppu->renderBuffer=sm_scene_pixels;ppu->renderPitch=1024;
@@ -218,8 +260,9 @@ void ppu_runLine(Ppu *ppu, int line) {
     ppu->renderBuffer=original;ppu->renderPitch=pitch;
   }
   for(int x=0; x<256; ++x) {
-    int layer=sm_last_main_layer[x];
+    int layer=sm_capture_layer(ppu,x,line,sm_last_main_layer[x]);
     meta[x*4] = layer; /* original foreground/background/sprite provenance */
+    if(layer==2)meta[x*4+2]=sm_scene_liquid_occlusion(ppu,x,line,layer);
     meta[x*4+3] = 255;
     if(ppu->mode==1 && (room_ptr==0x91f8 || (layer2_scroll_x>1 && layer2_scroll_y!=1)) &&
        (layer==1 || layer==5)) {
@@ -282,6 +325,7 @@ void ppu_runLine(Ppu *ppu, int line) {
       shift_x=wy<1168?shift_x/3:(wy<1192?shift_x*2/3:shift_x);
       shift_y=0; // Keep native HDMA band boundaries and streamed rows aligned.
     }
+    shift_x=sm_decor_parallax(0,layer1_y_pos+line,shift_x);shift_y=sm_decor_parallax(1,layer1_y_pos+line,shift_y);
     ppu->bgLayer[1].hScroll=scroll_x+shift_x;
     ppu->bgLayer[1].vScroll=scroll_y+shift_y;
     ppu->renderBuffer=sm_scene_pixels;

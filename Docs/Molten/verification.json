@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "cases": [
+    {
+      "case": 1,
+      "state": {
+        "room": 44963,
+        "fx": 2,
+        "surface": 192,
+        "camera_y": 0,
+        "cpu_opcodes": 0
+      },
+      "changedPixels": 42418,
+      "protectedPixelsChanged": 0,
+      "liquidMaskPixels": 6417,
+      "animated": true,
+      "markers": [
+        "[2026.09.18-20.48.04:017][  0]LogTemp: Display: SM_MOLTEN_READY case=1 room=afa3 fx=2 surface=192 camera=0,0 samus=192,96",
+        "[2026.09.18-20.48.08:625][220]LogTemp: Display: SM_MOLTEN_COMPLETE case=1 cpu_opcodes=0"
+      ]
+    },
+    {
+      "case": 2,
+      "state": {
+        "room": 44820,
+        "fx": 2,
+        "surface": 208,
+        "camera_y": 256,
+        "cpu_opcodes": 0
+      },
+      "changedPixels": 50778,
+      "protectedPixelsChanged": 0,
+      "liquidMaskPixels": 7774,
+      "animated": true,
+      "markers": [
+        "[2026.09.18-20.48.29:622][  0]LogTemp: Display: SM_MOLTEN_READY case=2 room=af14 fx=2 surface=208 camera=0,256 samus=192,384",
+        "[2026.09.18-20.48.34:185][220]LogTemp: Display: SM_MOLTEN_COMPLETE case=2 cpu_opcodes=0"
+      ]
+    },
+    {
+      "case": 3,
+      "state": {
+        "room": 45541,
+        "fx": 4,
+        "surface": 200,
+        "camera_y": 0,
+        "cpu_opcodes": 0
+      },
+      "changedPixels": 29533,
+      "protectedPixelsChanged": 0,
+      "liquidMaskPixels": 4151,
+      "animated": true,
+      "markers": [
+        "[2026.09.18-20.48.55:939][  0]LogTemp: Display: SM_MOLTEN_READY case=3 room=b1e5 fx=4 surface=200 camera=0,0 samus=192,128",
+        "[2026.09.18-20.49.00:489][220]LogTemp: Display: SM_MOLTEN_COMPLETE case=3 cpu_opcodes=0"
+      ]
+    },
+    {
+      "case": 4,
+      "state": {
+        "room": 53725,
+        "fx": 6,
+        "surface": 32767,
+        "camera_y": 0,
+        "cpu_opcodes": 0
+      },
+      "changedPixels": 0,
+      "protectedPixelsChanged": 0,
+      "liquidMaskPixels": 0,
+      "animated": false,
+      "markers": [
+        "[2026.09.18-20.49.18:017][  0]LogTemp: Display: SM_MOLTEN_READY case=4 room=d1dd fx=6 surface=32767 camera=0,0 samus=128,208",
+        "[2026.09.18-20.49.22:562][220]LogTemp: Display: SM_MOLTEN_COMPLETE case=4 cpu_opcodes=0"
+      ]
+    },
+    {
+      "case": 5,
+      "state": {
+        "room": 39641,
+        "fx": 0,
+        "surface": 32767,
+        "camera_y": 512,
+        "cpu_opcodes": 0
+      },
+      "changedPixels": 0,
+      "protectedPixelsChanged": 0,
+      "liquidMaskPixels": 0,
+      "animated": false,
+      "markers": [
+        "[2026.09.18-20.49.40:358][  0]LogTemp: Display: SM_MOLTEN_READY case=5 room=9ad9 fx=0 surface=32767 camera=0,512 samus=128,680",
+        "[2026.09.18-20.49.44:968][220]LogTemp: Display: SM_MOLTEN_COMPLETE case=5 cpu_opcodes=0"
+      ]
+    }
+  ],
+  "scenePreservation": {
+    "passed": true,
+    "cases": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "nativeSceneBytesIdentical": true
+  },
+  "bossRegression": {
+    "passed": true,
+    "nativeFramesIdentical": 1500,
+    "cpuOpcodes": 0,
+    "romAndSaveUnchanged": true
+  },
+  "installed": [
+    {
+      "path": "Native/build/libsm_native.so",
+      "sha256": "bece02ea0b0847bcaf53e083662c6295a85899946c133242c4685f5f0942ab85",
+      "backup": ".tmp/molten/before/libsm_native.so"
+    },
+    {
+      "path": "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so",
+      "sha256": "c657501966e815101265fb390fe0d21c1503d061f45e2a2ead75f4ebb313d199",
+      "backup": ".tmp/molten/before/libUnrealEditor-SMUnreal.so"
+    },
+    {
+      "path": "Unreal/Content/SM/M_Present.uasset",
+      "sha256": "cdae07ea826051a23db17fe2d7522efb8c5f7370802dc98e8bc88c20b24fed80",
+      "backup": ".tmp/molten/before/M_Present.uasset"
+    }
+  ],
+  "visuallyReviewedCases": [
+    1,
+    2,
+    3
+  ],
+  "scope": "Unreal frozen-frame comparisons and animated presentation in three molten rooms, plus water/dry negative controls. Not a manual traversal of every room."
+}

@@ -1,0 +1,507 @@
+{
+  "host": "gaming-pc",
+  "passed": true,
+  "saveUnchanged": true,
+  "kits": [
+    {
+      "difficulty": 0,
+      "encounter": 0,
+      "items": 4100,
+      "collectedBeams": 0,
+      "equippedBeams": 0,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 0,
+      "encounter": 1,
+      "items": 0,
+      "collectedBeams": 4096,
+      "equippedBeams": 4096,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 0,
+      "encounter": 2,
+      "items": 256,
+      "collectedBeams": 4100,
+      "equippedBeams": 4100,
+      "missiles": 20,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 0,
+      "encounter": 3,
+      "items": 1,
+      "collectedBeams": 4102,
+      "equippedBeams": 4102,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 0,
+      "encounter": 4,
+      "items": 1,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 50,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 0,
+      "encounter": 5,
+      "items": 33,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 60,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 0,
+      "encounter": 6,
+      "items": 16421,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 120,
+      "supers": 0,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 0,
+      "encounter": 7,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 0,
+      "encounter": 8,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 0,
+      "supers": 60,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 0,
+      "encounter": 9,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 80,
+      "supers": 0,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 1,
+      "encounter": 0,
+      "items": 4100,
+      "collectedBeams": 0,
+      "equippedBeams": 0,
+      "missiles": 10,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 1,
+      "encounter": 1,
+      "items": 0,
+      "collectedBeams": 4096,
+      "equippedBeams": 4096,
+      "missiles": 10,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 1,
+      "encounter": 2,
+      "items": 256,
+      "collectedBeams": 4100,
+      "equippedBeams": 4100,
+      "missiles": 10,
+      "supers": 5,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 1,
+      "encounter": 3,
+      "items": 1,
+      "collectedBeams": 4102,
+      "equippedBeams": 4102,
+      "missiles": 15,
+      "supers": 5,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 1,
+      "encounter": 4,
+      "items": 1,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 25,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 1,
+      "encounter": 5,
+      "items": 33,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 30,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 1,
+      "encounter": 6,
+      "items": 16421,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 60,
+      "supers": 0,
+      "powerBombs": 5
+    },
+    {
+      "difficulty": 1,
+      "encounter": 7,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 15,
+      "supers": 5,
+      "powerBombs": 5
+    },
+    {
+      "difficulty": 1,
+      "encounter": 8,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 0,
+      "supers": 30,
+      "powerBombs": 5
+    },
+    {
+      "difficulty": 1,
+      "encounter": 9,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 40,
+      "supers": 0,
+      "powerBombs": 5
+    },
+    {
+      "difficulty": 2,
+      "encounter": 0,
+      "items": 4100,
+      "collectedBeams": 0,
+      "equippedBeams": 0,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 2,
+      "encounter": 1,
+      "items": 0,
+      "collectedBeams": 4096,
+      "equippedBeams": 4096,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 2,
+      "encounter": 2,
+      "items": 256,
+      "collectedBeams": 4100,
+      "equippedBeams": 4100,
+      "missiles": 20,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 2,
+      "encounter": 3,
+      "items": 1,
+      "collectedBeams": 4102,
+      "equippedBeams": 4102,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 2,
+      "encounter": 4,
+      "items": 1,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 50,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 2,
+      "encounter": 5,
+      "items": 33,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 60,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 2,
+      "encounter": 6,
+      "items": 16421,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 120,
+      "supers": 0,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 2,
+      "encounter": 7,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 2,
+      "encounter": 8,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 0,
+      "supers": 60,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 2,
+      "encounter": 9,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 80,
+      "supers": 0,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 3,
+      "encounter": 0,
+      "items": 4100,
+      "collectedBeams": 0,
+      "equippedBeams": 0,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 3,
+      "encounter": 1,
+      "items": 0,
+      "collectedBeams": 4096,
+      "equippedBeams": 4096,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 3,
+      "encounter": 2,
+      "items": 256,
+      "collectedBeams": 4100,
+      "equippedBeams": 4100,
+      "missiles": 20,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 3,
+      "encounter": 3,
+      "items": 1,
+      "collectedBeams": 4102,
+      "equippedBeams": 4102,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 3,
+      "encounter": 4,
+      "items": 1,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 50,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 3,
+      "encounter": 5,
+      "items": 33,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 60,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 3,
+      "encounter": 6,
+      "items": 16421,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 120,
+      "supers": 0,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 3,
+      "encounter": 7,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 3,
+      "encounter": 8,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 0,
+      "supers": 60,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 3,
+      "encounter": 9,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 80,
+      "supers": 0,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 4,
+      "encounter": 0,
+      "items": 4100,
+      "collectedBeams": 0,
+      "equippedBeams": 0,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 4,
+      "encounter": 1,
+      "items": 0,
+      "collectedBeams": 4096,
+      "equippedBeams": 4096,
+      "missiles": 20,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 4,
+      "encounter": 2,
+      "items": 256,
+      "collectedBeams": 4100,
+      "equippedBeams": 4100,
+      "missiles": 20,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 4,
+      "encounter": 3,
+      "items": 1,
+      "collectedBeams": 4102,
+      "equippedBeams": 4102,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 4,
+      "encounter": 4,
+      "items": 1,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 50,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 4,
+      "encounter": 5,
+      "items": 33,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 60,
+      "supers": 0,
+      "powerBombs": 0
+    },
+    {
+      "difficulty": 4,
+      "encounter": 6,
+      "items": 16421,
+      "collectedBeams": 4103,
+      "equippedBeams": 4103,
+      "missiles": 120,
+      "supers": 0,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 4,
+      "encounter": 7,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 30,
+      "supers": 10,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 4,
+      "encounter": 8,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 0,
+      "supers": 60,
+      "powerBombs": 10
+    },
+    {
+      "difficulty": 4,
+      "encounter": 9,
+      "items": 16421,
+      "collectedBeams": 4111,
+      "equippedBeams": 4107,
+      "missiles": 80,
+      "supers": 0,
+      "powerBombs": 10
+    }
+  ]
+}

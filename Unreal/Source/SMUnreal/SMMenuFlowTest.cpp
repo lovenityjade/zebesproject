@@ -29,8 +29,9 @@ bool FSMSystemMenu::RunMenuFlowTest(){
     if(!Require(Row(1) && Press(32) && Word(0x99e)==0 && Press(32) && Word(0x99e)==1 && !TakeGenerationRequest(),TEXT("Vanilla only exposes Mode and Start")))return false;
     if(!Require(Press(128) && Menu(0)==1 && !CanStart() && !Active.Slots[0].Randomized,TEXT("Story preview cannot start or change the save")))return false;
     if(!Require(Row(0) && Press(8) && Options(),TEXT("Story start is blocked")))return false;
-    if(!Require(Row(1) && Press(128) && Menu(0)==2 && !CanStart(),TEXT("Boss Rush preview is blocked")))return false;
-    if(!Require(Row(3) && Press(128) && Press(128) && Press(128) && Menu(1)==3,TEXT("Boss Rush offers Easy through Hardcore")))return false;
+    if(!Require(Row(1) && Press(128) && Menu(0)==2 && CanStart(),TEXT("Boss Rush can start without modifying the Vanilla slot")))return false;
+    if(!Require(Row(3) && Press(128) && Press(128) && Press(128) && Menu(1)==3,TEXT("Boss Rush offers Very Hard")))return false;
+    if(!Require(Press(128) && Menu(1)==4 && Press(128) && Menu(1)==0 && Press(64) && Menu(1)==4,TEXT("Boss Rush cycles five difficulties in both directions")))return false;
     // Configure defaults before selecting Randomized, as a player can from Escape.
     SelectSection(2);SetOpen(true);Seed=12345;FCStringAnsi::Strcpy(SeedNumber,"12345");
     RelicHunt=false;NoAdvancedTechs=true;

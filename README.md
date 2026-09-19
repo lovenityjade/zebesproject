@@ -5,17 +5,17 @@
 <h1 align="center">The Zebes Project</h1>
 <p align="center"><strong>Rediscover Zebes. Keep the pixels. Change the adventure.</strong></p>
 <p align="center">Native gameplay · Unreal atmosphere · Integrated VARIA randomizer</p>
-<p align="center"><strong>ALPHA-0.25</strong> · Code: MIT · Project artwork: separate terms</p>
+<p align="center"><strong>ALPHA-0.26</strong> · Code: MIT · Project artwork: separate terms</p>
 
 A fan-made native Super Metroid PC project that preserves the original game's
 pixel art and brings it into Unreal Engine: widescreen exploration, atmospheric
 lighting, modern controls and randomization built directly into the game.
 Play the familiar adventure, or make Zebes surprise you all over again.
 
-**This is an alpha for bug testing, not a finished remake.** Vanilla and Randomizer
-are playable; Story and Boss Rush remain unavailable previews. Download the
+**This is an alpha for bug testing, not a finished remake.** Vanilla, Randomizer
+and Boss Rush are playable; the full Story campaign and Multiworld are still in development. Download the
 Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjade/zebesproject/releases). See the
-[release status](Docs/Releases/ALPHA-0.25/README.md).
+[release status](Docs/Releases/ALPHA-0.26/README.md).
 
 **French Canadian localization:** choose **Language → French (Canada)** in the system menu. The [French website and help](https://thelovenityjade.me/zebes/fr/) are live; see [localization coverage and validation](Docs/Localization/README.md).
 
@@ -30,6 +30,20 @@ Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjad
   settings for display, effects, audio, controls and comfort.
 - **New Game+** from a completed Vanilla save: retain the recorded equipment and
   resources, face tougher enemies, and preserve the original save.
+
+### Face the simulation
+
+- **Boss Rush:** ten encounters, from Bomb Torizo to Mother Brain, connected by
+  animated VR wireframe transitions.
+- **Five difficulties:** Easy, Medium, Hard, Very Hard and Hardcore. Hardcore
+  means one-hit death and no drops; the scripted Mother Brain handoff remains survivable.
+- Equipment progresses with the encounters, including suits, beams, missiles,
+  Grapple and Power Bombs. A native boss-energy display replaces the minimap.
+- Native **Continue / Retry / End** menus, splits and results. Continue after a
+  defeat resumes that boss and retains elapsed time; Retry starts a fresh run.
+- Dedicated music, transition sounds, animated success/failure screens and
+  selectable transition detail. Online Boss Rush rankings and the requested
+  150% speed category are **not included yet**.
 
 ### A new route through Zebes
 
@@ -57,6 +71,13 @@ Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjad
   electrical effects and stronger weapon/explosion lighting.
 - Enhanced opening/title presentation, cinematic fades, animated stars,
   a reworked game-over screen and an atmospheric credits backdrop.
+- **A more dramatic finale:** a visible Baby Metroid energy drain, pixel-textured
+  Hyper Beam and disintegration, unstable escape lighting and falling fireballs
+  outside Crateria. Face the Memory carries the final duel into the escape.
+- **Seven escape memories:** portraits and native dialogue accompany the flight
+  without stopping movement or the timer. Short exchanges alternate top/bottom,
+  open and close smoothly, and briefly wash out the world colours.
+- Organic lava distortion and sparks, with the original tiles retained.
 - Customization for visual intensity and comfort, plus startup photosensitivity
   information. The game contains flashing lights and bright effects.
 
@@ -67,18 +88,22 @@ Windows archive or Linux AppImage from [Releases](https://github.com/lovenityjad
 - **LT/RT item cycling**, controller bindings and keyboard controls.
 - **Vanilla and NG+ speedrun categories**, using native in-game time. No QoL and
   QoL categories are separate; only the two jump assists qualify for QoL runs.
-- Local achievements with in-game notifications, run statistics, and a randomizer
-  route recap that retraces the recorded journey.
+- **40 additional achievements: 20 Vanilla and 20 Randomizer**, including secrets,
+  illustrated badges and native notifications. Run statistics and a randomizer
+  route recap retrace the recorded journey.
 - **Original or optional Remastered soundtrack** selection. The refreshed Windows
   archive includes the selected music pack; Linux supports a separately installed
   pack. Missing tracks fall back to the original soundtrack.
 - An external room-decoration editor for visual extensions and touch-ups, without
-  changing collisions or putting the authoring tool inside the game.
+  changing collisions or putting the authoring tool inside the game. The source
+  editor includes PNG import, tile/pixel editing, rotations, parallax previews,
+  proximity-transparent secret covers and event notes. Corrected room extensions
+  are included; original tile graphics are reconstructed from the player's ROM.
 
 For exact behavior and limitations, see [quality of life](Docs/QUALITY-OF-LIFE.md),
 [playtest features](Docs/PLAYTEST-FEATURES.md), [trackers](Docs/Tracker/README.md),
 [randomizer settings](Docs/Randomizer/FullOptions/STATUS.md) and
-[ALPHA-0.25 validation](Docs/Releases/ALPHA-0.25/README.md).
+[ALPHA-0.26 validation](Docs/Releases/ALPHA-0.26/README.md).
 
 ## Bring your own game
 
@@ -108,7 +133,7 @@ includes the selected third-party Remastered recordings, with their credits.
 - **Linux x86-64:** make the AppImage executable, then run it. A recent Vulkan
   driver and glibc 2.35 or newer are required. If FUSE is unavailable, run with
   `--appimage-extract-and-run`.
-- **macOS:** not included in ALPHA-0.25.
+- **macOS:** not included in ALPHA-0.26.
 
 Linux AppImage user data lives in `$XDG_DATA_HOME/zebesproject`, or
 `~/.local/share/zebesproject` by default. ROMs and saves remain outside the
@@ -120,7 +145,7 @@ Proton Experimental. This is an alpha smoke test, not certification of every
 Windows GPU or every gameplay route. See the release validation notes for scope.
 
 From the native title screen, select a save slot and choose **Vanilla Mode** or
-**Randomizer Mode**. **Escape / F4 / right-stick click** opens the settings menu;
+**Randomizer Mode**, or select **Boss Rush Mode** for the simulation. **Escape / F4 / right-stick click** opens the settings menu;
 **Start** opens the native pause screen in gameplay. **F11** toggles fullscreen.
 Bindings and debug tools are available in the system menu.
 
@@ -132,11 +157,12 @@ credentials.** Use the [bug report template](.github/ISSUE_TEMPLATE/bug_report.y
 
 ## On the horizon
 
-These are planned features, **not promises for ALPHA-0.25**:
+These are planned features, **not promises for ALPHA-0.26**:
 
 | Feature | Direction |
 | --- | --- |
-| **Boss Rush** | All bosses and minibosses, minimum equipment, one chance, a timed challenge and a dedicated leaderboard; Easy, Medium, Hard and Hardcore. |
+| **Boss Rush extensions** | More playtesting, online rankings and separate 100%/150% speed categories. |
+| **Optional gameplay QoL** | GBA-like physics, new movement/weapon options, faster traversal and pickup sequences. Planned for Vanilla, New Game+ and Randomizer; excluded from speedrun mode. [Full requested list](Docs/PLANNED-OPTIONAL-QOL.md). |
 | **Multiworld** | Native integration with **SekaiLink: Rebooted** and **Archipelago**. |
 | **Story Mode** | A Vanilla-based adventure with scripted cinematics, human voice acting and **four endings**. |
 | **Online competition** | In-game rankings and Discord identity are planned. The website already accepts completed run records for review and displays approved scores; automatic in-game upload is not available. |
@@ -180,8 +206,11 @@ Unreal Engine is licensed separately by Epic; it is not relicensed by this repo.
 
 The code is developed by humans with AI assistance. Some development graphics
 are temporary AI-generated placeholders and are intended to be replaced with
-human-created artwork. Credited voice performances and musical recordings are
-made by real people. Planned Story Mode voice acting is not yet implemented.
+human-created artwork. The supplied Boss Rush/finale recordings include
+AI-assisted music by **themiareproject** (Suno, according to their source metadata):
+*Face the Memory*, *Deep Space Silence* and *Victory Fanfare*. Original/remastered
+music keeps its own credits. Planned human-performed Story Mode voice acting is
+not yet implemented. See [Boss Rush audio credits](Docs/BossRush/AUDIO-CREDITS.md).
 
 This is an unofficial fan project, not affiliated with, endorsed by or sponsored
 by Nintendo or Epic Games. Super Metroid and Metroid are Nintendo properties.
@@ -215,10 +244,10 @@ reviewed committed recipes. Staging and push checks reject embedded original
 artwork and changed reconstruction recipes.
 
 The public tree excludes the development `Scripts` and `Tests` directories.
-The four source preparation tools required by CMake live in `Native/`; the
+The source preparation tools required by CMake live in `Native/`; the
 provenance guard lives in `.github/`. Historical reports reference private test
 and packaging tools; use the commands above for the current public source build.
 
 [Developer notes](Docs/DEVELOPMENT-GUIDE.md) ·
 [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) ·
-[Security](SECURITY.md) · [Release status](Docs/Releases/ALPHA-0.25/README.md)
+[Security](SECURITY.md) · [Release status](Docs/Releases/ALPHA-0.26/README.md)

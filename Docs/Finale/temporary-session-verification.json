@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "marker": "[2026.09.19-11.18.49:582][  0]LogTemp: Display: SM_TEMPORARY_SESSION sram=/home/nobara-user/Projects/projectSM/.tmp/release-alpha025/SMTests/finale/Profiles/01A0B963EFC775BB82C5086DBF9E9F1A/bank.sram.dat slots=3 randomized=0",
+  "normalProfilesUnchanged": true,
+  "sourceSramUnchanged": true,
+  "importedSramExact": true,
+  "scope": "Real Unreal interactive initialization (no SMTest); native menu profile activation and isolated SRAM import, not a human playthrough."
+}

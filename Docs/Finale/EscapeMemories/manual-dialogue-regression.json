@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "width": 400,
+      "pagination": true,
+      "inputFence": true,
+      "noSimulationWrites": true
+    },
+    {
+      "width": 256,
+      "pagination": true,
+      "inputFence": true,
+      "noSimulationWrites": true
+    }
+  ],
+  "romUnchanged": true
+}

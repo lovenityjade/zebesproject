@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "videos": [
+    {
+      "style": 1,
+      "name": "Spectral-Lance",
+      "video": "Docs/MotherBrainBeam/Videos/01-Spectral-Lance.mp4",
+      "sha256": "deac563cd0755f390553cd3e62a4931a835ad0722eab8a49c7dfbc5badbd7be2",
+      "duration": "25.034014",
+      "frames": 750,
+      "markers": [
+        "[2026.09.18-20.00.30:746][  0]LogTemp: Display: SM_DEATH_BEAM_READY style=1 room=dd58",
+        "[2026.09.18-20.01.01:235][371]LogTemp: Display: SM_DEATH_BEAM_STRIKE style=1 frame=3912",
+        "[2026.09.18-20.01.31:590][751]LogTemp: Display: SM_DEATH_BEAM_COMPLETE style=1 frames=750 strike=1 health=329 cpu_opcodes=0"
+      ]
+    },
+    {
+      "style": 2,
+      "name": "Stormbreaker",
+      "video": "Docs/MotherBrainBeam/Videos/02-Stormbreaker.mp4",
+      "sha256": "32013d35e1891aaf9a51d35092b624e7f6cd544d85d4f443775d21a8f75e6a9a",
+      "duration": "25.034014",
+      "frames": 750,
+      "markers": [
+        "[2026.09.18-20.02.09:844][  0]LogTemp: Display: SM_DEATH_BEAM_READY style=2 room=dd58",
+        "[2026.09.18-20.02.40:371][371]LogTemp: Display: SM_DEATH_BEAM_STRIKE style=2 frame=3912",
+        "[2026.09.18-20.03.11:580][751]LogTemp: Display: SM_DEATH_BEAM_COMPLETE style=2 frames=750 strike=1 health=329 cpu_opcodes=0"
+      ]
+    },
+    {
+      "style": 3,
+      "name": "Cataclysm",
+      "video": "Docs/MotherBrainBeam/Videos/03-Cataclysm.mp4",
+      "sha256": "5c6a6da18462850c559f9b56d05e4b7997c02cd4fb852a9eedc31da76aa72cff",
+      "duration": "25.034014",
+      "frames": 750,
+      "markers": [
+        "[2026.09.18-20.03.54:007][  0]LogTemp: Display: SM_DEATH_BEAM_READY style=3 room=dd58",
+        "[2026.09.18-20.04.24:251][371]LogTemp: Display: SM_DEATH_BEAM_STRIKE style=3 frame=3912",
+        "[2026.09.18-20.04.55:767][751]LogTemp: Display: SM_DEATH_BEAM_COMPLETE style=3 frames=750 strike=1 health=329 cpu_opcodes=0"
+      ]
+    }
+  ],
+  "hudIdenticalAcrossStylesAtStrike": true,
+  "nativeAudioIdenticalAcrossStyles": true,
+  "nativeAudioSha256": "7f9d5dd20a81bbc39a5fd1585c6ffb149b85576a5f3633702a680549433dcadf",
+  "audioRms": 3517.82,
+  "audioPeak": 23864,
+  "resolution": [
+    1200,
+    672
+  ],
+  "fps": "44100/1472",
+  "recoveryVisuallyReviewed": true,
+  "decodedMp4FramesReviewed": true,
+  "installedBinaries": [
+    {
+      "path": "Native/build/libsm_native.so",
+      "sha256": "ca98b5871d9090b2eb5a855ce271d7e5c12df13f7af1f6624e4b3988ba9f23a1",
+      "backup": ".tmp/death-beam/before/libsm_native.so"
+    },
+    {
+      "path": "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so",
+      "sha256": "22264863de3c5e2465ce2f5f11cefa92fc7bfd2bfd2c355968bf17ea9c65bef5",
+      "backup": ".tmp/death-beam/before/libUnrealEditor-SMUnreal.so"
+    }
+  ],
+  "scope": "Unreal-rendered controlled native cutscene, including charge, strike and recovery. Original fight skipped in copied test saves. Full manual encounter remains separate."
+}

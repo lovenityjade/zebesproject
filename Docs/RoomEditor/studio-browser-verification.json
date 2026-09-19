@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "allTilesets": 29,
+  "blackTile": true,
+  "pixelEdit": true,
+  "rotationTileAndAtlas": true,
+  "secretUndoRedo": true,
+  "eventRectangle": true,
+  "pngBackdrop": true,
+  "pngTileset": true,
+  "saveReload": true,
+  "errors": []
+}

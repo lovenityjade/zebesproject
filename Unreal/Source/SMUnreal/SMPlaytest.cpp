@@ -1,4 +1,6 @@
 #include "SMHUD.h"
+#include "Misc/ConfigCacheIni.h"
+#include "UnrealClient.h"
 #include "Components/AudioComponent.h"
 #include "SMSystemMenu.h"
 #include "HAL/PlatformProcess.h"
@@ -9,6 +11,38 @@
 void ASMHUD::TickPlaytestCheck(){
 #if !UE_BUILD_SHIPPING
     ++PlaytestTicks;
+    if(AchievementCheck){
+        auto Require=[this](bool Ok,const TCHAR* Name){if(!Ok){UE_LOG(LogTemp,Error,TEXT("SM_ACHIEVEMENTS_FAIL %s"),Name);PlayerOwner->ConsoleCommand(TEXT("quit"));}return Ok;};
+        if(PlaytestTicks==1){
+            if(!Require(State()==8,TEXT("gameplay fixture")))return;
+            auto RamFn=reinterpret_cast<uint8*(*)()>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_simulation_ram")));
+            if(!Require(RamFn!=nullptr,TEXT("RAM fixture")))return;
+            uint8* Ram=RamFn();
+            auto Put=[Ram](int Address,uint16 Value){FMemory::Memcpy(Ram+Address,&Value,2);};
+            FConfigFile Legacy;Legacy.SetString(TEXT("Local"),TEXT("Unlocked"),TEXT("24"));Legacy.Write(ProfilePath);
+            LoadAchievements();if(!Require(AchievementBits==24,TEXT("legacy migration")))return;
+            Legacy.SetString(TEXT("Local"),TEXT("Unlocked64"),*FString::Printf(TEXT("%llu"),(unsigned long long)((uint64(1)<<44)|24)));Legacy.Write(ProfilePath);LoadAchievements();
+            Put(0x9a4,0);Put(0x9a8,0);Put(0x9c4,99);Put(0x9c8,0);FMemory::Memzero(Ram+0xd828,8);
+            TrackAchievements();Put(0x9a4,5);Ram[0xd829]=1;TrackAchievements();
+            const uint64 Expected=(uint64(1)<<44)|(uint64(1)<<5)|(uint64(1)<<7)|(uint64(1)<<15)|24;
+            if(!Require((AchievementBits&Expected)==Expected,TEXT("live equipment/boss awards and high-bit preservation")))return;
+            AchievementBits=0;LoadAchievements();if(!Require((AchievementBits&Expected)==Expected,TEXT("INI reload")))return;
+            const FString FixtureProfile=ProfilePath;
+            SettingsPath=CoreSavePath+TEXT(".presentation.ini");
+            SystemMenu=MakeShared<FSMSystemMenu>(*this);SystemMenu->Initialize(false);
+            ProfilePath=FixtureProfile;LoadAchievements();
+            if(!Require(SystemMenu->AchievementIconsReady(),TEXT("all twenty badge textures")))return;
+            SystemMenu->ShowAchievements(1);
+        }
+        if(PlaytestTicks==40)FScreenshotRequest::RequestScreenshot(FPaths::ProjectSavedDir()/TEXT("SMTests/achievements-vanilla.png"),true,false);
+        if(PlaytestTicks==60)SystemMenu->ShowAchievements(2);
+        if(PlaytestTicks==90)FScreenshotRequest::RequestScreenshot(FPaths::ProjectSavedDir()/TEXT("SMTests/achievements-randomizer.png"),true,false);
+        if(PlaytestTicks==110){
+            FFileHelper::SaveStringToFile(TEXT("{\"passed\":true,\"vanilla\":20,\"randomizer\":20,\"legacyMigration\":true,\"highBitRoundTrip\":true,\"liveNativeAwards\":true,\"icons\":20}"),*(FPaths::ProjectSavedDir()/TEXT("SMTests/achievements-runtime.json")));
+            UE_LOG(LogTemp,Display,TEXT("SM_ACHIEVEMENTS_PASS"));PlayerOwner->ConsoleCommand(TEXT("quit"));
+        }
+        return;
+    }
     if(SporeCheck){
         WeatherTime=PlaytestTicks/60.f; // Animate atmosphere over a frozen native frame.
         if(PlaytestTicks==1){

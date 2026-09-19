@@ -1,5 +1,19 @@
 # Changelog
 
+## ALPHA-0.26 — 2026-09-19
+
+- Playable ten-encounter Boss Rush, five difficulties, progressive equipment,
+  native menus, boss-energy display, results and optimized VR transitions.
+- Pixel-textured Mother Brain finale and Hyper Beam, escape lighting/fireballs
+  and seven animated portrait exchanges with corrected native punctuation.
+- Forty additional achievements, with separate Vanilla/Randomizer categories.
+- External pixel/tile studio, parallax editing and accepted room corrections;
+  imported decoration pixels are reconstructed from the player ROM at runtime.
+- Rendering quality, transition detail, frame caps and resolution controls.
+- Normalized, credited Boss Rush/finale audio in both desktop packages.
+- Document future optional QoL separately; these options are not implemented
+  in this release and will not qualify for speedrun mode.
+
 ## ALPHA-0.25 — 2026-09-18
 
 - French Canadian language choice across game and randomizer menus, native text,

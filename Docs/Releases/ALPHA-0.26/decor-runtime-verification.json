@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "byteExact": true,
+  "ramUnchanged": true,
+  "malformedRecipesRejected": true,
+  "pixels": 8192,
+  "reconstructedSha256": "ffefe591df25166ab923737ba8f31545843e041a38307926d174821ba988842d"
+}

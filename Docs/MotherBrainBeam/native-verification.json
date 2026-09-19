@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "frames": 1500,
+  "nativeSimulationAndPpuIdentical": true,
+  "romAndReferenceSaveUnchanged": true,
+  "timeline": [
+    {
+      "frame": 0,
+      "phase": 1,
+      "health": 699,
+      "body": 47386
+    },
+    {
+      "frame": 741,
+      "phase": 2,
+      "health": 375,
+      "body": 47589
+    },
+    {
+      "frame": 1047,
+      "phase": 3,
+      "health": 45,
+      "body": 47710
+    },
+    {
+      "frame": 1054,
+      "phase": 0,
+      "health": 45,
+      "body": 47812
+    }
+  ],
+  "frameHashDigest": "04ea8fc5f08600bd91009096fe21fa52e74bf6c6eeb0cb50e8cc2f20748228b0",
+  "scope": "Controlled native ascent and actual rainbow-beam routines. Not a complete manually played fight."
+}

@@ -1,4 +1,6 @@
 #include "SMImGuiWidget.h"
+#include "ImageUtils.h"
+#include "HAL/PlatformProcess.h"
 #include "imgui.h"
 #include <string>
 #include "Engine/Texture2D.h"
@@ -79,10 +81,14 @@ void SSMImGuiWidget::Tick(const FGeometry& Geo,double,float Delta) {
 int32 SSMImGuiWidget::OnPaint(const FPaintArgs&,const FGeometry& Geo,const FSlateRect&,FSlateWindowElementList& Out,int32 Layer,const FWidgetStyle&,bool) const {
     if(!FrameReady)return Layer;
     FContextScope Scope(Context);const ImDrawData* Data=ImGui::GetDrawData();if(!Data)return Layer;
-    const auto Resource=FSlateApplication::Get().GetRenderer()->GetResourceHandle(FontBrush);
+
     for(const ImDrawList* List:Data->CmdLists) {
         for(const ImDrawCmd& Cmd:List->CmdBuffer) {
             if(Cmd.UserCallback || Cmd.ElemCount==0)continue;
+            const uint64 Texture=uint64(Cmd.GetTexID());
+            const FSlateBrush* Brush=&FontBrush;
+            if(Texture>=2){const int Index=int(Texture-2);if(!HasAchievementImage(Index))continue;Brush=&AchievementBrushes[Index];}
+            const auto Resource=FSlateApplication::Get().GetRenderer()->GetResourceHandle(*Brush);
             const FVector2D TL=Geo.LocalToAbsolute(FVector2D(Cmd.ClipRect.x,Cmd.ClipRect.y));
             const FVector2D BR=Geo.LocalToAbsolute(FVector2D(Cmd.ClipRect.z,Cmd.ClipRect.w));
             Out.PushClip(FSlateClippingZone(FSlateRect(TL.X,TL.Y,BR.X,BR.Y)));
@@ -127,3 +133,35 @@ FReply SSMImGuiWidget::OnMouseMove(const FGeometry& G,const FPointerEvent& E){FC
 FReply SSMImGuiWidget::OnMouseButtonDown(const FGeometry& G,const FPointerEvent& E){OnMouseMove(G,E);FContextScope Scope(Context);int B=MouseButton(E.GetEffectingButton());if(B>=0)ImGui::GetIO().AddMouseButtonEvent(B,true);return FReply::Handled().SetUserFocus(AsShared()).CaptureMouse(AsShared());}
 FReply SSMImGuiWidget::OnMouseButtonUp(const FGeometry& G,const FPointerEvent& E){OnMouseMove(G,E);FContextScope Scope(Context);int B=MouseButton(E.GetEffectingButton());if(B>=0)ImGui::GetIO().AddMouseButtonEvent(B,false);return FReply::Handled().ReleaseMouseCapture();}
 FReply SSMImGuiWidget::OnMouseWheel(const FGeometry&,const FPointerEvent& E){FContextScope Scope(Context);ImGui::GetIO().AddMouseWheelEvent(0,E.GetWheelDelta());return FReply::Handled();}
+
+bool SSMImGuiWidget::HasAchievementImage(int Icon) const {
+    return AchievementTextures.IsValidIndex(Icon)&&AchievementTextures[Icon].IsValid();
+}
+void SSMImGuiWidget::LoadAchievementImages(void* CoreHandle) {
+    const TCHAR* Names[]={TEXT("morph"),TEXT("bombs"),TEXT("varia"),TEXT("gravity"),TEXT("speed"),TEXT("space"),TEXT("screw"),TEXT("tablet"),TEXT("beams"),TEXT("energy"),TEXT("missiles"),TEXT("kraid"),TEXT("phantoon"),TEXT("draygon"),TEXT("ridley"),TEXT("seals"),TEXT("miniboss"),TEXT("map"),TEXT("animals"),TEXT("ship")};
+    auto SetIcon=reinterpret_cast<int(*)(int,const uint8*,int,int)>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_achievement_set_icon")));
+    AchievementTextures.SetNum(20);AchievementBrushes.SetNum(20);
+    for(int I=0;I<20;I++){
+        UTexture2D* Texture=FImageUtils::ImportFileAsTexture2D(FPaths::ProjectContentDir()/TEXT("Achievements")/(FString(Names[I])+TEXT(".png")));
+        if(!Texture){UE_LOG(LogTemp,Warning,TEXT("SM_ACHIEVEMENT_ICON_MISSING %s"),Names[I]);continue;}
+        // Keep full-resolution authored files, but only retain a small UI texture.
+        // Nearest sampling preserves hard pixel edges at the actual display size.
+        if(Texture->GetPixelFormat()==PF_B8G8R8A8){
+            auto& Source=Texture->GetPlatformData()->Mips[0];
+            const uint8* Src=static_cast<const uint8*>(Source.BulkData.LockReadOnly());
+            UTexture2D* Small=UTexture2D::CreateTransient(64,64,PF_B8G8R8A8);
+            auto& Target=Small->GetPlatformData()->Mips[0];
+            uint8* Dst=static_cast<uint8*>(Target.BulkData.Lock(LOCK_READ_WRITE));
+            for(int Y=0;Y<64;Y++)for(int X=0;X<64;X++)FMemory::Memcpy(Dst+(Y*64+X)*4,Src+((Y*Source.SizeY/64)*Source.SizeX+X*Source.SizeX/64)*4,4);
+            Target.BulkData.Unlock();Source.BulkData.Unlock();Small->SRGB=Texture->SRGB;Texture=Small;
+        }
+        Texture->Filter=TF_Nearest;Texture->NeverStream=true;
+        if(SetIcon&&Texture->GetPixelFormat()==PF_B8G8R8A8){
+            auto& Mip=Texture->GetPlatformData()->Mips[0];
+            const uint8* Pixels=static_cast<const uint8*>(Mip.BulkData.LockReadOnly());
+            SetIcon(I,Pixels,Mip.SizeX,Mip.SizeY);Mip.BulkData.Unlock();
+        }
+        Texture->UpdateResource();AchievementTextures[I].Reset(Texture);
+        FSlateBrush& Brush=AchievementBrushes[I];Brush.SetResourceObject(Texture);Brush.ImageSize=FVector2D(Texture->GetSizeX(),Texture->GetSizeY());Brush.DrawAs=ESlateBrushDrawType::Image;
+    }
+}

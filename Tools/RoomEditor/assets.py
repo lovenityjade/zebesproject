@@ -7,6 +7,7 @@ import struct
 import sys
 from pathlib import Path
 from PIL import Image
+from studio import planes, validate_studio, integer
 
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'Randomizer/upstream'))
@@ -101,21 +102,69 @@ class Assets:
         self.tileset(tileset)
         return dict(**info,state=state,tileset=tileset,foreground=foreground,background=background,
                     collision=[v>>12 for v in foreground],bts=list(level[2+size:2+size+visible]),
-                    used=sorted({v&1023 for v in foreground+background}),romSha256=ROM_SHA256)
+                    scrollX=self.rom[address+12],scrollY=self.rom[address+13],used=sorted({v&1023 for v in foreground+background}),planes=planes(info),romSha256=ROM_SHA256)
+
+    @functools.lru_cache(maxsize=32)
+    def background_preview(self,room,state=None):
+        info=self.room(room,state);tiles=self.tileset(info['tileset'])
+        if info['background']:
+            atlas=Image.open(io.BytesIO(tiles['png']));w=info['width'];h=info['height']
+            if w*h>16384:raise ValueError('Fond trop grand pour cet aperçu.')
+            image=Image.new('RGBA',(w*16,h*16))
+            for i,value in enumerate(info['background']):
+                tile=atlas.crop(((value&31)*16,((value&1023)//32)*16,(value&31)*16+16,((value&1023)//32)*16+16))
+                if value&1024:tile=tile.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+                if value&2048:tile=tile.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
+                image.paste(tile,((i%w)*16,(i//w)*16))
+        else:
+            # Replay only declarative background decompress/copy commands. No
+            # room ASM is executed; HDMA/wind/animation are not this static view.
+            state_pc=pc(0x8f0000|info['state']);script=self.word(state_pc+22)
+            ram=bytearray(65536);vram=bytearray(65536)
+            for _ in range(128):
+                if script<0x8000:break
+                a=pc(0x8f0000|script);command=self.word(a);a+=2;script+=2
+                if command==0:break
+                if command==4:
+                    data=self.decompress(self.long(a));target=self.word(a+3)
+                    if target+len(data)>len(ram):break
+                    ram[target:target+len(data)]=data;script+=5
+                elif command in (2,8,14):
+                    if command==14:a+=2;script+=2
+                    source=self.long(a);target=self.word(a+3)*2;count=self.word(a+5)
+                    data=ram[source&65535:(source&65535)+count] if source>>16==0x7e else self.rom[pc(source):pc(source)+count]
+                    if target+count>len(vram) or len(data)!=count:break
+                    vram[target:target+count]=data;script+=7
+                elif command in (6,10,12):pass
+                else:break
+            image=Image.new('RGBA',(512,256));pixels=image.load();graphics=tiles['graphics'];palette=tiles['palette']
+            for y in range(256):
+                for x in range(512):
+                    address=0x9000+(x//256)*2048+(y//8)*64+((x//8)&31)*2
+                    entry=int.from_bytes(vram[address:address+2],'little');row=y&7;col=x&7
+                    if entry&0x8000:row^=7
+                    if entry&0x4000:col^=7
+                    base=(entry&1023)*32;ci=sum(((graphics[base+row*2+(p&1)+(16 if p>=2 else 0)]>>(7-col))&1)<<p for p in range(4))
+                    c=(((entry>>10)&7)*16+ci)*2;color=int.from_bytes(palette[c:c+2],'little')
+                    pixels[x,y]=tuple(((color>>s)&31)*255//31 for s in (0,5,10))+(255 if ci else 0,)
+        stream=io.BytesIO();image.save(stream,format='PNG');return stream.getvalue()
 
     def validate_patch(self,data):
-        if set(data)-{'room','state','cells'}:raise ValueError('Seules les retouches visuelles sont acceptées.')
+        studio=validate_studio(data,self.room(data['room'],data['state']))
         room=self.room(data['room'],data['state']);cells=data['cells']
         if not isinstance(cells,list) or len(cells)>100000:raise ValueError('Trop de cases.')
         result={}
         for cell in cells:
-            if not isinstance(cell,dict) or set(cell)!={'x','y','layer','tile'}:raise ValueError('Case invalide.')
-            if any(type(v) is not int for v in cell.values()):raise ValueError('Coordonnées et tiles entières requises.')
+            if not isinstance(cell,dict) or not {'x','y','layer','tile'}<=set(cell) or set(cell)-{'x','y','layer','tile','secret','radius','opacity','custom'}:raise ValueError('Case invalide.')
+            if any(type(cell[k]) is not int for k in ('x','y','layer','tile')):raise ValueError('Coordonnées et tiles entières requises.')
             x,y,layer,tile=(cell[k] for k in ('x','y','layer','tile'))
             if not (-128<=x<=511 and -128<=y<=511 and layer in (0,1) and 0<=tile<4096):raise ValueError('Case hors limites.')
             expected=-1
             blocks=room['foreground' if layer==0 else 'background']
             if blocks and 0<=x<room['width'] and 0<=y<room['height']:expected=blocks[y*room['width']+x]
-            result[(layer,x,y)]=dict(cell,expected=expected)
-        return dict(version=1,romSha256=ROM_SHA256,room=room['id'],state=room['state'],tileset=room['tileset'],
+            secret=cell.get('secret',False);custom=cell.get('custom',False)
+            if type(secret) is not bool or type(custom) is not bool or (secret and layer!=0):raise ValueError('Propriété de tile invalide.')
+            result[(layer,x,y)]=dict(x=x,y=y,layer=layer,tile=tile,expected=expected,secret=secret,custom=custom,
+                radius=integer(cell.get('radius',64),16,256),opacity=integer(cell.get('opacity',25),0,100))
+        return dict(version=2,**studio,romSha256=ROM_SHA256,room=room['id'],state=room['state'],tileset=room['tileset'],
                     cells=[result[k] for k in sorted(result)])

@@ -1,3 +1,4 @@
+#include "sm_rush_runtime.h"
 #include "sm_runs.h"
 #include "sm_seed.h"
 #include "sm_generation.h"
@@ -73,7 +74,7 @@ void sm_run_new_game(void){
   if(!ok){uint64_t t=sm_clock_ns();memcpy(id,&t,8);memcpy(id+8,&t,8);}id[6]=(id[6]&15)|64;id[8]=(id[8]&63)|128;
   snprintf(r->id,sizeof(r->id),"%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x",id[0],id[1],id[2],id[3],id[4],id[5],id[6],id[7],id[8],id[9],id[10],id[11],id[12],id[13],id[14],id[15]);dirty=1;sm_runs_save();
 }
-void sm_run_invalidate(int reason){Run *r=active();if(r&&r->started&&!r->finished){r->eligible=0;if(!r->invalid_reason)r->invalid_reason=reason;dirty=1;}}
+void sm_run_invalidate(int reason){if(sm_rush_active())return;Run *r=active();if(r&&r->started&&!r->finished){r->eligible=0;if(!r->invalid_reason)r->invalid_reason=reason;dirty=1;}}
 void sm_runs_frame(void){
   uint64_t now=sm_clock_ns(),elapsed=now-tick;tick=now;
   Run *r=active();if(!r)return;
@@ -88,7 +89,7 @@ void sm_runs_frame(void){
   }
 }
 uint64_t sm_run_time(int real){Run *r=active();if(!r)return 0;return real?r->real_ms:r->frames;}
-void sm_run_finish(void){
+void sm_run_finish(void){if(sm_rush_active())return;
   Run *r=active();if(!r||r->finished)return;
   r->frames=(((uint64_t)game_time_hours*60+game_time_minutes)*60+game_time_seconds)*60+game_time_frames;
   if(!r->ngplus&&!r->completed){capture(r->completion);r->completed=1;}
@@ -110,15 +111,17 @@ void sm_run_slot_action(int action,int slot,int other){
 
 void sm_run_enemy_spawn(int index){halves[(index>>6)&31]=0;}
 uint32_t sm_run_enemy_damage(uint32_t amount){
+  if(sm_rush_active())return sm_rush_enemy_damage(amount);
   if(!sm_run_state(1))return amount;
   int i=(cur_enemy_index>>6)&31;
   if(previous_room!=room_ptr){memset(halves,0,32);memset(previous_enemy,0,sizeof(previous_enemy));previous_room=room_ptr;}
   if(previous_enemy[i]!=enemy_data[i].enemy_ptr){halves[i]=0;previous_enemy[i]=enemy_data[i].enemy_ptr;}
   uint32_t result=(amount+halves[i])/2;halves[i]=(amount+halves[i])&1;return result;
 }
-uint16_t sm_run_contact_damage(uint16_t amount){return sm_run_state(1)?(uint16_t)(((uint32_t)amount*3/2)>65535?65535:(uint32_t)amount*3/2):amount;}
+uint16_t sm_run_contact_damage(uint16_t amount){return !sm_rush_active()&&sm_run_state(1)?(uint16_t)(((uint32_t)amount*3/2)>65535?65535:(uint32_t)amount*3/2):amount;}
 extern uint8_t sm_wide_hud[];
 void sm_run_render(uint8_t *pixels){
+  if(sm_rush_active())return;
   if(!sm_run_state(0)||game_state<8||game_state>18||game_state==15)return;
   uint64_t f=sm_run_time(0);char text[24];snprintf(text,sizeof(text),"%02u:%02u:%02u",(unsigned)(f/216000),(unsigned)(f/3600%60),(unsigned)(f/60%60));
   uint32_t color=sm_run_state(2)?0xffffff:0xff6868;

@@ -1,3 +1,5 @@
+#include "sm_rush_runtime.h"
+#include "sm_boss_rush.h"
 #include "sm_locale.h"
 #include "sm_ending.h"
 #include "sm_dialogue.h"
@@ -42,6 +44,7 @@ double sm_profile_us(int field){return field>=0&&field<5?sm_profile_ns[field]/10
 #include "spc_player.h"
 #include "variables.h"
 #include "funcs.h"
+#include "enemy_types.h"
 #include <setjmp.h>
 #include <stdlib.h>
 #include <string.h>
@@ -142,6 +145,7 @@ int sm_step(uint16_t buttons) {
   if (setjmp(recovery)) { guarded = 0; return 0; }
   if(sm_ending_preview_step(buttons,pixels,audio_samples)){guarded=0;return 1;}
   if(sm_credits_preview_step(buttons,pixels,audio_samples)){guarded=0;return 1;}
+  if(sm_rush_before(&buttons)){memset(audio_samples,0,sizeof(audio_samples));guarded=0;return 1;}
   sm_scene_active=sm_presentation_kind()==1;
   sm_visual_begin_frame();
   sm_seed_frame();
@@ -154,8 +158,9 @@ int sm_step(uint16_t buttons) {
    * out-of-range game-state dispatch after Game Over -> End. */
   if(game_state==0xffff)coroutine_state_0=3;
   sm_profile_ns[0]=sm_clock_ns()-profile_start;
-  sm_runs_frame();
-  sm_relic_escape_frame();
+  sm_rush_after();
+  if(!sm_rush_active())sm_runs_frame();
+  if(!sm_rush_active())sm_relic_escape_frame();
   sm_visual_end_frame();
   sm_seed_frame();
   sm_objectives_frame();
@@ -173,9 +178,9 @@ int sm_step(uint16_t buttons) {
   sm_map_browser_render(pixels);sm_travel_render(pixels);
   sm_credits_render(pixels);sm_cinema_frame();
   sm_hud_stabilize(pixels);
-  sm_run_render(pixels);
+  sm_run_render(pixels);sm_rush_render(pixels);
   sm_generation_render(pixels);
-  sm_notifications_frame(pixels);
+  if(!sm_rush_active())sm_notifications_frame(pixels);
   sm_locale_render(pixels);
   sm_profile_ns[4]=sm_clock_ns()-profile_start;
   guarded = 0;
@@ -277,7 +282,7 @@ int sm_presentation_kind(void) {
 int sm_brightness(void) { return g_snes ? g_snes->ppu->brightness : 0; }
 int sm_slots_copy_sram(uint8_t *out,int capacity){if(!initialized || !out || capacity<8192)return 0;memcpy(out,g_sram,8192);return 8192;}
 int sm_save(void) {
-  if(sm_ending_preview_active())return 1;
+  if(sm_rush_active() || sm_ending_preview_active())return 1;
   if(defer_sram_write)return 1;
   if (!initialized) return 0;
   char tmp[4100]; snprintf(tmp, sizeof(tmp), "%s.tmp", save_path);
@@ -287,6 +292,7 @@ int sm_save(void) {
   return ok && rename(tmp, save_path) == 0 && sm_stats_save() && sm_runs_save() && sm_route_save();
 }
 void sm_shutdown(void) {
+  sm_rush_close();
   sm_dialogue_unload();
   sm_ending_preview_close();
   if (!initialized) return;
@@ -330,9 +336,23 @@ int sm_test_combat_equipment(void) {
   samus_max_power_bombs=samus_power_bombs=10;
   return 1;
 }
+// Isolated visual lab only: the original elevator pose, never a live-save cheat.
+int sm_test_wire_pose(void) {
+  if(!initialized || !strstr(save_path,"SMTests") || game_state!=8)return 0;
+  sm_run_invalidate(1);
+  MakeSamusFaceForward();
+  samus_draw_handler=FUNC16(SamusDisplayHandler_SamusReceivedFatal);
+  samus_invincibility_timer=samus_knockback_timer=0;
+  // Read effective architectural provenance below fog in this isolated lab.
+  sm_scene_capture_metadata=1;
+
+  samus_x_pos=samus_prev_x_pos=layer1_x_pos+128;
+  samus_y_pos=samus_prev_y_pos=layer1_y_pos+152;
+  return 1;
+}
 int sm_test_room(int room,int x,int y) {
   if(!initialized || !strstr(save_path,"SMTests") || game_state!=8)return 0;
-  const uint16_t allowed[]={0x948c,0x96ba,0x975c,0x97b5,0x9e9f,0x9f11,0x9f64,0xd104,0xacb3,0xa66a,0xa5ed,0xddc4,0xdd58,0xacf0,0x9dc7,0xa6e2,0xce40};
+  const uint16_t allowed[]={0x948c,0x96ba,0x975c,0x97b5,0x9e9f,0x9f11,0x9f64,0xd104,0xacb3,0xa66a,0xa5ed,0xddc4,0xdd58,0xacf0,0x9dc7,0xa6e2,0xce40,0xafa3,0xaf14,0xb1e5};
   int found=0;for(unsigned i=0;i<sizeof(allowed)/sizeof(*allowed);i++)found|=room==allowed[i];
   if(!found)return 0;
   const RoomDefHeader *r=get_RoomDefHeader(room);
@@ -364,7 +384,7 @@ void sm_test_load_room(void) {
   /* Use an actual incoming door. An outgoing door would make the native room
    * loader correctly load its neighbour, despite the requested test room. */
   const uint16_t pairs[][2]={{0x948c,0x8ad2},{0x96ba,0x8c76},{0x975c,0x8b62},{0x97b5,0x8b86},
-    {0x9e9f,0x8ec2},{0x9f11,0x8eaa},{0x9f64,0x8ece},{0xd104,0x90c6},{0xacb3,0x97ce},{0xa66a,0x91f2},{0xa5ed,0x9216},{0xddc4,0xaa5c},{0xdd58,0xaac8},{0xacf0,0x95be},{0x9dc7,0x8e3e},{0xa6e2,0x91da},{0xce40,0xa1a4}};
+    {0x9e9f,0x8ec2},{0x9f11,0x8eaa},{0x9f64,0x8ece},{0xd104,0x90c6},{0xacb3,0x97ce},{0xa66a,0x91f2},{0xa5ed,0x9216},{0xddc4,0xaa5c},{0xdd58,0xaac8},{0xacf0,0x95be},{0x9dc7,0x8e3e},{0xa6e2,0x91da},{0xce40,0xa1a4},{0xafa3,0x929a},{0xaf14,0x967e},{0xb1e5,0x9852}};
   for(unsigned i=0;i<sizeof(pairs)/sizeof(*pairs);i++)if(room_ptr==pairs[i][0])door_def_ptr=pairs[i][1];
   if(test_room_door){door_def_ptr=test_room_door;test_room_door=0;}
   layer1_x_pos=bg1_x_offset=(test_room_x/256)*256;
@@ -372,6 +392,19 @@ void sm_test_load_room(void) {
   samus_x_pos=samus_prev_x_pos=test_room_x;samus_y_pos=samus_prev_y_pos=test_room_y;
 }
 
+int sm_test_motherbrain_beam(int stage) {
+  if(!initialized || !strstr(save_path,"SMTests") || game_state!=8 || room_ptr!=0xdd58 || (stage!=0 && stage!=1))return 0;
+  if(!stage) {
+    MotherBrain_SetupNeckForFakeAscent();
+    MotherBrainBody_FakeDeath_Ascent_0_DrawBG1Row23();
+  } else {
+    samus_health=699;samus_max_health=1499;
+    collected_items|=1;equipped_items|=1;
+    samus_x_pos=samus_prev_x_pos=220;samus_y_pos=samus_prev_y_pos=160;
+    MotherBomb_FiringRainbowBeam_0();
+  }
+  return 1;
+}
 int sm_test_all_equipment(void) {
   if(!initialized || !strstr(save_path,"SMTests") || game_state!=8 || sm_message_active())return 0;
   sm_run_invalidate(1);
@@ -489,4 +522,60 @@ int sm_test_playtest(int action,int value){
     case 10:sm_run_new_game();return 1;
     default:return -1;
   }
+}
+
+void Kraid_Shot_Mouth(void);
+void Kraid_Shot_Body(void);
+/* Isolated automated combat probes. No exports can modify a personal save. */
+static int rush_test_shot(int damage,int type){
+ if(!initialized || !strstr(save_path,"SMTests") || sm_rush_info(0)!=SM_RUSH_FIGHT || damage<1 || damage>10000)return 0;
+ int index=sm_rush_info(1)==9?64:0;
+ EnemyData *e=gEnemyData(index);if(!e->enemy_ptr || (!e->health && sm_rush_info(1)!=2 && sm_rush_info(1)!=9))return 0;
+ EnemyDef *d=get_EnemyDef_A2(e->enemy_ptr);
+ cur_enemy_index=index;collision_detection_index=0;
+ projectile_type[0]=type;projectile_damage[0]=damage;projectile_x_pos[0]=e->x_pos;projectile_y_pos[0]=e->y_pos;
+ e->invincibility_timer=e->flash_timer=0;
+ if(sm_rush_info(1)==2){
+  uint16_t count=projectile_counter;projectile_counter=1;projectile_dir[0]=0;
+  projectile_x_pos[0]=e->x_pos+128;projectile_y_pos[0]=e->y_pos-32;
+  /* Aim at the current mouth box, which moves upward when Kraid stands. */
+  Enemy_Kraid *kraid=Get_Kraid(0);
+  const uint8 *frame=RomPtr(0xa70000 | (uint16)(kraid->kraid_var_B-8));
+  uint16 box=GET_WORD(frame+6);
+  if(box!=0xffff){
+   const uint8 *bounds=RomPtr(0xa70000 | box);
+   projectile_x_pos[0]=e->x_pos+GET_WORD(bounds)+2;
+   projectile_y_pos[0]=e->y_pos+(int16)GET_WORD(bounds+2)+((int16)GET_WORD(bounds+6)-(int16)GET_WORD(bounds+2))/2;
+  }
+  projectile_y_radius[0]=projectile_x_radius[0]=8;
+  Kraid_Shot_Mouth();Kraid_Shot_Body();projectile_counter=count;projectile_damage[0]=0;
+ }else if(sm_rush_info(1)==3){Crocomire_Func_95();projectile_damage[0]=0;}
+ else CallEnemyAi((uint32_t)e->bank<<16|d->shot_ai);
+ return 1;
+}
+int sm_test_rush_hit(int damage){
+ return rush_test_shot(damage,hyper_beam_flag?0x1019:sm_rush_info(1)==7?0x10:0x100);
+}
+int sm_test_rush_weapon(int weapon){
+ /* Original damage/type pairs; dispatch bypasses aim, not vulnerabilities. */
+ if(weapon==0)return rush_test_shot(100,0x100);
+ if(weapon==1)return rush_test_shot(300,0x200);
+ if(weapon==2 && initialized && strstr(save_path,"SMTests") && (equipped_beams&0x1000)){
+  unsigned beam=equipped_beams&15;
+  if((beam&12)==12)return 0;
+  uint16 data=GET_WORD(RomFixedPtr(0x9383d9)+beam*2);
+  return rush_test_shot(GET_WORD(RomPtr_93(data)),0x10|beam);
+ }
+ if(weapon==3 && hyper_beam_flag)return rush_test_shot(1000,0x1019);
+ return 0;
+}
+int sm_test_rush_recoil(int steps){
+ if(!initialized || !strstr(save_path,"SMTests") || sm_rush_info(0)!=SM_RUSH_FIGHT || sm_rush_info(1)!=SM_RUSH_CROCOMIRE || steps<1 || steps>1000)return 0;
+ cur_enemy_index=0;
+ for(int i=0;i<steps;i++)Crocomire_Instr_18(0,0);
+ return 1;
+}
+int sm_test_rush_hurt(int damage){
+ if(!initialized || !strstr(save_path,"SMTests") || sm_rush_info(0)!=SM_RUSH_FIGHT || damage<0 || damage>10000)return 0;
+ Samus_DealDamage(damage);return samus_health;
 }

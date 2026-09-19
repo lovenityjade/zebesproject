@@ -1,3 +1,4 @@
+#include "sm_rush_runtime.h"
 #include "sm_ending.h"
 #include "sm_bridge.h"
 #include "sm_credits.h"
@@ -23,7 +24,7 @@ static void copy_pixels(int restore) {
 }
 int sm_ending_preview_active(void){return active;}
 int sm_ending_preview_launch(int animals) {
-  if(animals < -1 || animals>1 || !g_snes || active || sm_credits_state(0) ||
+  if(sm_rush_active() || animals < -1 || animals>1 || !g_snes || active || sm_credits_state(0) ||
      (game_state!=8 && game_state!=15) || sm_message_active() || queued_message_box_index)return 0;
   sm_ending_runtime_capture();copy_pixels(0);saved_scene=sm_cinema_state(0);
   active=1;previous_buttons=8;

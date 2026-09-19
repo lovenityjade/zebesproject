@@ -10,6 +10,8 @@
 #include "Misc/Base64.h"
 #include "HAL/FileManager.h"
 #include "HAL/PlatformFileManager.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
 #if PLATFORM_WINDOWS
 #include "Windows/WindowsHWrapper.h"
 #endif
@@ -85,7 +87,18 @@ bool Supported(const FSMSeedPlan& Plan, FString& Error) {
     return true;
 }
 }
-FString FSMProfiles::Root() { if(!TestProfileRoot.IsEmpty())return TestProfileRoot;return FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SM/Profiles")); }
+FString FSMProfiles::Root() {
+    if(!TestProfileRoot.IsEmpty())return TestProfileRoot;
+    FString TemporarySave;
+    if(FParse::Value(FCommandLine::Get(),TEXT("SMTemporarySave="),TemporarySave)){
+        TemporarySave=FPaths::ConvertRelativePathToFull(TemporarySave);
+        FPaths::NormalizeFilename(TemporarySave);
+        FPaths::CollapseRelativeDirectories(TemporarySave);
+        if(TemporarySave.Contains(TEXT("/SMTests/")) && IFileManager::Get().FileSize(*TemporarySave)==8192)
+            return FPaths::GetPath(TemporarySave)/TEXT("Profiles");
+    }
+    return FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SM/Profiles"));
+}
 bool FSMProfiles::Read(FString Directory, FSMGameProfile& Out, FString& Error,bool Recover) {
     if(Recover){if(!RecoverBank(Directory,Error))return false;}
     else if(IFileManager::Get().FileExists(*(Directory/TEXT("bank.transaction.json")))){Error=SMLocalization::Text(FString(TEXT("Save bank awaits recovery: ")))+Directory;return false;}
@@ -171,7 +184,13 @@ void FSMProfiles::List(TArray<FSMGameProfile>& Out,TArray<FString>& Warnings) {
         if(Read(Root()/Dir,Profile,Error,false)) Out.Add(MoveTemp(Profile)); else Warnings.Add(Error);
     }
     Out.Sort([](const FSMGameProfile& A,const FSMGameProfile& B){return A.CreatedUtc>B.CreatedUtc;});
-    const FString LegacyPath=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SM/sram.dat"));
+    FString LegacyPath=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SM/sram.dat"));
+    FString TemporarySave;
+    if(FParse::Value(FCommandLine::Get(),TEXT("SMTemporarySave="),TemporarySave)){
+        LegacyPath=FPaths::ConvertRelativePathToFull(TemporarySave);
+        FPaths::NormalizeFilename(LegacyPath);
+        FPaths::CollapseRelativeDirectories(LegacyPath);
+    }
     if(IFileManager::Get().FileExists(*LegacyPath)) {
         FSMGameProfile Legacy;Legacy.Id=TEXT("legacy-vanilla");Legacy.Name=TEXT("Original save");Legacy.Legacy=true;
         Legacy.SramPath=LegacyPath;Legacy.Directory=FPaths::GetPath(LegacyPath);Out.Add(MoveTemp(Legacy));

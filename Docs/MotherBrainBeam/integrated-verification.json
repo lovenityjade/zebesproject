@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "defaultStyle": 3,
+  "video": "Docs/MotherBrainBeam/Videos/04-Cataclysm-Integrated.mp4",
+  "sha256": "a5a81f98aad371663539693928e02f86321430d13616d46428018c8445e4e25f",
+  "frames": 750,
+  "duration": "25.034014",
+  "markers": [
+    "[2026.09.18-20.32.29:185][  0]LogTemp: Display: SM_DEATH_BEAM_READY style=3 room=dd58",
+    "[2026.09.18-20.32.58:827][371]LogTemp: Display: SM_DEATH_BEAM_STRIKE style=3 frame=3912",
+    "[2026.09.18-20.33.28:659][751]LogTemp: Display: SM_DEATH_BEAM_COMPLETE style=3 frames=750 strike=1 health=329 cpu_opcodes=0"
+  ],
+  "bodyValidation": {
+    "passed": true,
+    "changedBodyPixels": 3378,
+    "changedPixelsOutsideBody": 0,
+    "maximumLuminanceDifference": 6.9422,
+    "meanLuminanceDifference": -0.2923822972172878,
+    "hudUnchanged": true,
+    "nativeAudioUnchanged": true,
+    "nativeParityFrames": 1500,
+    "reserveRecoveryState": 27,
+    "reserveRecoveryRedPixels": 73
+  },
+  "decodedFramesReviewed": [
+    1,
+    11,
+    14,
+    24
+  ],
+  "installedBinaries": [
+    {
+      "path": "Native/build/libsm_native.so",
+      "sha256": "25ad8ed700cb7715d1ccc2635ad4b2f36d82e509a95d3ad5daf29d6ed561a59d",
+      "backup": ".tmp/death-beam-approved/before/libsm_native.so"
+    },
+    {
+      "path": "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so",
+      "sha256": "53c1d2049cacbb45129dd83cafc78047ec35d191121dd2ce14242f20d2932b41",
+      "backup": ".tmp/death-beam-approved/before/libUnrealEditor-SMUnreal.so"
+    }
+  ],
+  "scope": "Controlled native attack and automatic reserve recovery; not a complete manually played encounter."
+}

@@ -37,9 +37,14 @@ to underlying Nintendo artwork. See [third-party notices](THIRD_PARTY_NOTICES.md
 
 Optional remastered recordings and voice files are not covered by our MIT license
 or by our project-created asset policy. They remain subject to their authors'
-terms. The refreshed Windows ALPHA-0.24 package includes the selected Remastered
+terms. The Windows release package includes the selected Remastered
 recordings with credits and track provenance; this does not relicense them under
 MIT or grant ownership of the underlying music. The Linux AppImage does not
 bundle them. The separately supplied game-over MP3 and its converted PCM remain excluded
 from public source and release packages. A player may install optional audio
 locally; otherwise the original ROM audio is used.
+
+The project-supplied Boss Rush/finale audio is included in both ALPHA-0.26
+packages with source/output provenance and separate credits. This includes
+AI-assisted recordings credited to themiareproject in the supplied metadata;
+see Docs/BossRush/AUDIO-CREDITS.md. Inclusion does not place recordings under MIT.

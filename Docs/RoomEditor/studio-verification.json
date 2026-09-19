@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "tilesets": 29,
+  "importsValidated": true,
+  "nearOpacity": [
+    83,
+    100,
+    132,
+    255
+  ],
+  "farOpaque": true,
+  "spriteOcclusionPreserved": true,
+  "ramUnchanged": true,
+  "romAndSaveUnchanged": true,
+  "eventNotesPersisted": true
+}

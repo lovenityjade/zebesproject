@@ -1,0 +1,879 @@
+{
+  "date": "2026-09-18",
+  "host": "gaming-pc",
+  "passed": true,
+  "originalRooms": 7,
+  "originalCells": 2217,
+  "roomStateFiles": 13,
+  "loadedCells": 5012,
+  "originalFilesUnchanged": true,
+  "imageCacheVerified": true,
+  "derivedStates": [
+    {
+      "source": "91f8-9213.json",
+      "file": "91f8-9261.json",
+      "state": "Événement 0E"
+    },
+    {
+      "source": "91f8-9213.json",
+      "file": "91f8-9247.json",
+      "state": "Power Bomb"
+    },
+    {
+      "source": "91f8-9213.json",
+      "file": "91f8-922d.json",
+      "state": "Événement 00"
+    },
+    {
+      "source": "92b3-92c5.json",
+      "file": "92b3-92df.json",
+      "state": "Événement 00"
+    },
+    {
+      "source": "92fd-9314.json",
+      "file": "92fd-9348.json",
+      "state": "Événement 0E"
+    },
+    {
+      "source": "92fd-9314.json",
+      "file": "92fd-932e.json",
+      "state": "Événement 00"
+    }
+  ],
+  "originals": [
+    {
+      "file": "91f8-9213.json",
+      "name": "Landing Site",
+      "cells": 778,
+      "custom": 0,
+      "parallax": [],
+      "events": [],
+      "states": [
+        {
+          "id": 37473,
+          "label": "Événement 0E"
+        },
+        {
+          "id": 37447,
+          "label": "Power Bomb"
+        },
+        {
+          "id": 37421,
+          "label": "Événement 00"
+        },
+        {
+          "id": 37395,
+          "label": "État normal"
+        }
+      ],
+      "bounds": [
+        -1,
+        16,
+        0,
+        63
+      ],
+      "sha256": "d803082e2ffa323e096394d861f87ff3d991b018e4415ffbf399e45f729dde91"
+    },
+    {
+      "file": "92b3-92c5.json",
+      "name": "Gauntlet Entrance",
+      "cells": 329,
+      "custom": 0,
+      "parallax": [],
+      "events": [],
+      "states": [
+        {
+          "id": 37599,
+          "label": "Événement 00"
+        },
+        {
+          "id": 37573,
+          "label": "État normal"
+        }
+      ],
+      "bounds": [
+        0,
+        79,
+        -1,
+        16
+      ],
+      "sha256": "2292e0df5f0d01f7507d73de1589ee1d1fa71356b469ba8f0292c11e8f329c71"
+    },
+    {
+      "file": "92fd-9314.json",
+      "name": "Parlor and Alcatraz",
+      "cells": 66,
+      "custom": 66,
+      "parallax": [],
+      "events": [],
+      "states": [
+        {
+          "id": 37704,
+          "label": "Événement 0E"
+        },
+        {
+          "id": 37678,
+          "label": "Événement 00"
+        },
+        {
+          "id": 37652,
+          "label": "État normal"
+        }
+      ],
+      "bounds": [
+        11,
+        37,
+        37,
+        58
+      ],
+      "sha256": "62121156ec2235538cfa789f954e1d45f1fd2a08d2a2ca71caecea99cff4bf54"
+    },
+    {
+      "file": "93aa-93b7.json",
+      "name": "Crateria Power Bomb Room",
+      "cells": 133,
+      "custom": 0,
+      "parallax": [],
+      "events": [],
+      "states": [
+        {
+          "id": 37815,
+          "label": "État normal"
+        }
+      ],
+      "bounds": [
+        0,
+        31,
+        0,
+        16
+      ],
+      "sha256": "8f0d75f2937a4576e506668d1a1b990a44f3efe2a20a202a2d8f721798c68462"
+    },
+    {
+      "file": "93fe-940b.json",
+      "name": "West Ocean",
+      "cells": 275,
+      "custom": 0,
+      "parallax": [],
+      "events": [],
+      "states": [
+        {
+          "id": 37899,
+          "label": "État normal"
+        }
+      ],
+      "bounds": [
+        0,
+        134,
+        38,
+        96
+      ],
+      "sha256": "aa8166b5e8e5adb15afcea990bd58dc37985a16b329b91b2061a19f6605c9e54"
+    },
+    {
+      "file": "94fd-950a.json",
+      "name": "East Ocean",
+      "cells": 231,
+      "custom": 0,
+      "parallax": [],
+      "events": [],
+      "states": [
+        {
+          "id": 38154,
+          "label": "État normal"
+        }
+      ],
+      "bounds": [
+        0,
+        111,
+        94,
+        96
+      ],
+      "sha256": "a444b45085425ccfb691b1db3a226d53dbae9384cef481f6655b1ec0ef1c7570"
+    },
+    {
+      "file": "965b-9668.json",
+      "name": "Gauntlet Energy Tank Room",
+      "cells": 405,
+      "custom": 0,
+      "parallax": [],
+      "events": [],
+      "states": [
+        {
+          "id": 38504,
+          "label": "État normal"
+        }
+      ],
+      "bounds": [
+        0,
+        96,
+        0,
+        17
+      ],
+      "sha256": "2cea712e803ddb0f6abf1f56537b655b9e3f4e6aafc35827a19d4d25181dbbf1"
+    }
+  ],
+  "native": {
+    "captures": 68,
+    "changedViews": 60,
+    "allSimulationSnapshotsIdentical": true,
+    "romAndReferenceSaveUnchanged": true,
+    "cpuOpcodes": 0,
+    "comparisons": [
+      {
+        "frame": "91f8-9213-0-0",
+        "changed": true,
+        "bbox": [
+          168,
+          0,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "91f8-9213-0-1",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          984,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-9213-0-2",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "91f8-9213-0-3",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          984,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-9213-1-1",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "91f8-922d-0-0",
+        "changed": true,
+        "bbox": [
+          168,
+          0,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "91f8-922d-0-1",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          984,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-922d-0-2",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "91f8-922d-0-3",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          984,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-922d-1-1",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "91f8-9247-0-0",
+        "changed": true,
+        "bbox": [
+          168,
+          0,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "91f8-9247-0-1",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          984,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-9247-0-2",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "91f8-9247-0-3",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          984,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-9247-1-1",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "91f8-9261-0-0",
+        "changed": true,
+        "bbox": [
+          159,
+          0,
+          975,
+          672
+        ]
+      },
+      {
+        "frame": "91f8-9261-0-1",
+        "changed": true,
+        "bbox": [
+          207,
+          0,
+          975,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-9261-0-2",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "91f8-9261-0-3",
+        "changed": true,
+        "bbox": [
+          207,
+          0,
+          975,
+          477
+        ]
+      },
+      {
+        "frame": "91f8-9261-1-1",
+        "changed": false,
+        "bbox": null
+      },
+      {
+        "frame": "92b3-92c5-0-0",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          1128,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92c5-1-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92c5-2-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1197,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92c5-3-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92c5-4-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92df-0-0",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          1128,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92df-1-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92df-2-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1197,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92df-3-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "92b3-92df-4-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "92fd-9314-0-2",
+        "changed": true,
+        "bbox": [
+          456,
+          237,
+          744,
+          672
+        ]
+      },
+      {
+        "frame": "92fd-9314-0-3",
+        "changed": true,
+        "bbox": [
+          504,
+          237,
+          696,
+          525
+        ]
+      },
+      {
+        "frame": "92fd-9314-1-2",
+        "changed": true,
+        "bbox": [
+          0,
+          237,
+          264,
+          672
+        ]
+      },
+      {
+        "frame": "92fd-9314-2-3",
+        "changed": true,
+        "bbox": [
+          216,
+          45,
+          504,
+          525
+        ]
+      },
+      {
+        "frame": "92fd-932e-0-2",
+        "changed": true,
+        "bbox": [
+          456,
+          237,
+          744,
+          672
+        ]
+      },
+      {
+        "frame": "92fd-932e-0-3",
+        "changed": true,
+        "bbox": [
+          504,
+          237,
+          696,
+          525
+        ]
+      },
+      {
+        "frame": "92fd-932e-1-2",
+        "changed": true,
+        "bbox": [
+          0,
+          237,
+          264,
+          672
+        ]
+      },
+      {
+        "frame": "92fd-932e-2-3",
+        "changed": true,
+        "bbox": [
+          216,
+          45,
+          504,
+          525
+        ]
+      },
+      {
+        "frame": "92fd-9348-0-2",
+        "changed": true,
+        "bbox": [
+          456,
+          237,
+          741,
+          672
+        ]
+      },
+      {
+        "frame": "92fd-9348-0-3",
+        "changed": true,
+        "bbox": [
+          504,
+          237,
+          696,
+          525
+        ]
+      },
+      {
+        "frame": "92fd-9348-1-2",
+        "changed": true,
+        "bbox": [
+          0,
+          237,
+          264,
+          672
+        ]
+      },
+      {
+        "frame": "92fd-9348-2-3",
+        "changed": true,
+        "bbox": [
+          216,
+          45,
+          504,
+          525
+        ]
+      },
+      {
+        "frame": "93aa-93b7-0-0",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "93aa-93b7-1-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-0-5",
+        "changed": true,
+        "bbox": [
+          216,
+          669,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-1-5",
+        "changed": true,
+        "bbox": [
+          0,
+          429,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-2-5",
+        "changed": true,
+        "bbox": [
+          216,
+          429,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-3-5",
+        "changed": true,
+        "bbox": [
+          9,
+          669,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-4-5",
+        "changed": true,
+        "bbox": [
+          72,
+          669,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-5-5",
+        "changed": true,
+        "bbox": [
+          27,
+          669,
+          1176,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-6-2",
+        "changed": true,
+        "bbox": [
+          216,
+          285,
+          255,
+          477
+        ]
+      },
+      {
+        "frame": "93fe-940b-6-3",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          888,
+          669
+        ]
+      },
+      {
+        "frame": "93fe-940b-6-5",
+        "changed": true,
+        "bbox": [
+          9,
+          669,
+          1128,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-7-3",
+        "changed": true,
+        "bbox": [
+          408,
+          96,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "93fe-940b-7-5",
+        "changed": true,
+        "bbox": [
+          0,
+          669,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "94fd-950a-0-5",
+        "changed": true,
+        "bbox": [
+          216,
+          669,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "94fd-950a-1-5",
+        "changed": true,
+        "bbox": [
+          9,
+          669,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "94fd-950a-2-5",
+        "changed": true,
+        "bbox": [
+          0,
+          669,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "94fd-950a-3-5",
+        "changed": true,
+        "bbox": [
+          27,
+          669,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "94fd-950a-4-5",
+        "changed": true,
+        "bbox": [
+          0,
+          669,
+          1176,
+          672
+        ]
+      },
+      {
+        "frame": "94fd-950a-5-5",
+        "changed": true,
+        "bbox": [
+          24,
+          669,
+          1176,
+          672
+        ]
+      },
+      {
+        "frame": "94fd-950a-6-5",
+        "changed": true,
+        "bbox": [
+          0,
+          669,
+          984,
+          672
+        ]
+      },
+      {
+        "frame": "965b-9668-0-0",
+        "changed": true,
+        "bbox": [
+          216,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "965b-9668-1-0",
+        "changed": true,
+        "bbox": [
+          168,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "965b-9668-2-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "965b-9668-3-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "965b-9668-4-0",
+        "changed": true,
+        "bbox": [
+          0,
+          0,
+          1200,
+          672
+        ]
+      },
+      {
+        "frame": "965b-9668-5-0",
+        "changed": true,
+        "bbox": [
+          3,
+          0,
+          984,
+          672
+        ]
+      }
+    ]
+  },
+  "unreal": {
+    "passed": true,
+    "host": "gaming-pc",
+    "loadedCells": 5012,
+    "schema": 2,
+    "logMarkers": [
+      "[2026.09.18-19.21.02:547][  0]LogTemp: Display: SM_DECOR_LOADED cells=5012 files=13 folder=/home/nobara-user/Projects/projectSM/.tmp/release-alpha025/SMTests/corrected-maps/patches",
+      "[2026.09.18-19.21.11:093][  1]LogTemp: Display: SM_DEPTH_FROZEN frame=1830 room=9f11 cpu_opcodes=0"
+    ],
+    "scope": "Unreal loads all 13 user room-state patches without rejection. Native room captures cover the seven corrected rooms separately."
+  },
+  "backup": ".tmp/map-integration-20260918-151653/patches",
+  "captures": ".tmp/map-integration-20260918-151653/captures",
+  "scope": "Actual user patches in isolated native captures for all 13 room states; Unreal loader smoke. No complete manual gameplay/door-transition pass, local launch, or release publication."
+}

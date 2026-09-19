@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "sfxNonzeroFrames": 201,
+  "audibleShotBursts": 8,
+  "continuousThroughArenaSnapshot": true,
+  "musicLoopVerified": true,
+  "silentMissingAssetFallback": false,
+  "nativeSimulationFrozenDuringSweep": true,
+  "saveUnchanged": true,
+  "reverseIsTimeReversal": true
+}

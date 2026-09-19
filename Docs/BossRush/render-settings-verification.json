@@ -1,0 +1,14 @@
+{
+  "host": "gaming-pc",
+  "passed": true,
+  "unrealScalabilityLevels": 4,
+  "appliedFrameCaps": [
+    30,
+    60,
+    120,
+    144,
+    0
+  ],
+  "diskPersistence": true,
+  "graphicsMenuRendered": true
+}

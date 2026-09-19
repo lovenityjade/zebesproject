@@ -1,4 +1,8 @@
-# Éditeur externe de décors
+# The Zebes Project — éditeur externe de décors
+
+Le [guide de l'atelier](STUDIO.md) décrit la bibliothèque des 29 tilesets,
+les rotations, le pixel art, les imports PNG, les caches-secrets, les plans de
+parallaxe et les zones de commentaire ajoutés à l'outil.
 
 Lancement : `./Lancer-Editeur-Decors.sh` depuis la racine du projet.
 L'outil ouvre une page locale dans le navigateur. Il est indépendant d'Unreal,
@@ -62,8 +66,9 @@ Le jeu applique les retouches dans sa copie de présentation, y compris en 4:3.
 
 Les six salles de Ceres sont répertoriées mais exclues de l'éditeur de métatiles :
 leurs décors Mode 7 nécessitent un autre traitement. L'aperçu utilise les calques
-de salle et la palette de base ; il ne reproduit pas encore les fonds spéciaux
-chargés par script, les animations de palette, les ennemis et les effets Unreal.
+de salle, une reconstruction statique des fonds et la palette de base ; il ne
+reproduit pas les animations par script, les animations de palette, les ennemis
+et les effets Unreal.
 Les retouches de fond restent disponibles et le jeu les compose sur son fond natif.
 Il faut donc examiner le résultat en jeu avant de considérer une salle comme finie.
 

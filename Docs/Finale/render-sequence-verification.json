@@ -1,0 +1,20 @@
+{
+  "markers": [
+    "[2026.09.19-10.55.27:598][455]LogTemp: Display: SM_FINALE_PHASE phase=1 frame=6080",
+    "[2026.09.19-10.55.27:602][455]LogTemp: Display: SM_FINALE_SPRITE phase=1 kind=2 pixels=3596 x=192.0 y=95.0",
+    "[2026.09.19-10.55.27:602][455]LogTemp: Display: SM_FINALE_SPRITE phase=1 kind=1 pixels=470 x=256.0 y=195.0",
+    "[2026.09.19-10.55.58:326][323]LogTemp: Display: SM_FINALE_PHASE phase=2 frame=7815",
+    "[2026.09.19-10.55.58:344][323]LogTemp: Display: SM_FINALE_SPRITE phase=2 kind=2 pixels=4336 x=129.0 y=77.0",
+    "[2026.09.19-10.55.58:344][323]LogTemp: Display: SM_FINALE_SPRITE phase=2 kind=1 pixels=470 x=256.0 y=195.0",
+    "[2026.09.19-10.56.57:425][  3]LogTemp: Display: SM_FINALE_PHASE phase=3 frame=11175",
+    "[2026.09.19-10.56.57:443][  3]LogTemp: Display: SM_FINALE_SPRITE phase=3 kind=2 pixels=4226 x=364.0 y=125.0",
+    "[2026.09.19-10.56.57:444][  3]LogTemp: Display: SM_FINALE_SPRITE phase=3 kind=1 pixels=0 x=256.0 y=195.0",
+    "[2026.09.19-10.56.58:122][ 21]LogTemp: Display: SM_FINALE_PHASE phase=4 frame=11212",
+    "[2026.09.19-10.56.59:675][ 64]LogTemp: Display: SM_FINALE_PHASE phase=5 frame=11297",
+    "[2026.09.19-10.57.08:537][305]LogTemp: Display: SM_FINALE_PHASE phase=6 frame=11780",
+    "[2026.09.19-10.57.19:716][595]LogTemp: Display: SM_FINALE_PHASE phase=7 frame=12359",
+    "[2026.09.19-10.57.45:011][229]LogTemp: Display: SM_FINALE_PHASE phase=8 frame=13627",
+    "[2026.09.19-10.57.46:291][259]LogTemp: Display: SM_FINALE_COMPLETE phase=8 frames=5258 hits=0 shots=25 cpu_opcodes=0"
+  ],
+  "scope": "Rendered native scripted phases; setup survival and final lethal health injected, not a human victory."
+}

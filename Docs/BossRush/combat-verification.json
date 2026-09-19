@@ -1,0 +1,182 @@
+[
+  {
+    "encounter": 0,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 721,
+    "health": 0,
+    "enemy": "0xeeff",
+    "ai": "0xffef",
+    "enemyXY": [
+      155,
+      160
+    ],
+    "samus": [
+      64,
+      187
+    ]
+  },
+  {
+    "encounter": 1,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 661,
+    "health": 0,
+    "enemy": "0xdf3f",
+    "ai": "0xeb9b",
+    "enemyXY": [
+      121,
+      635
+    ],
+    "samus": [
+      128,
+      715
+    ]
+  },
+  {
+    "encounter": 2,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 1771,
+    "health": 0,
+    "enemy": "0xe2bf",
+    "ai": "0xc360",
+    "enemyXY": [
+      288,
+      295
+    ],
+    "samus": [
+      37,
+      395
+    ]
+  },
+  {
+    "encounter": 3,
+    "defeatConfirmed": true,
+    "transitionHP": 32767,
+    "probe": "acid boundary injection",
+    "frames": 601,
+    "health": 32767,
+    "enemy": "0xddbf",
+    "ai": "0x2",
+    "enemyXY": [
+      1600,
+      120
+    ],
+    "samus": [
+      1099,
+      155
+    ]
+  },
+  {
+    "encounter": 4,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 751,
+    "health": 0,
+    "enemy": "0xe4bf",
+    "ai": "0x0",
+    "enemyXY": [
+      128,
+      96
+    ],
+    "samus": [
+      64,
+      187
+    ]
+  },
+  {
+    "encounter": 5,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 781,
+    "health": 0,
+    "enemy": "0xf293",
+    "ai": "0xfffe",
+    "enemyXY": [
+      156,
+      100
+    ],
+    "samus": [
+      64,
+      187
+    ]
+  },
+  {
+    "encounter": 6,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 961,
+    "health": 0,
+    "enemy": "0xde3f",
+    "ai": "0x9185",
+    "enemyXY": [
+      65456,
+      65456
+    ],
+    "samus": [
+      256,
+      443
+    ]
+  },
+  {
+    "encounter": 7,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 1411,
+    "health": 0,
+    "enemy": "0xef7f",
+    "ai": "0x300",
+    "enemyXY": [
+      462,
+      368
+    ],
+    "samus": [
+      400,
+      395
+    ]
+  },
+  {
+    "encounter": 8,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 1681,
+    "health": 0,
+    "enemy": "0xe17f",
+    "ai": "0xbab7",
+    "enemyXY": [
+      74,
+      177
+    ],
+    "samus": [
+      114,
+      411
+    ]
+  },
+  {
+    "encounter": 9,
+    "defeatConfirmed": true,
+    "transitionHP": 0,
+    "probe": "native fatal-shot dispatch",
+    "frames": 22951,
+    "health": 0,
+    "enemy": "0xec7f",
+    "ai": "0xaee1",
+    "enemyXY": [
+      56,
+      148
+    ],
+    "samus": [
+      205,
+      195
+    ]
+  }
+]

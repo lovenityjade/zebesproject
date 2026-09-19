@@ -1,0 +1,20 @@
+{
+  "installed": "20260919-081748",
+  "builtAndTestedOn": "gaming-pc",
+  "localGameLaunched": false,
+  "files": [
+    {
+      "path": "Native/build/libsm_native.so",
+      "sha256": "7d9d471a49d85e9ec77807a5072347ded6a221c6ff461c22bb7bafb7aa58c4af",
+      "previousSha256": "ff6f55f770a52a1e9f68ecb9f39b0e0bb9f99efd805c65a82a4d3b71ce9d1206"
+    },
+    {
+      "path": "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so",
+      "sha256": "28deaf73c844ef8a31c953990355303ccb86b312dbba92f0363d2a13160ee5ce",
+      "previousSha256": "0be246212ced64a0822d19f904cfb4904aadbee5968e311e9512caaba3d57e0f"
+    }
+  ],
+  "backup": ".tmp/finale-v2/before-install-20260919-081748",
+  "atlas": "Unreal/Content/Finale/PixelEffects-v2.png",
+  "atlasSha256": "74f789f166f8c674b0fe6697dccce2bcba212930109b427ee0607b1dacc65530"
+}

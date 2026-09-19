@@ -33,3 +33,20 @@ void sm_ending_runtime_frame(void) {
   ++snes_frame_counter;
   RtlPushApuState();
 }
+
+/* Boss Rush retains an independent origin snapshot across all ten arenas. */
+static ByteArray rush_snapshot;
+static uint8_t rush_rom[3145728];
+void sm_rush_snapshot(int operation) {
+  if(operation==0){
+    ByteArray_Destroy(&rush_snapshot);memset(&rush_snapshot,0,sizeof(rush_snapshot));
+    ending_state_io(saveFunc,&rush_snapshot);
+    memcpy(rush_rom,g_rom,sizeof(rush_rom));
+  }else if(operation==1 && rush_snapshot.size){
+    LoadFuncState state={rush_snapshot.data,rush_snapshot.data+rush_snapshot.size};
+    ending_state_io(loadFunc,&state);
+    memcpy((void*)g_rom,rush_rom,sizeof(rush_rom));
+  }else if(operation==2){
+    ByteArray_Destroy(&rush_snapshot);memset(&rush_snapshot,0,sizeof(rush_snapshot));
+  }
+}

@@ -1,8 +1,10 @@
+#include "sm_rush_runtime.h"
 #include "sm_locale.h"
 #include "sm_start.h"
 #include "sm_relic.h"
 #include "sm_generation.h"
 #include "sm_runs.h"
+#include "sm_boss_rush.h"
 #include "sm_route.h"
 #include "sm_travel.h"
 #include "ida_types.h"
@@ -63,7 +65,7 @@ void sm_generation_configure(int randomized,int ready) {
 int sm_generation_state(void){return mode?state:-1;}
 int sm_generation_take_request(void){int r=requested;requested=0;return r;}
 void sm_generation_fail(int disk_error){if(mode && state==1){state=3;save_error=!!disk_error;}}
-int sm_generation_can_start(void){return (display_mode==SM_MODE_VANILLA && !mode) || (display_mode==SM_MODE_RANDOMIZER && mode && state==2);}
+int sm_generation_can_start(void){return (display_mode==SM_MODE_BOSS_RUSH && !sm_seed_active()) || (display_mode==SM_MODE_VANILLA && !mode) || (display_mode==SM_MODE_RANDOMIZER && mode && state==2);}
 int sm_generation_is_working(void){return mode && state==1 && game_state==2 && game_options_screen_index==3 && !loading_game_state;}
 void sm_generation_complete(void){state=2;requested=0;menu_option_index=0;}
 int sm_generation_menu(int field){
@@ -100,10 +102,10 @@ int sm_generation_input(void) {
   if(joypad1_newkeys&kButton_B){game_options_screen_index=11;return 1;}
   int confirm=joypad1_newkeys&(kButton_A|kButton_Start),direction=joypad1_newkeys&kButton_Left?-1:joypad1_newkeys&kButton_Right?1:0;
   if(menu_option_index==1 && (confirm || direction)){change_mode(direction?direction:1);return 1;}
-  if(menu_option_index==3 && (confirm || direction)){difficulty=(difficulty+(direction?direction:1)+4)%4;QueueSfx1_Max6(0x37);return 1;}
+  if(menu_option_index==3 && (confirm || direction)){difficulty=sm_boss_rush_difficulty_step(difficulty,direction?direction:1);QueueSfx1_Max6(0x37);return 1;}
   if(!confirm)return 1;
   int ok=0;
-  if(menu_option_index==0 && sm_generation_can_start()){GameOptionsMenuItemFunc_0();ok=1;}
+  if(menu_option_index==0 && sm_generation_can_start()){if(display_mode==SM_MODE_BOSS_RUSH)ok=sm_rush_request(difficulty);else {GameOptionsMenuItemFunc_0();ok=1;}}
   else if(menu_option_index==2 && display_mode==SM_MODE_RANDOMIZER && managed && sm_slots_editable())ok=sm_slots_action(1,current,0);
   else if(menu_option_index==4 && display_mode==SM_MODE_RANDOMIZER && mode && state!=2 && !loading_game_state){state=1;requested=1;save_error=0;ok=1;}
   QueueSfx1_Max6(ok?0x38:0x3d);return 1;
@@ -131,7 +133,7 @@ void sm_generation_draw(void) {
   // Keep the native frame/header and controller footer; rebuild only the body.
   for(int y=5;y<25;y++)for(int x=1;x<31;x++)ram3000.pause_menu_map_tilemap[y*32+x]=0x0f;
   const char *names[]={"VANILLA MODE","STORY MODE","BOSS RUSH MODE","RANDOMIZER MODE"};
-  int future=display_mode==SM_MODE_STORY || display_mode==SM_MODE_BOSS_RUSH;
+  int future=display_mode==SM_MODE_STORY;
   if(sm_locale_get()){
     for(int y=1;y<=2;y++)for(int x=9;x<23;x++)ram3000.pause_menu_map_tilemap[y*32+x]=15;
     text(1,"OPTIONS",0);
@@ -151,10 +153,10 @@ void sm_generation_draw(void) {
     small(9,"VANILLA REIMAGINED WITH",0);small(11,"CINEMATICS, VOICE ACTING",0);small(13,"AND AN EXPANDED STORY",0);small(17,"COMING SOON",1);
   }else if(display_mode==SM_MODE_BOSS_RUSH){
     small(9,"DEFEAT EVERY BOSS AND MINIBOSS",0);small(11,"AS FAST AS POSSIBLE WITH",0);small(13,"MINIMUM ITEMS. ONE CHANCE.",0);
-    small(16,"DIFFICULTY",1);
-    const char *levels[]={"EASY","MEDIUM","HARD","HARDCORE"};text(18,levels[difficulty],1);
+    small(16,"DIFFICULTY",0);
+    text(18,sm_boss_rush_rules(difficulty)->name,0);
     ram3000.pause_menu_map_tilemap[19*32+5]=0x445c;ram3000.pause_menu_map_tilemap[19*32+26]=0x45c;
-    small(21,"COMING SOON",1);
+    small(21,sm_rush_practice(-1)?"PRACTICE - NO RANKING":"TEN ENCOUNTERS. ONE ATTEMPT.",0);
   }else{
     small(9,"ITEMS, ROUTES AND GOALS",0);small(11,"SHUFFLED BY YOUR SETTINGS",0);small(13,"EVERY SEED IS A NEW ADVENTURE",0);
     text(15,"RANDOMIZER OPTIONS",!sm_slots_editable());
@@ -196,7 +198,7 @@ static void badge(uint8_t *out,int width,int x,int y,int kind,int disabled){
 }
 void sm_generation_render(uint8_t *pixels){
   if(game_state==2 && (game_options_screen_index==2 || game_options_screen_index==3)){
-    int disabled=display_mode==SM_MODE_STORY || display_mode==SM_MODE_BOSS_RUSH;
+    int disabled=display_mode==SM_MODE_STORY;
     badge(pixels,256,40,48,display_mode,disabled);badge((uint8_t*)sm_ui_overlay(),256,40,48,display_mode,disabled);
     badge(sm_wide_pixels,400,112,48,display_mode,disabled);badge(sm_wide_hud,400,112,48,display_mode,disabled);
   }else if(sm_slots_mode_badges_active()){

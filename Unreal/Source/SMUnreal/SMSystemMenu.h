@@ -27,8 +27,10 @@ struct FSMSystemMenu {
     void Initialize(bool ShowAtBoot);
     void SetFullscreen(bool Fullscreen);
     void ToggleFullscreen();
+    void ApplyRenderQuality();
     void SetOpen(bool Value);
-    void ShowAchievements(){Section=6;SetOpen(true);}
+    void ShowAchievements(int Category=1){AchievementCategory=FMath::Clamp(Category,0,2);Section=6;SetOpen(true);}
+    bool AchievementIconsReady() const;
     void Tick();
     void Draw();
     void Back();
@@ -153,6 +155,7 @@ private:
     void DrawSettings();
     void DrawSystem();
     void DrawDebug();
+    int AchievementCategory=1;
     void DrawAchievements();
     bool Row(const char* Label,const char* Description);
     void EndRow();

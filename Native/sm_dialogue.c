@@ -40,18 +40,21 @@ void sm_dialogue_load_assets(void){
     const uint8_t *t=g_rom+pc(0x9ab200)+((c-'0'+9)%10)*16;
     font[c][y*8+x]=(((t[y*2]>>(7-x))&1)|(((t[y*2+1]>>(7-x))&1)<<1))==2;
   }
-  const char punctuation[]="-'!.";const int tiles[]={0x4a,0x4b,0x4c,0x95};
-  for(int i=0;i<4;i++)for(int y=0;y<8;y++)for(int x=0;x<8;x++)
+  const char punctuation[]=".?!";const int tiles[]={0x4a,0x4b,0x4c};
+  for(int i=0;i<3;i++)for(int y=0;y<8;y++)for(int x=0;x<8;x++)
     font[(int)punctuation[i]][y*8+x]=index4(g_rom+pc(0xb68000)+tiles[i]*32,x,y)==13;
   for(int x=0;x<15;x++)for(int y=0;y<8;y++){
     int c=index4(g_rom+pc(0xb6c000)+0x9d*32,x<8?x:14-x,y);
     if(c)color(arrow+(y*16+x)*4,word(0xb6f000+2*(176+c)));
   }
-  for(int c=0;c<4;c++){
-    const int chars[]={',',':',';','?'},tiles[]={0xfb,0xfc,0xfb,0xfe};
-    const uint8_t* t=g_rom+pc(0x9ab200)+tiles[c]*16;
-    for(int y=0;y<8;y++)for(int x=0;x<8;x++)font[chars[c]][y*8+x]=(((t[y*2]>>(7-x))&1)|(((t[y*2+1]>>(7-x))&1)<<1))==1;
+  // Native item-message apostrophe and comma, not the pause '?' tile.
+  const int marks[]={39,44},mark_tiles[]={0xfd,0xfb};
+  for(int c=0;c<2;c++){
+    const uint8_t* t=g_rom+pc(0x9ab200)+mark_tiles[c]*16;
+    for(int y=0;y<8;y++)for(int x=0;x<8;x++)font[marks[c]][y*8+x]=(((t[y*2]>>(7-x))&1)|(((t[y*2+1]>>(7-x))&1)<<1))==1;
   }
+  // Dash uses the same two-pixel stroke weight as the native punctuation.
+  for(int y=3;y<5;y++)for(int x=1;x<7;x++)font['-'][y*8+x]=1;
   // Colon and semicolon use two of the native dot glyph's pixels.
   memset(font[':'],0,64);font[':'][2*8+3]=font[':'][5*8+3]=1;
   memcpy(font[';'],font[':'],64);font[';'][6*8+2]=1;
@@ -96,6 +99,17 @@ void sm_dialogue_tick(float seconds,int confirm){
     else {active=0;completed=1;}
   }
 }
+/* Seek through every page automatically; reveal in the first 55% of each
+ * page's share, leave the rest readable. Caller owns lifetime and timing. */
+void sm_dialogue_auto(float progress){
+ if(!active || !isfinite(progress))return;
+ if(progress<0)progress=0;if(progress>1)progress=1;
+ int pages=(line_count+1)/2;float position=progress*pages;
+ page=(int)position;if(page>=pages)page=pages-1;
+ float reveal=(position-page)/.55f;
+ visible=(int)(count()*reveal);if(visible>count())visible=count();
+ blink=.5f; /* automatic dialogue has no misleading confirm arrow */
+}
 int sm_dialogue_state(int field){
   switch(field){case 0:return active;case 1:return page;case 2:return (line_count+1)/2;
     case 3:return active && visible==count();case 4:return completed;case 5:return width;case 6:return visible;default:return 0;}
@@ -130,4 +144,24 @@ const uint8_t *sm_dialogue_pixels(void){
   if(visible==count() && ((int)(blink/.5f)&1)==0)
     for(int y=0;y<8;y++)for(int x=0;x<16;x++)copy(width-26+x,35+y,arrow+(y*16+x)*4);
   return pixels;
+}
+
+void sm_native_frame(uint8_t *out,int w,int h){
+ if(!loaded || w<16 || h<16)return;
+ for(int y=0;y<h;y++)for(int x=0;x<w;x++){
+  uint8_t *dst=out+(y*w+x)*4;dst[0]=dst[1]=dst[2]=0;dst[3]=255;
+  int part=-1,sx=x&7,sy=y&7;
+  if(y<8){part=x<8?0:x>=w-8?2:1;if(x>=w-8)sx=x-w+8;}
+  else if(y>=h-8){part=x<8?5:x>=w-8?7:6;sy=y-h+8;if(x>=w-8)sx=x-w+8;}
+  else if(x<8)part=3;else if(x>=w-8){part=4;sx=x-w+8;}
+  if(part>=0 && frame[part][(sy*8+sx)*4+3])memcpy(dst,frame[part]+(sy*8+sx)*4,4);
+ }
+}
+void sm_native_menu_cursor(uint8_t *out,int w,int h,int x,int y){
+ if(!loaded)return;
+ /* Rotate the native map's downward arrow toward the selected row. */
+ for(int sy=0;sy<8;sy++)for(int sx=0;sx<15;sx++){
+  int dx=x+sy,dy=y+14-sx;const uint8_t *p=arrow+(sy*16+sx)*4;
+  if(dx>=0 && dx<w && dy>=0 && dy<h && p[3])memcpy(out+(dy*w+dx)*4,p,4);
+ }
 }

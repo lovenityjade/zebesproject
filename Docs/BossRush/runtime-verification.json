@@ -1,0 +1,532 @@
+{
+  "host": "gaming-pc",
+  "arenas": [
+    {
+      "boss": 0,
+      "room": "0x9804",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 99,
+      "samus": [
+        70,
+        187
+      ],
+      "readySpawn": {
+        "position": [
+          64,
+          160
+        ],
+        "hitbox": [
+          59,
+          136,
+          68,
+          183
+        ],
+        "roomPixels": [
+          256,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          64,
+          160
+        ],
+        "hitbox": [
+          59,
+          136,
+          68,
+          183
+        ],
+        "roomPixels": [
+          256,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 1,
+      "room": "0x9dc7",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 199,
+      "samus": [
+        134,
+        715
+      ],
+      "readySpawn": {
+        "position": [
+          128,
+          640
+        ],
+        "hitbox": [
+          123,
+          616,
+          132,
+          663
+        ],
+        "roomPixels": [
+          256,
+          768
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          128,
+          640
+        ],
+        "hitbox": [
+          123,
+          616,
+          132,
+          663
+        ],
+        "roomPixels": [
+          256,
+          768
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 2,
+      "room": "0xa59f",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 199,
+      "samus": [
+        70,
+        395
+      ],
+      "readySpawn": {
+        "position": [
+          64,
+          380
+        ],
+        "hitbox": [
+          59,
+          356,
+          68,
+          403
+        ],
+        "roomPixels": [
+          512,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          64,
+          380
+        ],
+        "hitbox": [
+          59,
+          356,
+          68,
+          403
+        ],
+        "roomPixels": [
+          512,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 3,
+      "room": "0xa98d",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 199,
+      "samus": [
+        870,
+        155
+      ],
+      "readySpawn": {
+        "position": [
+          864,
+          128
+        ],
+        "hitbox": [
+          859,
+          104,
+          868,
+          151
+        ],
+        "roomPixels": [
+          2048,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          864,
+          128
+        ],
+        "hitbox": [
+          859,
+          104,
+          868,
+          151
+        ],
+        "roomPixels": [
+          2048,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 4,
+      "room": "0xcd13",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 299,
+      "samus": [
+        70,
+        187
+      ],
+      "readySpawn": {
+        "position": [
+          64,
+          160
+        ],
+        "hitbox": [
+          59,
+          136,
+          68,
+          183
+        ],
+        "roomPixels": [
+          256,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          64,
+          160
+        ],
+        "hitbox": [
+          59,
+          136,
+          68,
+          183
+        ],
+        "roomPixels": [
+          256,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 5,
+      "room": "0xd95e",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 299,
+      "samus": [
+        65,
+        187
+      ],
+      "readySpawn": {
+        "position": [
+          64,
+          160
+        ],
+        "hitbox": [
+          59,
+          136,
+          68,
+          183
+        ],
+        "roomPixels": [
+          512,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          64,
+          160
+        ],
+        "hitbox": [
+          59,
+          136,
+          68,
+          183
+        ],
+        "roomPixels": [
+          512,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 6,
+      "room": "0xda60",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 399,
+      "samus": [
+        441,
+        139
+      ],
+      "readySpawn": {
+        "position": [
+          448,
+          128
+        ],
+        "hitbox": [
+          443,
+          104,
+          452,
+          151
+        ],
+        "roomPixels": [
+          512,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          448,
+          128
+        ],
+        "hitbox": [
+          443,
+          104,
+          452,
+          151
+        ],
+        "roomPixels": [
+          512,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 7,
+      "room": "0xb283",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 399,
+      "samus": [
+        70,
+        139
+      ],
+      "readySpawn": {
+        "position": [
+          64,
+          128
+        ],
+        "hitbox": [
+          59,
+          104,
+          68,
+          151
+        ],
+        "roomPixels": [
+          512,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          64,
+          128
+        ],
+        "hitbox": [
+          59,
+          104,
+          68,
+          151
+        ],
+        "roomPixels": [
+          512,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 8,
+      "room": "0xb32e",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 499,
+      "samus": [
+        185,
+        411
+      ],
+      "readySpawn": {
+        "position": [
+          192,
+          160
+        ],
+        "hitbox": [
+          187,
+          136,
+          196,
+          183
+        ],
+        "roomPixels": [
+          256,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          192,
+          160
+        ],
+        "hitbox": [
+          187,
+          136,
+          196,
+          183
+        ],
+        "roomPixels": [
+          256,
+          512
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    },
+    {
+      "boss": 9,
+      "room": "0xdd58",
+      "loadFrames": 99,
+      "state": 8,
+      "health": 699,
+      "samus": [
+        213,
+        155
+      ],
+      "readySpawn": {
+        "position": [
+          220,
+          144
+        ],
+        "hitbox": [
+          215,
+          120,
+          224,
+          167
+        ],
+        "roomPixels": [
+          1024,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "combatSpawn": {
+        "position": [
+          220,
+          144
+        ],
+        "hitbox": [
+          215,
+          120,
+          224,
+          167
+        ],
+        "roomPixels": [
+          1024,
+          256
+        ],
+        "tileTypes": [
+          0
+        ],
+        "unobstructed": true
+      },
+      "movementVerified": true
+    }
+  ],
+  "allLoaded": true,
+  "transitionFreeze": true,
+  "practiceSticky": true,
+  "gameOverHandshake": true,
+  "cpuOpcodes": 0,
+  "saveUnchanged": true,
+  "bossWins": "debug skips only; not real victories"
+}

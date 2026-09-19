@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "vanilla": 20,
+  "randomizer": 20,
+  "secretsVanilla": 3,
+  "secretsRandomizer": 4,
+  "modeIsolation": true,
+  "quotaBoundaries": true,
+  "finishTimeBoundaries": true,
+  "sessionAndSlotGuards": true,
+  "command": "cc -std=c17 -Wall -Wextra -I Native Native/sm_achievement_rules.c Native/test_achievements.c -o SMTests/achievements/rules-test && SMTests/achievements/rules-test"
+}

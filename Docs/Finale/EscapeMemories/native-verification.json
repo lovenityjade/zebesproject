@@ -1,0 +1,398 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "cue": 1,
+      "line": 0,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 1,
+      "line": 1,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 0,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 1,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 0,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 1,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 4,
+      "line": 0,
+      "width": 256,
+      "language": "en",
+      "pages": 2
+    },
+    {
+      "cue": 4,
+      "line": 1,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 0,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 1,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 0,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 1,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 0,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 1,
+      "width": 256,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 1,
+      "line": 0,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 1,
+      "line": 1,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 0,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 1,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 0,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 1,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 4,
+      "line": 0,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 4,
+      "line": 1,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 0,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 1,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 0,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 1,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 0,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 1,
+      "width": 256,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 1,
+      "line": 0,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 1,
+      "line": 1,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 0,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 1,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 0,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 1,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 4,
+      "line": 0,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 4,
+      "line": 1,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 0,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 1,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 0,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 1,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 0,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 1,
+      "width": 400,
+      "language": "en",
+      "pages": 1
+    },
+    {
+      "cue": 1,
+      "line": 0,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 1,
+      "line": 1,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 0,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 2,
+      "line": 1,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 0,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 3,
+      "line": 1,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 4,
+      "line": 0,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 4,
+      "line": 1,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 0,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 5,
+      "line": 1,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 0,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 6,
+      "line": 1,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 0,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    },
+    {
+      "cue": 7,
+      "line": 1,
+      "width": 400,
+      "language": "fr-CA",
+      "pages": 1
+    }
+  ],
+  "noSimulationWrites": true
+}

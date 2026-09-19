@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "nativeEquipmentAndBoss": true,
+  "modeIsolation": true,
+  "highestBitToast": true,
+  "endingPreviewExcluded": true,
+  "simulationUnchanged": true,
+  "romAndSaveUnchanged": true
+}

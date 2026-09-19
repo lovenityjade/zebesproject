@@ -1,0 +1,50 @@
+{
+  "sourceSha256": "be31b52094effbd1357d4e715116ca0afdcfbe57307601bc4be5588ef5c52bc7",
+  "recipeSha256": "ba99d3b03f2947c9a1669b3183e4d34bde83e887497e5eaa51979ba23e40b993",
+  "romRequired": true,
+  "byteExactReconstruction": true,
+  "romTileReferences": [
+    [
+      0,
+      2,
+      95
+    ],
+    [
+      1,
+      2,
+      743
+    ],
+    [
+      2,
+      2,
+      749
+    ],
+    [
+      3,
+      2,
+      740
+    ],
+    [
+      4,
+      2,
+      748
+    ],
+    [
+      5,
+      2,
+      771
+    ],
+    [
+      6,
+      2,
+      769
+    ],
+    [
+      7,
+      2,
+      768
+    ]
+  ],
+  "editedComponents": 406,
+  "pixels": 8192
+}

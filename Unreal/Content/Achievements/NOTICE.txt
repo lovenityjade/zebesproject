@@ -1,0 +1,4 @@
+The Zebes Project achievement illustrations. Temporary AI-generated artwork, September 2026.
+Created with built-in ImageGen at TheLovenityJade's request. All rights reserved to the extent applicable.
+These are original generated illustrations, not extracted Nintendo sprites.
+Prompts and provenance: Docs/Achievements/imagegen-prompts.json.

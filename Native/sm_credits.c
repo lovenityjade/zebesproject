@@ -1,3 +1,4 @@
+#include "sm_rush_runtime.h"
 #include "sm_locale.h"
 #include "sm_ending.h"
 #include "sm_soundtrack.h"
@@ -163,6 +164,7 @@ static void build(void){
 void sm_credits_reset(void){sm_credits_close();mode=frame=0;}
 int sm_credits_state(int field){if(field==0)return mode;if(field==1)return frame;if(field==2)return ending_frame;if(field==3)return count;if(field==4){int n=0;for(int i=0;i<5;i++)if(frame/16+14>=section_start[i])n=i;return n;}return 0;}
 int sm_credits_launch(void){
+  if(sm_rush_active())return 0;
   if(!g_snes || sm_ending_preview_active() || mode || (game_state!=8&&game_state!=15) || sm_message_active())return 0;
   copy_buffers(0);build();frame=0;mode=2;buttons_before=0;
   sm_soundtrack_preview_begin();

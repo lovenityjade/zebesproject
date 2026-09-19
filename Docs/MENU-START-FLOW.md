@@ -19,7 +19,9 @@ stick opens it; Start still opens the original pause/map/equipment screens.
 As of **ALPHA-0.24**, Vanilla only displays its description and Start Game.
 Story explains the planned cinematics, voice acting and expanded story. Boss
 Rush explains the minimum-item, single-attempt time trial and previews Easy,
-Medium, Hard and Hardcore. Neither preview can start or overwrite a slot's mode.
+Medium, Hard, Very Hard and Hardcore (five entries as of September 18).
+Neither preview can start or overwrite a slot's mode while Boss Rush gameplay
+integration is in development; see [its implementation status](BossRush/IMPLEMENTATION.md).
 Randomizer alone displays Randomizer Options and Generate Game. The former opens
 the existing system UI, bound to the selected slot. Start Game stays at the same
 bottom position above the native button legend. Controller Setting Mode has been

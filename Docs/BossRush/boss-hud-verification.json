@@ -1,0 +1,77 @@
+{
+  "host": "gaming-pc",
+  "passed": true,
+  "shots": [
+    {
+      "encounter": 0,
+      "equipment": 4100,
+      "beams": 0,
+      "missiles": 20,
+      "supers": 0
+    },
+    {
+      "encounter": 1,
+      "equipment": 0,
+      "beams": 4096,
+      "missiles": 20,
+      "supers": 0
+    },
+    {
+      "encounter": 2,
+      "equipment": 256,
+      "beams": 4100,
+      "missiles": 20,
+      "supers": 10
+    },
+    {
+      "encounter": 3,
+      "equipment": 1,
+      "beams": 4102,
+      "missiles": 30,
+      "supers": 10
+    },
+    {
+      "encounter": 4,
+      "equipment": 1,
+      "beams": 4103,
+      "missiles": 50,
+      "supers": 0
+    },
+    {
+      "encounter": 5,
+      "equipment": 33,
+      "beams": 4103,
+      "missiles": 60,
+      "supers": 0
+    },
+    {
+      "encounter": 6,
+      "equipment": 16421,
+      "beams": 4103,
+      "missiles": 120,
+      "supers": 0
+    },
+    {
+      "encounter": 7,
+      "equipment": 16421,
+      "beams": 4107,
+      "missiles": 30,
+      "supers": 10
+    },
+    {
+      "encounter": 8,
+      "equipment": 16421,
+      "beams": 4107,
+      "missiles": 0,
+      "supers": 60
+    },
+    {
+      "encounter": 9,
+      "equipment": 16421,
+      "beams": 4107,
+      "missiles": 80,
+      "supers": 0
+    }
+  ],
+  "saveUnchanged": true
+}

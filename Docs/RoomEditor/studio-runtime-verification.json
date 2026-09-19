@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "loadedCells": 1,
+  "schema": 2,
+  "logMarkers": [
+    "[2026.09.18-06.21.57:855][  0]LogTemp: Display: SM_DECOR_LOADED cells=1 files=1 folder=/home/nobara-user/Projects/projectSM/.tmp/release-alpha025/SMTests/editor-studio/patches",
+    "[2026.09.18-06.22.07:125][  1]LogTemp: Display: SM_DEPTH_FROZEN frame=1830 room=9f11 cpu_opcodes=0"
+  ],
+  "scope": "Unreal v2 loader and rendered smoke test, event-state 9f3d. Not artistic approval or full gameplay regression.",
+  "visualReview": "Rendered PNG backdrop and translucent secret tile visible; Samus, foreground, enemies and HUD remain present. Test colors are intentionally artificial.",
+  "initialAttempt": "Test harness was stuck at redesigned Start Game menu. Updated saved-room fixtures to navigate the Start Game row; rerun passed."
+}

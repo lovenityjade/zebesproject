@@ -21,27 +21,39 @@ void ASMHUD::ResetToTitle() {
     AchievementKills=AchievementPower=AchievementGrapple=AchievementScrew=0;
     AudioComponent->SetPaused(false);UE_LOG(LogTemp,Display,TEXT("SM_RESET_OK save=%s"),*CoreSavePath);
 }
+void ASMHUD::LoadAchievements() {
+    FConfigFile Profile;Profile.Read(ProfilePath);
+    int Legacy=0;Profile.GetInt(TEXT("Local"),TEXT("Unlocked"),Legacy);
+    AchievementBits=uint64(Legacy)&31;
+    FString Stored;uint64 Expanded=0;
+    if(Profile.GetString(TEXT("Local"),TEXT("Unlocked64"),Stored)&&LexTryParseString(Expanded,*Stored))AchievementBits|=Expanded&((uint64(1)<<45)-1);
+}
 void ASMHUD::TrackAchievements() {
-    int Items=PauseData(0),Beams=PauseData(2);
-    if(!AchievementPrimed){AchievementItems=Items;AchievementBeams=Beams;AchievementKills=VisualState(42,0);AchievementPower=VisualState(43,0);AchievementGrapple=VisualState(44,0);AchievementScrew=VisualState(45,0);AchievementPrimed=true;return;}
-    int Before=AchievementBits;
-    if((Items&~AchievementItems)||(Beams&~AchievementBeams))AchievementBits|=1;
-    const int NewKills=FMath::Max(0,VisualState(42,0)-AchievementKills);
-    AchievementTotalKills+=NewKills;if(AchievementTotalKills>=10)AchievementBits|=2;
-    if(VisualState(43,0)>AchievementPower)AchievementBits|=4;
-    if(VisualState(44,0)>AchievementGrapple)AchievementBits|=8;
-    if(VisualState(45,0)>AchievementScrew)AchievementBits|=16;
-    AchievementItems=Items;AchievementBeams=Beams;AchievementKills=VisualState(42,0);
-    AchievementPower=VisualState(43,0);AchievementGrapple=VisualState(44,0);AchievementScrew=VisualState(45,0);
+    const uint64 Before=AchievementBits;
+    auto Candidates=reinterpret_cast<uint64(*)()>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_achievement_candidates")));
+    if(Candidates)AchievementBits|=Candidates();
+    int NewKills=0;
+    if(PresentationKind()==1 && State()==8) {
+        const int Items=PauseData(0),Beams=PauseData(2);
+        if(AchievementPrimed) {
+            if((Items&~AchievementItems)||(Beams&~AchievementBeams))AchievementBits|=1;
+            NewKills=FMath::Max(0,VisualState(42,0)-AchievementKills);
+            AchievementTotalKills+=NewKills;if(AchievementTotalKills>=10)AchievementBits|=2;
+            if(VisualState(43,0)>AchievementPower)AchievementBits|=4;
+            if(VisualState(44,0)>AchievementGrapple)AchievementBits|=8;
+            if(VisualState(45,0)>AchievementScrew)AchievementBits|=16;
+        }
+        AchievementPrimed=true;AchievementItems=Items;AchievementBeams=Beams;
+        AchievementKills=VisualState(42,0);AchievementPower=VisualState(43,0);AchievementGrapple=VisualState(44,0);AchievementScrew=VisualState(45,0);
+    }else AchievementPrimed=false;
     if(Before!=AchievementBits) {
-        auto Notify=reinterpret_cast<void(*)(unsigned)>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_achievement_notify")));
-        if(Notify)Notify(unsigned(AchievementBits&~Before));
+        auto Notify=reinterpret_cast<void(*)(uint64)>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_achievement_notify64")));
+        if(Notify)Notify(AchievementBits&~Before);
     }
     if(Before!=AchievementBits||NewKills) {
-        // Standalone profile files need no global INI branch. In packaged UE,
-        // SetInt on a missing GConfig branch silently discards new profiles.
         FConfigFile Profile;Profile.Read(ProfilePath);
-        Profile.SetString(TEXT("Local"),TEXT("Unlocked"),*FString::FromInt(AchievementBits));
+        Profile.SetString(TEXT("Local"),TEXT("Unlocked"),*FString::FromInt(int(AchievementBits&31)));
+        Profile.SetString(TEXT("Local"),TEXT("Unlocked64"),*FString::Printf(TEXT("%llu"),(unsigned long long)AchievementBits));
         Profile.SetString(TEXT("Local"),TEXT("EnemyKills"),*FString::FromInt(AchievementTotalKills));
         if(!Profile.Write(ProfilePath))UE_LOG(LogTemp,Warning,TEXT("SM_PROFILE_WRITE_FAILED %s"),*ProfilePath);
     }

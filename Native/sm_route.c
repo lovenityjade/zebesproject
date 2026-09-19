@@ -1,3 +1,4 @@
+#include "sm_rush_runtime.h"
 #include "sm_locale.h"
 #include "sm_route.h"
 #include "sm_seed.h"
@@ -83,7 +84,7 @@ static void select_route(void){
   }
   gap=1;
 }
-void sm_route_frame(void){
+void sm_route_frame(void){if(sm_rush_active())return;
   if(!sm_seed_active() || game_state!=8 || sm_message_active() || area_index>=6)return;
   select_route();if(failed||header.complete)return;clock_frame++;
   Point p={clock_frame,room_ptr,(uint16_t)(room_x_coordinate_on_map*256+samus_x_pos),(uint16_t)((room_y_coordinate_on_map+1)*256+samus_y_pos),(uint8_t)area_index,(uint8_t)gap};
@@ -94,7 +95,7 @@ void sm_route_frame(void){
   if(count==capacity){unsigned n=capacity?capacity*2:4096;if(n>5000000)n=5000000;if(n==capacity){failed=1;return;}Point *q=realloc(points,n*sizeof(Point));if(!q){failed=1;return;}points=q;capacity=n;}
   points[count++]=p;gap=0;if(count-written>=128)sm_route_save();
 }
-void sm_route_finish(void){if(sm_seed_active()&&path[0]){header.complete=1;sm_route_save();}}
+void sm_route_finish(void){if(sm_rush_active())return;if(sm_seed_active()&&path[0]){header.complete=1;sm_route_save();}}
 int sm_route_state(int field){switch(field){case 0:return count;case 1:return header.complete;case 2:return header.partial;case 3:return cursor;case 4:return failed;default:return 0;}}
 static void put(uint8_t *out,int x,int y,uint32_t rgb){if(x<0||x>=528||y<0||y>=320)return;uint8_t *p=out+(y*528+x)*4;p[0]=rgb;p[1]=rgb>>8;p[2]=rgb>>16;p[3]=255;}
 static void base(int area){

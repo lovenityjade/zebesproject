@@ -1,0 +1,53 @@
+{
+  "host": "gaming-pc",
+  "cases": [
+    {
+      "case": "build-swoop",
+      "native": [
+        416,
+        416,
+        416,
+        3,
+        15123
+      ],
+      "rom": [
+        416,
+        416,
+        416,
+        3,
+        15123
+      ],
+      "matches": true
+    },
+    {
+      "case": "right-to-left-speed",
+      "native": [
+        35328,
+        3,
+        15123
+      ],
+      "rom": [
+        35328,
+        3,
+        15123
+      ],
+      "matches": true
+    },
+    {
+      "case": "exit-left-boundary",
+      "native": [
+        36274,
+        65454,
+        415
+      ],
+      "rom": [
+        36274,
+        65454,
+        415
+      ],
+      "matches": true
+    }
+  ],
+  "passed": true,
+  "runtimeCpuOpcodes": 0
+}

@@ -8,6 +8,7 @@
 #include "SMSystemMenu.h"
 #include "SMSeedSettings.h"
 #include "../../../Native/sm_depth.h"
+#include "../../../Native/sm_scene.h"
 #include "../../../Native/sm_relief.h"
 #include "Engine/Canvas.h"
 #include "Engine/Texture2D.h"
@@ -104,10 +105,11 @@ void ASMHUD::StartVerifiedGame() {
     SM_LOAD(TestAwaken,"sm_test_awaken");
     SM_LOAD(PauseData,"sm_pause_data");SM_LOAD(SetBorder,"sm_set_border_extension");
     SM_LOAD(ClearDecorations,"sm_decor_clear");SM_LOAD(SetDecoration,"sm_decor_set");
+    SM_LOAD(SetDecorationEx,"sm_decor_set_ex");SM_LOAD(SetDecorationPlane,"sm_decor_set_plane");SM_LOAD(SetDecorationAtlas,"sm_decor_set_atlas");
     SM_LOAD(FxType,"sm_fx_type"); SM_LOAD(WaterY,"sm_water_y"); SM_LOAD(HeatedRoom,"sm_heated_room"); SM_LOAD(SetEngineWeather,"sm_set_engine_weather");
     SM_LOAD(SetAssistedWallJump,"sm_set_assisted_walljump");
     SM_LOAD(SetAssistedSpaceJump,"sm_set_assisted_spacejump");
-    SM_LOAD(VisualState,"sm_visual_state"); SM_LOAD(SetCombatEffects,"sm_set_combat_effects");
+    SM_LOAD(VisualState,"sm_visual_state"); SM_LOAD(FinaleBackground,"sm_finale_background"); SM_LOAD(SetCombatEffects,"sm_set_combat_effects");
     SM_LOAD(TestCombatEquipment,"sm_test_combat_equipment");
     SM_LOAD(TestAllEquipment,"sm_test_all_equipment");
     SM_LOAD(SetWidescreen,"sm_set_widescreen"); SM_LOAD(WideAvailable,"sm_wide_available");
@@ -140,6 +142,16 @@ void ASMHUD::StartVerifiedGame() {
     if(IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")))){
         FParse::Value(FCommandLine::Get(),TEXT("SMSuitTest="),SuitTest);
         if(SuitTest!=1 && SuitTest!=2)SuitTest=0;
+        FParse::Value(FCommandLine::Get(),TEXT("SMDeathBeamTest="),DeathBeamTest);
+        FinaleTest=FParse::Param(FCommandLine::Get(),TEXT("SMFinaleTest"));
+        if(FinaleTest)DeathBeamTest=3;
+        if(DeathBeamTest<1 || DeathBeamTest>3)DeathBeamTest=0;
+        if(DeathBeamTest)DeathBeamStyle=DeathBeamTest;
+        WireLab=FParse::Param(FCommandLine::Get(),TEXT("SMWireLab"));
+        RushTest=FParse::Param(FCommandLine::Get(),TEXT("SMRushTest"));
+        if(RushTest){FParse::Value(FCommandLine::Get(),TEXT("SMTransitionQuality="),TransitionQuality);TransitionQuality=FMath::Clamp(TransitionQuality,0,3);}
+        FParse::Value(FCommandLine::Get(),TEXT("SMMoltenTest="),MoltenTest);
+        if(MoltenTest<1 || MoltenTest>5)MoltenTest=0;
     }
     GameOverTest=FParse::Param(FCommandLine::Get(),TEXT("SMGameOverTest")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")));
 #endif
@@ -168,11 +180,12 @@ void ASMHUD::StartVerifiedGame() {
     WideTest=StartFixtureIndex>=0 || RelicTest || CinemaTest || CreditsTest || DisplayTest || CombatTest || PauseTest || FootstepTest || FParse::Param(FCommandLine::Get(),TEXT("SMWideTest"));
     AutoTest |= WideTest || TeleportUiTest || PixelTest || DepthTest || DepthMotion || WeatherTest;
     if(GameOverTest){AutoTest=true;WideTest=!FParse::Param(FCommandLine::Get(),TEXT("SMGameOverClassic"));}
-    if(SuitTest){AutoTest=WideTest=true;}
+    if(SuitTest || DeathBeamTest || MoltenTest || WireLab || RushTest){AutoTest=WideTest=true;}
     if(TitleTest){AutoTest=true;WideTest=!FParse::Param(FCommandLine::Get(),TEXT("SMTitleClassic"));}
     RecapCheck=FParse::Param(FCommandLine::Get(),TEXT("SMRecapCheck")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")));
     SporeCheck=FParse::Param(FCommandLine::Get(),TEXT("SMSporeCheck")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")));
-    PlaytestCheck=SporeCheck || RecapCheck || (FParse::Param(FCommandLine::Get(),TEXT("SMPlaytestCheck")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY"))));
+    AchievementCheck=FParse::Param(FCommandLine::Get(),TEXT("SMAchievementsTest")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY")));
+    PlaytestCheck=AchievementCheck || SporeCheck || RecapCheck || (FParse::Param(FCommandLine::Get(),TEXT("SMPlaytestCheck")) && IFileManager::Get().FileExists(*(Root/TEXT("ISOLATED_TEST_DIRECTORY"))));
     if(PlaytestCheck){AutoTest=WideTest=true;}
     if(AutoTest)ImageScaling=1; // Keep existing pixel-comparison fixtures at integer scale.
 #if !UE_BUILD_SHIPPING
@@ -186,6 +199,24 @@ void ASMHUD::StartVerifiedGame() {
     if(DepthMotion || WideTest){Intensity=.75f;Exposure=1.10f;}
     FParse::Value(FCommandLine::Get(), TEXT("SMTestFrames="), TestFrames);
     SettingsPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir() / TEXT("SM/Presentation.ini"));
+    FString TemporarySave;
+    if(!AutoTest && FParse::Value(FCommandLine::Get(),TEXT("SMTemporarySave="),TemporarySave)){
+        TemporarySave=FPaths::ConvertRelativePathToFull(TemporarySave);
+        FPaths::NormalizeFilename(TemporarySave);
+        FPaths::CollapseRelativeDirectories(TemporarySave);
+        if(!TemporarySave.Contains(TEXT("/SMTests/")) || IFileManager::Get().FileSize(*TemporarySave)!=8192){
+            Failure=TEXT("Temporary save must be an existing 8192-byte SRAM in an SMTests directory.");return;
+        }
+        // A test session inherits presentation preferences, never the player's
+        // active bank, achievement file or subsequent settings writes.
+        const FString TemporarySettings=FPaths::GetPath(TemporarySave)/TEXT("Presentation.ini");
+        if(!IFileManager::Get().FileExists(*TemporarySettings) && IFileManager::Get().FileExists(*SettingsPath)){
+            if(IFileManager::Get().Copy(*TemporarySettings,*SettingsPath)!=COPY_OK){
+                Failure=TEXT("Cannot create isolated temporary settings.");return;
+            }
+        }
+        SettingsPath=TemporarySettings;
+    }
     SMLocalization::Load(SettingsPath);
     if(HudPreview) {
         const FString PreviewSettings=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMTests/HUDPreview/Presentation.ini"));
@@ -220,15 +251,16 @@ void ASMHUD::StartVerifiedGame() {
         Intensity = FMath::Clamp(Intensity, 0.0f, 1.0f);
         Exposure = FMath::Clamp(Exposure, 0.75f, 1.25f);
     }
-    const FString SaveDir = FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir() / (AutoTest ? TEXT("SMTests") : (HudPreview?TEXT("SMTests/HUDPreview"):(LightingPreview ? TEXT("SMPreview") : TEXT("SM")))));
+    const FString SaveDir = !TemporarySave.IsEmpty()?FPaths::GetPath(TemporarySave):FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir() / (AutoTest ? TEXT("SMTests") : (HudPreview?TEXT("SMTests/HUDPreview"):(LightingPreview ? TEXT("SMPreview") : TEXT("SM")))));
     IFileManager::Get().MakeDirectory(*SaveDir, true);
     if(DepthMotion)IFileManager::Get().MakeDirectory(*(SaveDir/TEXT("depth-motion")),true);
     FString SaveFile=SaveDir/(AutoTest?FString::Printf(TEXT("validation-%llu.sram"),FPlatformTime::Cycles64()):TEXT("sram.dat"));
+    if(!TemporarySave.IsEmpty())SaveFile=TemporarySave;
     if(HudPreview && !IFileManager::Get().FileExists(*SaveFile)) {
         const FString Fixture=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMTests/HUD-all-items.sram"));
         if(IFileManager::Get().Copy(*SaveFile,*Fixture)!=COPY_OK){Failure=TEXT("Sauvegarde HUD absente : lancer Scripts/test-display-regressions.py.");return;}
     }
-    if(AutoTest && (SavedRoomTest || SuitTest)) {
+    if(AutoTest && (SavedRoomTest || SuitTest || DeathBeamTest)) {
         FString Saved=FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir()/TEXT("SMPreview/sram.dat"));
         FParse::Value(FCommandLine::Get(),TEXT("SMTestSave="),Saved);
         if(IFileManager::Get().Copy(*SaveFile,*Saved)!=COPY_OK) {Failure=TEXT("Copie de la sauvegarde de validation impossible.");return;}
@@ -311,7 +343,7 @@ void ASMHUD::StartVerifiedGame() {
     if(PauseTest)SettingsPath=FPaths::ChangeExtension(SaveFile,TEXT("presentation.ini"));
     ProfilePath=AutoTest?FPaths::ChangeExtension(SaveFile,TEXT("achievements.ini")):(SaveDir/TEXT("Achievements.ini"));
     FConfigFile Profile;Profile.Read(ProfilePath);
-    Profile.GetInt(TEXT("Local"),TEXT("Unlocked"),AchievementBits);
+    LoadAchievements();
     Profile.GetInt(TEXT("Local"),TEXT("EnemyKills"),AchievementTotalKills);
     SetBorder(BorderExtension);
     LoadRoomDecorations();
@@ -327,7 +359,7 @@ void ASMHUD::StartVerifiedGame() {
         for (int I = 0; I < Warmup; ++I) {
             int Button=(State()<7 || State()>18) && Frame()>180 && Frame()%120<2 ? 8 : 0;
             // Automated fixtures must navigate the redesigned mode row to Start Game.
-            if((CinemaTest || GameOverTest || StartFixtureIndex>=0 || RelicTest) && Button && State()==2 && CinemaState && CinemaState(3)==3 && CinemaState(4)!=0)Button=32;
+            if((CinemaTest || GameOverTest || SavedRoomTest || StartFixtureIndex>=0 || RelicTest) && Button && State()==2 && CinemaState && CinemaState(3)==3 && CinemaState(4)!=0)Button=32;
             if (!Step(Button)) {
                 Failure = UTF8_TO_TCHAR(Error()); return;
             }
@@ -469,6 +501,9 @@ void ASMHUD::StartVerifiedGame() {
     }
     LoadGameOverPresentation();
     LoadTitlePresentation();
+    if(WireLab && !PrepareWireLab()){Failure=TEXT("Wireframe lab failed; see log.");FPlatformMisc::RequestExitWithStatus(false,1);return;}
+    if(MoltenTest && !PrepareMoltenTest()){Failure=TEXT("Molten fixture failed; see log.");return;}
+    if(DeathBeamTest && !PrepareDeathBeamCapture()){Failure=TEXT("Death beam fixture failed; see log.");return;}
     if(SuitTest && !PrepareSuitCapture()){Failure=TEXT("Suit capture fixture failed; see log.");return;}
     if(GameOverTest){
         auto Test=reinterpret_cast<int(*)()>(FPlatformProcess::GetDllExport(CoreHandle,TEXT("sm_test_gameover")));
@@ -525,6 +560,7 @@ uint16 ASMHUD::ReadButtons() const {
 }
 void ASMHUD::Tick(float DeltaSeconds) {
     if(SuitTest)DeltaSeconds=736.f/44100.f;
+    if(DeathBeamTest)DeltaSeconds=1472.f/44100.f;
     Super::Tick(DeltaSeconds);
     if (RomSetup) {
         if (!RomSetup->Completed) {
@@ -549,6 +585,12 @@ void ASMHUD::Tick(float DeltaSeconds) {
         PlayerOwner->SetInputMode(FInputModeGameOnly());
         StartVerifiedGame();
         return;
+    }
+    if(Ready && WireLab){TickWireLab();return;}
+    if(Ready){
+        const bool RushHandled=TickBossRush(DeltaSeconds);
+        TickBossRushAudio();
+        if(RushHandled)return;
     }
     if(Ready && TitleTest)TickTitleTest(DeltaSeconds);
     if(Ready && TickStartupWarnings(DeltaSeconds))return;
@@ -622,6 +664,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
             Widescreen=!Widescreen;SetWidescreen(Widescreen);NotifySettings();
         } else if(SystemMenu)SystemMenu->ToggleFullscreen();
     }
+    if(MoltenTest){if(!MoltenTestTicks)UploadPresentation(GameTexture,Pixels(),256,240);TickMoltenTest();return;}
     if(WeatherTest && CapturedAt) {
         ++FreezeTicks;
         WeatherTime=FreezeTicks/30.f;
@@ -673,7 +716,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
     WeatherTime+=DeltaSeconds; // Atmospheric motion continues through native fades and item messages.
     SetEngineWeather(EngineWeather && Atmosphere);
     SetCombatEffects(Atmosphere && (!AutoTest || WideTest));
-    Accumulator += SuitTest?736.0/44100.0:FMath::Min<double>(DeltaSeconds, 0.1);
+    Accumulator += DeathBeamTest?1472.0/44100.0:SuitTest?736.0/44100.0:FMath::Min<double>(DeltaSeconds, 0.1);
     const double StepSeconds = 736.0 / 44100.0;
     bool Advanced = false;
     while (Accumulator >= StepSeconds) {
@@ -760,12 +803,28 @@ void ASMHUD::Tick(float DeltaSeconds) {
         const int LookY=Depth?FMath::Clamp((SamusY()-CameraY()-112)/48,-1,1):0;
         SetParallax(FMath::Clamp(-(CameraX()-AnchorX)/(Depth?8:12)-LookX,-8,8),
                     FMath::Clamp(-(CameraY()-AnchorY)/(Depth?12:18)-LookY,-6,6),Shift);
-        if(SuitTest)Buttons=0;
+        if(SuitTest || DeathBeamTest)Buttons=0;
+        if(FinaleTest){
+            auto* R=const_cast<uint8*>(FinaleTestRam());
+            const int Health=R[0x9c2]|R[0x9c3]<<8,Phase=VisualState(55,0);
+            if(Phase<6 && Health<99){R[0x9c2]=99;R[0x9c3]=0;}
+            if(Phase==6){Buttons=512;R[0xaf6]=220;R[0xaf7]=0;R[0xafa]=(VisualState(53,0)+12)&255;R[0xafb]=(VisualState(53,0)+12)>>8;
+                if(VisualState(58,0)<10)Buttons|=64;
+                if(VisualState(58,0)>540){R[0xfcc]=R[0xfcd]=0;}
+            }
+        }
+        if(FinaleTest && FParse::Param(FCommandLine::Get(),TEXT("SMFinaleEscapeTest"))){
+            Buttons=(FinaleTestFrames%60<30?512:0)|16;
+            if(FinaleTestFrames>=80 && FinaleTestFrames<130)Buttons=128;
+        }
         if (!Step(Buttons)) { Failure = UTF8_TO_TCHAR(Error()); Ready = false; UE_LOG(LogTemp, Error, TEXT("SM_NATIVE_ERROR %s"), *Failure); break; }
         UpdateTitleTimeline();
         AdvanceSuitTransformation(float(StepSeconds));
+        AdvanceDeathBeam(float(StepSeconds));
+        AdvanceFinale(float(StepSeconds));
+        AdvanceEscapeMemories(float(StepSeconds));
         if(PresentationKind()==1 && State()==8 && !MessageActive())VisualEffects.Advance(VisualState,Room(),FxType(),WaterY(),float(StepSeconds));
-        if(PresentationKind()==1 && State()==8 && !SuitTest && !VisualState(49,0)) {
+        if(!SuitTest && !DeathBeamTest && !(RushInfo && RushInfo(0)) && !VisualState(49,0)) {
             TrackAchievements();
         }
         const int CreditMode=CreditsState?CreditsState(0):0;
@@ -774,6 +833,7 @@ void ASMHUD::Tick(float DeltaSeconds) {
         if(GameOverAudio!=LastGameOverAudio){AudioWave->ResetAudio();LastGameOverAudio=GameOverAudio;}
         AudioWave->QueueAudio(reinterpret_cast<const uint8*>(Audio()), 736 * 2 * sizeof(int16));
         if(SuitTest)SuitCaptureAudio.Append(reinterpret_cast<const uint8*>(Audio()),736*4);
+        if(DeathBeamTest)DeathBeamAudio.Append(reinterpret_cast<const uint8*>(Audio()),736*4);
         Accumulator -= StepSeconds;
         Advanced = true;
         if (State() != LastState) {
@@ -781,8 +841,10 @@ void ASMHUD::Tick(float DeltaSeconds) {
             LastState = State();
         }
         if (!(CreditsState && CreditsState(0)==2) && Frame() % 600 == 0) Save();
+        if(RushInfo && RushInfo(0) && RushInfo(0)!=4 && RushInfo(0)!=7){Accumulator=0;break;}
     }
     if(SuitTest)CaptureSuitFrame();
+    if(DeathBeamTest)CaptureDeathBeamFrame();
     if (AudioWave->GetAvailableAudioByteCount() > 44100 * 4 / 2) AudioWave->ResetAudio();
     GameOverTime=GameOverState && GameOverState(0)?GameOverTime+DeltaSeconds:0.f;
     if(GameOverTest){
@@ -799,8 +861,21 @@ void ASMHUD::Tick(float DeltaSeconds) {
         RefreshScenePresentation();
         UpdateEnvironmentMask();
         UpdateEffectsTexture();
-        UploadPresentation(EmissionTexture,Emission(),256,240);
-        UploadPresentation(LightTexture,Lightmap(),64,60);
+        auto UploadLighting=[&](UTexture2D* Texture,const uint8* Data,int W,int H){
+            if(!Atmosphere || State()!=8 || !VisualState(68,0)){UploadPresentation(Texture,Data,W,H);return;}
+            TArray<uint8> CircuitPixels;CircuitPixels.Append(Data,W*H*4);
+            const float T=FinaleFxTime,F=FMath::Clamp(FlashStrength,0.f,1.f);
+            const float Pulse=.5f+.5f*FMath::Sin(T*3.2f),Fault=FMath::Pow(FMath::Max(0.f,FMath::Sin(T*1.9f)),8.f);
+            for(int Y=0;Y<H;Y++)for(int X=0;X<W;X++){
+                if(Y*240/H<32)continue;
+                float Zone=.5f+.5f*FMath::Sin((X*256.f/W+CameraX())*.019f+(Y*240.f/H+CameraY())*.013f+T*2);
+                float Gain=1-F*(.15f+.5f*Pulse*Zone+.3f*Fault);
+                for(int C=0;C<3;C++)CircuitPixels[(Y*W+X)*4+C]*=Gain;
+            }
+            UploadPresentation(Texture,CircuitPixels.GetData(),W,H);
+        };
+        UploadLighting(EmissionTexture,Emission(),256,240);
+        UploadLighting(LightTexture,Lightmap(),64,60);
     }
     if(FootstepTest) {
         for(int I=0;I<6;I++)if(VisualEffects.FootstepCount[I] && !FootstepCaptured[I]) {
@@ -983,6 +1058,9 @@ void ASMHUD::RefreshScenePresentation() {
         Composed=ReliefPixels.GetData();
         if(ReliefTest && CapturedAt)FFileHelper::SaveArrayToFile(ReliefPixels,*(FPaths::ProjectSavedDir()/TEXT("SMTests/relief-layered.bgra")));
     }
+    Composed=ColorMotherBrainBody(Composed,Layers(),256);
+    if(!UseWide())Composed=ComposeFinale(Composed,Layers(),256);
+    Composed=ComposeEscapeMemory(Composed,256);
     UploadPresentation(SceneTexture,Composed,256,240);
     UploadPresentation(UiTexture,UiOverlay(),256,240);
     RefreshWide();
@@ -1012,17 +1090,23 @@ void ASMHUD::RefreshWide() {
         sm_compose_relief_size(Composed,WideLayers(),WideFar(),WideReliefPixels.GetData(),400,0);
         Composed=WideReliefPixels.GetData();
     }
+    Composed=ColorMotherBrainBody(Composed,WideLayers(),400);
+    Composed=ComposeFinale(Composed,WideLayers(),400);
+    Composed=ComposeEscapeMemory(Composed,400);
     UploadPresentation(WideSceneTexture,Composed,400,240);
     UploadPresentation(WideHudTexture,WideHud(),400,240);
     WideMaskPixels.SetNumZeroed(400*240*4);FMemory::Memzero(WideMaskPixels.GetData(),WideMaskPixels.Num());
     const uint8* Meta=WideLayers();const uint8* Far=WideFar();
+    const int LavaY=VisualState(54,0)-CameraY();
+    const bool Molten=(FxType()==2 || FxType()==4) && VisualState(54,0)!=32767;
     for(int I=0;I<400*224;I++) {
         if(!Meta[I*4+3])continue;
-        const int Layer=Meta[I*4];const bool Sprite=Layer==4 || Layer==6;
+        const int Layer=Meta[I*4];const bool Sprite=Layer==4 || Layer==6 || (Molten && Layer==2 && (Meta[I*4+2]&SM_SCENE_LIQUID_SPRITE));
+        const bool Solid=Layer==0 || (Molten && Layer==2 && (Meta[I*4+2]&SM_SCENE_LIQUID_SOLID));
         WideMaskPixels[I*4]=!Sprite && (Far[I] || Layer==1 || Layer==5)?255:0;
         WideMaskPixels[I*4+1]=Sprite?255:0;
-        WideMaskPixels[I*4+2]=Layer==0 && !Far[I]?255:0;
-        WideMaskPixels[I*4+3]=255;
+        WideMaskPixels[I*4+2]=Solid && !Far[I]?255:0;
+        WideMaskPixels[I*4+3]=Molten && I/400>=FMath::Max(32,LavaY) && !Sprite && !Solid?255:0;
     }
     UploadPresentation(WideMaskTexture,WideMaskPixels.GetData(),400,240);
 }
@@ -1030,14 +1114,17 @@ void ASMHUD::UpdateEnvironmentMask() {
     EnvironmentMaskPixels.SetNumZeroed(256*240*4);
     FMemory::Memzero(EnvironmentMaskPixels.GetData(),EnvironmentMaskPixels.Num());
     const uint8* Meta=Layers();const uint8* Far=FarMask();
+    const int LavaY=VisualState(54,0)-CameraY();
+    const bool Molten=(FxType()==2 || FxType()==4) && VisualState(54,0)!=32767;
     for(int Y=32;Y<224;++Y)for(int X=0;X<256;++X) {
         const int I=Y*256+X,Layer=Meta[I*4];
         if(!Meta[I*4+3])continue;
-        const bool Sprite=Layer==4 || Layer==6;
+        const bool Sprite=Layer==4 || Layer==6 || (Molten && Layer==2 && (Meta[I*4+2]&SM_SCENE_LIQUID_SPRITE));
+        const bool Solid=Layer==0 || (Molten && Layer==2 && (Meta[I*4+2]&SM_SCENE_LIQUID_SOLID));
         EnvironmentMaskPixels[I*4]=!Sprite && (Far[I] || Layer==1 || Layer==5) ? 255:0;
         EnvironmentMaskPixels[I*4+1]=Sprite?255:0;
-        EnvironmentMaskPixels[I*4+2]=Layer==0 && !Far[I]?255:0;
-        EnvironmentMaskPixels[I*4+3]=255;
+        EnvironmentMaskPixels[I*4+2]=Solid && !Far[I]?255:0;
+        EnvironmentMaskPixels[I*4+3]=Molten && Y>=FMath::Max(32,LavaY) && !Sprite && !Solid?255:0;
     }
     UploadPresentation(EnvironmentMaskTexture,EnvironmentMaskPixels.GetData(),256,240);
 }
@@ -1046,7 +1133,9 @@ void ASMHUD::DrawHUD() {
     if (!Canvas) return;
     DrawRect(FLinearColor::Black, 0, 0, Canvas->SizeX, Canvas->SizeY);
     if (!Failure.IsEmpty()) { DrawText(SMLocalization::Text(Failure), FLinearColor::Red, 40, 40); return; }
+    if(WireLab && WireRooms.Num()==2){DrawWireLab();return;}
     ON_SCOPE_EXIT {if(!DialogueVisible)DrawBuildVersion();};
+    if(DrawBossRush())return;
     if(StartupWarning>=0){DrawStartupWarning();return;}
     if(DrawTitlePresentation())return;
     if(DrawRunRecap())return;
@@ -1069,7 +1158,10 @@ void ASMHUD::DrawHUD() {
     } else {
         DrawTexture(GameTexture, X, Y, W, H, 0, 0, 1, 224.f/240.f, FLinearColor::White, BLEND_Opaque);
     }
+    DrawRushSimulation(X,Y,Scale);
     DrawSuitTransformation(X,Y,Scale);
+    DrawDeathBeam(X,Y,Scale);
+    DrawFinale(X,Y,Scale);
     DrawDialogue(X,Y,Scale);
     if (!AutoTest && (ShowHelp || FPlatformTime::Seconds() < NoticeUntil)) {
         const FString Text = ShowHelp ?
@@ -1164,6 +1256,8 @@ void ASMHUD::UpdatePresentation() {
     }
     PresentMaterial->SetScalarParameterValue(TEXT("EngineWeather"),EngineWeather && World?1.f:0.f);
     PresentMaterial->SetScalarParameterValue(TEXT("SporeAtmosphere"),World && Room()==0x9dc7?1.f:0.f);
+    const int LavaY=VisualState(54,0);
+    PresentMaterial->SetVectorParameterValue(TEXT("LiquidState"),FLinearColor(World && !(MoltenTest && MoltenTestTicks<=140) && LavaY!=32767 && (FxType()==2 || FxType()==4)?(FxType()==2?1.f:2.f):0.f,LavaY-CameraY(),0,0));
     PresentMaterial->SetVectorParameterValue(TEXT("WeatherState"),Weather);
     PresentMaterial->SetVectorParameterValue(TEXT("WeatherView"),FLinearColor(CameraX()-(Wide?72:0),CameraY(),Surface,WeatherTime));
     PresentMaterial->SetScalarParameterValue(TEXT("Intensity"), Intensity);
@@ -1177,6 +1271,7 @@ void ASMHUD::EndPlay(const EEndPlayReason::Type Reason) {
     RomSetup.Reset();
     SystemMenu.Reset();
     if (AudioComponent) AudioComponent->Stop();
+    if (RushAudioComponent) RushAudioComponent->Stop();
     if (Shutdown) Shutdown();
     if (CoreHandle) FPlatformProcess::FreeDllHandle(CoreHandle);
     Ready = false;
@@ -1240,7 +1335,7 @@ void ASMHUD::TickCinemaTest(){
             if(Ok && CinemaCase>=6)Ok=Press(8) && Reach(2,3);
             if(Ok && (CinemaCase==7 || CinemaCase==8 || CinemaCase==10))Ok=Press(128);
             if(Ok && (CinemaCase==8 || CinemaCase==10))Ok=Press(128);
-            if(Ok && CinemaCase==10)Ok=Press(32) && Press(128) && Press(128) && Press(128);
+            if(Ok && CinemaCase==10)Ok=Press(32) && Press(128) && Press(128) && Press(128) && Press(128);
             if(!Ok){UE_LOG(LogTemp,Error,TEXT("SM_CINEMA_MENU_FIXTURE_FAILED"));PlayerOwner->ConsoleCommand(TEXT("quit"));return;}
         }
         for(int I=0;I<CinemaSample;I++)if(!Step(0)){Failure=UTF8_TO_TCHAR(Error());Ready=false;return;}

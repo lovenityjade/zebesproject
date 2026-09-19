@@ -1,0 +1,26 @@
+{
+  "host": "gaming-pc",
+  "passed": true,
+  "recordings": [
+    {
+      "file": "Success.pcm",
+      "frames": 1517040,
+      "peakPCM": 10249,
+      "played": true,
+      "silenceAfterEnd": true,
+      "noRestartOnStatusPoll": true
+    },
+    {
+      "file": "Failed.pcm",
+      "frames": 1392855,
+      "peakPCM": 17601,
+      "played": true,
+      "silenceAfterEnd": true,
+      "noRestartOnStatusPoll": true
+    }
+  ],
+  "newAttemptRestartsCombatTheme": true,
+  "newFailurePlaysOnceAgain": true,
+  "endStopsMusic": true,
+  "saveUnchanged": true
+}

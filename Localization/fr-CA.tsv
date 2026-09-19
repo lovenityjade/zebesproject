@@ -1386,3 +1386,57 @@ Caps Lock	Verr. maj.
 Num Lock	Verr. num.
 Scroll Lock	Arrêt défil.
 Invalid	Aucune
+
+# Boss Rush gameplay and isolated practice mode.
+Boss Rush practice	Défi des boss — entraînement
+Invincible, unlimited ammunition. Only affects Boss Rush. Enabling this permanently marks the current attempt as unranked.	Invincibilité et munitions illimitées pour le Défi des boss. Activer cette option exclut définitivement la tentative en cours du classement.
+Invincibility + unlimited ammo	Invincibilité + munitions illimitées
+Skip to next boss	Passer au boss suivant
+End Boss Rush test	Quitter le Défi des boss
+PRACTICE - NO RANKING	ENTRAÎNEMENT - HORS CLASSEMENT
+TEN ENCOUNTERS. ONE ATTEMPT.	DIX COMBATS. UNE TENTATIVE.
+BOSS RUSH COMPLETE	DÉFI DES BOSS TERMINÉ
+PRACTICE RUN — UNRANKED	ENTRAÎNEMENT — HORS CLASSEMENT
+RUN COMPLETE — LEADERBOARD NOT YET CONNECTED	DÉFI TERMINÉ — CLASSEMENT À VENIR
+A / ENTER — RETURN	A / ENTRÉE — RETOUR
+PRACTICE	PRATIQUE
+VERY HARD	TRÈS DIFFICILE
+TIME %02u:%02u.%02u	TEMPS %02u:%02u.%02u
+DEATHS %d   CONTINUES %d	MORTS %d   REPRISES %d
+PRACTICE / UNRANKED	PRATIQUE - HORS CLASSEMENT
+10 / 10 BOSSES	10 BOSS SUR 10
+A / ENTER - END	A / ENTRÉE - QUITTER
+RESUME THE FIGHT	REPRENDRE LE COMBAT
+SAME BOSS. KEEP THE TIMER.	MÊME BOSS. CHRONO CONSERVÉ.
+FIRST BOSS. RESET THE TIMER.	PREMIER BOSS. CHRONO À ZÉRO.
+RETURN TO TITLE.	RETOUR AU TITRE.
+SIMULATION FAILED	SIMULATION ÉCHOUÉE
+PAUSE	PAUSE
+RETRY	RECOMMENCER
+Rendering quality	Qualité du rendu
+Choose an effects preset. Original sprites and gameplay timing stay unchanged.	Choisissez un préréglage des effets. Les sprites originaux et la vitesse du jeu restent inchangés.
+Transition detail	Détail des transitions
+Lower settings simplify interior wireframe lines and reduce glow. Character and room outlines are preserved.	Les réglages plus légers simplifient les lignes intérieures et réduisent la lueur. Les contours des personnages et des salles sont conservés.
+Frame rate limit	Limite d’images par seconde
+Limit rendering to reduce GPU load. This does not change game speed.	Limitez le rendu pour alléger le travail de la carte graphique. La vitesse du jeu ne change pas.
+Window resolution	Résolution de la fenêtre
+Choose the window size. Borderless fullscreen uses your desktop resolution.	Choisissez la taille de la fenêtre. Le plein écran sans bordure utilise la résolution du bureau.
+Low	Faible
+High	Élevée
+Ultra	Ultra
+Unlimited	Sans limite
+You can do it, Samus. Just a little more.	Tu peux y arriver, Samus. Encore un peu.
+Mother...	Maman...
+You became a great kid, kiddo!	Tu es devenue une fille formidable!
+Father...	Papa...
+This is your new home, Samus. Zebes.	Voici ton nouveau foyer, Samus. Zebes.
+I'm destroying my home...	Je détruis mon foyer...
+We took over the planet, and you're alone.	La planète est à nous. Tu es seule.
+I must persevere!	Je dois tenir bon!
+You know your mission. Any objections, Lady?	Tu connais ta mission. Des objections, Lady?
+Plenty, as always, Adam.	Plein, comme toujours, Adam.
+You won't survive that much longer.	Tu ne survivras plus très longtemps.
+I will destroy Zebes!	Je vais détruire Zebes!
+Mo...ther... Lives...	Mè...re... Vit...
+I WILL NOT FALL!!!	JE NE CÉDERAI PAS!!!
+We believe in being open about how The Zebes Project is made. The game's code is developed by humans with AI assistance. This version includes some AI-assisted music; the recordings retain their individual credits. Human-performed Story Mode voice acting is planned.	Nous tenons à expliquer comment The Zebes Project est créé. Le code est développé par des humains avec l'aide de l'IA. Cette version contient certaines musiques assistées par IA, avec leurs crédits respectifs. Des voix interprétées par des humains sont prévues pour le mode Histoire.

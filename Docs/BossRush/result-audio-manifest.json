@@ -1,0 +1,47 @@
+{
+  "sampleRate": 44100,
+  "channels": 2,
+  "targetLUFS": -21,
+  "truePeakCeilingDB": -5,
+  "looping": false,
+  "files": {
+    "Failed.pcm": {
+      "source": "simulation-failed-noloop.mp3",
+      "sourceSHA256": "4ce5d2ae4bfebbf09a6ef45890072d41b41f8f6adb4ce8bfe87171a9118a1ed9",
+      "sha256": "d2ff672a271176c2d0d514ff6609bd4240c13401c970b0d0a5c45302b969c921",
+      "frames": 1392855,
+      "seconds": 31.584013605442177,
+      "sourceAnalysis": {
+        "input_i": "-16.76",
+        "input_tp": "-1.58",
+        "input_lra": "11.60",
+        "input_thresh": "-27.27",
+        "output_i": "-21.44",
+        "output_tp": "-5.74",
+        "output_lra": "9.50",
+        "output_thresh": "-31.62",
+        "normalization_type": "dynamic",
+        "target_offset": "0.44"
+      }
+    },
+    "Success.pcm": {
+      "source": "simulation-success-noloop.mp3",
+      "sourceSHA256": "d5e23f8841d3522ed51d4f44d580546e0c37817c719bd1d6ee8b42b4c52ecb3d",
+      "sha256": "ec1693a54645a0cafddf47b2c441bfe4721bc73370a96ac5eb005d1d43819008",
+      "frames": 1517040,
+      "seconds": 34.4,
+      "sourceAnalysis": {
+        "input_i": "-15.78",
+        "input_tp": "-4.88",
+        "input_lra": "4.00",
+        "input_thresh": "-26.14",
+        "output_i": "-20.14",
+        "output_tp": "-7.72",
+        "output_lra": "1.70",
+        "output_thresh": "-30.34",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.86"
+      }
+    }
+  }
+}

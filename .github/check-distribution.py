@@ -42,6 +42,13 @@ try:
  for name in ['Unreal/Content/Splash/Icon.bmp','Unreal/Content/Splash/EdIcon.bmp','Unreal/Build/Windows/Application.ico']:
   if digest(root/name)!=proof['files'][name]:raise ValueError('startup icon changed: '+name)
 except (OSError,ValueError,KeyError) as e:blockers.append(str(e))
+# The custom room atlas is reconstructed from ROM tiles and reviewed authored edits.
+try:
+ proof=json.loads((root/'Docs/Releases/ALPHA-0.26/decor-reconstruction.json').read_text())
+ recipes=list((root/'Config/RoomDecorations/images').glob('*.romtiles'))
+ if len(recipes)!=1 or digest(recipes[0])!=proof['recipeSha256'] or not proof['byteExactReconstruction']:
+  raise ValueError('decoration reconstruction changed')
+except (OSError,ValueError,KeyError) as e:blockers.append(str(e))
 if blockers:
  print('DISTRIBUTION BLOCKED:\n'+'\n'.join(' - '+b for b in blockers),file=sys.stderr);sys.exit(1)
 print('Known runtime artwork gates passed; source/history and staged-file audit remain required.')

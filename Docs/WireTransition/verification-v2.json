@@ -1,0 +1,55 @@
+{
+  "renderer": "Unreal Engine 5.8.2, gaming-pc",
+  "frames": 420,
+  "fps": 30,
+  "duration": 14,
+  "morphSeconds": 2.5,
+  "gridStepNativePixels": 4,
+  "spatialWave": false,
+  "nativeArtContours": true,
+  "idleHoldSeconds": 0,
+  "preloadedRoomSnapshots": true,
+  "nativeSimulationFrozen": true,
+  "donorAndRomUnchanged": true,
+  "markers": [
+    "[2026.09.19-02.18.56:027][  0]LogTemp: Display: SM_WIRE_DETAIL room=948c grid_step=4 grid_edges=8305 art_edges=4413",
+    "[2026.09.19-02.18.56:027][  0]LogTemp: Display: SM_WIRE_ROOM room=948c edges=12718 pose=009b samus=200,152 extracted=847",
+    "[2026.09.19-02.19.03:555][  0]LogTemp: Display: SM_WIRE_DETAIL room=96ba grid_step=4 grid_edges=8317 art_edges=5925",
+    "[2026.09.19-02.19.03:555][  0]LogTemp: Display: SM_WIRE_ROOM room=96ba edges=14242 pose=009b samus=200,152 extracted=828",
+    "[2026.09.19-02.19.03:562][  0]LogTemp: Display: SM_WIRE_MATCH common=6391 moved=3780 samus_edges=1281 spatial_wave=0",
+    "[2026.09.19-02.19.03:562][  0]LogTemp: Display: SM_WIRE_RIGID diagonal_segments=0",
+    "[2026.09.19-02.19.03:562][  0]LogTemp: Display: SM_WIRE_READY pairs=16789 direction=2 frame=2882 ram=e752180d",
+    "[2026.09.19-02.19.22:032][541]LogTemp: Display: SM_WIRE_COMPLETE frames=420 native_frozen=1 cpu_opcodes=0"
+  ],
+  "videoSha256": "5be3f5cbf87461a717a3ff510afa7ed0a4fd8040fa280dedceb96bdfa4b26266",
+  "decodedVideoReview": {
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1200,
+          "height": 672,
+          "r_frame_rate": "30/1",
+          "nb_frames": "420"
+        }
+      ],
+      "format": {
+        "duration": "14.000000"
+      }
+    },
+    "inspectedFrames": [
+      62,
+      100,
+      134,
+      315
+    ],
+    "observations": [
+      "Dense 4-pixel squares clearly visible in both room wireframes",
+      "Native tile contours, door and pipe details remain recognizable",
+      "Samus armor details and the visible enemy appear in wireframe",
+      "No spatial wave; rigid shared projection keeps the grid straight during both morph directions"
+    ],
+    "scope": "Isolated visual lab; no local launch or production binary replacement"
+  }
+}

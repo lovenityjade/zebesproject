@@ -16,6 +16,8 @@ public:
     TFunction<void()> Back;
     TFunction<bool(FKey)> CaptureBinding;
     void ClearInput();
+    void LoadAchievementImages(void* CoreHandle);
+    bool HasAchievementImage(int Icon) const;
     float GetPixelScale() const { return PixelScale; }
     virtual bool SupportsKeyboardFocus() const override { return true; }
     virtual FVector2D ComputeDesiredSize(float) const override { return FVector2D(1280,720); }
@@ -34,6 +36,8 @@ private:
     ImGuiContext* Context=nullptr;
     TStrongObjectPtr<UTexture2D> FontTexture;
     FSlateBrush FontBrush;
+    TArray<TStrongObjectPtr<UTexture2D>> AchievementTextures;
+    TArray<FSlateBrush> AchievementBrushes;
     bool FrameReady=false;
     float PixelScale=1.f;
     void Key(const FKeyEvent&,bool);

@@ -1,13 +1,17 @@
+#include "sm_finale.h"
 #include "sm_effects.h"
 #include "sm_relic.h"
 #include "ida_types.h"
 #include "variables.h"
+#include "enemy_types.h"
+#include "funcs.h"
 #include <string.h>
 static struct {int x,y,kind;} events[32];
 static int event_count,charge_x,charge_y,charge_valid;
 static unsigned totals[4];static int last_power,last_grapple,last_screw;
-void sm_visual_reset(void){memset(totals,0,sizeof(totals));last_power=last_grapple=last_screw=0;}
+void sm_visual_reset(void){sm_finale_reset();memset(totals,0,sizeof(totals));last_power=last_grapple=last_screw=0;}
 void sm_visual_end_frame(void){
+  sm_finale_frame();
   if(game_state!=8)return;
   int power=(power_bomb_explosion_status&0x8000) && power_bomb_explosion_radius;
   int grapple=grapple_beam_function>=0xc51e && grapple_beam_function<0xc856 && grapple_beam_length>0;
@@ -39,7 +43,49 @@ int sm_visual_suit(void) {
   }
   return 0;
 }
+int sm_visual_motherbrain_beam(void) {
+  if(game_state!=8 || room_ptr!=0xdd58)return 0;
+  switch(Get_MotherBrain(0)->mbn_var_A) {
+    case FUNC16(MotherBomb_FiringRainbowBeam_1_StartCharge):
+    case FUNC16(MotherBomb_FiringRainbowBeam_2_RetractNeck):
+    case FUNC16(MotherBomb_FiringRainbowBeam_3_Wait):
+    case FUNC16(MotherBomb_FiringRainbowBeam_4_ExtendNeckDown):
+    case FUNC16(MotherBomb_FiringRainbowBeam_5_StartFiring):return 1;
+    case FUNC16(MotherBomb_FiringRainbowBeam_6_MoveSamusToWall):
+    case FUNC16(MotherBomb_FiringRainbowBeam_7_DelayFrame):
+    case FUNC16(MotherBomb_FiringRainbowBeam_8_StartDrainSamus):
+    case FUNC16(MotherBomb_FiringRainbowBeam_9_DrainingSamus):return 2;
+    case FUNC16(MotherBomb_FiringRainbowBeam_10_FinishFiringRainbow):return 3;
+    default:return 0;
+  }
+}
+int sm_visual_motherbrain_beam_mask(void) {
+  // Automatic reserves freeze the same room in state 27. Keep the residual
+  // beam color suppressed while they refill Samus after the discharge.
+  if((game_state!=8 && game_state!=27) || room_ptr!=0xdd58)return 0;
+  if(sm_visual_motherbrain_beam()>=2)return 1;
+  if(sm_finale_enabled() && sm_finale_state(55)>=1)return 1;
+  // The HDMA channel ends before the native color-math configuration is reset.
+  // Keep its residual flat red backdrop out of the enhanced presentation while
+  // Samus falls and the next scripted attack/baby entrance is prepared.
+  switch(Get_MotherBrain(0)->mbn_var_A) {
+    case FUNC16(MotherBomb_FiringRainbowBeam_11_LetSamusFall):
+    case FUNC16(MotherBomb_FiringRainbowBeam_12_WaitForSamusHitGround):
+    case FUNC16(MotherBomb_FiringRainbowBeam_13_LowerHead):
+    case FUNC16(MotherBomb_FiringRainbowBeam_14_DecideNextAction):
+    case FUNC16(MotherBrain_Phase2Cut_0):
+    case FUNC16(MotherBrain_Phase2Cut_1):
+    case FUNC16(MotherBrain_Phase2Cut_2):
+    case FUNC16(MotherBrain_Phase2Cut_3):
+    case FUNC16(MotherBrain_Phase2Cut_4):
+    case FUNC16(MotherBrain_Phase2Cut_5):
+    case FUNC16(nullsub_364):return 1;
+    default:return 0;
+  }
+}
 int sm_visual_state(int field,int index) {
+  if(field==69)return index>=0 && index<10?projectile_dir[index]:0;
+  if(field>=55 && field<=72)return sm_finale_state(field);
   int i=index;
   switch(field) {
     case 0:return samus_movement_type;
@@ -88,6 +134,10 @@ int sm_visual_state(int field,int index) {
     case 48:return button_config_run_b;
     case 49:return sm_visual_suit();
     case 50:return sm_visual_suit()?substate:0;
+    case 51:return sm_visual_motherbrain_beam();
+    case 52:return Get_MotherBrain(0x40)->base.x_pos+16;
+    case 53:return Get_MotherBrain(0x40)->base.y_pos+4;
+    case 54:return (fx_type==2 || fx_type==4) && !(lava_acid_y_pos&0x8000)?lava_acid_y_pos:32767;
     case 42:case 43:case 44:case 45:return totals[field-42];
     default:return 0;
   }

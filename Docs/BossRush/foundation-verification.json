@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "host": "gaming-pc",
+  "scope": "Rules/coordinator and native menu only; no playable Boss Rush or Unreal validation",
+  "fiveDifficultiesBothDirections": true,
+  "languages": [
+    "en",
+    "fr-CA"
+  ],
+  "startRemainsLocked": true,
+  "cpuOpcodes": 0,
+  "rulesLog": [
+    "rare_drops_kept=25207/100000 deterministic=1",
+    "BOSS_RUSH_RULES_PASS (rules/coordinator only; not arena gameplay)"
+  ],
+  "romUnchanged": true,
+  "personalSaveUsed": false,
+  "nativeLibrarySha256": "71c549cfb4a242d59b201fbdecbe40514666a3dceebbd4349854db6c10d0429f",
+  "captures": [
+    "menu-0-difficulty-0.png",
+    "menu-0-difficulty-1.png",
+    "menu-0-difficulty-2.png",
+    "menu-0-difficulty-3.png",
+    "menu-0-difficulty-4.png",
+    "menu-1-difficulty-0.png",
+    "menu-1-difficulty-1.png",
+    "menu-1-difficulty-2.png",
+    "menu-1-difficulty-3.png",
+    "menu-1-difficulty-4.png"
+  ],
+  "fullNativeBuild": true,
+  "rulesCompiledWith": "C17 -Wall -Wextra -Werror -O2",
+  "visualReview": [
+    "English Very Hard label fits",
+    "French Tr\u00e8s difficile label fits"
+  ],
+  "sanitizerStatus": "Unavailable: missing ASan/UBSan shared runtime; ordinary strict C build and tests passed",
+  "unrealBuild": false,
+  "arenaGameplayTest": false
+}

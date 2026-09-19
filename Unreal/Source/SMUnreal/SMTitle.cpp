@@ -181,7 +181,7 @@ void ASMHUD::DrawStartupWarning(){
     const TArray<FString> Paragraphs=StartupWarning==0?TArray<FString>{
         TEXT("This game contains flashing lights, bright visual effects, and rapidly changing images. These may trigger seizures or other symptoms in people with photosensitive epilepsy, including those with no previous history of seizures."),
         TEXT("Play in a well-lit room and take regular breaks. Stop playing immediately if you experience dizziness, visual disturbances, involuntary movements, or discomfort.")}:TArray<FString>{
-        TEXT("We believe in being open about how The Zebes Project is made. The voice performances and music are created and performed by real people. The game's code is developed by humans with AI assistance."),
+        TEXT("We believe in being open about how The Zebes Project is made. The game's code is developed by humans with AI assistance. This version includes some AI-assisted music; the recordings retain their individual credits. Human-performed Story Mode voice acting is planned."),
         TEXT("Some graphics in this development version were generated using AI as temporary placeholders. These assets are not intended to be final and will be replaced with human-created artwork.")};
     float Y=H*.37f;const float Size=23*S;const FSlateFontInfo Font=CleanFont(GetTitleUiFont(),Size);
     for(const FString& Paragraph:Paragraphs){

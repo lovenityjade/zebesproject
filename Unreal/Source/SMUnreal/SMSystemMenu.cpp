@@ -1,4 +1,5 @@
 #include "SMSystemMenu.h"
+#include "../../../Native/sm_achievements.h"
 #include "SMLocalization.h"
 #include "SMSeedSettings.h"
 #include "SMRom.h"
@@ -17,6 +18,7 @@
 #include "Misc/ConfigCacheIni.h"
 #include "Misc/Paths.h"
 #include "HAL/PlatformProcess.h"
+#include "HAL/IConsoleManager.h"
 
 namespace {
 const uint16 Masks[14]={256,1,4,8,16,32,64,128,2,512,1024,2048,0x1000,0x2000};
@@ -77,6 +79,10 @@ void FSMSystemMenu::Initialize(bool ShowAtBoot){
     Config.GetFloat(TEXT("Audio"),TEXT("MasterVolume"),Volume);Volume=FMath::Clamp(Volume,0.f,1.f);
     Config.GetBool(TEXT("Audio"),TEXT("Remastered"),Remastered);
     Config.GetBool(TEXT("Menu"),TEXT("ShowHelp"),Hud.ShowHelp);
+    Config.GetInt(TEXT("Rendering"),TEXT("Quality"),Hud.RenderQuality);Hud.RenderQuality=FMath::Clamp(Hud.RenderQuality,0,4);
+    Config.GetInt(TEXT("Rendering"),TEXT("Transitions"),Hud.TransitionQuality);Hud.TransitionQuality=FMath::Clamp(Hud.TransitionQuality,0,3);
+    Config.GetInt(TEXT("Rendering"),TEXT("FrameLimit"),Hud.RenderFrameLimit);Hud.RenderFrameLimit=FMath::Clamp(Hud.RenderFrameLimit,0,4);
+    if(!Hud.AutoTest)ApplyRenderQuality(); // Profiling keeps its command-line frame cap.
     Config.GetBool(TEXT("Audio"),TEXT("Muted"),Mute);Config.GetFloat(TEXT("Input"),TEXT("StickDeadzone"),Deadzone);Deadzone=FMath::Clamp(Deadzone,.1f,.8f);
     Config.GetFloat(TEXT("Menu"),TEXT("Scale"),UiScale);UiScale=FMath::Clamp(UiScale,.8f,1.4f);
     Config.GetBool(TEXT("QualityOfLife"),TEXT("RefillBeforeSave"),RefillBeforeSave);
@@ -105,15 +111,47 @@ void FSMSystemMenu::Initialize(bool ShowAtBoot){
     }
     Active.Id=TEXT("legacy-vanilla");Active.Name=TEXT("Original save");Active.Legacy=true;Active.SramPath=Hud.CoreSavePath;Active.Directory=FPaths::GetPath(Hud.CoreSavePath);
     RefreshProfiles();
-    Widget=SNew(SSMImGuiWidget);Widget->DrawMenu=[this]{Draw();};Widget->Back=[this]{Back();};Widget->CaptureBinding=[this](FKey K){return Bind(K);};
+    Widget=SNew(SSMImGuiWidget);Widget->LoadAchievementImages(Hud.CoreHandle);Widget->DrawMenu=[this]{Draw();};Widget->Back=[this]{Back();};Widget->CaptureBinding=[this](FKey K){return Bind(K);};
     Widget->SetVisibility(EVisibility::Collapsed);
     GEngine->GameViewport->AddViewportWidgetContent(Widget.ToSharedRef(),100);
     Hud.AudioComponent->SetVolumeMultiplier(Mute?0.f:Volume);
     FString LastBank;FSMGameProfile Boot;FString BootError;FGuid BankGuid;
-    if(Config.GetString(TEXT("Menu"),TEXT("ActiveBank"),LastBank) && FGuid::ParseExact(LastBank,EGuidFormats::Digits,BankGuid) && FSMProfiles::Read(FSMProfiles::Root()/LastBank,Boot,BootError))Activate(Boot);
+    FString TemporarySave;
+    const bool TemporarySession=FParse::Value(FCommandLine::Get(),TEXT("SMTemporarySave="),TemporarySave);
+    if(!TemporarySession && Config.GetString(TEXT("Menu"),TEXT("ActiveBank"),LastBank) && FGuid::ParseExact(LastBank,EGuidFormats::Digits,BankGuid) && FSMProfiles::Read(FSMProfiles::Root()/LastBank,Boot,BootError))Activate(Boot);
     else Activate(Active);
+    if(TemporarySession)UE_LOG(LogTemp,Display,TEXT("SM_TEMPORARY_SESSION sram=%s slots=%d randomized=%d"),*Active.SramPath,Active.Slots.Num(),Active.Randomized);
     SetOpen(ShowAtBoot);
 #if !UE_BUILD_SHIPPING
+    if(FParse::Param(FCommandLine::Get(),TEXT("SMRenderSettingsTest")) &&
+       IFileManager::Get().FileExists(*(FPaths::ProjectDir()/TEXT("../ISOLATED_TEST_DIRECTORY")))){
+        auto* Video=GEngine->GetGameUserSettings();const auto OldQuality=Video->ScalabilityQuality;
+        const float OldCap=Video->GetFrameRateLimit();
+        const int OldPreset=Hud.RenderQuality,OldDetail=Hud.TransitionQuality,OldLimit=Hud.RenderFrameLimit;
+        bool Passed=true;
+        for(int I=0;I<4;I++){
+            Hud.RenderQuality=Hud.TransitionQuality=I;ApplyRenderQuality();
+            Passed&=Video->GetOverallScalabilityLevel()==I;
+            Passed&=IConsoleManager::Get().FindConsoleVariable(TEXT("sg.EffectsQuality"))->GetInt()==I;
+        }
+        const float Caps[]={30,60,120,144,0};
+        for(int I=0;I<5;I++){
+            Hud.RenderFrameLimit=I;ApplyRenderQuality();
+            Passed&=Video->GetFrameRateLimit()==Caps[I];
+            Passed&=FMath::IsNearlyEqual(IConsoleManager::Get().FindConsoleVariable(TEXT("t.MaxFPS"))->GetFloat(),Caps[I]);
+        }
+        const FString Path=FPaths::ProjectSavedDir()/TEXT("SMTests/render-settings.ini");
+        IFileManager::Get().MakeDirectory(*FPaths::GetPath(Path),true);
+        FConfigFile Written;Persist(Written);Passed&=Written.Write(Path);
+        FConfigFile Reload;Reload.Read(Path);int Q=-1,T=-1,F=-1;
+        Passed&=Reload.GetInt(TEXT("Rendering"),TEXT("Quality"),Q) && Q==3;
+        Passed&=Reload.GetInt(TEXT("Rendering"),TEXT("Transitions"),T) && T==3;
+        Passed&=Reload.GetInt(TEXT("Rendering"),TEXT("FrameLimit"),F) && F==4;
+        Hud.RenderQuality=OldPreset;Hud.TransitionQuality=OldDetail;Hud.RenderFrameLimit=OldLimit;
+        Video->ScalabilityQuality=OldQuality;Video->SetFrameRateLimit(OldCap);Video->ApplyNonResolutionSettings();Video->SaveSettings();
+        UE_LOG(LogTemp,Display,TEXT("SM_RENDER_SETTINGS_TEST %s presets=4 frame_caps=5 persistence=1"),Passed?TEXT("PASS"):TEXT("FAIL"));
+        if(!Passed)FPlatformMisc::RequestExitWithStatus(false,1);
+    }
     if(FParse::Param(FCommandLine::Get(),TEXT("SMMenuFlowTest")) &&
        IFileManager::Get().FileExists(*(FPaths::ProjectDir()/TEXT("../ISOLATED_TEST_DIRECTORY")))){
         const bool Passed=RunMenuFlowTest();
@@ -165,6 +203,9 @@ void FSMSystemMenu::Persist(FConfigFile& C) const {
     C.SetFloat(TEXT("Audio"),TEXT("MasterVolume"),Volume);C.SetBool(TEXT("Audio"),TEXT("Muted"),Mute);
     C.SetBool(TEXT("Audio"),TEXT("Remastered"),Remastered);
     C.SetBool(TEXT("Menu"),TEXT("ShowHelp"),Hud.ShowHelp);
+    C.SetInt64(TEXT("Rendering"),TEXT("Quality"),Hud.RenderQuality);
+    C.SetInt64(TEXT("Rendering"),TEXT("Transitions"),Hud.TransitionQuality);
+    C.SetInt64(TEXT("Rendering"),TEXT("FrameLimit"),Hud.RenderFrameLimit);
     C.SetFloat(TEXT("Input"),TEXT("StickDeadzone"),Deadzone);C.SetFloat(TEXT("Menu"),TEXT("Scale"),UiScale);
     C.SetBool(TEXT("Randomizer"),TEXT("NoAdvancedTechs"),NoAdvancedTechs);C.SetBool(TEXT("Randomizer"),TEXT("RelicHunt"),RelicHunt);
     C.SetInt64(TEXT("Randomizer"),TEXT("RelicsPlaced"),RelicsPlaced);C.SetInt64(TEXT("Randomizer"),TEXT("RelicsRequired"),RelicsRequired);C.SetInt64(TEXT("Randomizer"),TEXT("RelicEscapeMinutes"),RelicEscapeMinutes);
@@ -422,7 +463,7 @@ bool FSMSystemMenu::Activate(const FSMGameProfile& Profile){
     }else{
         Hud.RouteVisible=Hud.RouteAutoShown=false;Active=MoveTemp(Checked);Hud.CoreSavePath=Active.SramPath;Hud.ProfilePath=Active.Directory/TEXT("Achievements.ini");Hud.Ready=true;
         FConfigFile Achievements;Achievements.Read(Hud.ProfilePath);Hud.AchievementBits=Hud.AchievementTotalKills=0;
-        Achievements.GetInt(TEXT("Local"),TEXT("Unlocked"),Hud.AchievementBits);Achievements.GetInt(TEXT("Local"),TEXT("EnemyKills"),Hud.AchievementTotalKills);
+        Hud.LoadAchievements();Achievements.GetInt(TEXT("Local"),TEXT("EnemyKills"),Hud.AchievementTotalKills);
         Status=SMLocalization::Text(FString(TEXT("Profile loaded: ")))+(Active.Legacy?SMLocalization::Text(Active.Name):Active.Name);
         UE_LOG(LogTemp,Display,TEXT("SM_SESSION_ACTIVATED mode=%s profile=%s seed=%d fingerprint=%s"),Active.Randomized?TEXT("randomized"):TEXT("vanilla"),*Active.Id,Active.Plan.Seed,*Active.Plan.Fingerprint);
     }
@@ -642,6 +683,12 @@ void FSMSystemMenu::SetFullscreen(bool Fullscreen){
     Video->SetFullscreenMode(Fullscreen?EWindowMode::WindowedFullscreen:EWindowMode::Windowed);
     Video->ApplyResolutionSettings(false);Video->ConfirmVideoMode();Video->SaveSettings();
 }
+void FSMSystemMenu::ApplyRenderQuality(){
+    auto* Video=GEngine->GetGameUserSettings();
+    if(Hud.RenderQuality<4)Video->SetOverallScalabilityLevel(Hud.RenderQuality);
+    const float Limits[]={30,60,120,144,0};Video->SetFrameRateLimit(Limits[Hud.RenderFrameLimit]);
+    Video->ApplyNonResolutionSettings();Video->SaveSettings();
+}
 void FSMSystemMenu::ToggleFullscreen(){SetFullscreen(GEngine->GetGameUserSettings()->GetFullscreenMode()==EWindowMode::Windowed);}
 void FSMSystemMenu::DrawSettings(){
     if(!Search[0]){
@@ -654,6 +701,29 @@ void FSMSystemMenu::DrawSettings(){
     auto Toggle=[&](const char* Label,const char* Detail,bool& Value){if(Row(Label,Detail)){Changed|=SMUI::Checkbox("##value",&Value);EndRow();}};
     auto Slider=[&](const char* Label,const char* Detail,float& Value,float Min,float Max,const char* Format){if(Row(Label,Detail)){Changed|=SMUI::SliderFloat("##value",&Value,Min,Max,Format);EndRow();}};
     if(SettingsPage==0 || All){
+        if(Row("Rendering quality","Choose an effects preset. Original sprites and gameplay timing stay unchanged.")){
+            if(SMUI::Combo("##quality",&Hud.RenderQuality,"Low\0Medium\0High\0Ultra\0Custom\0")){
+                if(Hud.RenderQuality<4){
+                    Hud.TransitionQuality=Hud.RenderQuality;
+                    Hud.EngineWeather=Hud.RenderQuality>=1;Hud.Relief=Hud.RenderQuality>=2;
+                    Hud.Depth=Hud.RenderQuality>=1;Hud.Parallax=true;Hud.Atmosphere=true;
+                }
+                ApplyRenderQuality();Changed=true;
+            }EndRow();
+        }
+        if(Row("Transition detail","Lower settings simplify interior wireframe lines and reduce glow. Character and room outlines are preserved.")){
+            if(SMUI::Combo("##transitions",&Hud.TransitionQuality,"Low\0Medium\0High\0Ultra\0")){Hud.RenderQuality=4;Changed=true;}EndRow();
+        }
+        if(Row("Frame rate limit","Limit rendering to reduce GPU load. This does not change game speed.")){
+            if(SMUI::Combo("##framelimit",&Hud.RenderFrameLimit,"30 FPS\0" "60 FPS\0" "120 FPS\0" "144 FPS\0Unlimited\0")){ApplyRenderQuality();Changed=true;}EndRow();
+        }
+        if(Row("Window resolution","Choose the window size. Borderless fullscreen uses your desktop resolution.")){
+            auto* Video=GEngine->GetGameUserSettings();const FIntPoint Sizes[]={FIntPoint(960,540),FIntPoint(1280,720),FIntPoint(1600,900),FIntPoint(1920,1080),FIntPoint(2560,1440)};
+            int Selection=5;for(int I=0;I<5;I++)if(Video->GetScreenResolution()==Sizes[I])Selection=I;
+            SMUI::BeginDisabled(Video->GetFullscreenMode()!=EWindowMode::Windowed);
+            if(SMUI::Combo("##resolution",&Selection,"960 x 540\0" "1280 x 720\0" "1600 x 900\0" "1920 x 1080\0" "2560 x 1440\0Custom\0") && Selection<5){Video->SetScreenResolution(Sizes[Selection]);Video->ApplyResolutionSettings(false);Video->ConfirmVideoMode();Video->SaveSettings();}
+            SMUI::EndDisabled();EndRow();
+        }
         Toggle("Widescreen","Extend the gameplay view horizontally.",Hud.Widescreen);
         if(Row("Window mode","Choose a windowed or borderless fullscreen presentation.")){
             UGameUserSettings* Video=GEngine->GetGameUserSettings();int Mode=Video->GetFullscreenMode()==EWindowMode::Windowed?0:1;
@@ -666,6 +736,7 @@ void FSMSystemMenu::DrawSettings(){
             auto* Video=GEngine->GetGameUserSettings();bool Enabled=Video->IsVSyncEnabled();if(SMUI::Checkbox("##vsync",&Enabled)){Video->SetVSyncEnabled(Enabled);Video->ApplyNonResolutionSettings();Video->SaveSettings();}EndRow();
         }
     }
+    const bool BeforeEffects=Changed;Changed=false;
     if(SettingsPage==5 || All){
         Toggle("Atmosphere & lighting","Enable the presentation layer and native combat effects.",Hud.Atmosphere);
         if(Row("Soft Gaussian blend","Blend a lightly blurred copy over the scene. The HUD is excluded.")){Changed|=SMUI::Combo("##blend",&Hud.BlendMode,"Lighten\0Multiply\0");EndRow();}
@@ -676,6 +747,8 @@ void FSMSystemMenu::DrawSettings(){
         Toggle("Surface relief","Light and shade edges to emphasize structure.",Hud.Relief);
         Toggle("Engine weather","Rain, fog, underwater and heat effects by environment.",Hud.EngineWeather);
     }
+    if(Changed)Hud.RenderQuality=4;
+    Changed|=BeforeEffects;
     if(SettingsPage==1 || All){
         Slider("Master volume","Overall volume of music and sound effects.",Volume,0,1,"%.2f");Toggle("Mute audio","Silence game audio without changing its volume setting.",Mute);
         if(Row("Soundtrack","Original SNES music or the selected Remastered arrangements. Sound effects stay original. Missing tracks use Original automatically.")){
@@ -739,10 +812,23 @@ void FSMSystemMenu::DrawSettings(){
     if(Changed)ApplySettings();
 }
 void FSMSystemMenu::DrawDebug(){
+    if(Row("Boss Rush practice","Invincible, unlimited ammunition. Only affects Boss Rush. Enabling this permanently marks the current attempt as unranked.")){
+        SMUI::BeginDisabled(!Hud.RushPractice);
+        bool Practice=Hud.RushPractice && Hud.RushPractice(-1);
+        if(SMUI::Checkbox("Invincibility + unlimited ammo",&Practice))Hud.RushPractice(Practice);
+        if(Hud.RushInfo && Hud.RushInfo(0)){
+            SMUI::Text("%s — %s",Hud.RushName?Hud.RushName():"Boss Rush",Hud.RushInfo(4)?"PRACTICE / UNRANKED":"STANDARD RUN");
+            SMUI::BeginDisabled(!Practice || Hud.RushInfo(0)!=4);
+            if(SMUI::Button("Skip to next boss",ImVec2(-1,0))){Hud.RushCommand(5);SetOpen(false);Hud.Paused=false;Hud.Accumulator=0;}
+            SMUI::EndDisabled();
+            if(SMUI::Button("End Boss Rush test",ImVec2(-1,0))){Hud.RushCommand(4);SetOpen(false);Hud.Paused=false;Hud.Accumulator=0;}
+        }
+        SMUI::EndDisabled();EndRow();
+    }
     if(!Search[0])Heading("DEBUG","The original F1-F12 tools, with their current values. Changes also update Settings.");
     if(Row("Ending sequence","Escape from Zebes, the planet's destruction and the credit roll. Start returns to your session without changing saves or run statistics.")){
         const bool Preview=EndingPreview && EndingPreview();
-        const bool Available=Hud.Ready && LaunchEnding && CloseEnding && (Preview || ((Hud.State()==8 || Hud.State()==15) && !(CreditsState && CreditsState(0))));
+        const bool Available=!(Hud.RushInfo && Hud.RushInfo(0)) && Hud.Ready && LaunchEnding && CloseEnding && (Preview || ((Hud.State()==8 || Hud.State()==15) && !(CreditsState && CreditsState(0))));
         SMUI::BeginDisabled(!Available);
         if(!Preview)SMUI::Combo("Animals##ending",&EndingAnimals,"Current save\0Not rescued\0Rescued\0");
         if(SMUI::Button(Preview?"Return from Ending Sequence":"View Ending Sequence",ImVec2(-1,0))){
@@ -754,7 +840,7 @@ void FSMSystemMenu::DrawDebug(){
     }
     if(Row("Credit roll preview","Original assets, Zebes atmosphere and this slot's tracked statistics. Start returns to the untouched session; hold Right to fast-forward.")){
         bool Preview=CreditsState && CreditsState(0)==2;
-        bool Available=Hud.Ready && LaunchCredits && (Hud.State()==8 || Hud.State()==15);
+        bool Available=!(Hud.RushInfo && Hud.RushInfo(0)) && Hud.Ready && LaunchCredits && (Hud.State()==8 || Hud.State()==15);
         SMUI::BeginDisabled(!Available);
         if(SMUI::Button(Preview?"Return from Credit Roll":"Launch Credit Roll",ImVec2(-1,0))){
             if(Preview)CloseCredits();
@@ -801,7 +887,7 @@ void FSMSystemMenu::DrawDebug(){
     }
     Toggle("F9 / Engine weather","Enable the Unreal rain, fog, underwater and heat effects.",Hud.EngineWeather);
     if(Row("F10 / Teleportation","Open the existing destination selector. Available during gameplay, outside item messages and transitions.")){
-        const bool Available=Hud.Ready && Hud.State()==8 && !Hud.MessageActive();
+        const bool Available=!(Hud.RushInfo && Hud.RushInfo(0)) && Hud.Ready && Hud.State()==8 && !Hud.MessageActive();
         SMUI::BeginDisabled(!Available);
         if(SMUI::Button("Open teleport destinations",ImVec2(-1,0))){
             SetOpen(false);Hud.TeleportMenu=true;Hud.AudioComponent->SetPaused(true);
@@ -843,18 +929,26 @@ void FSMSystemMenu::DrawSystem(){
 }
 void FSMSystemMenu::DrawAchievements(){
     Heading("ACHIEVEMENTS","Your discoveries and milestones across this save bank.");
-    const char* Names[]={"A NEW DISCOVERY","HUNTER","POWER UNLEASHED","REACH FURTHER","CHARGED ARMOR"};
-    const char* Descriptions[]={"Acquire a new equipment or beam upgrade.","Defeat 10 enemies.","Detonate a Power Bomb.","Use the Grapple Beam.","Use the Screw Attack."};
-    int Count=0;for(int I=0;I<5;I++)if(Hud.AchievementBits&(1<<I))Count++;
-    SMUI::Text("%d / 5 unlocked",Count);SMUI::ProgressBar(Count/5.f,ImVec2(-1,0));SMUI::Spacing();
-    for(int I=0;I<5;I++) {
-        const bool Unlocked=(Hud.AchievementBits&(1<<I))!=0;
+    const bool French=SMLocalization::Language()==1;
+    const char* Categories[]={French?"Communs":"Common","Vanilla","Randomizer"};
+    ImGui::Combo(French?"Catégorie":"Category",&AchievementCategory,Categories,3);
+    const int First=AchievementCategory==0?0:AchievementCategory==1?5:25,Total=AchievementCategory==0?5:20;
+    int Count=0;for(int I=First;I<First+Total;I++)if(Hud.AchievementBits&(uint64(1)<<I))Count++;
+    ImGui::Text(French?"%d / %d débloqués":"%d / %d unlocked",Count,Total);SMUI::ProgressBar(float(Count)/Total,ImVec2(-1,0));
+    for(int I=First;I<First+Total;I++) {
+        const auto& Entry=sm_achievement_catalog[I];
+        const bool Unlocked=(Hud.AchievementBits&(uint64(1)<<I))!=0,Hidden=Entry.secret&&!Unlocked;
         SMUI::PushID(I);SMUI::BeginChild("milestone",ImVec2(0,SMUI::GetFontSize()*5.5f),ImGuiChildFlags_Borders);
-        SMUI::TextColored(Unlocked?Gold:ImVec4(.5f,.55f,.6f,1),"%02d  %s",I+1,Names[I]);
-        SMUI::TextWrapped("%s",Descriptions[I]);
-        if(I==1 && !Unlocked)SMUI::Text("Progress: %d / 10",FMath::Min(10,Hud.AchievementTotalKills));
+        if(!Hidden&&Widget->HasAchievementImage(Entry.icon))ImGui::Image(ImTextureID(2+Entry.icon),ImVec2(64,64),ImVec2(0,0),ImVec2(1,1),Unlocked?ImVec4(1,1,1,1):ImVec4(.5f,.5f,.5f,1),ImVec4(0,0,0,0));
+        else {const auto P=ImGui::GetCursorScreenPos();ImGui::Dummy(ImVec2(64,64));ImGui::GetWindowDrawList()->AddText(ImVec2(P.x+25,P.y+20),IM_COL32(120,145,165,255),"?");}
+        SMUI::SameLine();SMUI::BeginGroup();
+        ImGui::TextColored(Unlocked?Gold:ImVec4(.5f,.55f,.6f,1),"%s",Hidden?(French?"SUCCÈS SECRET":"SECRET ACHIEVEMENT"):(French?Entry.name_fr:Entry.name));
+        ImGui::PushTextWrapPos(ImGui::GetWindowContentRegionMax().x);
+        ImGui::TextWrapped("%s",Hidden?(French?"Continue d’explorer pour découvrir ce secret.":"Keep exploring to discover this secret."):(French?Entry.description_fr:Entry.description));
+        ImGui::PopTextWrapPos();
+        if(I==1&&!Unlocked)SMUI::Text("Progress: %d / 10",FMath::Min(10,Hud.AchievementTotalKills));
         else SMUI::TextDisabled("%s",Unlocked?"UNLOCKED":"LOCKED");
-        SMUI::EndChild();SMUI::PopID();
+        SMUI::EndGroup();SMUI::EndChild();SMUI::PopID();
     }
 }
 void FSMSystemMenu::Draw(){
@@ -969,4 +1063,8 @@ void FSMSystemMenu::Draw(){
         if(MenuPreviewFrame==75)Hud.PlayerOwner->ConsoleCommand(TEXT("quit"));
     }
 #endif
+}
+
+bool FSMSystemMenu::AchievementIconsReady() const {
+    if(!Widget)return false;for(int I=0;I<20;I++)if(!Widget->HasAchievementImage(I))return false;return true;
 }

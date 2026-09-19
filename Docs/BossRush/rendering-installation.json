@@ -1,0 +1,9 @@
+{
+  "installedLocally": true,
+  "launched": false,
+  "hashesMatchGamingPc": {
+    "Native/build/libsm_native.so": "fe4c9bc30adb57065a8e414b358c0952e49c9db59a9255670e2582893058bdf9",
+    "Unreal/Binaries/Linux/libUnrealEditor-SMUnreal.so": "8028007cede28f1026ec3fa496a1fa6cbb7f3c60d346f49501ef45e18108edcd"
+  },
+  "backup": ".tmp/rush-performance/before-install-20260919-060644"
+}

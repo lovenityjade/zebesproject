@@ -1,3 +1,4 @@
+#include "sm_rush_runtime.h"
 #include "sm_run_stats.h"
 #include "sm_runs.h"
 #include "sm_route.h"
@@ -29,8 +30,8 @@ int sm_stats_save(void){
 }
 uint64_t sm_stats_value(int id){return current>=0&&id>=0&&id<48?data.slot[current].value[id]:0;}
 int sm_stats_partial(void){return current<0 || data.slot[current].partial;}
-void sm_stats_add(int id){if(current>=0 && id>=0&&id<48 && !data.slot[current].finished){data.slot[current].value[id]++;dirty=1;}}
-void sm_stats_finish(void){sm_run_finish();sm_route_finish();if(current>=0){data.slot[current].finished=1;dirty=1;sm_stats_save();}}
+void sm_stats_add(int id){if(sm_rush_active())return;if(current>=0 && id>=0&&id<48 && !data.slot[current].finished){data.slot[current].value[id]++;dirty=1;}}
+void sm_stats_finish(void){if(sm_rush_active())return;sm_run_finish();sm_route_finish();if(current>=0){data.slot[current].finished=1;dirty=1;sm_stats_save();}}
 void sm_stats_slot_action(int action,int slot,int other){
   if(slot<0||slot>2)return;
   if(action==2 && other>=0&&other<3)data.slot[other]=data.slot[slot];
@@ -41,7 +42,7 @@ void sm_stats_slot_action(int action,int slot,int other){
   else return;
   dirty=1;sm_stats_save();
 }
-void sm_stats_frame(void){
+void sm_stats_frame(void){if(sm_rush_active())return;
   int s=game_state;
   if(s==2||s==4){menu_seen=1;loaded_slot=selected_save_slot<3 && (nonempty_save_slots&(1<<selected_save_slot));}
   if(s==8 && (current<0 || menu_seen || current!=selected_save_slot)){

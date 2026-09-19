@@ -1,0 +1,304 @@
+{
+  "host": "gaming-pc",
+  "resolution": [
+    1200,
+    672
+  ],
+  "method": "Identical integrated scripted traversal. FPS estimated from engine frame indices and wall timestamps between forward/reverse sweep markers. High before/after both capped at 30. Screenshots are enabled. Not GPU timings or human victories.",
+  "runs": {
+    "baseline": {
+      "arenaTransitions": [
+        {
+          "encounter": 0,
+          "seconds": 3.104,
+          "frames": 49,
+          "fps": 15.8
+        },
+        {
+          "encounter": 1,
+          "seconds": 4.772,
+          "frames": 44,
+          "fps": 9.2
+        },
+        {
+          "encounter": 2,
+          "seconds": 5.646,
+          "frames": 43,
+          "fps": 7.6
+        },
+        {
+          "encounter": 3,
+          "seconds": 7.555,
+          "frames": 44,
+          "fps": 5.8
+        },
+        {
+          "encounter": 4,
+          "seconds": 8.952,
+          "frames": 42,
+          "fps": 4.7
+        },
+        {
+          "encounter": 5,
+          "seconds": 5.938,
+          "frames": 44,
+          "fps": 7.4
+        },
+        {
+          "encounter": 6,
+          "seconds": 5.905,
+          "frames": 43,
+          "fps": 7.3
+        },
+        {
+          "encounter": 7,
+          "seconds": 6.588,
+          "frames": 43,
+          "fps": 6.5
+        },
+        {
+          "encounter": 8,
+          "seconds": 6.836,
+          "frames": 42,
+          "fps": 6.1
+        },
+        {
+          "encounter": 9,
+          "seconds": 5.02,
+          "frames": 44,
+          "fps": 8.8
+        }
+      ],
+      "completed": true,
+      "uiChecksPassed": true
+    },
+    "optimized": {
+      "arenaTransitions": [
+        {
+          "encounter": 0,
+          "seconds": 2.334,
+          "frames": 60,
+          "fps": 25.7
+        },
+        {
+          "encounter": 1,
+          "seconds": 1.979,
+          "frames": 60,
+          "fps": 30.3
+        },
+        {
+          "encounter": 2,
+          "seconds": 1.962,
+          "frames": 59,
+          "fps": 30.1
+        },
+        {
+          "encounter": 3,
+          "seconds": 1.97,
+          "frames": 59,
+          "fps": 29.9
+        },
+        {
+          "encounter": 4,
+          "seconds": 1.969,
+          "frames": 59,
+          "fps": 30.0
+        },
+        {
+          "encounter": 5,
+          "seconds": 1.986,
+          "frames": 60,
+          "fps": 30.2
+        },
+        {
+          "encounter": 6,
+          "seconds": 1.966,
+          "frames": 59,
+          "fps": 30.0
+        },
+        {
+          "encounter": 7,
+          "seconds": 1.97,
+          "frames": 59,
+          "fps": 29.9
+        },
+        {
+          "encounter": 8,
+          "seconds": 1.977,
+          "frames": 59,
+          "fps": 29.8
+        },
+        {
+          "encounter": 9,
+          "seconds": 1.965,
+          "frames": 59,
+          "fps": 30.0
+        }
+      ],
+      "completed": true,
+      "uiChecksPassed": true,
+      "wire": {
+        "tiers": [
+          2
+        ],
+        "maxCanvasSubmissions": 4,
+        "maxTriangles": 58732,
+        "denseFrames": 863,
+        "denseCpuMedianMs": 2.601,
+        "denseCpuP95Ms": 4.519
+      }
+    },
+    "ultra60": {
+      "arenaTransitions": [
+        {
+          "encounter": 0,
+          "seconds": 2.334,
+          "frames": 115,
+          "fps": 49.3
+        },
+        {
+          "encounter": 1,
+          "seconds": 1.983,
+          "frames": 114,
+          "fps": 57.5
+        },
+        {
+          "encounter": 2,
+          "seconds": 1.966,
+          "frames": 112,
+          "fps": 57.0
+        },
+        {
+          "encounter": 3,
+          "seconds": 1.968,
+          "frames": 112,
+          "fps": 56.9
+        },
+        {
+          "encounter": 4,
+          "seconds": 1.974,
+          "frames": 112,
+          "fps": 56.7
+        },
+        {
+          "encounter": 5,
+          "seconds": 1.977,
+          "frames": 114,
+          "fps": 57.7
+        },
+        {
+          "encounter": 6,
+          "seconds": 1.966,
+          "frames": 112,
+          "fps": 57.0
+        },
+        {
+          "encounter": 7,
+          "seconds": 1.953,
+          "frames": 110,
+          "fps": 56.3
+        },
+        {
+          "encounter": 8,
+          "seconds": 1.966,
+          "frames": 111,
+          "fps": 56.5
+        },
+        {
+          "encounter": 9,
+          "seconds": 1.968,
+          "frames": 112,
+          "fps": 56.9
+        }
+      ],
+      "completed": true,
+      "uiChecksPassed": true,
+      "wire": {
+        "tiers": [
+          3
+        ],
+        "maxCanvasSubmissions": 4,
+        "maxTriangles": 59024,
+        "denseFrames": 1599,
+        "denseCpuMedianMs": 2.703,
+        "denseCpuP95Ms": 4.702
+      }
+    },
+    "low60": {
+      "arenaTransitions": [
+        {
+          "encounter": 0,
+          "seconds": 2.318,
+          "frames": 115,
+          "fps": 49.6
+        },
+        {
+          "encounter": 1,
+          "seconds": 1.981,
+          "frames": 116,
+          "fps": 58.6
+        },
+        {
+          "encounter": 2,
+          "seconds": 1.971,
+          "frames": 114,
+          "fps": 57.8
+        },
+        {
+          "encounter": 3,
+          "seconds": 1.957,
+          "frames": 114,
+          "fps": 58.3
+        },
+        {
+          "encounter": 4,
+          "seconds": 1.992,
+          "frames": 111,
+          "fps": 55.7
+        },
+        {
+          "encounter": 5,
+          "seconds": 1.979,
+          "frames": 116,
+          "fps": 58.6
+        },
+        {
+          "encounter": 6,
+          "seconds": 1.96,
+          "frames": 114,
+          "fps": 58.2
+        },
+        {
+          "encounter": 7,
+          "seconds": 2.0,
+          "frames": 110,
+          "fps": 55.0
+        },
+        {
+          "encounter": 8,
+          "seconds": 1.958,
+          "frames": 115,
+          "fps": 58.7
+        },
+        {
+          "encounter": 9,
+          "seconds": 1.977,
+          "frames": 115,
+          "fps": 58.2
+        }
+      ],
+      "completed": true,
+      "uiChecksPassed": true,
+      "wire": {
+        "tiers": [
+          0
+        ],
+        "maxCanvasSubmissions": 2,
+        "maxTriangles": 17552,
+        "denseFrames": 742,
+        "denseCpuMedianMs": 1.322,
+        "denseCpuP95Ms": 2.567
+      }
+    }
+  }
+}

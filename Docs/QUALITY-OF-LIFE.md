@@ -140,3 +140,9 @@ Le [générique The Zebes Project](Credits/README.md) ajoute le suivi des statis
 `Settings → Quality of Life → Refill energy and ammo when saving` is optional and disabled by default. Accepting the native save-station prompt refills energy, reserve energy, Missiles, Super Missiles and Power Bombs to existing capacities before saving. Cancelling does not refill. Ordinary SRAM flushes, switching profiles and publishing generated seeds do not heal Samus. It works in Vanilla and Randomized games.
 
 The complete seed editor also carries `refill_before_save` per randomized slot. Global comfort enablement remains available independently. See the [separate release](../Releases/2026-09-15-save-refill/README.md) and [configurator checkpoint](Randomizer/FullOptions/MenuEditor/README.md).
+
+## Future optional QoL — requested September 19, 2026
+
+See [Planned optional gameplay QoL](PLANNED-OPTIONAL-QOL.md). These requested
+additions apply to Vanilla, Vanilla New Game+ and Randomizer, are excluded from
+speedrun mode, and are not presented as implemented features of this release.

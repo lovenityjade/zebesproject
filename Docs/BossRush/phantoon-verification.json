@@ -1,0 +1,12 @@
+{
+  "host": "gaming-pc",
+  "passed": true,
+  "backgroundTailTransparent": true,
+  "bodyPreserved": true,
+  "sampledFrames": [
+    240,
+    480,
+    720,
+    899
+  ]
+}

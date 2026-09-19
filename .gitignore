@@ -40,3 +40,15 @@ __pycache__/
 
 # Optional locally installed music; never part of source/release staging.
 /Soundtracks/
+
+# Production source media/reference images stay local; runtime derivatives are reviewed separately.
+/Assets/StoryMode/
+/Boss Rush Theme - Face the Memory.mp3
+/boss-rush-transition-tobefixed.mp3
+/simulation-failed-noloop.mp3
+/simulation-success-noloop.mp3
+/bossrush-failed-4:3.png
+/bossrush-failed.png
+/simulation-completed-16:9.png
+/241a23b9-d451-4c77-8656-100eca691c52.png
+/Config/RoomDecorations/images/*.png

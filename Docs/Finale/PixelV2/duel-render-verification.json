@@ -1,0 +1,10 @@
+{
+  "markers": [
+    "[2026.09.19-12.15.11:950][  1]LogTemp: Display: SM_FINALE_PIXEL_ATLAS ready=1254x1254 native_grid=1",
+    "[2026.09.19-12.15.11:950][  1]LogTemp: Display: SM_FINALE_PHASE phase=6 frame=11783",
+    "[2026.09.19-12.15.22:693][270]LogTemp: Display: SM_FINALE_PHASE phase=7 frame=12322",
+    "[2026.09.19-12.15.45:321][834]LogTemp: Display: SM_FINALE_PHASE phase=8 frame=13450",
+    "[2026.09.19-12.15.46:519][864]LogTemp: Display: SM_FINALE_COMPLETE phase=8 frames=863 hits=23 shots=24 cpu_opcodes=0"
+  ],
+  "scope": "Rendered native scripted phases; setup survival and final lethal health injected, not a human victory."
+}

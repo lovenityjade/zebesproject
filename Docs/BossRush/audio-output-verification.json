@@ -1,0 +1,7 @@
+{
+  "recordedSeconds": 95.5,
+  "nonzeroSamples": 6834718,
+  "peakDBFS": -7.47,
+  "clippedSamples": 0,
+  "capture": "test-owned Unreal output routed to a dedicated PipeWire/PulseAudio sink; offscreen unfocused mute disabled for this test only"
+}
