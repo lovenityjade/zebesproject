@@ -1,0 +1,37 @@
+{
+  "version": "ALPHA-0.26",
+  "platform": "Linux x86-64 / Vulkan / gaming-pc",
+  "sha256": "900bcaa0b77eb727e4b42962b1f7179c8fcd6fcafa739730fbe5f85453fbbc94",
+  "bytes": 451582456,
+  "filesVerifiedAfterExtraction": 2686,
+  "toolAddedDesktopField": "X-AppImage-Version=ALPHA-0.26",
+  "tests": {
+    "Rom": [
+      "[2026.09.19-14.52.50:436][  0]LogTemp: Display: SM_ROM_SELF_TEST PASS"
+    ],
+    "SeedSharing": [
+      "[2026.09.19-14.52.57:270][  0]LogTemp: Display: SM_SEED_SHARING_SELF_TEST PASS"
+    ],
+    "Profile": [
+      "[2026.09.19-14.52.59:072][  0]LogTemp: Display: SM_PROFILE_SELF_TEST PASS"
+    ],
+    "Tracker": [
+      "[2026.09.19-14.53.02:921][  0]LogTemp: Display: SM_TRACKER_SELF_TEST PASS"
+    ],
+    "rom-missing": [
+      "[2026.09.19-14.53.06:692][ 90]LogTemp: Display: SM_ROM_GATE_TEST PASS"
+    ],
+    "rom-invalid": [
+      "[2026.09.19-14.53.11:251][ 90]LogTemp: Display: SM_ROM_GATE_TEST PASS"
+    ],
+    "french-menus": [
+      "[2026.09.19-14.53.17:071][  8]LogTemp: Display: SM_LOCALE_PERSISTENCE PASS"
+    ]
+  },
+  "frenchPagesCaptured": 21,
+  "visuallyReviewed": [
+    "graphics",
+    "randomizer seed and sharing"
+  ],
+  "scope": "Clean package smoke tests; not a full playthrough. Player profiles and ROM remain outside AppImage."
+}

@@ -1,0 +1,24 @@
+{
+  "platform": "windows",
+  "passed": true,
+  "markers": {
+    "boss-rush": [
+      "[2026.09.19-15.00.47:961][  0]LogTemp: Display: SM_DECOR_LOADED cells=0 files=0 folder=Z:/home/nobara-user/Projects/projectSM/.tmp/release-alpha025/ProtonTest026/UserData/Saved/SMTests/Decorations",
+      "[2026.09.19-15.00.48:073][  1]LogTemp: Display: SM_RUSH_RESULT_AUDIO mask=31 failed=S:/nobara-user/Projects/projectSM/.tmp/release-alpha025/ProtonTest026/Game/SMUnreal/Content/BossRush/Failed.pcm success=S:/nobara-user/Projects/projectSM/.tmp/release-alpha025/ProtonTest026/Game/SMUnreal/Content/BossRush/Success.pcm looping=0",
+      "[2026.09.19-15.02.09:196][ 38]LogTemp: Display: SM_RUSH_TEST_COMPLETE arenas=10 death=1 opcodes=0",
+      "[2026.09.19-15.02.09:196][ 38]LogTemp: Display: SM_RUSH_UI_PASS continue=1 pause=1 retry=1 end=1"
+    ],
+    "escape": [
+      "[2026.09.19-15.02.15:913][  0]LogTemp: Display: SM_DECOR_LOADED cells=0 files=0 folder=Z:/home/nobara-user/Projects/projectSM/.tmp/release-alpha025/ProtonTest026/UserData/Saved/SMTests/Decorations",
+      "[2026.09.19-15.02.23:116][  1]LogTemp: Display: SM_RUSH_RESULT_AUDIO mask=31 failed=S:/nobara-user/Projects/projectSM/.tmp/release-alpha025/ProtonTest026/Game/SMUnreal/Content/BossRush/Failed.pcm success=S:/nobara-user/Projects/projectSM/.tmp/release-alpha025/ProtonTest026/Game/SMUnreal/Content/BossRush/Success.pcm looping=0",
+      "[2026.09.19-15.02.23:236][  1]LogTemp: Display: SM_STATE frame=1511 state=8 room=91f8 samus=1152,1088 cpu_opcodes=0",
+      "[2026.09.19-15.02.33:176][335]LogTemp: Display: SM_ESCAPE_MEMORY cue=1 line=1 top=1 time=11.165 frame=2179 portrait=zero_suit",
+      "[2026.09.19-15.02.35:713][420]LogTemp: Display: SM_FINALE_ESCAPE_COMPLETE room=91f8 escape=1 hyper=32768 meteors=7 atlas=6290064 cpu_opcodes=0"
+    ]
+  },
+  "scope": "Cooked-package scripted arena traversal, death, menus and short escape memory render; not a complete human run",
+  "visuallyReviewed": [
+    "native pause",
+    "escape portrait and punctuation"
+  ]
+}

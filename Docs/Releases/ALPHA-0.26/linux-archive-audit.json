@@ -1,0 +1,15 @@
+{
+  "version": "ALPHA-0.26",
+  "sha256": "900bcaa0b77eb727e4b42962b1f7179c8fcd6fcafa739730fbe5f85453fbbc94",
+  "filesChecked": 2686,
+  "noRomOrSave": true,
+  "bossRushAudioHashes": {
+    "Failed.pcm": "d2ff672a271176c2d0d514ff6609bd4240c13401c970b0d0a5c45302b969c921",
+    "Success.pcm": "ec1693a54645a0cafddf47b2c441bfe4721bc73370a96ac5eb005d1d43819008",
+    "Theme.pcm": "bb0545c7e0103b20b29cd39ca05450190b4c21fbbbe358e4ff31f8c9c06208fa",
+    "WireIn.pcm": "3b3154cb2ef2653ce4743d9ea3f9b4c4eecc610912e7125a41d7e64b00f89490",
+    "WireOut.pcm": "c2f87d8a3b8b56856b2e4ec1a5923d868ba59570b60b9e0f75d15ef03d0c77da"
+  },
+  "roomRecipe": "usr/game/Config/RoomDecorations/images/e7760bbe4e7bc4f7159243cc3b69812322f78e9556297a5c44eb8db8dcd088f0.romtiles",
+  "scope": "Manifest checked against fresh extraction by linux-package-verification; targeted private-payload and pinned audio/room-recipe checks, not a copyright classifier."
+}
