@@ -207,10 +207,9 @@ Unreal Engine is licensed separately by Epic; it is not relicensed by this repo.
 The code is developed by humans with AI assistance. Some development graphics
 are temporary AI-generated placeholders and are intended to be replaced with
 human-created artwork. The supplied Boss Rush/finale recordings include
-AI-assisted music by **themiareproject** (Suno, according to their source metadata):
-*Face the Memory*, *Deep Space Silence* and *Victory Fanfare*. Original/remastered
-music keeps its own credits. Planned human-performed Story Mode voice acting is
-not yet implemented. See [Boss Rush audio credits](Docs/BossRush/AUDIO-CREDITS.md).
+TheLovenityJade's originals *Face the Memory*, *Deep Space Silence* and *Victory Fanfare*. 
+Original/remastered music keeps its own credits. 
+Planned human-performed Story Mode voice acting is not yet implemented. 
 
 This is an unofficial fan project, not affiliated with, endorsed by or sponsored
 by Nintendo or Epic Games. Super Metroid and Metroid are Nintendo properties.
